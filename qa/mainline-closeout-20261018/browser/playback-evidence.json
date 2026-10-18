@@ -1,0 +1,1076 @@
+[
+  {
+    "at": "2026-10-18T13:01:34.524Z",
+    "stage": "start",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 全球环境与地区差异\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 01 / 6 · 地球上的西藏 · 先看整体\n    - generic: 跟随讲述\n    - generic \"本章因果顺序\":\n      - generic: 认识地球\n      - generic: → 逐层定位\n      - generic: 先有海陆与大气的整体背景。\n    - paragraph:\n      - text: 空气包\n      - mark: 围\n      - text: 地表；\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 01 / 6 · 地球上的西藏\n    - heading \"西藏在地球的哪里，周围有什么？\" [level=1]\n    - text: 现在看什么\n    - heading \"大气 · 包围整个地表\" [level=2]\n    - paragraph: 浅蓝外层标出空气所在，显示厚度经过夸张。\n    - paragraph:\n      - generic: 先看整体 · 镜头为什么这样接\n      - text: 先建立海洋、陆地、空气等共同对象，后面才有解释地方的基础。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 先认清地球上有什么\":\n        - generic: \"1\"\n        - generic: 先认清地球上有什么\n      - button \"2 从完整地球逐层找到西藏\":\n        - generic: \"2\"\n        - generic: 从完整地球逐层找到西藏\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 有了海陆与大气背景，接下来沿洲、国家、自治区逐层定位，避免只记住一个点。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\" [active]:\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 0:07 / 11:41自动衔接下一段\n  - button \"上一段\" [disabled]:\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 有了海陆与大气背景，接下来沿洲、国家、自治区逐层定位，避免只记住一个点。\n  - text: 本段 1 / 2\n  - slider \"当前讲述进度\": \"0.325\"\n  - generic: 32%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:01:52.973Z",
+    "stage": "natural-play",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 完整地球 → 亚洲 → 中国 → 西藏与自然高原\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 01 / 6 · 地球上的西藏 · 建立来路\n    - generic: 跟随讲述\n    - generic \"本章因果顺序\":\n      - generic: 认识地球\n      - generic: → 逐层定位\n      - generic: 分开洲、国家、自治区与自然高原。\n    - paragraph:\n      - mark: 镜\n      - text: 头靠近亚洲，\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 01 / 6 · 地球上的西藏\n    - heading \"西藏在地球的哪里，周围有什么？\" [level=1]\n    - text: 现在看什么\n    - heading \"亚洲：洲的尺度\" [level=2]\n    - paragraph: 先确认所在的洲，再进入国家和地区。\n    - paragraph:\n      - generic: 建立来路 · 镜头为什么这样接\n      - text: 由原地球定位层连续靠近，洲、国家和自治区分别标注。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 先认清地球上有什么\":\n        - generic: \"1\"\n        - generic: 先认清地球上有什么\n      - button \"2 从完整地球逐层找到西藏\":\n        - generic: \"2\"\n        - generic: 从完整地球逐层找到西藏\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 位置确定以后，要先解释太阳能量如何形成地区受热差异，才能理解空气为什么移动。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\" [active]:\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 0:24 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 位置确定以后，要先解释太阳能量如何形成地区受热差异，才能理解空气为什么移动。\n  - text: 本段 2 / 2\n  - slider \"当前讲述进度\": \"0.09\"\n  - generic: 9%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:02:34.463Z",
+    "stage": "chapter2-start",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 全球环境与地区差异\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 回到整体\n    - generic: 跟随讲述\n    - generic \"本章因果顺序\":\n      - generic: 来流\n      - generic: → 高地\n      - generic: → 云雨\n      - generic: 先解释空气为什么搬运热与水。\n    - paragraph:\n      - text: 以及空气和水怎\n      - mark: 样\n      - text: 把热搬走。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - text: 现在看什么\n    - heading \"空气和水 · 继续搬运热\" [level=2]\n    - paragraph: 环境之间的输送把冷暖问题接到下一段空气运动。\n    - paragraph:\n      - generic: 回到整体 · 镜头为什么这样接\n      - text: 还需要海陆储热和空气、水的输送，才能继续认识地方。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 同一束阳光，为什么有冷暖差别\":\n        - generic: \"1\"\n        - generic: 同一束阳光，为什么有冷暖差别\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 受热不均留下能量差异；下一步看大气怎样在全球搬运热与水。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\" [active]:\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 1:05 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 受热不均留下能量差异；下一步看大气怎样在全球搬运热与水。\n  - text: 本段 1 / 6\n  - slider \"当前讲述进度\": \"0.948\"\n  - generic: 95%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:02:45.968Z",
+    "stage": "rotation-before",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 完整地球 · 纬度与自转\n    - strong: 同角速度：两圈光标转过相同角度\n    - generic: 两圈光标转过相同角度，低纬走过更长距离\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 地球自转与气流\n    - generic: 跟随讲述\n    - paragraph:\n      - text: 地面向东\n      - mark: 速\n      - text: 度更快。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - region \"自转与气流对照\":\n      - strong: 同一地球，改变一个条件\n      - paragraph: 保持起点、南北方向与进度，比较实线和原经线。操作会暂停语音。\n      - group \"自转条件\":\n        - button \"去掉自转项\"\n        - button \"加入自转项\" [pressed]\n      - group \"气流南北方向\":\n        - button \"向北：20°N → 40°N\" [pressed]\n        - button \"向南：40°N → 20°N\"\n      - text: 拖动空气，比较同一时刻\n      - slider \"自转对照过程\": \"1\"\n      - paragraph: 固定南北运动，忽略摩擦与东西向力矩；虚线是无自转参照，非天气预报。离地高度与符号大小为示意；底图随地面观察，纬圈光标表示自转方向。\n      - generic: 讲解会依次演示无自转、向北右偏、向南右偏，再回到亚洲来流。\n    - text: 现在看什么\n    - heading \"同一角速度，不同向东速度\" [level=2]\n    - paragraph: 低纬绕行圈更大；转过相同角度，低纬地面走过更长距离。\n    - paragraph:\n      - generic: 地球自转与气流 · 镜头为什么这样接\n      - text: 先保留所在尺度，再按原讲述进入细节。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 同一束阳光，为什么有冷暖差别\":\n        - generic: \"1\"\n        - generic: 同一束阳光，为什么有冷暖差别\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\" [active]:\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 1:16 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n  - text: 本段 2 / 6\n  - slider \"当前讲述进度\": \"0.21\"\n  - generic: 21%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:02:53.340Z",
+    "stage": "rotation-off",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 北半球 · 地面参照下的气流对照\n    - strong: 地面参照 · 虚线为无自转路径，实线为当前对照\n    - generic: 轨迹按简化角动量模型计算 · 非实测风场\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 手动对照\n    - generic: 手动观察，讲解已暂停\n    - paragraph: 去掉自转项：同样的南北运动沿经线前进。虚线保留作参照；这不是让现实地球停止。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - region \"自转与气流对照\":\n      - strong: 同一地球，改变一个条件\n      - paragraph: 保持起点、南北方向与进度，比较实线和原经线。操作会暂停语音。\n      - group \"自转条件\":\n        - button \"去掉自转项\" [active] [pressed]\n        - button \"加入自转项\"\n      - group \"气流南北方向\":\n        - button \"向北：20°N → 40°N\" [pressed]\n        - button \"向南：40°N → 20°N\"\n      - text: 拖动空气，比较同一时刻\n      - slider \"自转对照过程\": \"1\"\n      - paragraph: 固定南北运动，忽略摩擦与东西向力矩；虚线是无自转参照，非天气预报。离地高度与符号大小为示意；底图随地面观察，纬圈光标表示自转方向。\n      - status: 原讲述位置已保留；切换条件不会跳段。\n      - button \"恢复原条件，从暂停处继续\"\n    - text: 现在看什么\n    - heading \"去掉自转：保留相同南北运动\" [level=2]\n    - paragraph: 去掉自转项：同样的南北运动沿经线前进。虚线保留作参照；这不是让现实地球停止。\n    - paragraph:\n      - generic: 手动对照 · 镜头为什么这样接\n      - text: 先保留所在尺度，再按原讲述进入细节。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 同一束阳光，为什么有冷暖差别\":\n        - generic: \"1\"\n        - generic: 同一束阳光，为什么有冷暖差别\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"播放完整演示\":\n    - text: 继续完整演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 1:16 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n  - text: 本段 2 / 6\n  - slider \"当前讲述进度\": \"0.213\"\n  - generic: 21%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:02:53.871Z",
+    "stage": "rotation-on",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 北半球 · 地面参照下的气流对照\n    - strong: 地面参照 · 虚线为无自转路径，实线为当前对照\n    - generic: 轨迹按简化角动量模型计算 · 非实测风场\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 手动对照\n    - generic: 手动观察，讲解已暂停\n    - paragraph: 向北移动：空气保留绕地轴的角动量，相对更高纬的地面向东超前。实线离开虚线，向前进方向右偏。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - region \"自转与气流对照\":\n      - strong: 同一地球，改变一个条件\n      - paragraph: 保持起点、南北方向与进度，比较实线和原经线。操作会暂停语音。\n      - group \"自转条件\":\n        - button \"去掉自转项\"\n        - button \"加入自转项\" [active] [pressed]\n      - group \"气流南北方向\":\n        - button \"向北：20°N → 40°N\" [pressed]\n        - button \"向南：40°N → 20°N\"\n      - text: 拖动空气，比较同一时刻\n      - slider \"自转对照过程\": \"1\"\n      - paragraph: 固定南北运动，忽略摩擦与东西向力矩；虚线是无自转参照，非天气预报。离地高度与符号大小为示意；底图随地面观察，纬圈光标表示自转方向。\n      - status: 原讲述位置已保留；切换条件不会跳段。\n      - button \"恢复原条件，从暂停处继续\"\n    - text: 现在看什么\n    - heading \"向北：相对地面向东右偏\" [level=2]\n    - paragraph: 向北移动：空气保留绕地轴的角动量，相对更高纬的地面向东超前。实线离开虚线，向前进方向右偏。\n    - paragraph:\n      - generic: 手动对照 · 镜头为什么这样接\n      - text: 先保留所在尺度，再按原讲述进入细节。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 同一束阳光，为什么有冷暖差别\":\n        - generic: \"1\"\n        - generic: 同一束阳光，为什么有冷暖差别\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"播放完整演示\":\n    - text: 继续完整演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 1:16 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n  - text: 本段 2 / 6\n  - slider \"当前讲述进度\": \"0.213\"\n  - generic: 21%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:03:00.982Z",
+    "stage": "rotation-resumed",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 北半球 · 地面参照下的气流对照\n    - strong: 地面参照 · 虚线为无自转路径，实线为当前对照\n    - generic: 轨迹按简化角动量模型计算 · 非实测风场\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 地球自转与气流\n    - generic: 跟随讲述\n    - paragraph:\n      - text: 空\n      - mark: 气\n      - text: 保留绕地轴的角动量；\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - region \"自转与气流对照\":\n      - strong: 同一地球，改变一个条件\n      - paragraph: 保持起点、南北方向与进度，比较实线和原经线。操作会暂停语音。\n      - group \"自转条件\":\n        - button \"去掉自转项\"\n        - button \"加入自转项\" [pressed]\n      - group \"气流南北方向\":\n        - button \"向北：20°N → 40°N\" [pressed]\n        - button \"向南：40°N → 20°N\"\n      - text: 拖动空气，比较同一时刻\n      - slider \"自转对照过程\": \"0.165\"\n      - paragraph: 固定南北运动，忽略摩擦与东西向力矩；虚线是无自转参照，非天气预报。离地高度与符号大小为示意；底图随地面观察，纬圈光标表示自转方向。\n      - generic: 讲解会依次演示无自转、向北右偏、向南右偏，再回到亚洲来流。\n    - text: 现在看什么\n    - heading \"向北：相对地面向东右偏\" [level=2]\n    - paragraph: 向北移动：空气保留绕地轴的角动量，相对更高纬的地面向东超前。实线离开虚线，向前进方向右偏。\n    - paragraph:\n      - generic: 地球自转与气流 · 镜头为什么这样接\n      - text: 先保留所在尺度，再按原讲述进入细节。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 同一束阳光，为什么有冷暖差别\":\n        - generic: \"1\"\n        - generic: 同一束阳光，为什么有冷暖差别\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\":\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 1:23 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。\n  - text: 本段 2 / 6\n  - slider \"当前讲述进度\": \"0.359\"\n  - generic: 36%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:03:32.899Z",
+    "stage": "asia-to-plateau",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 亚洲与高原周边 · 延续上一段\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 先看整体\n    - generic: 跟随讲述\n    - generic \"本章因果顺序\":\n      - generic: 来流\n      - generic: → 高地\n      - generic: → 云雨\n      - generic: 再认识来流要遇到的高地及真实高差。\n    - paragraph:\n      - text: 位置\n      - mark: 与\n      - text: 全球来流已经明确。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - text: 现在看什么\n    - heading \"保留亚洲来流，继续读高地\" [level=2]\n    - paragraph: 刚才解释水平运动；现在保留同一地球，追问来流将遇到的地形。\n    - paragraph:\n      - generic: 先看整体 · 镜头为什么这样接\n      - text: 先认回亚洲高地，避免从全球环流突然跳入剖面。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n      - button \"4 变形、增厚与抬升\":\n        - generic: \"4\"\n        - generic: 变形、增厚与抬升\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 先解释高地形成的机制，再回到今天实际量得的地形。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\":\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 1:55 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 先解释高地形成的机制，再回到今天实际量得的地形。\n  - text: 本段 3 / 6\n  - slider \"当前讲述进度\": \"0.031\"\n  - generic: 3%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:03:50.204Z",
+    "stage": "plateau-formation",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 完整地球 → 亚洲 → 中国 → 西藏与自然高原\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 02 / 6 · 空气遇到高原 · 回到整体\n    - generic: 跟随讲述\n    - generic \"本章因果顺序\":\n      - generic: 来流\n      - generic: → 高地\n      - generic: → 云雨\n      - generic: 再认识来流要遇到的高地及真实高差。\n    - paragraph:\n      - text: 我们会回到今天的真实高\n      - mark: 程\n      - text: 。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 02 / 6 · 空气遇到高原\n    - heading \"地形怎样改变来到这里的空气与水？\" [level=1]\n    - text: 现在看什么\n    - heading \"形成原理之后，再核对真实高程\" [level=2]\n    - paragraph: 概念剖面与今日实测高程各自回答不同的问题。\n    - paragraph:\n      - generic: 回到整体 · 镜头为什么这样接\n      - text: 形成解释以后会回到实际地面，而不把概念剖面当作古代复原。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"2 自转怎样改变气流方向\":\n        - generic: \"2\"\n        - generic: 自转怎样改变气流方向\n      - button \"3 先回到亚洲高地，再进入剖面\":\n        - generic: \"3\"\n        - generic: 先回到亚洲高地，再进入剖面\n      - button \"4 变形、增厚与抬升\":\n        - generic: \"4\"\n        - generic: 变形、增厚与抬升\n    - generic \"本章完整顺序 · 6 段\"\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 先解释高地形成的机制，再回到今天实际量得的地形。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"暂停完整演示\":\n    - text: 暂停演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 2:12 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 先解释高地形成的机制，再回到今天实际量得的地形。\n  - text: 本段 3 / 6\n  - slider \"当前讲述进度\": \"0.97\"\n  - generic: 97%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:04:00.819Z",
+    "stage": "formation-model",
+    "data": {
+      "activeWord": "段",
+      "alignment": "recording-word",
+      "caption": "02 / 6 · 空气遇到高原 · 走近证据跟随讲述来流→ 高地→ 云雨再认识来流要遇到的高地及真实高差。高原各部分经历不同的形成阶段，",
+      "headings": [
+        "地形怎样改变来到这里的空气与水？",
+        "各部分不同 · 不能当成同步整体升高"
+      ],
+      "progress": "0.472",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "G3-explain",
+        "overviewScene": "journey:G3",
+        "overviewShot": "G3-explain:1",
+        "sceneProgress": "0.7883",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:04:26.456Z",
+    "stage": "real-elevation",
+    "data": {
+      "activeWord": "你",
+      "alignment": "recording-word",
+      "caption": "02 / 6 · 空气遇到高原 · 回到整体跟随讲述来流→ 高地→ 云雨再认识来流要遇到的高地及真实高差。你看到的不是一座山峰独自高起，",
+      "headings": [
+        "地形怎样改变来到这里的空气与水？",
+        "③ 高原内部 · 仍接近5000米"
+      ],
+      "progress": "0.567",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "G4-explain",
+        "overviewScene": "journey:G4",
+        "overviewShot": "G4-explain:2",
+        "sceneProgress": "0.5000",
+        "shotPhase": "return"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:04:51.399Z",
+    "stage": "air-cloud-natural",
+    "data": {
+      "activeWord": "。",
+      "alignment": "recording-word",
+      "caption": "02 / 6 · 空气遇到高原 · 整体对照跟随讲述来流→ 高地→ 云雨亲手移动气团，保持地形不变，对照水汽条件。空气遇到高地后被迫抬升。",
+      "headings": [
+        "地形怎样改变来到这里的空气与水？",
+        "较多水汽：从抬升到云雨"
+      ],
+      "progress": "0.348",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "air",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "LAB-air-higher",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-air-higher:0",
+        "sceneProgress": "0.2085",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:05:06.556Z",
+    "stage": "moisture-high-paused",
+    "data": {
+      "caption": "02 / 6 · 空气遇到高原 · 整体对照手动观察，讲解已暂停来流→ 高地→ 云雨亲手移动气团，保持地形不变，对照水汽条件。背风下沉 · 增温、相对湿度可能降低。云增多 · 少量示意雨迹。同一位置的抬升不变；较少水汽需要更多冷却才可能凝结。",
+      "headings": [
+        "地形怎样改变来到这里的空气与水？",
+        "较多水汽：从抬升到云雨"
+      ],
+      "progress": "0.745",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "air",
+        "interactionCity": "nyingchi",
+        "interactionManual": "true",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "LAB-air-higher",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-air-higher:0",
+        "sceneProgress": "0.8500",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:05:14.237Z",
+    "stage": "moisture-low-paused",
+    "data": {
+      "caption": "02 / 6 · 空气遇到高原 · 整体对照手动观察，讲解已暂停来流→ 高地→ 云雨亲手移动气团，保持地形不变，对照水汽条件。背风下沉 · 增温、相对湿度可能降低。少量云 · 无示意雨迹。同一位置的抬升不变；较少水汽需要更多冷却才可能凝结。",
+      "headings": [
+        "地形怎样改变来到这里的空气与水？",
+        "较多水汽：从抬升到云雨"
+      ],
+      "progress": "0.745",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "air",
+        "interactionCity": "nyingchi",
+        "interactionManual": "true",
+        "interactionMoisture": "lower",
+        "interactionZoom": "false",
+        "overviewBeat": "LAB-air-higher",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-air-higher:0",
+        "sceneProgress": "0.8500",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:05:14.657Z",
+    "stage": "moisture-resumed",
+    "data": {
+      "activeWord": "际",
+      "alignment": "recording-word",
+      "caption": "02 / 6 · 空气遇到高原 · 整体对照跟随讲述来流→ 高地→ 云雨亲手移动气团，保持地形不变，对照水汽条件。实际结果还受来流、季节和其他天气过程影响。",
+      "headings": [
+        "地形怎样改变来到这里的空气与水？",
+        "较多水汽：从抬升到云雨"
+      ],
+      "progress": "0.753",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "air",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "LAB-air-higher",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-air-higher:0",
+        "sceneProgress": "0.8609",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:05:41.864Z",
+    "stage": "chapter3-july",
+    "data": {
+      "activeWord": "降",
+      "alignment": "recording-word",
+      "caption": "03 / 6 · 同在西藏，为何不同 · 整体对照跟随讲述夏季对照→ 冬季核对→ 回到七市地先用同一尺度的真实站点资料比较。降水二十二点九毫米。",
+      "headings": [
+        "各地区的环境有哪些共同点和差别？",
+        "七月：用真实数据检验东西差异"
+      ],
+      "progress": "0.633",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "evidence",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "OBS-CLIMATE-7",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OBS-CLIMATE-7:0",
+        "sceneProgress": "0.8111",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:05:56.306Z",
+    "stage": "chapter3-january",
+    "data": {
+      "activeWord": "不",
+      "alignment": "recording-word",
+      "caption": "03 / 6 · 同在西藏，为何不同 · 整体对照跟随讲述夏季对照→ 冬季核对→ 回到七市地季节变化防止把一次比较当成全年。不是今天的天气。",
+      "headings": [
+        "各地区的环境有哪些共同点和差别？",
+        "一月：同在高原，冬季条件仍不同"
+      ],
+      "progress": "0.148",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "evidence",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "OBS-CLIMATE-1",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OBS-CLIMATE-1:0",
+        "sceneProgress": "0.0682",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:06:03.666Z",
+    "stage": "month-manual",
+    "data": {
+      "caption": "03 / 6 · 同在西藏，为何不同 · 整体对照手动观察，讲解已暂停夏季对照→ 冬季核对→ 回到七市地季节变化防止把一次比较当成全年。7月，拉萨站降水量均值140.5毫米，略高于林芝站的137.4毫米；狮泉河站为22.9毫米。不能把东西差异理解成每个月固定的递减顺序。",
+      "headings": [
+        "各地区的环境有哪些共同点和差别？",
+        "一月：同在高原，冬季条件仍不同"
+      ],
+      "progress": "0.413",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "evidence",
+        "interactionCity": "nyingchi",
+        "interactionManual": "true",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "OBS-CLIMATE-1",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OBS-CLIMATE-1:0",
+        "sceneProgress": "0.4451",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:06:04.033Z",
+    "stage": "month-resumed",
+    "data": {
+      "activeWord": "萨",
+      "alignment": "recording-word",
+      "caption": "03 / 6 · 同在西藏，为何不同 · 整体对照跟随讲述夏季对照→ 冬季核对→ 回到七市地季节变化防止把一次比较当成全年。拉萨站负零点三摄氏度、零点九毫米。",
+      "headings": [
+        "各地区的环境有哪些共同点和差别？",
+        "一月：同在高原，冬季条件仍不同"
+      ],
+      "progress": "0.425",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "evidence",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "false",
+        "overviewBeat": "OBS-CLIMATE-1",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OBS-CLIMATE-1:0",
+        "sceneProgress": "0.4526",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:06:29.983Z",
+    "stage": "chapter3-seven-regions",
+    "data": {
+      "activeWord": "组",
+      "alignment": "recording-word",
+      "caption": "03 / 6 · 同在西藏，为何不同 · 建立来路跟随讲述夏季对照→ 冬季核对→ 回到七市地站点是入口，自然差异跨越行政线。高山峡谷组织不同来路；",
+      "headings": [
+        "各地区的环境有哪些共同点和差别？",
+        "东部与东南部：高山峡谷"
+      ],
+      "progress": "0.482",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-regional-system",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-regional-system:1",
+        "sceneProgress": "0.7082",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:07:01.326Z",
+    "stage": "living-nyingchi",
+    "data": {
+      "activeWord": "样",
+      "alignment": "recording-word",
+      "caption": "04 / 6 · 环境怎样进入生活 · 走近地区跟随讲述比较地形→ 设施与管护同图进入三地，对照起伏、连续地面与用水条件。青色地面标出观察窗内相对较低、较缓的样本，",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "林芝：从地形读生活条件"
+      ],
+      "progress": "0.568",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "life",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "true",
+        "overviewBeat": "LAB-life-nyingchi",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-life-nyingchi:0",
+        "sceneProgress": "1.0000",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:07:10.117Z",
+    "stage": "life-direction-manual",
+    "data": {
+      "caption": "04 / 6 · 环境怎样进入生活 · 走近地区手动观察，讲解已暂停比较地形→ 设施与管护同图进入三地，对照起伏、连续地面与用水条件。南北剖面当前样本约5030米。沿谷与跨山面对不同高差；实际通行还需道路与桥梁。",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "林芝：山地起伏怎样限制连续可用的地面？"
+      ],
+      "progress": "0.811",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "life",
+        "interactionCity": "nyingchi",
+        "interactionManual": "true",
+        "interactionMoisture": "higher",
+        "interactionZoom": "true",
+        "overviewBeat": "LAB-life-nyingchi",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-life-nyingchi:0",
+        "sceneProgress": "1.0000",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:07:10.479Z",
+    "stage": "life-direction-resumed",
+    "data": {
+      "activeWord": "维",
+      "alignment": "recording-word",
+      "caption": "04 / 6 · 环境怎样进入生活 · 走近地区跟随讲述比较地形→ 设施与管护同图进入三地，对照起伏、连续地面与用水条件。实际通行还需要道路、桥梁与维护。",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "林芝：从地形读生活条件"
+      ],
+      "progress": "0.82",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "life",
+        "interactionCity": "nyingchi",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "true",
+        "overviewBeat": "LAB-life-nyingchi",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "LAB-life-nyingchi:0",
+        "sceneProgress": "1.0000",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:07:38.476Z",
+    "stage": "living-lhasa",
+    "data": {
+      "activeWord": "设",
+      "alignment": "recording-word",
+      "caption": "04 / 6 · 环境怎样进入生活 · 走近地区跟随讲述比较地形→ 设施与管护同图进入三地，对照起伏、连续地面与用水条件。不能据此认定街区或可建设地块。",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "拉萨：从地形读生活条件"
+      ],
+      "progress": "0.528",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interaction": "life",
+        "interactionCity": "lhasa",
+        "interactionManual": "false",
+        "interactionMoisture": "higher",
+        "interactionZoom": "true",
+        "overviewBeat": "LAB-life-lhasa",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-life-lhasa:0",
+        "sceneProgress": "1.0000",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:08:09.711Z",
+    "stage": "irrigation-natural",
+    "data": {
+      "activeWord": "次",
+      "alignment": "recording-word",
+      "caption": "04 / 6 · 环境怎样进入生活 · 先看整体跟随讲述比较地形→ 设施与管护狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。次仁桑卓清渠巡护。",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "高原盆地 → 河流、城镇与灌渠"
+      ],
+      "progress": "0.302",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-shiquanhe-irrigation",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-shiquanhe-irrigation:0",
+        "sceneProgress": "0.0000",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:08:20.571Z",
+    "stage": "irrigation-gate-only",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 狮泉河 · 同一地图上的设施与管护\n    - emphasis: 2023年报道 · 现状地图\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 04 / 6 · 环境怎样进入生活 · 走近证据\n    - generic: 手动观察，讲解已暂停\n    - generic \"本章因果顺序\":\n      - generic: 比较地形\n      - generic: → 设施与管护\n      - generic: 狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。\n    - paragraph: 仅开闸不够：设定渠段不通且尚未清理，补水未推进；这是功能假设。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 04 / 6 · 环境怎样进入生活\n    - heading \"自然条件怎样变成城市与日常生活？\" [level=1]\n    - region \"从主线生成观察任务\":\n      - strong: 带着这个问题继续观察\n      - generic: 狮泉河的道路、河岸与公共生活\n      - paragraph: 狮泉河有河流和灌渠，为什么仍需要开闸、清渠与巡护？区分报道中的工作、现状地图和演示补水；实际可达观察点与设施访问条件另行核实。\n      - button \"带入观察计划 · 编辑与保存\"\n      - generic: 携带本段位置与对应资料；保留已有笔记，返回时继续原讲述。\n    - region \"统一观察步骤\":\n      - list:\n        - listitem: 看问题\n        - listitem: 操作比较\n        - listitem: 解释原因\n      - strong: 有河流、有灌渠，为什么还需要人持续工作？\n      - paragraph: 重新对照：仅开闸后推进一次，再完成清渠并推进；最后关闭闸门对照。\n      - generic: 看变化：蓝色通水带与林地补水效果一起变化；停止供水不抹去已完成的补水。\n      - generic \"比较后，核对原因\"\n      - button \"恢复原条件，从暂停处继续\"\n    - strong: 狮泉河 · 设施与持续管护\n    - generic: 2023年报道：伦珠挡水开闸 · 次仁桑卓清渠巡护\n    - group \"检验供水与管护\":\n      - button \"关闭闸门\" [pressed]\n      - button \"完成清渠\"\n      - button \"推进一次供水\" [active]\n      - button \"重新对照\"\n    - status: 尚未补水 · 仅开闸不够：设定渠段不通且尚未清理，补水未推进；这是功能假设。\n    - generic: 蓝色沿真实渠线示意通水；林地色块为补水结果示意，不是实测水量或报道地块。未定位闸口、支渠或灌区；未清渠对照假设渠段不通，非报道故障。\n    - text: 现在看什么\n    - heading \"设施、清渠与实际补水\" [level=2]\n    - paragraph: 仅开闸不够：设定渠段不通且尚未清理，补水未推进；这是功能假设。\n    - paragraph:\n      - generic: 走近证据 · 镜头为什么这样接\n      - text: 通水带与补水效果共同变化，非流量或灌区测量。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 林芝：从地形读生活条件\":\n        - generic: \"1\"\n        - generic: 林芝：从地形读生活条件\n      - button \"2 拉萨：从地形读生活条件\":\n        - generic: \"2\"\n        - generic: 拉萨：从地形读生活条件\n      - button \"3 狮泉河：有灌渠，为什么还需要管护\":\n        - generic: \"3\"\n        - generic: 狮泉河：有灌渠，为什么还需要管护\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"播放完整演示\":\n    - text: 继续完整演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 6:29 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。\n  - text: 本段 3 / 3\n  - slider \"当前讲述进度\": \"0.573\"\n  - generic: 57%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:08:28.791Z",
+    "stage": "irrigation-delivery",
+    "data": {
+      "caption": "04 / 6 · 环境怎样进入生活 · 走近证据手动观察，讲解已暂停比较地形→ 设施与管护狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。闸门打开且已清渠：可推进供水，观察补水结果增加。",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "设施、清渠与实际补水"
+      ],
+      "progress": "0.573",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-shiquanhe-irrigation",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-shiquanhe-irrigation:2",
+        "sceneProgress": "0.0000",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:08:28.837Z",
+    "stage": "irrigation-delivery-state",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 狮泉河 · 同一地图上的设施与管护\n    - emphasis: 2023年报道 · 现状地图\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 04 / 6 · 环境怎样进入生活 · 走近证据\n    - generic: 手动观察，讲解已暂停\n    - generic \"本章因果顺序\":\n      - generic: 比较地形\n      - generic: → 设施与管护\n      - generic: 狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。\n    - paragraph: 闸门打开且已清渠：可推进供水，观察补水结果增加。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 04 / 6 · 环境怎样进入生活\n    - heading \"自然条件怎样变成城市与日常生活？\" [level=1]\n    - region \"从主线生成观察任务\":\n      - strong: 带着这个问题继续观察\n      - generic: 狮泉河的道路、河岸与公共生活\n      - paragraph: 狮泉河有河流和灌渠，为什么仍需要开闸、清渠与巡护？区分报道中的工作、现状地图和演示补水；实际可达观察点与设施访问条件另行核实。\n      - button \"带入观察计划 · 编辑与保存\"\n      - generic: 携带本段位置与对应资料；保留已有笔记，返回时继续原讲述。\n    - region \"统一观察步骤\":\n      - list:\n        - listitem: 看问题\n        - listitem: 操作比较\n        - listitem: 解释原因\n      - strong: 有河流、有灌渠，为什么还需要人持续工作？\n      - paragraph: 重新对照：仅开闸后推进一次，再完成清渠并推进；最后关闭闸门对照。\n      - generic: 看变化：蓝色通水带与林地补水效果一起变化；停止供水不抹去已完成的补水。\n      - generic \"比较后，核对原因\"\n      - button \"恢复原条件，从暂停处继续\"\n    - strong: 狮泉河 · 设施与持续管护\n    - generic: 2023年报道：伦珠挡水开闸 · 次仁桑卓清渠巡护\n    - group \"检验供水与管护\":\n      - button \"关闭闸门\" [pressed]\n      - button \"对照未清渠\" [pressed]\n      - button \"推进一次供水\" [active]\n      - button \"重新对照\"\n    - status: 已完成部分补水 · 闸门打开且已清渠：可推进供水，观察补水结果增加。\n    - generic: 蓝色沿真实渠线示意通水；林地色块为补水结果示意，不是实测水量或报道地块。未定位闸口、支渠或灌区；未清渠对照假设渠段不通，非报道故障。\n    - text: 现在看什么\n    - heading \"设施、清渠与实际补水\" [level=2]\n    - paragraph: 闸门打开且已清渠：可推进供水，观察补水结果增加。\n    - paragraph:\n      - generic: 走近证据 · 镜头为什么这样接\n      - text: 通水带与补水效果共同变化，非流量或灌区测量。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 林芝：从地形读生活条件\":\n        - generic: \"1\"\n        - generic: 林芝：从地形读生活条件\n      - button \"2 拉萨：从地形读生活条件\":\n        - generic: \"2\"\n        - generic: 拉萨：从地形读生活条件\n      - button \"3 狮泉河：有灌渠，为什么还需要管护\":\n        - generic: \"3\"\n        - generic: 狮泉河：有灌渠，为什么还需要管护\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"播放完整演示\":\n    - text: 继续完整演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 6:29 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。\n  - text: 本段 3 / 3\n  - slider \"当前讲述进度\": \"0.573\"\n  - generic: 57%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:08:29.197Z",
+    "stage": "irrigation-closed-retains-delivery",
+    "snapshot": "- main:\n  - button \"西藏探索\":\n    - generic: 西藏探索\n  - paragraph:\n    - text: 完整认识西藏\n    - generic: 六个核心问题 · 从整体到地方\n  - navigation \"总览与深入\":\n    - button \"观察计划\"\n    - button \"项目说明\"\n    - button \"完整演示\"\n    - button \"地图图鉴\"\n    - button \"全部专题\"\n    - button \"探索目录\"\n  - region \"完整认识西藏的连续三维演示\":\n    - img \"可旋转缩放的西藏三维认识场景\"\n    - generic: 当前尺度\n    - strong: 狮泉河 · 同一地图上的设施与管护\n    - emphasis: 2023年报道 · 现状地图\n    - button \"恢复本段观察角度\":\n    - generic: 拖动旋转 · 滚动缩放 · 操作会暂停\n    - generic: 04 / 6 · 环境怎样进入生活 · 走近证据\n    - generic: 手动观察，讲解已暂停\n    - generic \"本章因果顺序\":\n      - generic: 比较地形\n      - generic: → 设施与管护\n      - generic: 狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。\n    - paragraph: 闸门关闭：本次补水停止，已完成的补水保留。\n  - complementary \"当前问题与讲述逻辑\":\n    - paragraph: 04 / 6 · 环境怎样进入生活\n    - heading \"自然条件怎样变成城市与日常生活？\" [level=1]\n    - region \"从主线生成观察任务\":\n      - strong: 带着这个问题继续观察\n      - generic: 狮泉河的道路、河岸与公共生活\n      - paragraph: 狮泉河有河流和灌渠，为什么仍需要开闸、清渠与巡护？区分报道中的工作、现状地图和演示补水；实际可达观察点与设施访问条件另行核实。\n      - button \"带入观察计划 · 编辑与保存\"\n      - generic: 携带本段位置与对应资料；保留已有笔记，返回时继续原讲述。\n    - region \"统一观察步骤\":\n      - list:\n        - listitem: 看问题\n        - listitem: 操作比较\n        - listitem: 解释原因\n      - strong: 有河流、有灌渠，为什么还需要人持续工作？\n      - paragraph: 重新对照：仅开闸后推进一次，再完成清渠并推进；最后关闭闸门对照。\n      - generic: 看变化：蓝色通水带与林地补水效果一起变化；停止供水不抹去已完成的补水。\n      - generic \"比较后，核对原因\"\n      - button \"恢复原条件，从暂停处继续\"\n    - strong: 狮泉河 · 设施与持续管护\n    - generic: 2023年报道：伦珠挡水开闸 · 次仁桑卓清渠巡护\n    - group \"检验供水与管护\":\n      - button \"打开闸门\" [active]\n      - button \"对照未清渠\" [pressed]\n      - button \"推进一次供水\"\n      - button \"重新对照\"\n    - status: 已完成部分补水 · 闸门关闭：本次补水停止，已完成的补水保留。\n    - generic: 蓝色沿真实渠线示意通水；林地色块为补水结果示意，不是实测水量或报道地块。未定位闸口、支渠或灌区；未清渠对照假设渠段不通，非报道故障。\n    - text: 现在看什么\n    - heading \"设施、清渠与实际补水\" [level=2]\n    - paragraph: 闸门关闭：本次补水停止，已完成的补水保留。\n    - paragraph:\n      - generic: 走近证据 · 镜头为什么这样接\n      - text: 通水带与补水效果共同变化，非流量或灌区测量。\n    - navigation \"本章相邻讲述顺序\":\n      - button \"1 林芝：从地形读生活条件\":\n        - generic: \"1\"\n        - generic: 林芝：从地形读生活条件\n      - button \"2 拉萨：从地形读生活条件\":\n        - generic: \"2\"\n        - generic: 拉萨：从地形读生活条件\n      - button \"3 狮泉河：有灌渠，为什么还需要管护\":\n        - generic: \"3\"\n        - generic: 狮泉河：有灌渠，为什么还需要管护\n    - generic \"这一章要建立的认识\"\n    - generic \"理解检查：我能解释变化和原因吗？\"\n    - text: 接下来追问\n    - paragraph: 地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。\n    - generic \"本段资料与讲解全文\":\n      - text: 本段资料与讲解全文\n    - generic \"主线之外，选择延伸阅读\"\n    - generic \"主线内容如何取舍\"\n    - button \"暂停后深入这个问题\":\n      - text: 暂停后深入这个问题\n  - button \"播放完整演示\":\n    - text: 继续完整演示\n  - button \"重听当前段\":\n  - button \"关闭讲解声音\" [pressed]:\n  - generic: 6:29 / 11:41自动衔接下一段\n  - button \"上一段\":\n  - button \"下一段\":\n  - paragraph:\n    - generic: 下一段为什么接在这里\n    - text: 地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。\n  - text: 本段 3 / 3\n  - slider \"当前讲述进度\": \"0.573\"\n  - generic: 57%\n  - navigation \"完整演示的六个核心问题\":\n    - button \"01 地球上的西藏\":\n      - generic: \"01\"\n      - generic: 地球上的西藏\n    - button \"02 空气遇到高原\":\n      - generic: \"02\"\n      - generic: 空气遇到高原\n    - button \"03 同在西藏，为何不同\":\n      - generic: \"03\"\n      - generic: 同在西藏，为何不同\n    - button \"04 环境怎样进入生活\":\n      - generic: \"04\"\n      - generic: 环境怎样进入生活\n    - button \"05 人怎样塑造地方\":\n      - generic: \"05\"\n      - generic: 人怎样塑造地方\n    - button \"06 今天怎样联系与观察\":\n      - generic: \"06\"\n      - generic: 今天怎样联系与观察"
+  },
+  {
+    "at": "2026-10-18T13:08:29.587Z",
+    "stage": "irrigation-resumed",
+    "data": {
+      "activeWord": "地",
+      "alignment": "recording-word",
+      "caption": "04 / 6 · 环境怎样进入生活 · 走近证据跟随讲述比较地形→ 设施与管护狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。林地获得补水。",
+      "headings": [
+        "自然条件怎样变成城市与日常生活？",
+        "设施与管护共同让补水发生"
+      ],
+      "progress": "0.582",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-shiquanhe-irrigation",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-shiquanhe-irrigation:2",
+        "sceneProgress": "0.0000",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:08:57.602Z",
+    "stage": "history-formation",
+    "data": {
+      "activeWord": "动",
+      "alignment": "recording-word",
+      "caption": "05 / 6 · 人怎样塑造地方 · 建立来路跟随讲述怎样形成→ 怎样延续从营建、用途和跨地区交流认识地方，避免把地形当作文化成因。是宗教活动的场所；",
+      "headings": [
+        "人的行动怎样形成地方历史与文化？",
+        "大昭寺：营建承载宗教活动"
+      ],
+      "progress": "0.256",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-history-origins",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-history-origins:1",
+        "sceneProgress": "0.4250",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:09:22.082Z",
+    "stage": "history-exchange-return",
+    "data": {
+      "activeWord": "西藏",
+      "alignment": "recording-word",
+      "caption": "05 / 6 · 人怎样塑造地方 · 回到整体跟随讲述怎样形成→ 怎样延续从营建、用途和跨地区交流认识地方，避免把地形当作文化成因。也不代表全部西藏的历史。",
+      "headings": [
+        "人的行动怎样形成地方历史与文化？",
+        "形成以后，怎样持续进入生活？"
+      ],
+      "progress": "0.783",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-history-origins",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-history-origins:3",
+        "sceneProgress": "0.5527",
+        "shotPhase": "return"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:09:45.756Z",
+    "stage": "jokhang-protection-natural",
+    "data": {
+      "activeWord": "有",
+      "alignment": "recording-word",
+      "caption": "05 / 6 · 人怎样塑造地方 · 走近证据跟随讲述怎样形成→ 怎样延续用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。先看原有关系：供灯与木构在一起。",
+      "headings": [
+        "人的行动怎样形成地方历史与文化？",
+        "调整前的关系：供灯与木构共处"
+      ],
+      "progress": "0.349",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-jokhang-protection",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-jokhang-protection:1",
+        "sceneProgress": "0.4556",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:09:56.426Z",
+    "stage": "protection-before",
+    "data": {
+      "caption": "05 / 6 · 人怎样塑造地方 · 走近证据手动观察，讲解已暂停怎样形成→ 怎样延续用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。对照活动原有关系：木构与供灯放在一起阅读，不表示这些符号就是历史灯位。",
+      "headings": [
+        "人的行动怎样形成地方历史与文化？",
+        "对照活动怎样使用空间"
+      ],
+      "progress": "0.62",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-jokhang-protection",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-jokhang-protection:2",
+        "sceneProgress": "0.4556",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:09:56.864Z",
+    "stage": "protection-separated",
+    "data": {
+      "caption": "05 / 6 · 人怎样塑造地方 · 走近证据手动观察，讲解已暂停怎样形成→ 怎样延续用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。多数供灯转至寺前，供灯继续；火源与木构分开。寺前仅示方向。",
+      "headings": [
+        "人的行动怎样形成地方历史与文化？",
+        "对照活动怎样使用空间"
+      ],
+      "progress": "0.62",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-jokhang-protection",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-jokhang-protection:2",
+        "sceneProgress": "0.4556",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:09:57.326Z",
+    "stage": "protection-resumed",
+    "data": {
+      "activeWord": "可",
+      "alignment": "recording-word",
+      "caption": "05 / 6 · 人怎样塑造地方 · 走近证据跟随讲述怎样形成→ 怎样延续用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。你可以来回对照：保留了什么，",
+      "headings": [
+        "人的行动怎样形成地方历史与文化？",
+        "报告记录的调整：多数供灯转至寺前"
+      ],
+      "progress": "0.628",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-jokhang-protection",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-jokhang-protection:2",
+        "sceneProgress": "0.4556",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:10:28.321Z",
+    "stage": "history-to-transport",
+    "data": {
+      "activeWord": "车",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体新连接进入已有城市；设施、服务与人的组织要分开理解。看车辆停在南岸的接桥位置。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "只拿掉这座桥，看看接续断在哪里"
+      ],
+      "progress": "0.329",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-city-change",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-city-change-core:2",
+        "sceneProgress": "0.5178",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:10:36.932Z",
+    "stage": "bridge-off",
+    "data": {
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路手动观察，讲解已暂停怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体新连接进入已有城市；设施、服务与人的组织要分开理解。只移除柳梧大桥：车辆停在南岸接桥处。其他现状地物保留；这不表示2007年前无其他过河方式。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "这一条连接缺失时"
+      ],
+      "progress": "0.496",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-city-change",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-city-change-core:3",
+        "sceneProgress": "0.5178",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:10:37.463Z",
+    "stage": "bridge-on",
+    "data": {
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路手动观察，讲解已暂停怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体新连接进入已有城市；设施、服务与人的组织要分开理解。新桥接回：车辆已能越过拉萨河，进入北岸道路。连接仍需车辆和组织才能成为服务。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "新连接接通两岸"
+      ],
+      "progress": "0.496",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-city-change",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-city-change-core:3",
+        "sceneProgress": "0.5178",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:10:37.979Z",
+    "stage": "bridge-resumed",
+    "data": {
+      "activeWord": "车",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体新连接进入已有城市；设施、服务与人的组织要分开理解。柳梧大桥通车。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "2007 · 新桥把两岸直接接上"
+      ],
+      "progress": "0.503",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-city-change",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-city-change-core:3",
+        "sceneProgress": "0.5178",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:11:11.123Z",
+    "stage": "regional-connections",
+    "data": {
+      "activeWord": "系",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体先比较不同地区获得的抵达方式。联系拉萨、山南与林芝。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "东南部 · 拉萨—山南—林芝"
+      ],
+      "progress": "0.243",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-regional-connections",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-regional-connections-core:1",
+        "sceneProgress": "0.7293",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:11:41.008Z",
+    "stage": "valley-entry",
+    "data": {
+      "activeWord": "些",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 先看整体跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体沿真实线路读穿山、跨河与站区。看这些条件怎样联系起来。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "沿河谷理解：铁路怎样接入城市生活"
+      ],
+      "progress": "0.075",
+      "scene": {
+        "groundActive": "true",
+        "groundHeight": "2000",
+        "groundManual": "false",
+        "groundProgress": "0",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-valley-journey",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-valley-journey:0",
+        "sceneProgress": "0.0746",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:12:12.445Z",
+    "stage": "rail-ground-natural",
+    "data": {
+      "activeWord": "能",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 走近证据跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体沿真实线路读穿山、跨河与站区。不能据此判断地下深度。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "沿河谷理解：铁路怎样接入城市生活"
+      ],
+      "progress": "0.536",
+      "scene": {
+        "groundActive": "true",
+        "groundHeight": "900",
+        "groundManual": "false",
+        "groundProgress": "1",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-valley-journey",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-valley-journey:4",
+        "sceneProgress": "0.5359",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:12:12.923Z",
+    "stage": "rail-manual-crossing",
+    "data": {
+      "caption": "06 / 6 · 今天怎样联系与观察 · 沿线观察手动观察，讲解已暂停怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体沿真实线路读穿山、跨河与站区。这里是源数据标记的桥段；比较铁路与河流的交叉位置。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "沿河谷理解：铁路怎样接入城市生活"
+      ],
+      "progress": "0.541",
+      "scene": {
+        "groundActive": "true",
+        "groundHeight": "1100",
+        "groundManual": "true",
+        "groundProgress": "0.43398630877109345",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-valley-journey",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-valley-journey:4",
+        "sceneProgress": "0.5406",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:12:18.583Z",
+    "stage": "rail-advance",
+    "data": {
+      "caption": "06 / 6 · 今天怎样联系与观察 · 沿线观察手动观察，讲解已暂停怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体沿真实线路读穿山、跨河与站区。沿真实线路前后比较：山体、河流和街区怎样改变视野？",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "沿河谷理解：铁路怎样接入城市生活"
+      ],
+      "progress": "0.541",
+      "scene": {
+        "groundActive": "true",
+        "groundHeight": "1100",
+        "groundManual": "true",
+        "groundProgress": "0.497920662296759",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-valley-journey",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-valley-journey:4",
+        "sceneProgress": "0.5406",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:12:19.015Z",
+    "stage": "rail-resumed",
+    "data": {
+      "activeWord": "此",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 走近证据跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体沿真实线路读穿山、跨河与站区。不能据此判断地下深度。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "沿河谷理解：铁路怎样接入城市生活"
+      ],
+      "progress": "0.543",
+      "scene": {
+        "groundActive": "true",
+        "groundHeight": "900",
+        "groundManual": "false",
+        "groundProgress": "1",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-valley-journey",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-valley-journey:4",
+        "sceneProgress": "0.5426",
+        "shotPhase": "evidence"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:12:48.875Z",
+    "stage": "rail-return",
+    "data": {
+      "activeWord": "系",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 回到整体跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体沿真实线路读穿山、跨河与站区。接下来再看这些联系的共同维护。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "沿河谷理解：铁路怎样接入城市生活"
+      ],
+      "progress": "0.981",
+      "scene": {
+        "groundActive": "true",
+        "groundHeight": "1600",
+        "groundManual": "false",
+        "groundProgress": "1",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-valley-journey",
+        "overviewScene": "atlas-local-context",
+        "overviewShot": "OVERVIEW-valley-journey:7",
+        "sceneProgress": "0.9806",
+        "shotPhase": "return"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:13:15.756Z",
+    "stage": "observation-entry",
+    "data": {
+      "activeWord": "先",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 先看整体跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体把同一组问题用于其他地区，再回顾整条认识。先在全图选地方，",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "先有问题，再选地方"
+      ],
+      "progress": "0.061",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-conclusion",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-observation-close:0",
+        "sceneProgress": "0.0240",
+        "shotPhase": "whole"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:13:27.107Z",
+    "stage": "plan-origin-paused",
+    "data": {
+      "activeWord": "生",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路已暂停怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体把同一组问题用于其他地区，再回顾整条认识。对照河谷空间、历史用途和今天生活；",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "比较环境与地方使用"
+      ],
+      "progress": "0.344",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-conclusion",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-observation-close:2",
+        "sceneProgress": "0.5446",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:13:44.346Z",
+    "stage": "plan-saved",
+    "snapshot": "- main:\n  - link \"西藏探索\":\n    - /url: \"#/overview\"\n  - generic: 把主线认识带回地方\n  - heading \"我的观察计划\" [level=1]\n  - paragraph: 沿用已有候选地点与笔记。这是观察和研读计划，交通、开放与实际可达位置仍需按日期核实。\n  - button \"保存计划\" [active]\n  - button \"保存并回到原讲述\"\n  - status: 已保存到当前浏览器，可刷新后继续。\n  - heading \"这次继续观察：拉萨河谷与城市用水\" [level=2]\n  - region \"从主线带来的问题和资料\":\n    - paragraph:\n      - strong: 来自主线 · 带着变化和原因，回到地方观察\n    - paragraph: 沿拉萨河谷观察：山体、河流、铁路与站区怎样相互制约？到站后怎样接入城市？把地图所见、资料所述与待核实的实际接驳分开记录。\n    - generic \"本次带来的资料 · 3项\"\n    - link \"回到原讲述 · 34%\":\n      - /url: \"#/overview?returnStop=lhasa-river\"\n  - text: 我的观察问题与待核实事项\n  - textbox \"我的观察问题与待核实事项\": 沿拉萨河谷观察：山体、河流、铁路与站区怎样相互制约？到站后怎样接入城市？把地图所见、资料所述与待核实的实际接驳分开记录。 我的下一步：核对拉萨站到城区的实际接驳；记录跨河位置与公共可达的观察点。 [本轮验收临时记录] 核对铁路跨河、站区与城市接续；验证后恢复原笔记。\n  - generic: 原有笔记保留；上方主线问题和资料单独保存，不覆盖你的文字。\n  - generic \"编辑候选顺序、日期与交通 / 导出完整计划\"\n  - option \"尚未确定\" [selected]\n  - option \"公共交通\"\n  - option \"包车或自驾\"\n  - option \"混合交通\"\n  - option \"仍待确认\" [selected]\n  - option \"本人记录：该日可用\"\n  - option \"本人记录：该日不可用\"\n  - option \"仍待确认\" [selected]\n  - option \"本人记录：该日可用\"\n  - option \"本人记录：该日不可用\""
+  },
+  {
+    "at": "2026-10-18T13:13:52.472Z",
+    "stage": "plan-real-reload",
+    "noteMatches": true,
+    "snapshot": "- main:\n  - link \"西藏探索\":\n    - /url: \"#/overview\"\n  - generic: 把主线认识带回地方\n  - heading \"我的观察计划\" [level=1]\n  - paragraph: 沿用已有候选地点与笔记。这是观察和研读计划，交通、开放与实际可达位置仍需按日期核实。\n  - button \"保存计划\"\n  - button \"保存并回到原讲述\"\n  - status: 已保存到当前浏览器，可刷新后继续。\n  - heading \"这次继续观察：拉萨河谷与城市用水\" [level=2]\n  - region \"从主线带来的问题和资料\":\n    - paragraph:\n      - strong: 来自主线 · 带着变化和原因，回到地方观察\n    - paragraph: 沿拉萨河谷观察：山体、河流、铁路与站区怎样相互制约？到站后怎样接入城市？把地图所见、资料所述与待核实的实际接驳分开记录。\n    - generic \"本次带来的资料 · 3项\"\n    - link \"回到原讲述 · 34%\":\n      - /url: \"#/overview?returnStop=lhasa-river\"\n  - text: 我的观察问题与待核实事项\n  - textbox \"我的观察问题与待核实事项\": 沿拉萨河谷观察：山体、河流、铁路与站区怎样相互制约？到站后怎样接入城市？把地图所见、资料所述与待核实的实际接驳分开记录。 我的下一步：核对拉萨站到城区的实际接驳；记录跨河位置与公共可达的观察点。 [本轮验收临时记录] 核对铁路跨河、站区与城市接续；验证后恢复原笔记。\n  - generic: 原有笔记保留；上方主线问题和资料单独保存，不覆盖你的文字。\n  - generic \"编辑候选顺序、日期与交通 / 导出完整计划\"\n  - option \"尚未确定\" [selected]\n  - option \"公共交通\"\n  - option \"包车或自驾\"\n  - option \"混合交通\"\n  - option \"仍待确认\" [selected]\n  - option \"本人记录：该日可用\"\n  - option \"本人记录：该日不可用\"\n  - option \"仍待确认\" [selected]\n  - option \"本人记录：该日可用\"\n  - option \"本人记录：该日不可用\""
+  },
+  {
+    "at": "2026-10-18T13:13:59.010Z",
+    "stage": "plan-return",
+    "data": {
+      "activeWord": "生",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路已暂停怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体把同一组问题用于其他地区，再回顾整条认识。对照河谷空间、历史用途和今天生活；",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "比较环境与地方使用"
+      ],
+      "progress": "0.344",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-conclusion",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-observation-close:2",
+        "sceneProgress": "0.5448",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:13:59.479Z",
+    "stage": "plan-return-resumed",
+    "data": {
+      "activeWord": "生",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 建立来路跟随讲述怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体把同一组问题用于其他地区，再回顾整条认识。对照河谷空间、历史用途和今天生活；",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "比较环境与地方使用"
+      ],
+      "progress": "0.344",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-conclusion",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-observation-close:2",
+        "sceneProgress": "0.5448",
+        "shotPhase": "context"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:14:26.989Z",
+    "stage": "natural-completion",
+    "data": {
+      "activeWord": "。",
+      "alignment": "recording-word",
+      "caption": "06 / 6 · 今天怎样联系与观察 · 回到整体完整演示结束怎样改变→ 地区联系→ 实际地形→ 维护与使用→ 带回整体把同一组问题用于其他地区，再回顾整条认识。或保存你的观察路线。",
+      "headings": [
+        "现代联系改变了什么，我们该怎样观察？",
+        "回到整体解释异同"
+      ],
+      "progress": "1",
+      "scene": {
+        "groundActive": "false",
+        "groundManual": "false",
+        "interactionManual": "false",
+        "overviewBeat": "OVERVIEW-conclusion",
+        "overviewScene": "atlas-overview",
+        "overviewShot": "OVERVIEW-observation-close:5",
+        "sceneProgress": "1.0000",
+        "shotPhase": "return"
+      }
+    }
+  },
+  {
+    "at": "2026-10-18T13:15:03.445Z",
+    "stage": "original-note-restored",
+    "noteMatches": true
+  }
+]

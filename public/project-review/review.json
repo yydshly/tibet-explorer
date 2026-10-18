@@ -1,8 +1,8 @@
 {
   "date": "2026-10-18",
-  "type": "主线修复与程序层收口检查（非浏览器实播/用户理解验收）",
-  "verdict": "R1历史衔接、R2统一基线已关闭；R3程序层检查完成，真实浏览器实播仍受限制。六章21段/701.424秒保持不变，不宣称整体验收通过。",
-  "changesThisRun": "修正历史形成说明及地理说明覆盖层；修正局部替换测试、增加独立主线基线与播放/操作/计划检查。无模型、镜头或录音变动。",
+  "type": "主线浏览器实播与操作收口记录",
+  "verdict": "可冻结本版主线功能；浏览器访问、操作恢复和计划保存返回的验证缺口已补。R3可运行与可见对应部分完成；系统声音听审及正式理解验收保持未完成，不宣称完整体验全部验收通过。",
+  "changesThisRun": "原浏览器接口现已可访问。完成一次首页到自然结束的实播与关键操作检查；只更新验收记录，无产品内容、模型、镜头、音频或时长变动。",
   "baselineCounts": {
     "chapters": 6,
     "beats": 21,
@@ -19,7 +19,7 @@
     "files": 16,
     "typecheck": "passed",
     "build": "passed",
-    "scope": "真实播放器控制器/组件回调/资料与原生词时间；媒体、React调度、存储与location使用替身。全21段顺序检查是程序执行，不是真实11:41播放。",
+    "scope": "真实播放器控制器/组件回调/资料与原生词时间；媒体、React调度、存储与location使用替身。全21段顺序检查是程序执行，不是真实11:41播放。 这是上一轮程序检查，本轮没有把86项重新运行或充当浏览器证据。",
     "failedDetails": [],
     "buildWarning": "既有运行时约709kB的大块提示仍在；本轮未扩展性能专项。"
   },
@@ -40,7 +40,7 @@
         "src/scene/earthOrientation.ts",
         "src/hooks/useOverviewDirector.ts"
       ],
-      "limit": "代码与原生词位对应已核对；本次无视觉指认或实播证据。",
+      "limit": "本轮已见完整地球与亚洲/国家/自治区范围、逐词字幕和自然衔接；未新增观看者指认或复述证据。",
       "title": "地球上的西藏",
       "seconds": 44.028,
       "beatIds": [
@@ -66,7 +66,7 @@
         "tests/air-chain-continuity.test.ts",
         "tests/rotation-flow.test.ts"
       ],
-      "limit": "用户此前“看起来不错”为整体观感；不能补写其具体操作或原因复述。本次自动检查不评价云的专业观感。",
+      "limit": "实际检查自转与水汽对照、原句恢复、来流→形成→高程→云雨过渡；系统音频听感未验证。",
       "title": "空气遇到高原",
       "seconds": 171.324,
       "beatIds": [
@@ -94,7 +94,7 @@
         "src/lib/overviewInteraction.ts",
         "tests/climate-observations.test.js"
       ],
-      "limit": "已核对代码及本地归档入口；未重新验证全部外部源站，也未检查当前浏览器柱形可读性。",
+      "limit": "实际看到七月/一月同图读数，切月恢复原月份与原句；未再次核验外部统计源站。",
       "title": "同在西藏，为何不同",
       "seconds": 76.752,
       "beatIds": [
@@ -121,7 +121,7 @@
         "tests/overviewIrrigation.test.ts",
         "tests/overviewManualComparison.test.tsx"
       ],
-      "limit": "灌溉方向、水量、作业地块等未知项已标示；不能为更真实而猜测补齐。",
+      "limit": "真实浏览器完成方向对照及开闸/清渠/补水/关闸恢复；整体视图里的局部细节仍可更清晰，未扩大本轮范围。",
       "title": "环境怎样进入生活",
       "seconds": 112.644,
       "beatIds": [
@@ -148,7 +148,7 @@
         "public/data/jokhang-protection-evidence.json",
         "tests/overviewPlaceActions.test.ts"
       ],
-      "limit": "基础说明与实际覆盖层已统一；实际浏览器画面与理解验收仍不作通过结论。",
+      "limit": "实际看到形成→保护→交通自然衔接及供灯空间对照/恢复；不把现状模型当历史复原，未完成首次观看者理解验证。",
       "title": "人怎样塑造地方",
       "seconds": 85.068,
       "beatIds": [
@@ -177,7 +177,7 @@
         "src/components/ObservationPlanPage.tsx",
         "tests/overviewObservation.test.ts"
       ],
-      "limit": "本次代码与媒体替身检查支持返回逻辑；没有本轮真实浏览器保存/刷新/返回证据。",
+      "limit": "完整播放经过地区联系、真实河谷与观察收束；沿线操作恢复，计划保存/reload/返回原句已实际通过。声音输出听审仍未完成。",
       "title": "今天怎样联系与观察",
       "seconds": 211.608,
       "beatIds": [
@@ -248,12 +248,14 @@
         "tests/overviewDirector.test.js",
         "tests/overviewManualComparison.test.tsx",
         "tests/observationPlanFlow.test.tsx",
-        "tests/overviewObservation.test.ts"
+        "tests/overviewObservation.test.ts",
+        "qa/mainline-closeout-20261018/browser/report.json",
+        "qa/mainline-closeout-20261018/browser/playback-evidence.json"
       ],
       "action": "在可用且允许的浏览器环境中，由助手一次从首页完整走完主线；覆盖气流/水汽、灌溉、供灯、桥梁四类比较与一个计划保存刷新返回。已有控制限制不绕过，不要求本用户逐项陪测。",
       "done": "六章无阻断加载/音画错段；四类比较恢复原处；计划保存刷新返回成功。只修复本次明确失败项并定向复查，停止再次整场美容循环。",
-      "status": "partial_automated_verified_browser_blocked",
-      "resolution": "已执行完整21段播放器顺序、每段暂停/恢复和自然结束控制检查；自转/水汽/灌溉/供灯/桥梁/沿线操作恢复检查；计划编辑、保存、组件重新挂载读取、返回哈希/原位置数据保留、保存失败不离开检查通过。仍无真实浏览器完整播放、听感或刷新返回证据。"
+      "status": "browser_functional_verified_audio_listening_pending",
+      "resolution": "可冻结本版主线功能；浏览器访问、操作恢复和计划保存返回的验证缺口已补。R3可运行与可见对应部分完成；系统声音听审及正式理解验收保持未完成，不宣称完整体验全部验收通过。 详见 browser-verification.json 与本轮截图/DOM记录。"
     }
   ],
   "later": [
@@ -284,19 +286,20 @@
   "closure": {
     "frozenScope": "六章、21段、701.424秒；除事实纠错或明确阻断，不新增主线录音/模型/案例。",
     "sequence": [
-      "R1/R2已关闭，停止扩充主线内容。",
-      "在允许且可用的浏览器环境下，仅完成R3当前版本完整播放及保存返回检查。",
-      "只处理被记录的阻断、事实/示意误导、明显错段和返回失败，并定向复查。",
-      "R3关闭后冻结可用V1；正式理解验收仍独立按原协议，不以自动检查代替。"
+      "R1/R2已关闭；R3浏览器可运行、可见对应、操作恢复与保存返回已检查。",
+      "冻结当前六章21段主线，不继续重复播放美容。",
+      "系统声音听审及正式首次观看者理解验收仍为独立未完成项，不能以本轮浏览器检查替代。",
+      "只在有具体故障、事实错误或真实理解证据时重开对应问题。"
     ],
-    "stopRule": "不存在R1/R2未处理项且R3完成，无新的已证实阻断；“还能更漂亮”不重新开启主线。",
+    "stopRule": "本版功能检查未见新的阻断，可冻结可用V1；完整体验验收仍保留声音听审与理解证据边界。",
     "comprehension": "正式首次观看者理解验收仍为0/3，沿用已有协议，未作通过或降级结论。本用户主观认可单独保留，不要求其继续逐项陪测，也不能用代码通过代替理解。"
   },
   "limits": [
-    "浏览器自动操作受到此前URL安全限制，本次未重试或绕过。",
-    "未使用旧截图当作当前证据；不声称完成新的视觉/无障碍评审。",
-    "本次核对了原文与本地证据边界、来源入口及关键实现，未重新在线验证每个外部事实或最新出行条件。",
-    "本次只修R1/R2并完成R3能执行的程序层检查；没有浏览器操作，也没有把用户主观好评当作理解验收。"
+    "正式首次观看者仍0/3，本轮是助手检查，不替代理解证据。",
+    "没有新增内容、模型、音频或时长；没有重新核验全部外部事实与实时交通。",
+    "低分辨率地区概览和部分桥梁/地形标记在整体画面中仍偏小；本轮未见它们阻断播放或返回，列后续可读性工作，不开启新的模型打磨。",
+    "本轮截图横向空间随应用面板从1280×720变化至845×871，未进行手机专项。",
+    "工具没有系统声音回录/监听能力。本轮未听审扬声器输出、发音、响度或全程主观口型式同步；不能把可见时钟对应写成逐句听感验收。"
   ],
   "auditBaseline": "952b83a",
   "baseline": "V1-main-20261018.1",
@@ -319,5 +322,88 @@
         "title": "mainline documented protection case replaces the generic practice clip without extending the show, retaining the original in depth"
       }
     ]
+  },
+  "browserVerification": {
+    "date": "2026-10-18",
+    "baseline": "V1-main-20261018.1",
+    "testedCommit": "7f11896",
+    "scope": "当前真实浏览器六章自然播放、关键比较恢复、计划保存/刷新/返回；非逐帧录屏、非系统声音听审或首次观看者理解验收。",
+    "access": {
+      "status": "available",
+      "method": "原有 cua 浏览器接口、原URL http://127.0.0.1:5176/#/overview",
+      "details": "重新读取工具文档和清单后，原接口正常取得页面。没有改安全配置、端口或传输方式；未查明先前拒绝为什么消失，不能声称修复了安全策略。"
+    },
+    "playback": {
+      "start": "2026-10-18T13:01:34.524Z",
+      "end": "2026-10-18T13:14:26.989Z",
+      "chapters": 6,
+      "beats": 21,
+      "programmeSeconds": 701.424,
+      "observations": 55,
+      "ended": true,
+      "automaticLoop": false,
+      "method": "从首页进入第一章，点击开始；章节自然衔接，期间只进行原地比较/恢复及计划往返，没有用章节跳转或主进度快进代替整场播放。截图和DOM为离散观察，未连续记录每一帧。"
+    },
+    "synchronization": {
+      "status": "browser_media_clock_and_visible_scene_checked",
+      "observed": "播放期间字幕为 recording-word，活动词、说明、标注和演示阶段相应推进；操作暂停字幕，恢复回到原句。已结合实际播放器以 audio.currentTime 驱动的实现核查。",
+      "limit": "工具没有系统声音回录/监听能力。本轮未听审扬声器输出、发音、响度或全程主观口型式同步；不能把可见时钟对应写成逐句听感验收。"
+    },
+    "operations": [
+      {
+        "id": "rotation",
+        "result": "passed",
+        "detail": "同进度去掉/加入自转项；讲述暂停在0.213，恢复约0.218，原地球纬圈阶段恢复。"
+      },
+      {
+        "id": "moisture",
+        "result": "passed",
+        "detail": "气团位置0.85保持相同，较多/较少水汽的云雨与对照表改变；主进度0.745不动，恢复较多水汽并继续。"
+      },
+      {
+        "id": "month",
+        "result": "passed",
+        "detail": "冬季讲述中改七月；数值改变，恢复一月与原句，主进度0.413→0.425。"
+      },
+      {
+        "id": "life-section",
+        "result": "passed",
+        "detail": "林芝东西→南北剖面，样本3780→5030米；恢复东西剖面与原句，0.811→0.820。读数是当前样本，不是城市海拔。"
+      },
+      {
+        "id": "irrigation",
+        "result": "passed",
+        "detail": "重新对照；仅开闸推进无补水，清渠后可补水，关闸保留已完成部分；原句0.573→0.582恢复。"
+      },
+      {
+        "id": "protection",
+        "result": "passed",
+        "detail": "原有供灯关系/空间分开在同图改变灯光位置与解释；主进度0.620不变，恢复原保护段。"
+      },
+      {
+        "id": "bridge",
+        "result": "passed",
+        "detail": "拿掉/接回桥改变桥面和接续状态；恢复原段0.496→0.503。截图未连续跟踪每一辆车。"
+      },
+      {
+        "id": "rail",
+        "result": "passed",
+        "detail": "跨河节点3.39公里→前进500米到3.89公里；恢复原隧道讲述，原进度0.541→0.543。"
+      },
+      {
+        "id": "plan",
+        "result": "passed",
+        "detail": "末章0.344带入拉萨观察问题和3项资料；添加临时笔记、保存、真实reload后逐字一致。恢复原笔记后保存返回，仍为原段0.344、同一句/活动字，继续至自然结束。随后重进计划确认原笔记已恢复。"
+      }
+    ],
+    "browserWarningsAndErrors": [],
+    "conclusion": "可冻结本版主线功能；浏览器访问、操作恢复和计划保存返回的验证缺口已补。R3可运行与可见对应部分完成；系统声音听审及正式理解验收保持未完成，不宣称完整体验全部验收通过。",
+    "limits": [
+      "正式首次观看者仍0/3，本轮是助手检查，不替代理解证据。",
+      "没有新增内容、模型、音频或时长；没有重新核验全部外部事实与实时交通。",
+      "低分辨率地区概览和部分桥梁/地形标记在整体画面中仍偏小；本轮未见它们阻断播放或返回，列后续可读性工作，不开启新的模型打磨。",
+      "本轮截图横向空间随应用面板从1280×720变化至845×871，未进行手机专项。"
+    ],
+    "evidence": "qa/mainline-closeout-20261018/browser/playback-evidence.json"
   }
 }

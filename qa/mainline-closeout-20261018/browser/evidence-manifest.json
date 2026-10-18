@@ -1,0 +1,150 @@
+[
+  {
+    "name": "01-location.jpg",
+    "sha256": "f6a97e0e5973f7f85cf59cfa50d1b017385c95374842c60438714e9babe91465"
+  },
+  {
+    "name": "02-asia-to-plateau.jpg",
+    "sha256": "208105cb6763d35fcea1196a3e51df6d5050b71e0a832bd65d9ab7e6ffe01fb0"
+  },
+  {
+    "name": "02-cloud-natural.jpg",
+    "sha256": "8ace59e0f577598fc057353fa992f5173d78e7f9804ce7c6f4907f76cb046e51"
+  },
+  {
+    "name": "02-formation-model.jpg",
+    "sha256": "2a7f6806e9f130c4520e37e29f66bffc7839cc54a3331e7fa777d8ee51054b75"
+  },
+  {
+    "name": "02-heating.jpg",
+    "sha256": "f0e24d98e90a514adf8acecd236d2322c052a1e4fbca80c76b6f459e3b65a0da"
+  },
+  {
+    "name": "02-moisture-high.jpg",
+    "sha256": "931608d460945da06204833449287cdf5eae4d10765d0d09b7793c872ea8ae86"
+  },
+  {
+    "name": "02-moisture-low.jpg",
+    "sha256": "9d7de40bbc6805c3b34f36464cff3c41ced46ef39028c7b30d9b4330e07d9651"
+  },
+  {
+    "name": "02-plateau-formation.jpg",
+    "sha256": "815aa7865ec7a0f15c429942ffd2a96d2c338d6cbfcf199ad93ac3361246e466"
+  },
+  {
+    "name": "02-real-elevation.jpg",
+    "sha256": "25f6e06bce73e2d0c97806fd0c7aaa33d91223b8fe612ca75a74c194883e2854"
+  },
+  {
+    "name": "02-rotation-off.jpg",
+    "sha256": "273a420cf691acc48e161694611e20a4bafab91b46eefe2d44857e56cd3e43f0"
+  },
+  {
+    "name": "02-rotation-on.jpg",
+    "sha256": "4a8334d1593acf24d3c8b284e07a7d6b9a65f3476460e400167f3ca2d702959c"
+  },
+  {
+    "name": "03-seven-regions.jpg",
+    "sha256": "4b0b0bc85b0ad4ba3a5808ba0357c4751e87962a67ddbecd2d7218755bf7e4d9"
+  },
+  {
+    "name": "03-stations-january.jpg",
+    "sha256": "ceae3aeb15cdb6839458323e2a8f0e60f3a026e5f6d1e269268f4607184127bf"
+  },
+  {
+    "name": "03-stations-july.jpg",
+    "sha256": "9ac66901c7172a8c2b8b268c91effb88ce93afda0124323add541b30b9c264ed"
+  },
+  {
+    "name": "04-irrigation-delivery.jpg",
+    "sha256": "a8147017bb7c2260476679eddb2c293b3d7b3ab73aab461b5071c88c2d784daa"
+  },
+  {
+    "name": "04-irrigation-natural.jpg",
+    "sha256": "b8cadf44e4da47d7f151dd5c10cfcf7afcc02dccab0245fd6fc963a5eb9d1cb4"
+  },
+  {
+    "name": "04-lhasa-life.jpg",
+    "sha256": "d54d167fed354eb5417e00b2155fb260971a6c685d143385598f1e94272cb465"
+  },
+  {
+    "name": "04-nyingchi-life.jpg",
+    "sha256": "73f2abd170a99f1515e7ffceeae34f47418e3417b39a925669743878e22b95f6"
+  },
+  {
+    "name": "05-history-exchange.jpg",
+    "sha256": "051050456b9e59efbc6ea9f26703ca043ddd69a99594a2b9f5dea5202ea92e92"
+  },
+  {
+    "name": "05-history-formation.jpg",
+    "sha256": "c4a3fa5c036e8f51747028dae76b316e50f1e5a3b8ba393cd83c15ae9b12b78a"
+  },
+  {
+    "name": "05-protection-before.jpg",
+    "sha256": "5b80e5f8892fac76556629615d96046dd39e0221a92d7f3bf1e63f24df2ca670"
+  },
+  {
+    "name": "05-protection-natural.jpg",
+    "sha256": "5c89e97c09417e47f54b105ef93b72440153b70f485d8f844e09cb7a08dfb4ea"
+  },
+  {
+    "name": "05-protection-separated.jpg",
+    "sha256": "26d20268290c59354ad81828a1aa064ad69393c120edd1d2da747613eaab391a"
+  },
+  {
+    "name": "06-bridge-off.jpg",
+    "sha256": "fdd9089205a4ebd2f6f5b37ac290db5657d25ee2abf0904dec33cbe9d82048c6"
+  },
+  {
+    "name": "06-bridge-on.jpg",
+    "sha256": "f18039b1a4b48b87754ba81ce4e1ff2676b0dad1d01d027d6e629f9b5c245958"
+  },
+  {
+    "name": "06-observation-entry.jpg",
+    "sha256": "5756af12896f29fb6e422d7dd9210edecd174a7612988c1f71fdb5f3d16d8c78"
+  },
+  {
+    "name": "06-rail-crossing.jpg",
+    "sha256": "194ede8c18ad9dd9cc76b550c079f07ebd025057272dead428ba6d7a7ea94c9e"
+  },
+  {
+    "name": "06-rail-ground.jpg",
+    "sha256": "b91d636bcc811fa4d8d867472709f16d92ffadfc5a12430753f80943ea51e3bb"
+  },
+  {
+    "name": "06-rail-return.jpg",
+    "sha256": "7329b0a9e92009b700c76e8589a1678b9cacf3abefb92c6b8a281d47c2df8fd2"
+  },
+  {
+    "name": "06-regional-connections.jpg",
+    "sha256": "821acb9dd3df3a2c9180c67bc1498e225f98852eaa2a1f383fc5a086b567f960"
+  },
+  {
+    "name": "06-transport-entry.jpg",
+    "sha256": "4cfa143f363437a7cd77060db1ce50b1736dabac815a000f545c3b0c93a7eeec"
+  },
+  {
+    "name": "06-valley-entry.jpg",
+    "sha256": "e2ea8d80231d8a3318cac67f653c06b97ff0e529940148a865252c2146b79295"
+  },
+  {
+    "name": "07-plan-origin.jpg",
+    "sha256": "c81ee974ecd03f83234d1f2d36ce676355741cacefb9e88cb2a2a1ac4b4d3f3e"
+  },
+  {
+    "name": "07-plan-reload.jpg",
+    "sha256": "ed6af6c0900fd7eb5f8696d2c7b0d534b8d5cd21e7182769b94989753fb13de8"
+  },
+  {
+    "name": "07-plan-return.jpg",
+    "sha256": "470471c8dd7ff16b23e8cb962dc0412f5131d53a296cc279c7e9932cdb79cf9f"
+  },
+  {
+    "name": "08-complete.jpg",
+    "sha256": "dfc378d57a3ea97cc70868bff60f27367f7197d69c29d9ad45c076fcaed6e223"
+  },
+  {
+    "name": "playback-evidence.json",
+    "sha256": "c9ab93e5c409c00e1fff75a75abaa0a5197c9e2ffe32ab74198fff95e03f7838"
+  }
+]

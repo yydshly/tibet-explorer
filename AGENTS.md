@@ -1,5 +1,15 @@
 # Prototype Instructions
 
+## 2026-10-18 current browser access and functional playback verified
+
+Supersedes older browser-blocked status below. User explicitly requested resolving access and actual verification. CUA documentation/inventory and the SAME getTab URL at localhost5176 now succeeded. No security settings, alternate port, raw CDP or shell browser workaround; cause of prior denial disappearing is unknown. Do not keep asserting browser remains blocked based on older notes.
+
+Tested product commit7f11896, unchanged V1-main-20261018.1: six chapters/21clips/701.424s. Separate original-browser tab started from /#/ and naturally played through to11:41 completion, without main-progress seeking or chapter skipping. In-line comparisons pause/resume; plan round-trip interrupts intentionally. 55 timestamped discrete DOM/scene observations and screenshots in qa/mainline-closeout-20261018/browser; this is not continuous frame capture. Real browser checks: rotation, moisture, month, life-section, irrigation prerequisites/result retention, protection, bridge, ground rail (+500m) and original-scene/word restoration. Plan edit/save/real reload verified exact note preservation, then original note restored and returned to same final beat/raw.344/current word; continued naturally to end. Captured warning/error logs empty.
+
+Current review index/closeout/review JSON and browser-verification.json reflect this evidence; old repair report remains historic. No source/models/narration/camera/content change. Original user tab was read only initially; all playback used the independent QA tab. After report verification, a cleanup/read call found a stale tab and browser inventory was empty; no tab was reopened and final user-tab state was not verified. The browser viewport changed with the app panel during review (1280x720 to845x871); not a mobile audit.
+
+Close functional V1 work: no new blocking operation failure observed. R1/R2 closed, R3 browser-functional and visible-word/scene correspondence verified. Tool provides no system audio listening/loopback; do NOT claim auditory quality, pronunciation or all subjective audiovisual synchronization passed. Formal first-viewer0/3 remains unpassed. These are separate verification limits, not a mandate for further models or repeated full-show polishing. Fine regional/bridge marks can be small in overview; defer readability improvements unless concrete user comprehension evidence reopens them. Preserve frozen scope.
+
 ## 2026-10-18 R1/R2 closed; R3 programme checks complete, browser still blocked
 
 User authorized fixing closeout list without expanding models/duration or owner testing. R1 fixed both overviewOrigins returning explanation and narratedGeography overlay; final presentation now points to Jokhang protection then modern connectivity. A new regression initially caught the overlay masking base explanation; both are now checked. Recordings unchanged.
