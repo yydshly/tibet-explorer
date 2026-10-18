@@ -5,12 +5,13 @@ import {Line2} from 'three/addons/lines/Line2.js';
 import {LineGeometry} from 'three/addons/lines/LineGeometry.js';
 import {LineMaterial} from 'three/addons/lines/LineMaterial.js';
 import {routeArcLengths,routeSampleSegment} from './routeArcLength';
-import type {PilotView} from '../data/routePilot';
+import {pilotConnectionProgress,type PilotView} from '../data/routePilot';
+import {pilotElevationSampler,pilotTerrainContext,type PilotTerrainContext} from './routePilotTerrainData';
 
 type Coord=readonly number[];
 type Meta={bbox:number[];columns:number;rows:number;imagery:{url:string};elevation:{url:string};geometry:{route:string;place:string}};
 export type PilotReading={distance:number;total:number;elevation:number;longitude:number;latitude:number;highProgress:number;highCoordinate:number[]};
-type Props={view:PilotView;cameraKey:number;onReady:()=>void;onError:(s:string)=>void;onInteract:()=>void;onReading:(s:PilotReading)=>void};
+type Props={view:PilotView;cameraKey:number;onReady:()=>void;onError:(s:string)=>void;onInteract:()=>void;onReading:(s:PilotReading)=>void;onContext:(s:PilotTerrainContext)=>void};
 const base='/assets/routes/g318/';
 /** A separate instance preserves the frozen overview renderer and its state.
  * All route bends, footprint vertices and image pixels come from source data. */
@@ -23,23 +24,18 @@ export default function PilotRouteTerrain(props:Props){
   const read=async(url:string)=>{const r=await fetch(url,{signal:abort.signal});if(!r.ok)throw Error(`资料未能加载：${url}`);return r;};
   void (async()=>{
    const meta=await (await read(base+'manifest.json')).json() as Meta;
-   const [bytes,route,place]=await Promise.all([(await read(meta.elevation.url)).arrayBuffer(),read(meta.geometry.route).then(r=>r.json()),read(meta.geometry.place).then(r=>r.json())]);
+   const [bytes,route,place]=await Promise.all([read(meta.elevation.url).then(r=>r.arrayBuffer()),read(meta.geometry.route).then(r=>r.json()),read(meta.geometry.place).then(r=>r.json())]);
    if(!alive)return;
    const grid=new Int16Array(meta.columns*meta.rows),dv=new DataView(bytes);
    if(bytes.byteLength!==grid.length*2)throw Error('高程文件长度与来源记录不一致');
    for(let i=0;i<grid.length;i++)grid[i]=dv.getInt16(i*2,true);
    const [west,south,east,north]=meta.bbox,lat0=(south+north)/2,lon0=(west+east)/2;
    const mx=111320*Math.cos(lat0*Math.PI/180),mz=111320;
-   const sample=(lon:number,lat:number)=>{
-    const x=THREE.MathUtils.clamp((lon-west)/(east-west)*(meta.columns-1),0,meta.columns-1),y=THREE.MathUtils.clamp((north-lat)/(north-south)*(meta.rows-1),0,meta.rows-1);
-    const ix=Math.min(meta.columns-2,Math.floor(x)),iy=Math.min(meta.rows-2,Math.floor(y)),fx=x-ix,fy=y-iy;
-    const a=grid[iy*meta.columns+ix],b=grid[iy*meta.columns+ix+1],c=grid[(iy+1)*meta.columns+ix+1],d=grid[(iy+1)*meta.columns+ix];
-    return fx+fy<=1?a+(b-a)*fx+(d-a)*fy:c+(d-c)*(1-fx)+(b-c)*(1-fy);
-   };
+   const sample=pilotElevationSampler(meta,grid),context=pilotTerrainContext(meta,grid,route,place);
    const at=(p:Coord,offset=0)=>new THREE.Vector3((p[0]-lon0)*mx/1000,(sample(p[0],p[1])+offset)/1000,(lat0-p[1])*mz/1000);
    const coords=route.coordinates as number[][],flat=coords.map(p=>({x:(p[0]-lon0)*mx,y:0,z:(lat0-p[1])*mz}));
    const lengths=routeArcLengths(flat),total=lengths.total;
-   let high=0;for(let i=1;i<coords.length;i++)if(sample(...coords[i].slice(0,2) as [number,number])>sample(...coords[high].slice(0,2) as [number,number]))high=i;
+   const high=context.highestIndex,branchStart=context.connectionStartIndex;
    const highProgress=lengths.cumulative[high]/total;
    const along=(p:number)=>{const s=routeSampleSegment(flat,p),a=coords[s.index-1],b=coords[s.index];return [THREE.MathUtils.lerp(a[0],b[0],s.fraction),THREE.MathUtils.lerp(a[1],b[1],s.fraction)];};
    renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(1.5,devicePixelRatio));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setClearColor(0xb0c2c4);el.append(renderer.domElement);
@@ -64,8 +60,9 @@ export default function PilotRouteTerrain(props:Props){
     const mat=new LineMaterial({color,linewidth:width,depthTest:false,depthWrite:false,transparent:true,opacity:.95});lineMaterials.push(mat);
     const l=new Line2(g,mat);l.renderOrder=8;l.frustumCulled=false;owner.add(l);return l;
    };
-   stroke(scene,[coords],0x0a252b,7);stroke(scene,[coords],0x6adce1,3.4);
-   const town=new THREE.Group();scene.add(town);
+   stroke(scene,[coords.slice(0,branchStart+1)],0x0a252b,7);stroke(scene,[coords.slice(0,branchStart+1)],0x6adce1,3.4);
+   const approach=new THREE.Group();scene.add(approach);stroke(approach,[coords.slice(branchStart)],0x0a252b,7);stroke(approach,[coords.slice(branchStart)],0xffd786,3.4);
+   const town=new THREE.Group();scene.add(town);const built=new THREE.Group();town.add(built);
    const townLines:number[]=[],footprints:number[]=[],landuse:number[]=[];
    const inside=(p:Coord)=>p[0]>=west&&p[0]<=east&&p[1]>=south&&p[1]<=north;
    // Omit source edges without full DEM support. Never clamp an out-of-bounds
@@ -76,27 +73,33 @@ export default function PilotRouteTerrain(props:Props){
     if(f.geometry.type==='LineString'&&type==='road')edges(townLines,c,14);
     if(f.geometry.type==='Polygon'&&['building','landuse','water'].includes(type))for(const ring of c)edges(type==='building'?footprints:landuse,ring,15);
    }
-   const segments=(ps:number[],color:number,opacity=1)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(ps,3));const l=new THREE.LineSegments(g,new THREE.LineBasicMaterial({color,depthTest:false,transparent:true,opacity}));l.renderOrder=9;town.add(l);};
+   const segments=(ps:number[],color:number,opacity=1)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(ps,3));const l=new THREE.LineSegments(g,new THREE.LineBasicMaterial({color,depthTest:false,transparent:true,opacity}));l.renderOrder=9;built.add(l);};
    segments(townLines,0xffda87);segments(footprints,0xf5ecce,.85);segments(landuse,0x9be5d3,.8);
-   // Final archived service-road branch, not an invented hotel-door connector.
-   let branchStart=coords.length-1;while(branchStart>0&&lengths.cumulative[branchStart]>total-1051.1)branchStart--;
-   stroke(town,[coords.slice(branchStart)],0xffd786,6,24);
+   // Terminal roads are classified by archived source-way tags, never a guessed
+   // kilometre cut. The moving head is a reading cursor, not historic building.
+   const branch=coords.slice(branchStart),branchFlat=flat.slice(branchStart),trace=stroke(town,[branch],0xffd786,6,24);
+   const junction=new THREE.Mesh(new THREE.RingGeometry(.045,.062,28),new THREE.MeshBasicMaterial({color:0xffd786,side:THREE.DoubleSide,depthTest:false}));junction.rotation.x=-Math.PI/2;junction.position.copy(at(coords[branchStart],28));scene.add(junction);
    const cursor=new THREE.Mesh(new THREE.SphereGeometry(.025,14,8),new THREE.MeshBasicMaterial({color:0xffebad,depthTest:false}));cursor.renderOrder=11;scene.add(cursor);
-   const pointSpecs=[{title:'林芝附近 · 源道路起点',coordinate:coords[0],local:false},{title:'色季拉山地 · 沿线高程样本',coordinate:coords[high],local:false},{title:'鲁朗 · 地方观察',coordinate:coords.at(-1)!,local:false},{title:'地方接续 · 现状服务道路',coordinate:coords[Math.floor((branchStart+coords.length-1)/2)],local:true}];
-   const pins=pointSpecs.map(p=>{const pin=new THREE.Mesh(new THREE.SphereGeometry(.02,12,8),new THREE.MeshBasicMaterial({color:0xffe4a4,depthTest:false}));pin.position.copy(at(p.coordinate,30));scene!.add(pin);const div=document.createElement('div');div.className='pilot-map-label';div.textContent=p.title;const leader=document.createElement('div');leader.className='pilot-map-leader';el.append(leader,div);return {pin,div,leader,local:p.local};});
+   const pointSpecs=[{title:'林芝附近 · 源道路起点',coordinate:coords[0],local:false},{title:'色季拉山地 · 沿线高程样本',coordinate:coords[high],local:false},{title:'G318 → 地方接续',coordinate:coords[branchStart],local:false},{title:'鲁朗 · 现状建筑与地块',coordinate:coords.at(-1)!,local:true}];
+   const pins=pointSpecs.map((p,index)=>{const pin=new THREE.Mesh(new THREE.SphereGeometry(.02,12,8),new THREE.MeshBasicMaterial({color:0xffe4a4,depthTest:false}));pin.position.copy(at(p.coordinate,30));scene!.add(pin);const div=document.createElement('div');div.className='pilot-map-label';div.textContent=p.title;const leader=document.createElement('div');leader.className='pilot-map-leader';el.append(leader,div);return {pin,div,leader,index,local:p.local};});
    const size=new THREE.Vector2();const fit=()=>{const w=el.clientWidth,h=el.clientHeight;renderer!.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();lineMaterials.forEach(m=>m.resolution.set(w,h));size.set(w,h);};resize=new ResizeObserver(fit);resize.observe(el);fit();
-   let readingKey='';const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
+   let readingKey='',traceKey=-1;const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
    const render=()=>{
     if(!alive)return;const state=latest.current.view;
     if(latest.current.cameraKey!==lastCameraKey){lastCameraKey=latest.current.cameraKey;held=false;}
-    const coordinate=along(state.progress),position=at(coordinate,25);
+    const localProgress=pilotConnectionProgress(state);let coordinate=along(state.progress);const position=at(coordinate,25);
+    if(state.mode==='place'){
+     const s=routeSampleSegment(branchFlat,localProgress),a=branch[s.index-1],b=branch[s.index],head=[THREE.MathUtils.lerp(a[0],b[0],s.fraction),THREE.MathUtils.lerp(a[1],b[1],s.fraction)];
+     coordinate=head;position.copy(at(head,25));
+     const key=Math.round(localProgress*1000);if(trace&&key!==traceKey){traceKey=key;const ps=branch.slice(0,s.index).concat([head]),previous=trace.geometry;trace.geometry=new LineGeometry();trace.geometry.setPositions(ps.flatMap(p=>at(p,24).toArray()));previous.dispose();}
+    }
     cursor.position.copy(position);cursor.scale.setScalar(Math.max(.4,camera.position.distanceTo(position)*.013));
-    town.visible=state.mode==='place'&&state.connections;
+    approach.visible=state.mode!=='place';town.visible=state.mode==='place'&&localProgress>0;built.visible=localProgress>=.65;junction.visible=state.mode==='place';
     if(state.mode==='whole'){
      desiredTarget.set(0,3.7,0);const width=(east-west)*mx/1000,depth=(north-south)*mz/1000,tan=Math.tan(camera.fov*Math.PI/360),distance=Math.max(width/(2*tan*camera.aspect),depth/(2*tan))*1.45;
      desiredPosition.copy(desiredTarget).add(new THREE.Vector3(0,1,.75).normalize().multiplyScalar(distance));
     }else if(state.mode==='place'){
-     const centre=at(coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(3*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(new THREE.Vector3(0,altitude,altitude*1.25));
+     const centre=at(coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(new THREE.Vector3(0,altitude,altitude*1.25));
     }else{
      const ahead=at(along(Math.min(1,state.progress+220/total))),behind=at(along(Math.max(0,state.progress-220/total))),direction=ahead.sub(behind);direction.y=0;direction.normalize();if(state.lookBack)direction.negate();
      desiredTarget.copy(position).addScaledVector(direction,.85);desiredTarget.y+=.08;
@@ -108,13 +111,13 @@ export default function PilotRouteTerrain(props:Props){
     if(eyeLon>=west&&eyeLon<=east&&eyeLat>=south&&eyeLat<=north)camera.position.y=Math.max(camera.position.y,sample(eyeLon,eyeLat)/1000+.2);
     controls!.update();
     const occupied:{x:number;y:number;w:number}[]=[];
-    for(const {pin,div,leader,local} of pins){
+    for(const {pin,div,leader,index,local} of pins){
      const p=pin.position.clone().project(camera),x=(p.x+1)*size.x/2,y=(1-p.y)*size.y/2;
-     const show=(!local||town.visible)&&p.z>-1&&p.z<1&&x>15&&x<size.x-15&&y>130&&y<size.y-105;
-     pin.visible=!local||town.visible;
+     const show=(!local||town.visible&&built.visible)&&p.z>-1&&p.z<1&&x>15&&x<size.x-15&&y>130&&y<size.y-105;
+     pin.visible=!local||town.visible&&built.visible;
      div.hidden=!show;leader.hidden=!show;
      if(show){
-      const w=div.offsetWidth,lx=Math.max(w/2+12,Math.min(size.x-w/2-12,x));let ly=y-32;
+      const w=div.offsetWidth,offset=state.mode==='place'?(index===2?-130:local?130:0):0,lx=Math.max(w/2+12,Math.min(size.x-w/2-12,x+offset));let ly=y-32;
       for(let i=0;i<5&&occupied.some(o=>Math.abs(o.y-ly)<34&&Math.abs(o.x-lx)<(w+o.w)/2+8);i++)ly-=36;
       if(ly<140)ly=y+36;occupied.push({x:lx,y:ly,w});
       div.style.left=`${lx}px`;div.style.top=`${ly}px`;
@@ -123,11 +126,11 @@ export default function PilotRouteTerrain(props:Props){
      pin.scale.setScalar(Math.max(1,camera.position.distanceTo(pin.position)*.01));
     }
     renderer!.render(scene!,camera);
-    const key=`${Math.round(state.progress*1000)}:${state.mode}`;
-    if(key!==readingKey){readingKey=key;latest.current.onReading({distance:state.progress*total,total,elevation:sample(coordinate[0],coordinate[1]),longitude:coordinate[0],latitude:coordinate[1],highProgress,highCoordinate:coords[high]});}
+    const key=`${Math.round(state.progress*1000)}:${state.mode}:${Math.round(localProgress*1000)}`;
+    if(key!==readingKey){readingKey=key;latest.current.onReading({distance:state.mode==='place'?total-context.connectionLength*(1-localProgress):state.progress*total,total,elevation:sample(coordinate[0],coordinate[1]),longitude:coordinate[0],latitude:coordinate[1],highProgress,highCoordinate:coords[high]});}
     frame=requestAnimationFrame(render);
    };
-   latest.current.onReady();render();
+   latest.current.onContext(context);latest.current.onReady();render();
   })().catch(e=>{if(alive&&e.name!=='AbortError')latest.current.onError(e.message||'线路场景未能加载');});
   return()=>{alive=false;abort.abort();cancelAnimationFrame(frame);resize?.disconnect();controls?.dispose();scene?.traverse(o=>{const mesh=o as THREE.Mesh;if(mesh.geometry)mesh.geometry.dispose();const materials=Array.isArray(mesh.material)?mesh.material:[mesh.material];for(const m of materials)if(m){(m as THREE.MeshStandardMaterial).map?.dispose();m.dispose();}});renderer?.dispose();el.replaceChildren();};
  },[]);

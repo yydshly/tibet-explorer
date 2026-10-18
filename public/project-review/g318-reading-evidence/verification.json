@@ -1,0 +1,65 @@
+{
+  "id": "G318-reading-20261019.1",
+  "baseCommit": "7d489f5",
+  "scope": "只补同一路段的高程联动与地方接续阅读；冻结其他内容",
+  "frozen": {
+    "mainChapters": 6,
+    "mainClips": 21,
+    "mainSeconds": 750.024,
+    "pilotClips": 4,
+    "pilotSeconds": 150.264,
+    "audioFilesChanged": false,
+    "imageryTerrainRouteVerticesChanged": false
+  },
+  "new": {
+    "profile": "与渲染共享三角面高程采样，1147源顶点；2500–5000m同一高程轴；点击/拖动/键盘联动相同3D位置",
+    "terminalRoads": {
+      "sourceEdgeStart": 1132,
+      "lengthMetres": 548.6996741338517,
+      "classification": "归档OSM末端连续tertiary/service；遇G318/未知标签停止",
+      "correction": "替换旧约1051m固定截取，完整原路线坐标未改"
+    },
+    "nativeProcess": "再展开地方接续→地块同时出现，原MiniMax逐字进度驱动接续头；再显示现状建筑/地块；逆向拖动撤回",
+    "return": "保存可选connectionProgress；兼容旧connections=true→1；原句/条件恢复保留"
+  },
+  "checks": {
+    "tests": {
+      "passed": 29,
+      "files": 4,
+      "finalTargetedRecheck": 12,
+      "typecheck": "passed",
+      "build": "passed; existing >500kB Three/Line2 chunk warning"
+    },
+    "browser": [
+      "从剖面使用End选择72km端，地图位置与高程反馈联动，原录音进度不变",
+      "山地原句43%显示48.1km、地表约4560m、比起点约高1570m，剖面最高样本对应",
+      "原逐字实播在服务道路词附近推进接续至49%，反馈约269m，画面为部分金色道路",
+      "手动35%反馈约192m；0%只看国道、100%展开道路/轮廓差异可见，方向/相机对照保持",
+      "进入观察计划、刷新、返回：地方接续35%、高度2500m、原录音raw0.62恢复",
+      "回到进入前原线：48.1km、raw0.43、height3000恢复；恢复原条件后原生逐字播放继续",
+      "scope内浏览器console error/warning为空"
+    ],
+    "reactReview": [
+      "新增昂贵剖面路径按context缓存",
+      "共享单一媒体时钟，无独立历史/车辆计时器",
+      "拉取三份独立资料并行",
+      "临时线几何替换时dispose",
+      "剖面有方向键/Home/End和等效沿线滑块",
+      "独立存储兼容旧快照"
+    ]
+  },
+  "limitations": [
+    "地表采样不是城市官方高程、山口实测或道路纵断面；剖面两轴比例不同",
+    "地方推进是阅读现状连接，不是模拟施工或历史空间重建",
+    "2016/2017记录解释组织与经营，不将某轮廓武断标为当年商户/活动位置",
+    "真实10m冬季卫星图；无街景、当前经营/开放、安全停靠承诺",
+    "未作系统音频回听或正式首次理解验收；没有再次完整播放六章"
+  ],
+  "evidence": [
+    "profile-linked.png",
+    "connection-start.png",
+    "connection-partial-restored.png",
+    "connection-complete.png"
+  ],
+  "stop": "首段操作和恢复完成，本次不再增加新地点/模型/录音/时长"
+}

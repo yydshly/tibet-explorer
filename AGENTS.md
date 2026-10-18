@@ -1,5 +1,11 @@
 # Prototype Instructions
 
+## 2026-10-19 route reading and terminal-road correction
+
+Only the same pilot reopened on owner continue. Added keyboard/pointer profile linked to the same1147 source-node terrain samples, shared2500–5000m axis; it is a surface sample/profile with unequal horizontal/vertical scale, not a surveyed road longitudinal section. Render sampler now shared with profile; unchanged DEM/image/route vertices and all recordings. Main remains6/21/750.024s; pilot4/150.264s.
+
+Corrected old guessed1051m terminal cutoff: archived local-way tags identify terminal tertiary/service roads from edge1132, approximately548.700m. G318 comes to that junction; local approach is gold rather than falsely cyan. Native words progressively read that same source chain, then show existing footprints/landuse; manual0–1 trace pauses original. Readings use actual moving head, not stale endpoint elevation. Snapshot persists optional connectionProgress; old saved connections=true maps to1. No historic construction, measured building heights, visitor-door or current-access claim. Local camera stays fixed during comparison; labels moved off short approach, 10m imagery limits retained. Details/source scopes and actual-browser evidence added to g318-pilot.html and g318-reading-evidence. No new stops, models, duration or other chapter polish; stop after bounded roundtrip verification.
+
 ## 2026-10-19 bounded first G318 route pilot
 
 Owner authorized implementing only G318 Nyingchi—Sejila mountain area—Lulang. Separate lazy /routes mode, not chapters7/8/9. Six chapters/21 clips/750.024s and old storage freeze; only overview navigation entry added. Preserve original1147-node/1146-edge OSM route. Licensed Sentinel-2 2025-12-13 true-colour and GLO-30 DSM, height1×; mesh sampling approximately45–46m is not native30m measurement precision. Virtual observation nodes are NOT surveyed pass height, roadside stopping, hotel entrance or public access guarantees.

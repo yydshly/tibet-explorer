@@ -19,7 +19,8 @@ export const routePilotCues=[
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
 
-export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean};
+export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number};
+export const pilotConnectionProgress=(view:PilotView)=>view.connections?Math.max(0,Math.min(1,view.connectionProgress??1)):0;
 export function pilotNarratedView(index:number,text:string,textProgress:number,highPoint=.5):PilotView{
  const at=Math.max(0,Math.min(1,textProgress))*text.length;
  const part=(a:string,b:string)=>Math.max(0,Math.min(1,(at-text.indexOf(a))/Math.max(1,text.indexOf(b)-text.indexOf(a))));
@@ -29,6 +30,6 @@ export function pilotNarratedView(index:number,text:string,textProgress:number,h
   const p=hold?highPoint:at<text.indexOf('停在山地观察点')?.12+(highPoint-.12)*part('沿道路向山地前进','停在山地观察点'):highPoint+(1-highPoint)*part('继续向鲁朗','接下来进入鲁朗');
   return {mode:'line',progress:p,height:hold?3000:3500,connections:false,lookBack:hold&&at<text.indexOf('这里按沿线')};
  }
- if(index===2)return {mode:'place',progress:1,height:3000,connections:at>=text.indexOf('再展开地方接续'),lookBack:false};
+ if(index===2)return {mode:'place',progress:1,height:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','地块同时出现'),lookBack:false};
  return {mode:'whole',progress:1,height:3500,connections:false,lookBack:false};
 }

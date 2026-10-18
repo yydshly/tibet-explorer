@@ -1,0 +1,13 @@
+import {useMemo} from 'react';
+import {profilePosition,type PilotTerrainContext} from '../scene/routePilotTerrainData';
+export default function PilotRouteProfile({context,progress,onSelect}:{context:PilotTerrainContext;progress:number;onSelect:(p:number)=>void}){
+ const {path,points}=useMemo(()=>{
+  const x=(d:number)=>34+d/context.total*260,y=(h:number)=>95-(h-2500)/2500*75;
+  return {path:context.profile.map((p,i)=>`${i?'L':'M'}${x(p.distance).toFixed(2)},${y(p.elevation).toFixed(2)}`).join(' '),points:[0,context.highestIndex,context.profile.length-1].map(i=>({...context.profile[i],x:x(context.profile[i].distance),y:y(context.profile[i].elevation)}))};
+ },[context]);
+ const distance=progress*context.total;let index=context.profile.findIndex(p=>p.distance>=distance);if(index<0)index=context.profile.length-1;
+ const h=context.profile[index].elevation,delta=Math.round((h-context.profile[0].elevation)/10)*10;
+ const choose=(e:React.PointerEvent<HTMLDivElement>)=>{const rect=e.currentTarget.getBoundingClientRect();onSelect(profilePosition(e.clientX,rect.left+rect.width*34/320,rect.width*260/320));};
+ return <section className="pilot-profile" aria-label="同一条路线的地表高程对照"><div><strong>先上山，再进入鲁朗谷地</strong><span>同一高程轴 · m</span></div><div className="pilot-profile-chart" role="slider" aria-label="沿线高程剖面位置" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress*1000)/10} aria-valuetext={`${(distance/1000).toFixed(1)}公里，地表约${Math.round(h/10)*10}米`} tabIndex={0} onPointerDown={e=>{e.currentTarget.setPointerCapture(e.pointerId);choose(e);}} onPointerMove={e=>{if(e.buttons===1)choose(e);}} onKeyDown={e=>{const next=e.key==='Home'?0:e.key==='End'?1:['ArrowRight','ArrowUp'].includes(e.key)?progress+.01:['ArrowLeft','ArrowDown'].includes(e.key)?progress-.01:undefined;if(next!==undefined){e.preventDefault();onSelect(Math.max(0,Math.min(1,next)));}}}>
+ <svg viewBox="0 0 320 124" aria-hidden="true">{[3000,4000,5000].map(h=><g key={h}><path className="grid" d={`M34 ${95-(h-2500)/2500*75}H294`}/><text x="2" y={98-(h-2500)/2500*75}>{h}</text></g>)}<path className="profile" d={path}/>{points.map((p,i)=><g key={i}><circle cx={p.x} cy={p.y} r="3"/><text textAnchor={i===0?'start':i===2?'end':'middle'} x={p.x} y={p.y-9}>{Math.round(p.elevation/10)*10}m</text></g>)}<path className="cursor" d={`M${34+progress*260} 12V99`}/><text x="34" y="119">林芝附近</text><text x={points[1].x} y="119" textAnchor="middle">山地样本</text><text x="294" y="119" textAnchor="end">鲁朗</text></svg></div><output>{(distance/1000).toFixed(1)} km · 比起点{delta>=0?'高':'低'}约{Math.abs(delta)} m</output><small>点击、拖动或方向键联动3D位置；地表采样，非道路纵断面。剖面两轴比例不同。</small></section>;
+}

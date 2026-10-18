@@ -34,6 +34,19 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('links profile selection to the 3D position while keeping the original recording fraction',()=>{
+  scene().onContext({profile:[{distance:0,elevation:2990,coordinate:[94.36,29.65]},{distance:72000,elevation:3385,coordinate:[94.72,29.73]}],total:72000,highestIndex:1,connectionStartIndex:1,connectionLength:1051});
+  const profile=find(render(),n=>typeof n.props?.onSelect==='function'&&n.props.context);
+  profile.props.onSelect(.67);expect(scene().view).toMatchObject({mode:'line',progress:.67});expect(media.current.raw).toBe(.43);expect(media.current.seek).not.toHaveBeenCalled();
+  button('恢复原条件并继续').onClick();expect(scene().view.progress).not.toBe(.67);expect(media.current.raw).toBe(.43);
+ });
+ it('restores a partial local trace after note refresh without replaying or advancing media',()=>{
+  media.current.beatIndex=2;
+  find(render(),n=>n.props?.['aria-label']==='地方接续观察进度').props.onChange({target:{value:'.35'}});
+  expect(scene().view).toMatchObject({connections:true,connectionProgress:.35});expect(media.current.raw).toBe(.43);
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject({mode:'place',connections:true,connectionProgress:.35});expect(media.current.raw).toBe(.43);
+ });
  it('compares route views and local access, returns the exact line/sentence, and skips the completed local passage once',()=>{
   find(render(),n=>n.props?.['aria-label']==='G318沿线位置').props.onChange({target:{value:'.61'}});
   const original={...scene().view};expect(original).toMatchObject({mode:'line',progress:.61});expect(media.current.raw).toBe(.43);

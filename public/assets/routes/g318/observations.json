@@ -53,6 +53,42 @@
       "scope": "资料阅读位置；未核实实地停靠、安全进入或开放条件"
     }
   ],
+  "connection": {
+    "startSourceNodeIndex": 1132,
+    "sourceNodeId": 7365874802,
+    "coordinate": [
+      94.7295088,
+      29.7276261
+    ],
+    "lengthMetres": 548.6996741338517,
+    "sourceWays": [
+      {
+        "id": "way/308009517",
+        "tags": {
+          "highway": "tertiary"
+        }
+      },
+      {
+        "id": "way/787852820",
+        "tags": {
+          "highway": "tertiary"
+        }
+      },
+      {
+        "id": "way/1322497018",
+        "tags": {
+          "highway": "service"
+        }
+      },
+      {
+        "id": "way/1322497017",
+        "tags": {
+          "highway": "service"
+        }
+      }
+    ],
+    "method": "从末端向前逐条核对原始way标签，遇到G318或不明属性即停止；仅指这条归档链的地方/服务道路接续，不代表公共访问许可"
+  },
   "history": [
     {
       "date": "2016-10-01",

@@ -3,7 +3,8 @@ import {describe,it,expect} from 'vitest';
 import {readFileSync} from 'node:fs';
 // @ts-expect-error Node is provided by the Vitest runner, not the browser types.
 import {createHash} from 'node:crypto';
-import {routePilotCues,pilotNarratedView} from '../src/data/routePilot';
+import {routePilotCues,pilotNarratedView,pilotConnectionProgress} from '../src/data/routePilot';
+import {pilotTerrainContext,pilotElevationSampler,profilePosition} from '../src/scene/routePilotTerrainData';
 import {narrationTimingAt} from '../src/lib/narrationTiming';
 import {overviewMainProgram} from '../src/data/overviewProgram';
 const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
@@ -35,6 +36,19 @@ describe('real G318 corridor and source boundaries',()=>{
  });
 });
 describe('the recording owns the route, camera and local comparison',()=>{
+ it('uses the same actual terrain for the profile and correctly separates the terminal non-G318 roads',()=>{
+  const bytes=readFileSync(root+'terrain.int16'),grid=new Int16Array(meta.columns*meta.rows);for(let i=0;i<grid.length;i++)grid[i]=bytes.readInt16LE(i*2);
+  const context=pilotTerrainContext(meta,grid,route,json(root+'lulang.geojson')),sample=pilotElevationSampler(meta,grid);
+  expect(context.profile).toHaveLength(1147);expect(context.total).toBeCloseTo(72029.509,2);expect(context.connectionStartIndex).toBe(1132);
+  expect(context.profile[0].elevation).toBeCloseTo(2989.277,2);expect(context.profile[context.highestIndex].elevation).toBeCloseTo(4558.551,2);
+  expect(context.profile.at(-1)!.elevation).toBeCloseTo(3385.212,2);
+  const p=context.profile[context.highestIndex];expect(sample(p.coordinate[0],p.coordinate[1])).toBe(p.elevation);
+  const roads=new Map(json(root+'lulang.geojson').features.map((f:any)=>[f.id,f.properties.tags]));
+  expect((roads.get(route.sourceWayIdsByEdge[1131]) as any).ref).toBe('G318');
+  for(const way of route.sourceWayIdsByEdge.slice(1132))expect(['tertiary','service']).toContain((roads.get(way) as any).highway);
+  expect(context.connectionLength).toBeCloseTo(548.700,2);
+  expect(profilePosition(50,100,200)).toBe(0);expect(profilePosition(200,100,200)).toBe(.5);expect(profilePosition(400,100,200)).toBe(1);
+ });
  it('holds the actual high sample for the spoken comparison, then continues to the same endpoint',()=>{
   const text=routePilotCues[1].narration,at=(token:string)=>pilotNarratedView(1,text,text.indexOf(token)/text.length,.668);
   expect(at('停在山地观察点')).toMatchObject({mode:'line',progress:.668,lookBack:true});
@@ -47,5 +61,8 @@ describe('the recording owns the route, camera and local comparison',()=>{
   const first=readings.findIndex(x=>x.view.connections);expect(first).toBeGreaterThan(0);
   expect(readings[first].timing.textProgress*cue.narration.length).toBeGreaterThanOrEqual(cue.narration.indexOf('再展开地方接续'));
   expect(pilotNarratedView(2,cue.narration,0).connections).toBe(false);
+  const at=(token:string)=>pilotConnectionProgress(pilotNarratedView(2,cue.narration,cue.narration.indexOf(token)/cue.narration.length));
+  expect(at('先看过境道路')).toBe(0);expect(at('服务道路')).toBeGreaterThan(0);expect(at('服务道路')).toBeLessThan(.65);
+  expect(at('地块同时出现')).toBe(1);expect(at('先看过境道路')).toBe(0);
  });
 });
