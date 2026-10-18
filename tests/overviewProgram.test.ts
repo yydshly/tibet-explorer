@@ -36,7 +36,7 @@ describe('six-question editorial programme',()=>{
   }
  });
  it('keeps whole-region narration except the explicit sourced ground journey',()=>{
-  for(const beat of overviewMainProgram.beats.filter(b=>b.kind==='atlas'&&!['OVERVIEW-valley-journey','OVERVIEW-city-change','OVERVIEW-history-origins','OVERVIEW-jokhang-protection','OVERVIEW-shiquanhe-irrigation'].includes(b.id))){
+  for(const beat of overviewMainProgram.beats.filter(b=>b.kind==='atlas'&&!['OVERVIEW-valley-journey','OVERVIEW-city-change','OVERVIEW-history-origins','OVERVIEW-jokhang-protection','OVERVIEW-shiquanhe-irrigation','OVERVIEW-protection'].includes(b.id))){
    const p=overviewPresentation(beat,.5);
    expect(p.sceneIdentity).toBe('atlas-overview');
    expect(p.props.overviewLocalContext).not.toBe(true);

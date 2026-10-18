@@ -1,3 +1,5 @@
+import runoffReadingData from '../data/runoff-reading.json';
+import {buildOverviewFocusedReading} from './overviewFocusedReading';
 import {buildOverviewMechanismLens} from './overviewMechanismLens';
 import * as THREE from 'three';
 import {buildClimateLabOverlay} from './climateLabOverlay';
@@ -108,6 +110,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
     ? Math.max(.025, height(sampleTerrainMetres(dem, longitude, latitude)) * displayedRelief) : .025;
   const at = (longitude: number, latitude: number, offset = .055) => storyAtlasPosition(longitude, latitude, elevationAt(longitude, latitude) + offset);
   let mechanismLens:ReturnType<typeof buildOverviewMechanismLens>|undefined;
+  const focusedReading=buildOverviewFocusedReading(runtime.camera,at);group.add(focusedReading.group);
   const riverReading=buildOverviewRiverReading(runtime.camera,at);group.add(riverReading.group);
   const geographyReading=buildNarratedGeographyReading(runtime.camera,at);group.add(geographyReading.group);
   const cityLife = buildCityLifeOverlay({ camera: runtime.camera, at,
@@ -441,6 +444,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       runtime.renderer.getSize(viewport); if (viewport.x < 1 || viewport.y < 1) return;
       if(p.overviewMechanism&&!mechanismLens)mechanismLens=buildOverviewMechanismLens();
       mechanismLens?.update(p.overviewMechanism);
+      focusedReading.update(p.overviewFocusedProcess,viewport);
       riverReading.update(p.overviewRiver,viewport);
       geographyReading.update(p.narratedGeography,viewport);
       const cityViewport=`${p.layer}:${life||regional?selected:''}:${regional&&p.regionalCloseView?'near':'whole'}:${Math.round(viewport.x)}:${Math.round(viewport.y)}`;
@@ -511,7 +515,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       if(nextRelief!==displayedRelief){displayedRelief=nextRelief;refreshDisplayedTerrain();}
       if(wasLocal||wasRegional){wasLocal=false;wasRegional=false;if(!recordedAtlas)focusCities(home,!p.overviewPresentation,life||regional?selected:undefined,comparison,regional&&p.regionalCloseView);}
       if(recordedAtlas&&p.overviewShot){
-        const shot=p.overviewShot,transport=p.narratedGeography&&transportReadingCoordinates(p.narratedGeography.kind),key=JSON.stringify([shot.cameraFrom,shot.cameraTo,shot.cameraMix,Boolean(p.overviewRiver),p.narratedGeography?.kind,transport?.length?shot.progress:0,p.overviewEvidenceWidth??0,viewport.x,viewport.y,p.resetKey]);
+        const shot=p.overviewShot,transport=p.narratedGeography&&transportReadingCoordinates(p.narratedGeography.kind),key=JSON.stringify([shot.cameraFrom,shot.cameraTo,shot.cameraMix,Boolean(p.overviewRiver),p.narratedGeography?.kind,transport?.length?shot.progress:0,p.overviewFocusedProcess?.kind,p.overviewFocusedProcess?Math.min(1,p.overviewFocusedProcess.progress/.25):0,p.overviewEvidenceWidth??0,viewport.x,viewport.y,p.resetKey]);
         if(key!==lastOverviewCamera){
           lastOverviewCamera=key;
           const resolve=(id:string)=>{const city=verifiedPlaceReferences[id],point=atlasHotspots.find(item=>item.id===id);return city?at(city.longitude,city.latitude,.18):point?at(point.longitude,point.latitude,.18):undefined;};
@@ -521,6 +525,12 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
           if(transport?.length){
             const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:transport.map(p=>at(p[0],p[1],.18)),resolve,shot:{cameraFrom:{...shot.cameraFrom,focusIds:[],amount:0},cameraTo:{...shot.cameraTo,focusIds:[],amount:0},cameraMix:shot.cameraMix}});
             const t=Math.min(1,shot.progress/.24),mix=t*t*(3-2*t)*.88;
+            pose.position.lerp(close.position,mix);pose.target.lerp(close.target,mix);
+          }
+          if(p.overviewFocusedProcess?.kind==='runoff'){
+            const points=runoffReadingData.paths.flatMap(path=>path.coordinates.map(c=>at(c[0],c[1],.2)));
+            const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:points,resolve,shot:{cameraFrom:{...shot.cameraFrom,focusIds:[],amount:0},cameraTo:{...shot.cameraTo,focusIds:[],amount:0},cameraMix:shot.cameraMix}});
+            const t=Math.min(1,p.overviewFocusedProcess.progress/.25),mix=t*t*(3-2*t)*.65;
             pose.position.lerp(close.position,mix);pose.target.lerp(close.target,mix);
           }
           runtime.focus(pose.position,pose.target,'recorded');
@@ -539,6 +549,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       const occupied: { x: number; y: number; width: number; height: number }[] = [
         ...(labProjected?[{x:(labProjected.x+1)*viewport.x/2,y:(1-labProjected.y)*viewport.y/2,width:labLife?200:155,height:labLife?38:80}]:[]),
         ...(overview&&(p.overviewEvidenceWidth??0)>1?[{x:(p.overviewEvidenceWidth??0)/2,y:viewport.y/2,width:p.overviewEvidenceWidth??0,height:viewport.y}]:[]),
+        ...(p.overviewFocusedProcess?[{x:viewport.x*.35,y:viewport.y*.4,width:360,height:250}]:[]),
         ...cityLife.occupied(p,viewport),
         ...regionalJourney.occupied(p,viewport),
         ...cityComparison.occupied(p,viewport),

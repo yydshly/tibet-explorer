@@ -21,6 +21,7 @@ export interface TibetSceneProps {
   overviewMechanism?:import('../data/overviewMechanisms').OverviewMechanismState;
   overviewTopic?:'regions'|'life'|'history'|'culture'|'connections'|'observation';
   overviewFocus?:string;
+  overviewFocusedProcess?:import('../lib/overviewFocusedProcesses').FocusedProcessState;
   overviewRiver?:import('../lib/overviewRiver').OverviewRiverState;
   overviewTitle?:string;
   overviewYear?:string;

@@ -1,0 +1,33 @@
+{
+  "baseline": "V1-main-20261018.2",
+  "parentCommit": "723a6d1",
+  "tests": {
+    "passed": 56,
+    "failed": 0,
+    "files": 10,
+    "typecheck": "passed",
+    "build": "passed"
+  },
+  "browser": {
+    "scope": "两段替换录音及相关衔接，三处条件比较、倒拖和恢复；末段自然结束。不是新版全程12:30验收。",
+    "resumePoints": {
+      "exchange": 0.55,
+      "runoff": 0.26,
+      "stewardship": 0.68
+    },
+    "consoleWarningsErrors": [],
+    "finalFixes": [
+      "拆除进行中反馈与画面对应",
+      "从低下渗结果切为高下渗，再倒拖雨点无残留金色"
+    ],
+    "audioListening": false,
+    "firstViewerAcceptance": "0/3，未变更"
+  },
+  "duration": {
+    "before": 701.424,
+    "after": 750.024,
+    "delta": 48.6
+  },
+  "frozenMainRecordings": 19,
+  "sources": "/data/three-process-evidence.json"
+}

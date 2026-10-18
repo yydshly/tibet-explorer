@@ -45,11 +45,11 @@ export function buildOverviewRiverReading(camera:THREE.PerspectiveCamera,at:(lon
   const current=pointAt(state.reveal),currentScreen=current.clone().project(camera),currentUnit=current.distanceTo(camera.position)/screenFocal;
   origin.visible=state.emphasized&&currentScreen.z>-1&&currentScreen.z<1&&Math.abs(currentScreen.x)<.7&&Math.abs(currentScreen.y)<.65;
   const anchor=at(...anchorCoordinate,.075),projected=anchor.clone().project(camera),focal=viewport.y/(2*Math.tan(camera.fov*Math.PI/360)),unit=anchor.distanceTo(camera.position)/focal;
-  name.visible=leader.visible=projected.z>-1&&projected.z<1&&Math.abs(projected.x)<.85&&Math.abs(projected.y)<.8;
+  name.visible=leader.visible=!state.quiet&&projected.z>-1&&projected.z<1&&Math.abs(projected.x)<.85&&Math.abs(projected.y)<.8;
   if(name.visible){projected.y-=72/viewport.y;name.position.copy(projected.unproject(camera));name.scale.set(208*unit,27*unit,1);name.material.opacity=state.emphasized?1:.7;
    const a=leader.geometry.attributes.position as THREE.BufferAttribute;a.setXYZ(0,anchor.x,anchor.y,anchor.z);a.setXYZ(1,name.position.x,name.position.y,name.position.z);a.needsUpdate=true;leader.geometry.computeBoundingSphere();}
   const downstream=at(...downstreamCoordinate,.075),screen=downstream.clone().project(camera),downUnit=downstream.distanceTo(camera.position)/focal;
-  downstreamName.visible=screen.z>-1&&screen.z<1&&Math.abs(screen.x)<.7&&screen.y>-.7&&screen.y<.7;
+  downstreamName.visible=!state.quiet&&screen.z>-1&&screen.z<1&&Math.abs(screen.x)<.7&&screen.y>-.7&&screen.y<.7;
   if(downstreamName.visible){screen.x+=170/viewport.x;screen.y-=30/viewport.y;downstreamName.position.copy(screen.unproject(camera));downstreamName.scale.set(186*downUnit,24*downUnit,1);downstreamName.material.opacity=state.emphasized?.9:.6;}
   // Read the moving focus without laying its text over the fixed river names.
   // Leaders move in screen space; all geographic anchors remain unchanged.

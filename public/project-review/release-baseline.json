@@ -1,7 +1,7 @@
 {
-  "id": "V1-main-20261018.1",
-  "sourceCommit": "952b83a",
-  "purpose": "固定本次批准的主线内容与录音；不在测试中自动重新生成或放宽总时长。",
+  "id": "V1-main-20261018.2",
+  "sourceCommit": "723a6d1 + bounded three-process replacement",
+  "purpose": "用户明确要求补足托林交流、汇水与具体管护过程；仅替换2段录音，其他19段逐项冻结。",
   "chapters": [
     {
       "id": "location",
@@ -62,7 +62,7 @@
     }
   ],
   "beatCount": 21,
-  "seconds": 701.424,
+  "seconds": 750.024,
   "clips": [
     {
       "beatId": "G1-opening",
@@ -165,9 +165,9 @@
     {
       "beatId": "OVERVIEW-history-origins",
       "recordingId": "OVERVIEW-history-origins",
-      "duration": 46.548,
-      "textSha256": "d41ce5bf242f1c2ba3b70fde7c389cfadb87b870febc78ee1aa95f965420213e",
-      "subtitleSha256": "2909fd03cba2aa6ef51b82a0851f77b3b1d09c1e190dbdeb4b10196302b7662b"
+      "duration": 58.86,
+      "textSha256": "7877033b9ac532781219fdfcefc20e6971f5fca3226adcb7507e1f1823a45b07",
+      "subtitleSha256": "fd04bcb248ee7009eceb843126ad0db00e75b8c84c020084af4389d9241ac0df"
     },
     {
       "beatId": "OVERVIEW-jokhang-protection",
@@ -200,9 +200,9 @@
     {
       "beatId": "OVERVIEW-protection",
       "recordingId": "OVERVIEW-protection",
-      "duration": 22.608,
-      "textSha256": "e24fc78579f12da041a2cd33933a94b77bc9bde353e6c10f9f3b44fe6cd60f63",
-      "subtitleSha256": "4c395cb950e0459a5d0c15b93696f1c800da6af76204385a7e8d39675d9882b6"
+      "duration": 58.896,
+      "textSha256": "2c21c6ad84ba0d275155151465f999b724509234f64dd16cb7edcb50432f5364",
+      "subtitleSha256": "9fa4f604c766f160ac56de856f8d40824813c4d3d70295d1dd8822d3fb986253"
     },
     {
       "beatId": "OVERVIEW-conclusion",
@@ -211,5 +211,7 @@
       "textSha256": "03a932a6777f9bf9c4bc61091f34c056ce3a4ee7e506cbd83e32ef69325ab094",
       "subtitleSha256": "899a7d6399565d05d28bb17f77971273d25071f2adeb8f4613536e5582a46d3e"
     }
-  ]
+  ],
+  "previousBaseline": "V1-main-20261018.1",
+  "durationDeltaSeconds": 48.6
 }

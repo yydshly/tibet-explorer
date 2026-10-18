@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "scope": "只补托林交流、坡面汇水和羌塘具体管护；其他19段录音冻结。",
+  "cases": [
+    {
+      "id": "exchange",
+      "recorded": "The Met说明阿底峡1042年到托林；周拉、拉毛肖研究据传记讨论降曲沃提问、撰写《菩提道灯论》及与格韦洛追共同翻译。",
+      "sources": ["https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india", "https://www.tibetology.ac.cn/2024-08/17/content_42896506.htm"],
+      "retrieval": "The Met页面及中国藏学研究中心站点搜索摘录已核对；后者全文直读超时，研究所引传记不是本轮独立查阅的原始手稿。",
+      "shown": "问题纸片汇集、文字写入、合译输出；关闭合译只保留已有文本。",
+      "interpretation": "共同翻译说明文本怎样跨越语言障碍；不等于证明所有人学会或测量传播范围。",
+      "notReconstructed": "GeoNames托林镇仅作位置参照。没有复原古道、寺院室内、手稿文字或人物形貌。"
+    },
+    {
+      "id": "runoff",
+      "recorded": "USGS说明降水中的一部分下渗，地表径流沿地形汇集；流域由汇向共同出口的区域定义。",
+      "sources": ["https://www.usgs.gov/water-science-school/science/runoff-surface-and-overland-water-runoff", "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins", "/assets/terrain/tibet-regional-dem.source.json", "/data/hydrography/yarlung-river.geojson"],
+      "shown": "雨点下降、下渗部分退出地表汇流、其余沿D8计算坡向到达概览干流所在网格；对照下渗条件。",
+      "method": "12条严格下坡相邻网格路径来自现有449×257 DEM；无填洼或强行越岭。路径终点位于概览干流穿过的网格，最后短接仅是分辨率内归属，非实测汇口。",
+      "sourceHash": "f3de5c1ae3bce8aac154f3c43d5e1a017c1c8230c8c86ffe8408b86698dcb126",
+      "assumptions": "相同12份示意降水，4份或8份下渗；比例、速度、粒子大小均为教学设定。区域高差沿用1.8倍显示。",
+      "limits": "约5—6公里网格，不是正式流域划分、实测支流、土壤观测、水量预测或完整水量平衡。未模拟地下水后续补给和蒸散过程。"
+    },
+    {
+      "id": "stewardship",
+      "recorded": "2023-07-06西藏日报人物报道记述阿里林草工作者黄晨参与巡护监测，并拆除阻碍藏羚羊迁徙的网围栏。",
+      "sources": ["https://www.xzxw.com/al/2023-07/06/content_881465.html"],
+      "shown": "巡护扫描、识别阻隔、移除中间阻隔段、移动符号通过；保留阻隔时停在同一侧。",
+      "interpretation": "行动改变连通条件；并不据此断言植被恢复、种群增长或所有迁徙线路畅通。",
+      "notReconstructed": "阿里聚居地只作地区参照，未伪造围栏坐标、动物数量、实际迁徙路线或拆除工程几何。没有把批准的项目计划当作已完成成果。"
+    }
+  ]
+}

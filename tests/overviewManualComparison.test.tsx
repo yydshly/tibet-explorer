@@ -146,3 +146,21 @@ describe('documented history comparison without replacing the narration clock',(
   expect(media.current.playPause).toHaveBeenCalledOnce();
  });
 });
+
+it.each([
+ ['OVERVIEW-history-origins','再与译师','暂不共同翻译'],
+ ['OVERVIEW-protection','再进入谷地','下渗较多'],
+ ['OVERVIEW-protection','让两侧活动空间','保留阻隔段'],
+])('focused %s / %s comparison restores the original native sentence',(id,token,button)=>{
+ media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.recordingId===id);
+ const beat=overviewMainProgram.beats[media.current.beatIndex];media.current.timing={textProgress:beat.text.indexOf(token)/beat.text.length};
+ const scene=()=>find(render(),n=>typeof n.props?.onGroundJourneyReading==='function');
+ const original=scene().props.overviewFocusedProcess,raw=media.current.raw;
+ find(render(),n=>n.type==='button'&&n.props.children===button).props.onClick();
+ expect(scene().props.overviewFocusedProcess).not.toEqual(original);expect(media.current.pause).toHaveBeenCalled();
+ find(render(),n=>n.props?.['aria-label']==='过程演示进度').props.onChange({target:{value:'.4'}});
+ expect(scene().props.overviewFocusedProcess.progress).toBe(.4);expect(media.current.raw).toBe(raw);
+ expect(media.current.select).not.toHaveBeenCalled();expect(media.current.seek).not.toHaveBeenCalled();
+ find(render(),n=>n.type==='button'&&n.props.children==='恢复原条件，从暂停处继续').props.onClick();
+ expect(scene().props.overviewFocusedProcess).toEqual(original);expect(media.current.playPause).toHaveBeenCalledOnce();
+});

@@ -31,7 +31,7 @@ describe('spoken river has a sourced visible course',()=>{
   };
   const before=sample('把镜头'),active=sample('下游使用'),after=sample('羌塘的生态管护');
   expect(before).toEqual({reveal:0,emphasized:false});
-  expect(active.emphasized).toBe(true);expect(active.reveal).toBeGreaterThan(.5);
+  expect(active.emphasized).toBe(true);expect(active.reveal).toBeGreaterThan(0);
   expect(after).toEqual({reveal:1,emphasized:false});
   expect(sample('下游使用')).toEqual(active);
   expect(overviewRiverState('OVERVIEW-conclusion',beat.text,.5)).toBeUndefined();

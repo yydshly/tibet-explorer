@@ -465,5 +465,14 @@
       "limits": "未进行系统音频听审；非整场再次播放；不能替代首次观看者理解"
     },
     "evidence": "qa/maintenance-reading-20261018/browser-evidence.json"
+  },
+  "recordScope": "历史V1.1记录；本轮用户重开三处过程的结果见three-processes.html。旧检查结果不能冒充新版全程实播。",
+  "currentFollowup": {
+    "baseline": "V1-main-20261018.2",
+    "report": "three-processes.html",
+    "seconds": 750.024,
+    "changedRecordings": 2,
+    "frozenRecordings": 19,
+    "scope": "只补托林交流、汇水和具体管护；其他章节冻结。"
   }
 }

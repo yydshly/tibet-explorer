@@ -54,7 +54,9 @@ describe('shortened mainline keeps causes visible on its new media clock',()=>{
   for(const id of ['OVERVIEW-city-change','OVERVIEW-regional-connections','OVERVIEW-regional-observation','OVERVIEW-conclusion'])expect(full.beats.some(b=>b.recordingId===id)).toBe(true);
   const modern=overviewMainProgram.chapters.at(-1)!;
   const seconds=modern.beats.reduce((sum,b)=>sum+manifest.clips.find((c:{cueId:string})=>c.cueId===b.recordingId).duration,0);
-  expect(seconds).toBeLessThan(240);
+  // Explicit V1.2 replacement adds36.288s to protection only; all other final-chapter clips remain frozen.
+  expect(seconds).toBeCloseTo(247.896,3);
+  expect(seconds-36.288).toBeLessThan(240);
   expect(modern.beats.filter(b=>b.id==='OVERVIEW-conclusion')).toHaveLength(1);
  });
 });

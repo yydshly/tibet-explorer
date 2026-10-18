@@ -1,5 +1,14 @@
 # Prototype Instructions
 
+## 2026-10-18 bounded three-process replacement
+
+Owner explicitly reopened Tholing exchange, basin runoff and concrete grassland stewardship; freeze other work. Implemented shared native-word-driven process state and same-atlas geometry: problem collection/writing/joint translation (research citing biography, not reconstructed manuscript); 12 D8 descending paths from archived DEM with fixed illustrative precipitation/infiltration comparison (not measured tributaries, formal basin or forecast); documented2023 Huang Chen patrol/fence removal, showing connectivity (not actual fence/migration coordinates or ecological recovery). One slider/one-condition comparison pauses original sentence; resume clears override. No standalone scene.
+
+Only history-origins and protection recordings replaced using MiniMax native words. V1-main-20261018.2 remains6 chapters/21clips;750.024s (+48.6s disclosed). Other19 main clips text/duration/native-word hashes frozen; old release baseline archived. Programme tests56/typecheck/build; actual browser sampled both replaced clips and native transitions to protection/observation, all3 comparisons, reverse progress and original-sentence resume (history55%, water26%, stewardship68%). Screenshots/logs in public/project-review/three-process-evidence. Checks found/fixed edge-clipped exchange labels, premature result wording, small water lines/occluding particles and stale gold when reversing rain. No system audio loopback, formal first-viewer remains0/3; no claim of latest whole12:30 replay. Current report three-processes.html/index; previous functional record preserved as index-v1.1.html.
+
+Stop expanding these mechanisms after bounded fixes. No more locations, models, sound polish or whole-show repetitions without new concrete feedback. Source claims/scopes in public/data/three-process-evidence.json.
+
+
 ## 2026-10-18 shared visual guidance comparison
 
 Owner requests richer, consistent narration-to-picture guidance, not more detached models. Authored atlas shots now distinguish plan (76deg) and relief (38deg) views, keeping north on the same side and using native-word cameraMix; whole/return retain the original angle. Chapter3 regional-system and chapter6 corridors/observation are grouped by exact spoken targets. Current shot targets take marker/short-label priority; existing globe, climate and local case camera ownership is preserved. Protection has separate river/grassland/heritage cues, not one stale combined description. River moving label avoids fixed names.

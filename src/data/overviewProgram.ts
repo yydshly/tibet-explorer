@@ -1,3 +1,4 @@
+import {focusedProcessCopy} from '../lib/overviewFocusedProcesses';
 import {rotationFlowCue,rotationFlowSources} from './rotationFlow';
 import {irrigationCue,irrigationSources} from './overviewIrrigation';
 import {historyOriginsCue} from './overviewEditorial';
@@ -25,7 +26,7 @@ export interface OverviewProgram {id:string;title:string;chapters:ProgramChapter
 function source(id:string):OverviewBeat {
  const beat=archive.find(item=>item.id===id);if(!beat)throw new Error(`Missing editorial recording: ${id}`);return beat;
 }
-const whole=(...ids:string[]):ProgramBeat[]=>ids.map(id=>({...source(id),overviewScope:'whole'}));
+const whole=(...ids:string[]):ProgramBeat[]=>ids.map(id=>({...source(id),...(id==='OVERVIEW-protection'?{sources:[...source(id).sources,...focusedProcessCopy.runoff.sources,...focusedProcessCopy.stewardship.sources]}:{}),overviewScope:'whole'}));
 function interactive(id:string):ProgramBeat {
  const state=overviewInteractionStates[id],cue=id==='LAB-life-lhasa'?overviewNarrationCues.find(c=>c.id==='OVERVIEW-life-lhasa')!:climateLabCue(state);
  return {id,recordingId:cue.id,text:cue.narration,title:cue.title,chapterId:'regions',kind:'atlas',topic:state.stage==='life'?'life':'regions',overviewScope:'whole',detailStepId:state.stage==='life'?'E3':'C4',sources:[
@@ -55,7 +56,7 @@ function historicalFrame():ProgramBeat {
  {token:'这些线索说明',title:'由历史方向转向人的具体行动',explanation:'下面通过材料功能、学习参与与街区使用解释文化延续，而不是由地形推出文化。'},
  ]};
 }
-const historyOrigins:ProgramBeat={id:historyOriginsCue.id,recordingId:historyOriginsCue.id,title:historyOriginsCue.title,text:historyOriginsCue.narration,kind:'atlas',chapterId:'history',topic:'history',overviewScope:'whole',detailStepId:'H2',sources:[{title:'UNESCO · 大昭寺的创建与布达拉宫用途',url:'https://whc.unesco.org/en/list/707/',note:'只采用有据的创建和用途，不把现状几何当作古代测绘。'},{title:'The Met · Tibet and India 展览：阿底峡与托林',url:'https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india',note:'Map of the Region说明1042年行旅经加德满都到西部托林；不据此重建古道，也不把画像年代当事件年代。'}],moments:[
+const historyOrigins:ProgramBeat={id:historyOriginsCue.id,recordingId:historyOriginsCue.id,title:historyOriginsCue.title,text:historyOriginsCue.narration,kind:'atlas',chapterId:'history',topic:'history',overviewScope:'whole',detailStepId:'H2',sources:[...focusedProcessCopy.exchange.sources,{title:'UNESCO · 大昭寺的创建与布达拉宫用途',url:'https://whc.unesco.org/en/list/707/',note:'只采用有据的创建和用途，不把现状几何当作古代测绘。'},{title:'The Met · Tibet and India 展览：阿底峡与托林',url:'https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india',note:'Map of the Region说明1042年行旅经加德满都到西部托林；不据此重建古道，也不把画像年代当事件年代。'}],moments:[
  {token:'先看拉萨',title:'营建与用途：宗教、礼仪、接见和居住',explanation:'地方用途由历史行动与制度解释，地形只提供空间条件。',focus:'lhasa'},
  {token:'再看西部托林',title:'1042：人物与知识交流进入地方',explanation:'托林在西部札达；不是现代生活案例中的狮泉河。地图定位，不补画行旅路线。',focus:'tholing-exchange',year:'1042年'},
  {token:'这些是营建',title:'回到全域：形成与延续是两个问题',explanation:'案例说明营建、使用和交流；文化延续还涉及后来的保护与持续使用。'},

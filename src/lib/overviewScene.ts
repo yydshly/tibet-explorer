@@ -1,3 +1,4 @@
+import {focusedProcessState,focusedProcessCopy,focusedProcessFeedback} from './overviewFocusedProcesses';
 import {rotationNarratedState} from './rotationFlow';
 import {maintenanceHeritagePresentation} from './overviewMaintenance';
 import {rotationPresentation} from './overviewRotation';
@@ -213,6 +214,8 @@ function overviewBasePresentation(beat:OverviewSceneBeat,raw:number,timing?:Narr
  * model. The identity changes before loading, never after audio has started. */
 export function overviewPresentation(beat:OverviewSceneBeat,raw:number,timing?:NarrationTiming):OverviewPresentation {
  const base=overviewBasePresentation(beat,raw,timing);
+ const focused=focusedProcessState(beat.recordingId,beat.text,timing?.textProgress??raw);
+ if(focused)return {...base,sceneIdentity:'atlas-local-context',title:focusedProcessCopy[focused.kind].title,explanation:focusedProcessFeedback(focused),sourceScope:focusedProcessCopy[focused.kind].scope,scale:'西藏整体地图 · 地方过程放大阅读',props:{...base.props,layer:'atlas-overview',overviewLocalContext:true,overviewUrban:undefined,overviewReturnMix:1,overviewVisit:undefined,overviewBarkhor:undefined,overviewPlaceAction:undefined,overviewFocusedProcess:focused,narratedGeography:undefined,overviewRiver:focused.kind==='runoff'?{emphasized:false,reveal:1,quiet:true}:undefined}};
  if(beat.recordingId==='OVERVIEW-protection'){
   const heritage=maintenanceHeritagePresentation(beat.text,timing?.textProgress??raw);
   // The local source is acquired before this recording starts, rather than

@@ -1,6 +1,6 @@
 import river from '../data/yarlung-river.json';
 
-export interface OverviewRiverState {reveal:number;emphasized:boolean}
+export interface OverviewRiverState {reveal:number;emphasized:boolean;quiet?:boolean}
 /** These exact source parts share endpoints; never bridge separate river arms. */
 export const yarlungReadingCoordinates=river.features.flatMap((feature,index)=>feature.geometry.coordinates[0].slice(index?1:0)) as [number,number][];
 export function overviewRiverState(recordingId:string,text:string,textProgress:number):OverviewRiverState|undefined {

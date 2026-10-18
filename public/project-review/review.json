@@ -405,5 +405,14 @@
       "本轮截图横向空间随应用面板从1280×720变化至845×871，未进行手机专项。"
     ],
     "evidence": "qa/mainline-closeout-20261018/browser/playback-evidence.json"
+  },
+  "recordScope": "历史V1.1记录；本轮用户重开三处过程的结果见three-processes.html。旧检查结果不能冒充新版全程实播。",
+  "currentFollowup": {
+    "baseline": "V1-main-20261018.2",
+    "report": "three-processes.html",
+    "seconds": 750.024,
+    "changedRecordings": 2,
+    "frozenRecordings": 19,
+    "scope": "只补托林交流、汇水和具体管护；其他章节冻结。"
   }
 }

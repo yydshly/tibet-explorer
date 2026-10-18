@@ -13387,6 +13387,44 @@
       "subtitleUrl": "/assets/audio/narration/0313712062bea23289de19f7ded555f0b965f19af84b246822dc69d6c2174609.subtitles.json",
       "subtitleSha256": "506ee5d97d0ada75371d216b2196a9c63177a20ad4783116ffd57943762b210b",
       "timingLevel": "word"
+    },
+    {
+      "id": "ebfcfa762d7f6e58075cb4faaca887bf14793836c07fcb4a96df13d789f5f6d7",
+      "url": "/assets/audio/narration/ebfcfa762d7f6e58075cb4faaca887bf14793836c07fcb4a96df13d789f5f6d7.mp3",
+      "text": "从三地生活回到全域。地形提供条件，地方的用途还要由人的历史行动解释。先看拉萨：七世纪创建的大昭寺，是宗教活动的场所；布达拉宫的礼仪、接见与居住用途，则说明政治与宗教活动怎样组织空间。再看西部托林：阿底峡一〇四二年来到这里。研究据传记记载，降曲沃提出问题，阿底峡撰写《菩提道灯论》，再与译师格韦洛追共同翻译。画面把问题汇集、成文和合译分开：合译让文本跨过语言障碍，不是仅有人抵达。书页与活动位置为功能示意，不复原手稿或古道。这些是营建、使用和交流的具体线索，不能由气候直接推出，也不代表全部西藏的历史。更完整的年代放在专题。现在回到共同问题：场所和文化已经形成，为什么还能持续到后来的生活中？",
+      "duration": 58.86,
+      "bytes": 943476,
+      "sha256": "511f959fbbb04efec41f835cebce13ccbed542fed1ad83c8e7c0f8051c065443",
+      "provider": "MiniMax",
+      "model": "speech-2.8-hd",
+      "voice": "Chinese (Mandarin)_Gentleman",
+      "sampleRate": 32000,
+      "channel": 1,
+      "generatedAt": "2026-10-18T14:11:00.172Z",
+      "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+      "subtitleStatus": "provider",
+      "subtitleUrl": "/assets/audio/narration/ebfcfa762d7f6e58075cb4faaca887bf14793836c07fcb4a96df13d789f5f6d7.subtitles.json",
+      "subtitleSha256": "fd04bcb248ee7009eceb843126ad0db00e75b8c84c020084af4389d9241ac0df",
+      "timingLevel": "word"
+    },
+    {
+      "id": "200be5c25cd2a60d6750f5f3915a6aa858fde3e0d7855790b799a44a6ac0f9e0",
+      "url": "/assets/audio/narration/200be5c25cd2a60d6750f5f3915a6aa858fde3e0d7855790b799a44a6ac0f9e0.mp3",
+      "text": "把镜头重新拉回全域。通道之外，流域、草地与历史城市同样联系不同地方。雅鲁藏布江让上游过程关系到下游使用。雨落在坡面，未下渗的部分沿低处汇集，再进入谷地和干流；下渗较多，同一场雨直接汇出的部分就减少。画面沿真实高程计算坡向，但不是正式流域边界，也不预测流量。羌塘的生态管护跨越那曲与阿里。二〇二三年报道记载，阿里林草工作者黄晨在巡护中监测迁徙，并拆除阻隔藏羚羊的网围栏。先识别阻隔，再移除妨碍通行的部分，让两侧活动空间重新连通。围栏与动物走向仅解释机制，不是实测位置；通行恢复也不等于草地已经恢复。拉萨遗产保护还要照顾地方日常。理解周边和战略价值，要说清共同依赖、使用条件与维护责任。",
+      "duration": 58.896,
+      "bytes": 944052,
+      "sha256": "7254f3db2f6cf41e726f495866f776f9a94d8affcb92bf4c9c2b534b17f4e497",
+      "provider": "MiniMax",
+      "model": "speech-2.8-hd",
+      "voice": "Chinese (Mandarin)_Gentleman",
+      "sampleRate": 32000,
+      "channel": 1,
+      "generatedAt": "2026-10-18T14:11:14.901Z",
+      "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+      "subtitleStatus": "provider",
+      "subtitleUrl": "/assets/audio/narration/200be5c25cd2a60d6750f5f3915a6aa858fde3e0d7855790b799a44a6ac0f9e0.subtitles.json",
+      "subtitleSha256": "9fa4f604c766f160ac56de856f8d40824813c4d3d70295d1dd8822d3fb986253",
+      "timingLevel": "word"
     }
   ]
 }

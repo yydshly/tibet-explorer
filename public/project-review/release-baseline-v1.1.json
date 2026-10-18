@@ -1,0 +1,215 @@
+{
+  "id": "V1-main-20261018.1",
+  "sourceCommit": "952b83a",
+  "purpose": "固定本次批准的主线内容与录音；不在测试中自动重新生成或放宽总时长。",
+  "chapters": [
+    {
+      "id": "location",
+      "title": "地球上的西藏",
+      "beats": [
+        "G1-opening",
+        "OVERVIEW-position"
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "空气遇到高原",
+      "beats": [
+        "G1-explain",
+        "G1-observe",
+        "OVERVIEW-formation-entry",
+        "G3-explain",
+        "G4-explain",
+        "LAB-air-higher"
+      ]
+    },
+    {
+      "id": "differences",
+      "title": "同在西藏，为何不同",
+      "beats": [
+        "OBS-CLIMATE-7",
+        "OBS-CLIMATE-1",
+        "OVERVIEW-regional-system"
+      ]
+    },
+    {
+      "id": "living",
+      "title": "环境怎样进入生活",
+      "beats": [
+        "LAB-life-nyingchi",
+        "LAB-life-lhasa",
+        "OVERVIEW-shiquanhe-irrigation"
+      ]
+    },
+    {
+      "id": "human-history",
+      "title": "人怎样塑造地方",
+      "beats": [
+        "OVERVIEW-history-origins",
+        "OVERVIEW-jokhang-protection"
+      ]
+    },
+    {
+      "id": "today",
+      "title": "今天怎样联系与观察",
+      "beats": [
+        "OVERVIEW-city-change",
+        "OVERVIEW-regional-connections",
+        "OVERVIEW-valley-journey",
+        "OVERVIEW-protection",
+        "OVERVIEW-conclusion"
+      ]
+    }
+  ],
+  "beatCount": 21,
+  "seconds": 701.424,
+  "clips": [
+    {
+      "beatId": "G1-opening",
+      "recordingId": "G1-opening",
+      "duration": 22.752,
+      "textSha256": "f164199c34ade02d41073ba49c85f194a1321f533afbbed56367e52a472950a7",
+      "subtitleSha256": "5cdae4368adbc7cf7eaa3e00c1c6c34c65788aa8939dac2c98e7437ca3da74f1"
+    },
+    {
+      "beatId": "OVERVIEW-position",
+      "recordingId": "OVERVIEW-position",
+      "duration": 21.276,
+      "textSha256": "2e5a47eb8a40d368a8caf178a9aff0f6229431564d9fa637dafa7118563b4f4b",
+      "subtitleSha256": "966179f31f449cde86bb9b94a161b34dac97ac0c0644ebc913e4c144ce60b564"
+    },
+    {
+      "beatId": "G1-explain",
+      "recordingId": "G1-explain",
+      "duration": 22.14,
+      "textSha256": "69f7af2944f1446a98a11d14bc502fa3bfbfcc6a6be2a42c5e5f0060a86b5f42",
+      "subtitleSha256": "0bd53c2eee97b8015bde3588e820964e394d25d23f779ebf84b83d4d28c186cc"
+    },
+    {
+      "beatId": "G1-observe",
+      "recordingId": "OVERVIEW-rotation-air",
+      "duration": 48.708,
+      "textSha256": "83829c9b20f2d9922e5e45b2e8707dadf9f3d6bde2529587939e63107d2c8174",
+      "subtitleSha256": "506ee5d97d0ada75371d216b2196a9c63177a20ad4783116ffd57943762b210b"
+    },
+    {
+      "beatId": "OVERVIEW-formation-entry",
+      "recordingId": "OVERVIEW-formation-entry",
+      "duration": 18.396,
+      "textSha256": "c0e8e382c5ba23efca622c0d0c8f4bb5f031304eb0446b2abad9905204bcafed",
+      "subtitleSha256": "2ef296300837133176ea44b9bde8e198bcfb41ef818897f92d5cff98e0c7499b"
+    },
+    {
+      "beatId": "G3-explain",
+      "recordingId": "G3-explain",
+      "duration": 18.612,
+      "textSha256": "3d035c6f52b2ccf6ec83b710bd3255cd0ba669f01b1568727221d54df21e065b",
+      "subtitleSha256": "9b482d3581cf199aa0b3305cec71e2884f7f3e27381acce6d3d8d05d073d04f1"
+    },
+    {
+      "beatId": "G4-explain",
+      "recordingId": "G4-explain",
+      "duration": 25.92,
+      "textSha256": "c5820dfe6e1643b0bb8abd18ac15498fb56acd3a1b0e1785d7fcabb2d34c82a1",
+      "subtitleSha256": "04295ef0829a64ea0277dfe38fb51f16c13dd11b2f3764608a411e0fe974e503"
+    },
+    {
+      "beatId": "LAB-air-higher",
+      "recordingId": "LAB-air-higher",
+      "duration": 37.548,
+      "textSha256": "2d3e3603ea1115ef21c52db8004e48c7424adfef9840ae24fbad48747a315479",
+      "subtitleSha256": "0466b9e69de8645c485000b4e5e0f88e9992f0bf3f5c726f3efce14c9898d341"
+    },
+    {
+      "beatId": "OBS-CLIMATE-7",
+      "recordingId": "OBS-CLIMATE-7",
+      "duration": 28.188,
+      "textSha256": "74a9268905115ca213667e27aee703dc89b61b902cf8ac445b674dd723b80843",
+      "subtitleSha256": "28fdb303d6698e0a5be11412f7886b39dc811979e78bb308626153c242c27e49"
+    },
+    {
+      "beatId": "OBS-CLIMATE-1",
+      "recordingId": "OBS-CLIMATE-1",
+      "duration": 26.748,
+      "textSha256": "6ef6a23c6e3589f7d1146127529758c4a20f08974f1bf60884925864f6ba96ec",
+      "subtitleSha256": "321657224f3ba7cbe503820258b0c1f0b10a13cd83cd5da66adab964ea6bdf3f"
+    },
+    {
+      "beatId": "OVERVIEW-regional-system",
+      "recordingId": "OVERVIEW-regional-system",
+      "duration": 21.816,
+      "textSha256": "aabaf491cebb97d272face0a65f9d903c2f8c45d510b304c0c9cbbcc0cec6621",
+      "subtitleSha256": "b7cd55804a2abbe1dff52941a626f7cf464b97cc42b65d1ad5a999f5e8f706ae"
+    },
+    {
+      "beatId": "LAB-life-nyingchi",
+      "recordingId": "LAB-life-nyingchi",
+      "duration": 35.1,
+      "textSha256": "49044d1aebb4c4b94ff1562c458d502323549839d5249c20610a6b857a4c44a2",
+      "subtitleSha256": "b8124c7f5289bbeda1481edb8ab38d3966ad7c0db198bf70f533b97ea249bf54"
+    },
+    {
+      "beatId": "LAB-life-lhasa",
+      "recordingId": "OVERVIEW-life-lhasa",
+      "duration": 40.716,
+      "textSha256": "40a9692043f4d8751e8bf225d7b4f2b1268af008afb8c2001a469d50bdac91f1",
+      "subtitleSha256": "2a52034ecec69d01c459398fdc4d4257c9c1552784968557c30dd591f7974531"
+    },
+    {
+      "beatId": "OVERVIEW-shiquanhe-irrigation",
+      "recordingId": "OVERVIEW-shiquanhe-irrigation",
+      "duration": 36.828,
+      "textSha256": "70bb24a0bba3ae4c23330127720d010aa9243963c4266eadc57e768e1ee721e0",
+      "subtitleSha256": "98bbf5262c7108c8e1d6286adc4185f5b6cf01a7fc3a9c79d69720ac750d15b8"
+    },
+    {
+      "beatId": "OVERVIEW-history-origins",
+      "recordingId": "OVERVIEW-history-origins",
+      "duration": 46.548,
+      "textSha256": "d41ce5bf242f1c2ba3b70fde7c389cfadb87b870febc78ee1aa95f965420213e",
+      "subtitleSha256": "2909fd03cba2aa6ef51b82a0851f77b3b1d09c1e190dbdeb4b10196302b7662b"
+    },
+    {
+      "beatId": "OVERVIEW-jokhang-protection",
+      "recordingId": "OVERVIEW-jokhang-protection",
+      "duration": 38.52,
+      "textSha256": "65e65f06b89f3661adb886542e044dc03d3ef62d4212bf0045f27d8e898681ae",
+      "subtitleSha256": "dfd06e9ead299173eb460b345dd6ffbd3c87dbd073beec4f59491f5c6c78d2f3"
+    },
+    {
+      "beatId": "OVERVIEW-city-change",
+      "recordingId": "OVERVIEW-city-change-core",
+      "duration": 50.184,
+      "textSha256": "c4baf92100b36d510fafb168cbd6ba43b27b27b6752e5b360e7baf06aa3950d2",
+      "subtitleSha256": "14d8a35eef7293b66601fb42a1c26655c4ce3c848a358f666d24d04409f623a3"
+    },
+    {
+      "beatId": "OVERVIEW-regional-connections",
+      "recordingId": "OVERVIEW-regional-connections-core",
+      "duration": 30.924,
+      "textSha256": "f942b336076ef72e379bca4e9e78ab6cae1f13b580313f7182d2725cbf1e6b11",
+      "subtitleSha256": "796423cfac31436eb5a432c1c43e2c4ab71e11b409bf0c0a569d40869c7091dc"
+    },
+    {
+      "beatId": "OVERVIEW-valley-journey",
+      "recordingId": "OVERVIEW-valley-journey",
+      "duration": 68.22,
+      "textSha256": "e8361b264ced203eb112a9759afacca1b243f108491012af9356aa967b35151d",
+      "subtitleSha256": "bf589f8c7e31ea6c9f4402ab6898c50cebfa3874fc2b1748eedddd166a5cbf8f"
+    },
+    {
+      "beatId": "OVERVIEW-protection",
+      "recordingId": "OVERVIEW-protection",
+      "duration": 22.608,
+      "textSha256": "e24fc78579f12da041a2cd33933a94b77bc9bde353e6c10f9f3b44fe6cd60f63",
+      "subtitleSha256": "4c395cb950e0459a5d0c15b93696f1c800da6af76204385a7e8d39675d9882b6"
+    },
+    {
+      "beatId": "OVERVIEW-conclusion",
+      "recordingId": "OVERVIEW-observation-close",
+      "duration": 39.672,
+      "textSha256": "03a932a6777f9bf9c4bc61091f34c056ce3a4ee7e506cbd83e32ef69325ab094",
+      "subtitleSha256": "899a7d6399565d05d28bb17f77971273d25071f2adeb8f4613536e5582a46d3e"
+    }
+  ]
+}

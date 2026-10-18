@@ -1,0 +1,19 @@
+{
+  "id": "ebfcfa762d7f6e58075cb4faaca887bf14793836c07fcb4a96df13d789f5f6d7",
+  "url": "/assets/audio/narration/ebfcfa762d7f6e58075cb4faaca887bf14793836c07fcb4a96df13d789f5f6d7.mp3",
+  "text": "从三地生活回到全域。地形提供条件，地方的用途还要由人的历史行动解释。先看拉萨：七世纪创建的大昭寺，是宗教活动的场所；布达拉宫的礼仪、接见与居住用途，则说明政治与宗教活动怎样组织空间。再看西部托林：阿底峡一〇四二年来到这里。研究据传记记载，降曲沃提出问题，阿底峡撰写《菩提道灯论》，再与译师格韦洛追共同翻译。画面把问题汇集、成文和合译分开：合译让文本跨过语言障碍，不是仅有人抵达。书页与活动位置为功能示意，不复原手稿或古道。这些是营建、使用和交流的具体线索，不能由气候直接推出，也不代表全部西藏的历史。更完整的年代放在专题。现在回到共同问题：场所和文化已经形成，为什么还能持续到后来的生活中？",
+  "duration": 58.86,
+  "bytes": 943476,
+  "sha256": "511f959fbbb04efec41f835cebce13ccbed542fed1ad83c8e7c0f8051c065443",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T14:11:00.172Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ebfcfa762d7f6e58075cb4faaca887bf14793836c07fcb4a96df13d789f5f6d7.subtitles.json",
+  "subtitleSha256": "fd04bcb248ee7009eceb843126ad0db00e75b8c84c020084af4389d9241ac0df",
+  "timingLevel": "word"
+}
