@@ -1,5 +1,10 @@
 # Prototype Instructions
 
+## 2026-10-18 owner-watching bounded follow-up
+
+Independent hidden tab checked only Tholing, runoff and stewardship; owner tab untouched. Tholing and fence condition differences/intermediate steps/resume verified without edits. Fixed reproduced runoff premature labels/feedback, infiltration label on a non-retained source, and water moving over a generalized-river snap that rises on the coarse DEM (11/12 receivers). Flow now stops at the verified descending terminal cell; grey dashed registration carries no water. Labels appear by phase with leaders to actual marks. Natural playback exposed stale river controls when narration turned to Changtang; overviewRiver now exits at that phrase. Final browser at raw47% confirmed removal. Three original-sentence resumes checked at55/26/68%; no system audio listening or new full-show/first-viewer claim.32 checks/5 files, typecheck/build passed. No recording, duration, new model or unrelated changes. Followup evidence: public/project-review/three-process-evidence/followup.json. Freeze continues.
+
+
 ## 2026-10-18 bounded three-process replacement
 
 Owner explicitly reopened Tholing exchange, basin runoff and concrete grassland stewardship; freeze other work. Implemented shared native-word-driven process state and same-atlas geometry: problem collection/writing/joint translation (research citing biography, not reconstructed manuscript); 12 D8 descending paths from archived DEM with fixed illustrative precipitation/infiltration comparison (not measured tributaries, formal basin or forecast); documented2023 Huang Chen patrol/fence removal, showing connectivity (not actual fence/migration coordinates or ecological recovery). One slider/one-condition comparison pauses original sentence; resume clears override. No standalone scene.

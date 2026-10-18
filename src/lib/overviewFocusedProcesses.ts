@@ -22,7 +22,7 @@ export const focusedProcessCopy={
  exchange:{title:'托林 · 从问题到共同翻译',steps:['人物与地方','汇集问题','撰写文本','共同翻译','文本跨越语言'],off:'暂不共同翻译',on:'共同翻译',scope:'据传记研究与The Met资料；书页和活动位置为功能放大示意，不复原手稿、房间、古道。',sources:[
   {title:'周拉、拉毛肖：11—12世纪“道次第”文本研究',url:'https://www.tibetology.ac.cn/2024-08/17/content_42896506.htm'},
   {title:'The Met：Tibet and India',url:'https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india'}]},
- runoff:{title:'雅鲁藏布江 · 坡面怎样汇水',steps:['同一场雨','下渗与地表分开','沿低处汇集','进入干流'],off:'下渗较少',on:'下渗较多',scope:'真实区域DEM与概览干流；12条坡向为教学计算。12份降水中4/8份下渗是对照设定，非观测比例、雨量或流量；不画正式流域边界。',sources:[
+ runoff:{title:'雅鲁藏布江 · 坡面怎样汇水',steps:['同一场雨','下渗与地表分开','沿低处汇集','到达干流网格'],off:'下渗较少',on:'下渗较多',scope:'真实区域DEM与概览干流；12条坡向为教学计算，止于干流所在网格。灰色虚线仅对齐概览河道，非水流。4/8份下渗是对照设定，非观测比例、雨量或流量；不画正式流域边界。',sources:[
   {title:'USGS：地表径流与下渗',url:'https://www.usgs.gov/water-science-school/science/runoff-surface-and-overland-water-runoff'},
   {title:'USGS：流域与分水岭',url:'https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins'},
   {title:'本地高程来源与分辨率',url:'/assets/terrain/tibet-regional-dem.source.json'}]},
@@ -31,6 +31,10 @@ export const focusedProcessCopy={
 } satisfies Record<FocusedProcessKind,{title:string;steps:string[];off:string;on:string;scope:string;sources:{title:string;url:string}[]}>;
 export function focusedProcessFeedback(s:FocusedProcessState):string{
  if(s.kind==='exchange')return s.progress<.5?'先汇集问题，再形成文本；这些活动说明知识交流如何发生。':s.progress<.75?'正在形成文本：页上的笔画随讲述写入，随后才进入共同翻译。':s.enabled?'合译把已有文本转成另一语言的表达；输出文本出现，不等于已经证明所有人都学会。':'暂停合译：已有文本仍保留，另一语言的文本没有形成。缺的是转换与协作环节，而不是人物是否抵达。';
- if(s.kind==='runoff')return `同样12份示意降水，设定${s.enabled?8:4}份下渗、${s.enabled?4:8}份直接汇流。坡面不变，下渗越多，直接进入干流的部分越少；未模拟地下水的后续补给。`;
+ if(s.kind==='runoff'){
+  if(s.progress<.28)return '同样12份示意降水正在落向坡面；此时尚未分成下渗和地表汇流。';
+  if(s.progress<.88)return `紫色圈标出${s.enabled?8:4}份下渗；其余${s.enabled?4:8}份沿DEM下降路径汇集。灰色虚线只对齐概览河道，不表示水流。`;
+  return `同样12份示意降水，${s.enabled?8:4}份下渗、${s.enabled?4:8}份到达干流所在网格。坡面不变，下渗越多，直接汇流越少；未模拟地下水后续补给。`;
+ }
  return s.progress<.5?'巡护先识别哪里发生阻隔；保留原地形和两侧活动空间，随后比较是否移除阻隔段。':s.enabled&&s.progress<.75?'正在移除阻隔段；开口尚未完成，移动符号暂留原侧。':s.enabled?'阻隔段移除，移动符号可以穿过开口；改变的是连通条件，不表示植被或种群已经恢复。':'保留阻隔段，移动符号仍停在同一侧；其余地形与条件不变。这是通行机制对照。';
 }

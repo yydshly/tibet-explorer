@@ -40,10 +40,15 @@ export function buildOverviewFocusedReading(camera:THREE.PerspectiveCamera,at:(l
  tag(steward,'阿里材料 · 围栏/动物位置为示意',0,.2,1.65,3.6);
  tag(steward,'同一侧',-1.35,.15,.95,1);tag(steward,'另一侧活动空间',1.25,.15,.95,1.65);
  const leader=line([new THREE.Vector3(),new THREE.Vector3()],0xffd275);(leader.material as THREE.LineBasicMaterial).depthTest=false;leader.renderOrder=43;group.add(leader);
- const waterLines=runoff.paths.map(path=>{const geometry=new LineGeometry();geometry.setPositions(Array((path.coordinates.length+1)*3).fill(0));const l=new Line2(geometry,new LineMaterial({color:0x69dcec,linewidth:2.3,transparent:true,opacity:.9,depthTest:false,depthWrite:false}));l.renderOrder=40;l.frustumCulled=false;water.add(l);return l;});
+ const waterLines=runoff.paths.map(path=>{const geometry=new LineGeometry();geometry.setPositions(Array(path.coordinates.length*3).fill(0));const l=new Line2(geometry,new LineMaterial({color:0x69dcec,linewidth:2.3,transparent:true,opacity:.9,depthTest:false,depthWrite:false}));l.renderOrder=40;l.frustumCulled=false;water.add(l);return l;});
  const drops=runoff.paths.map(()=>{const m=new THREE.Mesh(new THREE.SphereGeometry(1,12,8),material(0x89e7ff));m.renderOrder=47;water.add(m);return m;});
  const retained=runoff.paths.map(()=>{const m=new THREE.Mesh(new THREE.RingGeometry(.65,1,18),material(0xb3b3ff));m.rotation.x=-Math.PI/2;m.renderOrder=46;water.add(m);return m;});
- const waterLabels=[label('坡面降雨'),label('下渗 · 紫色圈'),label('汇入概览干流')];waterLabels.forEach(s=>{s.onBeforeRender=()=>{};s.renderOrder=50;water.add(s);});
+ const waterLabels=[label('坡面降雨'),label('下渗 · 紫色圈'),label('干流所在网格')];waterLabels.forEach(s=>{s.onBeforeRender=()=>{};s.renderOrder=50;water.add(s);});
+ const waterLeaders=waterLabels.map(()=>{const l=line([new THREE.Vector3(),new THREE.Vector3()],0xd8e8e5);(l.material as THREE.LineBasicMaterial).depthTest=false;l.renderOrder=44;water.add(l);return l;});
+ // The generalized mainstem and DEM cells have different resolution. Keep their
+ // registration separate: water stops at the descending path's terminal cell.
+ // Never animate water across an arbitrary snap that can climb the coarse DEM.
+ const receiverLinks=runoff.paths.map(()=>{const geometry=new LineGeometry();geometry.setPositions([0,0,0,0,0,0]);const l=new Line2(geometry,new LineMaterial({color:0xb8c1bf,linewidth:1.3,dashed:true,dashSize:.04,gapSize:.035,transparent:true,opacity:.7,depthTest:false,depthWrite:false}));l.renderOrder=39;l.frustumCulled=false;water.add(l);return l;});
  let waterPathKey='',waterPoints:THREE.Vector3[][]=[];
  const worldAt=(coords:number[],offset=.12)=>at(coords[0],coords[1],offset);
  return {group,update(state:FocusedProcessState|undefined,viewport:THREE.Vector2){
@@ -81,12 +86,19 @@ export function buildOverviewFocusedReading(camera:THREE.PerspectiveCamera,at:(l
    group.userData.result={opening:open,crossed:animals.filter(m=>m.position.x>0).length};
   }else{
    const keep=state.enabled?8:4,fall=phase(p,0,.28),flow=phase(p,.28,.88),delivery=phase(p,.88,1);
-   const currentPoints=runoff.paths.map(path=>[...path.coordinates,path.receiver].map(c=>worldAt(c)));
+   const currentPoints=runoff.paths.map(path=>path.coordinates.map(c=>worldAt(c)));
    const key=currentPoints.flatMap(points=>points.map(point=>point.y)).join(',');
-   if(key!==waterPathKey){waterPathKey=key;waterPoints=currentPoints;waterLines.forEach((stroke,i)=>stroke.geometry.setPositions(waterPoints[i].flatMap(point=>point.toArray())));}
+   if(key!==waterPathKey){
+    waterPathKey=key;waterPoints=currentPoints;
+    waterLines.forEach((stroke,i)=>{
+     const points=waterPoints[i];stroke.geometry.setPositions(points.flatMap(point=>point.toArray()));
+     receiverLinks[i].geometry.setPositions([...points[points.length-1].toArray(),...worldAt(runoff.paths[i].receiver).toArray()]);receiverLinks[i].computeLineDistances();
+    });
+   }
    runoff.paths.forEach((_path,i)=>{
     const points=waterPoints[i];
     waterLines[i].material.resolution.copy(viewport);waterLines[i].visible=p>.25;
+    const link=receiverLinks[i];link.material.resolution.copy(viewport);link.visible=p>=.28;
     const start=points[0],retains=i<keep;
     const f=flow*(points.length-1),k=Math.min(points.length-2,Math.floor(f));
     const position=p<.28?start.clone().add(new THREE.Vector3(0,(1-fall)*1.2,0)):retains?start.clone().add(new THREE.Vector3(0,-flow*.35,0)):points[k].clone().lerp(points[k+1],f-k);
@@ -95,8 +107,14 @@ export function buildOverviewFocusedReading(camera:THREE.PerspectiveCamera,at:(l
     if(!retains){drops[i].material.color.setHex(delivery>.5?0xffdd88:0x89e7ff);drops[i].scale.multiplyScalar(1+delivery*.3);}
     retained[i].position.copy(start);retained[i].scale.setScalar(unit*(4+flow*4));retained[i].visible=retains&&p>.28;
    });
-   const anchors=[runoff.paths[0].coordinates[0],runoff.paths[4].coordinates[0],runoff.paths[0].receiver];
-   waterLabels.forEach((s,i)=>{const pt=worldAt(anchors[i]),unit=pt.distanceTo(camera.position)/focal;pt.project(camera);pt.y+=(i===0?50:i===1?35:-42)/viewport.y*2;pt.x+=(i===1?105:i===2?60:-50)/viewport.x*2;s.position.copy(pt.unproject(camera));s.scale.set(125*unit,24*unit,1);});
+   const anchors=[drops[0].position,retained[0].position,waterPoints[8][waterPoints[8].length-1]];
+   waterLabels.forEach((s,i)=>{
+    s.visible=i===0?p<.28:i===1?p>=.28:p>=.88;waterLeaders[i].visible=s.visible;
+    const anchor=anchors[i],pt=anchor.clone(),unit=pt.distanceTo(camera.position)/focal;
+    pt.project(camera);pt.y+=(i===0?50:i===1?40:-42)/viewport.y*2;pt.x+=(i===1?-75:i===2?70:-50)/viewport.x*2;
+    s.position.copy(pt.unproject(camera));s.scale.set(125*unit,24*unit,1);
+    waterLeaders[i].geometry.setFromPoints([anchor,s.position]);
+   });
    group.userData.result={retained:keep,direct:12-keep,delivered:p>=.99?12-keep:0};
   }
   group.userData={...group.userData,kind:state.kind,progress:p,enabled:state.enabled,scope:'source-backed-action / enlarged-mechanism-not-survey'};

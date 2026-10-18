@@ -6,6 +6,6 @@ export const yarlungReadingCoordinates=river.features.flatMap((feature,index)=>f
 export function overviewRiverState(recordingId:string,text:string,textProgress:number):OverviewRiverState|undefined {
  if(recordingId!=='OVERVIEW-protection')return undefined;
  const start=text.indexOf('雅鲁藏布江'),end=text.indexOf('羌塘的生态管护'),at=textProgress*text.length;
- if(start<0||end<=start)return undefined;
+ if(start<0||end<=start||at>=end)return undefined;
  return {reveal:Math.max(0,Math.min(1,(at-start)/(end-start))),emphasized:at>=start&&at<end};
 }

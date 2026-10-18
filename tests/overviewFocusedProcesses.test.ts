@@ -17,6 +17,9 @@ describe('bounded sourced processes',()=>{
  it('describes work in progress before claiming the visible result',()=>{
   expect(focusedProcessFeedback({kind:'exchange',progress:.6,enabled:true})).toContain('正在形成文本');
   expect(focusedProcessFeedback({kind:'stewardship',progress:.6,enabled:true})).toContain('开口尚未完成');
+  expect(focusedProcessFeedback({kind:'runoff',progress:.12,enabled:true})).toContain('尚未分成');
+  expect(focusedProcessFeedback({kind:'runoff',progress:.6,enabled:false})).toContain('沿DEM下降路径');
+  expect(focusedProcessFeedback({kind:'runoff',progress:1,enabled:true})).toContain('4份到达干流所在网格');
  });
  it('changes exactly two recordings; preserves the other nineteen and chapter structure',()=>{
   expect(after.chapters).toEqual(before.chapters);expect(after.clips).toHaveLength(21);
@@ -63,7 +66,7 @@ describe('bounded sourced processes',()=>{
   model.update({kind:'stewardship',progress:1,enabled:true},size);expect(model.group.userData.result).toEqual({opening:1,crossed:6});
   model.update({kind:'stewardship',progress:0,enabled:true},size);expect(model.group.userData.result).toEqual({opening:0,crossed:0});
   model.update({kind:'runoff',progress:1,enabled:false},size);expect(model.group.userData.result).toEqual({retained:4,direct:8,delivered:8});
-  expect((model.group.children[2].children[0] as THREE.Line).geometry.attributes.instanceStart.count).toBe(runoff.paths[0].coordinates.length);
+  expect((model.group.children[2].children[0] as THREE.Line).geometry.attributes.instanceStart.count).toBe(runoff.paths[0].coordinates.length-1);
   const low=model.group.children[2].children.filter(c=>c instanceof THREE.Mesh&&c.geometry.type==='SphereGeometry'&&c.visible).length;
   const stroke=(model.group.children[2].children[0] as THREE.Line).geometry.attributes.instanceStart;
   model.update({kind:'runoff',progress:1,enabled:true},size);
@@ -72,6 +75,13 @@ describe('bounded sourced processes',()=>{
   model.update({kind:'runoff',progress:.18,enabled:true},size);
   const rain=model.group.children[2].children.filter(c=>c instanceof THREE.Mesh&&c.geometry.type==='SphereGeometry') as THREE.Mesh<THREE.SphereGeometry,THREE.MeshBasicMaterial>[];
   expect(rain).toHaveLength(12);rain.forEach(m=>{expect(m.visible).toBe(true);expect(m.material.color.getHex()).toBe(0x89e7ff);expect(m.material.opacity).toBe(1);});
+  const labels=model.group.children[2].children.filter(c=>c instanceof THREE.Sprite);
+  expect(labels.map(s=>s.visible)).toEqual([true,false,false]);
+  model.update({kind:'runoff',progress:.6,enabled:false},size);expect(labels.map(s=>s.visible)).toEqual([false,true,false]);
+  model.update({kind:'runoff',progress:1,enabled:false},size);expect(labels.map(s=>s.visible)).toEqual([false,true,true]);
+  // The last source-to-mainstem snap can rise on the coarse DEM. Flow must stop
+  // on the verified descending cell, not travel that cartographic connector.
+  runoff.paths.forEach((path,i)=>{if(i>=4){const end=path.coordinates.at(-1)!;expect(rain[i].position.x).toBeCloseTo(end[0]);expect(rain[i].position.z).toBeCloseTo(end[1]);}});
   model.update(undefined,size);expect(model.group.visible).toBe(false);
  });
 });
