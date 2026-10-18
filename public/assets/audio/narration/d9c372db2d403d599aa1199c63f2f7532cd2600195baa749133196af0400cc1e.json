@@ -1,0 +1,15 @@
+{
+  "id": "d9c372db2d403d599aa1199c63f2f7532cd2600195baa749133196af0400cc1e",
+  "url": "/assets/audio/narration/d9c372db2d403d599aa1199c63f2f7532cd2600195baa749133196af0400cc1e.mp3",
+  "text": "院落和厅堂形成了空间，谁怎样使用它，还需要信仰、知识与交往的历史。接下来保持这处空间，让文本和学习者进入工作桌，看传播怎样经过翻译、选择与地方实践。",
+  "duration": 16.02,
+  "bytes": 258036,
+  "sha256": "f9f08d7e642da65b540ff71972800426a00508c404d13b1e7e00385771c70d5d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:01.561Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

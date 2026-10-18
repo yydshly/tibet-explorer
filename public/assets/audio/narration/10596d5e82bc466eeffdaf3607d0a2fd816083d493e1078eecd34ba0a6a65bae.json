@@ -1,0 +1,15 @@
+{
+  "id": "10596d5e82bc466eeffdaf3607d0a2fd816083d493e1078eecd34ba0a6a65bae",
+  "url": "/assets/audio/narration/10596d5e82bc466eeffdaf3607d0a2fd816083d493e1078eecd34ba0a6a65bae.mp3",
+  "text": "水源还要经过取供水设施、管理与持续维护，才能服务居民。",
+  "duration": 5.724,
+  "bytes": 93300,
+  "sha256": "2583bb89cbed5b77b79400a15fe2bd0344a72976266a371d1d59b05e1e697d15",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:06.373Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

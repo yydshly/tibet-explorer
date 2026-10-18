@@ -1,0 +1,15 @@
+{
+  "id": "4e5856e8780c12603c9ad9954e70f21a0ddfb3b6fa8b737f9fab72ab7cbf67dd",
+  "url": "/assets/audio/narration/4e5856e8780c12603c9ad9954e70f21a0ddfb3b6fa8b737f9fab72ab7cbf67dd.mp3",
+  "text": "请从侧面辨认进入、向外与大气交换的方向，想一想哪一部分属于最初驱动，哪一部分属于后来的响应。把这两层分开，再去观察具体对象，才不会由一场暖天气就推断长期气候趋势。",
+  "duration": 14.58,
+  "bytes": 234996,
+  "sha256": "550ee79224f115b69ee8a5322fab74eb8fcc4ab498c0bb91d871802fa1ab1a81",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:33.132Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

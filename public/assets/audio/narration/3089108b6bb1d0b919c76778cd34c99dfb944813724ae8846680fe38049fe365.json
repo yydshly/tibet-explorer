@@ -1,0 +1,15 @@
+{
+  "id": "3089108b6bb1d0b919c76778cd34c99dfb944813724ae8846680fe38049fe365",
+  "url": "/assets/audio/narration/3089108b6bb1d0b919c76778cd34c99dfb944813724ae8846680fe38049fe365.mp3",
+  "text": "在林芝，再换到鲁朗。二〇一六年小镇试营业，住宿、步行商业和地方服务，让经过这里的人有了停留的场所。把接待空间与刚才的公共文化课堂分开看，现代建设不等于古代原貌。",
+  "duration": 16.776,
+  "bytes": 270132,
+  "sha256": "4c533718b8870cad10310e04ce1a0bb2c972bbf627b2e15248254fd02eeb7e78",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T13:15:07.381Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

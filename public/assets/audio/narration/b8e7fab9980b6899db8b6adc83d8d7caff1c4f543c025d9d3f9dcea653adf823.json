@@ -1,0 +1,15 @@
+{
+  "id": "b8e7fab9980b6899db8b6adc83d8d7caff1c4f543c025d9d3f9dcea653adf823",
+  "url": "/assets/audio/narration/b8e7fab9980b6899db8b6adc83d8d7caff1c4f543c025d9d3f9dcea653adf823.mp3",
+  "text": "请回到生态与保护层，选择一个关注的问题，例如交通与生态怎样协调，旅游怎样支持地方生活与文化维护？可以收藏或记录到我的探索。这个问题会成为下一段选择地点和主题路线的认识目的。",
+  "duration": 16.704,
+  "bytes": 268980,
+  "sha256": "245388a21d53447a5606274ba4a5807f9f245074b07db7ee6086a1697ac1a117",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:24.786Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

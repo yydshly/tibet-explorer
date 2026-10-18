@@ -1,0 +1,15 @@
+{
+  "id": "eb1aa8cfd1833f03aa808c8a5f2fb07a86c691006df4e79e29456c9c1562181a",
+  "url": "/assets/audio/narration/eb1aa8cfd1833f03aa808c8a5f2fb07a86c691006df4e79e29456c9c1562181a.mp3",
+  "text": "这一章把地方价值放回周边关系。下一章转到近现代，认识交通、城乡生活与保护怎样改变这些联系。我们会先分清项目开通这一事件，再研究实际可达性和社会影响，避免由一条新线路推出全部变化。",
+  "duration": 17.748,
+  "bytes": 285684,
+  "sha256": "0ac1da19911257245ea54cc245ebeafa2d5ecc48835a397bb66c5617659738e5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:15.367Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

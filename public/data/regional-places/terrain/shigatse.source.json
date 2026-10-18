@@ -1,0 +1,105 @@
+{
+  "id": "shigatse",
+  "title": "日喀则站、城区与扎什伦布寺",
+  "accessedAt": "2026-10-16T01:45:09.253982+00:00",
+  "bbox": [
+    88.845,
+    29.207,
+    88.957,
+    29.297
+  ],
+  "boundsDegrees": {
+    "west": 88.845,
+    "south": 29.207,
+    "east": 88.957,
+    "north": 29.297
+  },
+  "columns": 385,
+  "rows": 385,
+  "sourceZoom": 13,
+  "displaySamplingMetres": {
+    "eastWest": 28.3,
+    "northSouth": 26.1
+  },
+  "dataUrl": "/data/regional-places/terrain/shigatse.int16",
+  "sourceUrl": "/data/regional-places/terrain/shigatse.source.json",
+  "dataset": "https://registry.opendata.aws/terrain-tiles/",
+  "formatDocumentation": "https://github.com/tilezen/joerd/blob/master/docs/formats.md",
+  "attributionUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "attribution": "Mapzen / Tilezen; SRTM and GMTED2010 terrain data courtesy of the US Geological Survey; ETOPO1 courtesy of NOAA.",
+  "unit": "metres above mean sea level",
+  "byteOrder": "little-endian signed Int16",
+  "processing": "Terrarium RGB decode; bilinear pixel-centre resampling to a WGS84 longitude-latitude display grid; rounded to nearest metre.",
+  "minimum": 3825,
+  "maximum": 4539,
+  "bytes": 296450,
+  "sha256": "3e230cce65702d383471bb77265aa3fbfd229985241fb2d1eed770c1d6a2ebfa",
+  "limitations": [
+    "Display sample spacing is not survey accuracy; source terrain is a mosaic of datasets of different ages and resolutions.",
+    "Acquisition time is the download date, not a terrain observation date or a historical reconstruction date.",
+    "No measured buildings, road surfaces, engineered banks, present water levels or historical urban extents are encoded.",
+    "Do not extrapolate outside these bounds. Horizontal enlargement and any vertical exaggeration must be labeled by the renderer."
+  ],
+  "tiles": [
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6117/3398.png",
+      "bytes": 39200,
+      "sha256": "b94fdc5a7efb8207e854e4da7fce85211410a31c60c80fa3e7fbceedc8665e57"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6118/3398.png",
+      "bytes": 27149,
+      "sha256": "5e14eb5f9b34bf62c91522923de376ff74c078583edf6086af9e2962c767390a"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6119/3398.png",
+      "bytes": 38591,
+      "sha256": "93c11f1904ebecb45959c324b33f01cbec13cd5d7da189d88707b3a0a3cd5cf4"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6120/3398.png",
+      "bytes": 44290,
+      "sha256": "4e6c4c81901b2df554324c728fc9abfeaec1107a30048efef2f3479e40115234"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6117/3399.png",
+      "bytes": 34381,
+      "sha256": "eeca274abe657c8f3c2b6fee5f3069f9757ec6561bd3293ab46f65e0fe33ba1f"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6118/3399.png",
+      "bytes": 26740,
+      "sha256": "99d3d2819dee1d965ac84868eae92c496e8df9249cdaccb29be77ae90b1302c5"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6119/3399.png",
+      "bytes": 26902,
+      "sha256": "f5f4ab22409c10cca4e1120b0b9bcd7838aa1bd30971fa17c6365d07011abca1"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6120/3399.png",
+      "bytes": 37853,
+      "sha256": "7c0f95f4888009bf83e2ba3731d6d4d0b53386549a46f4c2a7d7cd7e4c603330"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6117/3400.png",
+      "bytes": 27652,
+      "sha256": "868d1824fc6dac7d7a9eac6d2fd94b6a61fada1a3d3f4279dceaf9379aa8cefc"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6118/3400.png",
+      "bytes": 25351,
+      "sha256": "ee8f8cefc0336f20bf366af9a4af4cd390f0358729d1d234b7353ba773694896"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6119/3400.png",
+      "bytes": 20153,
+      "sha256": "edba59c8f99b27305485f1bb47b049ea3942196fca75e0e0da8a515044bc4717"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6120/3400.png",
+      "bytes": 25822,
+      "sha256": "4815596f3c5dfb6b0e5e242efaa62446341952a900af251fc88df47e3f52e1c0"
+    }
+  ]
+}

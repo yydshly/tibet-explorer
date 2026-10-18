@@ -1,0 +1,19 @@
+{
+  "id": "7a533cc9165795abc0b7ad09a0906fd872e798d776542cba80f770f997976c8a",
+  "url": "/assets/audio/narration/7a533cc9165795abc0b7ad09a0906fd872e798d776542cba80f770f997976c8a.mp3",
+  "text": "请选择那曲，再回到林芝或阿里，保持地形观察层，比较它们的位置与地方介绍。问的仍是同一个问题：这里有哪些水热和地形条件？城区标记是地区入口，高程作了概览抽样，不能用一个点代表全域。",
+  "duration": 16.956,
+  "bytes": 273012,
+  "sha256": "1c92f0a008d6760831a3492f292a080e924b8650fd41fbbd1b0787d69bebe621",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:33:33.509Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7a533cc9165795abc0b7ad09a0906fd872e798d776542cba80f770f997976c8a.subtitles.json",
+  "subtitleSha256": "2c0e8a74f0d8ca5b65244605e8bf28ef0d66a729697a528e5015ab2064792c3e",
+  "timingLevel": "word"
+}

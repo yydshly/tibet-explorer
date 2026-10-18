@@ -1,0 +1,19 @@
+{
+  "id": "7852ebc1dd89885934e237ac084b88afe3509e090275e618c43935e505fd35a9",
+  "url": "/assets/audio/narration/7852ebc1dd89885934e237ac084b88afe3509e090275e618c43935e505fd35a9.mp3",
+  "text": "1713年的金册金印，把寺院历史连向更广的制度关系。康熙帝册封五世班禅为班禅额尔德尼；相关文物与驻锡传统说明日喀则的重要性由具体人物、制度和交流积累而来，不能只用河谷优越这一条原因概括。",
+  "duration": 18.72,
+  "bytes": 301236,
+  "sha256": "71024134f2b4a878d4593d22b142134938895cdac98b827598cc0335fa0106d1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:49:29.070Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7852ebc1dd89885934e237ac084b88afe3509e090275e618c43935e505fd35a9.subtitles.json",
+  "subtitleSha256": "72d57aa067afec6832ecb8ca1bb2c02dd4aaa036e452d3634f1819928f267372",
+  "timingLevel": "word"
+}

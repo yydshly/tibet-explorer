@@ -1,0 +1,15 @@
+{
+  "id": "b60372d90b08c0facdc088dbd3961c5908ea54972c4520efb4ed954d6a75cc60",
+  "url": "/assets/audio/narration/b60372d90b08c0facdc088dbd3961c5908ea54972c4520efb4ed954d6a75cc60.mp3",
+  "text": "从环境中的取水、建造，到交流、书页保护，再到表演与学习，我们看见了不同的生活条件和人的行动。文化的来路还需要历史材料解释。二零零九年是藏戏列入名录的年份，不是它的起源年。接下来先看考古怎样留下活动证据，再区分事件、实物和后来记录各自的年代。",
+  "duration": 23.976,
+  "bytes": 385332,
+  "sha256": "c29599d3fae1d5c84641a97e29ad98cdb5c2f9e8d1c379e2e1eaab41f7ccd307",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T05:15:32.488Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

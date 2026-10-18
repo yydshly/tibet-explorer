@@ -1,0 +1,19 @@
+{
+  "id": "64f21ea5d4ee096c519316212ba120cb609f5a2cc0231a4124e1976ca918aa41",
+  "url": "/assets/audio/narration/64f21ea5d4ee096c519316212ba120cb609f5a2cc0231a4124e1976ca918aa41.mp3",
+  "text": "回到林芝，先看区域入口。二〇二一年开通的拉林铁路联系山南和拉萨，公路与航空也仍然存在。区域之间能够相连，是进入地方生活的第一环。",
+  "duration": 12.528,
+  "bytes": 202164,
+  "sha256": "757a89d57d14bcc925e4f54130968ce748756bad3a08c7fb6495ffd1c4a604fb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:29:07.739Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/64f21ea5d4ee096c519316212ba120cb609f5a2cc0231a4124e1976ca918aa41.subtitles.json",
+  "subtitleSha256": "ef82e97e0b9d923c3f47a5f72c583cf608deb6ade70f573b464609042c6cc7fa",
+  "timingLevel": "word"
+}

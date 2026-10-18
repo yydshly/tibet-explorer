@@ -1,0 +1,15 @@
+{
+  "id": "9964b8a2e511c172fbc7ef0c07d9c47a06db149883e0bf5d6ddb6bf18e138602",
+  "url": "/assets/audio/narration/9964b8a2e511c172fbc7ef0c07d9c47a06db149883e0bf5d6ddb6bf18e138602.mp3",
+  "text": "请从水系切回地貌，找出坡面、河道与较低的谷地，再按需查看冰川层。观察可提出成因假设，资料才能检验它。具体景观还应阅读地质、测绘与保护资料，区分长期形成和短时天气带来的变化。",
+  "duration": 18.144,
+  "bytes": 292020,
+  "sha256": "f0d4c8101337a7e6cd7511acc425a0a36b7a0208f4af881ed2488b0a54a60133",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:04.330Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

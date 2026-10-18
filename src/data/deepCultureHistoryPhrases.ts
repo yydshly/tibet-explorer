@@ -1,0 +1,203 @@
+import type {NarrationScenePhrase} from '../lib/narrationScenePhrase';
+
+/** Literal anchors in the unchanged, sourced scripts. Progress describes a
+ * reversible reading/process model, never an archaeological or event date. */
+const p=(token:string,targets:string[],title:string,explanation:string,settings?:NarrationScenePhrase['settings'],from?:number,to=from):NarrationScenePhrase=>({token,targets,title,explanation,settings,from,to});
+export const deepCultureHistoryPhrases:Record<string,NarrationScenePhrase[]>={
+ 'K1-opening':[
+  p('从河谷生活',['palace-hill'],'拉萨红山 · 建筑在山体上','保留山体与整体建筑，先认识地方条件。',{layer:'architecture',selected:'palace-hill',cutaway:false},.12),
+  p('先看山体、台地',['palace-hill','palace-terrace'],'台地与阶梯 · 回应高差','平台联系不同高度，示意阶梯不代表真实游览线路。',{selected:'palace-terrace'},.12),
+  p('再分清白宫与红宫',['palace-white','palace-red'],'白宫与红宫 · 同一建筑群的分区','以现有体量辨认相对位置，再问用途与年代。',{selected:'',cutaway:false},.5),
+  p('这是依据遗产资料',['palace-white','palace-red'],'特征体量 · 与测绘模型分开','关系依据遗产资料，窗数、尺寸与阶梯未实测。',{selected:''},.5),
+ ],
+ 'K1-explain':[
+  p('白宫的仪典',['palace-white'],'白宫 · 仪典、居住与接见','关注同一白色体量；用途来自遗产说明，不从颜色猜功能。',{layer:'architecture',selected:'palace-white',cutaway:false},.34,.48),
+  p('和偏西、更高处的红宫',['palace-red'],'红宫 · 偏西且更高','转向同一红色体量，与白宫保留高低及方向参照。',{selected:'palace-red'},.48,.66),
+  p('评估文件记述一六四五年',['palace-white'],'1645—1648 · 白宫重建的材料节点','保持现存体量；年代标记指向建筑分区，不演成施工录像。',{selected:'palace-white'},.7,.78),
+  p('五世达赖喇嘛迁入',['palace-white'],'人物与使用 · 五世达赖喇嘛迁入','人物行动与空间用途要同读，模型不添加未经记录的室内。',{selected:'palace-white'},.78),
+  p('桑结嘉措组织红宫建设',['palace-red'],'1694 · 红宫完成的另一节点','白宫与红宫有不同建设来路，现存形体不是同年形成。',{selected:'palace-red'},.82,.94),
+  p('人物、纪念与用途',['palace-white','palace-red'],'山地提供约束 · 人的行动形成用途','让两个分区同时可读；环境不能独自解释建筑文化。',{selected:'palace-history'},.94,1),
+ ],
+ 'K1-observe':[
+  p('请展开体量关系',['palace-white','palace-red'],'展开、选择 · 自己比较分区','展开只帮助看体量关系，当前操作由你控制。'),
+  p('镜头、文字和标注',['palace-hill'],'选择分区 · 对照山体','形体拆开不揭示未知室内，选择后的说明对应所选对象。'),
+  p('也可以切到院落构造原理',['palace-hill'],'构造原理 · 与真实建筑材料互相参照','一般梁柱关系不能替代布达拉宫的测绘与保护材料。'),
+ ],
+ 'K1-bridge':[
+  p('同一建筑群',['palace-white','palace-red'],'同一建筑 · 累积不同时代与用途','保留分区，回想人物、年代和用途怎样一起解释建筑。',{layer:'architecture',selected:'palace-history',cutaway:false},1),
+  p('接下来从拉萨',['palace-white','palace-red'],'从建筑转向交流 · 带着证据问题','下一段改读托林的交流材料，不把这里当成托林寺。',{selected:'palace-history'},1),
+  p('院落中的译写',['palace-white'],'史料与原理 · 保持身份区别','院落模型解释一般学习机制，不冒充历史课堂。',{selected:'palace-white'},.8),
+ ],
+ 'K2-opening':[
+  p('建筑已经给出了使用空间',['courtyard'],'保留使用空间 · 知识还需要载体','同一院落和工作桌作为通用使用背景。',{layer:'religion',selected:'courtyard',cutaway:false},0),
+  p('现在让空白文本载体来到工作桌',['culture-incoming'],'载体来到 · 先有可传递的物件','空白载体移到桌面，表示传递的条件，不表示真实行程。',{selected:'culture-text'},0,.32),
+  p('它代表可以传递的知识',['culture-text'],'空白页 · 不伪造古代经文','移动的载体仍是原理对象，没有替真实材料补出原文。',{selected:'culture-text'},.32),
+  p('旁边阿底峡与托林',['culture-text'],'人物、地点、时代 · 回到真实材料','材料卡提供核对入口，院落不是托林寺的实测布局。',{selected:'culture-text'},.32),
+ ],
+ 'K2-explain':[
+  p('同一桌面增加对照页',['culture-text'],'对照页进入桌面 · 同一载体继续使用','先看载体与对照页并置，传播需要可阅读和整理的材料。',{layer:'religion',selected:'culture-text'},.3,.38),
+  p('学习者参与译写、选择和理解',['culture-learning'],'译写与理解 · 当地参与者加入','笔、对照页和学习位置共同变化，交流需要选择和解释。',{selected:'culture-learning'},.38,.68),
+  p('再把整理后的载体带向厅堂前',['culture-carrier','hall'],'整理之后 · 带入空间使用','跟随同一载体及使用者从桌边到厅堂前，知识通过实践进入地方。',{selected:'hall'},.68,1),
+  p('交流不是把外来形式原样搬入建筑',['culture-learning','hall'],'传播经过学习 · 不是原样复制','保留完成的使用关系；语言、传统和组织继续参与塑造实践。',{selected:'hall'},1),
+  p('这个过程模型',['culture-text'],'机制示意 · 不复原阿底峡课堂','空白页和通用空间不能替代人物、作品与年代材料。',{selected:'culture-text'},1),
+ ],
+ 'K2-observe':[
+  p('请选择文本工作桌',['culture-text'],'选择桌面 · 与交流材料对照','选择与进度由你控制，先辨认载体，再核对材料。'),
+  p('1042年的行程材料',['culture-text'],'事件与画像 · 分开形成时间','后来绘制的画像不是1042年行程的现场记录。'),
+  p('分开传入、学习与使用',['culture-learning','hall'],'传入、学习、使用 · 不只是一条连线','回拖同一过程，分别观察载体到来、对照与进入实践。'),
+ ],
+ 'K2-bridge':[
+  p('交流与译写',['culture-learning','hall'],'学习进入使用 · 保留同一实践','载体与使用者到达厅堂前，交流通过行动进入空间。',{layer:'religion',selected:'hall'},1),
+  p('文本还需要制作、保护和传下去',['culture-text'],'继续追问 · 载体怎样保存','不只理解内容，还要认识材料制作与长期保护。',{selected:'culture-text'},1),
+  p('下一段从一件真实木经板',['culture-text'],'由交流到木经板 · 带着用途问题','下一段用有馆藏编号的木经板，对照保护原理。',{selected:'culture-text'},1),
+ ],
+ 'K3-opening':[
+  p('刚才看了阿底峡',['culture-craft'],'从交流到载体 · 先辨木护板','以馆藏木经板为案例，画面是保护关系原理。',{layer:'art',selected:'culture-craft',cutaway:true},0),
+  p('现在看一件约十二世纪早期',['manuscript-lower-cover'],'约12世纪早期 · 实物身份由馆藏说明','1987.407.6是藏品编号，不能当成制作年代。',{selected:'culture-craft'},0),
+  p('馆方说明成对木护板保护脆弱书页',['manuscript-upper-cover','manuscript-leaves'],'护板保护书页 · 各有作用','上下护板和中间空白页分开可见，尚未合拢。',{selected:'culture-craft'},0),
+  p('画面把保护关系展开',['manuscript-lower-cover','manuscript-upper-cover'],'展开关系 · 保持书页可见','两板之间保留分散的空白页，便于随后看整理和保护。',{selected:'culture-craft'},0),
+  p('它没有复原',['culture-craft'],'不补造原配 · 与真实文物互相参照','假设第二块板和空白页不属于原物复原，宗教图像另查原图。',{selected:'culture-craft'},0),
+ ],
+ 'K3-explain':[
+  p('先辨认下方护板与散开的书页',['manuscript-lower-cover','manuscript-leaves'],'下板承托 · 书页仍散开','下护板固定，空白页的分散位置帮助辨认整理前后。',{layer:'art',selected:'culture-craft',cutaway:true},0,.08),
+  p('推进以后，空白页逐步对齐、叠放',['manuscript-leaves'],'整理书页 · 对齐并叠放','同一批空白页收拢到下板上，叶数与尺寸不是实测值。',{selected:'culture-craft'},.08,.6),
+  p('护板承托书页',['manuscript-lower-cover','manuscript-leaves'],'整理完成 · 下板承托','先停留于叠放状态，再让上板参与保护。',{selected:'culture-craft'},.6,.62),
+  p('上方护板随后降下',['manuscript-upper-cover'],'上护板下降 · 逐步覆盖','同一上板落向已整理书页，物理覆盖关系可暂停和回拖。',{selected:'culture-craft'},.62,1),
+  p('书页被收在两板之间',['manuscript-upper-cover','manuscript-lower-cover'],'两板之间 · 保护脆弱书页','画面保留合拢状态，解释制作与保护怎样支持文本流传。',{selected:'culture-craft'},1),
+  p('实物上的雕刻图像',['culture-craft'],'图像与颜料 · 回到真实馆藏原图','原理模型不仿刻图像，也不能替图像猜测宗教意义。',{selected:'culture-craft'},1),
+ ],
+ 'K3-observe':[
+  p('请退回展开护板',['culture-craft'],'回拖与合拢 · 由你比较','操作保留手动进度，观察书页何时可见、何时被覆盖。'),
+  p('真实经板属于约十二世纪早期',['manuscript-lower-cover'],'制作年代 · 与编号分开','实物的约12世纪早期年代来自馆藏；1987只是编号的一部分。'),
+  p('模型解释用途',['culture-craft'],'用途与身份 · 两类材料互相参照','模型解释保护关系，馆藏资料解释具体物品身份。'),
+ ],
+ 'K3-bridge':[
+  p('知识经过交流和学习',['culture-craft'],'载体已经合拢 · 知识也靠保护留下','保留护板保护书页的完成状态，承接交流与制作。',{layer:'art',selected:'culture-craft'},1),
+  p('有些文化还需要人持续实践',['culture-craft'],'物件与实践 · 保存条件不同','保护物件之外，还要给实践者留下学习机会。',{selected:'culture-craft'},1),
+  p('下一段以藏戏为例',['culture-craft'],'由书页保护到表演传承','带着如何持续的问题进入场地与参与关系，不添加舞步复原。',{selected:'culture-craft'},1),
+ ],
+ 'K4-opening':[
+  p('木经板帮助保存书页',['opera-space'],'保留场地整体 · 认识活的实践','固定同一组角色，先辨认表演与观看空间。',{layer:'life',selected:'opera-space',cutaway:false},.18),
+  p('先辨认金色的讲述者',['opera-performance'],'金色讲述者 · 与青色表演者配合','色彩只用于辨认功能，模型不模仿服饰、唱腔或舞步。',{selected:'opera-performance'},.18),
+  p('和外围的观看者',['opera-audience'],'观看者 · 需要可观看的位置','保留同一组观众和表演角色，位置表达观看关系。',{selected:'opera-space'},.18),
+  p('藏戏可以在广场',['opera-space'],'不同场地 · 都要组织观看','来源支持多种演出场所，当前圆形排布只是比较安排。',{selected:'opera-space'},.18),
+  p('画面只比较空间关系',['opera-space'],'空间模型 · 不定义固定传统','角色数量和场地形状不是普遍规范或真实演出统计。',{selected:'opera-space'},.18),
+ ],
+ 'K4-explain':[
+  p('先看讲述与表演的配合',['opera-performance'],'讲述与表演 · 共同表达内容','先保留角色分工，不让学习者提前进入练习位置。',{layer:'life',selected:'opera-performance',cutaway:false},0,.3),
+  p('现在注意珊瑚色的学习者',['opera-learning'],'珊瑚色学习者 · 从观看开始','同一学习者仍在观看位置，接下来再走近示范。',{selected:'opera-learning'},.3,.32),
+  p('他离开观看位置，走近示范者',['opera-learning'],'走近示范 · 观看接到学习','学习者和示范者改变位置及朝向，实际移动跟随本句。',{selected:'opera-learning'},.32,.68),
+  p('再进入共同的练习空间',['opera-learning'],'共同练习 · 建立参与机会','同一组角色进入共享练习位置，移动不等于掌握能力。',{selected:'opera-learning'},.68,1),
+  p('位置变化使观看接到参与机会',['opera-learning'],'有参与机会 · 仍需真实教学','保持共同练习位置，不用模型给学习者评分。',{selected:'opera-learning'},1),
+  p('二零零九年的列入名录决定',['opera-space','opera-learning'],'2009年保护承诺 · 不是已验证效果','培训、研究和出版来自评审决定，实际效果需要后续记录。',{selected:'opera-space'},1),
+ ],
+ 'K4-observe':[
+  p('请切换到正面舞台关系',['opera-space'],'切换场地 · 同一组参与者','由你控制场地与进度，比较观看方向和活动位置。'),
+  p('学习者与示范者仍然在场',['opera-learning'],'保留学习关系 · 场地不决定文化存亡','同一角色在场地变化后仍有实践位置。'),
+  p('开放与正面两种画面',['opera-audience'],'空间比较 · 不是进化年表','两种排布不是从落后走向先进的历史过程。'),
+  p('再回拖到观看阶段',['opera-learning'],'回拖观看与参与 · 观察机会怎样建立','保持手动回拖，不让下一句强制覆盖操作。'),
+ ],
+ 'K4-bridge':[
+  p('从环境中的取水、建造',['opera-space'],'从生活到实践 · 保留参与的空间','回看环境条件与人的行动，不能由气候直接推出文化。',{selected:'opera-space',cutaway:false},1),
+  p('文化的来路还需要历史材料解释',['opera-learning'],'实践怎样走到今天 · 转向历史证据','同一参与关系还要用有年代的材料解释其来路。',{selected:'opera-learning'},1),
+  p('二零零九年是藏戏列入名录的年份',['opera-space'],'2009列入名录 · 不等于起源','年份说明材料中的具体节点，不能代替传统形成史。',{selected:'opera-space'},1),
+  p('接下来先看考古',['opera-space'],'由实践到考古 · 区分行动与后来记录','进入下一段后，分别核对活动、实物和记录的年代。',{selected:'opera-space'},1),
+ ],
+ 'H1-opening':[
+  p('刚才从文化实践',['history-context'],'先看情境 · 物件需要上下文','把历史问题放回层位与发现情境，先保留完整覆盖。',{layer:'activity',selected:'prehistoric'},0),
+  p('模型的层次、器物和记录',['history-context','history-tool'],'层位与器物 · 先建立关联','逐步移开覆盖并提起示意器物，不能将其当尼阿底实测剖面。',undefined,0,.2),
+  p('不复原尼阿底的真实剖面',['history-context'],'教学层次 · 并非真实遗址剖面','层厚、器形与位置均为机制示意，不提供测绘读数。',undefined,.2),
+  p('研究需要发现位置、层位、样本与年代',['history-context','history-dating'],'发现记录与样本 · 缺一不可','同一材料位置和研究记录相互参照，单件物体不足以解释整个人群。',undefined,.2,.4),
+ ],
+ 'H1-explain':[
+  p('打开情境',['history-context','history-tool'],'打开层位 · 保留发现情境','先移开覆盖、显露器物，让判断有上下文。',{layer:'activity',selected:'prehistoric'},0,.3),
+  p('再把器物与研究记录关联',['history-sample','history-dating'],'样本与记录 · 从情境送到研究','示意样本从原层位移向记录托盘，位置、年代和记录要关联。',{layer:'activity'},.3,.6),
+  p('尼阿底二零一八年研究支持',['history-dating','history-inference'],'尼阿底研究 · 支持高海拔活动','活动证据进入结论位；年代来自研究，不从模型层厚读取。',{layer:'activity'},.68,.75),
+  p('活动不自动等于全年定居',['history-inference'],'活动有证据 · 全年定居另需材料','金色活动位与灰色后续问题分开，避免把活动直接升格为定居。',{layer:'settlement'},.75,.82),
+  p('另一项农业研究讨论高原东北部',['history-dating','history-inference'],'另一项研究 · 地域与样本另查','全年生活研究属于高原东北部特定时期，不能搬成尼阿底的同一结论。',{layer:'settlement'},.82,.94),
+  p('地域、样本和结论不能混在一起',['history-inference'],'比较证据范围 · 不补造空白','灰色问题位继续保持证据缺口，模型不替研究补出族群来源。',{layer:'identity'},.94,1),
+ ],
+ 'H1-observe':[
+  p('请把问题切到全年定居',['history-inference'],'换问题 · 自己核对证据限度','定居与现代族群需要各自材料，当前图层操作由你控制。'),
+  p('看见活动证据',['history-tool','history-inference'],'活动证据 · 不能回答所有问题','比较金色活动位与灰色待核查位，不把物件当全部历史。'),
+  p('灰色材料位提示仍需核查',['history-inference'],'灰色待查 · 不是模型补出的历史','保留缺证状态，不为后续问题生成虚构事实。'),
+ ],
+ 'H1-bridge':[
+  p('材料让我们知道',['history-context','history-dating'],'情境与记录 · 已建立证据来路','保持已展开的同一批材料，不丢掉判断依据。',{layer:'activity'},1),
+  p('接下来把具体问题放进全史前后',['history-inference'],'从证据到时期 · 继续追问变化','下一段提供时期索引，不能替代地方和人物材料。',undefined,1),
+  p('政治组织、知识信仰与生产生活',['history-inference'],'变化有不同节奏 · 不在同一节点齐变','带着三类问题进入全史，并分别寻找相应材料。',undefined,1),
+ ],
+ 'H2-opening':[
+  p('从史前证据',['history-periods'],'更长时间 · 先找时期位置','九个夹子是索引，间距不代表相同历时。',{layer:'chronology',selected:'empire'},0),
+  p('九个材料夹按先后排列',['history-periods'],'九时期 · 前后排列而非等时刻度','保留完整顺序，当前地图不复原古代疆域。',{selected:'empire'},0),
+  p('选一个时期',['history-periods'],'打开时期 · 再找具体问题','选定时期的夹页抬起，提供继续阅读的入口。',{selected:'empire'},.12),
+  p('继续分别问政治组织、知识信仰和日常生活',['history-politics','history-knowledge'],'三条线索 · 同时保留不同问题','政治、知识和日常材料分列，不把它们压成同一种变化。',{layer:'overlap',selected:'empire'},0,.32),
+ ],
+ 'H2-explain':[
+  p('把同一时期的材料展开为三条线索',['history-politics','history-knowledge'],'同一时期 · 展开不同材料','材料页逐层展开，让三类问题独立可读，空间不表示年代长度。',{layer:'overlap',selected:'revival'},0,.32),
+  p('人物和文本的交流',['history-knowledge'],'知识与信仰 · 人物和文本交流','关注知识材料组；交流要核对教师、译者与作品。',{layer:'overlap',selected:'revival'},.32,.46),
+  p('政治组织的重组',['history-politics'],'政治组织 · 与知识交流分开','转向政治材料组，组织变化有自己的事件和证据。',{layer:'overlap',selected:'revival'},.46,.6),
+  p('建筑和生产活动',['history-practice'],'建筑与日常 · 也有自己的来路','同一时期保留生产生活材料，不能由一个政治节点代替。',{layer:'overlap',selected:'revival'},.6,.68),
+  p('比如一六四二年的政治节点',['history-politics'],'1642 · 政治行动的材料节点','时期夹切到17世纪，政治节点与建筑节点分别解释。',{layer:'overlap',selected:'ganden'},.68,.8),
+  p('与一六四五年的建筑活动',['history-practice'],'1645 · 建筑活动另行核对','同时保留政治组，建筑材料组独立展开；不合成为同一事件。',{layer:'overlap',selected:'ganden'},.8,1),
+ ],
+ 'H2-observe':[
+  p('请选择十至十二世纪',['history-periods'],'选择时期 · 保留三个问题','时期选择由你控制，比较相邻时期的延续与参与者。'),
+  p('保留政治、知识和生活',['history-politics','history-knowledge'],'相同提问 · 不等于相同变化','不自动改换时期或替你展开材料，保持操作结果。'),
+  p('历史分期帮助定位',['history-periods','history-practice'],'分期只是入口 · 继续寻找事件证据','具体人物、地方和事件不能由时期夹自动推出。'),
+ ],
+ 'H2-bridge':[
+  p('全史给出了来路',['history-periods'],'保留全史 · 接下来缩到具体案例','九时期仍作前后参照，下一段读一个可核对的材料链。',{layer:'chronology',selected:'empire'},.125),
+  p('下面缩到唐蕃会盟',['history-knowledge','history-politics'],'从时期到会盟 · 同时读事件与记录','会盟、立碑和复制都有自己的时间与材料身份。',{layer:'overlap',selected:'empire'},.32),
+  p('看今天的历史认识',['history-knowledge'],'从过去到今天 · 认识经过材料传递','不画未经证实的历史道路，继续问材料如何保存和被研究。',{layer:'overlap',selected:'empire'},1),
+ ],
+ 'H3-opening':[
+  p('从全史进入一个具体案例',['history-event'],'事件与材料 · 先分两类对象','先看两张事件卡和现存载体的不同身份。',{layer:'event-821',selected:'empire'},0),
+  p('八二一年长安会盟',['history-event-821'],'821 · 长安会盟的事件卡','事件卡抬起提示当前节点，不表示地点之间的真实路线。',{layer:'event-821'},0),
+  p('八二二年拉萨会盟',['history-event-822'],'822 · 拉萨会盟另一个节点','同一组卡片保留821前后参照，地点与时间分别辨认。',{layer:'event-822'},0),
+  p('与八二三年立碑',['history-stele-body'],'823 · 立碑保存的载体','转向无字碑体，立碑时间不能代替事件时间。',{layer:'event-823'},.18),
+  p('时间卡表示事件',['history-event','history-stele-body'],'卡是事件 · 碑是载体','无字碑体不复刻尺寸、装饰与文字，原文要读真实材料。',{layer:'event-823'},.18),
+ ],
+ 'H3-explain':[
+  p('事件留下文字记录',['history-event'],'事件留下记录 · 先保留发生节点','两张事件卡与碑体并置，先区分行动和承载文字的物质。',{layer:'event-822',selected:'empire'},0,.18),
+  p('碑刻以物质形式保存',['history-stele-body'],'碑刻保存 · 无字载体的物质关系','保留碑体，尚不展示后来复制的纸张。',{layer:'event-823'},.18,.2),
+  p('后来又可以产生拓本等复制材料',['history-rubbing','history-stele-body'],'后来复制 · 纸张从碑体分离','空白复制载体移开，说明复制关系，未给拓印补造日期。',{layer:'event-823'},.21,.66),
+  p('模型把载体逐步展开',['history-rubbing','history-reading'],'从复制到解读 · 仍需研究记录','打开研究桌，碑、复制件与阅读材料分别保留。',{layer:'object'},.68,.84),
+  p('现存馆藏拓本的制作日期需要另查',['history-rubbing','history-reading'],'复制年代另查 · 不套用823年','停在展开的材料链，复制件身份与年代必须回到馆藏核对。',{layer:'object'},.84,1),
+ ],
+ 'H3-observe':[
+  p('请展开复制关系并选择拓本',['history-rubbing'],'选择拓本 · 对照馆藏身份','载体展开和选择由你控制，继续核对原碑、事件与复制。'),
+  p('空白纸与碑只解释保存机制',['history-stele-body','history-rubbing'],'保存机制 · 不冒充原文','空白纸没有仿写盟文，真实原文需回到材料。'),
+  p('理解传播过程',['history-reading'],'传播过程与解读 · 不是同一种结论','看懂保存关系以后，文字含义仍需原文和研究支持。'),
+ ],
+ 'H3-bridge':[
+  p('会盟案例说明了事件怎样成为',['history-event','history-reading'],'事件怎样被今天阅读 · 保留材料链','事件、碑、复制和研究同时在场，结论有材料来路。',{layer:'object'},1),
+  p('进入近现代制度变化时',['history-reading'],'同样的证据问题 · 接到近现代','下一段继续分开文件节点、实施过程和地方生活。',undefined,1),
+  p('不能从一个年份',['history-reading'],'年份不是全部生活 · 继续核对地方','不从单一事件直接推出所有人的经历。',undefined,1),
+ ],
+ 'H4-opening':[
+  p('从会盟的材料链进入近现代',['history-document'],'从材料链到文件 · 保留不同身份','先看文件夹，再分清事件、制度和地方经验。',{layer:'event-1951',selected:'contemporary'},0),
+  p('一九五一年、',['history-document-1951'],'1951 · 协议材料单独阅读','打开1951文件夹，地点与文件身份由材料核对。',{layer:'event-1951'},0),
+  p('一九五九年',['history-document-1959'],'1959 · 机构变化另一个节点','切换同一组材料夹，既有文件不消失。',{layer:'event-1959'},0),
+  p('和一九六五年',['history-document-1965'],'1965 · 行政建制另行核对','第三个文件夹打开，三个年份不是同一种事件。',{layer:'event-1965'},0),
+  p('协议、机构变化、行政建制与社会经历',['history-document','history-household'],'文件与社会经验 · 不能互相代替','家庭对象保持原样，不能用建筑增减暗示社会成效。',{layer:'event-1965'},0),
+  p('材料入口在拉萨',['history-document-1951'],'1951协议签订在北京 · 入口不是发生地','回到对应文件，拉萨材料入口不能改写北京签订地点。',{layer:'event-1951'},0),
+ ],
+ 'H4-explain':[
+  p('模型把制度、地方组织和家庭生活分成不同层次',['history-institution','history-household'],'制度与地方生活 · 分层核对','制度层次逐步分开，家庭几何始终不变，不伪造历史城市。',{layer:'event-1951',selected:'contemporary'},0,.48),
+  p('逐步展开需要核对的联系',['history-institution'],'从制度到实施 · 展开待研究层次','三个实体层次分开可见，不表示文件自动落地或产生效果。',{layer:'event-1951'},.48,.68),
+  p('文件能够确认节点',['history-document'],'文件确认节点 · 研究没有到此结束','回看已打开文件夹，证据能确认的范围需明确。',{layer:'event-1951'},.68,.75),
+  p('怎样实施、哪些地方和人群经历了什么',['history-inference','history-household'],'地方、人群、时期 · 需要对应调查','待核查材料位显现，与保持不变的家庭对象并置。',{layer:'event-1959'},.75,.9),
+  p('房屋保持不变',['history-household'],'保持家庭空间 · 不虚构社会结果','同一房屋保持位置、尺寸与数量，变化由调查统计支持。',{layer:'event-1965'},.9,1),
+ ],
+ 'H4-observe':[
+  p('请在三个节点之间切换',['history-document'],'切换文件 · 核对性质与地点','材料夹和节点切换由你控制，操作不替每个家庭写经历。'),
+  p('政府文件、学术研究和社区经验',['history-document','history-household'],'材料有主体与语境 · 分开判断','不同来源各有能支持的范围，继续看调查地点和日期。'),
+  p('一份制度材料不能自动代表每个家庭的经历',['history-household','history-inference'],'制度与经验 · 还需要实施材料','家庭对象保持不变，规划与实际影响分别核对。'),
+ ],
+ 'H4-bridge':[
+  p('从水土条件到生活组织',['history-household'],'环境到生活 · 同一问题链继续','保持家庭参照，回想自然条件怎样经过人的组织被使用。',{layer:'event-1965'},1),
+  p('从建造、交流和维护到历史证据',['history-document','history-institution'],'文化与历史 · 解释相连但不能代替','文件与制度层次保留，具体历史行动仍需有地点的材料。',undefined,1),
+  p('接下来把这条认识带回周边联系',['history-household','history-document'],'由历史到联系与发展 · 问谁、何时、依据什么','带着来源、实施与生活的区别，继续研究流域和交通联系。',undefined,1),
+ ],
+};

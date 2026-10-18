@@ -1,0 +1,19 @@
+{
+  "id": "00397a863577d87fc0737ef8e528f43f94d82d4acfbbe052c83240302b180921",
+  "url": "/assets/audio/narration/00397a863577d87fc0737ef8e528f43f94d82d4acfbbe052c83240302b180921.mp3",
+  "text": "刚才比较了不同地区的交通联系，现在走进一段真实地形。这里选择青藏线进入拉萨站前的一小段，不代表拉林铁路全线。从全域拉近拉萨河谷，先俯看铁路、河流和两岸城市的位置。镜头降低，沿金色线路向车站移动，观察山体怎样挡住远处，视野怎样随着位置改变。虚线标出地图记录的隧道段，只显示水平走向，不能当成地面的轨道，也不能从地面高程读出隧道深度。暂停后，可以自己拖动沿线位置，改变观察高度和朝向。再升高俯看，铁路抵达站区，并不等于抵达每个生活目的地；还要通过道路和跨河联系接入城市。回到全域，继续理解通道的使用与维护。",
+  "duration": 49.968,
+  "bytes": 801204,
+  "sha256": "60db30b3512089870bcb02853eca0b81643ce821fa11fd9c5513b2917deffd8b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T22:54:39.882Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/00397a863577d87fc0737ef8e528f43f94d82d4acfbbe052c83240302b180921.subtitles.json",
+  "subtitleSha256": "d6f94bef807f3c17a53007746fb2cfb66854608cf52a1908b7dffc9eb3c69dff",
+  "timingLevel": "word"
+}

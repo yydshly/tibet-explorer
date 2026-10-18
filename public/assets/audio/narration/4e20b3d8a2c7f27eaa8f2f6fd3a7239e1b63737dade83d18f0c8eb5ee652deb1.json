@@ -1,0 +1,15 @@
+{
+  "id": "4e20b3d8a2c7f27eaa8f2f6fd3a7239e1b63737dade83d18f0c8eb5ee652deb1",
+  "url": "/assets/audio/narration/4e20b3d8a2c7f27eaa8f2f6fd3a7239e1b63737dade83d18f0c8eb5ee652deb1.mp3",
+  "text": "最后保留城区与周围低缓空间。地形提供条件，七世纪大昭寺与十七世纪布达拉的建设，还要继续追问历史。",
+  "duration": 9.648,
+  "bytes": 156084,
+  "sha256": "6495e59abd8adc6b8c7dd2c1b3b74edb76de1b9b74ef968d9da94296904d0d1a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:20:36.549Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

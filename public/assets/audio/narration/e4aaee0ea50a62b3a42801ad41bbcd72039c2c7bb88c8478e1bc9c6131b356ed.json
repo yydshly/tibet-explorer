@@ -1,0 +1,15 @@
+{
+  "id": "e4aaee0ea50a62b3a42801ad41bbcd72039c2c7bb88c8478e1bc9c6131b356ed",
+  "url": "/assets/audio/narration/e4aaee0ea50a62b3a42801ad41bbcd72039c2c7bb88c8478e1bc9c6131b356ed.mp3",
+  "text": "找到位置以后，我们有了第一个线索：这里从太阳得到怎样的照射，又离海洋多远？下一步先看纬度和地球五带，同时区分行政地区与自然高原，让后面的解释使用清楚的范围。",
+  "duration": 14.04,
+  "bytes": 226356,
+  "sha256": "9458d6820e049181b36b0268e865cddc639481c2cf986f37d042edfd7dc67850",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:48:57.597Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

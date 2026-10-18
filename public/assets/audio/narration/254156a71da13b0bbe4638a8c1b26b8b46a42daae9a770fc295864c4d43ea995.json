@@ -1,0 +1,15 @@
+{
+  "id": "254156a71da13b0bbe4638a8c1b26b8b46a42daae9a770fc295864c4d43ea995",
+  "url": "/assets/audio/narration/254156a71da13b0bbe4638a8c1b26b8b46a42daae9a770fc295864c4d43ea995.mp3",
+  "text": "物件装配完成，文化却不会停在成品外观。谁使用、怎样学习、如何修补和传给后来的人，都是形成与延续的一部分。下一段回到同一院落，看通行、共同使用和维护怎样在日常里发生。",
+  "duration": 17.064,
+  "bytes": 274740,
+  "sha256": "0801d87229b46dbfc2208bc57609a83d676267e4969788ae2b811392ab148d7c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:48.786Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

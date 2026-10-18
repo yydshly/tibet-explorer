@@ -1,0 +1,15 @@
+{
+  "id": "a66673998411a18893263cc004cfb7fd3b013d742ec238d89573ffa51c2b0d12",
+  "url": "/assets/audio/narration/a66673998411a18893263cc004cfb7fd3b013d742ec238d89573ffa51c2b0d12.mp3",
+  "text": "从南侧低地开始，这个样点只有约五十米。沿同一条线向北，穿过喜马拉雅，较高样点约五千三百米。继续走进高原内部，所选样点仍接近五千米。你看到的不是一座山峰独自高起，而是内部也维持很高的地面。读数来自同一份高程网格，立体显示把高差作了夸张。",
+  "duration": 23.148,
+  "bytes": 372084,
+  "sha256": "8bea6a231e782eeea68d402abe9d18c1b8440bae7aefb781997d1557da376edd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T07:32:25.588Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

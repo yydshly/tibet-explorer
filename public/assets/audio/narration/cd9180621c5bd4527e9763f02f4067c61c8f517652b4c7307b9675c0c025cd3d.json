@@ -1,0 +1,15 @@
+{
+  "id": "cd9180621c5bd4527e9763f02f4067c61c8f517652b4c7307b9675c0c025cd3d",
+  "url": "/assets/audio/narration/cd9180621c5bd4527e9763f02f4067c61c8f517652b4c7307b9675c0c025cd3d.mp3",
+  "text": "经过交流和学习，知识会进入文字、图像、构造与日常使用。下一段拆开一个通用木作框架，观察材料与连接怎样组合；真实艺术作品的年代、用途和文化含义，再由对应馆藏材料解释。",
+  "duration": 17.604,
+  "bytes": 283380,
+  "sha256": "82c36c69e3b9b6bc25b7f78c1ac33108ad753aede7d6a63937bc93b468acffb5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:25.381Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

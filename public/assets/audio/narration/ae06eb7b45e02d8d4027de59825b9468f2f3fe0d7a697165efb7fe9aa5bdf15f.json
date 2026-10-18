@@ -1,0 +1,19 @@
+{
+  "id": "ae06eb7b45e02d8d4027de59825b9468f2f3fe0d7a697165efb7fe9aa5bdf15f",
+  "url": "/assets/audio/narration/ae06eb7b45e02d8d4027de59825b9468f2f3fe0d7a697165efb7fe9aa5bdf15f.mp3",
+  "text": "较平缓的谷地与周围山地形成对照，水与可用土地给聚居、生产和通行提供条件。平缓并不等于海拔低，也不等于全市都是同样的地貌。",
+  "duration": 13.392,
+  "bytes": 215988,
+  "sha256": "ba8220561955dac3efad8284b468484f2a594932bfc050a120cebec484e960de",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:17:19.517Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ae06eb7b45e02d8d4027de59825b9468f2f3fe0d7a697165efb7fe9aa5bdf15f.subtitles.json",
+  "subtitleSha256": "095559468d7fc3ba965de88ef6b23c090aeaccc07d0407c39b4f4e98c29f53f4",
+  "timingLevel": "word"
+}

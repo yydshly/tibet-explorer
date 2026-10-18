@@ -1,0 +1,19 @@
+{
+  "id": "7222df7479889df8dab5e067768fa759a66c11ca6bfbcb77f1765977f4b7ac69",
+  "url": "/assets/audio/narration/7222df7479889df8dab5e067768fa759a66c11ca6bfbcb77f1765977f4b7ac69.mp3",
+  "text": "已有的场所与文化继续被使用，新的交通怎样接入它们？从全域进入拉萨河谷，同时看南岸站区、拉萨河和北岸城区。二〇〇六年，青藏铁路通车。先拿掉柳梧大桥这条连接，看车辆停在南岸的接桥位置。这是连接作用的对照，不是当年路网复原。二〇〇七年四月三十日，柳梧大桥通车。现在接回同一位置的桥面，车辆跨过拉萨河。改变的是站区与城区的接续。设施怎样变成生活里的机会？二〇一九年，洛桑赤列的采访记录了村民购车、组织运输队和车辆调度。车辆、劳动与组织把通道变成服务。最后回到全域，比较其他地区怎样抵达、怎样接续。",
+  "duration": 50.184,
+  "bytes": 804660,
+  "sha256": "30c6dadc72464ae9ff5527ffd7b578498affea0b681efd087c9868b2db0b6c96",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T09:22:27.830Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7222df7479889df8dab5e067768fa759a66c11ca6bfbcb77f1765977f4b7ac69.subtitles.json",
+  "subtitleSha256": "14d8a35eef7293b66601fb42a1c26655c4ce3c848a358f666d24d04409f623a3",
+  "timingLevel": "word"
+}

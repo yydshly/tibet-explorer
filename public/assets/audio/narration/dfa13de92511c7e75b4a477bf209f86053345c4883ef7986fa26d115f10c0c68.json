@@ -1,0 +1,15 @@
+{
+  "id": "dfa13de92511c7e75b4a477bf209f86053345c4883ef7986fa26d115f10c0c68",
+  "url": "/assets/audio/narration/dfa13de92511c7e75b4a477bf209f86053345c4883ef7986fa26d115f10c0c68.mp3",
+  "text": "白宫的仪典、居住与接见空间，和偏西、更高处的红宫，需要分别认识。评估文件记述一六四五年开始重建，三年后以白宫为核心的建筑完成，五世达赖喇嘛迁入；桑结嘉措组织红宫建设，一六九四年完成。人物、纪念与用途参与塑造建筑，不能只由山地或气候解释，也不能把七世纪来历当成全部现存形制的建造年代。",
+  "duration": 28.44,
+  "bytes": 456756,
+  "sha256": "05272ff94089aedd0c93eb0a61199c62dfc37f868a6e8ab13f86c0170e83c0ae",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:29:48.840Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

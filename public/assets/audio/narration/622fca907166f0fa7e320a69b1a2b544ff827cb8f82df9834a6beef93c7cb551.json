@@ -1,0 +1,19 @@
+{
+  "id": "622fca907166f0fa7e320a69b1a2b544ff827cb8f82df9834a6beef93c7cb551",
+  "url": "/assets/audio/narration/622fca907166f0fa7e320a69b1a2b544ff827cb8f82df9834a6beef93c7cb551.mp3",
+  "text": "请把过程退回初始地形，再推进到堆积阶段，分别观察水路、河谷轮廓和物质位置。相似外形可以有不同来历，具体地方还需要岩石、测绘与年代证据；不能把这个动画的速度当成真实侵蚀速率。",
+  "duration": 19.296,
+  "bytes": 310452,
+  "sha256": "bbeffe3c7e5d00af08b5ef4877bc3daa9bb5c8d388ec35afd306cd69ddb64e07",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:35:37.569Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/622fca907166f0fa7e320a69b1a2b544ff827cb8f82df9834a6beef93c7cb551.subtitles.json",
+  "subtitleSha256": "7e5be2198e5a323d90c2f78148587956f2c7853cea1443d9d049f2f3f9be4457",
+  "timingLevel": "word"
+}

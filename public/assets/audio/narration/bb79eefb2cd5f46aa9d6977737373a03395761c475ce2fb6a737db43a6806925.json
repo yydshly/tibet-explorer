@@ -1,0 +1,19 @@
+{
+  "id": "bb79eefb2cd5f46aa9d6977737373a03395761c475ce2fb6a737db43a6806925",
+  "url": "/assets/audio/narration/bb79eefb2cd5f46aa9d6977737373a03395761c475ce2fb6a737db43a6806925.mp3",
+  "text": "1987年，雅砻扎西雪巴藏戏恢复；地方资料还记载1996年参加雪顿节并吸纳女演员。这些具体变化说明传承需要组织和新的参与者。把它同桑耶建寺分开计时，才能看清不同历史过程，而不是把千年文化说成始终不变。",
+  "duration": 22.068,
+  "bytes": 354804,
+  "sha256": "353921e86e5df6200e704829e5aa3cb6b34a4b86ce02a337edff19ff328efb6e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:52:29.098Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/bb79eefb2cd5f46aa9d6977737373a03395761c475ce2fb6a737db43a6806925.subtitles.json",
+  "subtitleSha256": "30f0866acf1ff84285dfd9d1f24e7e0b4a3cfde0d3debf424bd795776848f89f",
+  "timingLevel": "word"
+}

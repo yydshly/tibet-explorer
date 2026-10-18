@@ -1,0 +1,19 @@
+{
+  "id": "fb4144cf2f170c29a44bed07ed187141bacd5313255706d240fac5fe9cef0846",
+  "url": "/assets/audio/narration/fb4144cf2f170c29a44bed07ed187141bacd5313255706d240fac5fe9cef0846.mp3",
+  "text": "同一片河谷保留山地、水路、人居与建筑。先读环境联系，再打开建筑观察入口和使用空间，最后把有出处的材料放回来。看见一种外观只是开始；当时天气、长期气候、建筑用途与历史年代，各需要不同证据。",
+  "duration": 18.972,
+  "bytes": 305268,
+  "sha256": "3efa94012f1fb7770661c8a656d536f62a9a02bda6f76165d690931d0ca61313",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:35.860Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/fb4144cf2f170c29a44bed07ed187141bacd5313255706d240fac5fe9cef0846.subtitles.json",
+  "subtitleSha256": "f474aa4b913879d7c382afe14b161fb183f99832b88640b356373a45fe0ab57e",
+  "timingLevel": "word"
+}

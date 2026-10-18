@@ -1,0 +1,7 @@
+.water-state-reading{border:1px solid #627d7955;border-radius:9px;padding:14px 16px;margin:16px 0;background:#17363a52}
+.water-state-reading strong{color:#e8d397;font-size:15px}.water-state-reading ol{margin:10px 0;padding-left:21px;color:#d1dfda;font-size:13px;line-height:1.75}.water-state-reading small{display:block;color:#a7bfba;line-height:1.6;font-size:11px}
+.water-state-hud{position:absolute;top:102px;left:28px;max-width:290px;pointer-events:none;padding:10px 12px;border-left:2px solid #d9c17e;background:#0b1c24df;border-radius:0 6px 6px 0;font-size:12px;z-index:3}.water-state-hud strong{font-size:12px;color:#e8d397}.water-state-hud p{margin:4px 0;color:#e2ece7;line-height:1.5}.water-state-hud small{font-size:10px;color:#a7bfba}
+.manuscript-reference{margin:16px 0;border:1px solid #6c7d7055;padding:12px;border-radius:8px}.manuscript-reference img{display:block;width:100%;height:auto;max-height:145px;object-fit:contain;background:#ddd7c9;border-radius:3px}.manuscript-reference figcaption{font-size:11px;line-height:1.7;color:#b9c8be;margin-top:8px}.manuscript-reference a{display:block;color:#e1c98d;font-size:12px;margin-top:6px}
+@media(max-width:700px){.water-state-hud{top:91px;left:16px;max-width:244px;padding:7px 9px;font-size:11px}.water-state-hud strong{font-size:11px}.water-state-hud small{font-size:9px}}
+
+.manuscript-reference{display:grid;grid-template-columns:106px 1fr;gap:0 12px;align-items:center}.manuscript-reference img{grid-row:1/3;max-height:100px}.manuscript-reference figcaption{margin-top:0}.manuscript-reference a{grid-column:2}

@@ -1,0 +1,19 @@
+{
+  "id": "f6436f1b3dd3d25e5f0d7ac6cfd9c38e249f83917654084847b6afc7042ad100",
+  "url": "/assets/audio/narration/f6436f1b3dd3d25e5f0d7ac6cfd9c38e249f83917654084847b6afc7042ad100.mp3",
+  "text": "二〇〇六年七月一日青藏铁路全线通车。把这件事放回环境，线路不仅经过高原表面，还依赖会随热量变化的含冰地层。北麓河试验地在青海，工程服务跨越青藏高原的联系；认识西藏，也需要看行政区以外的支撑条件。",
+  "duration": 19.764,
+  "bytes": 317940,
+  "sha256": "d8617098849b3e0e3c13e85485806c1aac15d095879fa86e0e4735c050ad8e22",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:12:14.408Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f6436f1b3dd3d25e5f0d7ac6cfd9c38e249f83917654084847b6afc7042ad100.subtitles.json",
+  "subtitleSha256": "f0871fb907cad618512a7c941a596330366e3263eb296b38116bb390b7b21291",
+  "timingLevel": "word"
+}

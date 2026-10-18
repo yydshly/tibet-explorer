@@ -1,0 +1,19 @@
+{
+  "id": "14dfb107c93d0d7886ff9459627f26e8ea9be0fe993d1cde708074f82fd8ba00",
+  "url": "/assets/audio/narration/14dfb107c93d0d7886ff9459627f26e8ea9be0fe993d1cde708074f82fd8ba00.mp3",
+  "text": "再到十七世纪，五世达赖喇嘛推动白宫建设；",
+  "duration": 3.78,
+  "bytes": 62196,
+  "sha256": "ac4d821095379079ea88ab3d9cc7b3a4dc4ad08eea9245a44811c37c797b2638",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:17:56.513Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/14dfb107c93d0d7886ff9459627f26e8ea9be0fe993d1cde708074f82fd8ba00.subtitles.json",
+  "subtitleSha256": "c79e0b18bd23ac0c973364935a2706ea7c5e2116ddb0f5628be8e51ff2c338cb",
+  "timingLevel": "word"
+}

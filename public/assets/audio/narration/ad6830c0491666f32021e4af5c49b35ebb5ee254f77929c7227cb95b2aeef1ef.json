@@ -1,0 +1,19 @@
+{
+  "id": "ad6830c0491666f32021e4af5c49b35ebb5ee254f77929c7227cb95b2aeef1ef",
+  "url": "/assets/audio/narration/ad6830c0491666f32021e4af5c49b35ebb5ee254f77929c7227cb95b2aeef1ef.mp3",
+  "text": "779年建成的桑耶寺，提供理解吐蕃时期宗教制度的具体入口。官方介绍记载赤松德赞主持建寺，并邀请不同地区僧人讲经。先辨认雅鲁藏布江北岸的地点，再核对事件年代；现在的地形与寺院符号不复原当时的建筑。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "cd748d9c76ec367fab6aef434b519c8c3ba028be373808f349cf54ff358138ad",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:52:07.675Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ad6830c0491666f32021e4af5c49b35ebb5ee254f77929c7227cb95b2aeef1ef.subtitles.json",
+  "subtitleSha256": "b7a8a365fa51ae4bb4cdcc2f26fe4bf2d861a906e86428914b3f49b00630f5fa",
+  "timingLevel": "word"
+}

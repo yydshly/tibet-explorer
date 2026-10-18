@@ -1,0 +1,15 @@
+{
+  "id": "6c4325ec00362fb1789e6284ee4dde783e00e275328e01c7ce678802e8c36e0b",
+  "url": "/assets/audio/narration/6c4325ec00362fb1789e6284ee4dde783e00e275328e01c7ce678802e8c36e0b.mp3",
+  "text": "人物与文本说明交流如何发生，作品细部则让我们观察这些联系留下了什么。下一步走近材料、工艺、图像与文字，先辨认真实可见的形式，再把意义放回年代、用途和使用语境中研究。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "58fd440143b03dc2e287693c54d9bcd9cc8c0d2818b41a52252d6bc6bc13e3e5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:08.951Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

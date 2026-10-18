@@ -1,0 +1,15 @@
+{
+  "id": "5f511d65ecbbe1dde68f7795c7f2f4c35589caa64376688ea2b84c7b2f72eae3",
+  "url": "/assets/audio/narration/5f511d65ecbbe1dde68f7795c7f2f4c35589caa64376688ea2b84c7b2f72eae3.mp3",
+  "text": "请先合上剖面看外部围合，再展开它，选择材料与结构部位并环绕观察。问一问人从哪里进入、在哪里停留、构件如何连接。这样看建筑，才能把形状、使用与背景接起来，而不是只浏览一个模型。",
+  "duration": 17.244,
+  "bytes": 277620,
+  "sha256": "e46068f4bbbdd7e5b9d553569a142edfefef6bc8a950a6c0e2da345a79bc6551",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:36.542Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

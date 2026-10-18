@@ -1,0 +1,15 @@
+{
+  "id": "bdfc9b27fb9fc2e575f90fd5026bbd9728cdbf00c97fa5859ff0672e5dafa52a",
+  "url": "/assets/audio/narration/bdfc9b27fb9fc2e575f90fd5026bbd9728cdbf00c97fa5859ff0672e5dafa52a.mp3",
+  "text": "在整体图中找到鲁朗，再靠近看河流、道路与建筑轮廓。二〇一六年十月，小镇试运营，增加住宿和步行商业等服务空间。图上是现状地理，不是当年的建成复原，不能把新增服务理解成此前没有生活。",
+  "duration": 18,
+  "bytes": 289716,
+  "sha256": "f6c64e50eba53483d0dbddb7e46dac7728d9b1e527a2278b01f1a3b62cabe8cd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:12:21.413Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

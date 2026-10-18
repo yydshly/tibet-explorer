@@ -1,0 +1,15 @@
+{
+  "id": "ea0a7a795dc03f58982cbab2c4c14e17f5f05ee2596bf8c990acd10800b5371a",
+  "url": "/assets/audio/narration/ea0a7a795dc03f58982cbab2c4c14e17f5f05ee2596bf8c990acd10800b5371a.mp3",
+  "text": "林芝的候选路线，从山谷问题接到鲁朗。带着色季拉越岭与二〇一六年小镇服务的材料，观察环境怎样进入通行和地方使用。把观察目的保存下来，实际路况、接驳和访问日期留待核实。",
+  "duration": 16.776,
+  "bytes": 270132,
+  "sha256": "6cbd65f858231afec44fadad51f6bea5aaaee1107b213baeff9054b1d9f55f8b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:32.010Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

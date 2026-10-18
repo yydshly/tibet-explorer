@@ -1,0 +1,15 @@
+{
+  "id": "573a612078d309c21e052293078715419ef4324e2cd5b5d0c519c9c36ae1e5c6",
+  "url": "/assets/audio/narration/573a612078d309c21e052293078715419ef4324e2cd5b5d0c519c9c36ae1e5c6.mp3",
+  "text": "请选择十至十二世纪，读一读人物、文本与交流为何成为重要线索；也可以查看其他阶段，再回到当前主线。相邻时期可能延续一些实践，也出现新的组织关系，历史不会在一个年代节点同时改变所有地方。",
+  "duration": 17.532,
+  "bytes": 282228,
+  "sha256": "645810eea8c6231e8ee2ec737b051d6d03a7fd3acf755f5fb9815de2c7fe0036",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:20.419Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

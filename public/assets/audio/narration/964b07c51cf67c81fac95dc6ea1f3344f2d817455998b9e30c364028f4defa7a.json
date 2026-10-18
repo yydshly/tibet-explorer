@@ -1,0 +1,15 @@
+{
+  "id": "964b07c51cf67c81fac95dc6ea1f3344f2d817455998b9e30c364028f4defa7a",
+  "url": "/assets/audio/narration/964b07c51cf67c81fac95dc6ea1f3344f2d817455998b9e30c364028f4defa7a.mp3",
+  "text": "第二段让我们用材料理解历史，用人和实践理解文化。接下来把地方重新放回更大范围：流域、通道、交流与治理怎样连接周边？我们先沿水系拉远，再认识这些联系如何参与当代变化。",
+  "duration": 17.604,
+  "bytes": 283380,
+  "sha256": "e6b661d2bb673af587b41e7b731141bfbd4453815caf25a416e44a37e15a562e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:00.192Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

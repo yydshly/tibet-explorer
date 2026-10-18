@@ -1,0 +1,19 @@
+{
+  "id": "c9b837c62e6825a4df81950abee741fdc915305a322fa2333737a2ba64bef908",
+  "url": "/assets/audio/narration/c9b837c62e6825a4df81950abee741fdc915305a322fa2333737a2ba64bef908.mp3",
+  "text": "最后看鲁朗窗口的相对低缓地面。二〇一六年小镇建设利用当地水系、山景与村落，继续接到人的生活安排。",
+  "duration": 9.108,
+  "bytes": 147444,
+  "sha256": "ab706bd75bd87a6d2d384a1f4faed835454378b1599235dc4c7a7f31094c0c3c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:16:47.359Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c9b837c62e6825a4df81950abee741fdc915305a322fa2333737a2ba64bef908.subtitles.json",
+  "subtitleSha256": "451e5cfa9920c9ae82f560f51de6055df78705b322e315a9e76337b6d17c9bb5",
+  "timingLevel": "word"
+}

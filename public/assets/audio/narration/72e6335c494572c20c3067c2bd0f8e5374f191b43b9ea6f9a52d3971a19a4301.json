@@ -1,0 +1,19 @@
+{
+  "id": "72e6335c494572c20c3067c2bd0f8e5374f191b43b9ea6f9a52d3971a19a4301",
+  "url": "/assets/audio/narration/72e6335c494572c20c3067c2bd0f8e5374f191b43b9ea6f9a52d3971a19a4301.mp3",
+  "text": "再看二〇一六年的鲁朗，小镇建设给地方交流增加了新场所。",
+  "duration": 4.428,
+  "bytes": 72564,
+  "sha256": "785cca9afaf98d8435a215fad4ca780c6d3b32190405297745ec731b9d0bb80c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:17:00.375Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/72e6335c494572c20c3067c2bd0f8e5374f191b43b9ea6f9a52d3971a19a4301.subtitles.json",
+  "subtitleSha256": "f27408f78da7bc7080f071bfdc3bc7414d56a78f7189bf2b83b4036e2365af58",
+  "timingLevel": "word"
+}

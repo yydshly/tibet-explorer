@@ -1,0 +1,19 @@
+{
+  "id": "d41796689fbc8e2304a11abb5d6fd27331bea19fa1c34e2f4910504bbb7e7be3",
+  "url": "/assets/audio/narration/d41796689fbc8e2304a11abb5d6fd27331bea19fa1c34e2f4910504bbb7e7be3.mp3",
+  "text": "现在可以带着同一条思路去观察。到一个地方，先在全图确认位置与来路，再看山川、气候、水源和通行；走进城市，继续问空间怎样使用，建筑和事件属于什么年代，今天又有哪些服务与维护。这样，每一站都在回答问题，风景与历史便接在一起。",
+  "duration": 22.968,
+  "bytes": 369204,
+  "sha256": "539a3a4072807cc5f7f07df01630ab492801a1a037da49b36822d9fd24cbf411",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:42.180Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d41796689fbc8e2304a11abb5d6fd27331bea19fa1c34e2f4910504bbb7e7be3.subtitles.json",
+  "subtitleSha256": "c8ba939de8d2e439f1eba446ff185c94991c3b1aebb68b93f9c50d8a6e93fdbc",
+  "timingLevel": "word"
+}

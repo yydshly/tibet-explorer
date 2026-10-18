@@ -1,0 +1,15 @@
+{
+  "id": "83b7094ccc826a14a48e40acc98a12905a788af1e4e7a936c1919a41dd5a8e1a",
+  "url": "/assets/audio/narration/83b7094ccc826a14a48e40acc98a12905a788af1e4e7a936c1919a41dd5a8e1a.mp3",
+  "text": "把上一步保存的问题带进路线，现在选择自然、历史、文化或综合站点。先读每站的观察目的，再问两站之间怎样互相补充。主题顺序可以帮助认识，实际交通顺序却可能不同，需要道路与时间资料支持。",
+  "duration": 18.396,
+  "bytes": 296052,
+  "sha256": "db968d78e1c46a22362db36e496e062a2f54eee3b7b8e911ac453882d51cd2ce",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:02.970Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

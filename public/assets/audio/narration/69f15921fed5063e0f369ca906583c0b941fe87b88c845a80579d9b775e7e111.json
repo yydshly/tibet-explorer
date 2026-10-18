@@ -1,0 +1,19 @@
+{
+  "id": "69f15921fed5063e0f369ca906583c0b941fe87b88c845a80579d9b775e7e111",
+  "url": "/assets/audio/narration/69f15921fed5063e0f369ca906583c0b941fe87b88c845a80579d9b775e7e111.mp3",
+  "text": "带着已有的城市和历史，回到全域看现代联系。先看东南部：二〇二一年六月二十五日，拉林铁路开通，把拉萨、山南和林芝放进新的铁路联系中。再看西部：二〇一〇年七月一日，阿里昆莎机场通航，增加了航空抵达的选择。方式不同，问题却相通：到站、落地以后，仍要接上当地道路、服务和人的组织。不能把开通直接等同于每个居民都已受益。把昌都的峡谷、那曲的高地和日喀则的河谷一起留在地图上，比较各地使用通道的条件。新的联系没有抹平地形，也没有取代原有生活；接下来还要看这些联系怎样被共同维护。",
+  "duration": 46.584,
+  "bytes": 747060,
+  "sha256": "9e28f57251a557a86b939b37ce4505e8d1a78cafe03497c55fc69925b7078c00",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:05:48.356Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/69f15921fed5063e0f369ca906583c0b941fe87b88c845a80579d9b775e7e111.subtitles.json",
+  "subtitleSha256": "07943873c688dcce0b44b116753e8446808d84f4939591150164bc60d4712572",
+  "timingLevel": "word"
+}

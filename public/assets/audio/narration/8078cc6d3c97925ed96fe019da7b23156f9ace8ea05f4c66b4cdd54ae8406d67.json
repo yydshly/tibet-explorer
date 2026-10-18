@@ -1,0 +1,15 @@
+{
+  "id": "8078cc6d3c97925ed96fe019da7b23156f9ace8ea05f4c66b4cdd54ae8406d67",
+  "url": "/assets/audio/narration/8078cc6d3c97925ed96fe019da7b23156f9ace8ea05f4c66b4cdd54ae8406d67.mp3",
+  "text": "我们从地球的位置走到环境，从气候地形走到文化历史，再把地方放回周边与今天。最后把你关心的问题组织成主题路线：为什么去这个地方，准备观察什么，需要哪些材料，以及实际出行前还要核查什么。",
+  "duration": 19.548,
+  "bytes": 314484,
+  "sha256": "48b4402d0a43f547cc3d3d9486f1823337c3a0daff6b41542297ac942cda4ce9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:59.323Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

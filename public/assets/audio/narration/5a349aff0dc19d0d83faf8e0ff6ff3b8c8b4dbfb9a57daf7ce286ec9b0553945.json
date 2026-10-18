@@ -1,0 +1,19 @@
+{
+  "id": "5a349aff0dc19d0d83faf8e0ff6ff3b8c8b4dbfb9a57daf7ce286ec9b0553945",
+  "url": "/assets/audio/narration/5a349aff0dc19d0d83faf8e0ff6ff3b8c8b4dbfb9a57daf7ce286ec9b0553945.mp3",
+  "text": "先看赤道附近的刚果盆地。热与水共同支持森林，湿空气上升时容易成云。再看撒哈拉：这里阳光也充足，但副热带下沉空气不利于云雨，地表干旱。最后看青藏高原：它并不在极地，高海拔却使环境常比邻近低地寒冷，山系还改变空气来路。接下来带着这些差别，到亚洲找到西藏。",
+  "duration": 26.208,
+  "bytes": 421044,
+  "sha256": "bac740332a20881595a07ec51b94cf921cd4049ee82cfffab4b6e7c41dc8b6e5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:10:14.162Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5a349aff0dc19d0d83faf8e0ff6ff3b8c8b4dbfb9a57daf7ce286ec9b0553945.subtitles.json",
+  "subtitleSha256": "38da93c203b6809f54c6ae369bc3b8ecb662192071486a1854ce7f4231d2745c",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "968676f35d45a690cc0f922e41f33ce4749dcf03038cf1c0414e7656463d82eb",
+  "url": "/assets/audio/narration/968676f35d45a690cc0f922e41f33ce4749dcf03038cf1c0414e7656463d82eb.mp3",
+  "text": "到站以后，人与物品还要接上地方服务。彩门村的普巴提到机场、公路和附近的岗嘎站。跟随同一件物品从主通道交到地方车辆，地形并没有消失。",
+  "duration": 13.86,
+  "bytes": 223476,
+  "sha256": "6c3f599c041669f859a8a36e51e2796bac94a9a980f517e429db0c240164a0e7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:24.282Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

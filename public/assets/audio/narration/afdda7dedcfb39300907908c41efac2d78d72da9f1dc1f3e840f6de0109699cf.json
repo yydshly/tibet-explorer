@@ -1,0 +1,15 @@
+{
+  "id": "afdda7dedcfb39300907908c41efac2d78d72da9f1dc1f3e840f6de0109699cf",
+  "url": "/assets/audio/narration/afdda7dedcfb39300907908c41efac2d78d72da9f1dc1f3e840f6de0109699cf.mp3",
+  "text": "从到达条件进入公共服务。模型先只显示设施，周围的人还没有形成完整的使用联系。设施存在与人们获得服务是两个层次；我们把人员、开放和可达条件依次放进去，帮助理解需要怎样的资料。",
+  "duration": 16.992,
+  "bytes": 273588,
+  "sha256": "1905c30c9c0c25a2ef342ad1cc91bd56fbe8f65e354337ef59e5b1a33413edcb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:13.858Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

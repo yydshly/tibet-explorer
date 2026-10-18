@@ -1,0 +1,19 @@
+{
+  "id": "22872264c28802987f69c7656ff56643bd3fad387518e63c64dcc5125dda9a7a",
+  "url": "/assets/audio/narration/22872264c28802987f69c7656ff56643bd3fad387518e63c64dcc5125dda9a7a.mp3",
+  "text": "刚才用真实高程看了山地与谷地。现在用同一概念河谷拆开形成过程：先找坡面、河道和较低处，保留它们的相对位置。模型不对应某条真实峡谷，也没有设置侵蚀米数或形成年份。",
+  "duration": 15.588,
+  "bytes": 251124,
+  "sha256": "55aed0e768a08d0af468c2557ce56e9ff982c1c64d45b9351b7b90ec2b4a8b32",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:35:20.521Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/22872264c28802987f69c7656ff56643bd3fad387518e63c64dcc5125dda9a7a.subtitles.json",
+  "subtitleSha256": "5cec2085b2e073f1d27dc75331646f62d8c6d56119c2985d19d5f16b931c9d9b",
+  "timingLevel": "word"
+}

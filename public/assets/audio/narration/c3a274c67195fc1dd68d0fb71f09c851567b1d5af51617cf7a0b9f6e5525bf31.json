@@ -1,0 +1,15 @@
+{
+  "id": "c3a274c67195fc1dd68d0fb71f09c851567b1d5af51617cf7a0b9f6e5525bf31",
+  "url": "/assets/audio/narration/c3a274c67195fc1dd68d0fb71f09c851567b1d5af51617cf7a0b9f6e5525bf31.mp3",
+  "text": "知道夏冬照射不同以后，还要问一个更基础的问题：地球不断接收阳光，为什么没有一直越晒越热？下一步回到地表与空气之间，看能量怎样进入、被储存和交换，又怎样离开。",
+  "duration": 14.292,
+  "bytes": 230388,
+  "sha256": "c48b1b3395a81f0e09e7bd261976434713e69fa7243cb5b6a1f2890c0a6fe595",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:39.747Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "e5326f026eadb6a8ea6dc35394966962d8d72da4b0dd819709ac00110395e01a",
+  "url": "/assets/audio/narration/e5326f026eadb6a8ea6dc35394966962d8d72da4b0dd819709ac00110395e01a.mp3",
+  "text": "卡若遗址位于昌都东南的澜沧江西岸。地方资料把它的年代放在距今约四千至五千年，房屋、动物骨骼与粟提供生活证据。一九七九年童恩正带领学生参与发掘，让材料进入研究；示意不能替代史前村庄测绘。",
+  "duration": 19.476,
+  "bytes": 313332,
+  "sha256": "56eb902b38b7d0049d8657844d03358c3103baa6dc092c0e97ae154f687dae61",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:39.662Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e5326f026eadb6a8ea6dc35394966962d8d72da4b0dd819709ac00110395e01a.subtitles.json",
+  "subtitleSha256": "91c8d980c2d8a8be3fbfc0858ca7c147e3a6d549b2f8057638435613d48caf62",
+  "timingLevel": "word"
+}

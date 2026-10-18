@@ -1,0 +1,15 @@
+{
+  "id": "c869ab36a3bed557a5139ef2aed3313de60cb55c4820ba40b14b3eb66071e752",
+  "url": "/assets/audio/narration/c869ab36a3bed557a5139ef2aed3313de60cb55c4820ba40b14b3eb66071e752.mp3",
+  "text": "从夏至切到冬至，观察同一山地表面与照射背景的变化。不同海拔和坡向还会造成地方差异。季节为天气提供重复的背景，却不能保证某天一定下雪或无雨，具体日期仍要返回相应的天气资料。",
+  "duration": 16.452,
+  "bytes": 264948,
+  "sha256": "59ae129b3329091cc42232dbef6b98ff832b0a9f386aca227ead82c6c4ff6950",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:57.518Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

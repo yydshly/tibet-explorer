@@ -1,0 +1,15 @@
+{
+  "id": "3877d913deddeef09c2c8df6dca89191538e544b1f08cae0a2666f592eb2a685",
+  "url": "/assets/audio/narration/3877d913deddeef09c2c8df6dca89191538e544b1f08cae0a2666f592eb2a685.mp3",
+  "text": "比较现代变化应说明指标、年份与统计口径，再看设施分布和使用条件。社会调查补充人们如何体验变化，统计则说明特定范围内的数量。概念建筑帮助定位问题，没有复原某年城市，也不能表示实际人口增减。",
+  "duration": 19.836,
+  "bytes": 319092,
+  "sha256": "8d741af0568d97a5170573d2933b3e81f68802eb92c8b66a39039d30eb8c7fbf",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:55.308Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "996e996daf23338b3ffc768c92791b8f20e1a1500f588e8ee9ffe074bf5ec6ad",
+  "url": "/assets/audio/narration/996e996daf23338b3ffc768c92791b8f20e1a1500f588e8ee9ffe074bf5ec6ad.mp3",
+  "text": "现在知道地方差异需要看阳光、空气、水和地形。我们仍从完整地球出发，先找到亚洲这个洲，再找到中国这个国家，最后沿中国西南找到西藏自治区。拉萨只是其中一座城市。逐层靠近时，海洋与大陆仍留在周围，让目标始终有来路。",
+  "duration": 19.548,
+  "bytes": 314484,
+  "sha256": "6acd6ec8f292788413c0627bcb09789647cdb8350b90e5e9860eff3abe32daa0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T07:31:57.191Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

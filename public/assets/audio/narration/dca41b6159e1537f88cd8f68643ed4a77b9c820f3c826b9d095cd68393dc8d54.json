@@ -1,0 +1,15 @@
+{
+  "id": "dca41b6159e1537f88cd8f68643ed4a77b9c820f3c826b9d095cd68393dc8d54",
+  "url": "/assets/audio/narration/dca41b6159e1537f88cd8f68643ed4a77b9c820f3c826b9d095cd68393dc8d54.mp3",
+  "text": "环境不同，能够取用的水和土地就要分别认识。",
+  "duration": 3.996,
+  "bytes": 65652,
+  "sha256": "eeb6c0b10ceadb0112ba4fab69bff856ff93d0e10e877d471fa1c24ed46b1025",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:43.336Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "53dde41d235182363ec03c1527d2fee2289cdf1ae831a46ca3b49308786b89de",
+  "url": "/assets/audio/narration/53dde41d235182363ec03c1527d2fee2289cdf1ae831a46ca3b49308786b89de.mp3",
+  "text": "再看西部阿里，地方资料强调寒冷少雨。来流、山地和季节的组合不同，同在高原也会有不同的水热条件。",
+  "duration": 9.828,
+  "bytes": 158964,
+  "sha256": "e3afdc48529ec837e5730b5894fda8eb5fb79a29b49374396812a3ed58c7853f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:19:19.413Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/53dde41d235182363ec03c1527d2fee2289cdf1ae831a46ca3b49308786b89de.subtitles.json",
+  "subtitleSha256": "d4a37436d710f8ed1dc87888a67f76cfbb2639ec029993b563e71d3375e15068",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "35b328e4d736ac66f67e7ee3e4f77c33c2d8e42a244058da8036c28a7fab9b83",
+  "url": "/assets/audio/narration/35b328e4d736ac66f67e7ee3e4f77c33c2d8e42a244058da8036c28a7fab9b83.mp3",
+  "text": "金色轮廓跟踪同一团空气，青点只是不可见水汽的符号。现在沿坡上升，进入较低气压环境，空气膨胀并冷却。继续冷却到合适条件，部分水汽凝结成白色云滴。成云以后还要增长，放大处能看到小滴合并；较大水滴才开始下落。水到地表以后，再沿坡汇流，部分进入土壤。",
+  "duration": 25.164,
+  "bytes": 404340,
+  "sha256": "b2459e647f11c47be6da65289f558b8ed016235a205aef1f1563640628e75dec",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T04:22:52.204Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

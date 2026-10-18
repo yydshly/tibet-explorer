@@ -1,0 +1,15 @@
+{
+  "id": "3636c1ab1d302a81ba61c5088a710b92fd5eb3c3944ff493536e8e83fdd55712",
+  "url": "/assets/audio/narration/3636c1ab1d302a81ba61c5088a710b92fd5eb3c3944ff493536e8e83fdd55712.mp3",
+  "text": "沿刚才的地貌与水系，现在把目光放到山南河谷的生活和记忆。土地、水源与通道让我们提出聚落问题，遗存和文字则提供历史线索。同一片山川既有自然过程，也有人长期使用与理解它的方式。",
+  "duration": 17.928,
+  "bytes": 288564,
+  "sha256": "4192df209c4bba375c764ce1f8418e3a22e356d15ed2249d9a009d4431852237",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:17.109Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

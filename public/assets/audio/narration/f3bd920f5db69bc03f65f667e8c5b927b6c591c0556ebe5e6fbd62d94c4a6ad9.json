@@ -1,0 +1,15 @@
+{
+  "id": "f3bd920f5db69bc03f65f667e8c5b927b6c591c0556ebe5e6fbd62d94c4a6ad9",
+  "url": "/assets/audio/narration/f3bd920f5db69bc03f65f667e8c5b927b6c591c0556ebe5e6fbd62d94c4a6ad9.mp3",
+  "text": "技术、教育、流动和个人选择都可能改变生活安排，传统也通过人的学习与实践继续传承。社会调查和口述应说明地点、时间与采集语境。旅游影像可以提供观察入口，却不能替代普通日常或固定人群的形象。",
+  "duration": 18.9,
+  "bytes": 304116,
+  "sha256": "8273669c4e79e251dc27cd41c5aee269363d01ffaed84534059b9eba407a0b99",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:47.383Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

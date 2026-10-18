@@ -1,0 +1,15 @@
+{
+  "id": "bb05e53a0bbcec03d0ac855d71ff60cbceca2938ab89eb7b954d16bfc6d70a46",
+  "url": "/assets/audio/narration/bb05e53a0bbcec03d0ac855d71ff60cbceca2938ab89eb7b954d16bfc6d70a46.mp3",
+  "text": "我们从环境条件走到了人的建造、交流、制作与日常。它们怎样走到今天，还需要时间和证据。接下来先看考古发现怎样支持历史认识，再比较政治、知识与生活的不同变化，不能把文化直接归因于气候。",
+  "duration": 18.18,
+  "bytes": 292596,
+  "sha256": "218eae3f71e8c4a5b51aaa01a06cfdc2970b84b07c89ca24afd84c661730728f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:05:12.741Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1a1f8cf54c8e89e22a6869791618a9979843e786a4b3dadb8a438de6221e3017",
+  "url": "/assets/audio/narration/1a1f8cf54c8e89e22a6869791618a9979843e786a4b3dadb8a438de6221e3017.mp3",
+  "text": "高度、来流、水汽与山谷方向共同参与环境形成；它们的组合随地区改变。画面用地形、地表与地区标记建立观察关系，精确温度、降水和植被范围仍需实际资料，不能由一处谷地代替整个林芝。",
+  "duration": 17.82,
+  "bytes": 286836,
+  "sha256": "7312d961748c81344adfa435b451783155beb79d751cab22e7f8fefe50ba933b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:16.908Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

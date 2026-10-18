@@ -1,0 +1,15 @@
+{
+  "id": "05d8ed7f6137879aaaa48e520b29b8331acccf6fe50489470738592bc35ad01d",
+  "url": "/assets/audio/narration/05d8ed7f6137879aaaa48e520b29b8331acccf6fe50489470738592bc35ad01d.mp3",
+  "text": "拉萨的地方接续先看跨河。二〇〇七年，柳梧大桥连通火车站与市区。用当前道路和河流辨认客站进城的关系；拉萨西货场的装卸配送是另一处材料，不在客站这里复原。",
+  "duration": 15.156,
+  "bytes": 244212,
+  "sha256": "c42a128bef36822d5012c043eb3911869e4aa3eee6793c73e0dc7129d4c3bfd9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:12:57.865Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9ea59f6a9f0e551d061a13ec25210c6e864576826aa3ace645621b3915a5a998",
+  "url": "/assets/audio/narration/9ea59f6a9f0e551d061a13ec25210c6e864576826aa3ace645621b3915a5a998.mp3",
+  "text": "从山南站沿已绘道路接到格桑路、英雄路，再进入泽当街道。2020年站前配套仍在施工，2021年开通时，采访中的卓玛因工作每周往返拉萨。到站、出站与城市服务共同完成出行；这段真实道路保留出口资料空缺，不是当前公交导航。",
+  "duration": 19.944,
+  "bytes": 320820,
+  "sha256": "d4812be2bb3471c452022b64e4f35fe22c1eefb6d3768faf276057c1629b0d0f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:51:46.492Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9ea59f6a9f0e551d061a13ec25210c6e864576826aa3ace645621b3915a5a998.subtitles.json",
+  "subtitleSha256": "63a6572c581f74853b262ea6e8e50e3ab9189865be9128db117805c55a2e920b",
+  "timingLevel": "word"
+}

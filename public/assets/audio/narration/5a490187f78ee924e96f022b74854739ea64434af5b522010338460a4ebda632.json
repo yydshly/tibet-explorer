@@ -1,0 +1,19 @@
+{
+  "id": "5a490187f78ee924e96f022b74854739ea64434af5b522010338460a4ebda632",
+  "url": "/assets/audio/narration/5a490187f78ee924e96f022b74854739ea64434af5b522010338460a4ebda632.mp3",
+  "text": "加入生态与下游使用，再加入观测和材料对读。色东普研究把谷内振动、影像和河道水位联合起来，区分发生崩塌、到达河道与是否堵江。确认过程之后，还需要维护设施、传递信息和地方响应；单个信号不能替代整条判断链。",
+  "duration": 21.24,
+  "bytes": 341556,
+  "sha256": "69a205bf47f2d6336c56b322e8e7f8619c90325b04bb2ff74356bdec1bfd4f48",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:11:56.962Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5a490187f78ee924e96f022b74854739ea64434af5b522010338460a4ebda632.subtitles.json",
+  "subtitleSha256": "4eb989f214f549f8da24d1fd080b7649e9bf3b68b82edcf33c40d2c5266e2534",
+  "timingLevel": "word"
+}

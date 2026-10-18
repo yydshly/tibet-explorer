@@ -1,0 +1,15 @@
+{
+  "id": "47b803fd84ecc6c89236856433d53623fece62cf800a22de88d0597e466b2531",
+  "url": "/assets/audio/narration/47b803fd84ecc6c89236856433d53623fece62cf800a22de88d0597e466b2531.mp3",
+  "text": "请切换到流域联系，把同一地区放进生态问题，再与文化交流层比较。两幅线表达的关系不同，阅读来源时注意范围和日期。这样战略认识会有对象和条件，也能解释哪些问题还需要进一步资料。",
+  "duration": 17.388,
+  "bytes": 279924,
+  "sha256": "57cb1af35c6f0945bfb4d9d49754223b4b31bf828b4b4e301a564a02a8cd972d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:08.823Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

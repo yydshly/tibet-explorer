@@ -1,0 +1,31 @@
+{
+  "title": "Earth orientation cartographic reference layers",
+  "retrievedOn": "2026-10-14",
+  "file": "earth-context.json",
+  "sha256": "64e8566e537e093570c22fd0e272c838019ccfdd0bfdaecf10a111d705eeb617",
+  "license": "Public Domain",
+  "licenseSource": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "processing": "Select source features, retain polygon topology and round coordinates to six decimal places; project onto a sphere at runtime. No hand-drawn boundary added.",
+  "layers": {
+    "china": {
+      "dataset": "ne_110m_admin_0_countries",
+      "sourceFeature": "China",
+      "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson",
+      "meaning": "Generalized administrative reference geometry at 1:110 million scale. Source cartographic representation, not a standard approved map or surveyed boundary."
+    },
+    "tibet": {
+      "dataset": "ne_50m_admin_1_states_provinces",
+      "sourceFeature": "Xizang (CHN-1662 / CN-XZ)",
+      "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_1_states_provinces.geojson",
+      "meaning": "Generalized administrative region reference at 1:50 million scale. This is distinct from the natural plateau geography."
+    },
+    "plateau": {
+      "dataset": "ne_10m_geography_regions_polys",
+      "sourceFeature": "PLATEAU OF TIBET",
+      "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_geography_regions_polys.geojson",
+      "description": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+      "meaning": "Physical labeling area, roughly accurate to 1:50 million despite the dataset theme at 1:10 million. Not a strict research delineation, digital elevation model, administrative border or calculation boundary."
+    }
+  },
+  "flows": "Authored conceptual southern moisture and western circulation relationships. Coordinates indicate direction and geographical relation only, not observed trajectories, uniform prevailing winds or forecasts."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cf0b2f3f026aa60f5e9f65f93fa8df1001f9d769f1fc60bf96c9b8156b08db38",
+  "url": "/assets/audio/narration/cf0b2f3f026aa60f5e9f65f93fa8df1001f9d769f1fc60bf96c9b8156b08db38.mp3",
+  "text": "现在从地壳过程回到地表，沿一条山脊走向河谷。高原表示整体较高，并不表示每处高度相同。山系、低谷和盆地共同组成内部空间，也让同一地区出现不同的水热条件与通行可能。",
+  "duration": 17.424,
+  "bytes": 280500,
+  "sha256": "a18be72c30ff5850279af59b194e49fd38ca234ef3f7b723162b8be5837f436d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:54.819Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

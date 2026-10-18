@@ -1,0 +1,19 @@
+{
+  "id": "64344f09f7721f686074bdbe4a7ce64c9cad962ae83393cd27f9dcec10700c92",
+  "url": "/assets/audio/narration/64344f09f7721f686074bdbe4a7ce64c9cad962ae83393cd27f9dcec10700c92.mp3",
+  "text": "先保留西藏与周边的整体地图。金色地形剖线取自真实高程，青色气团和云雨是原理示意，不是实测风场。沿剖面向北移动，空气遇到高地后被迫抬升。抬升时空气膨胀冷却，足够湿润时水汽凝结，云逐渐增多。继续越过山地，部分水分可能以降水离开气团。背风侧下沉时空气增温，相对湿度可能降低。实际结果还受来流、季节和其他天气过程影响。现在保持同一地形，试着减少水汽，再用气象站资料检查地区差异。",
+  "duration": 37.548,
+  "bytes": 602484,
+  "sha256": "9b51376a92ce42c806a26d2fd2870544e796c19c24b3b62719ea9ef7adffc348",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:49:25.713Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/64344f09f7721f686074bdbe4a7ce64c9cad962ae83393cd27f9dcec10700c92.subtitles.json",
+  "subtitleSha256": "0466b9e69de8645c485000b4e5e0f88e9992f0bf3f5c726f3efce14c9898d341",
+  "timingLevel": "word"
+}

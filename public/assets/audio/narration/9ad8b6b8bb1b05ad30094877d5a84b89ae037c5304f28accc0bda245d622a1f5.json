@@ -1,0 +1,15 @@
+{
+  "id": "9ad8b6b8bb1b05ad30094877d5a84b89ae037c5304f28accc0bda245d622a1f5",
+  "url": "/assets/audio/narration/9ad8b6b8bb1b05ad30094877d5a84b89ae037c5304f28accc0bda245d622a1f5.mp3",
+  "text": "下机以后，仍要把行李交给地面接续。昆莎机场与狮泉河城区分开，看既有公路怎样联系这两处地方。航空落地没有消除城外距离，实际接驳还需要车辆、服务与当日条件。札达托林在另一县域，另行安排。",
+  "duration": 19.296,
+  "bytes": 310452,
+  "sha256": "dbb58fa17bb9850961581b6fed509672e1fdeac1e5d4351c034804649fec5b1e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:21:02.064Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

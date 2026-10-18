@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "audioSha256": "785cca9afaf98d8435a215fad4ca780c6d3b32190405297745ec731b9d0bb80c",
+  "textSha256": "72a78630e243c4344d1949e1bcede5047009bc1d655303ae5c76802b88c3e6df",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 4.428,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.288571428571428,
+      "text": "再看二〇一六年的鲁朗，小镇建设给地方交流增加了新场所。",
+      "textStart": 0,
+      "textEnd": 27
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.2871794871794871,
+      "text": "再",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.2871794871794871,
+      "end": 0.41025641025641024,
+      "text": "看",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.5333333333333332,
+      "text": "二",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 0.6564102564102563,
+      "text": "〇",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6564102564102563,
+      "end": 0.7794871794871795,
+      "text": "一",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.7794871794871795,
+      "end": 0.9025641025641026,
+      "text": "六",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9025641025641026,
+      "end": 1.0256410256410255,
+      "text": "年",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.0256410256410255,
+      "end": 1.0666666666666664,
+      "text": "的",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.0666666666666664,
+      "end": 1.1897435897435897,
+      "text": "鲁",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.1897435897435897,
+      "end": 1.3128205128205126,
+      "text": "朗",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.3128205128205126,
+      "end": 1.353846153846154,
+      "text": "，",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.353846153846154,
+      "end": 1.9282051282051282,
+      "text": "小",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 1.9282051282051282,
+      "end": 2.133333333333333,
+      "text": "镇",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.133333333333333,
+      "end": 2.2564102564102564,
+      "text": "建",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.2564102564102564,
+      "end": 2.4205128205128204,
+      "text": "设",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.4205128205128204,
+      "end": 2.5025641025641026,
+      "text": "给",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.5025641025641026,
+      "end": 2.625641025641025,
+      "text": "地",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 2.625641025641025,
+      "end": 2.7487179487179483,
+      "text": "方",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 2.7487179487179483,
+      "end": 2.871794871794872,
+      "text": "交",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 2.871794871794872,
+      "end": 3.035897435897436,
+      "text": "流",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 3.035897435897436,
+      "end": 3.2410256410256406,
+      "text": "增",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 3.2410256410256406,
+      "end": 3.6102564102564103,
+      "text": "加",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 3.6102564102564103,
+      "end": 3.733333333333333,
+      "text": "了",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 3.733333333333333,
+      "end": 3.815384615384615,
+      "text": "新",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 3.815384615384615,
+      "end": 3.9384615384615382,
+      "text": "场",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 3.9384615384615382,
+      "end": 4.102564102564102,
+      "text": "所",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 4.102564102564102,
+      "end": 4.266666666666666,
+      "text": "。",
+      "textStart": 26,
+      "textEnd": 27
+    }
+  ]
+}

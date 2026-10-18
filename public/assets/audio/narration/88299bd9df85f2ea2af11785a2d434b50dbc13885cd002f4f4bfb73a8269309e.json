@@ -1,0 +1,15 @@
+{
+  "id": "88299bd9df85f2ea2af11785a2d434b50dbc13885cd002f4f4bfb73a8269309e",
+  "url": "/assets/audio/narration/88299bd9df85f2ea2af11785a2d434b50dbc13885cd002f4f4bfb73a8269309e.mp3",
+  "text": "刚才沿水认识上下游，现在沿谷地与山口看人的移动。地形提供通行条件，交通技术、政策、需求和社会网络决定通道怎样被使用。拉萨、林芝与昌都等节点帮助我们找到不同地方，而非自动给出一条真实道路。",
+  "duration": 19.62,
+  "bytes": 315636,
+  "sha256": "3aed75ee398d02d323ae906ad5adf0c6583491f5be55a2fd02fe68f6bc74e4f4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:30.413Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

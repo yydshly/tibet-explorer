@@ -1,0 +1,20 @@
+{
+  "asset": "ngangla-ringco-iss-2024.jpg",
+  "title": "A Bejeweled Plateau",
+  "subject": "Ngangla Ringco lake, Tibetan Plateau",
+  "sourcePage": "https://science.nasa.gov/earth/earth-observatory/a-bejeweled-plateau-154026/",
+  "downloadUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/154000/154026/iss071e714981_web.jpg?w=720&h=480&fit=clip&crop=faces%2Cfocalpoint",
+  "retrievedDate": "2026-10-15",
+  "acquiredDate": "2024-09-22",
+  "publishedDate": "2025-03-09",
+  "imageId": "ISS071-E-714981",
+  "dimensions": [720, 480],
+  "bytes": 67620,
+  "sha256": "60ecc1ed24c8064238824c39796f67389d726a9920adca4f3874a15c839a5334",
+  "credit": "Astronaut photograph by an Expedition 71 crew member. Provided by the ISS Crew Earth Observations Facility and the Earth Science and Remote Sensing Unit, Johnson Space Center, NASA.",
+  "identity": "Actual astronaut photograph of Ngangla Ringco, captured using a Nikon Z9 with a 400 millimeter lens. The published NASA image includes labels. The original NASA editorial preparation cropped and enhanced contrast and removed lens artifacts, as disclosed in the source record.",
+  "scope": "An example of observing a Tibetan Plateau lake. It is not a claim about current water level, weather, tourism access or a proposed travel stop.",
+  "usage": "Used for factual educational/informational purposes with attribution under NASA Images and Media Usage Guidelines. The primary record identifies an ISS crew photograph supplied by NASA/JSC and contains no separate third-party copyright notice. No endorsement is implied.",
+  "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "localProcessing": "None. Downloaded NASA's 720 by 480 web rendition unchanged. Thumbnail is displayed with CSS object-fit:cover and object-position:50% 55%; no image generation, recoloring or compositing."
+}

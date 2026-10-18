@@ -1,0 +1,19 @@
+{
+  "id": "5c06338b5aed31edf3e11f0a47d53b8cd9c94907cf61d92bfc055310e81638a5",
+  "url": "/assets/audio/narration/5c06338b5aed31edf3e11f0a47d53b8cd9c94907cf61d92bfc055310e81638a5.mp3",
+  "text": "那曲内部也有差别。旧地方地理资料区分中西部的丘陵盆地与东部高山峡谷，城区周边不能代表整个市域。罗玛镇气候环境站持续研究能量与水循环；要判断具体变化，仍需对应地点和时期的观测，再讨论人的安排。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "abc8ef4e8728bf3e799ecdb5cc93b6bdbaf771762079ac2451a210b3737a9214",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:54:58.591Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5c06338b5aed31edf3e11f0a47d53b8cd9c94907cf61d92bfc055310e81638a5.subtitles.json",
+  "subtitleSha256": "7a21e749deafbdb0705edd706faa9dd79299b959ade1a3737a7a247963793047",
+  "timingLevel": "word"
+}

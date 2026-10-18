@@ -1,0 +1,15 @@
+{
+  "id": "78a07763cf9a7b2a77a64e3f93d596d0e9e4631dabceacc6834ceff643b053d8",
+  "url": "/assets/audio/narration/78a07763cf9a7b2a77a64e3f93d596d0e9e4631dabceacc6834ceff643b053d8.mp3",
+  "text": "观察先留在狮泉河。沿同一片河岸，辨认桥梁通行、步行停留与公共活动，再回看二〇一七年材料支持哪些用途。今天看见的公园和步道，不能全部标成那一年建成。托林的教师与翻译交流，另选历史入口继续。",
+  "duration": 18.144,
+  "bytes": 292020,
+  "sha256": "40c7b26ba34036fa81f2250d12ecb073b7d2e2ad7a28673bb907b5fd3659cac9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:27:25.261Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "79c1558b9584691a813be416d3c09d69b2c18cdce4d41abca454eceb85fb702f",
+  "url": "/assets/audio/narration/79c1558b9584691a813be416d3c09d69b2c18cdce4d41abca454eceb85fb702f.mp3",
+  "text": "你可以从任意一站回到对应章节，核对新材料，修正原来的解释。环境提供条件，人的行动与历史形成地方，今天的联系和发展又带来新的选择。带着有出处的问题去观察，回来把自己的记录接上，这张认识西藏的地图就能继续完善。",
+  "duration": 19.764,
+  "bytes": 317940,
+  "sha256": "6e922b5964d46395ce2dfc4fd4a48951e0c71f8022ddfb5abe1ee19d955ae97f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:57:24.866Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

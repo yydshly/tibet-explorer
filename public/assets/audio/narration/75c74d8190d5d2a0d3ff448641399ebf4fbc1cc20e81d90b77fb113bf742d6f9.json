@@ -1,0 +1,19 @@
+{
+  "id": "75c74d8190d5d2a0d3ff448641399ebf4fbc1cc20e81d90b77fb113bf742d6f9",
+  "url": "/assets/audio/narration/75c74d8190d5d2a0d3ff448641399ebf4fbc1cc20e81d90b77fb113bf742d6f9.mp3",
+  "text": "地轴的倾斜，使一年中太阳照射方向和昼夜长短发生变化。夏至时，拉萨纬度的正午太阳更高、白昼更长；冬至则相反。侧边数值是太阳几何计算，真实气温还受地表、大气和热量输送影响。",
+  "duration": 18.648,
+  "bytes": 300084,
+  "sha256": "86c306fa52913cc15e74912c0608fb5118ede016a4b269cbd461c4256aa69390",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:10:27.156Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/75c74d8190d5d2a0d3ff448641399ebf4fbc1cc20e81d90b77fb113bf742d6f9.subtitles.json",
+  "subtitleSha256": "8976e7203ce8a276879bf117851031fc51d8705eeb70d2418b15001e59219844",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fec3daa1312476f4666368478aeafd8894db734bd7dace43d61062c20a687cae",
+  "url": "/assets/audio/narration/fec3daa1312476f4666368478aeafd8894db734bd7dace43d61062c20a687cae.mp3",
+  "text": "请把演示回到只有通道，再逐步加入服务和接驳，看看人的到达链在哪一步断开、在哪一步接续。这个操作解释需要核查什么，不表示某个地方现实中缺少这些条件。实际判断还要查运营、费用、道路和使用者的资料。",
+  "duration": 19.26,
+  "bytes": 309876,
+  "sha256": "ae2e1c3ece34fba05809d558f6b98e964ea113e39f594934237acd7201672a59",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:22:58.484Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

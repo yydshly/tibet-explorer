@@ -1,0 +1,15 @@
+{
+  "id": "8f984f460e45b2ad57d0ed085a91059bc3bff2d39ebf2f5703ee71747f4bf098",
+  "url": "/assets/audio/narration/8f984f460e45b2ad57d0ed085a91059bc3bff2d39ebf2f5703ee71747f4bf098.mp3",
+  "text": "空气上升进入较低气压环境，可以膨胀并冷却；周围空气的垂直温度分布，却是另一种需要观测的状态。云、湿度、地表和天气都会参与其中。画面用高度参照帮助理解，不提供某处今天的真实气温。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "88191108c7aa21605b4cb9d712e2d5dda136b4e0b38aa87c9096333cf1bae0ac",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:51:18.371Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

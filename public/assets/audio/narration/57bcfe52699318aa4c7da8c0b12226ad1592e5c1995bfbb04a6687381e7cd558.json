@@ -1,0 +1,15 @@
+{
+  "id": "57bcfe52699318aa4c7da8c0b12226ad1592e5c1995bfbb04a6687381e7cd558",
+  "url": "/assets/audio/narration/57bcfe52699318aa4c7da8c0b12226ad1592e5c1995bfbb04a6687381e7cd558.mp3",
+  "text": "现在转动地球，找一找印度洋与亚洲的相对方向，再把西藏标记带回眼前。缩放以后重新确认位置。以后进入河谷、城市或建筑，我们都能沿着这条空间来路，回到更大的关系。",
+  "duration": 14.58,
+  "bytes": 234996,
+  "sha256": "de8cc5a6452aafeebfd0a0ed216849f4ddebdb95b53e8678583045b3826e3713",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:48:53.956Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

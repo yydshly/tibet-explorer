@@ -1,0 +1,15 @@
+{
+  "id": "27b3eeb7a9bd7ebe7fbb658db05b626a4747e161194cfdc327e7da6bc1a3a968",
+  "url": "/assets/audio/narration/27b3eeb7a9bd7ebe7fbb658db05b626a4747e161194cfdc327e7da6bc1a3a968.mp3",
+  "text": "一处遗址让我们知道历史可以怎样被研究，却不是全部历史。下一步拉到全史索引，从史前到当代辨认组织、制度、交往和生活的变化，让任何一个具体故事都能找到它的前后位置。",
+  "duration": 15.48,
+  "bytes": 249396,
+  "sha256": "d097ead4b4a2cf13ad1f9494fdac420ea536e017f48e4a1a07f4d066d8af8a6d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:01.390Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

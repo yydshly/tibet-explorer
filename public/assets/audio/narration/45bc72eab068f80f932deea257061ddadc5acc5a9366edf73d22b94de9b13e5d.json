@@ -1,0 +1,19 @@
+{
+  "id": "45bc72eab068f80f932deea257061ddadc5acc5a9366edf73d22b94de9b13e5d",
+  "url": "/assets/audio/narration/45bc72eab068f80f932deea257061ddadc5acc5a9366edf73d22b94de9b13e5d.mp3",
+  "text": "先把那曲放回藏北高原。地面显得开阔，不表示海拔低：相对起伏与相对海平面的高度是两件事。读高程柱，再沿地面看丘陵与盆地；高海拔与低温共同影响草地生长，不能因为看上去平坦就按低地理解。",
+  "duration": 17.856,
+  "bytes": 287412,
+  "sha256": "aec2fc4e62fb8dca43b66401e774a33bc284435cff93629bcfa3f68eb8b770f2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:54:17.298Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/45bc72eab068f80f932deea257061ddadc5acc5a9366edf73d22b94de9b13e5d.subtitles.json",
+  "subtitleSha256": "ca5c1ff4b67b449e5397d811a1aaf3bbcaecddeb0df506cf086f2db6604a8209",
+  "timingLevel": "word"
+}

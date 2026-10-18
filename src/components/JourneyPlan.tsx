@@ -1,0 +1,25 @@
+import {ArrowLeft,ArrowRight,ArrowUp,ArrowDown,CheckCircle,Plus,Trash} from '@phosphor-icons/react';
+import {travelStops,regions} from '../data/curriculum';
+import {travelPlanLessons} from '../data/travelPlanLessons';
+import {writeExploration,type Exploration} from '../lib/store';
+import type {Dispatch,SetStateAction} from 'react';
+import {cityTravelOrigin} from '../lib/cityTravelOrigin';
+
+export const learningRouteThemes=[
+ {id:'valley',title:'河谷、城市与新通道',stops:['lhasa-buildings','yarlung-valley','nyingchi-valley'],purpose:'从拉萨的建筑使用，到山南的河谷条件，再到林芝的山地云雨；结合2021年拉林铁路开通材料，继续核对实际停站与接驳。'},
+ {id:'exchange',title:'文本怎样走进地方',stops:['lhasa-old-town','tholing'],purpose:'在拉萨读保存、使用与传承，再借托林的1042年人物交流材料追问学习如何发生。两地是跨区域研读顺序，实际长距离旅行另行安排。'},
+ {id:'environment',title:'两种环境中的生活选择',stops:['nyingchi-valley','changtang'],purpose:'把林芝河谷与高原腹地的环境、季节和有日期的地方生活研究对读，避免用一种景观概括西藏。'},
+] as const;
+
+export default function JourneyPlan({stepId,saved,setSaved,onRead,onPlanner,onNotice}:{stepId:string;saved:Exploration;setSaved:Dispatch<SetStateAction<Exploration>>;onRead:(id:string)=>void;onPlanner:()=>void;onNotice:(text:string)=>void}){
+ const stops=saved.route.flatMap(id=>travelStops.find(stop=>stop.id===id)??[]);
+ const move=(id:string,delta:number)=>setSaved(previous=>{const route=previous.route.filter(stopId=>travelStops.some(stop=>stop.id===stopId)),from=route.indexOf(id),to=from+delta;if(from<0||to<0||to>=route.length)return previous;[route[from],route[to]]=[route[to],route[from]];return {...previous,route};});
+ return <section className="journey-plan" aria-label="我的主题探索计划">
+  <header><span>把这一程带走</span><h2>{stepId==='T1'?'先留下一个自己的问题':stepId==='T2'?'让前后两站共同推进认识':'保存条件，回来继续'}</h2></header>
+  {stepId==='T1'&&<label className="plan-field">我还想继续理解什么？<textarea rows={3} maxLength={10000} value={saved.note} placeholder="例如：同一河谷里，水和道路怎样参与生活变化？" onChange={event=>setSaved(previous=>({...previous,note:event.target.value}))}/></label>}
+  {stepId!=='T3'&&<div className="route-theme-options">{learningRouteThemes.map(theme=><article key={theme.id}><strong>{theme.title}</strong><p>{theme.purpose}</p><small>{theme.stops.map(id=>travelStops.find(stop=>stop.id===id)?.name).join(' → ')}</small><button type="button" disabled={theme.stops.every(id=>saved.route.includes(id))} onClick={()=>setSaved(previous=>({...previous,route:[...new Set([...previous.route,...theme.stops])]}))}><Plus size={13}/>{theme.stops.every(id=>saved.route.includes(id))?'已加入候选':'加入这组候选站'}</button></article>)}</div>}
+  <div className="plan-route-heading"><strong>我的候选顺序 · {stops.length}站</strong><button type="button" onClick={onPlanner}>选择更多地方<ArrowRight size={13}/></button></div>
+  {stops.length?<ol className="inline-route">{stops.map((stop,index)=><li key={stop.id}><div className="inline-stop-title"><span>{index+1}</span><div><small>{regions.find(region=>region.id===stop.region)?.name} · {stop.theme}</small><strong>{stop.name}</strong></div></div><p>{stop.question}</p><details><summary>这一站准备观察什么</summary><p>{stop.description}</p><label className="plan-field">我的问题、观察与待核实事项<textarea rows={2} maxLength={1500} value={saved.stopNotes[stop.id]||''} onChange={event=>setSaved(previous=>({...previous,stopNotes:{...previous.stopNotes,[stop.id]:event.target.value}}))}/></label></details><div className="inline-stop-actions"><button type="button" onClick={()=>onRead(travelPlanLessons[stop.id])}><ArrowLeft size={12}/>回看相关认识</button>{cityTravelOrigin(saved.stopOrigins?.[stop.id])&&<a className="text-button" href={`#${cityTravelOrigin(saved.stopOrigins?.[stop.id])}`}><ArrowLeft size={12}/>回到三地地图</a>}<button aria-label={`将${stop.name}向前移动`} disabled={index===0} onClick={()=>move(stop.id,-1)}><ArrowUp size={13}/></button><button aria-label={`将${stop.name}向后移动`} disabled={index===stops.length-1} onClick={()=>move(stop.id,1)}><ArrowDown size={13}/></button><button aria-label={`移除${stop.name}`} onClick={()=>setSaved(previous=>({...previous,route:previous.route.filter(id=>id!==stop.id)}))}><Trash size={13}/></button></div></li>)}</ol>:<p className="plan-empty">还没有候选站点。先选一个认识目的，再加入相应地方。</p>}
+  {stepId==='T3'&&<><div className="plan-condition-fields"><label className="plan-field">计划出发日期<input type="date" value={saved.travelDate} onChange={event=>setSaved(previous=>({...previous,travelDate:event.target.value}))}/></label><label className="plan-field">交通意向<select value={saved.transport} onChange={event=>setSaved(previous=>({...previous,transport:event.target.value}))}><option value="">尚未确定</option>{['公共交通','包车或自驾','混合交通'].map(value=><option key={value}>{value}</option>)}</select></label></div><p className="plan-status">已保留候选顺序、观察问题{saved.travelDate?'与计划日期':''}。逐段交通、开放与预约仍需按日期核实；历史开通报道不代表当前可用服务。</p><label className="plan-field">这一程留下的认识与问题<textarea rows={3} maxLength={10000} value={saved.note} onChange={event=>setSaved(previous=>({...previous,note:event.target.value}))}/></label><div className="plan-actions"><button type="button" onClick={()=>onNotice(writeExploration(saved)?'主题计划已保存，可继续修改每站问题。':'浏览器保存未成功，请打开完整计划导出保留。')}><CheckCircle size={15}/>保存当前计划</button><button type="button" onClick={onPlanner}>查看与导出完整计划<ArrowRight size={14}/></button></div></>}
+ </section>;
+}

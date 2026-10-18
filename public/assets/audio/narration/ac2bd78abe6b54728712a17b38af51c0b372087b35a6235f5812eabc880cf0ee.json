@@ -1,0 +1,19 @@
+{
+  "id": "ac2bd78abe6b54728712a17b38af51c0b372087b35a6235f5812eabc880cf0ee",
+  "url": "/assets/audio/narration/ac2bd78abe6b54728712a17b38af51c0b372087b35a6235f5812eabc880cf0ee.mp3",
+  "text": "有了历史方向，再把文化放回人的行动。建筑组织宗教、礼仪和日常用途；学习与翻译使知识进入新的语言，工艺和艺术留下作品，节庆与藏戏又需要持续参与。拉萨建筑、托林交流和地方传习各有来路，不能把一种建筑或一种信仰当作全部西藏文化。",
+  "duration": 23.112,
+  "bytes": 371508,
+  "sha256": "cb9e344bebaaf5bf8fc009740293b0f8c1af54c64725b724ffb5d4cc27d70f85",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:23.345Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ac2bd78abe6b54728712a17b38af51c0b372087b35a6235f5812eabc880cf0ee.subtitles.json",
+  "subtitleSha256": "4723376d31c4a111631943ecc02f93c642b4bc77fd25217f9d4172fcdd234ba4",
+  "timingLevel": "word"
+}

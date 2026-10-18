@@ -1,0 +1,19 @@
+{
+  "id": "c16951b40ee44874815b50c909333b8d3a112d5df2e528848600704ea02c79c6",
+  "url": "/assets/audio/narration/c16951b40ee44874815b50c909333b8d3a112d5df2e528848600704ea02c79c6.mp3",
+  "text": "从西藏向南看，依次是喜马拉雅、南亚陆地和印度洋。海洋的水蒸发进入空气，夏季环流能把部分水汽带向藏东南；西侧来流也可能携带水汽。途中山系让空气抬升或绕行，谷地又提供通道。所以，西藏的环境不能只从边界以内寻找原因。",
+  "duration": 22.896,
+  "bytes": 368052,
+  "sha256": "fdda2062ba9029aaebc67f73864ba5a0ffdd22ef0bd5c1ffd09afef37594ba36",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:31:26.570Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c16951b40ee44874815b50c909333b8d3a112d5df2e528848600704ea02c79c6.subtitles.json",
+  "subtitleSha256": "627dd419aaa75d03db89c2def662fad77a3de9f62aa969eaa6922d6e82c46f74",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ffbe04d652effd209eb1a1edc4103cdea2056e27c9e3bd29536c0abfc73057eb",
+  "url": "/assets/audio/narration/ffbe04d652effd209eb1a1edc4103cdea2056e27c9e3bd29536c0abfc73057eb.mp3",
+  "text": "请从上游视角依次加入生态、下游和观测对读。不同位置的材料需要检查日期、变量和方法。空白记录板提醒我们去找证据；教学场景不发预警，也不给任何一方计算损益。位置的价值包含共同依赖，也包含维护与组织责任。",
+  "duration": 20.7,
+  "bytes": 332916,
+  "sha256": "59d116e60d3d83f6cf76f4be8d4a52156bda6f454dce1903284cef9bac2d3b14",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:55:01.856Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "c99c0dda19782e3c673e07f1bf291a70a0152617ecb4020fe8065dcb02294478",
+  "url": "/assets/audio/narration/c99c0dda19782e3c673e07f1bf291a70a0152617ecb4020fe8065dcb02294478.mp3",
+  "text": "先在同一张地图上建立历史方向。尼阿底研究支持距今约四万至三万年的高海拔人群活动，不能直接推出全年定居。七至九世纪，雅砻与拉萨联系吐蕃政权的发展；会盟碑又为八二一至八二二年的会盟留下具体材料。地方力量变化以后，知识与信仰的交流仍在继续，一〇四二年阿底峡来到西部托林。十七世纪的拉萨政治与建筑空间继续变化；近现代又经历一九五一年协议、一九五九年冲突及改革、一九六五年自治区成立。完整时期和材料可以进入专题核对。这些线索说明，地形不能直接解释文化或城市中心。下面把概览转成具体问题：物件怎样保存，实践怎样延续，历史用途又怎样进入今天的街区？",
+  "duration": 53.1,
+  "bytes": 851316,
+  "sha256": "7951b502a0db5f81e54f51cf7b4d4f71e7f85e265a99f5dfa3cb159cf42107ff",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-17T02:13:29.038Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c99c0dda19782e3c673e07f1bf291a70a0152617ecb4020fe8065dcb02294478.subtitles.json",
+  "subtitleSha256": "0d5d8367720e544658fc7ba1f9bba53328e9853540a00f6da9b0013d9559f630",
+  "timingLevel": "word"
+}

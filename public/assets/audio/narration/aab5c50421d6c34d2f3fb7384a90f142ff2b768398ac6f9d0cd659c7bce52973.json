@@ -1,0 +1,15 @@
+{
+  "id": "aab5c50421d6c34d2f3fb7384a90f142ff2b768398ac6f9d0cd659c7bce52973",
+  "url": "/assets/audio/narration/aab5c50421d6c34d2f3fb7384a90f142ff2b768398ac6f9d0cd659c7bce52973.mp3",
+  "text": "已经有了地球位置、周边环境和地形背景。接下来，可以沿自然地理专题观察气候、水和地方生活，也可以沿历史与文化专题阅读具体事件和材料。地图图鉴帮助我们把拉萨、林芝、那曲等地方放回全域，需要解释过程时再进入原理模型。选择一个想继续认识的问题，我们从这里展开。",
+  "duration": 24.948,
+  "bytes": 400884,
+  "sha256": "599d85bb52d493aae3016c4baa7d4fa38381ad62631e3d815c1bad826f047370",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T06:36:32.919Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "58a55fd5b0ccbc3d99e987810a0caddcbf28ded46597f426b0e9539a61b15cdf",
+  "url": "/assets/audio/narration/58a55fd5b0ccbc3d99e987810a0caddcbf28ded46597f426b0e9539a61b15cdf.mp3",
+  "text": "请切换到冬至，保留同一地点和观察角度，比较昼夜分界、照射方向与日长。这里的一年变化来自地球绕太阳运行的几何条件，不能由太阳更远或更近来简单解释，也不是多年变暖的时间线。",
+  "duration": 15.588,
+  "bytes": 251124,
+  "sha256": "cede6c9a6b38fd7a98921c49f0d3b68c79cd97b557ab5c794823ffbf367449f7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:10:31.874Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/58a55fd5b0ccbc3d99e987810a0caddcbf28ded46597f426b0e9539a61b15cdf.subtitles.json",
+  "subtitleSha256": "cbd91e2df27476276c001ad5418955e828c06576d681ec45143e1a31910c5321",
+  "timingLevel": "word"
+}

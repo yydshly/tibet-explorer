@@ -1,0 +1,19 @@
+{
+  "id": "0323e0329c6f3902e6e61ba253b813873717e63fa8322292a3eaf251cee166b0",
+  "url": "/assets/audio/narration/0323e0329c6f3902e6e61ba253b813873717e63fa8322292a3eaf251cee166b0.mp3",
+  "text": "请先选择一九七六年，再选择二〇一七年，保留同一湖泊与相同单位，比较柱形和报告数值。然后打开研究原文核对日期与资料身份。湖面面积不等于湖水体积，这两个状态也不能单独证明原因或预测未来。",
+  "duration": 19.152,
+  "bytes": 308148,
+  "sha256": "c50c4ad78824945141eaacfb88fb525ace24661a9f431d7a3989bc52a558674a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:16:02.670Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/0323e0329c6f3902e6e61ba253b813873717e63fa8322292a3eaf251cee166b0.subtitles.json",
+  "subtitleSha256": "b5faf4d17b504442ff13d0252f775b9d920c122a6e07c15d77a6994913b4a87d",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "597f02d5065ac7458d8fd5011f74b3455ef7622193c10b12c779050d935c9bcc",
+  "url": "/assets/audio/narration/597f02d5065ac7458d8fd5011f74b3455ef7622193c10b12c779050d935c9bcc.mp3",
+  "text": "2026年九月的报道又记录了货运变化：山南站近日开办货运业务，初期可承接生活物资和建材等普通货物。客运到达与货物装卸是不同能力，不能把2021年通车直接说成山南站那时已经拥有今天的全部货运功能。",
+  "duration": 18.576,
+  "bytes": 298932,
+  "sha256": "feab8a0d3c2448142d8e93e77d811a513129111b24c44e85002b088020d68e3b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:52:48.571Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/597f02d5065ac7458d8fd5011f74b3455ef7622193c10b12c779050d935c9bcc.subtitles.json",
+  "subtitleSha256": "d4cdc6b4d347c18a307ca5d3569db4b98221548e5f739c798df4cf1b1cabe63d",
+  "timingLevel": "word"
+}

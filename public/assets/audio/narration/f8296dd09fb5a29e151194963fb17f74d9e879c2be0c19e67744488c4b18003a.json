@@ -1,0 +1,15 @@
+{
+  "id": "f8296dd09fb5a29e151194963fb17f74d9e879c2be0c19e67744488c4b18003a",
+  "url": "/assets/audio/narration/f8296dd09fb5a29e151194963fb17f74d9e879c2be0c19e67744488c4b18003a.mp3",
+  "text": "刚才找到了西藏，现在把地球想成接受阳光的球面。不同纬度的照射条件不同，因此五带能给我们一个宏观起点。不过纬度相近的地方，也可能因为高度、海陆和环流而有不同环境。",
+  "duration": 14.832,
+  "bytes": 239028,
+  "sha256": "cb4c59fe8ebf202feb965f57e264af88cbbecbd3c75bf7c9307a3ee5a63f1a35",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:05.473Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "2ef927a9858212920fcf307eda1b383f0854b95610f2cd4224001d82d8273d23",
+  "url": "/assets/audio/narration/2ef927a9858212920fcf307eda1b383f0854b95610f2cd4224001d82d8273d23.mp3",
+  "text": "请旋转地形，在俯视与斜视之间比较，找出一段山脊、坡面和谷底。地形模型表达关系而非真实测绘。观察时先问水往哪里去、哪边是高处，之后我们会把阳光与空气放进同一个问题。",
+  "duration": 19.08,
+  "bytes": 306996,
+  "sha256": "33561de92e0e8182ec38f1ad0a6571657b3fa0c708bf60c9d5d0e2094a850678",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:10.011Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

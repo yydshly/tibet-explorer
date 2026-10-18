@@ -1,0 +1,19 @@
+{
+  "id": "5295ef10ffd8af5288c49afe4810397fbc153f4c8cfd44841cf34863e8d81fc5",
+  "url": "/assets/audio/narration/5295ef10ffd8af5288c49afe4810397fbc153f4c8cfd44841cf34863e8d81fc5.mp3",
+  "text": "把地区差异接到生活。山南与拉萨的河谷，较缓土地为聚居和耕作提供空间；但建城仍需要人的组织。林芝与昌都的山地河谷，让沿谷与跨山面对不同高差，通行还需要道路和维护。再看阿里：二〇二三年的报道记录了狮泉河盆地林地灌溉与管护，水源通过设施和劳动才被使用。这个地方例证不能代表所有社区。回到全域，用土地、水和通行继续比较。",
+  "duration": 33.984,
+  "bytes": 545460,
+  "sha256": "d31cac77a3f069f493992befe9a09e3391847761b25a5e1877bae16634675da8",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:36:28.936Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5295ef10ffd8af5288c49afe4810397fbc153f4c8cfd44841cf34863e8d81fc5.subtitles.json",
+  "subtitleSha256": "96e12b645ef7b59acd12ab9547bfdb1c823e543378a3d340eee3cd27769cda92",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "63a6aa2fd9b0377e057cad07aaef94a97cc96abdfff2cf387585f1898dcafa89",
+  "url": "/assets/audio/narration/63a6aa2fd9b0377e057cad07aaef94a97cc96abdfff2cf387585f1898dcafa89.mp3",
+  "text": "知识经过交流和学习，也依靠物质载体的制作与保护留下来。有些文化还需要人持续实践。下一段以藏戏为例，看讲述者、表演者和观看者怎样配合，学习者又怎样获得参与的机会；再进入历史，追问行动、实物与今天记录各自的年代。",
+  "duration": 21.024,
+  "bytes": 338100,
+  "sha256": "5c8c091ec62eb07f3ad9d1fbe3618d7389c6e6647d16db621fdd915df7b0a2ec",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:42:40.157Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/63a6aa2fd9b0377e057cad07aaef94a97cc96abdfff2cf387585f1898dcafa89.subtitles.json",
+  "subtitleSha256": "c9596e3783207e403f185bb5b1b9ee484400e3c7900d57cd6f9fc8f321dce411",
+  "timingLevel": "word"
+}

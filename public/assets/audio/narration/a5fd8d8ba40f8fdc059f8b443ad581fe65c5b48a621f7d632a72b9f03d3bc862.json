@@ -1,0 +1,15 @@
+{
+  "id": "a5fd8d8ba40f8fdc059f8b443ad581fe65c5b48a621f7d632a72b9f03d3bc862",
+  "url": "/assets/audio/narration/a5fd8d8ba40f8fdc059f8b443ad581fe65c5b48a621f7d632a72b9f03d3bc862.mp3",
+  "text": "地方用途再看札布让。二〇二〇年报道记录金珠德吉经营家庭旅馆，她在机场通航前就已开办。航空入口与地方接待是不同条件，经营变化不能只归于机场。",
+  "duration": 15.912,
+  "bytes": 256308,
+  "sha256": "2055bf4b0442312208b82bfe27b4e8ac258b082e2e7719ca1ae925160dfa1e83",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:55:21.766Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

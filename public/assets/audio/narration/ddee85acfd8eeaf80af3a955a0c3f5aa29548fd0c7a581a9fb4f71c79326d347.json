@@ -1,0 +1,15 @@
+{
+  "id": "ddee85acfd8eeaf80af3a955a0c3f5aa29548fd0c7a581a9fb4f71c79326d347",
+  "url": "/assets/audio/narration/ddee85acfd8eeaf80af3a955a0c3f5aa29548fd0c7a581a9fb4f71c79326d347.mp3",
+  "text": "请回到生活层，围绕河谷辨认水源、聚落与通道，选一个自己愿意继续了解的问题。比如人怎样建造房屋，怎样组织生产与传承？接下来先走近建筑、信仰、艺术和日常，用具体对象与使用者回答这些问题。",
+  "duration": 20.052,
+  "bytes": 322548,
+  "sha256": "ef6b5403610d5b939cf7661155757dec28549452ebe0a9520fb15321b3854b09",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:39:34.025Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cba82ec8770ad3050b4b7e50fbccce117b0ac61e159a60c382ec9d80aa0bffdb",
+  "url": "/assets/audio/narration/cba82ec8770ad3050b4b7e50fbccce117b0ac61e159a60c382ec9d80aa0bffdb.mp3",
+  "text": "从地区环境再走近一些，我们开始读山川景观。先以林芝方向的山地河谷作为认识入口：一座山、一段河或一片湖，都与周围地形和水系相连。寻找这些联系，会比只记一个景点名称更有解释力。",
+  "duration": 17.28,
+  "bytes": 278196,
+  "sha256": "3903e4275f55f9531d661b706b42cc48eca7442bec741e3ba3c6ac57817534fa",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:26.655Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

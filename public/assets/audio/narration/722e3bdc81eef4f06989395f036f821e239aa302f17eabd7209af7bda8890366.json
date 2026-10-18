@@ -1,0 +1,15 @@
+{
+  "id": "722e3bdc81eef4f06989395f036f821e239aa302f17eabd7209af7bda8890366",
+  "url": "/assets/audio/narration/722e3bdc81eef4f06989395f036f821e239aa302f17eabd7209af7bda8890366.mp3",
+  "text": "刚才已经比较真实地形与地区材料。现在把生活条件单独展开：同一个概念场地里，有水路、较缓地面和坡地。它们提供机会与限制，还没有决定房屋怎么建、生产怎样组织。模型不是山南或任何真实村落。",
+  "duration": 18.432,
+  "bytes": 296628,
+  "sha256": "9c8c9e14cdee8a210eb5082471dbfb30d8676f4cd4a1a9d1b8d166a6c16d6714",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:01:19.458Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

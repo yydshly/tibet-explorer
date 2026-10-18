@@ -1,0 +1,15 @@
+{
+  "id": "7dd6f126fd741b87ed9b14eb964325ea95ab7beec3f7e7fb348d5ea529056e6a",
+  "url": "/assets/audio/narration/7dd6f126fd741b87ed9b14eb964325ea95ab7beec3f7e7fb348d5ea529056e6a.mp3",
+  "text": "从地球位置到环境，从生活文化到历史与今天，我们已经能用原因和材料认识地方。最后把这些认识带进探索：为什么去、希望看什么、前后两站怎样互相解释。候选路线从问题出发，实际交通和访问条件继续核实。",
+  "duration": 18.972,
+  "bytes": 305268,
+  "sha256": "a50b1c83f49197615f52b8327f54da8ec29b5128cd3dbb14a86b6ec956217238",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:56:18.581Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

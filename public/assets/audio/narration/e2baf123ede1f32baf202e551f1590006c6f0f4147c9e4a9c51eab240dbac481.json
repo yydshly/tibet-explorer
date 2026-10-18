@@ -1,0 +1,15 @@
+{
+  "id": "e2baf123ede1f32baf202e551f1590006c6f0f4147c9e4a9c51eab240dbac481",
+  "url": "/assets/audio/narration/e2baf123ede1f32baf202e551f1590006c6f0f4147c9e4a9c51eab240dbac481.mp3",
+  "text": "先看设施存在，再加入人员与开放，最后接上使用者能够走到的路。学生、经营者和不同家庭的需求并不相同。一处设施或一条铁路提供条件，是否能够持续使用，还要核对时间、内容、费用和家庭经验，而不能只从建筑外观看成效。",
+  "duration": 20.988,
+  "bytes": 337524,
+  "sha256": "7cbfe0e2d39e6d15ff2c4860ad7b94e66497da5dab62bd9d0e3ec823e64c02fd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:55:43.030Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "beb990f7145423281daefb29ea3874809953862a97256aedd00c167779d279b8",
+  "url": "/assets/audio/narration/beb990f7145423281daefb29ea3874809953862a97256aedd00c167779d279b8.mp3",
+  "text": "去鲁朗又是另一段地方联系。资料记载从林芝经色季拉越岭，鲁朗小镇在二〇一六年试运营。地形、交通和服务各有作用，旅行观察就从这些具体差别继续。",
+  "duration": 15.804,
+  "bytes": 254580,
+  "sha256": "b33774b574556c13b900f0736b0100339542e9b187e394685666a73a07285400",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:41:45.801Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

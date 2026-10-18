@@ -1,0 +1,15 @@
+{
+  "id": "f3148e6b414b91cfc41c6f7aa7fe7e76f6496894df5f7d450c6213149248166c",
+  "url": "/assets/audio/narration/f3148e6b414b91cfc41c6f7aa7fe7e76f6496894df5f7d450c6213149248166c.mp3",
+  "text": "从生活变化继续认识发展与保护。模型中间表示一项需要讨论的活动，旁边先摆出可能的收益。只看这一侧，还没有形成完整判断；我们继续加入生态和地方生活，看看还有哪些关系需要资料。",
+  "duration": 16.884,
+  "bytes": 271860,
+  "sha256": "b8249870e800ff8046ff0228af678d4dc72d287d227b229db6218d8f158367d3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:42.009Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

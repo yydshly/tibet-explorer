@@ -1,0 +1,15 @@
+{
+  "id": "82d33098d4bb00bde708737892b1a9fec24c19f8c3f4714660bd2574789001ec",
+  "url": "/assets/audio/narration/82d33098d4bb00bde708737892b1a9fec24c19f8c3f4714660bd2574789001ec.mp3",
+  "text": "请切换到正面舞台关系，比较同一组角色的观看方向和活动位置。学习者与示范者仍然在场，舞台也没有让文化自动消失。开放与正面两种画面只是空间比较，不是一条从落后走向先进的年表。再回拖到观看阶段，看参与机会怎样逐步建立。",
+  "duration": 21.132,
+  "bytes": 339828,
+  "sha256": "ce20e14566dc6172d5326ec7f98a38a4e0aca24d886a8550df38ea4f0ccec580",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T05:15:24.264Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

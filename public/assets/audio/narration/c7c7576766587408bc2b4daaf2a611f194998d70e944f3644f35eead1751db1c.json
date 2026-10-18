@@ -1,0 +1,15 @@
+{
+  "id": "c7c7576766587408bc2b4daaf2a611f194998d70e944f3644f35eead1751db1c",
+  "url": "/assets/audio/narration/c7c7576766587408bc2b4daaf2a611f194998d70e944f3644f35eead1751db1c.mp3",
+  "text": "请填写已有的日期、交通意向和每站待核实事项，保存当前计划，或打开完整计划导出。回来时检查顺序和问题是否仍在，再继续补资料。已经保存表示能够继续修改，不能替代逐段交通、预约与开放的核验。",
+  "duration": 19.008,
+  "bytes": 305844,
+  "sha256": "a6cd3d08d2c87b1a5438dcc1dfa7d05b0da9da7da1994228f5428037f0c312d9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:57:18.961Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

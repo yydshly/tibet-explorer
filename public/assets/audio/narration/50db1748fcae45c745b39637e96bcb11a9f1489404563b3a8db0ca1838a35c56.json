@@ -1,0 +1,19 @@
+{
+  "id": "50db1748fcae45c745b39637e96bcb11a9f1489404563b3a8db0ca1838a35c56",
+  "url": "/assets/audio/narration/50db1748fcae45c745b39637e96bcb11a9f1489404563b3a8db0ca1838a35c56.mp3",
+  "text": "从全域定位狮泉河，再沿同一张地图拉近。先看地面起伏，高原盆地也有内部差异。移动探针，比较沿线高低变化；切换剖面方向，避免把整个阿里想成同一种地形。青色地面标出观察窗内相对较低、较缓的样本，不代表实际耕地。二零二三年的报道记录了狮泉河盆地林地灌溉与护林员的管护。这个案例说明水要通过设施和持续劳动进入使用，并不是全阿里家庭供水调查。回到全域，带着自然条件与人的行动两个问题继续认识历史。",
+  "duration": 37.188,
+  "bytes": 596724,
+  "sha256": "fad232dd1b91b5afece7b9721805420a00289461eca763e16f82947e17d02de1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:50:25.079Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/50db1748fcae45c745b39637e96bcb11a9f1489404563b3a8db0ca1838a35c56.subtitles.json",
+  "subtitleSha256": "00e5a367ba545dc7578bbe5369d5adeda9d94f37b24eab051ebcb84d4837a7fc",
+  "timingLevel": "word"
+}

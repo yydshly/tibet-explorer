@@ -1,0 +1,15 @@
+{
+  "id": "d41a035bf2056ec207ceaf49629b88e4293df287b143a767a06704e231edc899",
+  "url": "/assets/audio/narration/d41a035bf2056ec207ceaf49629b88e4293df287b143a767a06704e231edc899.mp3",
+  "text": "切到水系，观察坡面向低处汇流与河道的联系。流水可以搬运物质并改变地表，但过程强弱受岩石、坡度、水量与时间影响。蓝色流动帮助读方向，不等于真实流量，也没有演示某处发生的定量侵蚀。",
+  "duration": 19.764,
+  "bytes": 317940,
+  "sha256": "1224301f9260b6f9b1219e4c483441050678b4bd71b4418057c73ba745ca2d87",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:58.277Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

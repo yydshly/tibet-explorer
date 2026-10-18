@@ -1,0 +1,15 @@
+{
+  "id": "6abf88c434daebea5d34e089cbc55c441afad365df7432e142b0eed3e3f77758",
+  "url": "/assets/audio/narration/6abf88c434daebea5d34e089cbc55c441afad365df7432e142b0eed3e3f77758.mp3",
+  "text": "从地形与地方材料的对照进入人的生活，先看河谷里的水源、土地和通行空间。拉萨、山南等地方可以提供具体入口，但同样的自然条件并不自动生成同样的社会；我们先辨认条件，再研究人的行动。",
+  "duration": 17.82,
+  "bytes": 286836,
+  "sha256": "38f8916545a050506422ee3ea438b16511cacb8add74063209710b1f0a59580a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T15:18:26.194Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

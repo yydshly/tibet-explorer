@@ -1,0 +1,15 @@
+{
+  "id": "c8d5594ed4c6fda8526b18e31c497adde92d87d5298881fc885767a513fc7249",
+  "url": "/assets/audio/narration/c8d5594ed4c6fda8526b18e31c497adde92d87d5298881fc885767a513fc7249.mp3",
+  "text": "留在拉萨河谷，把时间展开。大昭寺创建于七世纪，是认识早期宗教与老城的入口。再到十七世纪，五世达赖喇嘛推动白宫建设；随后桑结嘉措主持红宫，至一六九四年完成。今天看到的历史城市，是不同人物、用途和建设阶段累积而成，不能单靠气候或山地解释。",
+  "duration": 25.164,
+  "bytes": 404340,
+  "sha256": "2d45651b66b4c6f9b65c699149de99faf94018858144538ba6d6107c57590bae",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:35.600Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

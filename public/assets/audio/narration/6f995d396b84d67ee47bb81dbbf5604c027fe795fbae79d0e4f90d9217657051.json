@@ -1,0 +1,15 @@
+{
+  "id": "6f995d396b84d67ee47bb81dbbf5604c027fe795fbae79d0e4f90d9217657051",
+  "url": "/assets/audio/narration/6f995d396b84d67ee47bb81dbbf5604c027fe795fbae79d0e4f90d9217657051.mp3",
+  "text": "请靠近材料与结构部位，观察墙、柱、梁怎样连接，再打开艺术或文字来源查看真实对象。记录你看到的形式和资料给出的解释，分开两者。把年代和用途补上以后，细部才会进入完整的文化认识。",
+  "duration": 16.848,
+  "bytes": 271284,
+  "sha256": "e7abe259dbeba12fc256ef2cd77e3f7ec82126c071658645c2092edd7373fcae",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:28.664Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bff4d9944623ea29d2c064282248e50cb54cd7307e9d5d066d1a2158ceed275e",
+  "url": "/assets/audio/narration/bff4d9944623ea29d2c064282248e50cb54cd7307e9d5d066d1a2158ceed275e.mp3",
+  "text": "从周边关系进入今天的变化，先看交通。新道路与铁路让地方获得新的连接可能，开通日期却不是所有影响发生的日期。我们沿节点观察，再区分规划、建设、运营和实际服务，让事件与结果各有资料依据。",
+  "duration": 19.296,
+  "bytes": 310452,
+  "sha256": "0d628c63fab39f91caa928f634e400ccf694a63cd6ad57873ac0b47447261951",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:22.678Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

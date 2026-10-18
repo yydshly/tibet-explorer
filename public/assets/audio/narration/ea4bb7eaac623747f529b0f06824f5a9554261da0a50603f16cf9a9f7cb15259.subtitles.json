@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "audioSha256": "25a5df990c36f4cb01bf6131da161d4d2a811d3b21c48c69086517e200cd6382",
+  "textSha256": "1d974529e9f8debc6975d552ae2300f7dc2c17250d55bc93fe99038afb5fe946",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 9.072,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 8.92095238095238,
+      "text": "拉萨城区位于较平缓的河谷，但谷底仍在高原上。把谷底与周围山地一起看，平缓就不再等于海拔低。",
+      "textStart": 0,
+      "textEnd": 45
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.16410256410256407,
+      "text": "拉",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.16410256410256407,
+      "end": 0.2871794871794871,
+      "text": "萨",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.2871794871794871,
+      "end": 0.41025641025641024,
+      "text": "城",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.5743589743589742,
+      "text": "区",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.5743589743589742,
+      "end": 0.7794871794871795,
+      "text": "位",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.7794871794871795,
+      "end": 0.9846153846153846,
+      "text": "于",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9846153846153846,
+      "end": 1.1487179487179484,
+      "text": "较",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.1487179487179484,
+      "end": 1.3128205128205126,
+      "text": "平",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.3128205128205126,
+      "end": 1.476923076923077,
+      "text": "缓",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.476923076923077,
+      "end": 1.517948717948718,
+      "text": "的",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.517948717948718,
+      "end": 1.7641025641025643,
+      "text": "河",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.7641025641025643,
+      "end": 1.9282051282051282,
+      "text": "谷",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 1.9282051282051282,
+      "end": 1.9692307692307691,
+      "text": "，",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 1.9692307692307691,
+      "end": 2.6666666666666665,
+      "text": "但",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.6666666666666665,
+      "end": 2.8307692307692305,
+      "text": "谷",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.8307692307692305,
+      "end": 2.9948717948717944,
+      "text": "底",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.9948717948717944,
+      "end": 3.117948717948718,
+      "text": "仍",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.117948717948718,
+      "end": 3.2410256410256406,
+      "text": "在",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.2410256410256406,
+      "end": 3.4051282051282046,
+      "text": "高",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.5282051282051285,
+      "text": "原",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 3.5282051282051285,
+      "end": 3.6923076923076925,
+      "text": "上",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 3.6923076923076925,
+      "end": 3.7743589743589743,
+      "text": "。",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 3.7743589743589743,
+      "end": 4.471794871794872,
+      "text": "把",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.471794871794872,
+      "end": 4.717948717948717,
+      "text": "谷",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.717948717948717,
+      "end": 4.882051282051282,
+      "text": "底",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 4.882051282051282,
+      "end": 5.005128205128205,
+      "text": "与",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.005128205128205,
+      "end": 5.128205128205128,
+      "text": "周",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.128205128205128,
+      "end": 5.25128205128205,
+      "text": "围",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 5.25128205128205,
+      "end": 5.374358974358974,
+      "text": "山",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 5.374358974358974,
+      "end": 5.538461538461538,
+      "text": "地",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 5.538461538461538,
+      "end": 5.620512820512821,
+      "text": "一",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 5.620512820512821,
+      "end": 5.7846153846153845,
+      "text": "起",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 5.7846153846153845,
+      "end": 5.907692307692308,
+      "text": "看",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 5.907692307692308,
+      "end": 5.948717948717949,
+      "text": "，",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.482051282051281,
+      "text": "平",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 6.482051282051281,
+      "end": 6.851282051282051,
+      "text": "缓",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 6.851282051282051,
+      "end": 7.425641025641024,
+      "text": "就",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 7.425641025641024,
+      "end": 7.63076923076923,
+      "text": "不",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 7.63076923076923,
+      "end": 7.835897435897436,
+      "text": "再",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 7.835897435897436,
+      "end": 8,
+      "text": "等",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 8,
+      "end": 8.123076923076923,
+      "text": "于",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 8.123076923076923,
+      "end": 8.246153846153845,
+      "text": "海",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 8.246153846153845,
+      "end": 8.41025641025641,
+      "text": "拔",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 8.41025641025641,
+      "end": 8.615384615384613,
+      "text": "低",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 8.615384615384613,
+      "end": 8.779487179487178,
+      "text": "。",
+      "textStart": 44,
+      "textEnd": 45
+    }
+  ]
+}

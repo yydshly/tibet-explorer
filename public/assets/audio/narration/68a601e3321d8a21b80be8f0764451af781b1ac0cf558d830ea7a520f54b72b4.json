@@ -1,0 +1,15 @@
+{
+  "id": "68a601e3321d8a21b80be8f0764451af781b1ac0cf558d830ea7a520f54b72b4",
+  "url": "/assets/audio/narration/68a601e3321d8a21b80be8f0764451af781b1ac0cf558d830ea7a520f54b72b4.mp3",
+  "text": "以布达拉宫为例，现存建筑与十七世纪以来的建设、扩展和维护有关，不能直接当作七世纪城市的外观。研究时把始建叙述、现存部分和用途放在一起对照，历史建筑才会成为持续变化的空间。",
+  "duration": 15.768,
+  "bytes": 254004,
+  "sha256": "f817230768a0085f5d0dfc9c09249bbed5e6cce3b8fe0ab3e7463791c9033cc5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:04.604Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

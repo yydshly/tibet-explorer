@@ -1,0 +1,15 @@
+{
+  "id": "e418f22a2772670d99f4959135b44b9196eabb0becb55736433f8827e16cee88",
+  "url": "/assets/audio/narration/e418f22a2772670d99f4959135b44b9196eabb0becb55736433f8827e16cee88.mp3",
+  "text": "比较时应确认对象是季节积雪、冰川还是湖面，再核对日期、范围、单位和观测方法。云遮与缺测也可能影响判断。沿进度看示意边界改变，重点是学习保持同一视角，而不是把滑块当成真实年表。",
+  "duration": 17.82,
+  "bytes": 286836,
+  "sha256": "9b7945b9da8b2faa43ce685ed47fb5662b88d3c4e8a105cab6f2b70d37f4c37a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:51.434Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

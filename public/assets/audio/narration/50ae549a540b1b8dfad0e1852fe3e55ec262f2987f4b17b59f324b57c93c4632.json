@@ -1,0 +1,19 @@
+{
+  "id": "50ae549a540b1b8dfad0e1852fe3e55ec262f2987f4b17b59f324b57c93c4632",
+  "url": "/assets/audio/narration/50ae549a540b1b8dfad0e1852fe3e55ec262f2987f4b17b59f324b57c93c4632.mp3",
+  "text": "把观察顺序串成河谷、车站和寺院：先问水怎样进入生产，再看现代到达与接续，最后用文物核对历史关系。这是一条认识地方的观察线索，不是已经核实班次与路况的旅行行程；具体访问仍要按出行日期查证。",
+  "duration": 19.656,
+  "bytes": 316212,
+  "sha256": "bdb39b10236b69449a4b23b63c3131eca01baca7a42be18015095e0f5c2c078a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:50:48.002Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/50ae549a540b1b8dfad0e1852fe3e55ec262f2987f4b17b59f324b57c93c4632.subtitles.json",
+  "subtitleSha256": "317016563e7e5a26fa315321dd2e667ee6335709a3b22b6a0c9e0481108775d2",
+  "timingLevel": "word"
+}

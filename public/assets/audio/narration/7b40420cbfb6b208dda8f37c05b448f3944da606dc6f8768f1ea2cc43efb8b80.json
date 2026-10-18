@@ -1,0 +1,15 @@
+{
+  "id": "7b40420cbfb6b208dda8f37c05b448f3944da606dc6f8768f1ea2cc43efb8b80",
+  "url": "/assets/audio/narration/7b40420cbfb6b208dda8f37c05b448f3944da606dc6f8768f1ea2cc43efb8b80.mp3",
+  "text": "环境解释了部分机会与限制，文化还要看人的创造、交流和历史选择。接下来在同一院落里，从基底、墙体到梁柱与屋顶，再到人的通行、学习和维护，逐段认识空间怎样进入生活。",
+  "duration": 17.82,
+  "bytes": 286836,
+  "sha256": "753e001b279e5928df769e827a0767d00605df1b062cc8a0e6377094779d4317",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:40.481Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

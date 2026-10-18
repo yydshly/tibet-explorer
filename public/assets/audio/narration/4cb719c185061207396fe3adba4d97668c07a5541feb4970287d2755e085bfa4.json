@@ -1,0 +1,15 @@
+{
+  "id": "4cb719c185061207396fe3adba4d97668c07a5541feb4970287d2755e085bfa4",
+  "url": "/assets/audio/narration/4cb719c185061207396fe3adba4d97668c07a5541feb4970287d2755e085bfa4.mp3",
+  "text": "柱接入基座，横梁落到柱端，连接细部继续归位。观察每一部分在整体里做什么，再回拖把它们拆开。物件需要材料、技能和劳动；艺术含义还涉及作者、赞助、用途与使用者，不能只由装饰外形推断。",
+  "duration": 21.852,
+  "bytes": 351348,
+  "sha256": "619e88bab40caf9c25d7dd0959c3aee79832ea790251ad8a1b6241220f7ac1f3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:34.187Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

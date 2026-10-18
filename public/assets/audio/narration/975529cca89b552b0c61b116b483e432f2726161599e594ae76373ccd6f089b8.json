@@ -1,0 +1,15 @@
+{
+  "id": "975529cca89b552b0c61b116b483e432f2726161599e594ae76373ccd6f089b8",
+  "url": "/assets/audio/narration/975529cca89b552b0c61b116b483e432f2726161599e594ae76373ccd6f089b8.mp3",
+  "text": "一个谷地的当天温度，不能直接和全地区多年平均相比；不同海拔地点，也要把高度说明。当前色彩是温度关系示意，没有实际摄氏数值。可靠比较需要同口径资料，地方介绍帮助我们提出下一步检验的问题。",
+  "duration": 16.38,
+  "bytes": 263796,
+  "sha256": "992b7bf335c0cacd76458efbd7851d5b31ce9d886ad92ea0731d78609916a96a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:43.511Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

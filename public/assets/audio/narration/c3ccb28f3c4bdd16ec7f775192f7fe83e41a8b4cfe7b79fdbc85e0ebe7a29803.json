@@ -1,0 +1,15 @@
+{
+  "id": "c3ccb28f3c4bdd16ec7f775192f7fe83e41a8b4cfe7b79fdbc85e0ebe7a29803",
+  "url": "/assets/audio/narration/c3ccb28f3c4bdd16ec7f775192f7fe83e41a8b4cfe7b79fdbc85e0ebe7a29803.mp3",
+  "text": "先离开狮泉河，在同一地图找到札达的托林入口。十一至十二世纪，教师、文本和艺术联系着西藏与印度。博物馆材料记载阿底峡一〇四二年入藏，并与托林相联系。再看二〇二〇年报道，古格遗址旁的金珠德吉经营家庭旅馆。不同地点和年代，让交流、遗产与生活各有来路。",
+  "duration": 25.38,
+  "bytes": 407796,
+  "sha256": "63abee4f9a801f25f867dc28df9f597d9badfa7d3db84c4701ed7ffe1dea642a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:55.645Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

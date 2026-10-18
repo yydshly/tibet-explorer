@@ -1,0 +1,15 @@
+{
+  "id": "bd2d1bb8001586d484825d2901ed241633535ca829488204b6ad97c912c56571",
+  "url": "/assets/audio/narration/bd2d1bb8001586d484825d2901ed241633535ca829488204b6ad97c912c56571.mp3",
+  "text": "拉萨在二〇〇六年接入全线通车的青藏铁路，二〇二一年再联系山南和林芝。抵达增加以后，历史城市仍要管理使用。二〇二五年世界遗产委员会继续关注保护与访问，也要求尊重朝圣活动。",
+  "duration": 16.02,
+  "bytes": 258036,
+  "sha256": "5c0e79a6b0e971c279f8396eff700c9f85f802996be43e6de3c95cc8332060d8",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:02.450Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

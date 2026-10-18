@@ -1,0 +1,19 @@
+{
+  "id": "102c1fee960219b1d893bb08de06f2cf7a144182129f3760894e957fbf877217",
+  "url": "/assets/audio/narration/102c1fee960219b1d893bb08de06f2cf7a144182129f3760894e957fbf877217.mp3",
+  "text": "两条柱形共用零点与平方公里单位，后一期报告面积更大。原文注明二〇一七年为六月，一九七六年在该段没有具体月日。这些是已发表研究的汇总数值，不是本产品处理原始影像所得，也不能补出中间年份。",
+  "duration": 18.072,
+  "bytes": 290868,
+  "sha256": "80111dfcc7e6cab2917f02be4fd71718fa3f12fcf2511a82d06420858bd6434d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:15:58.045Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/102c1fee960219b1d893bb08de06f2cf7a144182129f3760894e957fbf877217.subtitles.json",
+  "subtitleSha256": "9735ea73eae618fb415962579362f9f667d6956c1884f894f557b1afab49f449",
+  "timingLevel": "word"
+}

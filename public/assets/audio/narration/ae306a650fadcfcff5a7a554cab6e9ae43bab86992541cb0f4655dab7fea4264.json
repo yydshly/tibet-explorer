@@ -1,0 +1,15 @@
+{
+  "id": "ae306a650fadcfcff5a7a554cab6e9ae43bab86992541cb0f4655dab7fea4264",
+  "url": "/assets/audio/narration/ae306a650fadcfcff5a7a554cab6e9ae43bab86992541cb0f4655dab7fea4264.mp3",
+  "text": "林芝先看二〇一六年鲁朗小镇试运营，旅游服务有了新场所。二〇二一年拉林铁路开通，又增加区域抵达方式。彩门村的普巴和扎西谈到学生出行、民宿和产品外销；这是当年的用途与期待。",
+  "duration": 17.46,
+  "bytes": 281076,
+  "sha256": "f1624b00ac69189386b316ed23ab06de0892e1f9c0a9e9fc5ed13ea7f25ba503",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:56:54.480Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

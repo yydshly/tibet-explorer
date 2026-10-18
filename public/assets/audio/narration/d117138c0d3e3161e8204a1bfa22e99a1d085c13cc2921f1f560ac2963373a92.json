@@ -1,0 +1,15 @@
+{
+  "id": "d117138c0d3e3161e8204a1bfa22e99a1d085c13cc2921f1f560ac2963373a92",
+  "url": "/assets/audio/narration/d117138c0d3e3161e8204a1bfa22e99a1d085c13cc2921f1f560ac2963373a92.mp3",
+  "text": "请将比较退到起点，再推到终点，固定镜头看两条边界与表面的关系。然后打开来源说明，确认资料身份。真实变化研究要用可靠观测和相同口径的比较，不能仅凭一张不同季节的照片得出结论。",
+  "duration": 16.884,
+  "bytes": 271860,
+  "sha256": "a30c51e6bd17c9abcfd3e8f49d581cb104642e8a58539888cbf98971bc30c0b1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:58.769Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

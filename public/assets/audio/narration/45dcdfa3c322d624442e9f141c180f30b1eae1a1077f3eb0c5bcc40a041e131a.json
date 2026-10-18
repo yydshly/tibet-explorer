@@ -1,0 +1,15 @@
+{
+  "id": "45dcdfa3c322d624442e9f141c180f30b1eae1a1077f3eb0c5bcc40a041e131a",
+  "url": "/assets/audio/narration/45dcdfa3c322d624442e9f141c180f30b1eae1a1077f3eb0c5bcc40a041e131a.mp3",
+  "text": "俯视有助于辨认山脊和河道，斜视则能看出高差。水通常沿坡面向低处汇集，山脊可以成为分水的界线；谷地还可能组织空气与人的移动。这些方向关系，比记住一个平均海拔更能帮助理解地方。",
+  "duration": 17.892,
+  "bytes": 287988,
+  "sha256": "7c8c903a5f9fd86fabdffb7a9ca1d939da2f500c3989f0ed6263fa2afe574b24",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:01.059Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "9cd456ee37caa4080f93d53a0c6c2c535e9d185a7ee4bbdbb9957f8909788586",
+  "url": "/assets/audio/narration/9cd456ee37caa4080f93d53a0c6c2c535e9d185a7ee4bbdbb9957f8909788586.mp3",
+  "text": "现在把这一程带回自己的观察。拉萨可以问历史建筑怎样使用，山南可以问河谷怎样参与生活，林芝可以问水汽、山地与新通道。先选希望理解的问题，再选择地方；旅行由此接上前面的环境、人物、事件和发展认识。",
+  "duration": 21.096,
+  "bytes": 339252,
+  "sha256": "3b1c7f0a48d217389614a3536ab91f1f3aef1f390d6fb12df0f3e4e9e6109bea",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:29.903Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9cd456ee37caa4080f93d53a0c6c2c535e9d185a7ee4bbdbb9957f8909788586.subtitles.json",
+  "subtitleSha256": "d105f592f0ab0900c9aacce6ee4e208106dacb7cef5c00cb1da5744f9fad0ba1",
+  "timingLevel": "word"
+}

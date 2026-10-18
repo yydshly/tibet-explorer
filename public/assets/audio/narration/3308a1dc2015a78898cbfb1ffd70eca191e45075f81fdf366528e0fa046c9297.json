@@ -1,0 +1,19 @@
+{
+  "id": "3308a1dc2015a78898cbfb1ffd70eca191e45075f81fdf366528e0fa046c9297",
+  "url": "/assets/audio/narration/3308a1dc2015a78898cbfb1ffd70eca191e45075f81fdf366528e0fa046c9297.mp3",
+  "text": "把年代向后推到十五世纪。昌都政府资料记述，强巴林寺于一四三七年至一四四四年修建，位置与两水交汇附近的城市相联系。寺院用途和营建属于新的历史阶段，不能由卡若遗址直接推出，也不能由气候直接解释。",
+  "duration": 19.044,
+  "bytes": 306420,
+  "sha256": "afd4afea16f570155dd3a9e10eb811e047231a8f6dbcec3cb5e87da1abad1966",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:46.048Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3308a1dc2015a78898cbfb1ffd70eca191e45075f81fdf366528e0fa046c9297.subtitles.json",
+  "subtitleSha256": "7ebd72bfde2234f0a59eaccbb16e5cbbac7fb58888d3d2d8cf60f971829b66a5",
+  "timingLevel": "word"
+}

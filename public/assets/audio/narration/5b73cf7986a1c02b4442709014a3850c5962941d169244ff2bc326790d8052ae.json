@@ -1,0 +1,19 @@
+{
+  "id": "5b73cf7986a1c02b4442709014a3850c5962941d169244ff2bc326790d8052ae",
+  "url": "/assets/audio/narration/5b73cf7986a1c02b4442709014a3850c5962941d169244ff2bc326790d8052ae.mp3",
+  "text": "请退回展开护板，再推进到合拢，观察书页什么时候可见、什么时候得到覆盖。真实经板属于约十二世纪早期；一九八七是入藏编号的一部分，不是制作年代。模型解释用途，馆藏资料解释这件物品的身份，两者一起帮助认识文化怎样留下材料。",
+  "duration": 22.788,
+  "bytes": 366324,
+  "sha256": "333239cdd317d6be69bc336fcff41831989d49bf9e33af71ab658148b1efc832",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:42:25.465Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5b73cf7986a1c02b4442709014a3850c5962941d169244ff2bc326790d8052ae.subtitles.json",
+  "subtitleSha256": "cb7e750c2c83ce8f9969d48e65cead07e31b4af725506f2c32ad9531fe3571f0",
+  "timingLevel": "word"
+}

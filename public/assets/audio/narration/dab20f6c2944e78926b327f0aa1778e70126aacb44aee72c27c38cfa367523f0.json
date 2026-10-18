@@ -1,0 +1,15 @@
+{
+  "id": "dab20f6c2944e78926b327f0aa1778e70126aacb44aee72c27c38cfa367523f0",
+  "url": "/assets/audio/narration/dab20f6c2944e78926b327f0aa1778e70126aacb44aee72c27c38cfa367523f0.mp3",
+  "text": "交流与译写让知识进入新的语言和使用环境，文本还需要制作、保护和传下去。下一段从一件真实木经板出发，拆开护板与书页的关系。材料、用途和图像要分别核对，模型里的空白页不会冒充未知原文。",
+  "duration": 18.504,
+  "bytes": 297780,
+  "sha256": "63e320b805c81cff9b3921fc0a4713ff4f7324c892c927128d90cb2790fcaafd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T04:23:10.152Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

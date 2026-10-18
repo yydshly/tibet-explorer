@@ -1,0 +1,75 @@
+{
+  "id": "lulang",
+  "title": "鲁朗谷地与小镇",
+  "accessedAt": "2026-10-15T14:03:06.016211+00:00",
+  "bbox": [
+    94.7,
+    29.71,
+    94.75,
+    29.76
+  ],
+  "boundsDegrees": {
+    "west": 94.7,
+    "south": 29.71,
+    "east": 94.75,
+    "north": 29.76
+  },
+  "columns": 257,
+  "rows": 257,
+  "sourceZoom": 13,
+  "displaySamplingMetres": {
+    "eastWest": 18.9,
+    "northSouth": 21.7
+  },
+  "dataUrl": "/assets/terrain/local-places/lulang.int16",
+  "sourceUrl": "/assets/terrain/local-places/lulang.source.json",
+  "dataset": "https://registry.opendata.aws/terrain-tiles/",
+  "formatDocumentation": "https://github.com/tilezen/joerd/blob/master/docs/formats.md",
+  "attributionUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "attribution": "Mapzen / Tilezen; SRTM and GMTED2010 terrain data courtesy of the US Geological Survey; ETOPO1 courtesy of NOAA.",
+  "unit": "metres above mean sea level",
+  "byteOrder": "little-endian signed Int16",
+  "processing": "Terrarium RGB decode; bilinear pixel-centre resampling to a WGS84 longitude-latitude display grid; rounded to nearest metre.",
+  "minimum": 3329,
+  "maximum": 4553,
+  "bytes": 132098,
+  "sha256": "f6c93f92af3fc114a1230a858a4724a1350602d5cf62efd43d5c42a6a727d307",
+  "limitations": [
+    "Display sample spacing is not survey accuracy; source terrain is a mosaic of datasets of different ages and resolutions.",
+    "Acquisition time is the download date, not a terrain observation date or a historical reconstruction date.",
+    "No measured buildings, road surfaces, engineered banks, present water levels or historical urban extents are encoded.",
+    "Do not extrapolate outside these bounds. Horizontal enlargement and any vertical exaggeration must be labeled by the renderer."
+  ],
+  "tiles": [
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6250/3386.png",
+      "bytes": 43470,
+      "sha256": "c3702b409f72e8d25e54d32fd457f04de92939c0d8c273621203f5b51bda88fb"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6251/3386.png",
+      "bytes": 37331,
+      "sha256": "e3b60e055e3c7138c0d074a09f7fe3df9e9f57dd78b1e8123af2c077666733d3"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6252/3386.png",
+      "bytes": 40274,
+      "sha256": "8757fd6af12c71f03227ba0f197a7f05728ea2547cb52b094ce3957ca2a02ff6"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6250/3387.png",
+      "bytes": 39906,
+      "sha256": "558a48140fde92f2ac8ae57c4184d3f653184bca0f5b6564ba14d4a82d20d589"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6251/3387.png",
+      "bytes": 36532,
+      "sha256": "6871ba5388789b4bd80ee73d9bf4fb0f077de1d5fc7a3fa7b5358c9fbac9a144"
+    },
+    {
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/terrarium/13/6252/3387.png",
+      "bytes": 39940,
+      "sha256": "92ec44decca2fdf1e071ed07ab7ac3d6871455d4b11b4fde742ebf2552ae0c9a"
+    }
+  ]
+}

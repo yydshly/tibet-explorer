@@ -1,0 +1,15 @@
+{
+  "id": "95171088f94b3f6abfd185328f29ffd1f1dfd15b49f2524743847713e1b697d1",
+  "url": "/assets/audio/narration/95171088f94b3f6abfd185328f29ffd1f1dfd15b49f2524743847713e1b697d1.mp3",
+  "text": "主车先到节点，接驳车辆再走另一段，最后人物沿踏步走到入口外。每一段都有独立条件：是否开行、怎样换乘、能否到达、是否开放和需要预约。模型中的闸口保持待核实；到达入口不等于已经获准进入。",
+  "duration": 19.26,
+  "bytes": 309876,
+  "sha256": "51009c4b4b92230daef56131f8ab6fd01aee7bb9280aacb5fb720e5f68ee64ae",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:56:48.873Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ddc020cd95e6b5883c27ca8eae58ca290f18049f0b3514cd73cd6bf438b527b4",
+  "url": "/assets/audio/narration/ddc020cd95e6b5883c27ca8eae58ca290f18049f0b3514cd73cd6bf438b527b4.mp3",
+  "text": "阿里的狮泉河盆地也有相对低缓的地面，但绿色范围不是城市边界。札达托林是另一处历史地方。接下来保留三地整体，从林芝读人的行动，再比较拉萨与阿里的空间用途。",
+  "duration": 16.956,
+  "bytes": 273012,
+  "sha256": "28c2682bac06a47fcddd89cb5d274b1dbb7889b6427d7a8d2b91abed6edba87c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:25:06.504Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ddc020cd95e6b5883c27ca8eae58ca290f18049f0b3514cd73cd6bf438b527b4.subtitles.json",
+  "subtitleSha256": "be2daec2020b3d4e3ada5e4a14036f501ec097a258a5eb1cac634d65b45910cc",
+  "timingLevel": "word"
+}

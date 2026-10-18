@@ -1,0 +1,15 @@
+{
+  "id": "f22cf768d8642f422bc70fa8cec1751b403449b6b0288af413519db455210a07",
+  "url": "/assets/audio/narration/f22cf768d8642f422bc70fa8cec1751b403449b6b0288af413519db455210a07.mp3",
+  "text": "材料与布局让我们认识使用空间，但信仰和知识为什么会在这里出现，还要研究人与文本。下一步从建筑对象转入教师、译者、作品和地方交流，认识传播过程中的选择、翻译与新的创造。",
+  "duration": 18.936,
+  "bytes": 304692,
+  "sha256": "d6545f4065523b40fda8958f0a574e9b62d6078e3542c3e4a2141c74b4267eea",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:43.094Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

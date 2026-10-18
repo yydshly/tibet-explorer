@@ -1,0 +1,15 @@
+{
+  "id": "35df577ba083da7c42e7da7358fcdee6ecabc235bad984f39ded5fa0a93cf77b",
+  "url": "/assets/audio/narration/35df577ba083da7c42e7da7358fcdee6ecabc235bad984f39ded5fa0a93cf77b.mp3",
+  "text": "把同一时期的材料展开为三条线索。人物和文本的交流、政治组织的重组、建筑和生产活动，可以有不同的发生时间。比如一六四二年的政治节点与一六四五年的建筑活动，需要分别核对地点和材料，不能合成一件事。",
+  "duration": 19.908,
+  "bytes": 320244,
+  "sha256": "3aa261a44b8c297e78ad9cb43445ac562f43540689a6b3137d2029f3085e80c9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:05:42.673Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

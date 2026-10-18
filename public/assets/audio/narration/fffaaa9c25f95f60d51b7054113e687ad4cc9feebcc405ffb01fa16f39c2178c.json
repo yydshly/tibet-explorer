@@ -1,0 +1,19 @@
+{
+  "id": "fffaaa9c25f95f60d51b7054113e687ad4cc9feebcc405ffb01fa16f39c2178c",
+  "url": "/assets/audio/narration/fffaaa9c25f95f60d51b7054113e687ad4cc9feebcc405ffb01fa16f39c2178c.mp3",
+  "text": "有了问题，下一步把候选站整理成自己的顺序。每站写清为什么关注、准备观察什么，再看前后关系是否推进认识。教学场景会说明主通道、换乘和访问入口的不同条件；真实出行安排仍要查相应日期的服务。",
+  "duration": 17.532,
+  "bytes": 282228,
+  "sha256": "44df0b2827d67790156f36b88bddc5be0409d963a226568fd8213316514fb9f1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:48.524Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/fffaaa9c25f95f60d51b7054113e687ad4cc9feebcc405ffb01fa16f39c2178c.subtitles.json",
+  "subtitleSha256": "191ff78eecc86c6caf2c89ab704aff808763a2d9b39fab1992db34827c3df1d4",
+  "timingLevel": "word"
+}

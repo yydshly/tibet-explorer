@@ -1,0 +1,19 @@
+{
+  "id": "a47572a394b6efa04b0c902d512d4a66cd0517f3b625f642ce2fc71030151205",
+  "url": "/assets/audio/narration/a47572a394b6efa04b0c902d512d4a66cd0517f3b625f642ce2fc71030151205.mp3",
+  "text": "雅砻河畔还有持续排练藏戏的社区。2025年对扎西曲登的报道，把文化广场、排练、民宿与居民生活放在一起。自然环境提供生活背景，传承仍需要学习者、表演者和社区组织；泽当参考点不充当这个社区的精确定位。",
+  "duration": 20.448,
+  "bytes": 328884,
+  "sha256": "58c5ba7d90b562246da49cd69c3e66f8de16609ed07a5d88fa648dfbd2d7b1a7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:51:58.613Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a47572a394b6efa04b0c902d512d4a66cd0517f3b625f642ce2fc71030151205.subtitles.json",
+  "subtitleSha256": "210307a3d1c4164014e7f28a096947143e2c3b70d4b1d7ae53d0aa984ffbd591",
+  "timingLevel": "word"
+}

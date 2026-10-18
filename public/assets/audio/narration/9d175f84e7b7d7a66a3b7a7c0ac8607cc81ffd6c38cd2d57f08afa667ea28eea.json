@@ -1,0 +1,15 @@
+{
+  "id": "9d175f84e7b7d7a66a3b7a7c0ac8607cc81ffd6c38cd2d57f08afa667ea28eea",
+  "url": "/assets/audio/narration/9d175f84e7b7d7a66a3b7a7c0ac8607cc81ffd6c38cd2d57f08afa667ea28eea.mp3",
+  "text": "请缩放并旋转，先靠近河谷，再稍微拉远，把它放回相邻山脊与水系。局部细看和整体定位来回切换，是认识景观的基本动作。以后进入城市和建筑，我们也会保留同样的空间来路。",
+  "duration": 16.056,
+  "bytes": 258612,
+  "sha256": "25d40ee0b83169ba7c68d3809757a3239e7c2c098cdfddb388d7a757f40c28a3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:39.591Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

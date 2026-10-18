@@ -1,0 +1,15 @@
+{
+  "id": "bb104c039409de18da25e16cb4b75070d5b87940cb23e914c62fb3ae5caa6dec",
+  "url": "/assets/audio/narration/bb104c039409de18da25e16cb4b75070d5b87940cb23e914c62fb3ae5caa6dec.mp3",
+  "text": "全史给出了来路。下面缩到唐蕃会盟，分开事件发生、立碑保存和后来拓本复制的时间，看今天的历史认识怎样经过材料的传递和研究。",
+  "duration": 13.14,
+  "bytes": 211956,
+  "sha256": "c7a62796a4ebfb14ac406efa233a7d4895d60aae9feb429dad385f0fe3f2a4da",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:05:55.570Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

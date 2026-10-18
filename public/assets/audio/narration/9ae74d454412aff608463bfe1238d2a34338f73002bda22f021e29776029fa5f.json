@@ -1,0 +1,19 @@
+{
+  "id": "9ae74d454412aff608463bfe1238d2a34338f73002bda22f021e29776029fa5f",
+  "url": "/assets/audio/narration/9ae74d454412aff608463bfe1238d2a34338f73002bda22f021e29776029fa5f.mp3",
+  "text": "把视线从喜马拉雅山地移到年楚河谷。日喀则城区与农业河谷同高山相邻，较平缓的谷地为耕作、聚居和往来提供条件。这里比较的是地形位置，城区参考点不代表整个日喀则市的气候。",
+  "duration": 17.28,
+  "bytes": 278196,
+  "sha256": "0fd7c0b69a9485bafad0d9d49c8ab1814ce0ae150a4b5bf5f2846e3936cec547",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:48:28.966Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9ae74d454412aff608463bfe1238d2a34338f73002bda22f021e29776029fa5f.subtitles.json",
+  "subtitleSha256": "cce4e4377da91dae64f1b4e6b94e803e2568a883496528237d778d42c085a2d2",
+  "timingLevel": "word"
+}

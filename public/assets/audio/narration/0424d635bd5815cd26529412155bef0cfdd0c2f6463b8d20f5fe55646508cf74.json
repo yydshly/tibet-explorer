@@ -1,0 +1,15 @@
+{
+  "id": "0424d635bd5815cd26529412155bef0cfdd0c2f6463b8d20f5fe55646508cf74",
+  "url": "/assets/audio/narration/0424d635bd5815cd26529412155bef0cfdd0c2f6463b8d20f5fe55646508cf74.mp3",
+  "text": "刚才从建筑、信仰、艺术与日常看到了人的实践，现在继续追问这些生活怎样走到今天。我们转到藏北的尼阿底考古材料，把时间拉回史前。今天地形帮助定位，历史认识则从石器、地层、年代与研究方法开始。",
+  "duration": 21.888,
+  "bytes": 351924,
+  "sha256": "4686b5502ae1bc0d7f26e58656b99a5f85a9a30a93198c43ae8ee2478118d91d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:40:04.924Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

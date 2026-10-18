@@ -1,0 +1,19 @@
+{
+  "id": "c6efb7feaf82698f2a62214eb5d717c49f07d5ea36fdaeaefedec08210307f4f",
+  "url": "/assets/audio/narration/c6efb7feaf82698f2a62214eb5d717c49f07d5ea36fdaeaefedec08210307f4f.mp3",
+  "text": "同在昌都，低处河谷与高处山地不能共用一种气候。高度、坡向和来流改变水热组合，夏季与冬季也不同。现在让水珠沿网格坡面下降，追问这些河谷怎样提供生活空间，又怎样把不同岸边分开。",
+  "duration": 17.604,
+  "bytes": 283380,
+  "sha256": "c0b088af941555098aabd96cd79274a4baef31a34930f315ec2b1c9a7c2fe4be",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:14.189Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c6efb7feaf82698f2a62214eb5d717c49f07d5ea36fdaeaefedec08210307f4f.subtitles.json",
+  "subtitleSha256": "a5641b240ecb3b321df7376434e90aed1874f2c87f10562ec6d4a7f1f5009118",
+  "timingLevel": "word"
+}

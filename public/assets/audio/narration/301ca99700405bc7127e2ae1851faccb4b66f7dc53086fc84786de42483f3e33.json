@@ -1,0 +1,15 @@
+{
+  "id": "301ca99700405bc7127e2ae1851faccb4b66f7dc53086fc84786de42483f3e33",
+  "url": "/assets/audio/narration/301ca99700405bc7127e2ae1851faccb4b66f7dc53086fc84786de42483f3e33.mp3",
+  "text": "建筑、信仰、艺术和日常让我们认识了人的实践，但这些生活怎样走到今天，还需要时间与证据。接下来回到完整地图，先由尼阿底考古材料进入早期人群活动，再展开历史时期、会盟事件和制度变化。",
+  "duration": 16.236,
+  "bytes": 261492,
+  "sha256": "07f831ee71c0ad5800495fcf6123f5ac80111d92531519699a56338d1243fbdb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:40:28.910Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

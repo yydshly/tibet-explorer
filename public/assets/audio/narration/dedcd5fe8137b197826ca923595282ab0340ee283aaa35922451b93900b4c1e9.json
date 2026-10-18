@@ -1,0 +1,15 @@
+{
+  "id": "dedcd5fe8137b197826ca923595282ab0340ee283aaa35922451b93900b4c1e9",
+  "url": "/assets/audio/narration/dedcd5fe8137b197826ca923595282ab0340ee283aaa35922451b93900b4c1e9.mp3",
+  "text": "我们已经从自然走进人文，再把地方放回周边与当代变化。最后一段不是另起一张景点清单，而是回看你真正关注的问题，把它们落到地点与每站观察目的，形成可以保存和继续的探索成果。",
+  "duration": 15.156,
+  "bytes": 244212,
+  "sha256": "e9cfd63003d1ecfc9a8e5bedc4ad0507f7d431abb87718232dcd66f8153d1709",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:30.797Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

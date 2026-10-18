@@ -1,0 +1,15 @@
+{
+  "id": "93c68f2409fa73d23ef19c4fa979c10efa74056509cbb2524e3a788da2593fd8",
+  "url": "/assets/audio/narration/93c68f2409fa73d23ef19c4fa979c10efa74056509cbb2524e3a788da2593fd8.mp3",
+  "text": "先分清自然水源和城市供水。二〇二二年的拉萨水安全规划说，当时中心城区主要使用地下水，不能把河流画成直接流进家家户户。",
+  "duration": 13.104,
+  "bytes": 211380,
+  "sha256": "13c3002dde9bc9c7a60cfaec2f16f7f7474fd17af27463cc63b823aeda2301ed",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:01.074Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

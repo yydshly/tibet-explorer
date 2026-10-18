@@ -1,0 +1,19 @@
+{
+  "id": "96c02f6204a462d9c650e83af5ef2f235f86dac42bacc651df1dbd3ee7e79c04",
+  "url": "/assets/audio/narration/96c02f6204a462d9c650e83af5ef2f235f86dac42bacc651df1dbd3ee7e79c04.mp3",
+  "text": "请把阶段退回山地来水，再推进到干支汇合与下游使用。留意水沿高差连接，取用者仍要把水带到生活空间。对照雅鲁藏布江案例，分别问雨量、水位、冰雪和地下过程需要什么记录，不把教学颗粒当成实测水量。",
+  "duration": 18.9,
+  "bytes": 304116,
+  "sha256": "1004db9836463172c3db0ef04027130d8863e57a017288cf40a814fcd3421047",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:11:10.555Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/96c02f6204a462d9c650e83af5ef2f235f86dac42bacc651df1dbd3ee7e79c04.subtitles.json",
+  "subtitleSha256": "82abaf0f0650ea762a8184254f4e18f0690b921320975af5d11ee11fa89ca079",
+  "timingLevel": "word"
+}

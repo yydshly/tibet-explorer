@@ -1,0 +1,15 @@
+{
+  "id": "ee0575b5ff18042958421853d2e0a2ea39b9d1de8e187183fae1926a0bd3732b",
+  "url": "/assets/audio/narration/ee0575b5ff18042958421853d2e0a2ea39b9d1de8e187183fae1926a0bd3732b.mp3",
+  "text": "我们从地球走到高原、气候、地区与景观，建立了自然条件这张底图。接下来进入第二段旅程：人怎样在这里生活、交流与创造？先看那曲方向的史前活动材料，再展开历史全貌与具体文化对象。",
+  "duration": 17.424,
+  "bytes": 280500,
+  "sha256": "01e56023a8e5296e7112f33d3bfc3df2f00b1f8212bc3233a830039ebc67680b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:37.102Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

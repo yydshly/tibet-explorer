@@ -1,0 +1,15 @@
+{
+  "id": "1c733940e21a6eb94780413dd3b8f6c2fb227e91c3cb910fe1bb2773874dba99",
+  "url": "/assets/audio/narration/1c733940e21a6eb94780413dd3b8f6c2fb227e91c3cb910fe1bb2773874dba99.mp3",
+  "text": "请展开体量关系，再分别选择白宫与红宫。镜头、文字和标注会对应所选分区；分开的形体只帮助看山体与建筑之间的相对关系，并不揭开未知室内。也可以切到院落构造原理，看一般的墙体、梁柱与覆盖如何配合，再回到真实建筑材料。",
+  "duration": 22.536,
+  "bytes": 362292,
+  "sha256": "73fca01cee8be9ac2dd0578e96880cf238d3dc4a2b17cfb469c18c1f1d58d088",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:21:28.065Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "eee2bd53f4c7f748fcb0920186f14afe066eae822fa1fc45fe374ab2c185c4fb",
+  "url": "/assets/audio/narration/eee2bd53f4c7f748fcb0920186f14afe066eae822fa1fc45fe374ab2c185c4fb.mp3",
+  "text": "吐蕃王朝瓦解以后，地方力量和宗教传统继续变化。十至十二世纪的复兴与交流中，阿底峡在一〇四二年来到西藏西部托林，教师、译者和文本连接不同地方。十三至十四世纪，蒙古元朝与萨迦的制度联系成为重要线索；随后帕竹等地方力量又改变政治格局。",
+  "duration": 22.68,
+  "bytes": 364596,
+  "sha256": "946bf3a05c914e2dd65ee29b0922804a336fbc5a738a59636c9248edef85edfb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:09.907Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/eee2bd53f4c7f748fcb0920186f14afe066eae822fa1fc45fe374ab2c185c4fb.subtitles.json",
+  "subtitleSha256": "d59535c866ecffd32c597df49d3fa9c7c06e5189f82ca78063cc55ba52bde518",
+  "timingLevel": "word"
+}

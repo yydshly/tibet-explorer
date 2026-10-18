@@ -1,0 +1,19 @@
+{
+  "id": "049e9c1db85a10b98b1cc34c9cc6ac5613e27a4f54ecc683a18087f1bd58122e",
+  "url": "/assets/audio/narration/049e9c1db85a10b98b1cc34c9cc6ac5613e27a4f54ecc683a18087f1bd58122e.mp3",
+  "text": "把镜头重新拉回全域。通道之外，流域、草地与历史城市同样联系不同地方。雅鲁藏布江让上游过程关系到下游使用，羌塘的生态管护跨越那曲与阿里，拉萨遗产保护还要照顾地方日常。理解周边和战略价值，要说清共同依赖、使用条件与维护责任。",
+  "duration": 22.608,
+  "bytes": 363444,
+  "sha256": "e9d4379b46068d01482556d83d14735dfbecf7573a1d30a09ff118f44b4074f1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:35.498Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/049e9c1db85a10b98b1cc34c9cc6ac5613e27a4f54ecc683a18087f1bd58122e.subtitles.json",
+  "subtitleSha256": "4c395cb950e0459a5d0c15b93696f1c800da6af76204385a7e8d39675d9882b6",
+  "timingLevel": "word"
+}

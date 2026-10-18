@@ -1,0 +1,19 @@
+{
+  "id": "9a910ddb343ed7435e36a7b3fe889195732706a30480cf2a4620d13717f416bf",
+  "url": "/assets/audio/narration/9a910ddb343ed7435e36a7b3fe889195732706a30480cf2a4620d13717f416bf.mp3",
+  "text": "二〇一〇年七月一日，昆莎机场正式通航。飞机增加了进入阿里的方式。看同一件行李随抵达过程落到地面，接下来还有机场之外的地方行程。",
+  "duration": 12.492,
+  "bytes": 201588,
+  "sha256": "81317cf0cc66c9e2716e022339cfa0199e51115949aebf714898b33f6bf15be2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:28:29.456Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9a910ddb343ed7435e36a7b3fe889195732706a30480cf2a4620d13717f416bf.subtitles.json",
+  "subtitleSha256": "87309fcffe0819f7c73626364c9a7ae8dcbdee1e228757669d28ced0d2694c1d",
+  "timingLevel": "word"
+}

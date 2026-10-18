@@ -1,0 +1,15 @@
+{
+  "id": "c552d7e6b3bc5ac4aaa2fc7fccf2c7ab877383b496091992dfa3554e57a813ad",
+  "url": "/assets/audio/narration/c552d7e6b3bc5ac4aaa2fc7fccf2c7ab877383b496091992dfa3554e57a813ad.mp3",
+  "text": "先保留林芝与鲁朗的山谷位置，地形提供空间，也带来需要跨越的高差。",
+  "duration": 5.724,
+  "bytes": 93300,
+  "sha256": "58e115a17c918026b7daf5ca38ce14fcaac0f42b37976e2a956f2b875b0b3ea9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:55:57.869Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

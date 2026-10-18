@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "audioSha256": "984ba0778afbe7ff2bb14e8ec7c764bed97f1e80d374c0beaa1d3bae7edf5c46",
+  "textSha256": "8c84ae7a63f183c5d797faf12de2808e51e80b5dd1da2c9adb6e5b0b6c6b7241",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 9.936,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 9.780090702947845,
+      "text": "最后看盆地中相对低缓的空间。用水与管护参与生活；接着移到另一处地方，札达和托林，再读历史。",
+      "textStart": 0,
+      "textEnd": 45
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.32820512820512815,
+      "text": "最",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.32820512820512815,
+      "end": 0.4512820512820513,
+      "text": "后",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.4512820512820513,
+      "end": 0.5743589743589742,
+      "text": "看",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5743589743589742,
+      "end": 0.6974358974358974,
+      "text": "盆",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6974358974358974,
+      "end": 0.8615384615384616,
+      "text": "地",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.8615384615384616,
+      "end": 0.9846153846153846,
+      "text": "中",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9846153846153846,
+      "end": 1.435897435897436,
+      "text": "相",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.435897435897436,
+      "end": 1.641025641025641,
+      "text": "对",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.641025641025641,
+      "end": 1.7641025641025643,
+      "text": "低",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.7641025641025643,
+      "end": 1.9282051282051282,
+      "text": "缓",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.9282051282051282,
+      "end": 1.9692307692307691,
+      "text": "的",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.9692307692307691,
+      "end": 2.133333333333333,
+      "text": "空",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.133333333333333,
+      "end": 2.297435897435897,
+      "text": "间",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.297435897435897,
+      "end": 2.3794871794871795,
+      "text": "。",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.3794871794871795,
+      "end": 2.7487179487179483,
+      "text": "用",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.7487179487179483,
+      "end": 3.4461538461538463,
+      "text": "水",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.4461538461538463,
+      "end": 3.6512820512820507,
+      "text": "与",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.6512820512820507,
+      "end": 3.7743589743589743,
+      "text": "管",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.7743589743589743,
+      "end": 3.9794871794871787,
+      "text": "护",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.9794871794871787,
+      "end": 4.184615384615384,
+      "text": "参",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.184615384615384,
+      "end": 4.348717948717949,
+      "text": "与",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.348717948717949,
+      "end": 4.471794871794872,
+      "text": "生",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.471794871794872,
+      "end": 4.594871794871794,
+      "text": "活",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.594871794871794,
+      "end": 4.841025641025641,
+      "text": "；",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.841025641025641,
+      "end": 5.661538461538461,
+      "text": "接",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.661538461538461,
+      "end": 5.8256410256410245,
+      "text": "着",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.8256410256410245,
+      "end": 5.907692307692308,
+      "text": "移",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.907692307692308,
+      "end": 6.03076923076923,
+      "text": "到",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.03076923076923,
+      "end": 6.112820512820512,
+      "text": "另",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.112820512820512,
+      "end": 6.235897435897436,
+      "text": "一",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 6.235897435897436,
+      "end": 6.317948717948718,
+      "text": "处",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 6.317948717948718,
+      "end": 6.44102564102564,
+      "text": "地",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.44102564102564,
+      "end": 6.564102564102564,
+      "text": "方",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.564102564102564,
+      "end": 6.605128205128205,
+      "text": "，",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 6.605128205128205,
+      "end": 6.892307692307693,
+      "text": "札",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 6.892307692307693,
+      "end": 7.712820512820513,
+      "text": "达",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 7.712820512820513,
+      "end": 7.8769230769230765,
+      "text": "和",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 7.8769230769230765,
+      "end": 8,
+      "text": "托",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 8,
+      "end": 8.164102564102564,
+      "text": "林",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 8.164102564102564,
+      "end": 8.205128205128204,
+      "text": "，",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 8.205128205128204,
+      "end": 8.943589743589744,
+      "text": "再",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 8.943589743589744,
+      "end": 9.189743589743587,
+      "text": "读",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 9.189743589743587,
+      "end": 9.312820512820512,
+      "text": "历",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 9.312820512820512,
+      "end": 9.476923076923077,
+      "text": "史",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 9.476923076923077,
+      "end": 9.682051282051281,
+      "text": "。",
+      "textStart": 44,
+      "textEnd": 45
+    }
+  ]
+}

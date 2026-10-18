@@ -1,0 +1,19 @@
+{
+  "id": "e3eda60fa83f1e24093784be42aeee7f91c59775c0ae1182ee25984a44d29e0b",
+  "url": "/assets/audio/narration/e3eda60fa83f1e24093784be42aeee7f91c59775c0ae1182ee25984a44d29e0b.mp3",
+  "text": "把镜头从建筑拉回拉萨河谷，再回到西藏全域。刚才看到，位置、年代与实际用途需要一起理解。今天的城市继承着已有空间，也在形成新的联系。接下来保留这些城市与生活，再看公路、铁路和航空怎样接入它们。",
+  "duration": 19.404,
+  "bytes": 312180,
+  "sha256": "509f8231954029208ce8fe47d637000ef6996ff7fbf06491466ca039dc8c078c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T03:25:25.328Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e3eda60fa83f1e24093784be42aeee7f91c59775c0ae1182ee25984a44d29e0b.subtitles.json",
+  "subtitleSha256": "aa797c71040e2ecbd0f0ef4509be05d9509bd1778cb6f122dbb67fad19875079",
+  "timingLevel": "word"
+}

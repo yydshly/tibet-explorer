@@ -1,0 +1,19 @@
+{
+  "id": "8fa2fc2a0aa4521498d9a076e9f5e8aa30baed891225ae2761ec68ac8b52640f",
+  "url": "/assets/audio/narration/8fa2fc2a0aa4521498d9a076e9f5e8aa30baed891225ae2761ec68ac8b52640f.mp3",
+  "text": "历史长线已经建立。现在暂时离开顺时排列，回到拉萨这一个地方，读建筑怎样承接不同用途。先在全图确认它所在的河谷，再沿今天的真实地图辨认大昭寺和布达拉宫。我们比较的是有资料支持的年代与用途，不把现状轮廓当作过去城市的复原。",
+  "duration": 21.888,
+  "bytes": 351924,
+  "sha256": "d285b7c8f95ae5607120a5b8e9d672330bedf027e34999013a73d8ac34101701",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T03:25:19.168Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8fa2fc2a0aa4521498d9a076e9f5e8aa30baed891225ae2761ec68ac8b52640f.subtitles.json",
+  "subtitleSha256": "925ebee8ca3a90f4dc93a071e7f4526cb7e0c49429e0ac7267efce15daece899",
+  "timingLevel": "word"
+}

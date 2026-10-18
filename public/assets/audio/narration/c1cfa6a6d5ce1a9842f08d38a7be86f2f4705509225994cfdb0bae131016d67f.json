@@ -1,0 +1,15 @@
+{
+  "id": "c1cfa6a6d5ce1a9842f08d38a7be86f2f4705509225994cfdb0bae131016d67f",
+  "url": "/assets/audio/narration/c1cfa6a6d5ce1a9842f08d38a7be86f2f4705509225994cfdb0bae131016d67f.mp3",
+  "text": "沿南北剖面从低处越过山系，再进入高原内部。切线向东移动时，同一问题会遇到不同起伏组合。较低空间与周围山地一起提供通行和水系的背景，但这条切线没有给出实际村道或完整河网。",
+  "duration": 18.18,
+  "bytes": 292596,
+  "sha256": "a1f67a5c25584ee4a298b0b4ceac47daa7bd463a9a61edbcb41ed201492f1256",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:02:33.800Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

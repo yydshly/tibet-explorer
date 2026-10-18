@@ -1,0 +1,15 @@
+{
+  "id": "01c9e2eac4e9d23af96c164faef6f46c023784a8593f149d9f92f91333086fa0",
+  "url": "/assets/audio/narration/01c9e2eac4e9d23af96c164faef6f46c023784a8593f149d9f92f91333086fa0.mp3",
+  "text": "阿里的历史还要放回十一至十二世纪的交流。北印度贝叶写本经学者翻译，把知识带入新的语言环境。翻动的经页解释学习与转译，不冒充托林文物。",
+  "duration": 13.608,
+  "bytes": 219444,
+  "sha256": "0671593fd20efabe9433c894b97c5ba6865f35b92a7c06121b85daf1f8763301",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:43.716Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0ceb830170ea4e83f9a24eb95ebe8c0238d6729e0beb8c766333fd94951fc57c",
+  "url": "/assets/audio/narration/0ceb830170ea4e83f9a24eb95ebe8c0238d6729e0beb8c766333fd94951fc57c.mp3",
+  "text": "用水还需要给河流留下空间。年楚河流域规划把农田、城市与生态流量放在一起管理，取水越多并不自动等于生活越好。自然条件提供基础，分配与组织决定人怎样使用它；接下来再看河谷中的历史中心。",
+  "duration": 19.836,
+  "bytes": 319092,
+  "sha256": "8846f701b10070f1b81e8ea7e664482b68ba0ba99cb6246c0e0dd32de4a91b16",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:49:04.459Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/0ceb830170ea4e83f9a24eb95ebe8c0238d6729e0beb8c766333fd94951fc57c.subtitles.json",
+  "subtitleSha256": "a8692d752b66cbae53fb4045e77f993ce952f0aa359487f2b35bc7aa8ac730cc",
+  "timingLevel": "word"
+}

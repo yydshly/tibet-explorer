@@ -1,0 +1,15 @@
+{
+  "id": "8008a79739b2780a72853d99239001b713932f68e92b17bf483b9738eb9aeac4",
+  "url": "/assets/audio/narration/8008a79739b2780a72853d99239001b713932f68e92b17bf483b9738eb9aeac4.mp3",
+  "text": "气候从热量与水怎样流动开始。先暂时离开局部山谷，回到地球与太阳。为什么同一个地点一年中有不同照射？我们固定拉萨附近的纬度，比较季节变化，让后面的高原气候有一个宏观起点。",
+  "duration": 18.648,
+  "bytes": 300084,
+  "sha256": "9fd759dfca80f4921ed25ce2957a5feb0caf73785300e92a26afecb8dddb8248",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:20.171Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ea518708b9cdbd7e336dfe00573f32ceb52dfba9c7313e521815e1566dbe38e7",
+  "url": "/assets/audio/narration/ea518708b9cdbd7e336dfe00573f32ceb52dfba9c7313e521815e1566dbe38e7.mp3",
+  "text": "先沿通道看连接，再加入运营服务。是否有适合的班次、能否使用和承担费用，都需要实际资料判断。最后把末端接驳补上：到达交通节点以后，还需要继续到目的地。画面依次补齐条件，不给真实地区打分，也不计算旅行时间。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "39da0d51b61bee9e9146f968171d982b9725db74b77c4043cd96a0a8fbf5092d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:22:50.905Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

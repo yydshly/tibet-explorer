@@ -1,0 +1,19 @@
+{
+  "id": "b2b21f9af226fe2799aaa43081bf6013cf32049c0b5d4e3927e115ebcc9cf61f",
+  "url": "/assets/audio/narration/b2b21f9af226fe2799aaa43081bf6013cf32049c0b5d4e3927e115ebcc9cf61f.mp3",
+  "text": "再从托林回到狮泉河，先看河流与两岸道路的实际位置。二〇一七年一河两岸工程竣工，绿化、步行与休闲增强了公共生活功能。现状地图不等于工程边界，也不表示此前河岸不能使用。",
+  "duration": 16.379,
+  "bytes": 263796,
+  "sha256": "201f9e1de2831d40198c922c5bf86c7a842935a8e57b3df9f2ffcbbcada11188",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:26:10.152Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b2b21f9af226fe2799aaa43081bf6013cf32049c0b5d4e3927e115ebcc9cf61f.subtitles.json",
+  "subtitleSha256": "f116bea31f26acf0730b005b783eb0c00f93904aaea179dae1ac5ea353d66875",
+  "timingLevel": "word"
+}

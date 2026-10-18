@@ -1,0 +1,19 @@
+{
+  "id": "9d46e1f70f2db15901cc4984261ffbbf8da161068f1ec710a15d290baf4a9bab",
+  "url": "/assets/audio/narration/9d46e1f70f2db15901cc4984261ffbbf8da161068f1ec710a15d290baf4a9bab.mp3",
+  "text": "请保留河谷条件，把分别使用改为共同组织。看山坡、水源有没有变，取水点、共用通行和储水构件又怎样改变。这个对照不评判哪种组织一定更好，也不表示真实社区采用了这些安排，而是说明相同环境仍有人可以选择和协作的空间。",
+  "duration": 21.06,
+  "bytes": 338676,
+  "sha256": "a30865e74cd56dffc290ecbf20c802b6b96f1fb7a457e225cca19698bc402b2f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:34:31.937Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9d46e1f70f2db15901cc4984261ffbbf8da161068f1ec710a15d290baf4a9bab.subtitles.json",
+  "subtitleSha256": "c7aad04e8964186b1355aa0503c1ac9d27b970dbaee17620a95c0fe421ccd507",
+  "timingLevel": "word"
+}

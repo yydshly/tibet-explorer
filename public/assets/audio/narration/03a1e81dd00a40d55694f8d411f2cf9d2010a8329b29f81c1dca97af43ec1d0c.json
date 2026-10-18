@@ -1,0 +1,15 @@
+{
+  "id": "03a1e81dd00a40d55694f8d411f2cf9d2010a8329b29f81c1dca97af43ec1d0c",
+  "url": "/assets/audio/narration/03a1e81dd00a40d55694f8d411f2cf9d2010a8329b29f81c1dca97af43ec1d0c.mp3",
+  "text": "拉萨的红宫由桑结嘉措主持，在一六九〇至一六九四年建设，包含灵塔和宗教活动空间。它与白宫用途不同。今天抵达以后，参访仍要理解不同对象的历史与使用。",
+  "duration": 13.824,
+  "bytes": 222900,
+  "sha256": "12a6dac2de1cb2e06f1cf8df44cdcbb30b0a7a2abfe7f6549acdd785cd788a21",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:27.981Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

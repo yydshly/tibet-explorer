@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "audioSha256": "3e4b3f1bdd0b9197ab18af6ddd2b4be673401036bce2efc7d77776d1221727da",
+  "textSha256": "2de6051d2a332fac5b730a3cdf8a16d88fc183111476b1774173ce43d4279c05",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 7.596,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 7.4464852607709755,
+      "text": "森林与高山相邻，城区只是地区入口。沿谷地继续追问，人们怎样在这些条件中通行和生活？",
+      "textStart": 0,
+      "textEnd": 41
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.20512820512820512,
+      "text": "森",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.20512820512820512,
+      "end": 0.41025641025641024,
+      "text": "林",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.5333333333333332,
+      "text": "与",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 0.6564102564102563,
+      "text": "高",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6564102564102563,
+      "end": 0.7794871794871795,
+      "text": "山",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.7794871794871795,
+      "end": 0.9435897435897436,
+      "text": "相",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 1.0666666666666664,
+      "text": "邻",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.0666666666666664,
+      "end": 1.1076923076923075,
+      "text": "，",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.1076923076923075,
+      "end": 1.7641025641025643,
+      "text": "城",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.7641025641025643,
+      "end": 2.0102564102564098,
+      "text": "区",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 2.0102564102564098,
+      "end": 2.1743589743589746,
+      "text": "只",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.1743589743589746,
+      "end": 2.297435897435897,
+      "text": "是",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.297435897435897,
+      "end": 2.4205128205128204,
+      "text": "地",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.4205128205128204,
+      "end": 2.5435897435897434,
+      "text": "区",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.5435897435897434,
+      "end": 2.707692307692308,
+      "text": "入",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.707692307692308,
+      "end": 2.8307692307692305,
+      "text": "口",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.8307692307692305,
+      "end": 2.871794871794872,
+      "text": "。",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 2.871794871794872,
+      "end": 3.323076923076923,
+      "text": "沿",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.323076923076923,
+      "end": 4.0205128205128196,
+      "text": "谷",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.0205128205128196,
+      "end": 4.184615384615384,
+      "text": "地",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.184615384615384,
+      "end": 4.307692307692307,
+      "text": "继",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.307692307692307,
+      "end": 4.43076923076923,
+      "text": "续",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.43076923076923,
+      "end": 4.553846153846154,
+      "text": "追",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.553846153846154,
+      "end": 4.676923076923077,
+      "text": "问",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.676923076923077,
+      "end": 4.717948717948717,
+      "text": "，",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 4.717948717948717,
+      "end": 5.087179487179487,
+      "text": "人",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.087179487179487,
+      "end": 5.333333333333333,
+      "text": "们",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.333333333333333,
+      "end": 5.456410256410256,
+      "text": "怎",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 5.456410256410256,
+      "end": 5.579487179487179,
+      "text": "样",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 5.579487179487179,
+      "end": 5.743589743589744,
+      "text": "在",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 5.743589743589744,
+      "end": 5.866666666666666,
+      "text": "这",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 5.866666666666666,
+      "end": 5.948717948717949,
+      "text": "些",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.071794871794872,
+      "text": "条",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.071794871794872,
+      "end": 6.235897435897436,
+      "text": "件",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 6.235897435897436,
+      "end": 6.358974358974359,
+      "text": "中",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 6.358974358974359,
+      "end": 6.523076923076923,
+      "text": "通",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 6.523076923076923,
+      "end": 6.6871794871794865,
+      "text": "行",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 6.6871794871794865,
+      "end": 6.851282051282051,
+      "text": "和",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 6.851282051282051,
+      "end": 6.974358974358974,
+      "text": "生",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 6.974358974358974,
+      "end": 7.138461538461537,
+      "text": "活",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 7.138461538461537,
+      "end": 7.17948717948718,
+      "text": "？",
+      "textStart": 40,
+      "textEnd": 41
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bb4b43ad4ef2484619c0b1baf85b9ceff4cf23ce85ddf9783b87c643c999bbb0",
+  "url": "/assets/audio/narration/bb4b43ad4ef2484619c0b1baf85b9ceff4cf23ce85ddf9783b87c643c999bbb0.mp3",
+  "text": "从形成过程回到今天的西藏，先辨认高原内部、南侧喜马拉雅与东部高山峡谷。整体很高，不代表地面平坦；山脊、盆地和河谷组成不同的地方环境。我们继续走近一段山谷，把周边方向和内部起伏接在一起。",
+  "duration": 17.1,
+  "bytes": 275316,
+  "sha256": "a203f3faf802ac9933f7c8e3ea6547f2bf4cd5f4db80c360ae1392c04dae4d69",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:27.291Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

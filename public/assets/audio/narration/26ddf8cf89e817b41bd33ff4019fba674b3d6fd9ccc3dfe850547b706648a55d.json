@@ -1,0 +1,19 @@
+{
+  "id": "26ddf8cf89e817b41bd33ff4019fba674b3d6fd9ccc3dfe850547b706648a55d",
+  "url": "/assets/audio/narration/26ddf8cf89e817b41bd33ff4019fba674b3d6fd9ccc3dfe850547b706648a55d.mp3",
+  "text": "从史前证据退回更长的时间，九个材料夹按先后排列。间距不表示历时相等，今天的地图也没有重建古代疆域。选一个时期，继续分别问政治组织、知识信仰和日常生活发生了什么。",
+  "duration": 14.076,
+  "bytes": 226932,
+  "sha256": "a4f646f148183c95b198db441d8c2ee1854302ac5acfab97d97ce4ad02bd295e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:37:38.967Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/26ddf8cf89e817b41bd33ff4019fba674b3d6fd9ccc3dfe850547b706648a55d.subtitles.json",
+  "subtitleSha256": "3d6db9aedb47b041aa4df1a7e24f9ee48e7e43ba0e6f5d41a4c53205bfd456e7",
+  "timingLevel": "word"
+}

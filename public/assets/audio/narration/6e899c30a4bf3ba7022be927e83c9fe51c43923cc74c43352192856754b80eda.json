@@ -1,0 +1,15 @@
+{
+  "id": "6e899c30a4bf3ba7022be927e83c9fe51c43923cc74c43352192856754b80eda",
+  "url": "/assets/audio/narration/6e899c30a4bf3ba7022be927e83c9fe51c43923cc74c43352192856754b80eda.mp3",
+  "text": "随后桑结嘉措主持红宫，至一六九四年完成。今天看到的历史城市，是不同人物、用途和建设阶段累积而成，不能单靠气候或山地解释。",
+  "duration": 11.916,
+  "bytes": 192372,
+  "sha256": "6f1e1430291472b629bd0b802de04cb564571081f3eedd073f3bf9ce1ff65749",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:34.725Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

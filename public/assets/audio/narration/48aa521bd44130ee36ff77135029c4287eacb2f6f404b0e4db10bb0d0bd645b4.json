@@ -1,0 +1,19 @@
+{
+  "id": "48aa521bd44130ee36ff77135029c4287eacb2f6f404b0e4db10bb0d0bd645b4",
+  "url": "/assets/audio/narration/48aa521bd44130ee36ff77135029c4287eacb2f6f404b0e4db10bb0d0bd645b4.mp3",
+  "text": "把视线留在那曲及周围地区。人们在节会相聚，竞技、说唱、购销与交流共同发生，草地背景和社会活动因此相连。图上只展示区域联系，不给每个县编造古道；再看铁路和公路，理解今天交流方式怎样增加。",
+  "duration": 19.44,
+  "bytes": 312756,
+  "sha256": "be44755bf755e3b4a63dfe376afb29818b8bc30704f19c91fefd87ae97d439e2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:56:38.579Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/48aa521bd44130ee36ff77135029c4287eacb2f6f404b0e4db10bb0d0bd645b4.subtitles.json",
+  "subtitleSha256": "dc37080739cd949ab92b3885dac2755438760cf114e353df792e1e7d08d7c633",
+  "timingLevel": "word"
+}

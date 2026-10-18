@@ -1,0 +1,19 @@
+{
+  "id": "f287c59516753f8ad8e212ccec927b25b79b7dfefbcee4af7cd5b8ea4a60bac1",
+  "url": "/assets/audio/narration/f287c59516753f8ad8e212ccec927b25b79b7dfefbcee4af7cd5b8ea4a60bac1.mp3",
+  "text": "保留西藏整体，先看东南部的林芝。夏季，印度洋和孟加拉湾方向的水汽可沿大峡谷进入藏东南。",
+  "duration": 8.712,
+  "bytes": 141108,
+  "sha256": "61bc4866c980955c4127daf69ea0b55b661c313a21fc5c331eb687e62601e8cb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:16:16.276Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f287c59516753f8ad8e212ccec927b25b79b7dfefbcee4af7cd5b8ea4a60bac1.subtitles.json",
+  "subtitleSha256": "d10e0d38804de7e3d5825e40b538d380b5d0099ea467b479a454921dfcc41a53",
+  "timingLevel": "word"
+}

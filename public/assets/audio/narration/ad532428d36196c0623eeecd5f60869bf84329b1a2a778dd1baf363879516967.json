@@ -1,0 +1,19 @@
+{
+  "id": "ad532428d36196c0623eeecd5f60869bf84329b1a2a778dd1baf363879516967",
+  "url": "/assets/audio/narration/ad532428d36196c0623eeecd5f60869bf84329b1a2a778dd1baf363879516967.mp3",
+  "text": "再看闸口怎样控制引水。二〇二三年的报道中，护林员伦珠开闸让水进入林地；这里演示动作，不还原渠系。",
+  "duration": 10.728,
+  "bytes": 173364,
+  "sha256": "ee40ece30b436030986907afe8dfe269e291ed89f700d6b008ac5e75597f74a9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:18:34.963Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ad532428d36196c0623eeecd5f60869bf84329b1a2a778dd1baf363879516967.subtitles.json",
+  "subtitleSha256": "741983b4c922b2d9412c71b5ce5a9e12b705bf4552cf1d234f7c2d0d77807915",
+  "timingLevel": "word"
+}

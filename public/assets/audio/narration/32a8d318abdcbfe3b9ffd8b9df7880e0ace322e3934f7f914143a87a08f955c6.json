@@ -1,0 +1,15 @@
+{
+  "id": "32a8d318abdcbfe3b9ffd8b9df7880e0ace322e3934f7f914143a87a08f955c6",
+  "url": "/assets/audio/narration/32a8d318abdcbfe3b9ffd8b9df7880e0ace322e3934f7f914143a87a08f955c6.mp3",
+  "text": "请从现代交通切到通道联系，比较线路表达与节点介绍。问一问连接的是哪两地、哪种活动、哪个时期。清楚的线型和资料身份能帮助认识交换，也让我们避免把自然可通行等同于所有人都能方便到达。",
+  "duration": 17.064,
+  "bytes": 274740,
+  "sha256": "7e5256d3603311398034940b27d8ea31c48ec8cc4f1fcbfbaab3f5f3ee3ee7a7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:43.483Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

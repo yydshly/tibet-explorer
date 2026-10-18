@@ -1,0 +1,19 @@
+{
+  "id": "14ee6c54d3d4c1eed84dced3a96c1f2bb0de0a060dad9ee027fc9d39c472ac7d",
+  "url": "/assets/audio/narration/14ee6c54d3d4c1eed84dced3a96c1f2bb0de0a060dad9ee027fc9d39c472ac7d.mp3",
+  "text": "先看1985年昌都的聚居检出，再到2005年比较两河谷地中的分布，最后对照2015年。三十米网格来自卫星分析，最早一档也包含更早聚居。它帮助观察建成空间怎样分布，却不是具体房屋的建造日期，也不能独自解释桥梁或机场带来的影响。",
+  "duration": 21.96,
+  "bytes": 353076,
+  "sha256": "765a43c2b0fcc3a07bcf6a47ba5df549fe3e12b2209db823c6d5ca3e789f157c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:51:52.232Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/14ee6c54d3d4c1eed84dced3a96c1f2bb0de0a060dad9ee027fc9d39c472ac7d.subtitles.json",
+  "subtitleSha256": "05fd45dffac69a4cbf692255503e5ba7c8ae93afcccef9c89d8fbdcce4b3df3e",
+  "timingLevel": "word"
+}

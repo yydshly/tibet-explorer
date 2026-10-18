@@ -1,0 +1,15 @@
+{
+  "id": "28308e073bb869514416fd8c072c03b1f4580cb1b6c5d09a341654eb34352bf6",
+  "url": "/assets/audio/narration/28308e073bb869514416fd8c072c03b1f4580cb1b6c5d09a341654eb34352bf6.mp3",
+  "text": "先分清自然水源和城市供水。二〇二二年的拉萨水安全规划说，当时中心城区主要使用地下水，不能把河流画成直接流进家家户户。水源还要经过取供水设施、管理与持续维护，才能服务居民。保持水源条件不变，切换管护对照，看看城市生活为什么还依赖人的组织。",
+  "duration": 23.688,
+  "bytes": 380724,
+  "sha256": "fb06309f67d8ad15bbd52d320752e2659b1b292f81a101670df790fc75abe2f3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:30.238Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

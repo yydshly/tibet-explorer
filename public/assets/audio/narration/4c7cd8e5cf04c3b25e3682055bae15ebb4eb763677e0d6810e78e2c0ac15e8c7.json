@@ -1,0 +1,19 @@
+{
+  "id": "4c7cd8e5cf04c3b25e3682055bae15ebb4eb763677e0d6810e78e2c0ac15e8c7",
+  "url": "/assets/audio/narration/4c7cd8e5cf04c3b25e3682055bae15ebb4eb763677e0d6810e78e2c0ac15e8c7.mp3",
+  "text": "把整条认识变成观察方法。先在全图选地方，再带着问题走近。去林芝，问山谷与水热怎样影响生活；到山南、拉萨或日喀则，对照河谷空间、历史用途和今天生活；看昌都，问峡谷怎样影响通行；看那曲与阿里，问高地、用水和地方接续。每次都问：自然提供什么条件，人的行动又改变了什么？比较以后再回到全域，用一个具体地方解释形成、延续和现代变化。观察顺序不是连续旅游行程，实际交通与访问条件需要按日期核实。接下来选择需要深入的问题，或保存你的观察路线。",
+  "duration": 39.672,
+  "bytes": 636468,
+  "sha256": "53d2d6f9591c5f187c51d824e049944c227757df24213fefcf5050bdb9f62e51",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T09:22:44.230Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4c7cd8e5cf04c3b25e3682055bae15ebb4eb763677e0d6810e78e2c0ac15e8c7.subtitles.json",
+  "subtitleSha256": "899a7d6399565d05d28bb17f77971273d25071f2adeb8f4613536e5582a46d3e",
+  "timingLevel": "word"
+}

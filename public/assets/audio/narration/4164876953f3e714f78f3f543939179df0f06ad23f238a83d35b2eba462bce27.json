@@ -1,0 +1,19 @@
+{
+  "id": "4164876953f3e714f78f3f543939179df0f06ad23f238a83d35b2eba462bce27",
+  "url": "/assets/audio/narration/4164876953f3e714f78f3f543939179df0f06ad23f238a83d35b2eba462bce27.mp3",
+  "text": "同一建筑群可以留下不同时代、用途和参与者的痕迹。接下来从拉萨的建筑材料转向托林的交流材料，用有证人物和文本解释知识怎样传递；院落中的译写与学习模型只拆开一般机制，不冒充托林寺或阿底峡的真实课堂。",
+  "duration": 18.936,
+  "bytes": 304692,
+  "sha256": "9b21fc6da9057ce2b0d7b439e77e7ef5f7f34691d83e3f33c2f1691959f2f1ab",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:40:46.542Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4164876953f3e714f78f3f543939179df0f06ad23f238a83d35b2eba462bce27.subtitles.json",
+  "subtitleSha256": "69978fd402aee11246f50993ed40d8a2c1afa78cb971985d67907f991db7d682",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "3b0d3c7000805c4f7cdb0c5e20e1c70e5a24a4cda2a9bb9fb77935509a3966e8",
+  "url": "/assets/audio/narration/3b0d3c7000805c4f7cdb0c5e20e1c70e5a24a4cda2a9bb9fb77935509a3966e8.mp3",
+  "text": "材料让我们知道可以怎样认识过去，接下来把具体问题放进全史前后。政治组织、知识信仰与生产生活有不同的证据和节奏，不会在每一个时期节点同时改变。",
+  "duration": 14.328,
+  "bytes": 230964,
+  "sha256": "e182db79226ed5e90497311b9bddd0a933fb82fa3157ad841421d89eede5266d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:37:31.199Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3b0d3c7000805c4f7cdb0c5e20e1c70e5a24a4cda2a9bb9fb77935509a3966e8.subtitles.json",
+  "subtitleSha256": "b37dea7f688b7fa136f7b047d08b3fa8b903140d06932fd3b285b94db1e8d3bf",
+  "timingLevel": "word"
+}

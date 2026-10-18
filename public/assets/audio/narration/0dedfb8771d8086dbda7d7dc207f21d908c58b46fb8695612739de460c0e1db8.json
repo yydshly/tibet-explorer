@@ -1,0 +1,15 @@
+{
+  "id": "0dedfb8771d8086dbda7d7dc207f21d908c58b46fb8695612739de460c0e1db8",
+  "url": "/assets/audio/narration/0dedfb8771d8086dbda7d7dc207f21d908c58b46fb8695612739de460c0e1db8.mp3",
+  "text": "经过文化实践与历史事件，我们开始第三段旅程，把地方放回更大联系。先沿河谷的水向外看：支流、上游与下游组成流域，生态和社会用水也因此相连。行政边界与自然分水岭并不是同一种范围。",
+  "duration": 16.956,
+  "bytes": 273012,
+  "sha256": "7df9500669a9fe0f9da88333c217415277095d88406acbe23404001788de3ff7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:40:34.008Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "b7548d75bf46984d8aad8148e50bad7dc89b6c304c1d85590a2233d9a9e45cd2",
+  "url": "/assets/audio/narration/b7548d75bf46984d8aad8148e50bad7dc89b6c304c1d85590a2233d9a9e45cd2.mp3",
+  "text": "把通行和用水的问题留在心里。林芝周围绿色的较缓空间被山地分开，赭色叠加二〇二一年建成地表分类。它包括建筑和道路，提供有年份的观测，不能把绿色地面直接当作城市。",
+  "duration": 15.804,
+  "bytes": 254580,
+  "sha256": "40fc5b2cfd9f39479f590b33d61c60300471ce974aab30d9f4fcdc4817119050",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:24:53.825Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b7548d75bf46984d8aad8148e50bad7dc89b6c304c1d85590a2233d9a9e45cd2.subtitles.json",
+  "subtitleSha256": "631d885345b57de9442a0ae29d5f37f2645fc34f2dcbb006622948b0ba17529f",
+  "timingLevel": "word"
+}

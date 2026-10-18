@@ -1,0 +1,15 @@
+{
+  "id": "de6aa67ab451d4c0857ffe7e4d3835f767548257b4565378f2d43b542ad33b01",
+  "url": "/assets/audio/narration/de6aa67ab451d4c0857ffe7e4d3835f767548257b4565378f2d43b542ad33b01.mp3",
+  "text": "一次天气告诉我们一个短时状态，不能代表全年。下一步仍固定一个地方，把时间扩大到春夏秋冬：照射、积雪与输送背景怎样重复改变？这样就能区分某次天气和季节规律这两种问题。",
+  "duration": 16.091,
+  "bytes": 259188,
+  "sha256": "d213ca3b8ae850387ad9a02ef23014782084033037f449fb76c23c190bbcbab8",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:45.024Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

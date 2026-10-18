@@ -1,0 +1,15 @@
+{
+  "id": "2b0e924c9b9a05c22251913c8c63e2a27bc301bc996f930f60533586df323279",
+  "url": "/assets/audio/narration/2b0e924c9b9a05c22251913c8c63e2a27bc301bc996f930f60533586df323279.mp3",
+  "text": "形成过程解释了地貌，却解释不了地方名称、生活安排与文化记忆。下一步回到河谷周边的聚落，看人怎样使用、讲述和保护这片山川。自然景观会由此连接历史与日常，而不止成为观看对象。",
+  "duration": 17.856,
+  "bytes": 287412,
+  "sha256": "9e48f519ca04c96fdc2b93a7ec9aa662a53d27f0fe0f2c9e193c00f2aa1c1b7d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:10.692Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "41b1c2e58ab69014c116aeb75fdc0b8bdad4fe101e4e6447224919778cd97365",
+  "url": "/assets/audio/narration/41b1c2e58ab69014c116aeb75fdc0b8bdad4fe101e4e6447224919778cd97365.mp3",
+  "text": "林芝的山谷没有自动生成工布文化。二〇〇六年，工布新年进入保护名录；二〇二六年，图书馆与博物馆把服饰讲解带进家庭实践。文化通过人的组织与学习延续。",
+  "duration": 17.496,
+  "bytes": 281652,
+  "sha256": "f91d8abec7eef79dd493027d35972503aa703b1d997ed747cf61911b31579eb3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:56:37.695Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "8287c033f0a57d9bc118978bb3e067657f1a5560b1436ce957088ff771ff660f",
+  "url": "/assets/audio/narration/8287c033f0a57d9bc118978bb3e067657f1a5560b1436ce957088ff771ff660f.mp3",
+  "text": "切换这个条件，看看自然空间怎样经过人的工作，接到聚落生活。",
+  "duration": 5.508,
+  "bytes": 89844,
+  "sha256": "d3caf779c07525f6d95fadc833de4baaad0a2f84dd7a6ef4a86504f66d602927",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:56:10.146Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

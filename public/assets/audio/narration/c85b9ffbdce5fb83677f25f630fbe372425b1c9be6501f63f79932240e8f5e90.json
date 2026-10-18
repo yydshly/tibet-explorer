@@ -1,0 +1,19 @@
+{
+  "id": "c85b9ffbdce5fb83677f25f630fbe372425b1c9be6501f63f79932240e8f5e90",
+  "url": "/assets/audio/narration/c85b9ffbdce5fb83677f25f630fbe372425b1c9be6501f63f79932240e8f5e90.mp3",
+  "text": "留在拉萨河谷，把时间展开。大昭寺创建于七世纪，是认识早期宗教与老城的入口。",
+  "duration": 7.632,
+  "bytes": 123828,
+  "sha256": "1a4396648c79ef32c035c245a433527ea7228907c1caef7dbbf157327a4f48ad",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:17:49.340Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c85b9ffbdce5fb83677f25f630fbe372425b1c9be6501f63f79932240e8f5e90.subtitles.json",
+  "subtitleSha256": "6e1aa3fa61178d836acd39a19271cac8efa2ec4e314cbe80e4b4fa68bda0e008",
+  "timingLevel": "word"
+}

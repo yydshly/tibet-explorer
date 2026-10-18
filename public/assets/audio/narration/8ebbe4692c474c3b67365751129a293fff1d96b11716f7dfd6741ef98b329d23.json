@@ -1,0 +1,15 @@
+{
+  "id": "8ebbe4692c474c3b67365751129a293fff1d96b11716f7dfd6741ef98b329d23",
+  "url": "/assets/audio/narration/8ebbe4692c474c3b67365751129a293fff1d96b11716f7dfd6741ef98b329d23.mp3",
+  "text": "碑让事件通过材料留在地方，但今天的拉萨还包含不同时代的建筑与使用。下一步从碑体回到同一城市，辨认始建、扩建、现存形制和当代用途，避免把一座今天看到的建筑放进所有历史时期。",
+  "duration": 16.632,
+  "bytes": 267828,
+  "sha256": "87143959f60ced7551b2292da0b30a799edca62cad699ced352d6ae2deafef15",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:51.337Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

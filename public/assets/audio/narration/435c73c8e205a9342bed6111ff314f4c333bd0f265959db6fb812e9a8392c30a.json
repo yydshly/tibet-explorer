@@ -1,0 +1,19 @@
+{
+  "id": "435c73c8e205a9342bed6111ff314f4c333bd0f265959db6fb812e9a8392c30a",
+  "url": "/assets/audio/narration/435c73c8e205a9342bed6111ff314f4c333bd0f265959db6fb812e9a8392c30a.mp3",
+  "text": "2021年6月25日，拉林铁路开通，山南增加了铁路客运联系。当时采访中的卓玛因工作每周往返山南与拉萨，铁路改变了她的出行选择。这个个人案例能说明一种生活变化，不能代替对所有居民或通勤时间的统计。",
+  "duration": 19.224,
+  "bytes": 309300,
+  "sha256": "5e955ed67c826a30d3dd56e2ee638f89d06342504d3e5b8ff53f6e37d998c9aa",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:52:40.275Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/435c73c8e205a9342bed6111ff314f4c333bd0f265959db6fb812e9a8392c30a.subtitles.json",
+  "subtitleSha256": "6c6ceb92f1d0564c06dfac6e736cefc7ea82c011bdc6f8f5e04300a417a667d2",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "0d10ba09cd0cb7fe54bbaa38635afab334f0cb903ded18f86abc621b6d8e92b4",
+  "url": "/assets/audio/narration/0d10ba09cd0cb7fe54bbaa38635afab334f0cb903ded18f86abc621b6d8e92b4.mp3",
+  "text": "来到最后一段，先回看你沿途关心什么。是云雨与河谷、历史材料、信仰艺术，还是今天的生活？同一地点可以连接多个主题，同一问题也可以跨地区。我们要把这些关系整理成自己的认识地图。",
+  "duration": 17.604,
+  "bytes": 283380,
+  "sha256": "c4a7fe2949e105b7089870210203261ee56849c313c19b506f4481ba7bb93c35",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:37.067Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

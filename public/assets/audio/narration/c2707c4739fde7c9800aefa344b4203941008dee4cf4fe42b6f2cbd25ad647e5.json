@@ -1,0 +1,15 @@
+{
+  "id": "c2707c4739fde7c9800aefa344b4203941008dee4cf4fe42b6f2cbd25ad647e5",
+  "url": "/assets/audio/narration/c2707c4739fde7c9800aefa344b4203941008dee4cf4fe42b6f2cbd25ad647e5.mp3",
+  "text": "机场落地后，继续看昆莎到狮泉河的地面联系。吕新民的口述记载，二〇〇四年这段二一九国道已建成柏油路，早于二〇一〇年通航。飞机增加抵达方式，行李和乘客仍要沿地面进入城镇。这里读现状道路的位置，不把它当作当年的竣工图。",
+  "duration": 18.936,
+  "bytes": 304692,
+  "sha256": "c94a76bb292c058d1aef4ffb2032832f26f293ac244b4bbcdfbcc246d6870cc2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:21:21.109Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

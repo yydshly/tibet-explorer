@@ -1,0 +1,19 @@
+{
+  "id": "b8ab998fbf6ee08c0c5a82ce256f0e9120a5c2eb2dda7e010b6701fda74ba394",
+  "url": "/assets/audio/narration/b8ab998fbf6ee08c0c5a82ce256f0e9120a5c2eb2dda7e010b6701fda74ba394.mp3",
+  "text": "可以移动南北剖面的位置，再转动地形比较山脊、坡面与较低处。展开剖切时，切面表示地形高程，不是地下岩层。保留南侧海洋与高原内部的方向，继续问：空气和水来到这里可能遇到什么？",
+  "duration": 17.964,
+  "bytes": 289140,
+  "sha256": "94ca2b6f492c9dda29772d32150d31d305647552075c8ecd470cb65444c0946e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:32:57.613Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b8ab998fbf6ee08c0c5a82ce256f0e9120a5c2eb2dda7e010b6701fda74ba394.subtitles.json",
+  "subtitleSha256": "42d9da581e2b55d209a7c26fb2d4d83e87a6ce50b2d1718425b53f44835a8ef1",
+  "timingLevel": "word"
+}

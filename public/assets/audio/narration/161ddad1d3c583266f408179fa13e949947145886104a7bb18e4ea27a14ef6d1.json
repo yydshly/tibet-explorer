@@ -1,0 +1,15 @@
+{
+  "id": "161ddad1d3c583266f408179fa13e949947145886104a7bb18e4ea27a14ef6d1",
+  "url": "/assets/audio/narration/161ddad1d3c583266f408179fa13e949947145886104a7bb18e4ea27a14ef6d1.mp3",
+  "text": "同时看拉萨，高原河谷的干湿季明显。空气遇山抬升会冷却，但有水汽不等于一定下雨。",
+  "duration": 8.676,
+  "bytes": 140532,
+  "sha256": "34b211e966de5d0d808f2aa978fa6643b262c652772de804531a2402e2111f7a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T09:27:33.309Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

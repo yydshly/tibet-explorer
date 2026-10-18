@@ -1,0 +1,15 @@
+{
+  "id": "e1f3235275f3ecea8b210032bbc6ea8e52277f010b626171cd3f3d388e72dad2",
+  "url": "/assets/audio/narration/e1f3235275f3ecea8b210032bbc6ea8e52277f010b626171cd3f3d388e72dad2.mp3",
+  "text": "俯视帮助认出山系与河道的走向，斜视让高差更清楚。沿山脊、坡面和谷底看水的分汇，也看看地方之间可能怎样通行。此前认识的外部来向，现在有了沿途的地形背景；这比只记一个平均高度更能帮助理解地方。",
+  "duration": 18.072,
+  "bytes": 290868,
+  "sha256": "56cb39054e1971313a743b29fa39393af8d39ad2735aa94b8a458405061ecc39",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:33.886Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

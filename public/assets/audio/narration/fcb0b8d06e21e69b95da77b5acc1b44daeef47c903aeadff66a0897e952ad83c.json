@@ -1,0 +1,19 @@
+{
+  "id": "fcb0b8d06e21e69b95da77b5acc1b44daeef47c903aeadff66a0897e952ad83c",
+  "url": "/assets/audio/narration/fcb0b8d06e21e69b95da77b5acc1b44daeef47c903aeadff66a0897e952ad83c.mp3",
+  "text": "从全域定位林芝，再沿同一张地图拉近。先看地面起伏，金色剖线和读数来自高程网格，不是道路。移动探针，比较沿线高低变化；切换剖面方向，看到不同方向需要面对的高差。青色地面标出观察窗内相对较低、较缓的样本，不是城市边界或建设用地。山地河谷为生活提供不同条件，实际通行还需要道路、桥梁与维护。回到全域，与拉萨和狮泉河比较，然后再追问人的历史行动。",
+  "duration": 35.1,
+  "bytes": 563316,
+  "sha256": "c4ef8206dc6421b8f1899b59d8f912c06b6474563dd17b08be20ff58de826e45",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:49:59.597Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/fcb0b8d06e21e69b95da77b5acc1b44daeef47c903aeadff66a0897e952ad83c.subtitles.json",
+  "subtitleSha256": "b8124c7f5289bbeda1481edb8ab38d3966ad7c0db198bf70f533b97ea249bf54",
+  "timingLevel": "word"
+}

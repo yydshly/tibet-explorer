@@ -1,0 +1,19 @@
+{
+  "id": "dca795be330213316700c052839502b57cec18a016c706d38db36f1cc8d47486",
+  "url": "/assets/audio/narration/dca795be330213316700c052839502b57cec18a016c706d38db36f1cc8d47486.mp3",
+  "text": "这一程从地球位置出发，经历气候地形、生活文化、历史证据、周边联系和现代发展。现在把真正关心的站点和问题保留下来。认识出处、出行条件与个人观察是不同内容，保存时都要有自己的位置。",
+  "duration": 17.82,
+  "bytes": 286836,
+  "sha256": "b4577b5328ed4491b1b0a24e2c118f1472148a083bccd5b4ef83ebea8a5dd249",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:14:21.446Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/dca795be330213316700c052839502b57cec18a016c706d38db36f1cc8d47486.subtitles.json",
+  "subtitleSha256": "b1c01baff9f7d034161866c700415ba7f9f4f1f6c68d0040a734a3dba19ba434",
+  "timingLevel": "word"
+}

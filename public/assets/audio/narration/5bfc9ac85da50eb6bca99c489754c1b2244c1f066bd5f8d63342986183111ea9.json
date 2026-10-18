@@ -1,0 +1,15 @@
+{
+  "id": "5bfc9ac85da50eb6bca99c489754c1b2244c1f066bd5f8d63342986183111ea9",
+  "url": "/assets/audio/narration/5bfc9ac85da50eb6bca99c489754c1b2244c1f066bd5f8d63342986183111ea9.mp3",
+  "text": "西藏位于亚洲大陆的内部，南侧联系印度洋方向，周围有广阔的大陆与高山。先辨认海洋和亚洲，再看拉萨所在的位置。这里标出的是一个定位点，西藏和整个青藏高原都有更大的范围。",
+  "duration": 15.192,
+  "bytes": 244788,
+  "sha256": "fa022a0636fb974297db92d07e4eb735ed4a81d5353df1f86b73006a00846344",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:48:45.068Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

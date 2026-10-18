@@ -1,0 +1,15 @@
+{
+  "id": "76169c9cda56f181528e8b26308229312f38a18e49caef11b70713c11482b7ff",
+  "url": "/assets/audio/narration/76169c9cda56f181528e8b26308229312f38a18e49caef11b70713c11482b7ff.mp3",
+  "text": "理解驱动机制以后，还需要具体资料认识地方变化。下一步在地图找到色林错，比较有年份的湖面面积研究记录。先核对对象、日期、单位与资料身份，再看两期数值的差异；原因仍需要独立证据。",
+  "duration": 17.1,
+  "bytes": 275316,
+  "sha256": "8361715ab6b711711db70fa90e2b3d33349c444c5c83dd6438176cea0715a12e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:50:49.377Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

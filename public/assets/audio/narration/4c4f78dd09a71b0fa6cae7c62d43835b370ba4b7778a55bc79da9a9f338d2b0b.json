@@ -1,0 +1,19 @@
+{
+  "id": "4c4f78dd09a71b0fa6cae7c62d43835b370ba4b7778a55bc79da9a9f338d2b0b",
+  "url": "/assets/audio/narration/4c4f78dd09a71b0fa6cae7c62d43835b370ba4b7778a55bc79da9a9f338d2b0b.mp3",
+  "text": "把季节加入同一片地形。那曲气候资料说明冬季寒冷，夏季不热，降水集中在较暖时段。教学对照让水汽、云雨与地面生长条件一起变化，帮助理解可用牧草为什么有季节；它不代表某天或全市的实测天气。",
+  "duration": 17.928,
+  "bytes": 288564,
+  "sha256": "8cb11850e8846ba143f9d9dc960ec06975948d62a542c03762af248fc289895b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:54:38.276Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4c4f78dd09a71b0fa6cae7c62d43835b370ba4b7778a55bc79da9a9f338d2b0b.subtitles.json",
+  "subtitleSha256": "2d64a72324a6460e44e6bbb5fbd629468ee173dcb8ac8ce87800b52a29d38adc",
+  "timingLevel": "word"
+}

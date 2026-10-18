@@ -1,0 +1,15 @@
+{
+  "id": "5dd719c24bb702bcb04d12d08c6193c0734acf38a92ac46e92e70d40095788ba",
+  "url": "/assets/audio/narration/5dd719c24bb702bcb04d12d08c6193c0734acf38a92ac46e92e70d40095788ba.mp3",
+  "text": "请切换到碑体观察，环绕看碑身与台座，再由资料入口查看真实碑文与拓本。这里的模型只有结构示意，没有仿造原碑文字。通过材料的身份与年代，我们才能把看见的物体准确接回历史事件。",
+  "duration": 15.912,
+  "bytes": 256308,
+  "sha256": "42da3305a7d96c4f64bf9604d1f4841900b3beda9654490a78c0ba987a21a526",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:45.619Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

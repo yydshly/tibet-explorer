@@ -1,0 +1,15 @@
+{
+  "id": "fc91e6c9812ece539207c7ca30d44fac468942945d660c91548556160ce063df",
+  "url": "/assets/audio/narration/fc91e6c9812ece539207c7ca30d44fac468942945d660c91548556160ce063df.mp3",
+  "text": "看清景观的位置以后，继续追问轮廓为什么如此。下一步从可见空间转入形成过程，把流水、冰川、坡面搬运与地质背景作为线索；具体成因仍需要相应地点证据，不能只用一个通用故事解释所有山川。",
+  "duration": 18,
+  "bytes": 289716,
+  "sha256": "c8bc9da0a4e9fdca5131de36e772bd31a941a7ae8ee88ae92689143961cbdaf4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:45.612Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

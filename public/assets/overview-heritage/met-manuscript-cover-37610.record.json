@@ -1,0 +1,89 @@
+{
+  "objectID": 37610,
+  "isHighlight": false,
+  "accessionNumber": "1987.407.6",
+  "accessionYear": "1987",
+  "isPublicDomain": true,
+  "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP-30662-001.jpg",
+  "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP-30662-001.jpg",
+  "additionalImages": [],
+  "constituents": null,
+  "department": "Asian Art",
+  "objectName": "Manuscript cover",
+  "title": "Manuscript Cover with the Buddha Shakyamuni, Attended by Manjushri and Vajrapani",
+  "culture": "Tibet",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "",
+  "artistPrefix": "",
+  "artistDisplayName": "",
+  "artistDisplayBio": "",
+  "artistSuffix": "",
+  "artistAlphaSort": "",
+  "artistNationality": "",
+  "artistBeginDate": "",
+  "artistEndDate": "",
+  "artistGender": "",
+  "artistWikidata_URL": "",
+  "artistULAN_URL": "",
+  "objectDate": "ca. early 12th century",
+  "objectBeginDate": 1100,
+  "objectEndDate": 1133,
+  "medium": "Wood with traces of red paint",
+  "dimensions": "H. 4 5/8 in. (11.7 cm); W. 13 3/4 in. (35 cm)",
+  "measurements": [
+    {
+      "elementName": "Overall",
+      "elementDescription": null,
+      "elementMeasurements": {
+        "Height": 11.7,
+        "Width": 35
+      }
+    }
+  ],
+  "creditLine": "Gift of Michael and Georgia de Havenon, 1987",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Woodwork",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2025-12-16T04:54:57.693Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/37610",
+  "tags": [
+    {
+      "term": "Buddha",
+      "AAT_URL": "http://vocab.getty.edu/page/aat/300262950",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q7055"
+    },
+    {
+      "term": "Manjushri",
+      "AAT_URL": "http://vocab.getty.edu/page/ia/901000407",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q471696"
+    },
+    {
+      "term": "Shakyamuni",
+      "AAT_URL": "http://vocab.getty.edu/page/ia/901000851",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q9441"
+    },
+    {
+      "term": "Vajrapani",
+      "AAT_URL": "http://vocab.getty.edu/page/ia/901001387",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q1366849"
+    }
+  ],
+  "objectWikidata_URL": "",
+  "isTimelineWork": false,
+  "GalleryNumber": ""
+}

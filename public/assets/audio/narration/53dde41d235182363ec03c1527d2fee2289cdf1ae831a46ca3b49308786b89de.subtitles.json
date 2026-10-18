@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "audioSha256": "e3afdc48529ec837e5730b5894fda8eb5fb79a29b49374396812a3ed58c7853f",
+  "textSha256": "a4ea4d5cf90380c1a99e429f3738a41a2a6e509cd3214e76b9972075dfc3c49c",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 9.828,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 9.663990929705216,
+      "text": "再看西部阿里，地方资料强调寒冷少雨。来流、山地和季节的组合不同，同在高原也会有不同的水热条件。",
+      "textStart": 0,
+      "textEnd": 47
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.2871794871794871,
+      "text": "再",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.2871794871794871,
+      "end": 0.4512820512820513,
+      "text": "看",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.4512820512820513,
+      "end": 0.6153846153846153,
+      "text": "西",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.6153846153846153,
+      "end": 0.7384615384615385,
+      "text": "部",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.7384615384615385,
+      "end": 0.8615384615384616,
+      "text": "阿",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.8615384615384616,
+      "end": 0.9846153846153846,
+      "text": "里",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9846153846153846,
+      "end": 1.0256410256410255,
+      "text": "，",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.0256410256410255,
+      "end": 1.7230769230769232,
+      "text": "地",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.7230769230769232,
+      "end": 1.8871794871794871,
+      "text": "方",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.8871794871794871,
+      "end": 2.051282051282051,
+      "text": "资",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 2.051282051282051,
+      "end": 2.1743589743589746,
+      "text": "料",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.1743589743589746,
+      "end": 2.3384615384615386,
+      "text": "强",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.3384615384615386,
+      "end": 2.5025641025641026,
+      "text": "调",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.5025641025641026,
+      "end": 2.6666666666666665,
+      "text": "寒",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.6666666666666665,
+      "end": 2.871794871794872,
+      "text": "冷",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.871794871794872,
+      "end": 2.9948717948717944,
+      "text": "少",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.9948717948717944,
+      "end": 3.2410256410256406,
+      "text": "雨",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.2410256410256406,
+      "end": 3.4051282051282046,
+      "text": "。",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 4.102564102564102,
+      "text": "来",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.102564102564102,
+      "end": 4.307692307692307,
+      "text": "流",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.307692307692307,
+      "end": 4.43076923076923,
+      "text": "、",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.43076923076923,
+      "end": 4.9230769230769225,
+      "text": "山",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.9230769230769225,
+      "end": 5.169230769230769,
+      "text": "地",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 5.169230769230769,
+      "end": 5.374358974358974,
+      "text": "和",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 5.374358974358974,
+      "end": 5.538461538461538,
+      "text": "季",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.538461538461538,
+      "end": 5.743589743589744,
+      "text": "节",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.743589743589744,
+      "end": 5.7846153846153845,
+      "text": "的",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.7846153846153845,
+      "end": 5.948717948717949,
+      "text": "组",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.112820512820512,
+      "text": "合",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.112820512820512,
+      "end": 6.235897435897436,
+      "text": "不",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 6.235897435897436,
+      "end": 6.358974358974359,
+      "text": "同",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 6.358974358974359,
+      "end": 6.4,
+      "text": "，",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.4,
+      "end": 6.933333333333333,
+      "text": "同",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.933333333333333,
+      "end": 7.3025641025641015,
+      "text": "在",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 7.3025641025641015,
+      "end": 7.466666666666666,
+      "text": "高",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 7.466666666666666,
+      "end": 7.63076923076923,
+      "text": "原",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 7.63076923076923,
+      "end": 7.9179487179487165,
+      "text": "也",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 7.9179487179487165,
+      "end": 8.328205128205129,
+      "text": "会",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 8.328205128205129,
+      "end": 8.451282051282051,
+      "text": "有",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 8.451282051282051,
+      "end": 8.574358974358974,
+      "text": "不",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 8.574358974358974,
+      "end": 8.656410256410256,
+      "text": "同",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 8.656410256410256,
+      "end": 8.697435897435899,
+      "text": "的",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 8.697435897435899,
+      "end": 8.943589743589744,
+      "text": "水",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 8.943589743589744,
+      "end": 9.107692307692307,
+      "text": "热",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 9.107692307692307,
+      "end": 9.23076923076923,
+      "text": "条",
+      "textStart": 44,
+      "textEnd": 45
+    },
+    {
+      "start": 9.23076923076923,
+      "end": 9.394871794871795,
+      "text": "件",
+      "textStart": 45,
+      "textEnd": 46
+    },
+    {
+      "start": 9.394871794871795,
+      "end": 9.558974358974357,
+      "text": "。",
+      "textStart": 46,
+      "textEnd": 47
+    }
+  ]
+}

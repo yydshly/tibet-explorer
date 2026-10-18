@@ -1,0 +1,15 @@
+{
+  "id": "39f1d2c624271c48eb622109f1f7d93f0c58dd5018ba9e88e63e286d13f74148",
+  "url": "/assets/audio/narration/39f1d2c624271c48eb622109f1f7d93f0c58dd5018ba9e88e63e286d13f74148.mp3",
+  "text": "现在沿中国西南找到西藏，辨认地区范围与拉萨定位点：前者告诉我们这片地方在哪里，后者帮助找到一座城市。可以转动和缩放，再把同一目标带回视野。以后进入河谷或建筑，也沿这条来路返回。",
+  "duration": 16.02,
+  "bytes": 258036,
+  "sha256": "79aed890afbafb9f0007eca9aa1ea2e540986027a02df641f7c582d5c743538c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:18:49.744Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

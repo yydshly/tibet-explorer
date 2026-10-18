@@ -1,0 +1,19 @@
+{
+  "id": "67a674acf6ce80b1530a851cd8169b4df235c378ee12627037b7c2ab189ef797",
+  "url": "/assets/audio/narration/67a674acf6ce80b1530a851cd8169b4df235c378ee12627037b7c2ab189ef797.mp3",
+  "text": "恰青赛马会不能只解释为草原上跑马。国家非遗项目说明，十七至十八世纪那曲有集训活动，后来有阅兵赛马；今天的节会还包括竞技、歌舞和交换。不同年代的组织与用途发生变化，文化的形成需要历史材料来说明。",
+  "duration": 16.92,
+  "bytes": 272436,
+  "sha256": "585045d92eb1da9bfa6255039783726a5116eb927cb27f11da0314883f392fee",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:56:15.942Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/67a674acf6ce80b1530a851cd8169b4df235c378ee12627037b7c2ab189ef797.subtitles.json",
+  "subtitleSha256": "2316803a71c996e77a81bc03dc6787560e70216f86e223bac303d21954f09f17",
+  "timingLevel": "word"
+}

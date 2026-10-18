@@ -1,0 +1,18 @@
+{
+  "asset": "lhasa-aster-2005.jpg",
+  "title": "Lhasa, Tibet",
+  "sourcePage": "https://science.nasa.gov/earth/earth-observatory/lhasa-tibet-40334/",
+  "downloadUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/40000/40334/lhasa_ast_2005328.jpg?w=720&h=480&fit=clip&crop=faces%2Cfocalpoint",
+  "retrievedDate": "2026-10-15",
+  "acquiredDate": "2005-11-24",
+  "publishedDate": "2009-09-26",
+  "dimensions": [720, 480],
+  "bytes": 123849,
+  "sha256": "7e5ee48961a3236a75acf7211183bddccdde89fbdfba98ae2636fc9bd99291b2",
+  "credit": "NASA image created by Jesse Allen, using data provided courtesy of NASA/GSFC/METI/ERSDAC/JAROS, and U.S./Japan ASTER Science Team.",
+  "identity": "ASTER false-color image draped on a three-dimensional landscape created from the instrument's stereo sensors. This depicts Lhasa and its river valley on the acquired date, not a contemporary city survey. The source image contains its own English labels.",
+  "colors": "Plant-covered land is red; human-made surfaces tend to be silver or white. These are source false colors, not the product's color coding.",
+  "usage": "Used for factual educational/informational purposes with attribution under NASA Images and Media Usage Guidelines. The primary record identifies this as a NASA-created image and contains no separate third-party copyright notice; data credits are preserved. No endorsement is implied.",
+  "usagePolicy": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "localProcessing": "None. Downloaded NASA's 720 by 480 web rendition unchanged. Thumbnail is displayed with CSS object-fit:cover and object-position:50% 58%; no fabricated geometry, image generation, recoloring or compositing."
+}

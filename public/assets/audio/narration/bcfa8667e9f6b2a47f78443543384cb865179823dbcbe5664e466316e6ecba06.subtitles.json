@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "audioSha256": "78fe71f8f78b3c60705f0c81a623db0da9e7d59d05fc9d6212e09d05fca7adf0",
+  "textSha256": "97a74b537de3412d79c8b01f56f0daa81db03dfea1c85e1d4784c1a9d93ba869",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 10.008,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 9.861360544217687,
+      "text": "阿里既有高地、湖盆，也有宽谷和峡谷。现在比较水源、可用土地和通行要跨越的地面，准备进入生活。",
+      "textStart": 0,
+      "textEnd": 46
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.24615384615384614,
+      "text": "阿",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.24615384615384614,
+      "end": 0.41025641025641024,
+      "text": "里",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.5333333333333332,
+      "text": "既",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 0.6564102564102563,
+      "text": "有",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6564102564102563,
+      "end": 0.7794871794871795,
+      "text": "高",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.7794871794871795,
+      "end": 0.9846153846153846,
+      "text": "地",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9846153846153846,
+      "end": 1.0256410256410255,
+      "text": "、",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.0256410256410255,
+      "end": 1.3948717948717948,
+      "text": "湖",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.3948717948717948,
+      "end": 1.7230769230769232,
+      "text": "盆",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.7230769230769232,
+      "end": 1.7641025641025643,
+      "text": "，",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.7641025641025643,
+      "end": 2.2564102564102564,
+      "text": "也",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.2564102564102564,
+      "end": 2.6666666666666665,
+      "text": "有",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.6666666666666665,
+      "end": 2.7487179487179483,
+      "text": "宽",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.7487179487179483,
+      "end": 2.953846153846154,
+      "text": "谷",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.953846153846154,
+      "end": 3.117948717948718,
+      "text": "和",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.117948717948718,
+      "end": 3.2410256410256406,
+      "text": "峡",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.2410256410256406,
+      "end": 3.4051282051282046,
+      "text": "谷",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.5282051282051285,
+      "text": "。",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.5282051282051285,
+      "end": 4.307692307692307,
+      "text": "现",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.307692307692307,
+      "end": 4.471794871794872,
+      "text": "在",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.471794871794872,
+      "end": 4.594871794871794,
+      "text": "比",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.594871794871794,
+      "end": 4.717948717948717,
+      "text": "较",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.717948717948717,
+      "end": 4.841025641025641,
+      "text": "水",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.841025641025641,
+      "end": 5.046153846153846,
+      "text": "源",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 5.046153846153846,
+      "end": 5.169230769230769,
+      "text": "、",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.169230769230769,
+      "end": 5.702564102564102,
+      "text": "可",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.702564102564102,
+      "end": 5.866666666666666,
+      "text": "用",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.866666666666666,
+      "end": 6.03076923076923,
+      "text": "土",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.03076923076923,
+      "end": 6.235897435897436,
+      "text": "地",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.235897435897436,
+      "end": 6.358974358974359,
+      "text": "和",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 6.358974358974359,
+      "end": 6.482051282051281,
+      "text": "通",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 6.482051282051281,
+      "end": 6.646153846153846,
+      "text": "行",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.646153846153846,
+      "end": 6.851282051282051,
+      "text": "要",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.851282051282051,
+      "end": 7.384615384615385,
+      "text": "跨",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 7.384615384615385,
+      "end": 7.5897435897435885,
+      "text": "越",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 7.5897435897435885,
+      "end": 7.63076923076923,
+      "text": "的",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 7.63076923076923,
+      "end": 7.794871794871793,
+      "text": "地",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 7.794871794871793,
+      "end": 7.9179487179487165,
+      "text": "面",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 7.9179487179487165,
+      "end": 7.958974358974357,
+      "text": "，",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 7.958974358974357,
+      "end": 8.451282051282051,
+      "text": "准",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 8.451282051282051,
+      "end": 8.902564102564101,
+      "text": "备",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 8.902564102564101,
+      "end": 9.066666666666666,
+      "text": "进",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 9.066666666666666,
+      "end": 9.23076923076923,
+      "text": "入",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 9.23076923076923,
+      "end": 9.353846153846154,
+      "text": "生",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 9.353846153846154,
+      "end": 9.517948717948718,
+      "text": "活",
+      "textStart": 44,
+      "textEnd": 45
+    },
+    {
+      "start": 9.517948717948718,
+      "end": 9.723076923076922,
+      "text": "。",
+      "textStart": 45,
+      "textEnd": 46
+    }
+  ]
+}

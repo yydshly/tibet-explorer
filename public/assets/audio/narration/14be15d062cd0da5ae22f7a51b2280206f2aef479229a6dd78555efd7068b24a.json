@@ -1,0 +1,15 @@
+{
+  "id": "14be15d062cd0da5ae22f7a51b2280206f2aef479229a6dd78555efd7068b24a",
+  "url": "/assets/audio/narration/14be15d062cd0da5ae22f7a51b2280206f2aef479229a6dd78555efd7068b24a.mp3",
+  "text": "我们已经知道西藏在哪里，周围有哪些海陆与山地，也看见了外部联系的来向。现在回到一个更早的问题：这片广阔高地本身从何而来？接下来从今天的空间背景进入地质时间，看形成过程怎样留下高原与山系。",
+  "duration": 15.84,
+  "bytes": 255156,
+  "sha256": "e1a4602ca096695ffb1a4ba256b6c7a4b3b991be7382d0796f361b3333881ee9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:20.872Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

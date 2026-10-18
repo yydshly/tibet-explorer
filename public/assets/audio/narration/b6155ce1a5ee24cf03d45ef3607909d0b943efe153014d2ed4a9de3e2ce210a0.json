@@ -1,0 +1,15 @@
+{
+  "id": "b6155ce1a5ee24cf03d45ef3607909d0b943efe153014d2ed4a9de3e2ce210a0",
+  "url": "/assets/audio/narration/b6155ce1a5ee24cf03d45ef3607909d0b943efe153014d2ed4a9de3e2ce210a0.mp3",
+  "text": "铁路把地方连进网络，居民是否用得上，还与服务、接驳和家庭处境有关。下一段到拉林铁路与彩门村，听有姓名、有日期的地方访谈，再用设施、人员和到达的过程，说明开通事件怎样接到生活问题。",
+  "duration": 17.136,
+  "bytes": 275892,
+  "sha256": "1e7293b5690fdb3cd4a7dc5dec0425916565c9b90426b80d02f8cf18ec5d8b66",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:55:33.695Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

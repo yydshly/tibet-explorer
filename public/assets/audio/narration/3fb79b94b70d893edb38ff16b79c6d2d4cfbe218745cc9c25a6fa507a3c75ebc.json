@@ -1,0 +1,15 @@
+{
+  "id": "3fb79b94b70d893edb38ff16b79c6d2d4cfbe218745cc9c25a6fa507a3c75ebc",
+  "url": "/assets/audio/narration/3fb79b94b70d893edb38ff16b79c6d2d4cfbe218745cc9c25a6fa507a3c75ebc.mp3",
+  "text": "请观察院落的进入、停留与使用可能，再保存一个想了解的问题，例如谁在使用这个空间，全年生活怎样安排？可以从我的探索写下笔记。让问题对应具体人群和时期，后续资料才会继续推进认识。",
+  "duration": 17.064,
+  "bytes": 274740,
+  "sha256": "36269a668f30643dfc53d5a595352262643c27722ee45bcca001917168719909",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:53.588Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

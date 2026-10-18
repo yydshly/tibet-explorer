@@ -1,0 +1,15 @@
+{
+  "id": "863c835e709b8d6dbe329c4a8b8261fbd61b52bf44f47709078b01810bd7f770",
+  "url": "/assets/audio/narration/863c835e709b8d6dbe329c4a8b8261fbd61b52bf44f47709078b01810bd7f770.mp3",
+  "text": "拉萨先看七世纪创建的大昭寺。再看五世达赖喇嘛时期的白宫，建于一六四五至一六四八年；桑结嘉措主持的红宫在一六九四年完成。不同用途与历次建设，共同改变城市空间。",
+  "duration": 17.244,
+  "bytes": 277620,
+  "sha256": "00555ab082784a8a7ada6f25009d75444306102e4d732685923e6813933e49e6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:56:41.882Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

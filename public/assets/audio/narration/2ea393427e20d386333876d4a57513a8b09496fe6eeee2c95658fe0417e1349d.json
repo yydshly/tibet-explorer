@@ -1,0 +1,15 @@
+{
+  "id": "2ea393427e20d386333876d4a57513a8b09496fe6eeee2c95658fe0417e1349d",
+  "url": "/assets/audio/narration/2ea393427e20d386333876d4a57513a8b09496fe6eeee2c95658fe0417e1349d.mp3",
+  "text": "七至九世纪的吐蕃、之后的地方重组与佛教复兴、蒙古元朝关系、后来的地方政权和近现代转变，各有不同人物与材料。分期帮助组织认识，真正解释仍要落到事件、制度和地方经验，避免只记朝代名称。",
+  "duration": 18.108,
+  "bytes": 291444,
+  "sha256": "e8521ef1256a1e6a70b9a2d5302d26b1788b7b12dd84bede00fa44eed47cb5ec",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:14.138Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

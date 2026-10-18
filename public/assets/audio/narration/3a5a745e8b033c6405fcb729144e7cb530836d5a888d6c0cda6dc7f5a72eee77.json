@@ -1,0 +1,15 @@
+{
+  "id": "3a5a745e8b033c6405fcb729144e7cb530836d5a888d6c0cda6dc7f5a72eee77",
+  "url": "/assets/audio/narration/3a5a745e8b033c6405fcb729144e7cb530836d5a888d6c0cda6dc7f5a72eee77.mp3",
+  "text": "先看整个地球。蓝色海洋储存水和热量，陆地上有高山、平原和河流。空气包围地表；寒冷处能留下冰雪，适合的水热条件支持植物生长。它们彼此相连：水会蒸发进入空气，空气又把热和水带到别处。先认清这些对象，再看这个整体怎样运行。",
+  "duration": 21.564,
+  "bytes": 346740,
+  "sha256": "40665223096a9f9c86d9411e5a721e7f6b06c291d56910f3cc4dc620da587438",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T07:31:34.189Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

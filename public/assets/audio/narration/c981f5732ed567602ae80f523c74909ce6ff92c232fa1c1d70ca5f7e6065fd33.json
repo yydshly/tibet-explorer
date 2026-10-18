@@ -1,0 +1,15 @@
+{
+  "id": "c981f5732ed567602ae80f523c74909ce6ff92c232fa1c1d70ca5f7e6065fd33",
+  "url": "/assets/audio/narration/c981f5732ed567602ae80f523c74909ce6ff92c232fa1c1d70ca5f7e6065fd33.mp3",
+  "text": "景观的意义可以来自生产、通行、信仰、故事与保护行动；不同人群的理解也会不同。自然条件给这些实践提供背景，不能直接推出历史事件。地方传说与考古年代的证据不同，应分别保存它们能够说明的内容。",
+  "duration": 17.064,
+  "bytes": 274740,
+  "sha256": "bde3c18c5df4181e7b8b245df7a8754a6ef62e3f20b0cc63e77093b5c006be10",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:23.145Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

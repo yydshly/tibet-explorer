@@ -1,0 +1,15 @@
+{
+  "id": "c1a80cbfc064d64df6ced2f83145a9f321924eee15cba54dfc570e6489aaf78e",
+  "url": "/assets/audio/narration/c1a80cbfc064d64df6ced2f83145a9f321924eee15cba54dfc570e6489aaf78e.mp3",
+  "text": "工布文化不能由森林和雨量直接推出。先看二〇〇六年，工布新年进入自治区级非遗名录，这是保护节点。",
+  "duration": 9.648,
+  "bytes": 156084,
+  "sha256": "6a569cf1d16092270a398f59f054d12f1e42283bae7d1796c80b3b4c2e80d059",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:56:17.490Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.cache/
+.env
+.env.*
+*.writing
+
+# Generated hosting metadata and previous local audit archives
+.openai/
+qa/*
+!qa/product-acceptance-20261018/
+*.log

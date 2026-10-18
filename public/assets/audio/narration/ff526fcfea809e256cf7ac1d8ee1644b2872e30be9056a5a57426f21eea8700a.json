@@ -1,0 +1,19 @@
+{
+  "id": "ff526fcfea809e256cf7ac1d8ee1644b2872e30be9056a5a57426f21eea8700a",
+  "url": "/assets/audio/narration/ff526fcfea809e256cf7ac1d8ee1644b2872e30be9056a5a57426f21eea8700a.mp3",
+  "text": "一九九五年四月二十八日，邦达机场正式通航，首条航线连接成都与昌都。远距离往来增加了航空选择，但机场不在昌都城区：它位于八宿县邦达草原。把两个位置同时留下，才看得见飞抵机场还不是抵达城市。",
+  "duration": 19.332,
+  "bytes": 311028,
+  "sha256": "d60bfe2c272bffe16959847f8c4d488e73c2365081e691c0cf6ca99458e7d4b4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:58.685Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ff526fcfea809e256cf7ac1d8ee1644b2872e30be9056a5a57426f21eea8700a.subtitles.json",
+  "subtitleSha256": "d3a87070413bb8fbde17ccab4f7adfde0d682bbd9d4de1b451611cdc8530d21b",
+  "timingLevel": "word"
+}

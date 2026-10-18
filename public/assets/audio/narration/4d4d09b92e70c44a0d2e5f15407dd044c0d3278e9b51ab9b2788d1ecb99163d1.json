@@ -1,0 +1,15 @@
+{
+  "id": "4d4d09b92e70c44a0d2e5f15407dd044c0d3278e9b51ab9b2788d1ecb99163d1",
+  "url": "/assets/audio/narration/4d4d09b92e70c44a0d2e5f15407dd044c0d3278e9b51ab9b2788d1ecb99163d1.mp3",
+  "text": "木经板帮助保存书页，表演传统还需要人继续实践。以联合国教科文组织的藏戏资料为例，先辨认金色的讲述者、青色的表演角色和外围的观看者。藏戏可以在广场、寺院，也可以在舞台演出。画面只比较空间关系，圆形排布和角色数量是教学安排，不是每场藏戏的固定样式。",
+  "duration": 22.752,
+  "bytes": 365748,
+  "sha256": "bf94c926f10c5b7c883fa394ebef97384f6d7c1230a81dd8afa145553089e951",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T05:15:13.826Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

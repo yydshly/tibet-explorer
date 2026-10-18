@@ -1,0 +1,15 @@
+{
+  "id": "e345607b23d586807e0747b1127eba77c27baf3a34df5e3cf4599d29ee6cf08a",
+  "url": "/assets/audio/narration/e345607b23d586807e0747b1127eba77c27baf3a34df5e3cf4599d29ee6cf08a.mp3",
+  "text": "先在水源旁取水，再沿通行段把水带到生活空间，最后倒入储水容器。水怎样可被使用，离不开设施、劳动与安排。可以保持同一地形，改换分别使用和共同组织；模型不会替组织方式评分。地名、故事与信仰的意义，还需要具体参与者、年代和材料解释。",
+  "duration": 23.184,
+  "bytes": 372660,
+  "sha256": "09cb6399122c89f4529fa191e8898e41200d777e3766305c4d0b1f7ce08f67cc",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T04:23:05.857Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

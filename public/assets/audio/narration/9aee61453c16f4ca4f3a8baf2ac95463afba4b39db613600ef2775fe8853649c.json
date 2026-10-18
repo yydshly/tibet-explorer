@@ -1,0 +1,19 @@
+{
+  "id": "9aee61453c16f4ca4f3a8baf2ac95463afba4b39db613600ef2775fe8853649c",
+  "url": "/assets/audio/narration/9aee61453c16f4ca4f3a8baf2ac95463afba4b39db613600ef2775fe8853649c.mp3",
+  "text": "从色东普看到，认识一处变化要把自然过程与人的行动相连。现代交通同样如此：线路穿过高原，地下的冰和土也会变化。接下来走到青藏铁路冻土工程，理解技术选择怎样回应环境，通车以后为什么仍需观测。",
+  "duration": 18.144,
+  "bytes": 292020,
+  "sha256": "fd1822a8bbb5620754ee244ba596ba336640c5eef3615529fe14bea26716c0af",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:12:07.570Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9aee61453c16f4ca4f3a8baf2ac95463afba4b39db613600ef2775fe8853649c.subtitles.json",
+  "subtitleSha256": "17a1e6cbcdba86597e116aec3307118dba092c395d0e37f97f28c1550c655eeb",
+  "timingLevel": "word"
+}

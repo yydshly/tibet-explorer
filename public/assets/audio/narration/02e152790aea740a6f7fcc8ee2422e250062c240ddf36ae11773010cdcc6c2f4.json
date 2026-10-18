@@ -1,0 +1,15 @@
+{
+  "id": "02e152790aea740a6f7fcc8ee2422e250062c240ddf36ae11773010cdcc6c2f4",
+  "url": "/assets/audio/narration/02e152790aea740a6f7fcc8ee2422e250062c240ddf36ae11773010cdcc6c2f4.mp3",
+  "text": "第一章已经把地球整体、地区位置、外部联系和地形背景连起来。接下来沿这些问题解释影响怎样发生：同一地点为何有冬夏变化，空气和水怎样运动？先看阳光与季节，再把能量、空气和水带回已经认识的高原。",
+  "duration": 19.764,
+  "bytes": 317940,
+  "sha256": "dbb9627dcf453511c9c174ddecbc3122b7f0d4e01aca959c954f152a60dc94f2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:46.646Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

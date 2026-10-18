@@ -1,0 +1,19 @@
+{
+  "id": "06e7c3cffd5802a3060ee9f7de2952b9e68a8a1ade6bb13e71e6d15879cc9e3a",
+  "url": "/assets/audio/narration/06e7c3cffd5802a3060ee9f7de2952b9e68a8a1ade6bb13e71e6d15879cc9e3a.mp3",
+  "text": "从全史进入一个具体案例。八二一年长安会盟、八二二年拉萨会盟，与八二三年立碑要分开阅读。时间卡表示事件，不是路线图；无字碑体表示载体，也没有复刻原碑的尺寸、装饰或文字。",
+  "duration": 19.44,
+  "bytes": 312756,
+  "sha256": "7b4039794836abdf39d39dc3fede259b1d8eb5ae68944dae5454f2a24dda2db3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:38:13.245Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/06e7c3cffd5802a3060ee9f7de2952b9e68a8a1ade6bb13e71e6d15879cc9e3a.subtitles.json",
+  "subtitleSha256": "e9ac02a32dbb11a87622a02a9c37145bf97996f9e5a9af24d959cdd5f4e54c8d",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "14892ce410a92d9e0649b6da9473c9475a08691d45c514dd449ba0ec5df7d8a9",
+  "url": "/assets/audio/narration/14892ce410a92d9e0649b6da9473c9475a08691d45c514dd449ba0ec5df7d8a9.mp3",
+  "text": "先不要急着只看西藏。让整个地球进入视野：海洋、大陆和包围地表的大气组成共同环境，不同地方通过空气、水和人的活动相连。我们先看这幅整体，再逐层找到亚洲、中国和西藏，为后面的认识建立方向。",
+  "duration": 18.828,
+  "bytes": 302964,
+  "sha256": "8d3a278bd6c0edc808c8ab7b3a4094dbbe8c2ebd247e279c7d9336a1f815116f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:18:40.115Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

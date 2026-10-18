@@ -1,0 +1,19 @@
+{
+  "id": "3deb6ffbd659d551268bc9b3122045f3255cd9d27bd1aa93fa993ba02753a216",
+  "url": "/assets/audio/narration/3deb6ffbd659d551268bc9b3122045f3255cd9d27bd1aa93fa993ba02753a216.mp3",
+  "text": "先在拉萨现状地图中辨认河流、道路和老城，再定位大昭寺。大昭寺创建于七世纪，承担宗教用途。图上的轮廓帮助理解位置，不能把今天的建筑全部放回七世纪。",
+  "duration": 14.292,
+  "bytes": 230388,
+  "sha256": "7f148916296451c39609ed32a44d9d36edb9f4e80e3afc9ce4467a48790318cb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:25:35.562Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3deb6ffbd659d551268bc9b3122045f3255cd9d27bd1aa93fa993ba02753a216.subtitles.json",
+  "subtitleSha256": "e2a3a6e60900b2c331df6b171c2ca78e780355510630783796243fca102023a0",
+  "timingLevel": "word"
+}

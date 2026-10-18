@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "audioSha256": "77e4a9b4a7a26ea0ab0a3c826359e8baa0383995734f2fe9848ba79c2ef283c2",
+  "textSha256": "e20621e65e9b385d476f2c36cc711d48ec233f80eac20d8d56ed20a8d9ea693e",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 13.248,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 13.100544217687075,
+      "text": "全史给出了来路。下面缩到唐蕃会盟，分开事件发生、立碑保存和后来拓本复制的时间，看今天的历史认识怎样经过材料的传递和研究。",
+      "textStart": 0,
+      "textEnd": 60
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.24615384615384614,
+      "text": "全",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.24615384615384614,
+      "end": 0.4923076923076923,
+      "text": "史",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.4923076923076923,
+      "end": 0.6974358974358974,
+      "text": "给",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.6974358974358974,
+      "end": 0.8205128205128205,
+      "text": "出",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.8205128205128205,
+      "end": 0.9435897435897436,
+      "text": "了",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 1.0256410256410255,
+      "text": "来",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 1.0256410256410255,
+      "end": 1.2307692307692306,
+      "text": "路",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.2307692307692306,
+      "end": 1.2717948717948717,
+      "text": "。",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.2717948717948717,
+      "end": 2.1743589743589746,
+      "text": "下",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 2.1743589743589746,
+      "end": 2.3384615384615386,
+      "text": "面",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 2.3384615384615386,
+      "end": 2.4615384615384612,
+      "text": "缩",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.4615384615384612,
+      "end": 2.625641025641025,
+      "text": "到",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.625641025641025,
+      "end": 2.7487179487179483,
+      "text": "唐",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.7487179487179483,
+      "end": 3.076923076923076,
+      "text": "蕃",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 3.076923076923076,
+      "end": 3.2,
+      "text": "会",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.2,
+      "end": 3.364102564102564,
+      "text": "盟",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.364102564102564,
+      "end": 3.4051282051282046,
+      "text": "，",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.9384615384615382,
+      "text": "分",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.9384615384615382,
+      "end": 4.266666666666666,
+      "text": "开",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.389743589743589,
+      "text": "事",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.389743589743589,
+      "end": 4.553846153846154,
+      "text": "件",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.553846153846154,
+      "end": 4.676923076923077,
+      "text": "发",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.676923076923077,
+      "end": 4.8,
+      "text": "生",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.8,
+      "end": 4.9230769230769225,
+      "text": "、",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.9230769230769225,
+      "end": 5.128205128205128,
+      "text": "立",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.128205128205128,
+      "end": 5.948717948717949,
+      "text": "碑",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.071794871794872,
+      "text": "保",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 6.071794871794872,
+      "end": 6.235897435897436,
+      "text": "存",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.235897435897436,
+      "end": 6.605128205128205,
+      "text": "和",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.605128205128205,
+      "end": 7.220512820512821,
+      "text": "后",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 7.220512820512821,
+      "end": 7.384615384615385,
+      "text": "来",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 7.384615384615385,
+      "end": 7.9179487179487165,
+      "text": "拓本",
+      "textStart": 31,
+      "textEnd": 33
+    },
+    {
+      "start": 7.9179487179487165,
+      "end": 8.082051282051282,
+      "text": "复",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 8.082051282051282,
+      "end": 8.246153846153845,
+      "text": "制",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 8.246153846153845,
+      "end": 8.287179487179486,
+      "text": "的",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 8.287179487179486,
+      "end": 8.451282051282051,
+      "text": "时",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 8.451282051282051,
+      "end": 8.574358974358974,
+      "text": "间",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 8.574358974358974,
+      "end": 8.615384615384613,
+      "text": "，",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 8.615384615384613,
+      "end": 9.066666666666666,
+      "text": "看",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 9.066666666666666,
+      "end": 9.846153846153845,
+      "text": "今",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 9.846153846153845,
+      "end": 9.928205128205127,
+      "text": "天",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 9.928205128205127,
+      "end": 9.96923076923077,
+      "text": "的",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 9.96923076923077,
+      "end": 10.133333333333333,
+      "text": "历",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 10.133333333333333,
+      "end": 10.297435897435898,
+      "text": "史",
+      "textStart": 44,
+      "textEnd": 45
+    },
+    {
+      "start": 10.297435897435898,
+      "end": 10.46153846153846,
+      "text": "认",
+      "textStart": 45,
+      "textEnd": 46
+    },
+    {
+      "start": 10.46153846153846,
+      "end": 11.035897435897434,
+      "text": "识",
+      "textStart": 46,
+      "textEnd": 47
+    },
+    {
+      "start": 11.035897435897434,
+      "end": 11.2,
+      "text": "怎",
+      "textStart": 47,
+      "textEnd": 48
+    },
+    {
+      "start": 11.2,
+      "end": 11.364102564102565,
+      "text": "样",
+      "textStart": 48,
+      "textEnd": 49
+    },
+    {
+      "start": 11.364102564102565,
+      "end": 11.528205128205126,
+      "text": "经",
+      "textStart": 49,
+      "textEnd": 50
+    },
+    {
+      "start": 11.528205128205126,
+      "end": 11.733333333333333,
+      "text": "过",
+      "textStart": 50,
+      "textEnd": 51
+    },
+    {
+      "start": 11.733333333333333,
+      "end": 11.856410256410255,
+      "text": "材",
+      "textStart": 51,
+      "textEnd": 52
+    },
+    {
+      "start": 11.856410256410255,
+      "end": 11.979487179487178,
+      "text": "料",
+      "textStart": 52,
+      "textEnd": 53
+    },
+    {
+      "start": 11.979487179487178,
+      "end": 12.02051282051282,
+      "text": "的",
+      "textStart": 53,
+      "textEnd": 54
+    },
+    {
+      "start": 12.02051282051282,
+      "end": 12.184615384615382,
+      "text": "传",
+      "textStart": 54,
+      "textEnd": 55
+    },
+    {
+      "start": 12.184615384615382,
+      "end": 12.348717948717947,
+      "text": "递",
+      "textStart": 55,
+      "textEnd": 56
+    },
+    {
+      "start": 12.348717948717947,
+      "end": 12.512820512820513,
+      "text": "和",
+      "textStart": 56,
+      "textEnd": 57
+    },
+    {
+      "start": 12.512820512820513,
+      "end": 12.635897435897435,
+      "text": "研",
+      "textStart": 57,
+      "textEnd": 58
+    },
+    {
+      "start": 12.635897435897435,
+      "end": 12.8,
+      "text": "究",
+      "textStart": 58,
+      "textEnd": 59
+    },
+    {
+      "start": 12.8,
+      "end": 12.964102564102562,
+      "text": "。",
+      "textStart": 59,
+      "textEnd": 60
+    }
+  ]
+}

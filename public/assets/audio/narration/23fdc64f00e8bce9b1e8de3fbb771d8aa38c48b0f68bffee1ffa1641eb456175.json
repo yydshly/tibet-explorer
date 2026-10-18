@@ -1,0 +1,19 @@
+{
+  "id": "23fdc64f00e8bce9b1e8de3fbb771d8aa38c48b0f68bffee1ffa1641eb456175",
+  "url": "/assets/audio/narration/23fdc64f00e8bce9b1e8de3fbb771d8aa38c48b0f68bffee1ffa1641eb456175.mp3",
+  "text": "同篇报道还介绍另一个地点：聂荣县嘎确牧场自二〇二〇年起收购合作社畜产品，进行加工并向外销售。从草地到产品，再到运输和购买者，中间增加了人的组织与技术。接下来回看节会，理解地方交流怎样积累文化。",
+  "duration": 20.844,
+  "bytes": 335220,
+  "sha256": "0102be44c74862b66fa57578f606aafc01b349f2c298e009165e2db80be9c2c2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:56:00.195Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/23fdc64f00e8bce9b1e8de3fbb771d8aa38c48b0f68bffee1ffa1641eb456175.subtitles.json",
+  "subtitleSha256": "8030ef68da4d8e1a7dc0da1c6f2a85be9fd1f53e548f75f70c88a43e6fcc10c4",
+  "timingLevel": "word"
+}

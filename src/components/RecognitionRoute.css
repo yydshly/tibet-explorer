@@ -1,0 +1,36 @@
+.recognition-route{--rr-ink:#e4ece5;--rr-muted:#a7bbb0;--rr-accent:#91d9c4;--rr-line:#ffffff24;color:var(--rr-ink);background:#102019b8;border:1px solid var(--rr-line);border-radius:5px;padding:11px 12px;min-width:0;text-align:left}
+.recognition-route-heading{display:flex;align-items:baseline;justify-content:space-between;gap:9px;flex-wrap:wrap;margin:0 0 7px}
+.recognition-route-heading>span{color:var(--rr-accent);font-size:11px;font-weight:650;letter-spacing:.6px}
+.recognition-route-heading>small{color:var(--rr-muted);font-size:10px;line-height:1.5}
+.recognition-route .recognition-route-current{display:block;font-size:13px;line-height:1.6;color:var(--rr-ink);font-weight:600}
+.recognition-route .recognition-route-purpose{font-size:14px;line-height:1.7;margin:0 0 14px;color:var(--rr-ink)}
+.recognition-route .recognition-route-role{font-size:11px;line-height:1.7;margin:8px 0 0;color:var(--rr-muted)}
+.recognition-route-outline{margin:8px 0 0}
+.recognition-route-outline>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--rr-accent);font-size:11px;cursor:pointer;list-style:none}
+.recognition-route-outline>summary::-webkit-details-marker{display:none}
+.recognition-route-outline[open]>summary svg{transform:rotate(180deg)}
+.recognition-route-questions>ol{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;padding:0;margin:10px 0 0;list-style:none}
+.recognition-route-questions li{min-width:0;margin:0;padding:0}
+.recognition-route .recognition-route-questions button{display:flex;flex-direction:column;gap:6px;align-items:flex-start;width:100%;height:100%;border:1px solid var(--rr-line);border-radius:3px;background:#0b1511b8;color:var(--rr-ink);padding:10px;text-align:left;font:inherit;cursor:pointer;white-space:normal}
+.recognition-route-questions button>span{font-size:12px;line-height:1.55;font-weight:550}
+.recognition-route-questions button>small{font-size:11px;line-height:1.6;color:var(--rr-muted)}
+.recognition-route .recognition-route-questions button[aria-current]{border-color:var(--rr-accent);background:#1a352a}
+.recognition-route--compact .recognition-route-questions>ol{grid-template-columns:1fr;gap:4px}
+.recognition-route--compact .recognition-route-questions button{padding:7px 8px;gap:2px}
+.recognition-route--compact .recognition-route-questions button>small{font-size:10px}
+.recognition-route-continuation{margin:9px 0 0;border-top:1px solid var(--rr-line);padding-top:8px}
+.recognition-route .recognition-route-continuation>p{font-size:11px;line-height:1.65;color:var(--rr-muted);margin:0}
+.recognition-route-continuation>p>span{display:block;color:#d1e0d6;font-size:10px;margin-bottom:3px}
+.recognition-route .recognition-route-next,.recognition-route .recognition-route-return{display:flex;align-items:center;gap:6px;font:inherit;font-size:11px;line-height:1.6;color:var(--rr-accent);background:transparent;border:0;padding:4px 0;cursor:pointer;text-align:left;white-space:normal}
+.recognition-route-next{justify-content:space-between;width:100%;margin-top:4px}
+.recognition-route-return{margin:0 0 5px}
+.recognition-route-return svg,.recognition-route-next svg{flex-shrink:0}
+.recognition-route button:hover{color:#c2f2e4;border-color:#91d9c480}
+.recognition-route button:focus-visible,.recognition-route summary:focus-visible{outline:2px solid var(--rr-accent);outline-offset:3px}
+.recognition-route--overview{padding:18px 20px;background:#102019dd}
+.recognition-route--compact{margin:12px 0;padding:10px 11px;background:#10201988}.recognition-route--compact .recognition-route-continuation{padding-top:5px;margin-top:6px}.recognition-route--compact .recognition-route-next{margin:0}.recognition-route--compact .recognition-route-heading{margin-bottom:4px}
+.recognition-route--overview .recognition-route-heading>span{font-size:13px}
+.recognition-route--overview .recognition-route-continuation{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.recognition-route--overview .recognition-route-next{margin:0;width:auto;gap:16px}
+@media(max-width:1200px){.recognition-route--overview .recognition-route-questions>ol{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:700px){.recognition-route--overview .recognition-route-questions>ol{grid-template-columns:repeat(2,minmax(0,1fr))}.recognition-route--overview .recognition-route-continuation{grid-template-columns:1fr}.recognition-route--overview{padding:14px}}

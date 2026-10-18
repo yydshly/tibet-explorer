@@ -1,0 +1,15 @@
+{
+  "id": "093c76b52d758baa497a4aef2b056e24ae0e959d225455851539ae2c4b95206e",
+  "url": "/assets/audio/narration/093c76b52d758baa497a4aef2b056e24ae0e959d225455851539ae2c4b95206e.mp3",
+  "text": "上一段看到了水、土地与通道，现在开始问过去的人怎样在高原活动。我们转到那曲方向，以尼阿底相关考古研究为入口。今天的地形只是定位背景，真正的认识要从石器、地层、年代与研究方法出发。",
+  "duration": 17.496,
+  "bytes": 281652,
+  "sha256": "38289b3fc77fd29418f6a28b9d37f88e5a6b9769e97697e21e6ca44dc67a36b0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:42.822Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

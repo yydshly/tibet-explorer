@@ -1,0 +1,19 @@
+{
+  "id": "905478205d942db70570e040f321f0c880bd0a3d0f81927a39fb0868a866e789",
+  "url": "/assets/audio/narration/905478205d942db70570e040f321f0c880bd0a3d0f81927a39fb0868a866e789.mp3",
+  "text": "再把拉萨的历史问题带进候选访问。大昭寺的宗教活动、白宫的礼仪与居住、红宫的纪念用途，需要分别理解。把对象、年代和用途写在一起，不把不同建筑压成同一次建设。",
+  "duration": 15.84,
+  "bytes": 255156,
+  "sha256": "815de8f47d110c07c1d8386930e1b1e53969fe9a8534b8d789bbba31c24b1bb1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:30:42.491Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/905478205d942db70570e040f321f0c880bd0a3d0f81927a39fb0868a866e789.subtitles.json",
+  "subtitleSha256": "e35a541c132b5e061e54a1995314678465c1c9ef88a4e057b967d50974ea8574",
+  "timingLevel": "word"
+}

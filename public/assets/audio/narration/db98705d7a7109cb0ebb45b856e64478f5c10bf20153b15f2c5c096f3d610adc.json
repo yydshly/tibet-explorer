@@ -1,0 +1,19 @@
+{
+  "id": "db98705d7a7109cb0ebb45b856e64478f5c10bf20153b15f2c5c096f3d610adc",
+  "url": "/assets/audio/narration/db98705d7a7109cb0ebb45b856e64478f5c10bf20153b15f2c5c096f3d610adc.mp3",
+  "text": "请把进度停在云开始出现的位置，再推到降水阶段，比较哪些对象改变了。当前进度只是解释顺序，没有钟点或观测年份。阅读真实天气时，应同时核对资料时间、变量和测量范围，才能把画面变成证据。",
+  "duration": 19.044,
+  "bytes": 306420,
+  "sha256": "a7d0d28d77a276766a337a27320faf72891c72a9353de1bf264f6c9ecc0e7981",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:13:00.586Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/db98705d7a7109cb0ebb45b856e64478f5c10bf20153b15f2c5c096f3d610adc.subtitles.json",
+  "subtitleSha256": "6961db61f514d42b871440db741d8ffc84a0eab4f234cff103ad06d6cdadab08",
+  "timingLevel": "word"
+}

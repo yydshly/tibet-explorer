@@ -1,0 +1,19 @@
+{
+  "id": "b0e175b9ded0182fb86f1dcb56a09c110c9c8bef261adaafc981f586a49d4ed9",
+  "url": "/assets/audio/narration/b0e175b9ded0182fb86f1dcb56a09c110c9c8bef261adaafc981f586a49d4ed9.mp3",
+  "text": "把水、谷地土地与生活空间一起观察，农业和聚落需要的不只是降雨总量，还包括水出现的时间、可以利用的土地与维护。这里显示的是供水和生活的原理关系，不绘制尚未取得真实资料的田块、渠道或社区边界。",
+  "duration": 18.504,
+  "bytes": 297780,
+  "sha256": "a9af25bd34c8a20096d4911998415da869b680e615002583093b5bd28f33ba0e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:51:41.062Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b0e175b9ded0182fb86f1dcb56a09c110c9c8bef261adaafc981f586a49d4ed9.subtitles.json",
+  "subtitleSha256": "8189e7fbbccfc7753e2203aa1b4e54539151a9971d591515816f815818085104",
+  "timingLevel": "word"
+}

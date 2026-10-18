@@ -1,0 +1,19 @@
+{
+  "id": "0dee512c94c6acb3f92fb70de43ae94fd63e0ff42392ee24e2da7af6bebb6656",
+  "url": "/assets/audio/narration/0dee512c94c6acb3f92fb70de43ae94fd63e0ff42392ee24e2da7af6bebb6656.mp3",
+  "text": "1447年，根敦朱巴创建扎什伦布寺。山地和河谷解释它所处的环境，创建、扩建和宗教组织则要用历史材料解释。现在标出的是现存寺院的地方参考，年代变化表达事件先后，不把今天的建筑群倒推成最初原貌。",
+  "duration": 19.62,
+  "bytes": 315636,
+  "sha256": "b0e27590f57675d14d4e2e43cba6dcd20f03dcb32508e09fe01d7a48ca5eddf2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:49:15.132Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/0dee512c94c6acb3f92fb70de43ae94fd63e0ff42392ee24e2da7af6bebb6656.subtitles.json",
+  "subtitleSha256": "f48abb47f631948c854fc8db0a6c7034a30c7b2a38614167829c94989602bf96",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "8fcb5051ffff266dc1e895be6c6e8886a7e8beec38e18873d9e2680b23fd15ea",
+  "url": "/assets/audio/narration/8fcb5051ffff266dc1e895be6c6e8886a7e8beec38e18873d9e2680b23fd15ea.mp3",
+  "text": "鲁朗先辨认河流、三一八国道和服务用地。二〇一六年小镇试运营，二〇一七年又有商户进驻和家庭旅馆培训的记录。道路让人经过，住宿与接待把经过接成停留。图上是现状位置，不是当年逐栋建成的复原。",
+  "duration": 18.936,
+  "bytes": 304692,
+  "sha256": "5fdac078371fa8aafe4b833361882afdfe5ae0ef6f2ee25daf86e2b07c1a3085",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:26:50.956Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

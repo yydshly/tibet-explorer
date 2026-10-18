@@ -1,0 +1,15 @@
+{
+  "id": "3025199237f729fafb6a3a9113b9ab81ec1345f75894043cf4f032eaa8acc54d",
+  "url": "/assets/audio/narration/3025199237f729fafb6a3a9113b9ab81ec1345f75894043cf4f032eaa8acc54d.mp3",
+  "text": "沿整体地图来到拉萨，先把城区放回拉萨河谷。较平缓的谷地与周围山地形成对照，水与可用土地给聚居、生产和通行提供条件。平缓并不等于海拔低，也不等于全市都是同样的地貌。保留这层高差，再追问自然界的水怎样经过设施与人的工作，成为城市用水。",
+  "duration": 23.148,
+  "bytes": 372084,
+  "sha256": "8efae523a653e1f05435c306600a85543567197ddffa1407e610c0004c23463a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:24.602Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

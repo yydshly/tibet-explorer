@@ -1,0 +1,19 @@
+{
+  "id": "fb103bab397c512b11b51ec0b0a08e5bf71a3936e52047611e2f797dbebc6480",
+  "url": "/assets/audio/narration/fb103bab397c512b11b51ec0b0a08e5bf71a3936e52047611e2f797dbebc6480.mp3",
+  "text": "程国栋等研究者推动主动冷却路基的思路，马巍强调通车以后继续监测。块石保留空隙，寒季外界比地基冷时，空气对流可以带走热量；暖季条件不同，同样的冷却对流会减弱或停止。模型把这些条件展开，不把一种结构当成永久不变的答案。",
+  "duration": 20.88,
+  "bytes": 335796,
+  "sha256": "4f760d10a66e01716c496673bef424b9a837e3ee1d4a9e389fccdc796c54607c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:12:20.684Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/fb103bab397c512b11b51ec0b0a08e5bf71a3936e52047611e2f797dbebc6480.subtitles.json",
+  "subtitleSha256": "d95cf1462cc70613faf5e9ac753b44eaaa1c9ce6e163a834f8fc561c15fb2617",
+  "timingLevel": "word"
+}

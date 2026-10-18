@@ -1,0 +1,15 @@
+{
+  "id": "c79ce51a2a80cdd0bf37ebe049ba22b3ce5b58e241d430e5d1243e4a45984ead",
+  "url": "/assets/audio/narration/c79ce51a2a80cdd0bf37ebe049ba22b3ce5b58e241d430e5d1243e4a45984ead.mp3",
+  "text": "在阿里，把视线从狮泉河移向札达托林。两处是不同地方，航空进入以后，还要逐段安排地面接续。地理间隔没有消失，访问文化地点需要另外的服务和条件。",
+  "duration": 15.012,
+  "bytes": 241908,
+  "sha256": "1380329f617bf7a2276de3d6a51a62f51d8911edba6ebd5bd8e0ab6171e815e5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:43:41.610Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

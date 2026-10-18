@@ -1,0 +1,19 @@
+{
+  "id": "752ca5b406080c36d47d4488748f48422e2220889540f09e65d4da58045f4ec6",
+  "url": "/assets/audio/narration/752ca5b406080c36d47d4488748f48422e2220889540f09e65d4da58045f4ec6.mp3",
+  "text": "青藏高原是跨越行政范围的自然高地，西藏自治区是今天的行政范围，两者不能画上等号。我们已经知道这片高地处在怎样的海陆和空气来路中。接下来追问：地面为什么会这样高？再回到真实高程，把南侧低地、喜马拉雅和高原内部放在同一个剖面里比较。",
+  "duration": 20.412,
+  "bytes": 328308,
+  "sha256": "38200c56291399fca9a909d6c101daf434cda1e1252e3750f558cd3ed8fe7e04",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:31:42.928Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/752ca5b406080c36d47d4488748f48422e2220889540f09e65d4da58045f4ec6.subtitles.json",
+  "subtitleSha256": "aee305c4853132fa4af6678cef43cda85331fa88ad924450f2fd3abd8284c8af",
+  "timingLevel": "word"
+}

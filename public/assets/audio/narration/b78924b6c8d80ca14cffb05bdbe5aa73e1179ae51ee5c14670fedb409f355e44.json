@@ -1,0 +1,19 @@
+{
+  "id": "b78924b6c8d80ca14cffb05bdbe5aa73e1179ae51ee5c14670fedb409f355e44",
+  "url": "/assets/audio/narration/b78924b6c8d80ca14cffb05bdbe5aa73e1179ae51ee5c14670fedb409f355e44.mp3",
+  "text": "十七世纪，甘丹颇章政权形成，拉萨政治与建筑空间继续变化。清代的驻藏大臣和噶厦进入制度史；二十世纪又经历一九〇四年英国军事行动、一九五一年协议、一九五九年冲突及改革、一九六五年自治区成立。每个节点都要再看地方经历。",
+  "duration": 22.716,
+  "bytes": 365172,
+  "sha256": "223e07b55a1dacacfb9ffe7c385b4865126ca5ce57b1177b21fee6aa61a18558",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:16.916Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b78924b6c8d80ca14cffb05bdbe5aa73e1179ae51ee5c14670fedb409f355e44.subtitles.json",
+  "subtitleSha256": "827c5908485d8c404d493ea26ecc6c3e7e213d741e5d18369554e7c2325d935a",
+  "timingLevel": "word"
+}

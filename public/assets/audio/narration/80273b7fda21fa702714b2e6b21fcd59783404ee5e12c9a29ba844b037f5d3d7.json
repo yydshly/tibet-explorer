@@ -1,0 +1,15 @@
+{
+  "id": "80273b7fda21fa702714b2e6b21fcd59783404ee5e12c9a29ba844b037f5d3d7",
+  "url": "/assets/audio/narration/80273b7fda21fa702714b2e6b21fcd59783404ee5e12c9a29ba844b037f5d3d7.mp3",
+  "text": "使用者在同一桌边会合，继续看维护者走向长凳，取下旧板、补上替换件。空间保持不变，行动和劳动让它继续被使用。文化的延续既有学习与交流，也有维护和调整；这个通用情景没有代替社区研究。",
+  "duration": 19.224,
+  "bytes": 309300,
+  "sha256": "468c40f582492a92f66bb307c7f9a769ea4b427d302f33e2b14fe0ed05149109",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:58.089Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9e1dd04c06f5604897a1bdd6327c2bc7797d8a3e21b7774d3d0c1de973fe2e88",
+  "url": "/assets/audio/narration/9e1dd04c06f5604897a1bdd6327c2bc7797d8a3e21b7774d3d0c1de973fe2e88.mp3",
+  "text": "请从五带切回地表，保留西藏标记作参照。看看同一位置怎样同时属于一个纬度带，又处在起伏的大陆地形中。以后比较气候和历史时，都先说明自己使用的是哪一种范围。",
+  "duration": 14.04,
+  "bytes": 226356,
+  "sha256": "92319631f1db6e95338a3cc1f1f765198745de165d97fe1a77f602bfa62de2dd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:17.084Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

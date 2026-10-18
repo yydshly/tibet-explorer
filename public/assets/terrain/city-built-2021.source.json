@@ -1,0 +1,228 @@
+{
+  "title": "ESA WorldCover 2021 v200 · 三处聚居地周边建成地表比例",
+  "sourceUrl": "https://esa-worldcover.org/en/data-access",
+  "manualUrl": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf",
+  "doi": "https://doi.org/10.5281/zenodo.7254221",
+  "retrievedAt": "2026-10-15T10:24:39.490260+00:00",
+  "year": 2021,
+  "version": "v200",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+  "productPublished": "2022-10-28",
+  "classDefinition": "Class 50 includes buildings, roads and other man-made structures; not exclusively residential buildings. Urban green spaces are excluded by the product definition.",
+  "method": "Read original class values through HTTP Range from each official 3x3-degree COG. Each 0.003-degree display cell is exactly 36x36 source pixels; fraction=count(class50)/1296, rounded to 6 decimals. No majority/any/max threshold, dilation, interpolation, or overview was used. Nodata causes extraction to fail instead of being reported as zero built-up.",
+  "displayGrid": "0.003-degree cells (about 334 m north-south, about 282–290 m east-west at these latitudes); geographic pixel-count fraction, not a surveyed area statistic.",
+  "coverage": "Each place uses a 0.396x0.396-degree window around an archived settlement locator; these are study windows, not city limits. Outside the windows there are no data in this derived product.",
+  "scope": "2021 remote-sensing land-cover classification; not today's built extent, city boundary, building footprint/height, road alignment, population or historical reconstruction. The product may confuse bare and built surfaces; no local accuracy claim is made. Do not render cells as solid built polygons: preserve fractional intensity or display the exact fraction.",
+  "locatorArchive": "public/assets/atlas-place-references.json",
+  "locatorArchiveSha256": "a8624baff1cdaa9ea586d4dfaa7d189fb3a494cf2b9a1b9583d10d19099224ae",
+  "outputSha256": "eb75d34fca71fd4762bf137a8e4659bf9aeee77edc365e225ab46a82196ea32c",
+  "script": "qa/city-terrain-life/fetch-city-built-2021.py",
+  "python": "3.10.11",
+  "rasterio": "1.4.4",
+  "numpy": "2.2.6",
+  "sourceWindows": [
+    {
+      "reference": {
+        "id": "nyingchi",
+        "label": "林芝城区参考窗口",
+        "longitude": 94.36651,
+        "latitude": 29.650744,
+        "locatorSourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/789c9904087846cc3361302857aa2e76b0ae71ff/geojson/ne_10m_populated_places_simple.geojson",
+        "locatorFeatureId": "1159146957"
+      },
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27E093_Map.tif",
+      "crs": "EPSG:4326",
+      "sourcePixelSizeDegrees": [
+        8.333333333333333e-05,
+        8.333333333333333e-05
+      ],
+      "sourceDimensions": [
+        36000,
+        36000
+      ],
+      "sourceWindowPixels": [
+        14004,
+        1836,
+        4752,
+        4752
+      ],
+      "sourceWindowTransform": [
+        8.333333333333333e-05,
+        0.0,
+        94.167,
+        0.0,
+        -8.333333333333333e-05,
+        29.847
+      ],
+      "sourceNoData": 0.0,
+      "sourceNativeClasses": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        100
+      ],
+      "sourcePixelsRead": 22581504,
+      "sourceBuiltPixels": 127257,
+      "windowPixelSha256": "92829cf94ac910d9ee95247bf3dc046fab634f7a5b5797ca29238aa7fe4680d9",
+      "httpRangeStatus": 206,
+      "httpContentRange": "bytes 0-15/79061337",
+      "etag": "\"62a5c4655ce88f5c6d092c2bc7bfe789-10\"",
+      "lastModified": "Wed, 26 Oct 2022 12:45:38 GMT",
+      "aggregationBlockPixels": [
+        36,
+        36
+      ],
+      "builtCellsPositive": 1045,
+      "nonBinaryFractionCells": 1045,
+      "maxBuiltFraction": 0.7916666666666666,
+      "sourceHeaderSha256": "30da10c412761210a011aef010c24779aaa52417a510beedfff892abc7352bea",
+      "bounds": {
+        "west": 94.167,
+        "east": 94.563,
+        "south": 29.451,
+        "north": 29.847
+      }
+    },
+    {
+      "reference": {
+        "id": "lhasa",
+        "label": "拉萨城区参考窗口",
+        "longitude": 91.10001,
+        "latitude": 29.645024,
+        "locatorSourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/789c9904087846cc3361302857aa2e76b0ae71ff/geojson/ne_10m_populated_places_simple.geojson",
+        "locatorFeatureId": "1159150879"
+      },
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27E090_Map.tif",
+      "crs": "EPSG:4326",
+      "sourcePixelSizeDegrees": [
+        8.333333333333333e-05,
+        8.333333333333333e-05
+      ],
+      "sourceDimensions": [
+        36000,
+        36000
+      ],
+      "sourceWindowPixels": [
+        10800,
+        1908,
+        4752,
+        4752
+      ],
+      "sourceWindowTransform": [
+        8.333333333333333e-05,
+        0.0,
+        90.9,
+        0.0,
+        -8.333333333333333e-05,
+        29.841
+      ],
+      "sourceNoData": 0.0,
+      "sourceNativeClasses": [
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        80,
+        90,
+        100
+      ],
+      "sourcePixelsRead": 22581504,
+      "sourceBuiltPixels": 1275777,
+      "windowPixelSha256": "993511e068cfc01235828987f3ec4853f217954a88db582841612e4bc8d5afcd",
+      "httpRangeStatus": 206,
+      "httpContentRange": "bytes 0-15/84842890",
+      "etag": "\"ed68dad350fbcfa7a7e55dc043ce55f6-11\"",
+      "lastModified": "Wed, 26 Oct 2022 12:45:24 GMT",
+      "aggregationBlockPixels": [
+        36,
+        36
+      ],
+      "builtCellsPositive": 3201,
+      "nonBinaryFractionCells": 3201,
+      "maxBuiltFraction": 0.996141975308642,
+      "sourceHeaderSha256": "30da10c412761210a011aef010c24779aaa52417a510beedfff892abc7352bea",
+      "bounds": {
+        "west": 90.9,
+        "east": 91.296,
+        "south": 29.445,
+        "north": 29.841
+      }
+    },
+    {
+      "reference": {
+        "id": "ngari",
+        "label": "狮泉河聚居地参考窗口",
+        "longitude": 80.09758,
+        "latitude": 32.50124,
+        "locatorSourceUrl": "https://www.geonames.org/1280003/",
+        "locatorFeatureId": "1280003"
+      },
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30E078_Map.tif",
+      "crs": "EPSG:4326",
+      "sourcePixelSizeDegrees": [
+        8.333333333333333e-05,
+        8.333333333333333e-05
+      ],
+      "sourceDimensions": [
+        36000,
+        36000
+      ],
+      "sourceWindowPixels": [
+        22788,
+        3636,
+        4752,
+        4752
+      ],
+      "sourceWindowTransform": [
+        8.333333333333333e-05,
+        0.0,
+        79.899,
+        0.0,
+        -8.333333333333333e-05,
+        32.697
+      ],
+      "sourceNoData": 0.0,
+      "sourceNativeClasses": [
+        10,
+        30,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "sourcePixelsRead": 22581504,
+      "sourceBuiltPixels": 61833,
+      "windowPixelSha256": "c9d39c8bac93729b81bfa44c9dd9b1ab7826dcb25c8c38f83443a8e20f11ed17",
+      "httpRangeStatus": 206,
+      "httpContentRange": "bytes 0-15/93012520",
+      "etag": "\"c367b4d2b28c7d68410c6b8e41d85462-12\"",
+      "lastModified": "Wed, 26 Oct 2022 12:51:15 GMT",
+      "aggregationBlockPixels": [
+        36,
+        36
+      ],
+      "builtCellsPositive": 574,
+      "nonBinaryFractionCells": 574,
+      "maxBuiltFraction": 0.8047839506172839,
+      "sourceHeaderSha256": "30da10c412761210a011aef010c24779aaa52417a510beedfff892abc7352bea",
+      "bounds": {
+        "west": 79.899,
+        "east": 80.295,
+        "south": 32.301,
+        "north": 32.697
+      }
+    }
+  ],
+  "applicationScope": "Use only in the three-city comparison of built-surface patterns. The nyingchi window is around the archived Nyingchi urban locator (Bayi); it does not cover Lulang. Never move its cells to the Lulang local DEM scene. Retain the 2021 observation-year label in the display."
+}

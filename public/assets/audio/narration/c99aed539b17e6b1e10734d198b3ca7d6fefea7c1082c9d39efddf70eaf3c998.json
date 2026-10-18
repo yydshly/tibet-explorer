@@ -1,0 +1,19 @@
+{
+  "id": "c99aed539b17e6b1e10734d198b3ca7d6fefea7c1082c9d39efddf70eaf3c998",
+  "url": "/assets/audio/narration/c99aed539b17e6b1e10734d198b3ca7d6fefea7c1082c9d39efddf70eaf3c998.mp3",
+  "text": "到二〇二六年，林芝图书馆与博物馆把工布服饰带进亲子课堂。文化通过人的学习和参与继续传承。",
+  "duration": 8.064,
+  "bytes": 130740,
+  "sha256": "a0825a70906656dca940aac8e8723e91be574d2f1a7a14cc78263e094a599b54",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:17:05.763Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c99aed539b17e6b1e10734d198b3ca7d6fefea7c1082c9d39efddf70eaf3c998.subtitles.json",
+  "subtitleSha256": "d8ac0bdb18c36ea7065ea57620c4cef9e96c141cbc94683b123fa2ad08d36b22",
+  "timingLevel": "word"
+}

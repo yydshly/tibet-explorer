@@ -1,0 +1,19 @@
+{
+  "id": "a051e0800a3bcb3e9915e3c680f4d081251735c8cfce6b8c93fa14936ae29c45",
+  "url": "/assets/audio/narration/a051e0800a3bcb3e9915e3c680f4d081251735c8cfce6b8c93fa14936ae29c45.mp3",
+  "text": "创作、著述与授徒，让文化在地方持续形成。澳门艺术博物馆的展览资料记载，勉拉顿珠曾在扎什伦布寺创作并传授艺术。观察寺院时也要问作品怎样学习、保存和交流，再把这些历史联系接到今天的城市通行。",
+  "duration": 20.808,
+  "bytes": 334644,
+  "sha256": "5754a8b6442762e84e64018da70a69e2ecced0cd3465a2b854376eb461f26c58",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:49:44.498Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a051e0800a3bcb3e9915e3c680f4d081251735c8cfce6b8c93fa14936ae29c45.subtitles.json",
+  "subtitleSha256": "1ab720e7ddcbc1b6bf590d1e83ea54598dd8a1205753a6781e237bec2370e89b",
+  "timingLevel": "word"
+}

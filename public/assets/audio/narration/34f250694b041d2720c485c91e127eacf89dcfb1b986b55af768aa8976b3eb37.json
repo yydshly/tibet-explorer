@@ -1,0 +1,15 @@
+{
+  "id": "34f250694b041d2720c485c91e127eacf89dcfb1b986b55af768aa8976b3eb37",
+  "url": "/assets/audio/narration/34f250694b041d2720c485c91e127eacf89dcfb1b986b55af768aa8976b3eb37.mp3",
+  "text": "拉萨先保留河谷城市、公路和航空。青藏铁路通车前，人员和物资已经通过这些方式进出。接入铁路改变的是运输选择，城市不是在开通当天凭空出现。",
+  "duration": 13.284,
+  "bytes": 214260,
+  "sha256": "f0f36e167f0c35bd8bf8df5c1bc64dfc649cff14b80ee4bce3560dc8846082b0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:36.572Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

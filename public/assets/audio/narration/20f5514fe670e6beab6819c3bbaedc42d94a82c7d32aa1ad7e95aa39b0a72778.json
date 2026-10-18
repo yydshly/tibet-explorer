@@ -1,0 +1,19 @@
+{
+  "id": "20f5514fe670e6beab6819c3bbaedc42d94a82c7d32aa1ad7e95aa39b0a72778",
+  "url": "/assets/audio/narration/20f5514fe670e6beab6819c3bbaedc42d94a82c7d32aa1ad7e95aa39b0a72778.mp3",
+  "text": "上一步认识了空气如何携带水汽，现在走近山坡。湿润空气遇到地形时可能被抬升，但并非每次来流都会下雨。我们先从没有云雨的起点看起，逐步加入冷却、凝结和降落的条件。",
+  "duration": 15.3,
+  "bytes": 246516,
+  "sha256": "46d021fbc324149ed94e0f69fc5458639a52258892af602c59948c3aeb91a1b9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:12:09.146Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/20f5514fe670e6beab6819c3bbaedc42d94a82c7d32aa1ad7e95aa39b0a72778.subtitles.json",
+  "subtitleSha256": "5fce7645319f654247e7d05413e9588ba5cf31fd63952c30963a7062d3e06e8f",
+  "timingLevel": "word"
+}

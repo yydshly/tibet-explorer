@@ -1,0 +1,15 @@
+{
+  "id": "4ce528466aec058bfa5f84c155d7653d00bb7ca409c58229131bc6d3324e2a3b",
+  "url": "/assets/audio/narration/4ce528466aec058bfa5f84c155d7653d00bb7ca409c58229131bc6d3324e2a3b.mp3",
+  "text": "从冷暖与水分的比较进入人的生活，先看河谷里的水源、土地和通行空间。拉萨、山南等地方可以提供具体入口，但同样的自然条件并不自动生成同样的社会；我们先辨认条件，再研究人的行动。",
+  "duration": 17.136,
+  "bytes": 275892,
+  "sha256": "1684fa374c0cbad414c865fe7f9c75f9a195b2bba40ccf925ee3da0dd8eb87ec",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:01.473Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

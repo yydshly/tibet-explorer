@@ -1,0 +1,15 @@
+{
+  "id": "33a86f110f94ef1a0bf95cfd9167d2fc36c5a8f607823f09e160e48234943962",
+  "url": "/assets/audio/narration/33a86f110f94ef1a0bf95cfd9167d2fc36c5a8f607823f09e160e48234943962.mp3",
+  "text": "请选择拉萨，继续问公共服务、工作与生活怎样组织，阅读地区介绍和统计来源。不要因模型里建筑更多，就推断发展水平一定更高。让指标和具体经验互相参照，才能判断改变影响了哪些人、哪些地方。",
+  "duration": 19.332,
+  "bytes": 311028,
+  "sha256": "f36f5ec8bd1b92d47f4f689da58ce8338db4b9d98b9128c0528b0ca59cdd73aa",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:01.085Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

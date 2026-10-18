@@ -1,0 +1,15 @@
+{
+  "id": "f6beb1ac5aa6d894f754fa2ba45d76581885bf0cd6fb5beec3ca4e96a11614a9",
+  "url": "/assets/audio/narration/f6beb1ac5aa6d894f754fa2ba45d76581885bf0cd6fb5beec3ca4e96a11614a9.mp3",
+  "text": "模型把制度、地方组织和家庭生活分成不同层次，逐步展开需要核对的联系。文件能够确认节点，怎样实施、哪些地方和人群经历了什么，还要补充对应调查、统计和文献。房屋保持不变，不用建筑增减伪造社会成效。",
+  "duration": 20.268,
+  "bytes": 326004,
+  "sha256": "a1c20f4ce403a83567d98ddb6864de03e85d2832e4adf3b9511e7f25e3c60656",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:06:57.289Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

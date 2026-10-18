@@ -1,0 +1,15 @@
+{
+  "id": "c14dfa37f68494c6f15aa3c1a7d9a1e6485074a745fc29213356b020c3e63f12",
+  "url": "/assets/audio/narration/c14dfa37f68494c6f15aa3c1a7d9a1e6485074a745fc29213356b020c3e63f12.mp3",
+  "text": "理解了服务怎样连接人，还要问发展活动对谁有益、影响由谁承担、需要怎样维护。接下来把收益、生态和地方生活放在同一个讨论中；这些方面需要各自的证据，不能靠一个总量代替。",
+  "duration": 15.156,
+  "bytes": 244212,
+  "sha256": "6f0f9a6f0fc39ae2850bfb859cfda4c7115e0ee75414aa5f2701907cc9cab2de",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:32.634Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

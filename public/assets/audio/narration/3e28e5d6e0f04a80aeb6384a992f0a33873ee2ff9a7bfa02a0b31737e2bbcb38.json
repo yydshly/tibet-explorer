@@ -1,0 +1,19 @@
+{
+  "id": "3e28e5d6e0f04a80aeb6384a992f0a33873ee2ff9a7bfa02a0b31737e2bbcb38",
+  "url": "/assets/audio/narration/3e28e5d6e0f04a80aeb6384a992f0a33873ee2ff9a7bfa02a0b31737e2bbcb38.mp3",
+  "text": "请在候选顺序里至少加入两站，写下每站的问题，并尝试向前或向后移动。已选站数来自你实际加入的地方；教学示例不会自动算进计划。可以删减站点，让问题更清楚，再打开完整计划核对日期、交通与访问条件。",
+  "duration": 19.512,
+  "bytes": 313908,
+  "sha256": "2353cbd2656c99d547972482c149fd6839cc7b7b91d5a6c48f8dd4ceec97aed1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:14:07.944Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3e28e5d6e0f04a80aeb6384a992f0a33873ee2ff9a7bfa02a0b31737e2bbcb38.subtitles.json",
+  "subtitleSha256": "536db546711ee789251cf9bf7f34dd6a134c1d05a3961e645b0fa5d495842b43",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "dcfc91e602cf253304e10c71a27d114af27f89a6f42b8031d67bff7e9f0d4187",
+  "url": "/assets/audio/narration/dcfc91e602cf253304e10c71a27d114af27f89a6f42b8031d67bff7e9f0d4187.mp3",
+  "text": "从全域定位拉萨，再沿同一张地图拉近。先看地面起伏，河谷嵌在周围山地之间。移动探针，比较沿线高低变化；切换剖面方向，看较缓地面能否连续。青色地面标出观察窗内相对较低、较缓的样本，不能据此认定街区或可建设地块。河谷提供可能，城市仍需要用水设施、交通和组织。二零二二年拉萨水利规划提供了理解这些需求的材料，规划不等于全部建成。回到全域，再进入城市用途与历史形成的问题。",
+  "duration": 35.568,
+  "bytes": 570804,
+  "sha256": "0d7f7a2a4f5bff796b197a3b5b28afdcb32c44a6c2bd78c867f517a01abb5ba0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:50:13.776Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/dcfc91e602cf253304e10c71a27d114af27f89a6f42b8031d67bff7e9f0d4187.subtitles.json",
+  "subtitleSha256": "db451f3fe825443d9d436c61bcd2244fab09b2fa09a19e541090326231f61e43",
+  "timingLevel": "word"
+}

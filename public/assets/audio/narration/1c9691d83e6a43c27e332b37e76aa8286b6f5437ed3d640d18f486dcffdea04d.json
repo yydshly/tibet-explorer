@@ -1,0 +1,19 @@
+{
+  "id": "1c9691d83e6a43c27e332b37e76aa8286b6f5437ed3d640d18f486dcffdea04d",
+  "url": "/assets/audio/narration/1c9691d83e6a43c27e332b37e76aa8286b6f5437ed3d640d18f486dcffdea04d.mp3",
+  "text": "刚才比较了三地的真实地形。现在保留全图，用一个功能示意看清水怎样进入使用。左边有水，右边的储水空间却还是空的。打开取水通道，水沿通道进入储水空间；源端减少，使用端增加，才能看见转移，而不只是画出一条线。关闭通道，后续补水停止，已有的水不会凭空消失。试着开关通道，比较有水源和能够持续取用的区别。这不是当地管网或流量模拟。狮泉河二〇二三年的林地灌溉与管护报道，提供了设施和持续劳动的具体例子；拉萨水利规划则是需求与建设安排，不能当成全部建成。回到三地，自然条件需要经过人的行动才进入生活。接下来问：除了供水和通行，哪些历史行动塑造了地方的用途与文化？",
+  "duration": 54.072,
+  "bytes": 866868,
+  "sha256": "1d074e4dd69e1c2ae0894833c6b76833dffc3e1361838922a8a0390c78ec97d3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-17T02:08:57.209Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/1c9691d83e6a43c27e332b37e76aa8286b6f5437ed3d640d18f486dcffdea04d.subtitles.json",
+  "subtitleSha256": "6b9924631b1c222333e0302f92900bcbb799a00336dc1c3499c59c83f5c68030",
+  "timingLevel": "word"
+}

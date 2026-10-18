@@ -1,0 +1,15 @@
+{
+  "id": "fada1fadb5ea897d2256f14e7d19f9ff55dbcc3555fd7558c6f591bcc34376b8",
+  "url": "/assets/audio/narration/fada1fadb5ea897d2256f14e7d19f9ff55dbcc3555fd7558c6f591bcc34376b8.mp3",
+  "text": "请打开旅行规划，至少加入两个有共同主题的站点，调整它们的顺序，再回到场景看位置和连线。删减或改道时保留认识目的。线表示候选探索联系，没有保证道路可通行、开放或交通时间。",
+  "duration": 19.476,
+  "bytes": 313332,
+  "sha256": "619543cc10c0bcc4547f47905b4f7c97c168c7f694acdcd7d6e8f5301a525014",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:16.367Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

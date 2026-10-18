@@ -1,0 +1,15 @@
+{
+  "id": "240f90b63809a485bcaa049db949bc3943d2cc599d039c80157d661588023ff1",
+  "url": "/assets/audio/narration/240f90b63809a485bcaa049db949bc3943d2cc599d039c80157d661588023ff1.mp3",
+  "text": "这趟旅程从地球出发，经过高原、气候、地方、文化、历史与当代联系，最后回到你自己的问题。你可以沿计划继续深入，也可以回看某个原理或材料。新的观察接回旧问题，西藏的整体认识就会持续变得具体。",
+  "duration": 18.396,
+  "bytes": 296052,
+  "sha256": "2a169e90f580773e91b8d5d3d77f711ea5437db0a17b9d88e6ec2e94e9fefd79",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:40:41.614Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

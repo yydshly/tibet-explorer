@@ -1,0 +1,258 @@
+{
+  "product": "DLR World Settlement Footprint Evolution v1",
+  "sourceUrl": "https://eodata.dlr.de/en/datasets/wsf/wsf_evo",
+  "attribution": "© DLR / EOC, CC BY 4.0",
+  "sourceResolutionMetres": 30,
+  "retrievedAt": "2026-10-16T05:10:04.588186+00:00",
+  "method": "Original pixels; no resampling, interpolation, gap filling or invented buildings. 1985 is left-censored; 0 means no detection/no data. IDC describes source-image consistency, not local accuracy. Heights are not encoded.",
+  "sourceTiles": [
+    {
+      "url": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_90_28/WSFevolution_v1_90_28.tif",
+      "file": "/data/regional-places/evolution-sources/WSFevolution_v1_90_28.tif",
+      "bytes": 1074574,
+      "sha256": "0fb22f27ebd148b0bb1001ec0f05cae3a2a0ea579e5d385c08b7e69c9baa33a1",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        7496,
+        7496
+      ],
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        89.98990139654244,
+        0.0,
+        -0.00026949458523585647,
+        30.01010852810927
+      ],
+      "noData": null,
+      "dtype": "int32",
+      "etag": null,
+      "lastModified": null
+    }
+  ],
+  "window": {
+    "id": "lhasa",
+    "label": "拉萨老城—布达拉宫—河谷观察窗",
+    "sourceTiles": [
+      "90_28"
+    ],
+    "sourceUrls": [
+      "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_90_28/WSFevolution_v1_90_28.tif"
+    ],
+    "requestedBbox": [
+      91.04,
+      29.615,
+      91.14,
+      29.675
+    ],
+    "bounds": {
+      "west": 91.03985230062133,
+      "south": 29.61475997156827,
+      "east": 91.14010428632908,
+      "north": 29.6751267586611
+    },
+    "columns": 372,
+    "rows": 224,
+    "transform": [
+      0.00026949458523585647,
+      0.0,
+      91.03985230062133,
+      0.0,
+      -0.00026949458523585647,
+      29.6751267586611
+    ],
+    "sourceWindowPixels": [
+      3896,
+      1243,
+      372,
+      224
+    ],
+    "pixelSizeDegrees": [
+      0.00026949458523585647,
+      0.00026949458523585647
+    ],
+    "dataUrl": "/data/lhasa-evolution/evolution-lhasa.years.bin",
+    "format": "uint16-le-row-major-north-to-south",
+    "bytes": 166656,
+    "sha256": "f7da4fba7931764872b87f0b580d1e05d5cd3bcec9c5e7a50ce09bff5721be81",
+    "detectedPixels": 46420,
+    "noDetectionOrNoDataPixels": 36908,
+    "firstDetectionYearCounts": [
+      20277,
+      11003,
+      70,
+      100,
+      162,
+      451,
+      572,
+      347,
+      168,
+      307,
+      717,
+      622,
+      362,
+      669,
+      819,
+      757,
+      558,
+      533,
+      1117,
+      913,
+      863,
+      1125,
+      616,
+      707,
+      445,
+      513,
+      347,
+      440,
+      320,
+      283,
+      237
+    ],
+    "cumulativePixelCounts": {
+      "1985": 20277,
+      "1990": 32063,
+      "1995": 34174,
+      "2000": 37403,
+      "2005": 41387,
+      "2010": 44793,
+      "2015": 46420
+    },
+    "confidenceAvailable": true,
+    "confidenceYears": [
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015
+    ],
+    "confidenceUrl": "/data/lhasa-evolution/evolution-lhasa.idc.bin",
+    "confidenceFormat": "uint8-year-major-row-major-north-to-south",
+    "confidenceBytes": 583296,
+    "confidenceSha256": "c7807a009867d09649964b0d628a54206256aeef4e23b3a6c818b17bd507e8e3",
+    "confidenceSources": [
+      {
+        "url": "https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/IDC_Score_90_28.tif",
+        "bands": [
+          1,
+          6,
+          11,
+          16,
+          21,
+          26,
+          31
+        ],
+        "bandNames": [
+          "IDC_Score_1985",
+          "IDC_Score_1990",
+          "IDC_Score_1995",
+          "IDC_Score_2000",
+          "IDC_Score_2005",
+          "IDC_Score_2010",
+          "IDC_Score_2015"
+        ],
+        "sourceWindowPixels": [
+          3896,
+          1243,
+          372,
+          224
+        ],
+        "httpRangeStatus": 206,
+        "httpContentRange": "bytes 0-15/156510977",
+        "sourceHeaderSha256": "c5ec31c03e1edb3f67ae99b3f4f06475ccaa763dfc8533b8ee25597c152a5e7e",
+        "etag": "\"615c2d4d-9542b01\"",
+        "lastModified": "Tue, 05 Oct 2021 10:47:41 GMT"
+      }
+    ],
+    "confidenceByYear": {
+      "1985": {
+        "detectedPixels": 20277,
+        "scoreCounts": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "noScorePixels": 20277
+      },
+      "1990": {
+        "detectedPixels": 32063,
+        "scoreCounts": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 32063
+        },
+        "noScorePixels": 0
+      },
+      "1995": {
+        "detectedPixels": 34174,
+        "scoreCounts": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 34174
+        },
+        "noScorePixels": 0
+      },
+      "2000": {
+        "detectedPixels": 37403,
+        "scoreCounts": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 37403
+        },
+        "noScorePixels": 0
+      },
+      "2005": {
+        "detectedPixels": 41387,
+        "scoreCounts": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 41387
+        },
+        "noScorePixels": 0
+      },
+      "2010": {
+        "detectedPixels": 44793,
+        "scoreCounts": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 67,
+          "6": 44726
+        },
+        "noScorePixels": 0
+      },
+      "2015": {
+        "detectedPixels": 46420,
+        "scoreCounts": {
+          "1": 0,
+          "2": 23,
+          "3": 2,
+          "4": 8,
+          "5": 30,
+          "6": 46357
+        },
+        "noScorePixels": 0
+      }
+    },
+    "confidenceNote": "IDC表示生成聚居地估计时Landsat资料的一致性：1很低、2低、3中等、4尚可、5好、6很好；不是此城市的分类准确率或建筑年份置信区间。"
+  }
+}

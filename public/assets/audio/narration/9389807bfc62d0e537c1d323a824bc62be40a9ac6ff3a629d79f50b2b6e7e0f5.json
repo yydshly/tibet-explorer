@@ -1,0 +1,15 @@
+{
+  "id": "9389807bfc62d0e537c1d323a824bc62be40a9ac6ff3a629d79f50b2b6e7e0f5",
+  "url": "/assets/audio/narration/9389807bfc62d0e537c1d323a824bc62be40a9ac6ff3a629d79f50b2b6e7e0f5.mp3",
+  "text": "公开高程说明今天哪里高、哪里低；为什么形成这些起伏，还需要地质与年代材料。下面会明确换成概念河谷，解释汇水、侵蚀、搬运和堆积。真实地点与一般原理互相核对，而不是把一段动画当成林芝或札达的地貌历史。",
+  "duration": 22.752,
+  "bytes": 365748,
+  "sha256": "e5cc94f7f41183a690814a4f4db2b984fee3623eafb7cb961dbf99d7123522aa",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:20:58.508Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "42d15ef4cf93ceb523409a26fb734e4048ef6c43b0e58c875902ce3905106557",
+  "url": "/assets/audio/narration/42d15ef4cf93ceb523409a26fb734e4048ef6c43b0e58c875902ce3905106557.mp3",
+  "text": "牧草、水源与季节影响生产安排，却不会自动决定今天怎样居住。先保持草地地形，再看住房、补给与服务的联系。把环节分开，才能理解放牧和城镇生活为什么可以同时存在，也能继续追问谁组织这些联系。",
+  "duration": 18.648,
+  "bytes": 300084,
+  "sha256": "1e26ebec54735686251196551869f52a5fbab3685093906d3ace7ccf4d8e9c83",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:55:21.959Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/42d15ef4cf93ceb523409a26fb734e4048ef6c43b0e58c875902ce3905106557.subtitles.json",
+  "subtitleSha256": "fa26885ee1f412be298ac171c579df84073e9d1e47e4dc5d5ff334d024a00ec6",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "c2615ca2ea994f18a1e4fa66dd83bddf4acb4b12debe3d670633c480ecf35d5d",
+  "url": "/assets/audio/narration/c2615ca2ea994f18a1e4fa66dd83bddf4acb4b12debe3d670633c480ecf35d5d.mp3",
+  "text": "再看地下取水向上提升的原理。二〇二二年规划说，当时中心城区主要使用地下水；水源仍需要取供水设施。",
+  "duration": 9.9,
+  "bytes": 160116,
+  "sha256": "f76f6c42435152cfab68950a52b7555bfeb4bde135f09b50136336ea085c1869",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:17:36.855Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c2615ca2ea994f18a1e4fa66dd83bddf4acb4b12debe3d670633c480ecf35d5d.subtitles.json",
+  "subtitleSha256": "9ca12da1007dc1f3736e23ae8c2dc78aa5aea4f1d7e058257ac810d53ea2620c",
+  "timingLevel": "word"
+}

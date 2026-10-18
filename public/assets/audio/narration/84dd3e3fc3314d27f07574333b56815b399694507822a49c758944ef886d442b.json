@@ -1,0 +1,19 @@
+{
+  "id": "84dd3e3fc3314d27f07574333b56815b399694507822a49c758944ef886d442b",
+  "url": "/assets/audio/narration/84dd3e3fc3314d27f07574333b56815b399694507822a49c758944ef886d442b.mp3",
+  "text": "刚才已经认识西藏的位置、外部联系与地形背景。现在沿这些问题解释影响怎样发生，而不是重新走一遍入口。先看同一地点为什么有冬夏照射变化：固定拉萨附近的位置，观察地球与太阳，再把这个解释接回高原环境。",
+  "duration": 18.18,
+  "bytes": 292596,
+  "sha256": "059220786cf0a1d2716d563f367a54c96408837345fbe2789569d7f19bd9cb19",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:10:21.302Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/84dd3e3fc3314d27f07574333b56815b399694507822a49c758944ef886d442b.subtitles.json",
+  "subtitleSha256": "04f5060d420d6530bbd1653be0f608d2d6c78beb6cc145501742cc777b0e1183",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "a93925666e03112b6a9820d8372a1b89b89bff9b4e722bfa265d22bad6daf399",
+  "url": "/assets/audio/narration/a93925666e03112b6a9820d8372a1b89b89bff9b4e722bfa265d22bad6daf399.mp3",
+  "text": "现在从短时天气走向一年循环，保持同一地形和视角。夏季、冬季的照射和环流背景不同，积雪与生态也可能呈现季节变化。这里比较的是季节条件，不是把每一天的天气压缩成四张固定画面。",
+  "duration": 16.92,
+  "bytes": 272436,
+  "sha256": "ee38415aaffb0578afd7bc1451a595cff5568bd92129b020fb2012628ce8575c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:53.491Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

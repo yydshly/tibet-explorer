@@ -1,0 +1,15 @@
+{
+  "id": "fc6c03cabe334ff6aa0b2155cfe5b49caf33942ddc8407bb9cbdb6de3da0cf9c",
+  "url": "/assets/audio/narration/fc6c03cabe334ff6aa0b2155cfe5b49caf33942ddc8407bb9cbdb6de3da0cf9c.mp3",
+  "text": "汇水、侵蚀与堆积帮助解释自然空间，但不会自动解释聚落名字、信仰或地方记忆。下一步回到生活场地，看人怎样取用、协作和记录，再从这些问题走近建筑与文化。",
+  "duration": 16.74,
+  "bytes": 269556,
+  "sha256": "1eff8ac00ff6a31b45bf212c89d74b5d1c51776db7cdd1820afbbb5e59131917",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:19.527Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

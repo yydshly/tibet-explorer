@@ -1,0 +1,15 @@
+{
+  "id": "803df9d7846d502e65a985140f8d2fc5886504139ca87f5fe2a0b163dc6e497a",
+  "url": "/assets/audio/narration/803df9d7846d502e65a985140f8d2fc5886504139ca87f5fe2a0b163dc6e497a.mp3",
+  "text": "二〇二三年的报道中，护林员伦珠把挡水板放进水渠，再打开闸门，让水进入林地。入秋降水减少，冬灌需要及时安排，渠道也要持续管护。",
+  "duration": 13.176,
+  "bytes": 212532,
+  "sha256": "8b82f01601fc20d9abf319e9d8da37ee9e01ad78982e1e7dbc0526f84e704f81",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:58:03.244Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

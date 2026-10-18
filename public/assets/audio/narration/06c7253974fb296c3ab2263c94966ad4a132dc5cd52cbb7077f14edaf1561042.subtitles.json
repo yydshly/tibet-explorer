@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "audioSha256": "e807070cc08250b049dc4401cbf77742425db809af3a1a941419b7475e3958a5",
+  "textSha256": "7e17c178b9357adc351f7be9d2a6b20808c6952fd12bf363acba46889de33591",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 10.44,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 10.279319727891156,
+      "text": "最后保留城区与周围低缓空间。地形提供条件，七世纪大昭寺与十七世纪布达拉的建设，还要继续追问历史。",
+      "textStart": 0,
+      "textEnd": 48
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.16410256410256407,
+      "text": "最",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.16410256410256407,
+      "end": 0.32820512820512815,
+      "text": "后",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.32820512820512815,
+      "end": 0.5333333333333332,
+      "text": "保",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 1.0666666666666664,
+      "text": "留",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 1.0666666666666664,
+      "end": 1.1897435897435897,
+      "text": "城",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 1.1897435897435897,
+      "end": 1.353846153846154,
+      "text": "区",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 1.353846153846154,
+      "end": 1.6,
+      "text": "与",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.6,
+      "end": 1.9692307692307691,
+      "text": "周",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.9692307692307691,
+      "end": 2.133333333333333,
+      "text": "围",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 2.133333333333333,
+      "end": 2.297435897435897,
+      "text": "低",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 2.297435897435897,
+      "end": 2.4615384615384612,
+      "text": "缓",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.4615384615384612,
+      "end": 2.5846153846153843,
+      "text": "空",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.5846153846153843,
+      "end": 2.7487179487179483,
+      "text": "间",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.7487179487179483,
+      "end": 2.8307692307692305,
+      "text": "。",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.8307692307692305,
+      "end": 3.364102564102564,
+      "text": "地",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.364102564102564,
+      "end": 3.8564102564102565,
+      "text": "形",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.8564102564102565,
+      "end": 4.102564102564102,
+      "text": "提",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 4.102564102564102,
+      "end": 4.266666666666666,
+      "text": "供",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.389743589743589,
+      "text": "条",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.389743589743589,
+      "end": 4.553846153846154,
+      "text": "件",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.553846153846154,
+      "end": 4.594871794871794,
+      "text": "，",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.594871794871794,
+      "end": 5.046153846153846,
+      "text": "七",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 5.046153846153846,
+      "end": 5.8256410256410245,
+      "text": "世",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 5.8256410256410245,
+      "end": 5.948717948717949,
+      "text": "纪",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.071794871794872,
+      "text": "大",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 6.071794871794872,
+      "end": 6.194871794871795,
+      "text": "昭",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 6.194871794871795,
+      "end": 6.358974358974359,
+      "text": "寺",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 6.358974358974359,
+      "end": 6.564102564102564,
+      "text": "与",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.564102564102564,
+      "end": 7.015384615384614,
+      "text": "十",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 7.015384615384614,
+      "end": 7.220512820512821,
+      "text": "七",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 7.220512820512821,
+      "end": 7.384615384615385,
+      "text": "世",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 7.384615384615385,
+      "end": 7.5487179487179485,
+      "text": "纪",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 7.5487179487179485,
+      "end": 7.753846153846153,
+      "text": "布",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 7.753846153846153,
+      "end": 7.8769230769230765,
+      "text": "达",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 7.8769230769230765,
+      "end": 7.958974358974357,
+      "text": "拉",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 7.958974358974357,
+      "end": 8,
+      "text": "的",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 8,
+      "end": 8.205128205128204,
+      "text": "建",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 8.205128205128204,
+      "end": 8.328205128205129,
+      "text": "设",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 8.328205128205129,
+      "end": 8.369230769230768,
+      "text": "，",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 8.369230769230768,
+      "end": 8.615384615384613,
+      "text": "还",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 8.615384615384613,
+      "end": 8.984615384615385,
+      "text": "要",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 8.984615384615385,
+      "end": 9.148717948717948,
+      "text": "继",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 9.148717948717948,
+      "end": 9.353846153846154,
+      "text": "续",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 9.353846153846154,
+      "end": 9.517948717948718,
+      "text": "追",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 9.517948717948718,
+      "end": 9.723076923076922,
+      "text": "问",
+      "textStart": 44,
+      "textEnd": 45
+    },
+    {
+      "start": 9.723076923076922,
+      "end": 9.846153846153845,
+      "text": "历",
+      "textStart": 45,
+      "textEnd": 46
+    },
+    {
+      "start": 9.846153846153845,
+      "end": 9.96923076923077,
+      "text": "史",
+      "textStart": 46,
+      "textEnd": 47
+    },
+    {
+      "start": 9.96923076923077,
+      "end": 10.174358974358974,
+      "text": "。",
+      "textStart": 47,
+      "textEnd": 48
+    }
+  ]
+}

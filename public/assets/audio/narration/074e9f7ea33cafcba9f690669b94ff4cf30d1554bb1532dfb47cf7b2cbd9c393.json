@@ -1,0 +1,19 @@
+{
+  "id": "074e9f7ea33cafcba9f690669b94ff4cf30d1554bb1532dfb47cf7b2cbd9c393",
+  "url": "/assets/audio/narration/074e9f7ea33cafcba9f690669b94ff4cf30d1554bb1532dfb47cf7b2cbd9c393.mp3",
+  "text": "事件留下文字记录，碑刻以物质形式保存，后来又可以产生拓本等复制材料。模型把载体逐步展开，帮助区分这些关系。现存馆藏拓本的制作日期需要另查，不能把八二三年立碑直接当成拓本的年代。",
+  "duration": 16.02,
+  "bytes": 258036,
+  "sha256": "53d3c5c75b4be03b35080d3be82e94ad8d2edff62a6b4a0306b0043ebe1f6518",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:38:20.241Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/074e9f7ea33cafcba9f690669b94ff4cf30d1554bb1532dfb47cf7b2cbd9c393.subtitles.json",
+  "subtitleSha256": "996962ca40edd8742db88d6170b9886b7d1c1903a458d1c22f97d1b507091c5f",
+  "timingLevel": "word"
+}

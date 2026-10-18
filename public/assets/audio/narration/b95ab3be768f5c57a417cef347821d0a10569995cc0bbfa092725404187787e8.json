@@ -1,0 +1,19 @@
+{
+  "id": "b95ab3be768f5c57a417cef347821d0a10569995cc0bbfa092725404187787e8",
+  "url": "/assets/audio/narration/b95ab3be768f5c57a417cef347821d0a10569995cc0bbfa092725404187787e8.mp3",
+  "text": "建筑已经给出了使用空间，现在让空白文本载体来到工作桌。它代表可以传递的知识，不是古代经文，也没有假定一条真实行程。旁边阿底峡与托林等材料，提供具体人物、地点和时代的核对入口。",
+  "duration": 15.768,
+  "bytes": 254004,
+  "sha256": "c861b207c10f745290523ce28485ec10588832e159345ef6285c8f2534dd1abc",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:40:56.448Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b95ab3be768f5c57a417cef347821d0a10569995cc0bbfa092725404187787e8.subtitles.json",
+  "subtitleSha256": "7f2495f0eb18f345b2e5ea9b5177d2dc13c84b3c2c3de1f9abc1c19b6c6ac9fd",
+  "timingLevel": "word"
+}

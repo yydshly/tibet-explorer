@@ -1,0 +1,15 @@
+{
+  "id": "b696023f45cb5845371dfbee5f4809b57fd52198f6c9a3fcf0ead9c428145375",
+  "url": "/assets/audio/narration/b696023f45cb5845371dfbee5f4809b57fd52198f6c9a3fcf0ead9c428145375.mp3",
+  "text": "阿里先看西部高地和地面联系。民航局回顾记载，二〇一〇年以前，当地出行依托公路。昆莎机场增加航空入口，原有公路并没有被替代。",
+  "duration": 11.448,
+  "bytes": 184884,
+  "sha256": "f6c7a4a7e82ac03330dfa6806f82a3d763c854e6d4c7f733ce88599e27c2c07d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:55:01.102Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

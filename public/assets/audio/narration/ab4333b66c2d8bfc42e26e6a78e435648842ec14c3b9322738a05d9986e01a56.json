@@ -1,0 +1,15 @@
+{
+  "id": "ab4333b66c2d8bfc42e26e6a78e435648842ec14c3b9322738a05d9986e01a56",
+  "url": "/assets/audio/narration/ab4333b66c2d8bfc42e26e6a78e435648842ec14c3b9322738a05d9986e01a56.mp3",
+  "text": "第一章给了我们位置和地形这张底图，但冷暖、风与雨还需要过程解释。下一章先拉回地球，看同一地点为什么有季节照射差异，再把能量、空气和水一步一步带回这片高原。",
+  "duration": 17.28,
+  "bytes": 278196,
+  "sha256": "baedee0033f43574227819d266084af3143d2c3ef5ad1bc61e38c2f6bff59ea5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:13.745Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

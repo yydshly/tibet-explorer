@@ -1,0 +1,15 @@
+{
+  "id": "56f7c666d28d4cdd63c86fa0e4a9a311b44487fd4a00a5166fcb62fa3958d692",
+  "url": "/assets/audio/narration/56f7c666d28d4cdd63c86fa0e4a9a311b44487fd4a00a5166fcb62fa3958d692.mp3",
+  "text": "先读拉萨河谷的真实高程剖面，比较谷底与两侧山地。较平缓地面提供通行空间，剖面线不是道路。",
+  "duration": 10.692,
+  "bytes": 172788,
+  "sha256": "29ddb0567a4d8a25c31600d2a4e1e95f443fa974d31ad6499cc1408dbcd6d93c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:20:23.744Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

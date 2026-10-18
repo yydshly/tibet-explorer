@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "audioSha256": "873b194c9425065d8de41f81f1fd9d88123649876bce7202e2147424fa3dfe02",
+  "textSha256": "80b5fe92a87dc492cf5a3dbcca4d1ac2e6e0ea76ab92f4c2e96dea124f832e51",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 5.04,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.9039002267573695,
+      "text": "博物馆材料记载阿底峡一〇四二年入藏，并与托林相联系。",
+      "textStart": 0,
+      "textEnd": 26
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.16410256410256407,
+      "text": "博",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.16410256410256407,
+      "end": 0.32820512820512815,
+      "text": "物",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.32820512820512815,
+      "end": 0.41025641025641024,
+      "text": "馆",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.5333333333333332,
+      "text": "材",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 0.6564102564102563,
+      "text": "料",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.6564102564102563,
+      "end": 0.7794871794871795,
+      "text": "记",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.7794871794871795,
+      "end": 0.9435897435897436,
+      "text": "载",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 1.1897435897435897,
+      "text": "阿",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.1897435897435897,
+      "end": 1.3948717948717948,
+      "text": "底",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.3948717948717948,
+      "end": 1.517948717948718,
+      "text": "峡",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.517948717948718,
+      "end": 1.8051282051282052,
+      "text": "一",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.8051282051282052,
+      "end": 2.1743589743589746,
+      "text": "〇",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.1743589743589746,
+      "end": 2.297435897435897,
+      "text": "四",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.297435897435897,
+      "end": 2.5025641025641026,
+      "text": "二",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.5025641025641026,
+      "end": 2.625641025641025,
+      "text": "年",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.625641025641025,
+      "end": 2.7897435897435896,
+      "text": "入",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.7897435897435896,
+      "end": 2.9128205128205122,
+      "text": "藏",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 2.9128205128205122,
+      "end": 2.953846153846154,
+      "text": "，",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 2.953846153846154,
+      "end": 3.4051282051282046,
+      "text": "并",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.7743589743589743,
+      "text": "与",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 3.7743589743589743,
+      "end": 3.9384615384615382,
+      "text": "托",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 3.9384615384615382,
+      "end": 4.102564102564102,
+      "text": "林",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.102564102564102,
+      "end": 4.266666666666666,
+      "text": "相",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.389743589743589,
+      "text": "联",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.389743589743589,
+      "end": 4.594871794871794,
+      "text": "系",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 4.594871794871794,
+      "end": 4.758974358974359,
+      "text": "。",
+      "textStart": 25,
+      "textEnd": 26
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "e8c8e7962e3416eb5ef08044f0e2fc06f3524f36deb879a2e4234f7fd37a119f",
+  "url": "/assets/audio/narration/e8c8e7962e3416eb5ef08044f0e2fc06f3524f36deb879a2e4234f7fd37a119f.mp3",
+  "text": "先看林芝周围的通行试线。白线只连接起点和终点，金线贴着真实高程，山岭带来的起伏就显出来了。林芝到鲁朗也要面对山地阻隔；这里演示高差，不把试线当成三一八国道。",
+  "duration": 16.128,
+  "bytes": 259764,
+  "sha256": "655831122c878cd7cbdac081e3f605f986539b8ad6ce900f2eeaa73b710e33ab",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:24:16.361Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e8c8e7962e3416eb5ef08044f0e2fc06f3524f36deb879a2e4234f7fd37a119f.subtitles.json",
+  "subtitleSha256": "20a62bc37436ec22bb44eedfaa4721d6d427871e9c0825e2cfc4fa91cddb141d",
+  "timingLevel": "word"
+}

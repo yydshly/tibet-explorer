@@ -1,0 +1,15 @@
+{
+  "id": "19269a84a5cca1bc52696edeb262349d8e2b7cd7932d66469a33f72cafec97b0",
+  "url": "/assets/audio/narration/19269a84a5cca1bc52696edeb262349d8e2b7cd7932d66469a33f72cafec97b0.mp3",
+  "text": "流域是一种联系，人还通过道路、山口、交通技术与交换网络连接地方。下一步保留地形背景，分开自然谷地、历史交往和现代交通，让每一种线都有清楚的含义，而不是把所有联系混在一起。",
+  "duration": 18.612,
+  "bytes": 299508,
+  "sha256": "34e7080567eab838c4c80bb15972cc9c118c41424357bf9090ad023af9e0054b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:24.890Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

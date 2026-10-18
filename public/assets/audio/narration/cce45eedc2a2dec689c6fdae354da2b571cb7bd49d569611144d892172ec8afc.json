@@ -1,0 +1,19 @@
+{
+  "id": "cce45eedc2a2dec689c6fdae354da2b571cb7bd49d569611144d892172ec8afc",
+  "url": "/assets/audio/narration/cce45eedc2a2dec689c6fdae354da2b571cb7bd49d569611144d892172ec8afc.mp3",
+  "text": "材料柜保留为什么去和相关认识，状态台提醒日期、交通与开放还要核实，笔记本等待自己的问题与新观察。空的状态没有被动画变成通过，空白纸也没有变成虚构游记。实际内容来自你填写与保存的计划。",
+  "duration": 16.452,
+  "bytes": 264948,
+  "sha256": "cc4ccea69761f9a85c49461fc9c1828480584f4f39ddf2f6fc3c59882891a675",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:14:25.931Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/cce45eedc2a2dec689c6fdae354da2b571cb7bd49d569611144d892172ec8afc.subtitles.json",
+  "subtitleSha256": "30f89d2c815d53c56e3925206387ee1449bf9f7c4195ff3bb6e43a45b0eaba62",
+  "timingLevel": "word"
+}

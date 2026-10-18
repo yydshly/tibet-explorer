@@ -1,0 +1,15 @@
+{
+  "id": "db7f1b7359fb500929c2e59ede08f141be6a4b0df199a8a5cb96d5a5f8c71858",
+  "url": "/assets/audio/narration/db7f1b7359fb500929c2e59ede08f141be6a4b0df199a8a5cb96d5a5f8c71858.mp3",
+  "text": "这一章把气候机制落到了不同地区，也看见了生活条件。下一章走近山、河、湖与聚落周边：它们怎样形成，人在其中怎样生活和留下记忆？宏观解释会继续落到具体的观察对象。",
+  "duration": 17.532,
+  "bytes": 282228,
+  "sha256": "1dd43ad53662f1f417bdc14cb9fcd2b94cc6e1dce8a3b3522ad361b6af29eb9d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:20.352Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

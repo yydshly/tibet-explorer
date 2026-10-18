@@ -1,0 +1,15 @@
+{
+  "id": "645149ab5ba1df707036ccff68d26246d31d25dde9c98afe9616237ad54fa402",
+  "url": "/assets/audio/narration/645149ab5ba1df707036ccff68d26246d31d25dde9c98afe9616237ad54fa402.mp3",
+  "text": "请沿金色箭头看太阳能量怎样进入，再沿暖色箭头看地表怎样向外交换，并转到侧面辨认地表与大气的位置。把方向看清以后，才能进一步讨论为什么不同地表、不同天气有不同温度。",
+  "duration": 15.192,
+  "bytes": 244788,
+  "sha256": "ab8d6dd20ef43f5eef6ace6607f9fd70001c4128a581dcefabb4133c33b05b38",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:57.542Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

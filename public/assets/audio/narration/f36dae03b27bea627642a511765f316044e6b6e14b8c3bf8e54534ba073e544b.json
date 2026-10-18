@@ -1,0 +1,15 @@
+{
+  "id": "f36dae03b27bea627642a511765f316044e6b6e14b8c3bf8e54534ba073e544b",
+  "url": "/assets/audio/narration/f36dae03b27bea627642a511765f316044e6b6e14b8c3bf8e54534ba073e544b.mp3",
+  "text": "把镜头拉回同一高原，依次看林芝、拉萨和阿里的位置。藏东南的水汽联系、山地通道与较低河谷，和内部高地、西部地区的条件不同。拉萨的河谷位置也不等于整个行政区的环境。阿里仍会受到季风和西侧系统影响；不能用单一风向，给一个地区判定全年干湿。",
+  "duration": 21.6,
+  "bytes": 347316,
+  "sha256": "5421056abe344c473c002bf3ceb64fc950ae5f1bde014df716cabde92f597465",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:03:32.507Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

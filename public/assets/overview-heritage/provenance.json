@@ -1,0 +1,32 @@
+{
+  "assets": [
+    {
+      "accessionNumber": "1993.479",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/38006",
+      "isPublicDomain": true,
+      "imageSha256": "a0aa67ff788488d225e3b0c3b3b16b2cd3c9610afbb2690789ca7d6a9ecf8015",
+      "recordFile": "met-atisha-38006.record.json",
+      "apiUrl": "https://collectionapi.metmuseum.org/public/collection/v1/objects/38006",
+      "imageFile": "met-atisha-38006.jpg",
+      "imageUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP-42256-001.jpg",
+      "bytes": 204118,
+      "objectID": 38006
+    },
+    {
+      "accessionNumber": "1987.407.6",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/37610",
+      "isPublicDomain": true,
+      "imageSha256": "8b2893f1b5797d2c08683554ec81a997e9d9fdfe49c4627b97fb4c1089675973",
+      "recordFile": "met-manuscript-cover-37610.record.json",
+      "apiUrl": "https://collectionapi.metmuseum.org/public/collection/v1/objects/37610",
+      "imageFile": "met-manuscript-cover-37610.jpg",
+      "imageUrl": "https://images.metmuseum.org/CRDImages/as/web-large/DP-30662-001.jpg",
+      "bytes": 68185,
+      "objectID": 37610
+    }
+  ],
+  "licenseUrl": "https://www.metmuseum.org/hubs/open-access",
+  "license": "CC0 1.0 / The Met Open Access",
+  "acquiredAt": "2026-10-16T03:24:49.6292509Z",
+  "derivatives": "None. These are the official web-large JPEGs. Observation rectangles are interface annotations, not changes to the collection image."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "f605b1c7f67d428ef55211048c613764113436aefcdf49ee92ebd78b6a38acff",
+  "url": "/assets/audio/narration/f605b1c7f67d428ef55211048c613764113436aefcdf49ee92ebd78b6a38acff.mp3",
+  "text": "最后把拉萨的观察问题存进计划。铁路抵达以后，还要接上地方交通，分别核实开放与预约。世界遗产材料提醒我们尊重朝圣和地方使用；保存的是观察目的，安排仍可修改。",
+  "duration": 15.66,
+  "bytes": 252276,
+  "sha256": "bf49ace31805f066df5e861cc8409345257162006161937090930ccf05535423",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:30:51.763Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f605b1c7f67d428ef55211048c613764113436aefcdf49ee92ebd78b6a38acff.subtitles.json",
+  "subtitleSha256": "deca00ba2755c1fad24596d6ba61ec401d1d5ef1f9f4d4911ac7790464131975",
+  "timingLevel": "word"
+}

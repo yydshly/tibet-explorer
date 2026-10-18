@@ -1,0 +1,15 @@
+{
+  "id": "7cce1b20800da299e6a6154e3354673c83e2c651db32814bfafcab3a11d35b68",
+  "url": "/assets/audio/narration/7cce1b20800da299e6a6154e3354673c83e2c651db32814bfafcab3a11d35b68.mp3",
+  "text": "林芝的地方观察先从鲁朗这处窗口开始，辨认鲁朗河、三一八国道和周围地形。这里只包含小镇附近的一段，不覆盖完整的色季拉越岭。把路与河谷的问题记下来，再核实完整行程和实际可停留的地点。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "ecfbfe4181f4d6821d6e73fb86ab1a247da437b10e6402c2dc44618427c335e7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:13:03.231Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

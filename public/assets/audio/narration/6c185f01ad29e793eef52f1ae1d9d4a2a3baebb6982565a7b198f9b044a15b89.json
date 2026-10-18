@@ -1,0 +1,15 @@
+{
+  "id": "6c185f01ad29e793eef52f1ae1d9d4a2a3baebb6982565a7b198f9b044a15b89",
+  "url": "/assets/audio/narration/6c185f01ad29e793eef52f1ae1d9d4a2a3baebb6982565a7b198f9b044a15b89.mp3",
+  "text": "风与水汽把水带到山地附近，但输送还不是降水。下一步缩小到山坡与河谷，跟随同一串过程：空气抬升、冷却、凝结成云，再看哪些条件让云滴或冰晶真正降到地面。",
+  "duration": 16.164,
+  "bytes": 260340,
+  "sha256": "26db0131fadedee37475ef37a0b9140eff435ba4f2b77db7c38a5a7af6855827",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:51:54.803Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

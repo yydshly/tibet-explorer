@@ -1,0 +1,19 @@
+{
+  "id": "1a5518801b910890ba35db7b8a10234de055bd0b240bbe94c237d550fd87e2fe",
+  "url": "/assets/audio/narration/1a5518801b910890ba35db7b8a10234de055bd0b240bbe94c237d550fd87e2fe.mp3",
+  "text": "请退回人员与开放阶段，看看接段尚未补齐时，使用者还缺少什么。再对照彩门村访谈与有日期的牧民社区研究：采访、家庭调查和地区统计回答不同问题。既要看机会，也要看成本，不能把两位受访者代表全部居民。",
+  "duration": 18.828,
+  "bytes": 302964,
+  "sha256": "c7977c77c48423f2ce0cc90b942e90fcc6c8f9090baff3815ad3804c045a6511",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:12:52.873Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/1a5518801b910890ba35db7b8a10234de055bd0b240bbe94c237d550fd87e2fe.subtitles.json",
+  "subtitleSha256": "e8c420f0d529538f3362c6b53f571ce5ab74d5cee01799abfafd2a1bf8fc97e5",
+  "timingLevel": "word"
+}

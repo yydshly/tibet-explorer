@@ -1,0 +1,19 @@
+{
+  "id": "a1355e73dd7ec56df1f5db4460150b7beb0c0e307477992d777a68af7b73c5a8",
+  "url": "/assets/audio/narration/a1355e73dd7ec56df1f5db4460150b7beb0c0e307477992d777a68af7b73c5a8.mp3",
+  "text": "二〇二一年，恰青赛马会作为第五批扩展项目列入国家级非遗名录。认定记录保护责任，不表示那一年才出现赛马。项目说明把藏北牧民和共同参与的群众列为传承保护者；节会靠人的学习、参与和组织延续。",
+  "duration": 19.008,
+  "bytes": 305844,
+  "sha256": "f636e85a0899a0eb46a163f269e5c1ec9f8e1ed4cc5492d1e9a0a40576d8cf44",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:56:27.350Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a1355e73dd7ec56df1f5db4460150b7beb0c0e307477992d777a68af7b73c5a8.subtitles.json",
+  "subtitleSha256": "d6e6d6e05a8c85ef8ac0ede6ca83380f34802d32dadf51c7e345f98e19a4ee05",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "a16544cbfbd8c6aa4f863b15d7cba2239cf8b3dadb77155c5780186b53cc9e1f",
+  "url": "/assets/audio/narration/a16544cbfbd8c6aa4f863b15d7cba2239cf8b3dadb77155c5780186b53cc9e1f.mp3",
+  "text": "刚才认识云雨机制，现在换一种提问：一次天气在短时间里怎样改变？地形可以保持相同，空气与云雨状态却会变化。这里先用概念过程练习阅读顺序，真实事件还要有日期、地点与对应观测。",
+  "duration": 18.72,
+  "bytes": 301236,
+  "sha256": "df5b28729c3ace26e5b1e14e42f7a5e0399cacd1e64a2c2a81792db507507b8a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:28.125Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

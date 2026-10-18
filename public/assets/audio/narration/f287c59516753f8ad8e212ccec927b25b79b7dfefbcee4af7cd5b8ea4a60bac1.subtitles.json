@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "audioSha256": "61bc4866c980955c4127daf69ea0b55b661c313a21fc5c331eb687e62601e8cb",
+  "textSha256": "48dcfac052dd76bb92a303266e28736cd1b248f97d99a1c2340df69e337d427b",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 8.712,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 8.549433106575963,
+      "text": "保留西藏整体，先看东南部的林芝。夏季，印度洋和孟加拉湾方向的水汽可沿大峡谷进入藏东南。",
+      "textStart": 0,
+      "textEnd": 43
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.24615384615384614,
+      "text": "保",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.24615384615384614,
+      "end": 0.41025641025641024,
+      "text": "留",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.7384615384615385,
+      "text": "西藏",
+      "textStart": 2,
+      "textEnd": 4
+    },
+    {
+      "start": 0.7384615384615385,
+      "end": 0.8615384615384616,
+      "text": "整",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.8615384615384616,
+      "end": 1.0256410256410255,
+      "text": "体",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 1.0256410256410255,
+      "end": 1.0666666666666664,
+      "text": "，",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.0666666666666664,
+      "end": 1.7230769230769232,
+      "text": "先",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.7230769230769232,
+      "end": 1.9282051282051282,
+      "text": "看",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.9282051282051282,
+      "end": 2.092307692307692,
+      "text": "东",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 2.092307692307692,
+      "end": 2.2564102564102564,
+      "text": "南",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.2564102564102564,
+      "end": 2.3794871794871795,
+      "text": "部",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.3794871794871795,
+      "end": 2.4205128205128204,
+      "text": "的",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.4205128205128204,
+      "end": 2.5435897435897434,
+      "text": "林",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.5435897435897434,
+      "end": 2.7487179487179483,
+      "text": "芝",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.7487179487179483,
+      "end": 2.8307692307692305,
+      "text": "。",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.8307692307692305,
+      "end": 3.733333333333333,
+      "text": "夏",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.733333333333333,
+      "end": 3.9384615384615382,
+      "text": "季",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.9384615384615382,
+      "end": 3.9794871794871787,
+      "text": "，",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.9794871794871787,
+      "end": 4.266666666666666,
+      "text": "印",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.717948717948717,
+      "text": "度",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.717948717948717,
+      "end": 4.841025641025641,
+      "text": "洋",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.841025641025641,
+      "end": 4.964102564102563,
+      "text": "和",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.964102564102563,
+      "end": 5.087179487179487,
+      "text": "孟",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 5.087179487179487,
+      "end": 5.25128205128205,
+      "text": "加",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.25128205128205,
+      "end": 5.374358974358974,
+      "text": "拉",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.374358974358974,
+      "end": 5.456410256410256,
+      "text": "湾",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.456410256410256,
+      "end": 5.579487179487179,
+      "text": "方",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 5.579487179487179,
+      "end": 5.702564102564102,
+      "text": "向",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 5.702564102564102,
+      "end": 5.743589743589744,
+      "text": "的",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 5.743589743589744,
+      "end": 5.948717948717949,
+      "text": "水",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.112820512820512,
+      "text": "汽",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.112820512820512,
+      "end": 6.482051282051281,
+      "text": "可",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.482051282051281,
+      "end": 6.728205128205128,
+      "text": "沿",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 6.728205128205128,
+      "end": 6.892307692307693,
+      "text": "大",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 6.892307692307693,
+      "end": 7.015384615384614,
+      "text": "峡",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 7.015384615384614,
+      "end": 7.220512820512821,
+      "text": "谷",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 7.220512820512821,
+      "end": 7.671794871794871,
+      "text": "进",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 7.671794871794871,
+      "end": 7.835897435897436,
+      "text": "入",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 7.835897435897436,
+      "end": 7.958974358974357,
+      "text": "藏",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 7.958974358974357,
+      "end": 8.164102564102564,
+      "text": "东",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 8.164102564102564,
+      "end": 8.287179487179486,
+      "text": "南",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 8.287179487179486,
+      "end": 8.451282051282051,
+      "text": "。",
+      "textStart": 42,
+      "textEnd": 43
+    }
+  ]
+}

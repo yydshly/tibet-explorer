@@ -1,0 +1,19 @@
+{
+  "id": "3ef6d541b525ea312be4ab82b5c4db2c34e669f2d503dbe2decd214b30414e9a",
+  "url": "/assets/audio/narration/3ef6d541b525ea312be4ab82b5c4db2c34e669f2d503dbe2decd214b30414e9a.mp3",
+  "text": "地图不换，接着看拉萨河谷。谷地相对平缓，跨向两侧山坡又会升高。试线让我们比较地面的起伏；真实道路还要考虑地质、桥隧和维护，不能只凭这条线选路。",
+  "duration": 14.832,
+  "bytes": 239028,
+  "sha256": "10106982526c3c681d69e364c1f571cea69798e1ffe01091964a139fbdde3abc",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:24:21.424Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3ef6d541b525ea312be4ab82b5c4db2c34e669f2d503dbe2decd214b30414e9a.subtitles.json",
+  "subtitleSha256": "f06ec9178384751080df4742201e5e05f6842a218a85f97f90537c7ede0a1f1b",
+  "timingLevel": "word"
+}

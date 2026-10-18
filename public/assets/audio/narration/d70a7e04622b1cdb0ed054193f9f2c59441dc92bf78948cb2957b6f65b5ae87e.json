@@ -1,0 +1,15 @@
+{
+  "id": "d70a7e04622b1cdb0ed054193f9f2c59441dc92bf78948cb2957b6f65b5ae87e",
+  "url": "/assets/audio/narration/d70a7e04622b1cdb0ed054193f9f2c59441dc92bf78948cb2957b6f65b5ae87e.mp3",
+  "text": "每站保留为什么去、观察什么和对应知识链接，日期与交通则说明计划条件。尚未核实的安排仍叫探索计划，不能当成出行承诺。实地回来后，可以记录哪些解释得到支持、哪些需要修正，再接回相应章节。",
+  "duration": 17.64,
+  "bytes": 283956,
+  "sha256": "1f4c954156dc8d09f3c7e840341b9b84586c7cf55c2f3cd20e8f6f09151ff3d5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:34.681Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

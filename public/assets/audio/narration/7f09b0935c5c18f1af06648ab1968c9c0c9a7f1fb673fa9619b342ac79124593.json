@@ -1,0 +1,15 @@
+{
+  "id": "7f09b0935c5c18f1af06648ab1968c9c0c9a7f1fb673fa9619b342ac79124593",
+  "url": "/assets/audio/narration/7f09b0935c5c18f1af06648ab1968c9c0c9a7f1fb673fa9619b342ac79124593.mp3",
+  "text": "阿里的交流问题也要读图像。博物馆把北印度写本与图像的传播，同西藏绘画的变化联系起来。把教师、译本和艺术一起读，再比较现代交通怎样被人使用。",
+  "duration": 12.708,
+  "bytes": 205044,
+  "sha256": "6742814068d8e17514abe6b7783314e0ae31cc55ea4baf74408de46feca5b4dd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:50.015Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

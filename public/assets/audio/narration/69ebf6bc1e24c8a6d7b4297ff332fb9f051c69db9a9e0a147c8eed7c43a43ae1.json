@@ -1,0 +1,15 @@
+{
+  "id": "69ebf6bc1e24c8a6d7b4297ff332fb9f051c69db9a9e0a147c8eed7c43a43ae1",
+  "url": "/assets/audio/narration/69ebf6bc1e24c8a6d7b4297ff332fb9f051c69db9a9e0a147c8eed7c43a43ae1.mp3",
+  "text": "林芝向西，通过二〇二一年开通的铁路联系山南与拉萨；去鲁朗则涉及色季拉越岭。把两种方向同时放回地形。主通道、地方接续与服务时间一起可用，联系才能进入具体生活。",
+  "duration": 16.92,
+  "bytes": 272436,
+  "sha256": "7c43c289659302bcc9a3b6215ab01f81dc31024bbf172056ba04c35bd266d0cf",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:14.985Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "776f5bf048e062c262dab89a3708f03be3e79dd985d3278e1c121e644e76936d",
+  "url": "/assets/audio/narration/776f5bf048e062c262dab89a3708f03be3e79dd985d3278e1c121e644e76936d.mp3",
+  "text": "阿里昆莎机场在二〇一〇年七月一日通航，增加进入西部高原的航空方式。到达地区以后，还需要地面接续。二〇二〇年札布让的报道记录金珠德吉经营家庭旅馆；不能把她的经营变化全归因于机场。",
+  "duration": 17.208,
+  "bytes": 277044,
+  "sha256": "7c835b803da38127a575d9d985f815a905bacbed7bb7b2d34ee82b810fdd8b77",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:06.952Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

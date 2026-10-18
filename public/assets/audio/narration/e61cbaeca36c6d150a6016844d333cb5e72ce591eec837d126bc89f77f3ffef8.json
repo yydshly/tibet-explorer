@@ -1,0 +1,15 @@
+{
+  "id": "e61cbaeca36c6d150a6016844d333cb5e72ce591eec837d126bc89f77f3ffef8",
+  "url": "/assets/audio/narration/e61cbaeca36c6d150a6016844d333cb5e72ce591eec837d126bc89f77f3ffef8.mp3",
+  "text": "拉萨到达以后的接续方式还不同。柳梧大桥在二〇〇七年连通火车站与市区，拉萨西货场则接上装卸与地方配送。跨河进城和货物分送，分别服务不同用途。",
+  "duration": 14.58,
+  "bytes": 234996,
+  "sha256": "1ee4381ddbf8d9549eb6ca1d21a970b706e0c250f1e4331930b6376ad95dd822",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:42:45.597Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

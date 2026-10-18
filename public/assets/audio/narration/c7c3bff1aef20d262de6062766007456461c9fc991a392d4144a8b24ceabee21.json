@@ -1,0 +1,19 @@
+{
+  "id": "c7c3bff1aef20d262de6062766007456461c9fc991a392d4144a8b24ceabee21",
+  "url": "/assets/audio/narration/c7c3bff1aef20d262de6062766007456461c9fc991a392d4144a8b24ceabee21.mp3",
+  "text": "先保留林芝的山谷与山岭。拉林铁路开通以前，这里已经有公路，米林机场也已在二〇〇六年通航。新铁路是在已有交通上增加选择。",
+  "duration": 12.096,
+  "bytes": 195252,
+  "sha256": "84f457e568d0f64385b0bccab9be799738ecce8ef44ee0ff5dd65fa2261a0b02",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:26:18.188Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c7c3bff1aef20d262de6062766007456461c9fc991a392d4144a8b24ceabee21.subtitles.json",
+  "subtitleSha256": "97830811e4796f4a122f947d71bb94ec5bc5c2dac4c4cdab0e895df68550d197",
+  "timingLevel": "word"
+}

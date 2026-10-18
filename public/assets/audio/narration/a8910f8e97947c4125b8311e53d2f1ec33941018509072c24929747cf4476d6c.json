@@ -1,0 +1,15 @@
+{
+  "id": "a8910f8e97947c4125b8311e53d2f1ec33941018509072c24929747cf4476d6c",
+  "url": "/assets/audio/narration/a8910f8e97947c4125b8311e53d2f1ec33941018509072c24929747cf4476d6c.mp3",
+  "text": "我们将沿着一个问题认识西藏：今天的这片土地，是怎样形成，又怎样持续变化的？先从地球找到它的位置。眼前的海陆分布，会成为理解气候、交流与地方差异的共同参照。",
+  "duration": 14.76,
+  "bytes": 237876,
+  "sha256": "44450d6a12447e7b9df92758eaaefb8ca788718cb62c1df0261b8cf459a8e0b7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:48:41.116Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

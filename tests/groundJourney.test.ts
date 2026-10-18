@@ -1,0 +1,85 @@
+// @ts-expect-error Node test fixture access only.
+import {readFileSync} from 'node:fs';
+import {describe,it,expect,vi} from 'vitest';
+import * as THREE from 'three';
+import {groundJourneyState,groundJourneyText,valleyJourneyState,valleyJourneyText} from '../src/lib/groundJourney';
+import {localRoadRouteEvidence,type LocalCollection} from '../src/scene/cityLocalMap';
+import {createGroundRouteReading} from '../src/scene/groundRouteReading';
+import type {NarrationTiming} from '../src/lib/narrationTiming';
+vi.mock('../src/scene/environment',async original=>({...await original<typeof import('../src/scene/environment')>(),label:()=>new THREE.Sprite(new THREE.SpriteMaterial())}));
+const data=JSON.parse(readFileSync('public/data/local-places/lhasa.geojson','utf8')) as LocalCollection;
+const main={...data,features:data.features.filter(f=>f.properties.featureClass!=='railway'||f.properties.tags.usage==='main')};
+const route=localRoadRouteEvidence(main,[91.036,29.6202],[91.0690419,29.6251928],'railway');
+describe('sourced ground journey',()=>{
+ it('aligns the expanded imagery, finer DSM and a source-connected western railway approach',()=>{
+  const manifest=JSON.parse(readFileSync('public/assets/terrain/lhasa-ground/manifest.json','utf8'));
+  const acquired=JSON.parse(readFileSync('public/assets/terrain/lhasa-ground/lhasa.geojson','utf8')) as LocalCollection;
+  const dem=manifest.places[0],bytes=readFileSync(`public${dem.dataUrl}`);
+  expect(dem.bbox).toEqual(manifest.imagery.bbox);
+  expect(dem.bbox).toEqual(acquired.metadata.bbox);
+  expect(bytes.length).toBe(dem.columns*dem.rows*2);
+  expect(manifest.imagery.sourcePixelMetres).toBe(10);
+  expect(manifest.imagery.nodataFraction).toBeLessThan(.001);
+  const extended=localRoadRouteEvidence({...acquired,features:acquired.features.filter(f=>f.properties.featureClass!=='railway'||f.properties.tags.usage==='main')},acquired.metadata.groundRouteStart as [number,number],[91.0690419,29.6251928],'railway');
+  expect(extended.coordinates[0]).toEqual(acquired.metadata.groundRouteStart);
+  expect(extended.coordinates.at(-1)).toEqual(route.coordinates.at(-1));
+  expect(extended.featureIds).toContain('way/405934377');
+  expect(extended.featureIds).toContain('way/25214797');
+  const toWorld=([lon,lat]:[number,number],offset=0)=>new THREE.Vector3(lon,3600*1.8/100000+offset/100000,lat);
+  const reading=createGroundRouteReading(extended.coordinates,acquired.features,toWorld,100000,1.8);
+  const camera=new THREE.PerspectiveCamera(42,1.4),size=new THREE.Vector2(900,600);
+  const normal=reading.update({progress:1,height:1800,bearing:0,returnMix:0},camera,size);
+  const river=reading.update({progress:1,height:1800,bearing:0,returnMix:0,lookAt:'river'},camera,size);
+  expect(normal.position.toArray()).toEqual(river.position.toArray());
+  expect(normal.target.distanceTo(river.target)).toBeGreaterThan(.001);
+  expect(reading.group.userData.reading.totalMetres).toBeGreaterThan(7000);
+  const crossing=reading.update({progress:1,height:700,bearing:0,returnMix:0,railPhase:'crossing'},camera,size);
+  expect(reading.group.userData.reading.bridge).toBe(true);
+  const crossingDistance=reading.group.userData.reading.distanceMetres;
+  reading.update({progress:1,height:700,bearing:0,returnMix:0,railPhase:'tunnel'},camera,size);
+  expect(reading.group.userData.reading.tunnel).toBe(true);
+  expect(reading.group.userData.reading.distanceMetres).toBeGreaterThan(crossingDistance);
+  expect(crossing.position.toArray().every(Number.isFinite)).toBe(true);
+  expect(reading.group.children.some(o=>String(o.userData.selectId).startsWith('ground-rail:'))).toBe(true);
+ });
+ it('ties the main-line explanation to river crossing, mountain, station and return using exact words',()=>{
+  const at=(token:string)=>valleyJourneyState(valleyJourneyText,{textProgress:(valleyJourneyText.indexOf(token)+.001)/valleyJourneyText.length} as NarrationTiming);
+  expect(valleyJourneyState(valleyJourneyText).stage).toBe('whole');
+  expect(at('沿线向前看').returnMix).toBe(0);
+  expect(at('停在跨河段').railPhase).toBe('crossing');
+  expect(at('停在虚线段').railPhase).toBe('tunnel');
+  expect(at('铁路完成区域抵达').progress).toBe(1);
+  expect(at('你可以点选线路').connectionMix).toBe(1);
+  expect(at('接下来再看').returnMix).toBe(1);
+  expect(at('停在跨河段').height).toBe(1100);
+  expect(at('沿线向前看').progress).toBeLessThan(.01);
+ });
+ it('uses connected source mainline edges, including the mapped tunnel, without extending to a building',()=>{
+  expect(route.coordinates.length).toBeGreaterThan(15);
+  expect(route.featureIds).toContain('way/25214797');
+  expect(route.coordinates.at(-1)).toEqual([91.0690419,29.6251928]);
+  for(const id of route.featureIds)expect(main.features.find(f=>f.id===id)?.properties.tags.usage).toBe('main');
+ });
+ it('moves position and camera through the same source geometry and preserves tunnel scope',()=>{
+  const toWorld=([lon,lat]:[number,number],offset=0)=>new THREE.Vector3(lon,3600*1.8/100000+offset/100000,lat);
+  const reading=createGroundRouteReading(route.coordinates,main.features,toWorld,100000,1.8);
+  const camera=new THREE.PerspectiveCamera(42,1.4),size=new THREE.Vector2(900,600);
+  const first=reading.update({progress:0,height:2,bearing:0,returnMix:0},camera,size);
+  const last=reading.update({progress:1,height:120,bearing:90,returnMix:0},camera,size);
+  expect(first.position.distanceTo(last.position)).toBeGreaterThan(.01);
+  expect(first.position.y).toBeCloseTo(.03602,7);
+  expect(reading.group.userData.reading.totalMetres).toBeGreaterThan(2000);
+  expect(reading.group.children.some(c=>c.userData.tunnel&&c.userData.scope.includes('非地表'))).toBe(true);
+ });
+ it('uses exact source words for descent, travel and return, also after backward seeks',()=>{
+  const at=(token:string)=>groundJourneyState(groundJourneyText,{textProgress:(groundJourneyText.indexOf(token)+.001)/groundJourneyText.length} as NarrationTiming);
+  expect(groundJourneyState(groundJourneyText).returnMix).toBe(1);
+  expect(at('虚线标出').railPhase).toBe('tunnel');
+  expect(at('再升高俯看').progress).toBe(1);
+  expect(at('暂停后').height).toBe(120);
+  expect(at('继续理解').returnMix).toBe(1);
+  expect(at('从全域拉近').progress).toBe(0);
+  expect(at('先俯看').returnMix).toBe(0);
+  expect(at('接入城市').connectionMix).toBe(1);
+ });
+});

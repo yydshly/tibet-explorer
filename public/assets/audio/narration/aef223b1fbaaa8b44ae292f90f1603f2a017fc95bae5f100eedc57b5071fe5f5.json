@@ -1,0 +1,15 @@
+{
+  "id": "aef223b1fbaaa8b44ae292f90f1603f2a017fc95bae5f100eedc57b5071fe5f5",
+  "url": "/assets/audio/narration/aef223b1fbaaa8b44ae292f90f1603f2a017fc95bae5f100eedc57b5071fe5f5.mp3",
+  "text": "请选择地方记忆的记录桌。空白载体提醒我们：模型没有替社区写下故事。可以继续问谁在使用空间、怎样建造、怎样学习和维护，再对照真实材料。下一段先从院落与厅堂的构造和使用关系看起。",
+  "duration": 15.732,
+  "bytes": 253428,
+  "sha256": "f8422007a3e28fb8afbbe42adc435e426062db52599d4acf78caae26cc097766",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:35.618Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

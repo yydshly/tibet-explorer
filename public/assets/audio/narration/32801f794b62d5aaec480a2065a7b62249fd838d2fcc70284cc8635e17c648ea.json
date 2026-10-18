@@ -1,0 +1,19 @@
+{
+  "id": "32801f794b62d5aaec480a2065a7b62249fd838d2fcc70284cc8635e17c648ea",
+  "url": "/assets/audio/narration/32801f794b62d5aaec480a2065a7b62249fd838d2fcc70284cc8635e17c648ea.mp3",
+  "text": "以拉萨、山南、林芝为例，二〇二一年开通报道支持这条区域通道，不能保证任何日期、每个目的地都能直达。候选顺序先表达知识怎样连接，接下来用同一河谷说明：从乘车到真正到访，中间还要接上哪些环节。",
+  "duration": 18.864,
+  "bytes": 303540,
+  "sha256": "19ff7cdeaa7125bbe634049a6d5cfa67b4d5214b4c68d57b9b392c4313ca5643",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:54.723Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/32801f794b62d5aaec480a2065a7b62249fd838d2fcc70284cc8635e17c648ea.subtitles.json",
+  "subtitleSha256": "35d1aade6695a9d4ff3ea2c9600900a4ed4fccf8542c0e89a7d434023f075574",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "44a79992f50f35fede8d4ab6d96168cd9243b87f496d9ec27af15c943c3f438b",
+  "url": "/assets/audio/narration/44a79992f50f35fede8d4ab6d96168cd9243b87f496d9ec27af15c943c3f438b.mp3",
+  "text": "先看设施，再加入人员和开放条件：建筑本身不能代替实际提供的服务。继续看使用者怎样到达，路程、交通和个人条件都会影响使用。模型接续的是判断关系，没有复原某所学校、医院，也没有计算覆盖人口。",
+  "duration": 20.448,
+  "bytes": 328884,
+  "sha256": "91fd9bb0ba1a2d1b7bd12c54f451e93a313d60fd2539667ec2615e4ea5124de6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:18.978Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

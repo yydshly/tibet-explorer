@@ -1,0 +1,19 @@
+{
+  "id": "69ac63380035e37361c62b9ad710b372c47d2c24ec5269930228ffab29e70e95",
+  "url": "/assets/audio/narration/69ac63380035e37361c62b9ad710b372c47d2c24ec5269930228ffab29e70e95.mp3",
+  "text": "现在保留所选城市或地区驻地的位置。环境让我们继续问：水源和可用土地在哪里，沿什么谷地通行，生活怎样适应季节？这些条件并不自动决定人的生活。进入城市图鉴，继续看实际地方的设施、组织、历史与选择，再把自然和人文联系起来。",
+  "duration": 21.996,
+  "bytes": 353652,
+  "sha256": "2a55507e9beb035167d65ec5b3fd95b73fd71b792e3db4d9e26e41f971fce215",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:12:02.472Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/69ac63380035e37361c62b9ad710b372c47d2c24ec5269930228ffab29e70e95.subtitles.json",
+  "subtitleSha256": "6331924da7a136f3462c67b5d5dbda3a9c540a697f6c27f0963d281f15ae6f1e",
+  "timingLevel": "word"
+}

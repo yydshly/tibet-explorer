@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "audioSha256": "0acd87f16c375188f96a0ce7d06dc57719900f1178422db8e10704188ad1a974",
+  "textSha256": "598352f3bed06f45f462a3ca9d02aac642f7e1b9b224aaff1154df04cd155fdb",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 10.044,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 9.907800453514739,
+      "text": "先读狮泉河盆地的高程剖面。谷地与周围高地相连，跨越坡面就要面对高差；试线用来观察通行条件。",
+      "textStart": 0,
+      "textEnd": 45
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.20512820512820512,
+      "text": "先",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.20512820512820512,
+      "end": 0.41025641025641024,
+      "text": "读",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.41025641025641024,
+      "end": 0.5333333333333332,
+      "text": "狮",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 0.6974358974358974,
+      "text": "泉",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6974358974358974,
+      "end": 0.8615384615384616,
+      "text": "河",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.8615384615384616,
+      "end": 0.9435897435897436,
+      "text": "盆",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 1.0666666666666664,
+      "text": "地",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.0666666666666664,
+      "end": 1.1076923076923075,
+      "text": "的",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.1076923076923075,
+      "end": 1.3128205128205126,
+      "text": "高",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.3128205128205126,
+      "end": 1.476923076923077,
+      "text": "程",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.476923076923077,
+      "end": 1.641025641025641,
+      "text": "剖",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.641025641025641,
+      "end": 1.8051282051282052,
+      "text": "面",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 1.8051282051282052,
+      "end": 1.9282051282051282,
+      "text": "。",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 1.9282051282051282,
+      "end": 2.2564102564102564,
+      "text": "谷",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.2564102564102564,
+      "end": 3.117948717948718,
+      "text": "地",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.117948717948718,
+      "end": 3.2410256410256406,
+      "text": "与",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.2410256410256406,
+      "end": 3.364102564102564,
+      "text": "周",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.364102564102564,
+      "end": 3.5282051282051285,
+      "text": "围",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.5282051282051285,
+      "end": 3.6512820512820507,
+      "text": "高",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.6512820512820507,
+      "end": 3.815384615384615,
+      "text": "地",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 3.815384615384615,
+      "end": 3.9384615384615382,
+      "text": "相",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 3.9384615384615382,
+      "end": 4.061538461538461,
+      "text": "连",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.061538461538461,
+      "end": 4.102564102564102,
+      "text": "，",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.102564102564102,
+      "end": 4.717948717948717,
+      "text": "跨",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.717948717948717,
+      "end": 5.333333333333333,
+      "text": "越",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.333333333333333,
+      "end": 5.497435897435897,
+      "text": "坡",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.497435897435897,
+      "end": 5.702564102564102,
+      "text": "面",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.702564102564102,
+      "end": 6.153846153846152,
+      "text": "就",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.153846153846152,
+      "end": 6.317948717948718,
+      "text": "要",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.317948717948718,
+      "end": 6.44102564102564,
+      "text": "面",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 6.44102564102564,
+      "end": 6.564102564102564,
+      "text": "对",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 6.564102564102564,
+      "end": 6.6871794871794865,
+      "text": "高",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.6871794871794865,
+      "end": 6.851282051282051,
+      "text": "差",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.851282051282051,
+      "end": 7.015384615384614,
+      "text": "；",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 7.015384615384614,
+      "end": 7.8769230769230765,
+      "text": "试",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 7.8769230769230765,
+      "end": 8.082051282051282,
+      "text": "线",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 8.082051282051282,
+      "end": 8.328205128205129,
+      "text": "用",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 8.328205128205129,
+      "end": 8.656410256410256,
+      "text": "来",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 8.656410256410256,
+      "end": 8.779487179487178,
+      "text": "观",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 8.779487179487178,
+      "end": 8.943589743589744,
+      "text": "察",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 8.943589743589744,
+      "end": 9.107692307692307,
+      "text": "通",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 9.107692307692307,
+      "end": 9.27179487179487,
+      "text": "行",
+      "textStart": 41,
+      "textEnd": 42
+    },
+    {
+      "start": 9.27179487179487,
+      "end": 9.435897435897434,
+      "text": "条",
+      "textStart": 42,
+      "textEnd": 43
+    },
+    {
+      "start": 9.435897435897434,
+      "end": 9.6,
+      "text": "件",
+      "textStart": 43,
+      "textEnd": 44
+    },
+    {
+      "start": 9.6,
+      "end": 9.764102564102563,
+      "text": "。",
+      "textStart": 44,
+      "textEnd": 45
+    }
+  ]
+}

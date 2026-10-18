@@ -1,0 +1,19 @@
+{
+  "id": "ffd258dacd5b33a26d4114b63422a16c27486c9facac025b3d2e10a5f49d6a8a",
+  "url": "/assets/audio/narration/ffd258dacd5b33a26d4114b63422a16c27486c9facac025b3d2e10a5f49d6a8a.mp3",
+  "text": "从水土条件到生活组织，从建造、交流和维护到历史证据，我们已经建立了相互联系、又不能互相替代的解释。接下来把这条认识带回周边联系与今天的发展，继续问涉及谁、何时发生、需要什么资料。",
+  "duration": 18.324,
+  "bytes": 294900,
+  "sha256": "1201df2ef3d77dc0ea7aaad161b0ae7d8c10a93476923b9a982c0f8dbea6dc09",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:39:15.407Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ffd258dacd5b33a26d4114b63422a16c27486c9facac025b3d2e10a5f49d6a8a.subtitles.json",
+  "subtitleSha256": "0c691e5dd3394c5bdd15caf6901bafbb16626d7b2547688e3ba2167d956a2004",
+  "timingLevel": "word"
+}

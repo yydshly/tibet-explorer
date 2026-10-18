@@ -1,0 +1,15 @@
+{
+  "id": "bbbe55e1525074c1bdd3f4e62a8e331427dc0945e0081ef928de5b5345368161",
+  "url": "/assets/audio/narration/bbbe55e1525074c1bdd3f4e62a8e331427dc0945e0081ef928de5b5345368161.mp3",
+  "text": "把三地留在同一块高程地面上，用同一个海拔基准读起伏。林芝的高山深谷，先让我们看到相邻地面的高差。",
+  "duration": 10.8,
+  "bytes": 174516,
+  "sha256": "fdf3f4d0b9dc6c7419f92fd2ea6cc060f413004fe9dc727f01bae75f21286242",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T09:27:49.989Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

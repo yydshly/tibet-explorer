@@ -1,0 +1,15 @@
+{
+  "id": "96a363ac3d890f672cb6ef5a860c1fa50874db397131eab3554c614ccbeadc66",
+  "url": "/assets/audio/narration/96a363ac3d890f672cb6ef5a860c1fa50874db397131eab3554c614ccbeadc66.mp3",
+  "text": "地表过程留下了可以继续研究的条件。现在保留水、坡地与缓地，逐步加入人的取用和生活联系。场景不是某个真实村落；山南等地区材料在旁边提供具体入口，不能拿模型替地方的人编造历史。",
+  "duration": 18.432,
+  "bytes": 296628,
+  "sha256": "85eaa6dc94a6f724b43bf308e1fa8b9eab1832a13052272328bd2e5c74ae9875",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:23.471Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

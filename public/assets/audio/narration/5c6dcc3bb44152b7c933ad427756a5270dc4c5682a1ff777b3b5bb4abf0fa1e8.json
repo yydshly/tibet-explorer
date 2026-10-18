@@ -1,0 +1,19 @@
+{
+  "id": "5c6dcc3bb44152b7c933ad427756a5270dc4c5682a1ff777b3b5bb4abf0fa1e8",
+  "url": "/assets/audio/narration/5c6dcc3bb44152b7c933ad427756a5270dc4c5682a1ff777b3b5bb4abf0fa1e8.mp3",
+  "text": "以下是一九九一至二零二零年一月气候标准值，不是今天的天气。林芝站月平均气温一点一摄氏度，月降水量均值二毫米。拉萨站负零点三摄氏度、零点九毫米。狮泉河站负十一点七摄氏度、一点六毫米。三站都在高原，但冬季温度和降水并不相同。统计只代表站点，不能概括市域或整个阿里。",
+  "duration": 26.748,
+  "bytes": 429684,
+  "sha256": "71dbadae84489d31312b921ee26e38967885bb7e651e50b3c84e4a376fd11731",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T19:44:48.178Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5c6dcc3bb44152b7c933ad427756a5270dc4c5682a1ff777b3b5bb4abf0fa1e8.subtitles.json",
+  "subtitleSha256": "321657224f3ba7cbe503820258b0c1f0b10a13cd83cd5da66adab964ea6bdf3f",
+  "timingLevel": "word"
+}

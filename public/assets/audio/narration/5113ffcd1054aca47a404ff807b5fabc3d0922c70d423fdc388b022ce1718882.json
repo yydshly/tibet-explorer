@@ -1,0 +1,19 @@
+{
+  "id": "5113ffcd1054aca47a404ff807b5fabc3d0922c70d423fdc388b022ce1718882",
+  "url": "/assets/audio/narration/5113ffcd1054aca47a404ff807b5fabc3d0922c70d423fdc388b022ce1718882.mp3",
+  "text": "请选择十至十二世纪，保留政治、知识和生活这三个问题，再读具体交流材料。相邻时期既有延续，也有新的组织和参与者。历史分期帮助定位，不能替代人物、事件与地方的证据。",
+  "duration": 17.388,
+  "bytes": 279924,
+  "sha256": "060ec2fb0f3fa710d9b9d84c3d2c8532a671dace74800b7b808e295804e621d1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:37:56.672Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5113ffcd1054aca47a404ff807b5fabc3d0922c70d423fdc388b022ce1718882.subtitles.json",
+  "subtitleSha256": "7f3977ec96a60aa9ab60148575229c5d8e4dee9dc63791eb3ffad7a551050e6b",
+  "timingLevel": "word"
+}

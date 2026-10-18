@@ -1,0 +1,15 @@
+{
+  "id": "5a71e33d080365c5795cf4a974c6c12cf35f92342b273e32d67c5a13fb5ecfd1",
+  "url": "/assets/audio/narration/5a71e33d080365c5795cf4a974c6c12cf35f92342b273e32d67c5a13fb5ecfd1.mp3",
+  "text": "真实高程告诉我们今天哪里高、哪里低；为什么形成这样的轮廓，还需要地质和年代材料。下面保持一条概念河谷，逐步看汇水、侵蚀、搬运和堆积，再把原理带回具体地点核实。",
+  "duration": 13.824,
+  "bytes": 222900,
+  "sha256": "254ca63f3fe6df30f544a103ccec56e71788937bfda69d772423224bd5f21cee",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:02:58.395Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

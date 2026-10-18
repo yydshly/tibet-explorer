@@ -1,0 +1,19 @@
+{
+  "id": "5873fcddc366f871a75559d071e04b6086f894f9dec8a7a81258dd0ece4be41e",
+  "url": "/assets/audio/narration/5873fcddc366f871a75559d071e04b6086f894f9dec8a7a81258dd0ece4be41e.mp3",
+  "text": "再看二〇二六年六月，林芝图书馆和博物馆联合举办工布文化活动。工作人员讲服饰历史与形制，亲子家庭参与剪纸和制作。把讲解接到参与，才能看见传习的过程。",
+  "duration": 13.968,
+  "bytes": 225204,
+  "sha256": "94f00c85c364c7b142052e94d1ffe8954ba1d01959c2144f32fefe667aec0874",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:25:22.845Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5873fcddc366f871a75559d071e04b6086f894f9dec8a7a81258dd0ece4be41e.subtitles.json",
+  "subtitleSha256": "e32eb76cbd8055eddc5a57883aa07e9acf98e66c7adbfb0a2bd637819126edab",
+  "timingLevel": "word"
+}

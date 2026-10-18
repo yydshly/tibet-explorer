@@ -1,0 +1,19 @@
+{
+  "id": "f2c72d01df6e7777aa43a17d8cf2ccfefe0c98f7f4d8f1548af383dffde41447",
+  "url": "/assets/audio/narration/f2c72d01df6e7777aa43a17d8cf2ccfefe0c98f7f4d8f1548af383dffde41447.mp3",
+  "text": "抵达狮泉河，回到同一条河、桥位与两岸空间。二〇一七年一河两岸建设增加绿化、步行和休闲用途。交通解决怎样来到这里，公共空间与管护组织停留和使用。不同年份的建设各有作用，不能全部归给机场。",
+  "duration": 18.756,
+  "bytes": 301812,
+  "sha256": "18f943b83cf265f5dca04d04af2468cb21b8d232aa67ec223ec5cf9df72da608",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:30:05.600Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f2c72d01df6e7777aa43a17d8cf2ccfefe0c98f7f4d8f1548af383dffde41447.subtitles.json",
+  "subtitleSha256": "5a6ba333bf21b35f9b8d2f7d75d5c44fb491d2dc345c4d43824fd776b68d7b68",
+  "timingLevel": "word"
+}

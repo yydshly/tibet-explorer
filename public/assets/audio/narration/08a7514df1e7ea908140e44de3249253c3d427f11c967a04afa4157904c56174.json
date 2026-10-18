@@ -1,0 +1,15 @@
+{
+  "id": "08a7514df1e7ea908140e44de3249253c3d427f11c967a04afa4157904c56174",
+  "url": "/assets/audio/narration/08a7514df1e7ea908140e44de3249253c3d427f11c967a04afa4157904c56174.mp3",
+  "text": "先看可能的收益，再把生态影响放到同一画面，继续加入地方生活与长期维护。三方面的联系同时存在，各自需要指标、调查和具体时间。画面没有把它们换成一个分数，也不能凭线条变亮就判断某个项目成功。",
+  "duration": 17.748,
+  "bytes": 285684,
+  "sha256": "e166db5738d4fece04820810e256b98d07fbe013bd7e7b806eab7949b31e95da",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:46.120Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "8b704775180616888a565d41cfb640cb0e6e4b3e6ce703404c98d918cd02a1ae",
+  "url": "/assets/audio/narration/8b704775180616888a565d41cfb640cb0e6e4b3e6ce703404c98d918cd02a1ae.mp3",
+  "text": "拉萨的区域入口，先读二〇〇六年青藏铁路，再看二〇二一年联系山南和林芝的拉林铁路。列车把人和物带到铁路节点，后面的城市使用仍有各自的安排。",
+  "duration": 13.86,
+  "bytes": 223476,
+  "sha256": "85c8994c82c1e9c198360948ea928318a0cf565eeef896d7d82ba5037e3a1059",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:29:33.203Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8b704775180616888a565d41cfb640cb0e6e4b3e6ce703404c98d918cd02a1ae.subtitles.json",
+  "subtitleSha256": "839e66a86a796e0f60bd5a5b200a1b0dc44fb86f4fef48733819babfc65aa296",
+  "timingLevel": "word"
+}

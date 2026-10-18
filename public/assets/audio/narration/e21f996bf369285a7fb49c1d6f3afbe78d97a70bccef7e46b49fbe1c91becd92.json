@@ -1,0 +1,15 @@
+{
+  "id": "e21f996bf369285a7fb49c1d6f3afbe78d97a70bccef7e46b49fbe1c91becd92",
+  "url": "/assets/audio/narration/e21f996bf369285a7fb49c1d6f3afbe78d97a70bccef7e46b49fbe1c91becd92.mp3",
+  "text": "上一章把建筑放回了历史，现在走进空间内部。院落、入口、房间和构造怎样组织人的行动？眼前是概念建筑，不是某座寺院的测绘复原。我们用它提出用途、材料与社会背景的问题，再回到具体遗产资料。",
+  "duration": 20.484,
+  "bytes": 329460,
+  "sha256": "8a00706f4fcaffd12309764b0bc4216f8c68f4fcadf75af13b59e9254c69c611",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:24.052Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "32d4c45ede6387cbb882633648ca433cf6f69efb2b493970657f819f838fa73d",
+  "url": "/assets/audio/narration/32d4c45ede6387cbb882633648ca433cf6f69efb2b493970657f819f838fa73d.mp3",
+  "text": "我们从地球走到高原、气候、地区与景观，建立了自然条件这张底图。现在沿河谷聚落进入人的生活：先走近建筑怎样被使用，再认识信仰交流、艺术和日常。环境提供条件，人的行动与创造会继续解释地方文化。",
+  "duration": 20.7,
+  "bytes": 332916,
+  "sha256": "9a469d49d8095513babb140629e05513eb0d406771c6c173cf2dfd15be548645",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:39:37.842Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

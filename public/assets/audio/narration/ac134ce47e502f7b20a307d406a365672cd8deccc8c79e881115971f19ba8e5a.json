@@ -1,0 +1,15 @@
+{
+  "id": "ac134ce47e502f7b20a307d406a365672cd8deccc8c79e881115971f19ba8e5a",
+  "url": "/assets/audio/narration/ac134ce47e502f7b20a307d406a365672cd8deccc8c79e881115971f19ba8e5a.mp3",
+  "text": "再看水珠沿坡面下降，说明高差怎样改变水流去向。这些水珠演示自然过程，并不表示城镇供水。",
+  "duration": 9.252,
+  "bytes": 149748,
+  "sha256": "3ad7e83c3e35881b3a42c082d61bda581d38139c87b5685182981bb1d89defae",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:20:11.375Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

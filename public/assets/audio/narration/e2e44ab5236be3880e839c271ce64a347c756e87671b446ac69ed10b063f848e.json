@@ -1,0 +1,15 @@
+{
+  "id": "e2e44ab5236be3880e839c271ce64a347c756e87671b446ac69ed10b063f848e",
+  "url": "/assets/audio/narration/e2e44ab5236be3880e839c271ce64a347c756e87671b446ac69ed10b063f848e.mp3",
+  "text": "阿里的历史还要放回十一至十二世纪的交流。北印度贝叶写本经学者翻译，把知识带入新的语言环境。这里保留托林的真实地点定位和材料，不能拿狮泉河街区代作托林现场。",
+  "duration": 16.056,
+  "bytes": 258612,
+  "sha256": "7c80b9e76420a0324d0c36cc2f58cda67ef70ea61176721059b368e34b2f6403",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:12:32.535Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

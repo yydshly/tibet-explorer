@@ -1,0 +1,15 @@
+{
+  "id": "6a2c07003e0d2a52a75ac35d45971c1055cdb9543122ea9d25446d12e01330d6",
+  "url": "/assets/audio/narration/6a2c07003e0d2a52a75ac35d45971c1055cdb9543122ea9d25446d12e01330d6.mp3",
+  "text": "从河谷生活需要的水、通行和空间，来到拉萨红山上的布达拉宫。先看山体、台地与建筑如何相接，再分清白宫与红宫。这是依据遗产资料组织的建筑特征图，窗数、尺寸和阶梯没有实测，不能拿它替代精确建筑模型。",
+  "duration": 20.88,
+  "bytes": 335796,
+  "sha256": "5e218e5587cae9e0dc7301bea7bcdcf956efc04b9db4e10f4c4abcbfe5d4168c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:21:17.678Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

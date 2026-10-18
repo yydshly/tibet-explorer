@@ -1,0 +1,19 @@
+{
+  "id": "6889bab726d6b649fcfdb528ce9f0c802614574b1fe21ea7f26112537a5aa0b8",
+  "url": "/assets/audio/narration/6889bab726d6b649fcfdb528ce9f0c802614574b1fe21ea7f26112537a5aa0b8.mp3",
+  "text": "先从完整地球找到西藏。镜头靠近亚洲，再辨认中国和中国西南的西藏自治区。洲、国家和自治区是不同的空间层级；青藏高原则是跨越行政范围的自然高地，不能把两条边线当成同一个对象。位置确定以后，再问这里怎样受到周围海陆和大气的影响。",
+  "duration": 21.276,
+  "bytes": 342132,
+  "sha256": "95837d576887d81ef0accf85819813eb75b1479504f4bffef1ff4c5fd0f7d9ac",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T03:25:01.091Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/6889bab726d6b649fcfdb528ce9f0c802614574b1fe21ea7f26112537a5aa0b8.subtitles.json",
+  "subtitleSha256": "966179f31f449cde86bb9b94a161b34dac97ac0c0644ebc913e4c144ce60b564",
+  "timingLevel": "word"
+}

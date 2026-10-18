@@ -1,0 +1,15 @@
+{
+  "id": "11fb167713c601157528fbd3c3f49d9556ffcfcfcd98b3afe8f5b23979649ca1",
+  "url": "/assets/audio/narration/11fb167713c601157528fbd3c3f49d9556ffcfcfcd98b3afe8f5b23979649ca1.mp3",
+  "text": "再看二〇二〇年报道，古格遗址旁的金珠德吉经营家庭旅馆。不同地点和年代，让交流、遗产与生活各有来路。",
+  "duration": 9.576,
+  "bytes": 154932,
+  "sha256": "57340ad364050b75fe96091249e8e6f3518cdaaae2df1b907e6ea5526d1426c8",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:58:30.325Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

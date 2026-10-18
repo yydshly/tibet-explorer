@@ -1,0 +1,15 @@
+{
+  "id": "d7b1ead2fd5127cbe49782d27a6df28c8b87d4dc02862bf464532395d00e99b7",
+  "url": "/assets/audio/narration/d7b1ead2fd5127cbe49782d27a6df28c8b87d4dc02862bf464532395d00e99b7.mp3",
+  "text": "先离开狮泉河，在同一地图找到札达的托林入口。十一至十二世纪，教师、文本和艺术联系着西藏与印度。",
+  "duration": 10.584,
+  "bytes": 171060,
+  "sha256": "27f110922c7ae6a07d27deaf6994fb42d6bc0cb67feafb9813e83c3c76e716f4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:58:18.146Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "998c90c3272c94d0edc546febc91afec6cbaedbe8d1751a10680366ce671aba1",
+  "url": "/assets/audio/narration/998c90c3272c94d0edc546febc91afec6cbaedbe8d1751a10680366ce671aba1.mp3",
+  "text": "二〇〇六年七月一日，青藏铁路全线通车，线路经过那曲。铁路增加远距离人员和货物联系，但货物不会从车厢自动进入牧业和家庭。保留高地，依次看铁路到达、换装与地方接续，才能理解通道如何产生生活作用。",
+  "duration": 18.972,
+  "bytes": 305268,
+  "sha256": "1eb6ef07a35b750e2631caff8954cd930281233aa372b5f263c68567c58d9bfd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:56:52.943Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/998c90c3272c94d0edc546febc91afec6cbaedbe8d1751a10680366ce671aba1.subtitles.json",
+  "subtitleSha256": "ce70b3db57b74593e3e0d696a79a7ff60ac903e4c1d0107e6d07768876efc58b",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "e3e198d4dee7cc8738fd81fd1a555256de7ef08bc72c5a29d7e1a45d896c4f9b",
+  "url": "/assets/audio/narration/e3e198d4dee7cc8738fd81fd1a555256de7ef08bc72c5a29d7e1a45d896c4f9b.mp3",
+  "text": "请打开旅行规划，填写已有条件，保存或导出，并检查站点顺序与观察目的是否还在。也可以先保存不完整的探索计划。下一次从首页继续上次，或从我的探索返回问题，认识与计划都会沿同一条线接续。",
+  "duration": 18.648,
+  "bytes": 300084,
+  "sha256": "e17fd88182efc24c08c7e55f4a9cde264846652bb513e4036233ef8fea695cfa",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:41.229Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

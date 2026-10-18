@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "audioSha256": "554aa104bf5d16a64b93d62c2ba7bec0f6955d6d54f18b70aed8de8635f09068",
+  "textSha256": "cef9df1c179f89d19801b195882c4a5f372dbe6cfbb6ea51d5cbfe4a3780d11a",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 9.936,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 9.780090702947845,
+      "text": "把林芝、拉萨和阿里留在同一张地图上。夏季水汽可沿大峡谷进入藏东南，林芝先看这条来路。",
+      "textStart": 0,
+      "textEnd": 42
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.20512820512820512,
+      "text": "把",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.20512820512820512,
+      "end": 0.36923076923076925,
+      "text": "林",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.36923076923076925,
+      "end": 0.4923076923076923,
+      "text": "芝",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.4923076923076923,
+      "end": 0.6153846153846153,
+      "text": "、",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6153846153846153,
+      "end": 0.9435897435897436,
+      "text": "拉",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 1.1487179487179484,
+      "text": "萨",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 1.1487179487179484,
+      "end": 1.3948717948717948,
+      "text": "和",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 1.3948717948717948,
+      "end": 1.558974358974359,
+      "text": "阿",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.558974358974359,
+      "end": 1.7641025641025643,
+      "text": "里",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.7641025641025643,
+      "end": 1.8871794871794871,
+      "text": "留",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.8871794871794871,
+      "end": 2.4205128205128204,
+      "text": "在",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.4205128205128204,
+      "end": 2.5846153846153843,
+      "text": "同",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.5846153846153843,
+      "end": 2.7897435897435896,
+      "text": "一",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.7897435897435896,
+      "end": 2.953846153846154,
+      "text": "张",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.953846153846154,
+      "end": 3.117948717948718,
+      "text": "地",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.117948717948718,
+      "end": 3.2410256410256406,
+      "text": "图",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.2410256410256406,
+      "end": 3.4051282051282046,
+      "text": "上",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.4461538461538463,
+      "text": "。",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.4461538461538463,
+      "end": 4.266666666666666,
+      "text": "夏",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.758974358974359,
+      "text": "季",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.758974358974359,
+      "end": 4.882051282051282,
+      "text": "水",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.882051282051282,
+      "end": 5.087179487179487,
+      "text": "汽",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 5.087179487179487,
+      "end": 5.415384615384616,
+      "text": "可",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 5.415384615384616,
+      "end": 5.8256410256410245,
+      "text": "沿",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 5.8256410256410245,
+      "end": 5.948717948717949,
+      "text": "大",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.948717948717949,
+      "end": 6.112820512820512,
+      "text": "峡",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 6.112820512820512,
+      "end": 6.317948717948718,
+      "text": "谷",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 6.317948717948718,
+      "end": 6.44102564102564,
+      "text": "进",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.44102564102564,
+      "end": 6.605128205128205,
+      "text": "入",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.605128205128205,
+      "end": 6.6871794871794865,
+      "text": "藏",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 6.6871794871794865,
+      "end": 6.851282051282051,
+      "text": "东",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 6.851282051282051,
+      "end": 6.974358974358974,
+      "text": "南",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.974358974358974,
+      "end": 7.015384615384614,
+      "text": "，",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 7.015384615384614,
+      "end": 7.425641025641024,
+      "text": "林",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 7.425641025641024,
+      "end": 8.205128205128204,
+      "text": "芝",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 8.205128205128204,
+      "end": 8.73846153846154,
+      "text": "先",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 8.73846153846154,
+      "end": 8.943589743589744,
+      "text": "看",
+      "textStart": 36,
+      "textEnd": 37
+    },
+    {
+      "start": 8.943589743589744,
+      "end": 9.107692307692307,
+      "text": "这",
+      "textStart": 37,
+      "textEnd": 38
+    },
+    {
+      "start": 9.107692307692307,
+      "end": 9.189743589743587,
+      "text": "条",
+      "textStart": 38,
+      "textEnd": 39
+    },
+    {
+      "start": 9.189743589743587,
+      "end": 9.353846153846154,
+      "text": "来",
+      "textStart": 39,
+      "textEnd": 40
+    },
+    {
+      "start": 9.353846153846154,
+      "end": 9.517948717948718,
+      "text": "路",
+      "textStart": 40,
+      "textEnd": 41
+    },
+    {
+      "start": 9.517948717948718,
+      "end": 9.64102564102564,
+      "text": "。",
+      "textStart": 41,
+      "textEnd": 42
+    }
+  ]
+}

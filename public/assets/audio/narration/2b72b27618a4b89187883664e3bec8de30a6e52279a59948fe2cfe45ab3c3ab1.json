@@ -1,0 +1,15 @@
+{
+  "id": "2b72b27618a4b89187883664e3bec8de30a6e52279a59948fe2cfe45ab3c3ab1",
+  "url": "/assets/audio/narration/2b72b27618a4b89187883664e3bec8de30a6e52279a59948fe2cfe45ab3c3ab1.mp3",
+  "text": "请切回气流，并选择冬至背景，比较来向怎样变化，再打开水汽相关说明。西风不能统一叫作干风，山脉也不是永远不可跨越的墙。真正的来源、强弱与路径，应通过相应季节和地区的资料研究。",
+  "duration": 17.208,
+  "bytes": 277044,
+  "sha256": "051f322ba66106ba320a245767ea72c9fcde9d692b69dcc2c80dc57d9fcd5bcb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:51:48.818Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

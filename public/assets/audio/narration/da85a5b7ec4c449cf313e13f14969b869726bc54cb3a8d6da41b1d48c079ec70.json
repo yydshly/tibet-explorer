@@ -1,0 +1,15 @@
+{
+  "id": "da85a5b7ec4c449cf313e13f14969b869726bc54cb3a8d6da41b1d48c079ec70",
+  "url": "/assets/audio/narration/da85a5b7ec4c449cf313e13f14969b869726bc54cb3a8d6da41b1d48c079ec70.mp3",
+  "text": "看到差异以后，还要确认比较是否公平。下一步固定问题与观察主题，检查地点、时期和资料口径有没有变化。这样我们才能解释两地的不同，而不是让两张漂亮但条件不同的照片替我们下判断。",
+  "duration": 16.632,
+  "bytes": 267828,
+  "sha256": "9b0cfec35d81b55bd3cad53719edfc08bed6717adaea39a16e2fa83f21bb737e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:31.482Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

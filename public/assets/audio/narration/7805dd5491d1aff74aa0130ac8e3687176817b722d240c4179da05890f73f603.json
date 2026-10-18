@@ -1,0 +1,15 @@
+{
+  "id": "7805dd5491d1aff74aa0130ac8e3687176817b722d240c4179da05890f73f603",
+  "url": "/assets/audio/narration/7805dd5491d1aff74aa0130ac8e3687176817b722d240c4179da05890f73f603.mp3",
+  "text": "同一种位置可能参与多种联系，每种联系也有不同受益、成本与治理条件。历史边界背景、现实管理和交流合作应使用适用材料分别研究。眼前节点与线帮助组织问题，并没有代替真实边界测绘或完整政策判断。",
+  "duration": 18.648,
+  "bytes": 300084,
+  "sha256": "9ae6cff8d3622db797a269699fa9814ae8595af2c556b3352e37af4d1a825576",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:02.933Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

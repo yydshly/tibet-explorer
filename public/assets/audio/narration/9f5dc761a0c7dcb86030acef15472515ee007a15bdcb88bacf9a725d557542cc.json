@@ -1,0 +1,19 @@
+{
+  "id": "9f5dc761a0c7dcb86030acef15472515ee007a15bdcb88bacf9a725d557542cc",
+  "url": "/assets/audio/narration/9f5dc761a0c7dcb86030acef15472515ee007a15bdcb88bacf9a725d557542cc.mp3",
+  "text": "先看1985年泽当的聚居检出，再到2005年比较谷地中的范围，最后对照2015年。三十米网格表示卫星估计的检出年，最早一档也包含更早聚居。拉林铁路2021年才开通，已超出这组资料时段，不能把这些变化说成通车后的结果。",
+  "duration": 22.824,
+  "bytes": 366900,
+  "sha256": "4a7cf78c6c11d0f71c8b0ef4bc396d4dbd18d13730c3f9c7e2dc57fceb2efbbe",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:51:39.850Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9f5dc761a0c7dcb86030acef15472515ee007a15bdcb88bacf9a725d557542cc.subtitles.json",
+  "subtitleSha256": "a6e9e659a6813500623d17ecde1a120ac61b9a85c16171ac5fd46b459a54f512",
+  "timingLevel": "word"
+}

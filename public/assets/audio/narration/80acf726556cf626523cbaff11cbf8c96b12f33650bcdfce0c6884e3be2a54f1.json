@@ -1,0 +1,19 @@
+{
+  "id": "80acf726556cf626523cbaff11cbf8c96b12f33650bcdfce0c6884e3be2a54f1",
+  "url": "/assets/audio/narration/80acf726556cf626523cbaff11cbf8c96b12f33650bcdfce0c6884e3be2a54f1.mp3",
+  "text": "山体不变，再看水汽。起初气团带着气态水，抬升冷却后，满足条件才凝结成云滴。云滴继续增长，才可能有降水到达地面，随后水沿坡面向低处流动。暂停并改成较少水汽，比较同样抬升为什么没有相同的云雨；这段演示解释条件，不预测当地雨量。",
+  "duration": 24.3,
+  "bytes": 390516,
+  "sha256": "8b77eff59a76cbf7c865d81fe4b41a909a0ba7fd3797cb4dde46f5a01ea31fb7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:11:50.783Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/80acf726556cf626523cbaff11cbf8c96b12f33650bcdfce0c6884e3be2a54f1.subtitles.json",
+  "subtitleSha256": "2e777af063b34c7488500eeb21b98faafbcf5ac9623979b0ccf29c707a0d5e11",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "0efe76d102a96255c76cfd434e4b61d078ecdb0e20d5d3dbda78654691e1ce3e",
+  "url": "/assets/audio/narration/0efe76d102a96255c76cfd434e4b61d078ecdb0e20d5d3dbda78654691e1ce3e.mp3",
+  "text": "请停在冷热条件对照，切到暖季，再回到冷季，看空气交换和含冰试验块怎样变化。最后推进到运营与接驳：工程支撑主通道，列车到站以后，人仍需要继续到达目的地。地温和沉降要查真实监测，班次与接驳则按日期另行核实。",
+  "duration": 21.42,
+  "bytes": 344436,
+  "sha256": "e4d658221f0607cbdd61a97eacb93f485d40d7bd45207170e5a7c0903d28d639",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:55:28.945Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "7bce4ff1b1bc149fbff65305a5ca4a3ba1694c823dfcbe0a4296b28fb1571f7c",
+  "url": "/assets/audio/narration/7bce4ff1b1bc149fbff65305a5ca4a3ba1694c823dfcbe0a4296b28fb1571f7c.mp3",
+  "text": "从河谷生活的条件回到真实地形，先在西藏与周边找到林芝。金色框标出局部数据范围；外面仍保留整体山系。接下来靠近同一坐标中的山地与低处，约四百米的显示采样会更细，但这不是测绘精度，也没有自动得到河网或道路。",
+  "duration": 18.864,
+  "bytes": 303540,
+  "sha256": "dca9cc44804238a830199814bb94a42c52c23b5a7cc55c0d8d8198d0c877e38c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:20:38.961Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

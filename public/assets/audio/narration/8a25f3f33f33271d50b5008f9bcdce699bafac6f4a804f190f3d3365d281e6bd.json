@@ -1,0 +1,19 @@
+{
+  "id": "8a25f3f33f33271d50b5008f9bcdce699bafac6f4a804f190f3d3365d281e6bd",
+  "url": "/assets/audio/narration/8a25f3f33f33271d50b5008f9bcdce699bafac6f4a804f190f3d3365d281e6bd.mp3",
+  "text": "前面认识了高原环境、生活与历史，现在沿一段真实铁路，看这些条件怎样联系起来。从西藏全图拉近拉萨。这里观察青藏线进入拉萨站前的一段，不是拉林铁路全线；底图是有日期的卫星影像。沿线向前看，山体、河流与城市逐渐进入同一视野。停在跨河段，铁路跨过河流，桥梁接起两岸，但地表高程不等于桥面高度。继续往站区方向，山体开始遮挡视线。停在虚线段，这是地图记录的隧道水平走向，不能据此判断地下深度。再沿线到拉萨站，俯看站场和周围街区。铁路完成区域抵达，还需要道路把人和物接入生活目的地。转向柳梧大桥，看站区怎样通过跨河道路联系对岸城市。你可以点选线路，前后比较视野；继续播放时会回到原来的讲解。最后回到西藏全图：地形影响通行条件，交通工程增加联系，地方接续把抵达带进生活。接下来再看这些联系的共同维护。",
+  "duration": 68.22,
+  "bytes": 1093236,
+  "sha256": "54431310e986cbe82b49dc592209b5daf1df87401fabb2afe51674621ef2d18e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T23:32:44.837Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8a25f3f33f33271d50b5008f9bcdce699bafac6f4a804f190f3d3365d281e6bd.subtitles.json",
+  "subtitleSha256": "bf589f8c7e31ea6c9f4402ab6898c50cebfa3874fc2b1748eedddd166a5cbf8f",
+  "timingLevel": "word"
+}

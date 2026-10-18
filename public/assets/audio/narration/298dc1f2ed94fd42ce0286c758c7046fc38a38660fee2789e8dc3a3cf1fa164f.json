@@ -1,0 +1,19 @@
+{
+  "id": "298dc1f2ed94fd42ce0286c758c7046fc38a38660fee2789e8dc3a3cf1fa164f",
+  "url": "/assets/audio/narration/298dc1f2ed94fd42ce0286c758c7046fc38a38660fee2789e8dc3a3cf1fa164f.mp3",
+  "text": "位置与全球来流已经明确。现在回到亚洲，先把高原放在周围低地和海洋之间，再问这片高地怎样形成。接下来的剖面只解释相向运动、变形与增厚；它不是古代地表的复原。看懂原理以后，我们会回到今天的真实高程。",
+  "duration": 18.396,
+  "bytes": 296052,
+  "sha256": "d4b3f692a149b5e155ec03af4da4eb45dd690e7cd6cf3f9ab230862b000127e7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T03:25:06.293Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/298dc1f2ed94fd42ce0286c758c7046fc38a38660fee2789e8dc3a3cf1fa164f.subtitles.json",
+  "subtitleSha256": "2ef296300837133176ea44b9bde8e198bcfb41ef818897f92d5cff98e0c7499b",
+  "timingLevel": "word"
+}

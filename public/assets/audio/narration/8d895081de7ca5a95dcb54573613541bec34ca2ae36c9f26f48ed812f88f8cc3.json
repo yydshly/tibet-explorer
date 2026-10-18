@@ -1,0 +1,15 @@
+{
+  "id": "8d895081de7ca5a95dcb54573613541bec34ca2ae36c9f26f48ed812f88f8cc3",
+  "url": "/assets/audio/narration/8d895081de7ca5a95dcb54573613541bec34ca2ae36c9f26f48ed812f88f8cc3.mp3",
+  "text": "二〇二一年六月二十五日，拉林铁路开通。列车增加了拉萨经山南到林芝的联系。看它怎样借助跨越和穿山的工程方式通过地形，公路和航空同时保留。",
+  "duration": 14.544,
+  "bytes": 234420,
+  "sha256": "d16b525b46891418c3b9f770eada8267fe61ccfe6abba43f69ab458606817296",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:19.001Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

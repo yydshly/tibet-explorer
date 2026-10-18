@@ -1,0 +1,15 @@
+{
+  "id": "17e5662047638ae0aa4350447d4be45e17d273b52b9b0bca35688f0143bbadae",
+  "url": "/assets/audio/narration/17e5662047638ae0aa4350447d4be45e17d273b52b9b0bca35688f0143bbadae.mp3",
+  "text": "先看空气到达，再看云逐步发展和降水出现，三个状态不必同时。一次真实天气还可能受到锋面、对流和背景环流等影响。只有把前后时刻与资料对应，我们才能研究为什么此时有雨、彼时没有。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "da048f2d236f575cff3771c0d09db940cb05ca04da99f1de87f4ae67e40ec218",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:32.548Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

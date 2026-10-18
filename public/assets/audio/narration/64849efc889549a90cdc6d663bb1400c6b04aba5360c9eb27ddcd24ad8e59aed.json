@@ -1,0 +1,19 @@
+{
+  "id": "64849efc889549a90cdc6d663bb1400c6b04aba5360c9eb27ddcd24ad8e59aed",
+  "url": "/assets/audio/narration/64849efc889549a90cdc6d663bb1400c6b04aba5360c9eb27ddcd24ad8e59aed.mp3",
+  "text": "进入狮泉河，再回到同一条河与两岸空间。二〇一七年一河两岸建设增加了绿化、步行和休闲等用途，持续管护参与日常使用。交通让人进入地方，公共空间建设组织停留与活动，它们是不同年份、不同工作的共同参与。",
+  "duration": 20.88,
+  "bytes": 335796,
+  "sha256": "62530e3620a40dee20d76fbc0ab2d00cc93434a2667db5ba06713f7768f15cef",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:28:59.098Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/64849efc889549a90cdc6d663bb1400c6b04aba5360c9eb27ddcd24ad8e59aed.subtitles.json",
+  "subtitleSha256": "da9527af2c845bc3ea3a997bee5f3f4773d65eb5e19170cfa10251644aea8b4a",
+  "timingLevel": "word"
+}

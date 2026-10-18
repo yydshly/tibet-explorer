@@ -1,0 +1,15 @@
+{
+  "id": "92a7ad1668e0060784712f3225822e745bff7af2bf317a8073f24efe345d3b46",
+  "url": "/assets/audio/narration/92a7ad1668e0060784712f3225822e745bff7af2bf317a8073f24efe345d3b46.mp3",
+  "text": "来到同一片山地，山脊、深谷和高差又改变空气的经过条件。",
+  "duration": 5.328,
+  "bytes": 86964,
+  "sha256": "c17162b201fe50ee6ba14d840f639a6f3d20103cfef3dc36d98a0438c1acd272",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:55:45.036Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

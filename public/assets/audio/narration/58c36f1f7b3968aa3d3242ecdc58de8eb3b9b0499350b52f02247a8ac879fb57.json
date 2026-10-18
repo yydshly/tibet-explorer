@@ -1,0 +1,15 @@
+{
+  "id": "58c36f1f7b3968aa3d3242ecdc58de8eb3b9b0499350b52f02247a8ac879fb57",
+  "url": "/assets/audio/narration/58c36f1f7b3968aa3d3242ecdc58de8eb3b9b0499350b52f02247a8ac879fb57.mp3",
+  "text": "阿里最后保留跨县距离与地方接续。札布让的金珠德吉早在机场通航前就经营旅馆，接待还有自己的来路。分别保存历史与生活问题，再核实日期和接驳，不把三地自动拼成短线。",
+  "duration": 15.156,
+  "bytes": 244212,
+  "sha256": "dc623eac63ee623efaac6bf9d3030360a4519f3ef5cd1146556b1f8c0c3d50a9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:49:24.950Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

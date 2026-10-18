@@ -1,0 +1,15 @@
+{
+  "id": "21d78b26509ca15ba6ac4dc105ef4c146c56cc5d18114b8897cb4595539bf4a0",
+  "url": "/assets/audio/narration/21d78b26509ca15ba6ac4dc105ef4c146c56cc5d18114b8897cb4595539bf4a0.mp3",
+  "text": "作品与建筑可以保存历史，也被今天的人继续使用、修缮和重新理解。下一步从细部回到院落与社区，讨论生产、家庭、语言、节庆和传承。文化会成为持续的生活实践，而不止是安静保存的对象。",
+  "duration": 19.044,
+  "bytes": 306420,
+  "sha256": "80f3381dec4b16a91c50faa72872a760accd8bf0aefb58a682ffec05e14b1845",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:35.160Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

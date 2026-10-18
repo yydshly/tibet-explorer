@@ -1,0 +1,19 @@
+{
+  "id": "8a0ec6e8bfebf18064857d069aa025b9408682423f8ba71ef56dd0c560a59350",
+  "url": "/assets/audio/narration/8a0ec6e8bfebf18064857d069aa025b9408682423f8ba71ef56dd0c560a59350.mp3",
+  "text": "请保持地点甲为那曲，将地点乙从林芝改为阿里，仍在同一高程底图上比较。先读位置、山地与谷地，再用同样的问题阅读地方材料。气候数值需要来源、统计期和单位，不能由海拔配色直接算出。",
+  "duration": 17.136,
+  "bytes": 275892,
+  "sha256": "62e900955d9ebb601962ce860accfb0140433540578407fd6b14669165409dbe",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:34:03.677Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8a0ec6e8bfebf18064857d069aa025b9408682423f8ba71ef56dd0c560a59350.subtitles.json",
+  "subtitleSha256": "78ecc4805c9e5c3fd8b3eb26727e880a0fcd17fb554443baa34a2fe0502387a0",
+  "timingLevel": "word"
+}

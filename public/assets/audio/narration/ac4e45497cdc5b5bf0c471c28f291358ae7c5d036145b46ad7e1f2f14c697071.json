@@ -1,0 +1,15 @@
+{
+  "id": "ac4e45497cdc5b5bf0c471c28f291358ae7c5d036145b46ad7e1f2f14c697071",
+  "url": "/assets/audio/narration/ac4e45497cdc5b5bf0c471c28f291358ae7c5d036145b46ad7e1f2f14c697071.mp3",
+  "text": "拉萨先从河谷和用水进入观察。较平缓的地面提供空间，二〇二二年规划还说明当时的地下水与供水问题。把地形、水源和取用工作分开记录，再继续读城市历史。",
+  "duration": 15.48,
+  "bytes": 249396,
+  "sha256": "2258164476cb0fbd8925d18f5d799a5dacbcaaf058e009821538ca86f4d733de",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:45:19.224Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

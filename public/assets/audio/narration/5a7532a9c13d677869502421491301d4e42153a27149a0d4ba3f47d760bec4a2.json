@@ -1,0 +1,15 @@
+{
+  "id": "5a7532a9c13d677869502421491301d4e42153a27149a0d4ba3f47d760bec4a2",
+  "url": "/assets/audio/narration/5a7532a9c13d677869502421491301d4e42153a27149a0d4ba3f47d760bec4a2.mp3",
+  "text": "吸收以后，地表储存状态改变，再通过长波、空气热交换和蒸发分配能量。大气参与吸收与发射，既向外，也向地表交换。沿新增路径认识收支；箭头宽度和储存颜色不表示真实通量或温度。",
+  "duration": 16.704,
+  "bytes": 268980,
+  "sha256": "a02ab29e13899ad43fce0b4d1385ddfa1d55657ea7247d4217a95665ed3bc6b5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T14:22:56.480Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

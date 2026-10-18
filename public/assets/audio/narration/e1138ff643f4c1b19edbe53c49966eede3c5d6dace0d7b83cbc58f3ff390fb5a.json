@@ -1,0 +1,15 @@
+{
+  "id": "e1138ff643f4c1b19edbe53c49966eede3c5d6dace0d7b83cbc58f3ff390fb5a",
+  "url": "/assets/audio/narration/e1138ff643f4c1b19edbe53c49966eede3c5d6dace0d7b83cbc58f3ff390fb5a.mp3",
+  "text": "森林与高山相邻，城区只是地区入口。沿谷地继续追问，人们怎样在这些条件中通行和生活？",
+  "duration": 8.28,
+  "bytes": 134196,
+  "sha256": "ea2ff188c538b2c5fc511ac0b862f18810407459816c815829b18294f66ebc1d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:55:53.460Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

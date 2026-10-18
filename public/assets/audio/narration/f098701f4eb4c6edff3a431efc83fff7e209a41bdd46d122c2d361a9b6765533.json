@@ -1,0 +1,19 @@
+{
+  "id": "f098701f4eb4c6edff3a431efc83fff7e209a41bdd46d122c2d361a9b6765533",
+  "url": "/assets/audio/narration/f098701f4eb4c6edff3a431efc83fff7e209a41bdd46d122c2d361a9b6765533.mp3",
+  "text": "请从收益问题开始，加入生态与地方生活，看原来没有纳入的对象是什么。再打开拉萨案例，分别核对措施、材料、环境和使用者。三个对象一起出现，是提问范围更完整，不表示模型已经算出保护成效或替所有人作出选择。",
+  "duration": 19.8,
+  "bytes": 318516,
+  "sha256": "d08ff37eacf2569b155346ef7b68732e8ba4f4282d2610b79dc8d2957441eb6a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:17.032Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f098701f4eb4c6edff3a431efc83fff7e209a41bdd46d122c2d361a9b6765533.subtitles.json",
+  "subtitleSha256": "c373bca7655338ce594719c17cfaa99c762d39fa9097725af9d51fee59b6939e",
+  "timingLevel": "word"
+}

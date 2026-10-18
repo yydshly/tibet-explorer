@@ -1,0 +1,19 @@
+{
+  "id": "b4387eab9eabf7e5a5e3b409e9c0910c25aaecec794614a1ffd83fb06276fe8b",
+  "url": "/assets/audio/narration/b4387eab9eabf7e5a5e3b409e9c0910c25aaecec794614a1ffd83fb06276fe8b.mp3",
+  "text": "平缓土地与供水条件共同参与聚居，河谷因此同时承载生产和城市生活。把视角保持在区域尺度，观察水源、谷地和城区的相对关系；这里不把示意生产带当成真实田块，也不据此推算哪一年城市扩大了多少。",
+  "duration": 19.08,
+  "bytes": 306996,
+  "sha256": "6fc2339874a7c20eb7e8903892513b08d0041eb96f68140efda6d948454cc896",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:48:55.438Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b4387eab9eabf7e5a5e3b409e9c0910c25aaecec794614a1ffd83fb06276fe8b.subtitles.json",
+  "subtitleSha256": "ae0ccbd92fbb72718e1abc8f59b572435b2b4842745f9f368b36283a73c633fc",
+  "timingLevel": "word"
+}

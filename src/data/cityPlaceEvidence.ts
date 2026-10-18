@@ -1,0 +1,12 @@
+/** Dated first-person / administering-agency material, distinct from current
+ * OSM geometry. A road report does not certify today's schedule or access. */
+export const cityPlaceEvidenceSources=[
+ {id:'place-liuwu-local-interview-2019',title:'柳梧新区管委会 · 洛桑赤列与地方运输组织（2019）',url:'https://lwxq.lasa.gov.cn/lwxqgwh/lwyw/201910/56d71493c7f54244bb05018ceee8db2b.shtml',note:'2019-10-02发布，正文直接核读：柳梧位于拉萨河南岸，2006年铁路通车、2007年4月大桥连通站区与市区；洛桑赤列回忆村民购车从事接续运输，村委成立运输队，他负责协调调度。另记2015年他成立公司从事工地拉料。采用具名行动与空间关系，不采用旧通行时长、收入、车辆总数、规划面积或全体受益推断；不生成通车前道路和历史城界。'},
+ {id:'place-lhasa-bus-adjustment-2024',title:'拉萨市交通运输局 · 有日期的公交调整记录（2024）',url:'https://jtj.lasa.gov.cn/jtj/tggs/202406/c96807e0af9f42479b2d2dc4e57cc709.shtml',note:'2024-06-20发布、来源拉萨公交，正文直接核读，公告记自6月19日起调整6、19、32、L2路并取消22、23路；19路记录柳梧大桥、第二人民医院、罗布林卡等站名。只证明地方联系需要持续运营调整，不绘制未取得几何的公交线，也不把2024公告当出行日路线或班次。'},
+ {id:'city-spatial-shiquanhe-banks-2017',title:'西藏文旅厅 · 狮泉河2017一河两岸工程（2021采访）',url:'https://wlt.xizang.gov.cn/xccx/lytg/202110/t20211012_265004.html',note:'2021-10-12原始具名采访明确2017年工程竣工、狮泉河城区段景观与河堤两岸绿化及文化休闲等用途。取事件和功能，不采用长度、面积、人数或全体收益；未导入工程边界或河岸测绘，不把2017年前河岸说成不可使用。狮泉河与托林、札布让分别理解。'},
+ {id:'event-lulang-services-2017',title:'鲁朗管委会 · 2017年度运营、商户进驻与家庭旅馆培训',url:'https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml',note:'2018-09-10发布的2017年度部门决算与工作记录；正文直接核读，支持商户进驻、家庭旅馆培训、服务管理和图书分馆等具体工作。只说明这些有日期的活动，不将旧收入、商户数量当作当前状态或交通单独效果，不定位具体培训场地。'},
+ {id:'event-liuwu-opening-2007',title:'自治区政府 · 柳梧大桥2007年4月30日通车同期报道',url:'https://www.xizang.gov.cn/zwgk/ldzc/ldhd/201901/t20190117_54666.html',note:'正文署期2007-05-01，明确前一日4月30日正式通车、连通中心城区与柳梧新区。官方检索正文可读，直连本轮超时；以同期事实补充2019具名回顾，不从报道生成历史城界或通车前绕行几何。'},
+ {id:'event-mainling-s4-2020',title:'拉萨政府 · 2020年道路发布中的S4林芝至米林机场',url:'https://www.lasa.gov.cn/lasa/zzqxx/202012/20752f80754f4afeb24f426b87989a56.shtml',note:'2020-12-16发布，正文直接核读；明确S4林芝至米林机场高等级公路。仅采用道路名称和所连地点，不采用旧限速、行车时间作当前导航，不将现状OSM道路视为历年不变。'},
+ {id:'event-mainling-s4-maintenance-2020',title:'米林政府 · S4米林机场专用公路养护检查（2020）',url:'https://www.milin.gov.cn/mlx/xwzx/202010/a9250b5a4d2841258a600a222a340fcb.shtml',note:'2020-10-23发布，正文直接核读；明确S4林芝米林机场专用公路及日常、机械化、预防性养护与应急物资检查。用于确认道路联系和持续管护工作，不推断当日路况、现行限速或门到门接驳。'},
+ {id:'event-gunsa-g219-2004-2025',title:'阿里行署 · 吕新民口述的2004年狮泉河至昆莎G219柏油路',url:'https://www.al.gov.cn/info/1116/156774.htm',note:'2025-08-05发布，来源《纵横》2025年第5期，吕新民口述、游庆采访；正文直接核读。明确2004年G219狮泉河至昆莎段柏油路建设，早于2010通航；口述支持已发生事件，不提供工程竣工边界、现行接驳或航空单独收益评估。'},
+];

@@ -1,0 +1,15 @@
+{
+  "id": "1bec1f99a981124d711aa8204aef42b63f580e9e55aafee1d1c60c85136d9a87",
+  "url": "/assets/audio/narration/1bec1f99a981124d711aa8204aef42b63f580e9e55aafee1d1c60c85136d9a87.mp3",
+  "text": "刚才读建筑布局，现在沿用途追问信仰与知识怎样来到地方。教师、译者、文本、作品和赞助者共同参与交流。这里保留建筑作为观察锚点，跨地区联系则通过相关人物与博物馆材料展开，不能靠一座模型概括全部传统。",
+  "duration": 20.664,
+  "bytes": 332340,
+  "sha256": "3867219772fe5e30226e2605e28034507a8a1f1626ee922b1bc7fcd49c7d9a97",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:49.944Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

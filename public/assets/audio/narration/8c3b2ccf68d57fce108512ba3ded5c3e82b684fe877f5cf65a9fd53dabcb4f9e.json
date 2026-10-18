@@ -1,0 +1,15 @@
+{
+  "id": "8c3b2ccf68d57fce108512ba3ded5c3e82b684fe877f5cf65a9fd53dabcb4f9e",
+  "url": "/assets/audio/narration/8c3b2ccf68d57fce108512ba3ded5c3e82b684fe877f5cf65a9fd53dabcb4f9e.mp3",
+  "text": "拉萨先从河谷与取水问题进入城市，再对照历史建筑的年代和用途。大昭寺与布达拉宫分别核验访问安排。候选顺序可以修改，每一站保存为什么去、看什么，以及还不知道的条件。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "7ddef3d337861a49667ac9e239721400958ffc78b02fde4a29520ed2f00f828c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:40.207Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ded1bbda5d42880fc07abd174a90642eb7412f1b0898f8428ea042037ca44441",
+  "url": "/assets/audio/narration/ded1bbda5d42880fc07abd174a90642eb7412f1b0898f8428ea042037ca44441.mp3",
+  "text": "客运接续先看二〇〇七年四月通车的柳梧大桥。它把客站与市区连起来；在现在的河流和道路位置上，区分到站与跨河进城。另一处拉萨西货场的配送，留到下一环单独读。",
+  "duration": 15.156,
+  "bytes": 244212,
+  "sha256": "bdd108743093c46123655609d05cfb1df73b61258e10328008a70201ec5ef5b5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:12:44.404Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

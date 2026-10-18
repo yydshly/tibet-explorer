@@ -1,0 +1,19 @@
+{
+  "id": "7331c2f6a587173ab444e688a5ba1455f284471f6190cea0672cdafff2092f4f",
+  "url": "/assets/audio/narration/7331c2f6a587173ab444e688a5ba1455f284471f6190cea0672cdafff2092f4f.mp3",
+  "text": "从山南站继续观察谷地生活与桑耶，先看现代到达怎样接到城区，再问河谷怎样被使用、历史材料怎样保存，最后了解仍在练习的地方文化。画面串起观察问题，地面接续仍需道路；不把这条观察顺序当成实测旅游线路。",
+  "duration": 18.396,
+  "bytes": 296052,
+  "sha256": "0eac20379d10476ea14950de1c063f15a7af2d8548b8ed2825a241bc821e766d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:52:54.315Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7331c2f6a587173ab444e688a5ba1455f284471f6190cea0672cdafff2092f4f.subtitles.json",
+  "subtitleSha256": "28d3f7068eba00110ea40cb6bceb9de89e1cd89d59570620c15c3f2b8016eae7",
+  "timingLevel": "word"
+}

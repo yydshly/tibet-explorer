@@ -1,0 +1,15 @@
+{
+  "id": "101d1145d905ea085aafe12ea1b622d343be4d79da4c13fdaa89b0bf07b83cb0",
+  "url": "/assets/audio/narration/101d1145d905ea085aafe12ea1b622d343be4d79da4c13fdaa89b0bf07b83cb0.mp3",
+  "text": "请展开复制关系并选择拓本，阅读馆藏说明怎样记录原碑、事件和材料身份。空白纸与碑只解释保存机制，原文表述必须回到真实材料核对。理解传播过程，并不等于已经知道所有文字的含义。",
+  "duration": 17.244,
+  "bytes": 277620,
+  "sha256": "ab49a6b1a49a357b91dac7f0898a65327a138f118d71c7ee6c9013a4a59ea6e0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:06:17.438Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

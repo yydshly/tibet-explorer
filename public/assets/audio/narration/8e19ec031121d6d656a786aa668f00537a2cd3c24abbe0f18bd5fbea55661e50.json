@@ -1,0 +1,15 @@
+{
+  "id": "8e19ec031121d6d656a786aa668f00537a2cd3c24abbe0f18bd5fbea55661e50",
+  "url": "/assets/audio/narration/8e19ec031121d6d656a786aa668f00537a2cd3c24abbe0f18bd5fbea55661e50.mp3",
+  "text": "上一幅地球告诉我们高原在哪里，现在要问它怎样形成。这里把空间转成地壳剖面，用概念过程观察印度板块与欧亚板块的相向运动。画面进度表示解释阶段，不能当成真实地质年份。",
+  "duration": 15.372,
+  "bytes": 247668,
+  "sha256": "f19f4f53820756fd367533a1f51438eb75f44cce9a26389a647197a197b3b674",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:30.818Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "26d50e022d6c5d05338df5b10818d4a3f146ee1bebd3f5fbcc53d2a1b3f62cf9",
+  "url": "/assets/audio/narration/26d50e022d6c5d05338df5b10818d4a3f146ee1bebd3f5fbcc53d2a1b3f62cf9.mp3",
+  "text": "先看那曲真实站房与站场轨道，再沿已绘街道接入城市。2006年青藏铁路通车，2009年物流中心竣工，铁路运输还需装卸、分拨与公路配送才进入生活。客运与货运分开读，图中站场不是物流园边界，到城区的演示只走相连的源道路。",
+  "duration": 22.464,
+  "bytes": 361140,
+  "sha256": "4e8f883e2f00599f21f3337aab3643d059ba4ad72f09b89225376f26095ee31d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:52:11.248Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/26d50e022d6c5d05338df5b10818d4a3f146ee1bebd3f5fbcc53d2a1b3f62cf9.subtitles.json",
+  "subtitleSha256": "562ad0d398b1590ea79d34035eb8e2bf7bbd7054d8919910916b51638a36cca2",
+  "timingLevel": "word"
+}

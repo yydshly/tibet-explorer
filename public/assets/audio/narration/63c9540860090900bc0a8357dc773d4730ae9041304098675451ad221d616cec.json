@@ -1,0 +1,19 @@
+{
+  "id": "63c9540860090900bc0a8357dc773d4730ae9041304098675451ad221d616cec",
+  "url": "/assets/audio/narration/63c9540860090900bc0a8357dc773d4730ae9041304098675451ad221d616cec.mp3",
+  "text": "先看1985年那曲的聚居检出，再到2005年比较城市与站场周边，最后对照2015年。三十米网格表示卫星估计检出年，1985年一档也包含更早聚居。今天的轨道只作位置参照，不能倒推旧路网，更不能把范围变化都归因于2006年铁路通车。",
+  "duration": 22.14,
+  "bytes": 355956,
+  "sha256": "a326f94b5c75e06f8aa137f1b1ad5203686299ae2a5e18adba727b96b15d5adc",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:52:04.809Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/63c9540860090900bc0a8357dc773d4730ae9041304098675451ad221d616cec.subtitles.json",
+  "subtitleSha256": "08647f827d9aec48a95c0354ae1506b97f338ba34fc00c74db31ecb74aaf9c27",
+  "timingLevel": "word"
+}

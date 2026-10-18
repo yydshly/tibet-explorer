@@ -1,0 +1,15 @@
+{
+  "id": "688b3f0bc81ac855c5f90e408405ce6ea5dc60d89a9606748b4cba540fb5903c",
+  "url": "/assets/audio/narration/688b3f0bc81ac855c5f90e408405ce6ea5dc60d89a9606748b4cba540fb5903c.mp3",
+  "text": "从知识的传递进入人的制作。眼前柱、梁与细部先分开放置，保持各自大小与连接位置。它们不是某件文物的拆解数据，普通几何细部也没有仿造宗教符号；先看材料怎样被组织，再回到真实作品的语境。",
+  "duration": 17.136,
+  "bytes": 275892,
+  "sha256": "d3dc1a68218bd6ba82b1a089acc793b0dcaa7182fdcf6df329efbacc1edfb451",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:30.236Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

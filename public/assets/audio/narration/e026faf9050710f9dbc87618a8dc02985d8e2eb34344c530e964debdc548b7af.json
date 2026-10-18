@@ -1,0 +1,15 @@
+{
+  "id": "e026faf9050710f9dbc87618a8dc02985d8e2eb34344c530e964debdc548b7af",
+  "url": "/assets/audio/narration/e026faf9050710f9dbc87618a8dc02985d8e2eb34344c530e964debdc548b7af.mp3",
+  "text": "请转动山坡，比较较低处与较高处的位置，再切换到气流层，观察空气可以怎样沿地形移动。以后说一个地区更冷时，还应注明地点、日期和统计范围，不能只用一次山坡印象代替资料。",
+  "duration": 15.876,
+  "bytes": 255732,
+  "sha256": "d0f1c52207f6a4c8a11b36f5efc5fdec1272d21ac6f6c139f9ade218c098fc90",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:51:22.983Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "7af81e78f9191338ce34591e68419a46aebefe2564efe86584dcf1af6f1d7732",
+  "url": "/assets/audio/narration/7af81e78f9191338ce34591e68419a46aebefe2564efe86584dcf1af6f1d7732.mp3",
+  "text": "先保留林芝与鲁朗的山谷位置，地形提供空间，也带来需要跨越的高差。官方资料记载，三一八国道经过鲁朗，向西联系八一和拉萨，向东联系波密。道路之外，往来还需要交通服务与持续维护。切换这个条件，看看自然空间怎样经过人的工作，接到聚落生活。",
+  "duration": 20.772,
+  "bytes": 334068,
+  "sha256": "ea7531ad89d72a4fe0d1856944170f815cf685fbba8b92678294cece149b88db",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:12.019Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

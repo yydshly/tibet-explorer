@@ -1,0 +1,19 @@
+{
+  "id": "a24f165d4b43aefaff6d74a37966087f9f53689025e87bead56df6af8f293ba9",
+  "url": "/assets/audio/narration/a24f165d4b43aefaff6d74a37966087f9f53689025e87bead56df6af8f293ba9.mp3",
+  "text": "沿昌都真实街道与桥梁，观察两岸到寺院周边的接续。2024年四川桥片区更新开工，居民多加讲窄巷会车，商户卓玛讲临时用水：道路、管网和组织共同影响出行与经营。现况街区供读图，不能定位两人的住房商铺，也不是已完工项目红线。",
+  "duration": 20.484,
+  "bytes": 329460,
+  "sha256": "c2589df0d2312188a681dec05c3af3562a3b0a59cf5fde4ea6ac3382f99c23f2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:51:59.335Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a24f165d4b43aefaff6d74a37966087f9f53689025e87bead56df6af8f293ba9.subtitles.json",
+  "subtitleSha256": "4fad979123a52324254abf9409634bb65dde8d6d847b8f2f1340868930fa1dc9",
+  "timingLevel": "word"
+}

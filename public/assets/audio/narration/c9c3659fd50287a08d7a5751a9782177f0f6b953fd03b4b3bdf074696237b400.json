@@ -1,0 +1,15 @@
+{
+  "id": "c9c3659fd50287a08d7a5751a9782177f0f6b953fd03b4b3bdf074696237b400",
+  "url": "/assets/audio/narration/c9c3659fd50287a08d7a5751a9782177f0f6b953fd03b4b3bdf074696237b400.mp3",
+  "text": "请选择林芝，观察它在交通联系中的位置，再阅读对应建设与运营资料。你可以问：谁能使用这条联系，哪些活动受影响，还有哪些条件限制到达？有了这些问题，交通就会接到生活，而不止是一条线。",
+  "duration": 16.452,
+  "bytes": 264948,
+  "sha256": "f18a48933355a8d65de7b5544579e7e0fae764acfebd5c553b030280157ce617",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:34.397Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

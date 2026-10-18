@@ -1,0 +1,19 @@
+{
+  "id": "506373c53d896f407d356fcf48f546f053562dd8fdb1f25c2767ba97fe6e22f1",
+  "url": "/assets/audio/narration/506373c53d896f407d356fcf48f546f053562dd8fdb1f25c2767ba97fe6e22f1.mp3",
+  "text": "地形能说明哪里较平、哪里有水，却不能直接解释一座城为何成为中心，或一种文化怎样形成。接下来把同一张地图放进时间：先看人群活动与历史长线，再沿真实材料走近地方。年代、人的行动和空间用途，需要一起阅读。",
+  "duration": 19.116,
+  "bytes": 307572,
+  "sha256": "32763b1a61744f6ca3cb843603cce60ef73da419f30b516cd00f899c30bd026f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T03:25:12.916Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/506373c53d896f407d356fcf48f546f053562dd8fdb1f25c2767ba97fe6e22f1.subtitles.json",
+  "subtitleSha256": "dfda82eef0da44602f2f1831476f54472a0c8630b070d751df8cb54473d9733c",
+  "timingLevel": "word"
+}

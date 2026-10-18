@@ -1,0 +1,15 @@
+{
+  "id": "055716dcfe7caaba790992d4e686b773fc8a00c1a0a2fc46c95faa4eae773d8a",
+  "url": "/assets/audio/narration/055716dcfe7caaba790992d4e686b773fc8a00c1a0a2fc46c95faa4eae773d8a.mp3",
+  "text": "观察留在鲁朗，对照道路、河谷和同一处服务用地。车辆怎样经过，人在哪里停留，住宿接待需要哪些工作？再读二〇一六年试运营和二〇一七年旅馆培训的记录。林芝的工布课堂在另一地点，不能混作小镇现场。",
+  "duration": 18.54,
+  "bytes": 298356,
+  "sha256": "5a59abf9f7885a2ab99f98a1304bd9866180493fd253d9867520271afca7aed7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:27:19.592Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4f41b1708e558a135eb6fa59854d6ddae2cbbcde3f24a1b0b59bd1496115f86f",
+  "url": "/assets/audio/narration/4f41b1708e558a135eb6fa59854d6ddae2cbbcde3f24a1b0b59bd1496115f86f.mp3",
+  "text": "请在三个节点之间切换，比较材料性质、发生地点和能够支持的判断。政府文件、学术研究和社区经验各有身份与语境；一份制度材料不能自动代表每个家庭的经历，规划与实际影响也需要分开。",
+  "duration": 17.208,
+  "bytes": 277044,
+  "sha256": "ced50952221cdc371f198efe895984e0cad574cbb6f06329fa758a50578ae83e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:07:02.819Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

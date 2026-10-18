@@ -1,0 +1,15 @@
+{
+  "id": "7c1e6bf9c9b51e690a295083619995491a824216304e4c017af7c403e1655bf2",
+  "url": "/assets/audio/narration/7c1e6bf9c9b51e690a295083619995491a824216304e4c017af7c403e1655bf2.mp3",
+  "text": "请回到生活层，围绕河谷辨认水源、聚落与通道，选一个自己愿意继续了解的问题。比如人什么时候来到这里，怎样组织生产和交往？稍后我们会离开今天的空间印象，用历史材料回答这些问题。",
+  "duration": 17.064,
+  "bytes": 274740,
+  "sha256": "cc310c98df55506d646f3d5df2be012c8b17449d786740ff3e2130779e858866",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:32.099Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

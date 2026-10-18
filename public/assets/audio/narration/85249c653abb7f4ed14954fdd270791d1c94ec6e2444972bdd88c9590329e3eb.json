@@ -1,0 +1,19 @@
+{
+  "id": "85249c653abb7f4ed14954fdd270791d1c94ec6e2444972bdd88c9590329e3eb",
+  "url": "/assets/audio/narration/85249c653abb7f4ed14954fdd270791d1c94ec6e2444972bdd88c9590329e3eb.mp3",
+  "text": "同一流域让不同地方共享来水和变化，人的联系却还要有出行、接待、交换与学习。接下来从阿底峡到托林的有证节点出发，看自然通口怎样成为机会，而具体行动又怎样让交流真正发生。",
+  "duration": 18.36,
+  "bytes": 295476,
+  "sha256": "6e63b02e246af2320507d668bfc81b47e97e7c50001052e6e7497b3b080d6ba1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:11:16.646Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/85249c653abb7f4ed14954fdd270791d1c94ec6e2444972bdd88c9590329e3eb.subtitles.json",
+  "subtitleSha256": "73928f19afb542ccff92af6747b2f35da2c0a5ed067ab3192a8597f728bf75f4",
+  "timingLevel": "word"
+}

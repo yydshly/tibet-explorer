@@ -1,0 +1,15 @@
+{
+  "id": "c2c8ff3a964ed419e2d366e184bf1a57d97114a738736afc663fe9ebefa5f8a5",
+  "url": "/assets/audio/narration/c2c8ff3a964ed419e2d366e184bf1a57d97114a738736afc663fe9ebefa5f8a5.mp3",
+  "text": "流域和通道让我们知道西藏为何与更大范围有关。下一步讨论战略意义时，要继续沿具体关系提问：生态、交通、边境治理或文化交流影响谁、需要哪些条件？一句位置重要，不能替代这些解释。",
+  "duration": 16.056,
+  "bytes": 258612,
+  "sha256": "499aac04329c32ed4d60436956034e7d0e517954c90eb0fe23e98961022bf480",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:49.737Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

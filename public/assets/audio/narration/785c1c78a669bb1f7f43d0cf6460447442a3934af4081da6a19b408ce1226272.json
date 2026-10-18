@@ -1,0 +1,19 @@
+{
+  "id": "785c1c78a669bb1f7f43d0cf6460447442a3934af4081da6a19b408ce1226272",
+  "url": "/assets/audio/narration/785c1c78a669bb1f7f43d0cf6460447442a3934af4081da6a19b408ce1226272.mp3",
+  "text": "这个过程说明山地如何参与云雨，却没有报告某日某处真实下了多少雨。下一步保留同一山地，转到一次天气的时间尺度，学习怎样阅读来流、云发展和降水的前后，避免把示意当成实况。",
+  "duration": 15.408,
+  "bytes": 248244,
+  "sha256": "583f6de3c7772ed45d638bf85a31af55e188ba629813da53de6e573155113eca",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:12:28.528Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/785c1c78a669bb1f7f43d0cf6460447442a3934af4081da6a19b408ce1226272.subtitles.json",
+  "subtitleSha256": "5e3aa49537ec563ad1944be39805a918fe6ff8d8bb67dfdd0516f7b1321ee148",
+  "timingLevel": "word"
+}

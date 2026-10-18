@@ -1,0 +1,15 @@
+{
+  "id": "7757721c9e4d5d0eb1b1f705c7a6c863692502062c6e17618a6f82658d63ed85",
+  "url": "/assets/audio/narration/7757721c9e4d5d0eb1b1f705c7a6c863692502062c6e17618a6f82658d63ed85.mp3",
+  "text": "纬度解释了照射背景，却解释不了这里为什么有如此广阔的高地。接下来从今天的空间位置转入漫长的地质时间，认识板块运动、地壳变形和侵蚀怎样共同留下高原与山系。",
+  "duration": 14.472,
+  "bytes": 233268,
+  "sha256": "8ca804a0fd9ca9b64b961a4450cbc9453951cb593585f8c91890a30ae8e6cc09",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:23.150Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

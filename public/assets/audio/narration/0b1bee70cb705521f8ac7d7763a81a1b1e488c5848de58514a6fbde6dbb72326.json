@@ -1,0 +1,15 @@
+{
+  "id": "0b1bee70cb705521f8ac7d7763a81a1b1e488c5848de58514a6fbde6dbb72326",
+  "url": "/assets/audio/narration/0b1bee70cb705521f8ac7d7763a81a1b1e488c5848de58514a6fbde6dbb72326.mp3",
+  "text": "从交通网络走进地方生活，我们关注城市、乡村、生产与公共服务。技术、投资、政策、需求和个人选择共同作用。聚落或设施出现，只告诉我们空间中有什么，不能自动说明每个人获得了相同的服务与机会。",
+  "duration": 18.108,
+  "bytes": 291444,
+  "sha256": "459adc77872af775454d3d7af3a14dc3f2e27323f341fec9809edaf275420839",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:47.674Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

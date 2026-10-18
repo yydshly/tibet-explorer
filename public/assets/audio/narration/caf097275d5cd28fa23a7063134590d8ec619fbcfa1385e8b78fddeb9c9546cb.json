@@ -1,0 +1,15 @@
+{
+  "id": "caf097275d5cd28fa23a7063134590d8ec619fbcfa1385e8b78fddeb9c9546cb",
+  "url": "/assets/audio/narration/caf097275d5cd28fa23a7063134590d8ec619fbcfa1385e8b78fddeb9c9546cb.mp3",
+  "text": "请把过程退回部件分开的阶段，再推进装配，近看柱梁接口。旁边真实经板或作品资料用于核对年代与用途；模型的框架只帮助理解制作关系，不能替代某件作品的材料分析与历史说明。",
+  "duration": 16.848,
+  "bytes": 271284,
+  "sha256": "17b383e778dbd88713571e60e48cfc1695bf5a51eae5df7e6db0ab50d2658370",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:40.078Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

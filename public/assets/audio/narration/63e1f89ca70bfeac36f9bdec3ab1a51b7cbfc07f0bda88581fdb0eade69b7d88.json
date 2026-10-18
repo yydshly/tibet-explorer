@@ -1,0 +1,19 @@
+{
+  "id": "63e1f89ca70bfeac36f9bdec3ab1a51b7cbfc07f0bda88581fdb0eade69b7d88",
+  "url": "/assets/audio/narration/63e1f89ca70bfeac36f9bdec3ab1a51b7cbfc07f0bda88581fdb0eade69b7d88.mp3",
+  "text": "二〇〇九年八月十七日，那曲物流中心举行竣工典礼，资料列出物流、堆装和产品加工等功能。二〇二一年八月，那曲至拉萨高速全线接通。车站、物流和公路分工接续，不能把开通事件直接画成未经核实的城市扩张。",
+  "duration": 18.324,
+  "bytes": 294900,
+  "sha256": "68968872c8a1fc652d31a47a3b88424d0fc8a115e4cb6f52b9253228d8d86a56",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:57:06.589Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/63e1f89ca70bfeac36f9bdec3ab1a51b7cbfc07f0bda88581fdb0eade69b7d88.subtitles.json",
+  "subtitleSha256": "de38aebdc20087e7bb90358571373bfd790d1cdc35e36bf0023b768bd4d7691f",
+  "timingLevel": "word"
+}

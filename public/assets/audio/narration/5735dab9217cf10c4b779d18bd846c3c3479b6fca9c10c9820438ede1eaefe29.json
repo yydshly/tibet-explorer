@@ -1,0 +1,19 @@
+{
+  "id": "5735dab9217cf10c4b779d18bd846c3c3479b6fca9c10c9820438ede1eaefe29",
+  "url": "/assets/audio/narration/5735dab9217cf10c4b779d18bd846c3c3479b6fca9c10c9820438ede1eaefe29.mp3",
+  "text": "历史告诉我们人和地方何时发生联系，文化还要追问这些联系怎样延续。先看一件约十二世纪初的西藏木经板，真实照片来自大都会艺术博物馆。它是一块护经板，不是正文。把功能示意展开，先辨认易损的书页，再整理叠放，最后合上两侧木板。你可以展开和合拢，观察木板怎样包护书页。空白页与另一块板只解释保护功能，不复原这件文物原来配套的经书。保存物件还不等于文化持续实践。再以藏戏为例，先有讲述、表演与观看；学习者靠近示范者，再进入共同练习，观看才接到参与机会。这里不复原具体演出，也不把走近等同于学会。联合国教科文组织二〇〇九年的列入决定提出年轻实践者培训等保护措施，列入不是起源，也不是保护已经成功。把物件保存和人的参与放回全域，再进入一个真实街区，观察历史用途怎样和今天生活共处。",
+  "duration": 65.268,
+  "bytes": 1046004,
+  "sha256": "db5df6be9b3dc2cd5688ebdf08a9e1a3207d35a748760aca047793e81ef9f7ea",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-17T02:09:14.576Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5735dab9217cf10c4b779d18bd846c3c3479b6fca9c10c9820438ede1eaefe29.subtitles.json",
+  "subtitleSha256": "6083f37def4be4d0032806f25c523e2306876ee46683d15c86d5790f4952e02c",
+  "timingLevel": "word"
+}

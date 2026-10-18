@@ -1,0 +1,15 @@
+{
+  "id": "74bb6a82d037dfb08ab1d1979f158d47227c540e88dc62ac0e5b344e055473c5",
+  "url": "/assets/audio/narration/74bb6a82d037dfb08ab1d1979f158d47227c540e88dc62ac0e5b344e055473c5.mp3",
+  "text": "把地图退回西部整体，先用狮泉河找到阿里。这里有高原湖盆、宽谷和高山峡谷，降水较少，也分布不均。",
+  "duration": 10.332,
+  "bytes": 167028,
+  "sha256": "a6239ec06cc43ae9b46e3ed96c07e3286507fe91b6a1c76cb5b9ae604c1dda4d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:38.759Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

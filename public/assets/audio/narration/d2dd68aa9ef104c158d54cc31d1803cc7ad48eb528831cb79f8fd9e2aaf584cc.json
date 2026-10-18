@@ -1,0 +1,15 @@
+{
+  "id": "d2dd68aa9ef104c158d54cc31d1803cc7ad48eb528831cb79f8fd9e2aaf584cc",
+  "url": "/assets/audio/narration/d2dd68aa9ef104c158d54cc31d1803cc7ad48eb528831cb79f8fd9e2aaf584cc.mp3",
+  "text": "阿里的候选路线，把狮泉河的用水与管护，接到札达托林的交流和地方经营。两处不是同城短线。保留自己选中的站点，补充日期与地面接续；不要把林芝、拉萨和阿里自动拼成一次短途旅行。",
+  "duration": 17.928,
+  "bytes": 288564,
+  "sha256": "58580ed2546bddc75f6e21263c53e2cdae0fc01118e1bf1909d9b8efe99e4bed",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:44.906Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

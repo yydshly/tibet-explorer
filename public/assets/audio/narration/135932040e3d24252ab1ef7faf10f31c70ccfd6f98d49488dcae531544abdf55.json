@@ -1,0 +1,15 @@
+{
+  "id": "135932040e3d24252ab1ef7faf10f31c70ccfd6f98d49488dcae531544abdf55",
+  "url": "/assets/audio/narration/135932040e3d24252ab1ef7faf10f31c70ccfd6f98d49488dcae531544abdf55.mp3",
+  "text": "看见生活变化之后，还要问哪些影响需要共同承担。下一步把交通、生产、旅游与生态文化保护放在同一地方讨论：一种价值被利用时，对谁有益，需要什么条件，又怎样长期维护和治理？",
+  "duration": 16.164,
+  "bytes": 260340,
+  "sha256": "cd81e5cbaa28add1ba4e87a53c9a86a4c6cc05a97050f9c814801a73564f1189",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:06.775Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

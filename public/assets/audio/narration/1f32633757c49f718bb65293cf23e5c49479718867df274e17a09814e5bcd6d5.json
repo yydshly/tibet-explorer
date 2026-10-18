@@ -1,0 +1,15 @@
+{
+  "id": "1f32633757c49f718bb65293cf23e5c49479718867df274e17a09814e5bcd6d5",
+  "url": "/assets/audio/narration/1f32633757c49f718bb65293cf23e5c49479718867df274e17a09814e5bcd6d5.mp3",
+  "text": "水和较平缓土地可能支持生产与聚居，通道有助于交换，技术与制度则影响这些条件怎样被使用。画面里的聚落是空间关系示意。农牧安排、城市形成和社区经验，需要相关地方与时代的资料解释。",
+  "duration": 17.856,
+  "bytes": 287412,
+  "sha256": "7775b8bb0bcede001761804a57f115c5057e74b4c98b9182f181539e343c1d1f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:07.996Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

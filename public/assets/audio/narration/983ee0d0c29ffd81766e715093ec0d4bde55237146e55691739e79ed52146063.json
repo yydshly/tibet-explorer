@@ -1,0 +1,19 @@
+{
+  "id": "983ee0d0c29ffd81766e715093ec0d4bde55237146e55691739e79ed52146063",
+  "url": "/assets/audio/narration/983ee0d0c29ffd81766e715093ec0d4bde55237146e55691739e79ed52146063.mp3",
+  "text": "先看携水汽的空气到达，再沿坡上升，空气膨胀冷却。继续推进，满足凝结条件后才出现云滴。云滴增长以后才有降水，水到地表后再汇流或入渗。暂停、回拖会同时停住空气团、云滴、雨和文字；这里的先后是原理解释，没有当地实况钟点。",
+  "duration": 26.28,
+  "bytes": 422196,
+  "sha256": "e58248803a3755fea31c79122dbc445cfc8be188bcd03dad47e376826f160c64",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:12:55.341Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/983ee0d0c29ffd81766e715093ec0d4bde55237146e55691739e79ed52146063.subtitles.json",
+  "subtitleSha256": "63b0ae29c34ed883bf5b21ee2b466c91613ebae9796a2dfb9943cf3b09927a66",
+  "timingLevel": "word"
+}

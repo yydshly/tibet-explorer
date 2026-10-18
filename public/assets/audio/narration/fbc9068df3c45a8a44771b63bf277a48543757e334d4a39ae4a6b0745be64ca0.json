@@ -1,0 +1,15 @@
+{
+  "id": "fbc9068df3c45a8a44771b63bf277a48543757e334d4a39ae4a6b0745be64ca0",
+  "url": "/assets/audio/narration/fbc9068df3c45a8a44771b63bf277a48543757e334d4a39ae4a6b0745be64ca0.mp3",
+  "text": "再从拉萨的城市服务接到具体访问。大昭寺、白宫和红宫有不同用途，朝圣与参访也有不同需要。二〇二五年世界遗产决定继续关注访问管理，抵达后还要尊重地方使用。",
+  "duration": 15.264,
+  "bytes": 245940,
+  "sha256": "c1ac301999ecbfad3fd19d9dfbf659b0f212a7e22da36d7483e7a654c6487e2c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:43:12.202Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

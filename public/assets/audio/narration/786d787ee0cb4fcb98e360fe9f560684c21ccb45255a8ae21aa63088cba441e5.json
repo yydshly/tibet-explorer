@@ -1,0 +1,15 @@
+{
+  "id": "786d787ee0cb4fcb98e360fe9f560684c21ccb45255a8ae21aa63088cba441e5",
+  "url": "/assets/audio/narration/786d787ee0cb4fcb98e360fe9f560684c21ccb45255a8ae21aa63088cba441e5.mp3",
+  "text": "从会盟碑回到拉萨的城市空间，继续观察地方怎样累积时间。布达拉宫、大昭寺与罗布林卡等对象具有不同年代和功能。今天定位能把它们放在同一地方，历史解释却要按各自的建设与使用过程展开。",
+  "duration": 16.668,
+  "bytes": 268404,
+  "sha256": "3f45fc615136f68e64dfd894f7f98e142ae6d243093aa3523146192f08f53428",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:00.031Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

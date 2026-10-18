@@ -1,0 +1,15 @@
+{
+  "id": "d042bac2c968355da62832c435c22328838dbf3c24ff845f1c33a47d5c332a42",
+  "url": "/assets/audio/narration/d042bac2c968355da62832c435c22328838dbf3c24ff845f1c33a47d5c332a42.mp3",
+  "text": "交通提供新的连接，我们还要回到城市、乡村和家庭，看看生活怎样改变。下一步保留地方位置，讨论设施、生产和公共服务；统计总量、空间分布与个人经验，可能给出不同层次的答案。",
+  "duration": 17.856,
+  "bytes": 287412,
+  "sha256": "31433d6ca8b8d73dc987b466a41f43fd91cec53f9ee4cd839871f85ed7528149",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:41.585Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

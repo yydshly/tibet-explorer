@@ -1,0 +1,19 @@
+{
+  "id": "f91e8b32f2a79e885edbe8f2e6065af562b5a3b8e54b36fc0e1528c70a4718df",
+  "url": "/assets/audio/narration/f91e8b32f2a79e885edbe8f2e6065af562b5a3b8e54b36fc0e1528c70a4718df.mp3",
+  "text": "河流带来联系，也形成跨岸障碍。二〇一〇年的地方资料描述，昌都片区被河流分开，再由桥梁连接。保留地形，比较连接前后活动能否衔接；这解释桥梁的作用，不重建当年的桥位或今天城区边界。",
+  "duration": 17.28,
+  "bytes": 278196,
+  "sha256": "25a52a06b73a9d29eeed7a789ae6ad77f36cc9314347499578a4d93349ad7a98",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:26.736Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f91e8b32f2a79e885edbe8f2e6065af562b5a3b8e54b36fc0e1528c70a4718df.subtitles.json",
+  "subtitleSha256": "84d72738354a8236c144482a53bf1ebdaa028062492c148833c8498f11964d36",
+  "timingLevel": "word"
+}

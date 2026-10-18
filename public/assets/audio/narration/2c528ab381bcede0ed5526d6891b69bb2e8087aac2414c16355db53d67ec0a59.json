@@ -1,0 +1,15 @@
+{
+  "id": "2c528ab381bcede0ed5526d6891b69bb2e8087aac2414c16355db53d67ec0a59",
+  "url": "/assets/audio/narration/2c528ab381bcede0ed5526d6891b69bb2e8087aac2414c16355db53d67ec0a59.mp3",
+  "text": "请观察史前时期的材料说明，并打开研究来源，辨认报告的是人群活动还是定居。场景没有复原某个史前村落。考古结论来自具体样本和方法，研究范围之外的问题，应保留为继续查证的入口。",
+  "duration": 16.056,
+  "bytes": 258612,
+  "sha256": "2170d048b2469d814e73119fae891f7562db8006e65afdd73a14e29911e8a50c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:55.054Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

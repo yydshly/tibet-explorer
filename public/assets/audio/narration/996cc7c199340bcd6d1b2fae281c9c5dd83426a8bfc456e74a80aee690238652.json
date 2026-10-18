@@ -1,0 +1,15 @@
+{
+  "id": "996cc7c199340bcd6d1b2fae281c9c5dd83426a8bfc456e74a80aee690238652",
+  "url": "/assets/audio/narration/996cc7c199340bcd6d1b2fae281c9c5dd83426a8bfc456e74a80aee690238652.mp3",
+  "text": "请移动高程切线，再转动视野，比较同一方向上的高低组合。可以展开高程切面，但不要把它当作地下地层。城区点只帮助定位，局部山地也不能代表整个林芝地区。把方向、范围和数据口径保留下来，近看才不会失去来路。",
+  "duration": 18.324,
+  "bytes": 294900,
+  "sha256": "45cc1a499215ded15760bb20838671a3ba222d2fd41fbe78b834c99bf6a7a3b9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:20:49.676Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1cf0732a0bd75efcab333a350190357acb2baf067dd65f3a2393cfbad23501d5",
+  "url": "/assets/audio/narration/1cf0732a0bd75efcab333a350190357acb2baf067dd65f3a2393cfbad23501d5.mp3",
+  "text": "刚才的季节比较只说明得到阳光的几何背景。温度还要看接收与散失之间的关系。现在回到高原地表，金色方向表示进入的太阳能量，暖色方向表示地表向外的交换，先把来和去分开。",
+  "duration": 15.84,
+  "bytes": 255156,
+  "sha256": "80ae6c7e5eee56f780a3491bd9860f6da821a6f7fbd088a88b1165a640d4dd53",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:44.963Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

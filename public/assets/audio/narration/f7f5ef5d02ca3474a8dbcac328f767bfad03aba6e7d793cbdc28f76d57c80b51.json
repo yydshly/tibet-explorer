@@ -1,0 +1,15 @@
+{
+  "id": "f7f5ef5d02ca3474a8dbcac328f767bfad03aba6e7d793cbdc28f76d57c80b51",
+  "url": "/assets/audio/narration/f7f5ef5d02ca3474a8dbcac328f767bfad03aba6e7d793cbdc28f76d57c80b51.mp3",
+  "text": "阿里的具体服务再看札布让。金珠德吉二〇〇六年已开办家庭旅馆，早于机场通航。地方接待需要经营者参与；托林的历史交流和当代服务，各自保留地点与年代。",
+  "duration": 15.372,
+  "bytes": 247668,
+  "sha256": "ad60e8e4a7903841b63cfbd8353100af72293cdba1456851f55c3d86501f98d2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:43:53.886Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

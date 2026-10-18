@@ -1,0 +1,19 @@
+{
+  "id": "e062889f937ee884985faedbd02d13666becab4c4cea4764caea6163e7287540",
+  "url": "/assets/audio/narration/e062889f937ee884985faedbd02d13666becab4c4cea4764caea6163e7287540.mp3",
+  "text": "现在把同一片地面放进时间。尼阿底研究支持距今约四万至三万年的高海拔人群活动。再到七至九世纪，雅砻与拉萨联系吐蕃政权的发展，战争、使节、联姻和交流同时进入历史。唐蕃会盟碑留下具体材料：八二一至八二二年会盟，八二三年立碑。",
+  "duration": 24.156,
+  "bytes": 388212,
+  "sha256": "0c8bc4e3c6829b230fd5e13c4f4bfa07c11328d7aad127ececfae991b343d181",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:05.244Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e062889f937ee884985faedbd02d13666becab4c4cea4764caea6163e7287540.subtitles.json",
+  "subtitleSha256": "393766e9ce8528e4110e959711eb5cd881bb3b11012fe89574cc4c5a96630db1",
+  "timingLevel": "word"
+}

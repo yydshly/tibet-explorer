@@ -1,0 +1,15 @@
+{
+  "id": "24b0350e1f209b7a853185174b9de9031f94a41a2ff761834a9ee276647ca171",
+  "url": "/assets/audio/narration/24b0350e1f209b7a853185174b9de9031f94a41a2ff761834a9ee276647ca171.mp3",
+  "text": "沿水路看物质进入河道并向下移动，同时比较谷地局部下切。继续推进，一部分物质在较低处堆积，地表出现更平缓的空间。移动的水、被搬运的物质和改变的地形是三个对象；粒子数量不表示真实流量或含沙量。",
+  "duration": 19.62,
+  "bytes": 315636,
+  "sha256": "aa4dfb6fa33df5965c14e829c7128a808db0a861be14a8d971dddecce5056c12",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:06.840Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

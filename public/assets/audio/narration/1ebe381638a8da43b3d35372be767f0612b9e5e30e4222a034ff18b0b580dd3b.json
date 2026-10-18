@@ -1,0 +1,19 @@
+{
+  "id": "1ebe381638a8da43b3d35372be767f0612b9e5e30e4222a034ff18b0b580dd3b",
+  "url": "/assets/audio/narration/1ebe381638a8da43b3d35372be767f0612b9e5e30e4222a034ff18b0b580dd3b.mp3",
+  "text": "沿雅鲁藏布江找到泽当与雅砻河谷。谷地较平缓的空间、水源与周围山坡放在一起，才能理解聚居和生产；山南也包含南侧高山和更低的沟谷，泽当这个参考地点不能代替整个市域的环境。",
+  "duration": 17.172,
+  "bytes": 276468,
+  "sha256": "c1970dd5c6bb723601e87e3e83c4aba2a70a2d43e5125a0c69b1d7ade0069543",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:51:02.387Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/1ebe381638a8da43b3d35372be767f0612b9e5e30e4222a034ff18b0b580dd3b.subtitles.json",
+  "subtitleSha256": "5216498db1f8e06ee91abbd8d34b9db513a68ba9e8b0105e914c59006f7f9640",
+  "timingLevel": "word"
+}

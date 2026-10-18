@@ -1,0 +1,15 @@
+{
+  "id": "88486957077de40a1b55d93fff930a59983a8beacb6ee611d931c0815ec9aef7",
+  "url": "/assets/audio/narration/88486957077de40a1b55d93fff930a59983a8beacb6ee611d931c0815ec9aef7.mp3",
+  "text": "先读狮泉河盆地的高程剖面。谷地与周围高地相连，跨越坡面就要面对高差；试线用来观察通行条件。",
+  "duration": 9.612,
+  "bytes": 155508,
+  "sha256": "2dc6f0f7c8bfe40d585f1009966172a548aa8734ea9593dc30916461244bc19f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:20:44.069Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

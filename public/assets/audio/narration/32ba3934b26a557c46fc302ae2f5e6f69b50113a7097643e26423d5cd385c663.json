@@ -1,0 +1,19 @@
+{
+  "id": "32ba3934b26a557c46fc302ae2f5e6f69b50113a7097643e26423d5cd385c663",
+  "url": "/assets/audio/narration/32ba3934b26a557c46fc302ae2f5e6f69b50113a7097643e26423d5cd385c663.mp3",
+  "text": "地球上的空气循环，来到亚洲后还会遇到海陆与季节的影响。保留印度洋和亚洲大陆，跟着镜头靠近高原。夏季南侧水汽联系较突出，西侧系统也能携带水汽。先记住来路，再看同一片真实地形怎样改变空气的运动。",
+  "duration": 19.728,
+  "bytes": 317364,
+  "sha256": "804cc87f0479104832b82db6cbe1c6f860e244ecbe9498139151590f1f5e5cea",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:11:36.406Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/32ba3934b26a557c46fc302ae2f5e6f69b50113a7097643e26423d5cd385c663.subtitles.json",
+  "subtitleSha256": "7b4a61e6de4a899123c4d1300be5820f7e638efccbe69c8f895732f783a13707",
+  "timingLevel": "word"
+}

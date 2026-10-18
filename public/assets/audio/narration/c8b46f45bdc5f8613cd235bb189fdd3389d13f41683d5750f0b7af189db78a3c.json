@@ -1,0 +1,15 @@
+{
+  "id": "c8b46f45bdc5f8613cd235bb189fdd3389d13f41683d5750f0b7af189db78a3c",
+  "url": "/assets/audio/narration/c8b46f45bdc5f8613cd235bb189fdd3389d13f41683d5750f0b7af189db78a3c.mp3",
+  "text": "阿里的历史先从狮泉河转向札达的托林。博物馆研究记述阿底峡一〇四二年入藏并到托林。十一至十二世纪，教师、翻译与艺术交流参与塑造文化；年代材料不能变成一条凭空绘出的古道。",
+  "duration": 19.152,
+  "bytes": 308148,
+  "sha256": "aa902d21138d3b80956a039edc5b40a65629146371523d8361cc546e767cdc7f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:56:49.524Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

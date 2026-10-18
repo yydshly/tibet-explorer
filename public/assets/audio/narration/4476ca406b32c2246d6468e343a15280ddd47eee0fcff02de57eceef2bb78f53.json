@@ -1,0 +1,19 @@
+{
+  "id": "4476ca406b32c2246d6468e343a15280ddd47eee0fcff02de57eceef2bb78f53",
+  "url": "/assets/audio/narration/4476ca406b32c2246d6468e343a15280ddd47eee0fcff02de57eceef2bb78f53.mp3",
+  "text": "接着看拉萨的取水原理。二〇二二年规划说明，当时中心城区主要使用地下水。演示中的水向上提升，再进入取供水环节；关闭取用条件，水源仍在，却不等于已经服务居民。",
+  "duration": 15.48,
+  "bytes": 249396,
+  "sha256": "7e3453c3660ef0cbdf78d1f179173d0fe2098f11550045e14e78787d57048c9b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:24:42.907Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4476ca406b32c2246d6468e343a15280ddd47eee0fcff02de57eceef2bb78f53.subtitles.json",
+  "subtitleSha256": "17755492b02db40dea426a58e32cc75fac384d7bc73adacdcd54ae3c13e1a1fc",
+  "timingLevel": "word"
+}

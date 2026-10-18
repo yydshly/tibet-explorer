@@ -1,0 +1,19 @@
+{
+  "id": "b63f42a56248f6beaf158223b08bc62f42f99f8223e1ac4cdc2f08cb7525bf91",
+  "url": "/assets/audio/narration/b63f42a56248f6beaf158223b08bc62f42f99f8223e1ac4cdc2f08cb7525bf91.mp3",
+  "text": "从会盟的材料链进入近现代，先把一九五一年、一九五九年和一九六五年分别放进材料夹。协议、机构变化、行政建制与社会经历不是同一种对象。材料入口在拉萨，也不能把一九五一年北京签订协议的地点移到拉萨。",
+  "duration": 17.748,
+  "bytes": 285684,
+  "sha256": "c5613e4c24022a8d7968c7589fc89abfb606c4d8baa66ba6921d6a12a4bcf0f3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:38:42.510Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b63f42a56248f6beaf158223b08bc62f42f99f8223e1ac4cdc2f08cb7525bf91.subtitles.json",
+  "subtitleSha256": "578de9cd1d5860064eb77525cdf7b9ce57c3e1046268d7eb350b19f242518e56",
+  "timingLevel": "word"
+}

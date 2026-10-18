@@ -1,0 +1,19 @@
+{
+  "id": "f8dd1d25c5cd4f82c112ed98da97acd14a64d2fddd9b60426979166e9ac895ef",
+  "url": "/assets/audio/narration/f8dd1d25c5cd4f82c112ed98da97acd14a64d2fddd9b60426979166e9ac895ef.mp3",
+  "text": "先暂停向前推进，把文化放到两件真实材料旁。眼前的阿底峡画像，馆方断代为十二世纪前中期，晚于一〇四二年的行旅。授课手势和手持经书，表现的是教师身份。再看约十二世纪初的木经板：木板保护经页，雕刻承载图像。保存、学习与工艺联系在一起，但这两件馆藏不能代替全部地方文化。",
+  "duration": 27.144,
+  "bytes": 436020,
+  "sha256": "a61700ffdda2da9c0cda570981b8edc0276c8b015ada39e83dc79e423f6fa823",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T03:29:57.341Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f8dd1d25c5cd4f82c112ed98da97acd14a64d2fddd9b60426979166e9ac895ef.subtitles.json",
+  "subtitleSha256": "0b8006173303c1183c375ddd96f4c8f7ba02746b0c3fa0ecd170a100b0a28ecb",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "4081eb322d7692085c26ddac1394c4fff1c543c89906b6cede9b6eb1d1adc98a",
+  "url": "/assets/audio/narration/4081eb322d7692085c26ddac1394c4fff1c543c89906b6cede9b6eb1d1adc98a.mp3",
+  "text": "桑耶的变化包含长期植树治沙。2018年的地方报道记录居民持续种植、管理树木，把受风沙影响的环境逐步改善。保持河谷地形不变，再观察维护条件对生活空间的影响；绿化效果是过程示意，不是同一地块的历史复原。",
+  "duration": 19.728,
+  "bytes": 317364,
+  "sha256": "bf9d017714ed3513bf611a1fba96cf9e3ef422a83e41f20737f96a962bc2a60a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:51:51.403Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4081eb322d7692085c26ddac1394c4fff1c543c89906b6cede9b6eb1d1adc98a.subtitles.json",
+  "subtitleSha256": "3151eb13db35e5a57912953d9024ebc60b7acbb934949f7d4c0f1cccabadc3c0",
+  "timingLevel": "word"
+}

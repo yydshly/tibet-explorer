@@ -1,0 +1,15 @@
+{
+  "id": "92f64091608a60c07b48fecf4dc9e12be6a53e092a0dc338caef08f087dd6f4f",
+  "url": "/assets/audio/narration/92f64091608a60c07b48fecf4dc9e12be6a53e092a0dc338caef08f087dd6f4f.mp3",
+  "text": "现在从机制进入变化证据的阅读。画面保留同一山谷，放入两条冰川边界，示范怎样做前后对照。这里的时期甲和乙没有真实观测年份；边界示意可以教比较方法，不能证明当地实际退缩了多少。",
+  "duration": 17.064,
+  "bytes": 274740,
+  "sha256": "9f69689dd9358b4e4c8cff6f9ce378e1ebf8f80bce122dbbd03d375b63361826",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:46.814Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

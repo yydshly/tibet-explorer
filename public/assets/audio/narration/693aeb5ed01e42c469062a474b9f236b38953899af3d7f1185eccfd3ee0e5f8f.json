@@ -1,0 +1,15 @@
+{
+  "id": "693aeb5ed01e42c469062a474b9f236b38953899af3d7f1185eccfd3ee0e5f8f",
+  "url": "/assets/audio/narration/693aeb5ed01e42c469062a474b9f236b38953899af3d7f1185eccfd3ee0e5f8f.mp3",
+  "text": "请选山南，再在地形与生活层之间观察水、土地和聚落的关系。把这个地方保留在心里，接下来的景观与历史会再次回到河谷。一个地点可以跨越不同主题，成为认识连续性的线索。",
+  "duration": 15.732,
+  "bytes": 253428,
+  "sha256": "99aeb956558d1226948f3ec4f3f9a4e915eb8124849e0eda91675b9471a6112b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:14.242Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

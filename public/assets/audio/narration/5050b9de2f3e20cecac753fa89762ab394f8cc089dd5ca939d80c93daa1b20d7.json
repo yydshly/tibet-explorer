@@ -1,0 +1,15 @@
+{
+  "id": "5050b9de2f3e20cecac753fa89762ab394f8cc089dd5ca939d80c93daa1b20d7",
+  "url": "/assets/audio/narration/5050b9de2f3e20cecac753fa89762ab394f8cc089dd5ca939d80c93daa1b20d7.mp3",
+  "text": "基底和墙体建立围合，立柱与梁接上支承，屋顶落到支承之上，最后看人从入口进入院落和厅堂前。部件相互配合，也为行动提供可能。这个搭建顺序解释构造关系，没有复原大昭寺或某座遗产的施工记录。",
+  "duration": 20.448,
+  "bytes": 328884,
+  "sha256": "296fc4da8d11daf0292ef814cbeab4796509233c6dfc91541e9b1e4f0ec31654",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:49.198Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

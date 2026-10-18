@@ -1,0 +1,19 @@
+{
+  "id": "36ed186a541e29339ac471e39bfb93f35253e5229be19b7e39178afa6bf03402",
+  "url": "/assets/audio/narration/36ed186a541e29339ac471e39bfb93f35253e5229be19b7e39178afa6bf03402.mp3",
+  "text": "在林芝，再换到米林彩门村。普巴谈附近车站、机场和公路，扎西谈学生出行与特产寄售。把主通道交给地方接驳和接待，区域联系才可能进入这些具名用途。",
+  "duration": 14.94,
+  "bytes": 240756,
+  "sha256": "9e8d2d80ce39a7cb031a603b083fb027f3b9f2b0ce8b08bf30b217a324f26274",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:29:19.274Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/36ed186a541e29339ac471e39bfb93f35253e5229be19b7e39178afa6bf03402.subtitles.json",
+  "subtitleSha256": "b93d762ee0d70fc60091b5e65c749931df5ea841cdf3322113413954d3d62024",
+  "timingLevel": "word"
+}

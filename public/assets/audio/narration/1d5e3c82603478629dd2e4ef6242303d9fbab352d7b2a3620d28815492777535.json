@@ -1,0 +1,15 @@
+{
+  "id": "1d5e3c82603478629dd2e4ef6242303d9fbab352d7b2a3620d28815492777535",
+  "url": "/assets/audio/narration/1d5e3c82603478629dd2e4ef6242303d9fbab352d7b2a3620d28815492777535.mp3",
+  "text": "保留这层高差，再追问自然界的水怎样经过设施与人的工作，成为城市用水。",
+  "duration": 6.12,
+  "bytes": 99636,
+  "sha256": "7e8169ffba6025a17359cba63e8b0423127fb41b59beafb94f8477519562942c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:56:48.065Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

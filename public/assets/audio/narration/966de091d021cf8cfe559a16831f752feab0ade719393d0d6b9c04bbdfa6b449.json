@@ -1,0 +1,15 @@
+{
+  "id": "966de091d021cf8cfe559a16831f752feab0ade719393d0d6b9c04bbdfa6b449",
+  "url": "/assets/audio/narration/966de091d021cf8cfe559a16831f752feab0ade719393d0d6b9c04bbdfa6b449.mp3",
+  "text": "二〇二六年，货运值班员吴昊讲述拉萨西站的变化：货物从早期建设物资扩展到食品、百货和医药。运输还要接上配送与使用，才成为日常生活里的物品。",
+  "duration": 14.724,
+  "bytes": 237300,
+  "sha256": "5690dae6aa67dd7ce49e0db848f22ae92d0c0a7d1a748166c864e2b9a37015ef",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:55.119Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

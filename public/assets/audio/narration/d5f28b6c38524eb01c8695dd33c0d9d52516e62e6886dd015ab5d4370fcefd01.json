@@ -1,0 +1,15 @@
+{
+  "id": "d5f28b6c38524eb01c8695dd33c0d9d52516e62e6886dd015ab5d4370fcefd01",
+  "url": "/assets/audio/narration/d5f28b6c38524eb01c8695dd33c0d9d52516e62e6886dd015ab5d4370fcefd01.mp3",
+  "text": "前面认识了影响温度和降水的条件，现在用它们读地区差异。从藏东南的林芝进入，再看高原腹地的那曲与西部阿里。一个行政地区也有不同高度和坡面，因此先把名字与内部环境分开理解。",
+  "duration": 14.652,
+  "bytes": 236148,
+  "sha256": "e0081b2aa0fcf65d7bda4116d3305d97ec9ff4528e8709f800e71ef18ffd10a0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:11.053Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "31819a001aace9268fb9ec48d784445763a1bea22b5d60eae9274f0582cbc498",
+  "url": "/assets/audio/narration/31819a001aace9268fb9ec48d784445763a1bea22b5d60eae9274f0582cbc498.mp3",
+  "text": "沿山南河谷与聚落，我们已经看见生活的水源、土地和通道，现在走近人怎样建造与使用空间。院落、入口和房间怎样组织行动？眼前是概念建筑，帮助提出用途与材料问题，具体形制和年代仍要回到遗产资料。",
+  "duration": 19.116,
+  "bytes": 307572,
+  "sha256": "aa71a8b8a72d4f31c97edef05594ec908769bb2e504758300f3bbfc1f5ffa69c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:40:16.856Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

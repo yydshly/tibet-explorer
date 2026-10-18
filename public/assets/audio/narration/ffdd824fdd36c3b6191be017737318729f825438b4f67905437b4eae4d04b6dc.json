@@ -1,0 +1,15 @@
+{
+  "id": "ffdd824fdd36c3b6191be017737318729f825438b4f67905437b4eae4d04b6dc",
+  "url": "/assets/audio/narration/ffdd824fdd36c3b6191be017737318729f825438b4f67905437b4eae4d04b6dc.mp3",
+  "text": "请选功能与交流部位，阅读相关人物和文本的资料，再回到空间观察。辨认材料说的是谁、哪个年代、什么联系；一个关系节点不能替代精确行程。对象提供入口，讲清背景需要多种来源相互支持。",
+  "duration": 17.748,
+  "bytes": 285684,
+  "sha256": "6531d56aa7bcf750b16e35d52c651496e5abe5bc960955fdeccc81da78a1cf08",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:01.969Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

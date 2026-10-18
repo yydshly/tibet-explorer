@@ -1,0 +1,19 @@
+{
+  "id": "7cf4a57183f00e909815e9569ae0c6d0dbdd6c6051e33ebb13e085757fc81c9a",
+  "url": "/assets/audio/narration/7cf4a57183f00e909815e9569ae0c6d0dbdd6c6051e33ebb13e085757fc81c9a.mp3",
+  "text": "现在保持同一片真实地形，只把示意气团的初始水汽调低。沿剖面向北移动，空气仍会遇到高地并抬升。抬升会冷却，但更干的空气通常需要更多冷却才达到凝结条件。继续越过山地，这个简化对照出现的云和降水更少。背风侧下沉时空气增温，相对湿度可能降低。因此，有高山不等于一定多雨。这不是林芝、拉萨或阿里的天气预测。下一步用一月和七月的气象站常年值，观察真实地区差异。",
+  "duration": 36.036,
+  "bytes": 578292,
+  "sha256": "9cfab1aca52e29a49cb0898023cfbd1b1d0ddd2809c26a271984cbf04e490b38",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T12:49:39.556Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7cf4a57183f00e909815e9569ae0c6d0dbdd6c6051e33ebb13e085757fc81c9a.subtitles.json",
+  "subtitleSha256": "011ec2a6fd758dcb5ea58d44155ec649830da60df0c6586faf78424e1456e144",
+  "timingLevel": "word"
+}

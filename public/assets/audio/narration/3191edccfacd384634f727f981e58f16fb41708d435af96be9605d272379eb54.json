@@ -1,0 +1,15 @@
+{
+  "id": "3191edccfacd384634f727f981e58f16fb41708d435af96be9605d272379eb54",
+  "url": "/assets/audio/narration/3191edccfacd384634f727f981e58f16fb41708d435af96be9605d272379eb54.mp3",
+  "text": "先看讲述与表演的配合，内容由参与者共同表达。现在注意珊瑚色的学习者：他离开观看位置，走近示范者，再进入共同的练习空间。位置变化使观看接到参与机会，但不能把走进场内当成已经学会。二零零九年的列入名录决定提出年轻实践者培训、研究和出版等保护措施；实际怎样教学、效果如何，还要看具体记录。",
+  "duration": 27.072,
+  "bytes": 434868,
+  "sha256": "b55879fe6d3574f32c523a13a614264aca4ed3d216ed0b6843fc670ef2798927",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T05:15:18.102Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

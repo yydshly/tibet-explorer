@@ -1,0 +1,19 @@
+{
+  "id": "eaf7c3fbad40964d6ae20dc891629c36e21786d47963d106b4f631f3e0fac802",
+  "url": "/assets/audio/narration/eaf7c3fbad40964d6ae20dc891629c36e21786d47963d106b4f631f3e0fac802.mp3",
+  "text": "阿里先保留公路，再加入二〇一〇年昆莎通航的航空入口。飞过地形增加一种抵达方式，原来的地面行程仍然存在。地图用狮泉河帮助定位地区。",
+  "duration": 12.924,
+  "bytes": 208500,
+  "sha256": "6b79a23b63589a2b3bfc610ffb5076c8dd4bee399f7838c187ec8ee70a30e2f1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:29:52.275Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/eaf7c3fbad40964d6ae20dc891629c36e21786d47963d106b4f631f3e0fac802.subtitles.json",
+  "subtitleSha256": "f8f0bc751ba143c3f25a8850c79ebff53d161d7940c1d6027a6acb9a2075baa8",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "d7f37358a337a71d9549ae566f7af46bbb45db1b67cd80c26529d685b2900c8d",
+  "url": "/assets/audio/narration/d7f37358a337a71d9549ae566f7af46bbb45db1b67cd80c26529d685b2900c8d.mp3",
+  "text": "青藏铁路全线通车等事件提供交通史节点，但真正可达还取决于班次、票价、接驳、道路和人的条件。模型列车示范沿线关系，没有计算真实旅行时间。社会与生态影响也应分别研究，不能只由运动动画判断。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "8dadad3efa7c5ac5d49350fee47b5bcb1ff60f17d6d3dc295db62ffdee0795b0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:01:28.173Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

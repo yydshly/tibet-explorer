@@ -1,0 +1,19 @@
+{
+  "id": "6f334455184c3d71f207ed2a4f56876eda9e43bd1700b3ed2e69564f4f9067bd",
+  "url": "/assets/audio/narration/6f334455184c3d71f207ed2a4f56876eda9e43bd1700b3ed2e69564f4f9067bd.mp3",
+  "text": "保留西藏全图，把注意力移到东部的昌都。这里的山脉和河流多接近南北排列，金沙江、澜沧江、怒江分走不同河谷。先读山脊与谷底的高差，才能理解为什么沿谷和横向跨山面对不同条件。",
+  "duration": 16.956,
+  "bytes": 273012,
+  "sha256": "a84a0ab560d729fb4ff4b1c2aced7b432b612407e4b2298fa5c5e1ddf55efbbe",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:00.398Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/6f334455184c3d71f207ed2a4f56876eda9e43bd1700b3ed2e69564f4f9067bd.subtitles.json",
+  "subtitleSha256": "07cb01b155799b690643000f21be3588c19db35e54ab28679428a3301ef74557",
+  "timingLevel": "word"
+}

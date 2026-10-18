@@ -1,0 +1,15 @@
+{
+  "id": "10b4cad6248e48934a4c15ea897b3bc19385339d6558f6140cc056e35ae8282c",
+  "url": "/assets/audio/narration/10b4cad6248e48934a4c15ea897b3bc19385339d6558f6140cc056e35ae8282c.mp3",
+  "text": "刚才的季节比较说明照射条件，但温度还要看接收与散失。现在先沿金色路径看阳光来到地表与空气：一部分被反射，另一部分被吸收。画面逐层展开来源、经过的对象与去向，真实过程会同时进行。",
+  "duration": 19.26,
+  "bytes": 309876,
+  "sha256": "659321f02eb062cffbe46c16c8d9ddb7d4f7d3b37b1972e4529b44fb34a74f7a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T14:22:51.118Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

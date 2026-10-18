@@ -1,0 +1,15 @@
+{
+  "id": "36da2d84202433bec51f1921cbe4de704afb4e91140661f16ed1473ba0f03b48",
+  "url": "/assets/audio/narration/36da2d84202433bec51f1921cbe4de704afb4e91140661f16ed1473ba0f03b48.mp3",
+  "text": "刚才看到了地区不同，现在把问题收紧：如果要比较冷暖或水分，应先选同一种变量和适用时期。地图、照片与统计都有自己的范围。这里保留同一观察层，练习让地点改变，而问题不悄悄改变。",
+  "duration": 19.008,
+  "bytes": 305844,
+  "sha256": "64f3a38004769cc4c68b31b974e4df13393361bdb182c4985c282c7e92e2aac3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:39.942Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4d93ac0cd709728b30626255291f4397b583508084b615161645b924ff53a0fe",
+  "url": "/assets/audio/narration/4d93ac0cd709728b30626255291f4397b583508084b615161645b924ff53a0fe.mp3",
+  "text": "地点顺序有了，计划还需要日期、交通与访问条件。下一步保留这些站点和问题，分开已确定信息与待核实事项，再保存或导出。这样离开以后可以继续修改，实际观察也能回来丰富原来的认识。",
+  "duration": 17.1,
+  "bytes": 275316,
+  "sha256": "d19e76d52efcdc33ba976bd8a6cd149d82fd8cfd92ac5d33d077a8465a885a78",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:21.688Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

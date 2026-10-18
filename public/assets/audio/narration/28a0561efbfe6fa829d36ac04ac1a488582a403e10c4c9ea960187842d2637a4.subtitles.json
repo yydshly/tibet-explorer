@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "audioSha256": "efd6e1f9017c8dd37d56ff56f34273290a9ca32afa16d2d31674e59f846370bc",
+  "textSha256": "c435d15df412309efa3329892b18e09cec886010885192adf2016f058c71c82e",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 6.444,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 6.297097505668934,
+      "text": "保留这层高差，再追问自然界的水怎样经过设施与人的工作，成为城市用水。",
+      "textStart": 0,
+      "textEnd": 34
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.16410256410256407,
+      "text": "保",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.16410256410256407,
+      "end": 0.32820512820512815,
+      "text": "留",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.32820512820512815,
+      "end": 0.4512820512820513,
+      "text": "这",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.4512820512820513,
+      "end": 0.6153846153846153,
+      "text": "层",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6153846153846153,
+      "end": 0.7384615384615385,
+      "text": "高",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.7384615384615385,
+      "end": 0.8615384615384616,
+      "text": "差",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.8615384615384616,
+      "end": 0.9025641025641026,
+      "text": "，",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 0.9025641025641026,
+      "end": 1.435897435897436,
+      "text": "再",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.435897435897436,
+      "end": 1.641025641025641,
+      "text": "追",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.641025641025641,
+      "end": 1.8051282051282052,
+      "text": "问",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.8051282051282052,
+      "end": 1.9692307692307691,
+      "text": "自",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.9692307692307691,
+      "end": 2.092307692307692,
+      "text": "然",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.092307692307692,
+      "end": 2.1743589743589746,
+      "text": "界",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.1743589743589746,
+      "end": 2.215384615384615,
+      "text": "的",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 2.215384615384615,
+      "end": 2.4205128205128204,
+      "text": "水",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 2.4205128205128204,
+      "end": 2.7897435897435896,
+      "text": "怎",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 2.7897435897435896,
+      "end": 3.117948717948718,
+      "text": "样",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.117948717948718,
+      "end": 3.282051282051282,
+      "text": "经",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.282051282051282,
+      "end": 3.4051282051282046,
+      "text": "过",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.5282051282051285,
+      "text": "设",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 3.5282051282051285,
+      "end": 3.733333333333333,
+      "text": "施",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 3.733333333333333,
+      "end": 3.9384615384615382,
+      "text": "与",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 3.9384615384615382,
+      "end": 4.102564102564102,
+      "text": "人",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.102564102564102,
+      "end": 4.143589743589743,
+      "text": "的",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.143589743589743,
+      "end": 4.307692307692307,
+      "text": "工",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 4.307692307692307,
+      "end": 4.471794871794872,
+      "text": "作",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 4.471794871794872,
+      "end": 4.512820512820513,
+      "text": "，",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 4.512820512820513,
+      "end": 4.841025641025641,
+      "text": "成",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 4.841025641025641,
+      "end": 5.292307692307692,
+      "text": "为",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 5.292307692307692,
+      "end": 5.497435897435897,
+      "text": "城",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 5.497435897435897,
+      "end": 5.702564102564102,
+      "text": "市",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 5.702564102564102,
+      "end": 5.866666666666666,
+      "text": "用",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 5.866666666666666,
+      "end": 6.03076923076923,
+      "text": "水",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.03076923076923,
+      "end": 6.235897435897436,
+      "text": "。",
+      "textStart": 33,
+      "textEnd": 34
+    }
+  ]
+}

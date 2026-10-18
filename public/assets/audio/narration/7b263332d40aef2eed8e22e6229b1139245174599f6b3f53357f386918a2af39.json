@@ -1,0 +1,15 @@
+{
+  "id": "7b263332d40aef2eed8e22e6229b1139245174599f6b3f53357f386918a2af39",
+  "url": "/assets/audio/narration/7b263332d40aef2eed8e22e6229b1139245174599f6b3f53357f386918a2af39.mp3",
+  "text": "请选择修补与维护，回拖看部件取下和替换，再提出谁在维护、怎样学习技能、过去与今天有什么变化。模型能说明行动关系；人物经历、制度与传统怎样形成，需要进入真实的历史材料继续研究。",
+  "duration": 18.828,
+  "bytes": 302964,
+  "sha256": "2bc1172b7a6acd358507f34b38202624a216db33b8bd2f1822cd6120488793a4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:05:03.669Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

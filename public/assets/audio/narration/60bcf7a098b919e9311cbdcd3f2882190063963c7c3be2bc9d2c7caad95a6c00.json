@@ -1,0 +1,19 @@
+{
+  "id": "60bcf7a098b919e9311cbdcd3f2882190063963c7c3be2bc9d2c7caad95a6c00",
+  "url": "/assets/audio/narration/60bcf7a098b919e9311cbdcd3f2882190063963c7c3be2bc9d2c7caad95a6c00.mp3",
+  "text": "资料讨论大昭寺附近三座历史碑的保护棚：保护实物的作用与视线、历史环境的代价需要一起评估。模型保持同一活动，逐步加入收益、生态和地方生活。罗布林卡缓冲区调整在该资料中仍是拟议，报告、建议与完成结果要分别阅读。",
+  "duration": 24.408,
+  "bytes": 392244,
+  "sha256": "39a87c3ed220756334717fe4829645b30842774bf0b7907f073ab9e25ac9cb14",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:11.320Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/60bcf7a098b919e9311cbdcd3f2882190063963c7c3be2bc9d2c7caad95a6c00.subtitles.json",
+  "subtitleSha256": "9049fb2eb7bb6cb28efc7410ab3dcffb3eaf6e0e09fec85436b9221cdbd9efc5",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "9e8100dd6408210df5993e29f7b90e55a1c98044db164365cebb622e1d4a62b0",
+  "url": "/assets/audio/narration/9e8100dd6408210df5993e29f7b90e55a1c98044db164365cebb622e1d4a62b0.mp3",
+  "text": "拉萨把河谷地形与有年份的建成地表叠在一起看。谷地提供空间，城市怎样使用它还要看历史。大昭寺与布达拉宫属于不同建设时期，接下来用具体人物和材料解释。",
+  "duration": 16.128,
+  "bytes": 259764,
+  "sha256": "8334ef24751fd21db667640147f85cbcd2759615b7e402a84bf439fbdbe681f5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:27:35.895Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

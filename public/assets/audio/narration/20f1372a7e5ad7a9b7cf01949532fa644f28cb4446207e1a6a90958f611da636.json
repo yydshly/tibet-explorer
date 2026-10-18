@@ -1,0 +1,15 @@
+{
+  "id": "20f1372a7e5ad7a9b7cf01949532fa644f28cb4446207e1a6a90958f611da636",
+  "url": "/assets/audio/narration/20f1372a7e5ad7a9b7cf01949532fa644f28cb4446207e1a6a90958f611da636.mp3",
+  "text": "顺序有了，最后把材料出处、动态条件和个人记录一起保存。历史开通事件不会替代今天的班次，规划与保护建议也不代表访问条件已经通过。把已知和未知留在计划里，下次才能从同一个问题继续。",
+  "duration": 18.108,
+  "bytes": 291444,
+  "sha256": "ba5dcb92c1c46982da2f938f0322193bb18c263ae2031131cb9eea454860978a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:57:03.273Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

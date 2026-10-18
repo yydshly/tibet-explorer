@@ -1,0 +1,19 @@
+{
+  "id": "b5aa54550ddac1af3a5c176440cb05a9a065f0177c2f937029a59c95dd6c1d73",
+  "url": "/assets/audio/narration/b5aa54550ddac1af3a5c176440cb05a9a065f0177c2f937029a59c95dd6c1d73.mp3",
+  "text": "现在已经比较过低地、山系和高原内部的真实高差。接下来保留地球与亚洲的整体背景，跟随气流靠近同一片高原，看山地怎样参与抬升、冷却和云雨形成。再比较林芝、拉萨和阿里的条件，把认识接到城市、水源与生活。",
+  "duration": 22.248,
+  "bytes": 357684,
+  "sha256": "4d950fd663cde31db4437929ded4e205f2efe679e47232470d7f489a2cb3b5ee",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:33:08.720Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b5aa54550ddac1af3a5c176440cb05a9a065f0177c2f937029a59c95dd6c1d73.subtitles.json",
+  "subtitleSha256": "3fcda6260d22a427e4853cd175b8cbe1b2fa75c6497e8ca51d3934b549d5f192",
+  "timingLevel": "word"
+}

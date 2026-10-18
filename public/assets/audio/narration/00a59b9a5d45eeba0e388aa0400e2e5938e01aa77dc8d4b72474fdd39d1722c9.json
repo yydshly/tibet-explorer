@@ -1,0 +1,15 @@
+{
+  "id": "00a59b9a5d45eeba0e388aa0400e2e5938e01aa77dc8d4b72474fdd39d1722c9",
+  "url": "/assets/audio/narration/00a59b9a5d45eeba0e388aa0400e2e5938e01aa77dc8d4b72474fdd39d1722c9.mp3",
+  "text": "石器与地层可以帮助判断人群曾在高海拔地区活动，活动证据却不自动等于长期定居，也不能直接确定现代族群来源。把年代、器物和当时环境一起阅读，才能看见人在不同时期如何适应与移动。",
+  "duration": 16.884,
+  "bytes": 271860,
+  "sha256": "ed8ee0d2026dba808b78628aa432aa018835fb289ebaa91b9541c1b244725657",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:56:49.123Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

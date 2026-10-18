@@ -1,0 +1,19 @@
+{
+  "id": "3d1b16806dc0a90fc51a0f038708cd337198cc31aa268f8e351d148cb1374ade",
+  "url": "/assets/audio/narration/3d1b16806dc0a90fc51a0f038708cd337198cc31aa268f8e351d148cb1374ade.mp3",
+  "text": "雨季与春季用水并不同时。地方资料记载这里干湿季分明，农田却在春灌时就需要供水。让云雨淡去后继续看河谷：河里有水只是起点，怎样蓄、怎样送、何时分配，才会进入农田和居民的生活。",
+  "duration": 19.62,
+  "bytes": 315636,
+  "sha256": "16c1c0c9b287810e8a3358e46f580c8c6ba0645e326f40f8b80d91669102dc04",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:48:41.292Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3d1b16806dc0a90fc51a0f038708cd337198cc31aa268f8e351d148cb1374ade.subtitles.json",
+  "subtitleSha256": "c29364956b77706cc6933554ca6d45df42e6c38b41f585755005737da47b9aea",
+  "timingLevel": "word"
+}

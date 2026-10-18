@@ -1,0 +1,15 @@
+{
+  "id": "eedb2b38bf6a7b89a6bb9169a41d92ad02a2f07079912dbf3746f5029dc2aed7",
+  "url": "/assets/audio/narration/eedb2b38bf6a7b89a6bb9169a41d92ad02a2f07079912dbf3746f5029dc2aed7.mp3",
+  "text": "请切换演示阶段，对照只看收益和把生态、生活都放进来的画面。选择你还想了解的一种关系，收藏这个问题。接下来查项目状态、影响与社区经验，让计划目标和实际结果分别有证据。",
+  "duration": 16.379,
+  "bytes": 263796,
+  "sha256": "3b699089c934c7885422fc030d69f0098dd3e1de36da1733bf98d70ec463ca61",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:54.535Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

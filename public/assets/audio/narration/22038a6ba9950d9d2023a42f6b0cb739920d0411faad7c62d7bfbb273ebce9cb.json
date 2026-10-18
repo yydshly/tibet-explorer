@@ -1,0 +1,15 @@
+{
+  "id": "22038a6ba9950d9d2023a42f6b0cb739920d0411faad7c62d7bfbb273ebce9cb",
+  "url": "/assets/audio/narration/22038a6ba9950d9d2023a42f6b0cb739920d0411faad7c62d7bfbb273ebce9cb.mp3",
+  "text": "看两束同样宽的阳光落在球面上。照得较直时，能量落在较小面积；照得斜时，同一束能量分散得更开。全年平均看，低纬得到的太阳能较多，高纬较少。这建立了冷暖背景，但当地多热，还要看海陆怎样存热，以及空气和水怎样把热搬走。",
+  "duration": 21.384,
+  "bytes": 343860,
+  "sha256": "9db955256f6c28ac6137c584df660a96029e7b8c7500bbab25e3c4c8565c2423",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T07:31:38.574Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

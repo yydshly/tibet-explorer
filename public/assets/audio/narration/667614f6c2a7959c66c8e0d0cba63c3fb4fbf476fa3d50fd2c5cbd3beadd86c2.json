@@ -1,0 +1,15 @@
+{
+  "id": "667614f6c2a7959c66c8e0d0cba63c3fb4fbf476fa3d50fd2c5cbd3beadd86c2",
+  "url": "/assets/audio/narration/667614f6c2a7959c66c8e0d0cba63c3fb4fbf476fa3d50fd2c5cbd3beadd86c2.mp3",
+  "text": "在阿里，再回到狮泉河。二〇一七年一河两岸工程竣工，河岸绿化与步行休闲，让水边成为公共生活空间。它与托林的历史学习是不同地方的使用，建设和管护都有各自作用。",
+  "duration": 15.624,
+  "bytes": 251700,
+  "sha256": "a510a1367af1b64cc76e9da33fef7167187d54efeaa4fbaa9f9d489c3041a173",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T13:15:11.938Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "33cefbed90a5c1b28dff988ff7a41c6c4c6acf0286abc1f4ab476f758d16eb1b",
+  "url": "/assets/audio/narration/33cefbed90a5c1b28dff988ff7a41c6c4c6acf0286abc1f4ab476f758d16eb1b.mp3",
+  "text": "再带上两组有日期的材料。鲁朗二〇一六年的小镇服务，和林芝二〇二六年的服饰课堂，发生在不同地点。观察地方服务怎样使用环境，文化又怎样通过讲解和参与被认识。",
+  "duration": 18,
+  "bytes": 289716,
+  "sha256": "737f75eb5c47db7796a0e27a0f7d6dcb804298dbd51eb48f082d6b6300c39692",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:44:36.333Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

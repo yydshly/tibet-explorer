@@ -1,0 +1,15 @@
+{
+  "id": "c22ba2c7da171db2d61242df0c2630473647f9a3f5bcf196f289f38f6e0ae63d",
+  "url": "/assets/audio/narration/c22ba2c7da171db2d61242df0c2630473647f9a3f5bcf196f289f38f6e0ae63d.mp3",
+  "text": "留在拉萨河谷，先看七世纪创建的大昭寺。它在老城中承担宗教用途，帮助我们认识城市怎样围绕具体活动形成空间。始建年代与今天看到的全部建筑，需要分别理解。",
+  "duration": 13.68,
+  "bytes": 220596,
+  "sha256": "d36ba812e282206aff053cb77d44160f3094d7dd952149599ecf0cbfcb256ef3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:16.774Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

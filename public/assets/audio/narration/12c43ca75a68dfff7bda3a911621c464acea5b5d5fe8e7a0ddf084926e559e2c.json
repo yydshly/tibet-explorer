@@ -1,0 +1,15 @@
+{
+  "id": "12c43ca75a68dfff7bda3a911621c464acea5b5d5fe8e7a0ddf084926e559e2c",
+  "url": "/assets/audio/narration/12c43ca75a68dfff7bda3a911621c464acea5b5d5fe8e7a0ddf084926e559e2c.mp3",
+  "text": "官方资料记载，三一八国道经过鲁朗，向西联系八一和拉萨，向东联系波密。道路之外，往来还需要交通服务与持续维护。",
+  "duration": 11.772,
+  "bytes": 190068,
+  "sha256": "368426ea9802c0037a2aaacc2c137956fba702b3064610435828ecd94102b3db",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:56:06.217Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

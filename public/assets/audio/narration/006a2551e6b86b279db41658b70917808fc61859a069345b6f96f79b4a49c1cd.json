@@ -1,0 +1,15 @@
+{
+  "id": "006a2551e6b86b279db41658b70917808fc61859a069345b6f96f79b4a49c1cd",
+  "url": "/assets/audio/narration/006a2551e6b86b279db41658b70917808fc61859a069345b6f96f79b4a49c1cd.mp3",
+  "text": "沿南侧海洋方向与西侧来流方向，看看水汽可能经过哪些地方。印度洋夏季水汽与藏东南有联系，西风也可能携带水汽跨越山地。这里先用概念线认来路；为何能到来、何时形成云雨，留到后面的气候章节解释。",
+  "duration": 18.684,
+  "bytes": 300660,
+  "sha256": "14d9852bba51859e8b49bc8071e18d522b134a808a88673819f9080b813aa5bc",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:14.986Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

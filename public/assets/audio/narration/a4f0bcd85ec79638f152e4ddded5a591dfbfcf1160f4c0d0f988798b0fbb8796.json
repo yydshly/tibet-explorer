@@ -1,0 +1,15 @@
+{
+  "id": "a4f0bcd85ec79638f152e4ddded5a591dfbfcf1160f4c0d0f988798b0fbb8796",
+  "url": "/assets/audio/narration/a4f0bcd85ec79638f152e4ddded5a591dfbfcf1160f4c0d0f988798b0fbb8796.mp3",
+  "text": "把地图退回西部整体，先用狮泉河找到阿里。这里有高原湖盆、宽谷和高山峡谷，降水较少，也分布不均。环境不同，能够取用的水和土地就要分别认识。现在靠近狮泉河盆地，保留周围高地，追问一个更具体的问题：河水怎样经过设施和劳动，被送到需要水的林地？",
+  "duration": 25.236,
+  "bytes": 405492,
+  "sha256": "6ddc5a9b0cc9cf0104ebfbcc452ca64cdc141519a2e98139f5ffb936bddf99d5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:42.713Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

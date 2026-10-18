@@ -1,0 +1,15 @@
+{
+  "id": "18911a4d0cf2ce2f09d9313ec57426fc488fe25c7d7f32645c800906c1452c95",
+  "url": "/assets/audio/narration/18911a4d0cf2ce2f09d9313ec57426fc488fe25c7d7f32645c800906c1452c95.mp3",
+  "text": "工布文化不能由森林和雨量直接推出。先看二〇〇六年，工布新年进入自治区级非遗名录，这是保护节点。再看二〇一六年的鲁朗，小镇建设给地方交流增加了新场所。到二〇二六年，林芝图书馆与博物馆把工布服饰带进亲子课堂。文化通过人的学习和参与继续传承。",
+  "duration": 24.048,
+  "bytes": 386484,
+  "sha256": "70c827fe1daa594f7b56e2888f250192324d6d1bb2e1a16e5dc7cdcb4e4f3a7d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:16.676Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

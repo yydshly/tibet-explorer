@@ -1,0 +1,15 @@
+{
+  "id": "fd8b60fb824c536fd63e46468382b590bfb9a6908c6bcf2ae34660dda608c9b9",
+  "url": "/assets/audio/narration/fd8b60fb824c536fd63e46468382b590bfb9a6908c6bcf2ae34660dda608c9b9.mp3",
+  "text": "历史的使节、商旅和知识交流可以形成关系；现代公路铁路则有建设、运营与服务条件。切换交通层时，注意现在讨论哪一种联系。示意线表达节点关系，不能当作古代行程，也不能拿来直接计算驾驶时间。",
+  "duration": 19.8,
+  "bytes": 318516,
+  "sha256": "4282514eb608298f8a4df9ab8b4f0365ac5ec994c0e8205de549969271c8fef6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:36.867Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "56cc10c2533dbd7809e8c3772f12f25c87d6d6e1a324fbecf0586d7e746df39b",
+  "url": "/assets/audio/narration/56cc10c2533dbd7809e8c3772f12f25c87d6d6e1a324fbecf0586d7e746df39b.mp3",
+  "text": "请选择林芝，保留温度主题，再读它的环境背景。注意哪些差别来自位置与地形，哪些仍需要数据才能判断。现在的任务是建立比较规则；任何真实数值都应附上来源、统计期、单位和适用地点。",
+  "duration": 17.82,
+  "bytes": 286836,
+  "sha256": "129ed2b02cc10c9eb99305548c9cf7d310434e5ebae3f76829e71e57c7d38f01",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:49.103Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

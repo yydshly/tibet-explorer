@@ -1,0 +1,15 @@
+{
+  "id": "153d248e3558c9c0f9438f4a0cac7741ddad47bd9834d2252da37b800229de03",
+  "url": "/assets/audio/narration/153d248e3558c9c0f9438f4a0cac7741ddad47bd9834d2252da37b800229de03.mp3",
+  "text": "沿取水、通行、工作和房屋观察，共用构件把不同使用联系起来，也需要维护与规则。自然条件没有变，人的设施和安排可以改变。地名、故事和信仰的意义，还要由具体参与者、年代和材料来解释。",
+  "duration": 18.828,
+  "bytes": 302964,
+  "sha256": "bd3552c3de20ea79c886da47eaf9223ad2de6a8a69759c4cff3a58a8f12677e1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:27.982Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

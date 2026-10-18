@@ -1,0 +1,15 @@
+{
+  "id": "d2eb3398675455de98b779e59adb559cbba16977d46e26aac0c360816ffafa7b",
+  "url": "/assets/audio/narration/d2eb3398675455de98b779e59adb559cbba16977d46e26aac0c360816ffafa7b.mp3",
+  "text": "刚才从文化实践提出了历史问题，现在先拆开考古证据。模型的层次、器物和记录只说明怎样建立关联，不复原尼阿底的真实剖面。研究需要发现位置、层位、样本与年代，不能只凭一件物体讲出整个人群的历史。",
+  "duration": 19.26,
+  "bytes": 309876,
+  "sha256": "5c495c420d115241852805317a1c841748b936d2aaa38d24e4331f441624457a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:05:17.729Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

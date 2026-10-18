@@ -1,0 +1,15 @@
+{
+  "id": "34ff9fa2dd09bcc4e4ffc2b599c1ac5baeb3c5a5c08050912ef0dd20e050ea6d",
+  "url": "/assets/audio/narration/34ff9fa2dd09bcc4e4ffc2b599c1ac5baeb3c5a5c08050912ef0dd20e050ea6d.mp3",
+  "text": "下机以后，行李还要交给地面车辆和地方服务。狮泉河与札达托林是不同地方，航空抵达阿里不等于已经到达札达，后面的接续仍要逐段核实。",
+  "duration": 12.24,
+  "bytes": 197556,
+  "sha256": "93b86349ce1cddc453f3d0fd7f201db5a7a893f9ac92291010e6cdba9adc1635",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:55:15.571Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

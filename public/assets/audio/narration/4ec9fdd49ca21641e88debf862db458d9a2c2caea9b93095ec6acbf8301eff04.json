@@ -1,0 +1,15 @@
+{
+  "id": "4ec9fdd49ca21641e88debf862db458d9a2c2caea9b93095ec6acbf8301eff04",
+  "url": "/assets/audio/narration/4ec9fdd49ca21641e88debf862db458d9a2c2caea9b93095ec6acbf8301eff04.mp3",
+  "text": "可以把过程退到进入与反射，再展开吸收、储存和交换。从侧面辨认地表与空气，点击对象看它参与哪条路径。画面阶段用于逐层解释，并不代表这些过程轮流停止；认识温度，需要把它们放回共同收支。",
+  "duration": 17.244,
+  "bytes": 277620,
+  "sha256": "c0fd8b0adf9e5c0707680abdf568955204d864419bcce419d767a3b80c2c5d72",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T14:23:02.982Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

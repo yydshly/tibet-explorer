@@ -1,0 +1,15 @@
+{
+  "id": "3894529cc5770b3e5dc5679847c96b756aaf4415f6b438ad59e2645df6b11c8d",
+  "url": "/assets/audio/narration/3894529cc5770b3e5dc5679847c96b756aaf4415f6b438ad59e2645df6b11c8d.mp3",
+  "text": "保留西藏整体，先看东南部的林芝。夏季，印度洋和孟加拉湾方向的水汽可沿大峡谷进入藏东南。来到同一片山地，山脊、深谷和高差又改变空气的经过条件。森林与高山相邻，城区只是地区入口。沿谷地继续追问，人们怎样在这些条件中通行和生活？",
+  "duration": 21.492,
+  "bytes": 345588,
+  "sha256": "4243dab7c86b4377330e05dc6c44fac061b5904e76bd4ca9b5600c21f2946477",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:07.909Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

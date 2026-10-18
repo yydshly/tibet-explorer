@@ -1,0 +1,19 @@
+{
+  "id": "eefebefcf20d25831efd42ea9728fe9fa77735e054f1a5cdc73514dbc8836417",
+  "url": "/assets/audio/narration/eefebefcf20d25831efd42ea9728fe9fa77735e054f1a5cdc73514dbc8836417.mp3",
+  "text": "二〇二五年的报道给出具体例子：色尼区杭嘉新村集中建设住房，配套水电暖与网络，村民把草场、牦牛入股合作社。生活服务与牧业生产因此可以分工衔接。这是报道中的村庄案例，城区标记不代表新村的真实位置。",
+  "duration": 20.088,
+  "bytes": 323124,
+  "sha256": "f19a6049265dade6e3f5013007d27740e3ae9c9cac4037471165cf8a48b15ee3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:55:41.783Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/eefebefcf20d25831efd42ea9728fe9fa77735e054f1a5cdc73514dbc8836417.subtitles.json",
+  "subtitleSha256": "93d0bc5f3154216ca5216d8a2dab924e9cbfbbbe374bc3eda62a787138121238",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "e31e533fe90b0b699442ecaed67c256d5f0ec54d7ee023c1aa69297fdcaf6800",
+  "url": "/assets/audio/narration/e31e533fe90b0b699442ecaed67c256d5f0ec54d7ee023c1aa69297fdcaf6800.mp3",
+  "text": "我们从历史来到建筑和作品，现在回到使用这些空间的人。文化不仅在仪式与节庆，也在家庭生产、饮食、语言、工作和学习中持续实践。不同社区与时期各有差别，不能用一处院落代表西藏所有生活。",
+  "duration": 18.9,
+  "bytes": 304116,
+  "sha256": "f0fc0ed14cc8cbdc626a705a22bc3e80eae0e36249cf40bb7c06e5ba2984ac18",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:41.194Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

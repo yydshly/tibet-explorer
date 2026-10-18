@@ -1,0 +1,15 @@
+{
+  "id": "98ac26334dbdd352b4bc04a271194b2a178e418e4637f726691494c4b02e4cd9",
+  "url": "/assets/audio/narration/98ac26334dbdd352b4bc04a271194b2a178e418e4637f726691494c4b02e4cd9.mp3",
+  "text": "现在靠近狮泉河盆地，保留周围高地，追问一个更具体的问题：河水怎样经过设施和劳动，被送到需要水的林地？",
+  "duration": 8.208,
+  "bytes": 133044,
+  "sha256": "0e3885e233a8584366251161a76506f807d1962700aa3bb2078ad6a058e0af7b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:50.367Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

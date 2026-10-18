@@ -1,0 +1,15 @@
+{
+  "id": "f6d6b408af612097dd8644588e1f57247567c7a7525111e49b4611fcc191402f",
+  "url": "/assets/audio/narration/f6d6b408af612097dd8644588e1f57247567c7a7525111e49b4611fcc191402f.mp3",
+  "text": "镜头沿金色数据窗口靠近林芝周边，较密的高程网格显出山地起伏。颜色代表海拔，高度统一放大两倍。继续进入南北剖面，切线向东西移动，较高处和较低处随网格重新计算。它们是这条线上读到的样本，不是命名山峰的峰顶测量，也不是完整河流。",
+  "duration": 22.644,
+  "bytes": 364020,
+  "sha256": "4ae13b93d58af0b900b29d98a4acfe4688601e0b6e41b7814ffc9bf3afabe61c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T03:25:25.177Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

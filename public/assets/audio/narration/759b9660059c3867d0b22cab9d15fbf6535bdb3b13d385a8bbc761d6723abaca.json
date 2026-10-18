@@ -1,0 +1,15 @@
+{
+  "id": "759b9660059c3867d0b22cab9d15fbf6535bdb3b13d385a8bbc761d6723abaca",
+  "url": "/assets/audio/narration/759b9660059c3867d0b22cab9d15fbf6535bdb3b13d385a8bbc761d6723abaca.mp3",
+  "text": "请选择二十世纪中叶以来，保留城市定位，并从遗产资料辨认今天保护与使用的对象。时期选择不会把概念底图变成古代复原；它帮助你提出正确年代的问题，再寻找相应图像、文本与建筑证据。",
+  "duration": 17.136,
+  "bytes": 275892,
+  "sha256": "629094c44f950e49becdcf8d1e309f42072a67c66a3bcb65a567b497d302e136",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:10.713Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

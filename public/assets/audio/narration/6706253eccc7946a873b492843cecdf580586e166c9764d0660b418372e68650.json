@@ -1,0 +1,15 @@
+{
+  "id": "6706253eccc7946a873b492843cecdf580586e166c9764d0660b418372e68650",
+  "url": "/assets/audio/narration/6706253eccc7946a873b492843cecdf580586e166c9764d0660b418372e68650.mp3",
+  "text": "气候这一章建立了照射、收支、空气、水和三种时间的关系。接下来回到西藏内部，选择林芝、那曲和阿里等地方：这些条件怎样组合成不同环境？我们会先比较空间，再走近具体景观。",
+  "duration": 15.264,
+  "bytes": 245940,
+  "sha256": "0fdd0ed053c568c44a908721152467afccf29ef58a8976eae8c1393e67fa6c39",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:03.925Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

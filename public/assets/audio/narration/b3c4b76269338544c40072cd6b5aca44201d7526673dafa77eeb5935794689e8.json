@@ -1,0 +1,19 @@
+{
+  "id": "b3c4b76269338544c40072cd6b5aca44201d7526673dafa77eeb5935794689e8",
+  "url": "/assets/audio/narration/b3c4b76269338544c40072cd6b5aca44201d7526673dafa77eeb5935794689e8.mp3",
+  "text": "把林芝、拉萨和阿里留在同一张地图上。夏季水汽可沿大峡谷进入藏东南，林芝先看这条来路。",
+  "duration": 9.936,
+  "bytes": 160692,
+  "sha256": "554aa104bf5d16a64b93d62c2ba7bec0f6955d6d54f18b70aed8de8635f09068",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:19:08.653Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b3c4b76269338544c40072cd6b5aca44201d7526673dafa77eeb5935794689e8.subtitles.json",
+  "subtitleSha256": "f85bee26ee150996345ac3e81da44612c40ba7aa4549738d195066da6a278f37",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "29fa13554bc3db060002c23a0e77dbd515d7b0ac79c768300e5566b73319642e",
+  "url": "/assets/audio/narration/29fa13554bc3db060002c23a0e77dbd515d7b0ac79c768300e5566b73319642e.mp3",
+  "text": "到站以后仍然需要地面接续。旅客和生活物资从车站进入城区，再联系周围乡镇，接驳、装卸和城市服务都参与变化。保持原来的山地和河谷不变，比较交通条件；不能把铁路开通直接画成已经证实的城市扩张范围。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "1747395628236a07695bb756bf8be5b6e8cab78cdf108c65e0e8ec65b487baec",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:50:33.392Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/29fa13554bc3db060002c23a0e77dbd515d7b0ac79c768300e5566b73319642e.subtitles.json",
+  "subtitleSha256": "38d3d2c2cb7a07c96f1835070c993813abccbd266bec88036e3a65413742845e",
+  "timingLevel": "word"
+}

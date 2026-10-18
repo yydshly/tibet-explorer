@@ -1,0 +1,19 @@
+{
+  "id": "e5f554f36d8680e8d4b5f10e93df5b83a9e3cfe22428ce9731f6498a71bf9416",
+  "url": "/assets/audio/narration/e5f554f36d8680e8d4b5f10e93df5b83a9e3cfe22428ce9731f6498a71bf9416.mp3",
+  "text": "从日喀则站前路、黑龙江南路进入城区，再看上海路与扎什伦布寺的联系。2024年报道记载扎寺旅游专线，职工边巴穷达也讲到周边就业、商铺与物流。铁路到站还需城市服务接续；画面按真实道路读图，留下出口资料空缺，不冒充公交逐站轨迹。",
+  "duration": 23.076,
+  "bytes": 370932,
+  "sha256": "9ab69cce658ce708dd2fe1ab62631ded64971315caa83fca48c3e47d7d115612",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:51:33.287Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e5f554f36d8680e8d4b5f10e93df5b83a9e3cfe22428ce9731f6498a71bf9416.subtitles.json",
+  "subtitleSha256": "72d9611dab14e94a3e80deff5b44321881e9ac7888784cc7f9b88843ad244493",
+  "timingLevel": "word"
+}

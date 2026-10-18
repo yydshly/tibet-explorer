@@ -1,0 +1,15 @@
+{
+  "id": "7d02bc272ceae5642647b6c9d002aa5402c38549f8e9ee54e02d290fb5fae340",
+  "url": "/assets/audio/narration/7d02bc272ceae5642647b6c9d002aa5402c38549f8e9ee54e02d290fb5fae340.mp3",
+  "text": "现在地球仍在脚下，眼前起伏来自公开高程。跟随藏东南方向的示意气团：靠近山坡，沿高差上升；进入较低气压环境后，气团膨胀并冷却。实际空气也可能绕行，不能把这一条解释路径当作所有来流。地形提供条件，水汽与空气状态还会改变结果。",
+  "duration": 21.744,
+  "bytes": 349620,
+  "sha256": "83229384a9bea2be9708ed7f9995f0bbc79adb0aa15faeb37be9065dc1e02384",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:03:20.394Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

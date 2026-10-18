@@ -1,0 +1,19 @@
+{
+  "id": "151a140fa1c86b5a6709b80d0670f5aafe02ba4cb5dbc3d5d42486f93a19bfab",
+  "url": "/assets/audio/narration/151a140fa1c86b5a6709b80d0670f5aafe02ba4cb5dbc3d5d42486f93a19bfab.mp3",
+  "text": "让湿空气遇山上升，观察冷却、云和雨的变化。山南地方资料记载降水主要集中在六月到九月，不同高度和位置又有差别。动画用来理解抬升与水汽条件，不表示每条沟谷都有同样风向和降水量。",
+  "duration": 17.028,
+  "bytes": 274164,
+  "sha256": "3d6e504f29d441f26544ea9461bcd712a032327d6225d206ddc79fe6a52c4432",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:51:14.796Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/151a140fa1c86b5a6709b80d0670f5aafe02ba4cb5dbc3d5d42486f93a19bfab.subtitles.json",
+  "subtitleSha256": "127ca4d3e5e070c2ccf0e2dfb36aee5d32ab36f69ba4170bccd50e0b2c15cbc5",
+  "timingLevel": "word"
+}

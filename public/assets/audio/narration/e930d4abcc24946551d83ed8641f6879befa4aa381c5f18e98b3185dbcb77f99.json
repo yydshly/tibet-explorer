@@ -1,0 +1,15 @@
+{
+  "id": "e930d4abcc24946551d83ed8641f6879befa4aa381c5f18e98b3185dbcb77f99",
+  "url": "/assets/audio/narration/e930d4abcc24946551d83ed8641f6879befa4aa381c5f18e98b3185dbcb77f99.mp3",
+  "text": "请在候选顺序里至少加入两站，写下每站的问题，并尝试向前或向后移动。已选站数来自你实际加入的地方；教学示例不会自动算进计划。可以删减站点，让问题更清楚，再打开完整计划核对日期、交通与访问条件。",
+  "duration": 18.504,
+  "bytes": 297780,
+  "sha256": "4893418e68b13a4a20dcedaf37331898cbb3ecb8e48ee329dc585bc573345cf3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:56:54.699Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

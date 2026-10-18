@@ -1,0 +1,15 @@
+{
+  "id": "e69eac1b4b54fc793f1e317312971d0d4313424f1210ee8dfd16d5d129bf5e9d",
+  "url": "/assets/audio/narration/e69eac1b4b54fc793f1e317312971d0d4313424f1210ee8dfd16d5d129bf5e9d.mp3",
+  "text": "现在把行政西藏与自然高原分别来看。行政范围帮助找地区和读统计，自然高原则用于理解山地、水系和环境，它还跨出行政范围。拉萨点位属于城市尺度。换一种范围，观察的问题也随之改变，原来的位置依然保留。",
+  "duration": 19.584,
+  "bytes": 315060,
+  "sha256": "df5a5c312c803b73ff6cb6b6e98d75377c1479181bb63b799293c8a1acbfeca0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:10.360Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

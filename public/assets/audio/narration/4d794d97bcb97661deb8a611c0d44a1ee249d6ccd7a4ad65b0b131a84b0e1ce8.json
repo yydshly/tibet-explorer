@@ -1,0 +1,15 @@
+{
+  "id": "4d794d97bcb97661deb8a611c0d44a1ee249d6ccd7a4ad65b0b131a84b0e1ce8",
+  "url": "/assets/audio/narration/4d794d97bcb97661deb8a611c0d44a1ee249d6ccd7a4ad65b0b131a84b0e1ce8.mp3",
+  "text": "从西藏与周边的联系进入现代发展，先保留地图上的地方背景，再把可达条件单独展开。眼前不是某条铁路的实地复原，而是条件模型。通道连接了两端，只说明出现了连接可能，还不能回答一个人能不能用它到达目的地。",
+  "duration": 17.784,
+  "bytes": 286260,
+  "sha256": "7b77e9c5f5a98fb729b873a1f18317dabd58ea3eb07726ae0b5c24acba62a52c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:22:47.423Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

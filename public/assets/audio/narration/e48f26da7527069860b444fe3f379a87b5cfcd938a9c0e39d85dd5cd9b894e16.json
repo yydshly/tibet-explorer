@@ -1,0 +1,19 @@
+{
+  "id": "e48f26da7527069860b444fe3f379a87b5cfcd938a9c0e39d85dd5cd9b894e16",
+  "url": "/assets/audio/narration/e48f26da7527069860b444fe3f379a87b5cfcd938a9c0e39d85dd5cd9b894e16.mp3",
+  "text": "把前面的认识落到一次拉萨观察。先从全域回到同一河谷，让车站、河流和老城同时出现。铁路把区域抵达接到柳梧，二〇〇七年开通的柳梧大桥，再把站区与市区直接联系起来。沿归档的现状道路前进，看跨河以后为什么仍有一段城市接续。洛桑赤列的采访补上了人的工作：村民购车，运输队协调调度，设施才成为具体服务。到已知路端停下，地图没有替我们核实寺院入口。再把视线移到大昭寺周围，前面读过的宗教用途、街巷通行与周边商业，在同一街区相遇。这里既是参访的地方，也是持续使用的生活空间。二〇二五年，世界遗产委员会继续强调大昭寺广场的管理应尊重朝圣活动。观察时要问，通行、停留与参访怎样相容，而不是把所有空地都看成游客空间。最后拉回河谷与全域：交通解释怎样进入，历史解释为何形成，现场观察继续核对今天怎样使用。实际接驳、开放和预约，按出行日期另查。",
+  "duration": 76.14,
+  "bytes": 1219956,
+  "sha256": "280d2309930f9c198ea16d182b5567c4d53f839d59f63208b7f46286104e5808",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T11:20:46.543Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e48f26da7527069860b444fe3f379a87b5cfcd938a9c0e39d85dd5cd9b894e16.subtitles.json",
+  "subtitleSha256": "844a8cd08308baf77760b64438ca913b20efbbb74634521dd8caac92e234d84a",
+  "timingLevel": "word"
+}

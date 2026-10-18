@@ -1,0 +1,15 @@
+{
+  "id": "ebcc55dc9287d367885e73a7b89d2d9f6afe2e08ce4299ce8e99b3d3c1ab3983",
+  "url": "/assets/audio/narration/ebcc55dc9287d367885e73a7b89d2d9f6afe2e08ce4299ce8e99b3d3c1ab3983.mp3",
+  "text": "地区比较不只是自然知识，也为理解生活建立条件。下一步沿水源、平缓土地和通道寻找聚落：这些地方给人提供哪些可能？人的技术、组织和历史选择又怎样改变可能，不能由气候直接推算文化。",
+  "duration": 18.18,
+  "bytes": 292596,
+  "sha256": "d580abda0dc503162f47b89e83eafaae1aa7ffe3665a768cef1786357b2b6231",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:54:55.241Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

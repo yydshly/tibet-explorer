@@ -1,0 +1,15 @@
+{
+  "id": "136269a4c41770b34c11893bd20e8762d1f76c02f3ba54d9fc984d77c418fa7c",
+  "url": "/assets/audio/narration/136269a4c41770b34c11893bd20e8762d1f76c02f3ba54d9fc984d77c418fa7c.mp3",
+  "text": "夏季的南侧联系把印度洋与藏东南放到同一背景里，西侧来流也可携水汽，不同区域和高度并不相同。金色表示空气，青色标记表示它携带的水汽。沿相同位置看这两个层，气流方向本身不能告诉我们空气有多湿。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "543c9932a39bf29e856ee9e1c11c61c5cc7549228cbd2dc6be6e890a848ca6a5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T15:17:36.242Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

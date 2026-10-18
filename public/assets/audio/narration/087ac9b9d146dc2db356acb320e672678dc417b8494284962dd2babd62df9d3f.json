@@ -1,0 +1,15 @@
+{
+  "id": "087ac9b9d146dc2db356acb320e672678dc417b8494284962dd2babd62df9d3f",
+  "url": "/assets/audio/narration/087ac9b9d146dc2db356acb320e672678dc417b8494284962dd2babd62df9d3f.mp3",
+  "text": "拉萨联系更大的铁路网络，也联系山南与林芝。进入城市以后，学习、住宿、遗产参访和朝圣有不同需求。地图上的抵达标记还要经过地方服务这一环，不能越过保护和使用条件直接到终点。",
+  "duration": 15.624,
+  "bytes": 251700,
+  "sha256": "dac7d6ce6ae6029a5edc84035a0d730e628b506cf39e980d0d4875f9d4089164",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:20.300Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "288a1e662257b889083744a6d751a7fdb452ff78b042fce8b20e43097b763ca1",
+  "url": "/assets/audio/narration/288a1e662257b889083744a6d751a7fdb452ff78b042fce8b20e43097b763ca1.mp3",
+  "text": "阿里先保留地面联系。吕新民的口述材料记载，二〇〇四年狮泉河到昆莎这段二一九国道已建成柏油路。它早于机场通航。看清原有道路，才能理解后面增加航空选择时，哪些地面行程仍然存在。",
+  "duration": 16.344,
+  "bytes": 263220,
+  "sha256": "4598029c375c18753c330c32562348e02ff727b136b6a6c82b168134559696ad",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:28:20.312Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/288a1e662257b889083744a6d751a7fdb452ff78b042fce8b20e43097b763ca1.subtitles.json",
+  "subtitleSha256": "c0affb1b7c674c12c8917859e7a271bff0905198a5e22b0180feec6daaa206f0",
+  "timingLevel": "word"
+}

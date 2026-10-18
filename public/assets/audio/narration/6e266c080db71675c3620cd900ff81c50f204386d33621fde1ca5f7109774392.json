@@ -1,0 +1,15 @@
+{
+  "id": "6e266c080db71675c3620cd900ff81c50f204386d33621fde1ca5f7109774392",
+  "url": "/assets/audio/narration/6e266c080db71675c3620cd900ff81c50f204386d33621fde1ca5f7109774392.mp3",
+  "text": "路线随着你实际选择的站点形成，空计划不会伪装成已经安排的行程。可以先在河谷读自然条件，再从另一处材料理解生活与交流；也可以围绕一个主题跨地区比较。远距离地点不必勉强压进同一天。",
+  "duration": 16.416,
+  "bytes": 264372,
+  "sha256": "61162b055d7381dc923fcce53951c15981454e885cdb32f15887587dc4cb72d9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:08.373Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

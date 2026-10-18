@@ -1,0 +1,15 @@
+{
+  "id": "fc682f400a19b5f95afb7204f01816853fe3a3d4a131b94f56f4b5e502f1f51e",
+  "url": "/assets/audio/narration/fc682f400a19b5f95afb7204f01816853fe3a3d4a131b94f56f4b5e502f1f51e.mp3",
+  "text": "再单独读拉萨西货场。二〇二六年，货运值班员吴昊讲述货物扩展到食品、百货和医药。它与客站是不同位置，不能在客站复原货场作业。物资还要接上地方配送，才进入商店与家庭。",
+  "duration": 17.244,
+  "bytes": 277620,
+  "sha256": "3d159eddc19f0666099de25678d4cdfc8f2714703e4085242242c6379a062c38",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:12:50.587Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

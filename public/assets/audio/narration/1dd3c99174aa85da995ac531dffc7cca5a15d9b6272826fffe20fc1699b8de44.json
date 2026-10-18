@@ -1,0 +1,15 @@
+{
+  "id": "1dd3c99174aa85da995ac531dffc7cca5a15d9b6272826fffe20fc1699b8de44",
+  "url": "/assets/audio/narration/1dd3c99174aa85da995ac531dffc7cca5a15d9b6272826fffe20fc1699b8de44.mp3",
+  "text": "请移动剖面或转动视野，先近看谷地，再拉远看它与山脊的位置。保留方向和共同底图，才能避免把一处地方当成整个高原。下一段会换成原理模型，解释水与物质怎样改变地表。",
+  "duration": 18.432,
+  "bytes": 296628,
+  "sha256": "ca9e30aaddf541706eaebfb2ca764dfd97d32fbd746c038a51a44c9de78fb699",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:02:48.532Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

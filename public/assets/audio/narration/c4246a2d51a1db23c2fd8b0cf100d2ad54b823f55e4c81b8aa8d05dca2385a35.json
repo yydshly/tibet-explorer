@@ -1,0 +1,15 @@
+{
+  "id": "c4246a2d51a1db23c2fd8b0cf100d2ad54b823f55e4c81b8aa8d05dca2385a35",
+  "url": "/assets/audio/narration/c4246a2d51a1db23c2fd8b0cf100d2ad54b823f55e4c81b8aa8d05dca2385a35.mp3",
+  "text": "我们已经知道温度来自能量收支，现在沿山坡从低处走向高处。高海拔地方常有较低温度，但海拔并不是一个自动生成精确气温的数字。先辨认高度方向，再把同一空气团的上升与周围空气的状态分开。",
+  "duration": 16.704,
+  "bytes": 268980,
+  "sha256": "0869cef94a1e85221eb95aa4dc42012b7c3cfbf32d19978e6111c8c9508f1bd6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T15:17:26.171Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

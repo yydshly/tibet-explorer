@@ -1,0 +1,44 @@
+.climate-observations{margin:16px 0;padding:14px;border:1px solid #6b9e9252;border-radius:12px;background:#102d29b3;color:#e4eee8;min-width:0}
+.climate-observations.is-active{border-color:#80c6b5}
+.climate-observations header h2{font-size:17px;line-height:1.4;margin:4px 0!important;color:#f0f4e8}
+.climate-observations header p{font-size:11px;line-height:1.5;margin:0;color:#b3c9bf}
+.climate-observations-kicker{font-size:10px;letter-spacing:.12em;color:#c8d4a8}
+.climate-observation-month{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin:12px 0 10px}
+.climate-observation-month label{font-size:11px;margin-right:auto}
+.climate-observation-month select{color:#f2f2e9;background:#1e4037;border:1px solid #7391847a;border-radius:6px;padding:5px;min-height:30px;font:inherit;font-size:12px}
+.climate-observations button{cursor:pointer;color:inherit;font:inherit}
+.climate-observation-month button{border:1px solid #8aab9870;border-radius:6px;background:transparent;padding:5px 8px;font-size:11px;min-height:30px}
+.climate-observation-month button[aria-pressed=true]{background:#b9cda62b;border-color:#b9cda6}
+.climate-observation-units{font-size:11px;line-height:1.5;color:#d4e0d7;margin:0 0 5px}
+.climate-observation-units span{font-size:10px;color:#a4c4b8}
+.climate-observation-station{padding:8px 0;border-bottom:1px solid #9eb6a526;--station-color:#8ed2b4}
+.climate-observation-station.station-lhasa{--station-color:#e6c785}.climate-observation-station.station-ngari{--station-color:#aba7e1}
+.climate-observation-row{display:grid;grid-template-columns:1fr 68px 72px;align-items:baseline;gap:4px;font-variant-numeric:tabular-nums}
+.climate-observation-row strong{font-size:12px;font-weight:600;color:var(--station-color)}
+.climate-observation-temperature,.climate-observation-precipitation{text-align:right;font-size:15px;color:#edf2e9}
+.climate-observation-row span small{font-size:10px;color:#b6c9bd}
+.climate-observation-bar{height:5px;border-radius:4px;overflow:hidden;background:#c4d2c219;margin:7px 0 3px}
+.climate-observation-bar i{display:block;height:100%;background:var(--station-color);transition:width .25s ease}
+.climate-observation-station-meta{font-size:9px;color:#acbeb1}
+.climate-observation-insight{font-size:12px!important;line-height:1.7!important;margin:11px 0!important;color:#e3e9d5}
+.climate-observation-map-action{width:100%;border:1px solid #b7cfa1a6;border-radius:7px;background:#b5c9a023;padding:8px;font-size:12px!important;line-height:1.5}
+.climate-observation-scope{font-size:10px!important;line-height:1.65!important;color:#a9c3b7!important;margin:9px 0!important}
+.climate-observation-more{display:block;border:0;background:transparent;text-decoration:underline;text-underline-offset:3px;font-size:11px!important;padding:4px 0}
+.climate-observation-details{font-size:11px;line-height:1.7;margin-top:10px;padding-top:9px;border-top:1px solid #a5b5a92e}
+.climate-observation-details p{font-size:11px!important;line-height:1.7!important}
+.climate-observation-details a{color:#c3d8ad;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.climate-observation-table-wrap{overflow-x:auto;margin:9px 0}
+.climate-observation-details table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:10px}
+.climate-observation-details caption{caption-side:top;text-align:left;margin-bottom:7px;font-size:11px;color:#cbd8c8}
+.climate-observation-details th,.climate-observation-details td{padding:4px 3px;text-align:right;border-bottom:1px solid #9eb5a327;white-space:nowrap}
+.climate-observation-details thead th{font-weight:500;color:#bfd0bd}
+.climate-observation-details th small{display:block;font-size:9px;color:#99b39f}
+.climate-observation-details th button{padding:3px;border:0;background:none;font-size:11px;color:#dae8c2}
+.climate-observation-details tr.is-selected{background:#b4cd9f1f}
+.climate-observation-source-list{list-style:none;padding:0!important;margin:10px 0!important;display:grid;gap:8px}
+.climate-observation-source-list li{display:flex;flex-wrap:wrap;gap:4px 10px}
+.climate-observation-source-list small{display:block;width:100%;font-size:10px;color:#a6bfaf}
+.climate-observation-archive-note{color:#9bb19f}
+.climate-observations :is(button,select,a):focus-visible{outline:2px solid #efe0a8;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.climate-observation-bar i{transition:none}}
+.climate-observation-station[data-narrated=true]{background:#d5dba01a;box-shadow:inset 2px 0 #e9d192;padding-left:7px}.climate-observation-playback{margin:9px 0 12px}.climate-observation-playback .city-life-playback{margin:0}.climate-observation-recorded-caption{font-size:12px;line-height:1.8;color:#e3e9c5;margin:8px 0}.climate-observation-audio-note{font-size:11px;color:#b2c7b4;line-height:1.75}

@@ -1,0 +1,15 @@
+{
+  "id": "ca284e0e9e1c49d4c0aa9385568a6528543f2be2d02a4a0d403d97435ad0f5b5",
+  "url": "/assets/audio/narration/ca284e0e9e1c49d4c0aa9385568a6528543f2be2d02a4a0d403d97435ad0f5b5.mp3",
+  "text": "我们已经知道景观怎样放在周围空间中，现在沿坡面与河道寻找形成线索。流水搬运、侵蚀与沉积，冰川作用和构造背景，都可能参与留下轮廓。日喀则方向只是地点入口，不代表所有地貌同一种成因。",
+  "duration": 16.776,
+  "bytes": 270132,
+  "sha256": "2782ce6ea9351642c5bb9922d615f30d9a438de16d94f6aa7d0b364cfb1903ab",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:51.986Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

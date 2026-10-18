@@ -1,0 +1,19 @@
+{
+  "id": "4061de1f12cfab93afd5eaa2099a8f7cb3c2ed99e9f750a0f74176897c8b52b5",
+  "url": "/assets/audio/narration/4061de1f12cfab93afd5eaa2099a8f7cb3c2ed99e9f750a0f74176897c8b52b5.mp3",
+  "text": "回到这张完整地图。我们从地球找到西藏，理解地形怎样参与改变空气与水，再看各地条件怎样进入生活，人的行动怎样形成文化与历史，现代联系又怎样带来新的选择。下一步可以沿任何一个问题深入，也可以保存观察路线，让局部发现继续接回整体认识。",
+  "duration": 21.672,
+  "bytes": 348468,
+  "sha256": "064af121854df3d80cead7b9972d7ac5834146c20eeb7e686a3f296e5fed2034",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:48.169Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4061de1f12cfab93afd5eaa2099a8f7cb3c2ed99e9f750a0f74176897c8b52b5.subtitles.json",
+  "subtitleSha256": "b62c00020a1a76d38bf4f7c95ad5110e59387de5ab1531e5e548db6020feddb9",
+  "timingLevel": "word"
+}

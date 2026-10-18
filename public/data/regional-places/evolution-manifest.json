@@ -1,0 +1,1087 @@
+{
+  "schemaVersion": 1,
+  "product": "DLR World Settlement Footprint Evolution v1",
+  "years": [
+    1985,
+    2015
+  ],
+  "sourceUrl": "https://geoservice.dlr.de/web/maps/eoc:wsfevolution",
+  "downloadUrl": "https://download.geoservice.dlr.de/WSF_EVO/files/",
+  "readmeUrl": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_README.txt",
+  "methodologyUrl": "https://doi.org/10.1553/giscience2021_01_s33",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "© DLR / EOC — World Settlement Footprint Evolution, CC BY 4.0; original-pixel observation windows extracted for Tibet Explorer",
+  "retrievedAt": "2026-10-16T01:46:40.713772+00:00",
+  "sourceResolutionMetres": 30,
+  "crs": "EPSG:4326",
+  "firstYearLeftCensored": true,
+  "valueMeaning": "1985–2015 = estimated first settlement detection year; 0 = no settlement detection/no data in this product",
+  "confidenceMeaning": "Original IDC consistency bands for seven discrete years: 1 very low, 2 low, 3 moderate, 4 fair, 5 good, 6 very good; 0 no score. IDC is input-data consistency, not local classification accuracy.",
+  "method": "Read original base-resolution int32 source pixels from five full official DLR tiles. Windows expanded outwards to native pixel edges. At Nagqu's 92° seam select each original pixel from the tile whose nominal 2° core contains its centre; tile grids align exactly. No resampling, aggregation, morphological filtering, interpolation, threshold or gap filling. Values 0/1985–2015 are losslessly encoded to little-endian uint16 binary, row-major, north-to-south.",
+  "limitations": [
+    "1985 pixels were already detected at the beginning of the available series; their true development may be much earlier.",
+    "The product assumes settlement growth and excludes locations outside its 2015 settlement reference mask; 0 is not proof that a place was unbuilt in a past year.",
+    "The first-detection year is a remote-sensing estimate; it is not the construction year, urban boundary, building footprint/height or present-day settlement extent.",
+    "Variable Landsat coverage affects temporal interpretation; no local classification accuracy is claimed. Seven original IDC consistency bands are provided without interpolating missing years.",
+    "A spatial change alongside a railway/airport opening does not establish that transport caused that change. The product ends in 2015 and cannot show the 2021 Lhasa–Nyingchi railway opening's aftermath.",
+    "These bounded study windows are not administrative city/prefecture boundaries or a reconstruction of medieval/twentieth-century city plans."
+  ],
+  "script": "scripts/acquire-regional-evolution.py",
+  "python": "3.10.11",
+  "rasterio": "1.4.4",
+  "numpy": "2.2.6",
+  "sourceTiles": [
+    {
+      "url": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_88_28/WSFevolution_v1_88_28.tif",
+      "file": "/data/regional-places/evolution-sources/WSFevolution_v1_88_28.tif",
+      "bytes": 697766,
+      "sha256": "262b1075f5cc063ebfc7c25f69886053e516ff0a3b5f8ea48c0d4af8b7666fad",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        7496,
+        7496
+      ],
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        87.98998207950714,
+        0.0,
+        -0.00026949458523585647,
+        30.01010852810927
+      ],
+      "noData": null,
+      "dtype": "int32",
+      "etag": null,
+      "lastModified": null
+    },
+    {
+      "url": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_90_28/WSFevolution_v1_90_28.tif",
+      "file": "/data/regional-places/evolution-sources/WSFevolution_v1_90_28.tif",
+      "bytes": 1074574,
+      "sha256": "0fb22f27ebd148b0bb1001ec0f05cae3a2a0ea579e5d385c08b7e69c9baa33a1",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        7496,
+        7496
+      ],
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        89.98990139654244,
+        0.0,
+        -0.00026949458523585647,
+        30.01010852810927
+      ],
+      "noData": null,
+      "dtype": "int32",
+      "etag": null,
+      "lastModified": null
+    },
+    {
+      "url": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_90_30/WSFevolution_v1_90_30.tif",
+      "file": "/data/regional-places/evolution-sources/WSFevolution_v1_90_30.tif",
+      "bytes": 636913,
+      "sha256": "0439682112b2604d1caa96d6c603b88b4430dc93e8bb8ac2346a87fb3c02b63d",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        7496,
+        7496
+      ],
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        89.98990139654244,
+        0.0,
+        -0.00026949458523585647,
+        32.01002784514456
+      ],
+      "noData": null,
+      "dtype": "int32",
+      "etag": null,
+      "lastModified": null
+    },
+    {
+      "url": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_92_30/WSFevolution_v1_92_30.tif",
+      "file": "/data/regional-places/evolution-sources/WSFevolution_v1_92_30.tif",
+      "bytes": 672266,
+      "sha256": "8d5e8f889af47bdf328aae5a48ef672f0f868254a8f745cb1b9d5e4b05e58730",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        7497,
+        7496
+      ],
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        91.98982071357771,
+        0.0,
+        -0.00026949458523585647,
+        32.01002784514456
+      ],
+      "noData": null,
+      "dtype": "int32",
+      "etag": null,
+      "lastModified": null
+    },
+    {
+      "url": "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_96_30/WSFevolution_v1_96_30.tif",
+      "file": "/data/regional-places/evolution-sources/WSFevolution_v1_96_30.tif",
+      "bytes": 652550,
+      "sha256": "d22202c3a49e8d817b5e88af75701a2b93097e87aa4247de28b9dcf728f60f5f",
+      "crs": "EPSG:4326",
+      "dimensions": [
+        7496,
+        7496
+      ],
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        95.98992884223354,
+        0.0,
+        -0.00026949458523585647,
+        32.01002784514456
+      ],
+      "noData": null,
+      "dtype": "int32",
+      "etag": null,
+      "lastModified": null
+    }
+  ],
+  "windows": [
+    {
+      "id": "shigatse",
+      "label": "日喀则城区—车站观察窗",
+      "sourceTiles": [
+        "88_28"
+      ],
+      "sourceUrls": [
+        "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_88_28/WSFevolution_v1_88_28.tif"
+      ],
+      "requestedBbox": [
+        88.845,
+        29.207,
+        88.957,
+        29.297
+      ],
+      "bounds": {
+        "west": 88.84481890387528,
+        "south": 29.206745169521184,
+        "east": 88.95719814591864,
+        "north": 29.297025855575196
+      },
+      "columns": 417,
+      "rows": 335,
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        88.84481890387528,
+        0.0,
+        -0.00026949458523585647,
+        29.297025855575196
+      ],
+      "sourceWindowPixels": [
+        3172,
+        2646,
+        417,
+        335
+      ],
+      "pixelSizeDegrees": [
+        0.00026949458523585647,
+        0.00026949458523585647
+      ],
+      "dataUrl": "/data/regional-places/evolution-shigatse.years.bin",
+      "format": "uint16-le-row-major-north-to-south",
+      "bytes": 279390,
+      "sha256": "50aeece2449db936266ab0e0e2b0384543066ac3d1e75ba2042e4747b971ffb5",
+      "detectedPixels": 16506,
+      "noDetectionOrNoDataPixels": 123189,
+      "firstDetectionYearCounts": [
+        153,
+        84,
+        1,
+        1,
+        2,
+        33,
+        136,
+        19,
+        7,
+        51,
+        158,
+        148,
+        208,
+        32,
+        127,
+        169,
+        232,
+        235,
+        642,
+        895,
+        943,
+        838,
+        964,
+        1353,
+        705,
+        1312,
+        819,
+        1609,
+        2114,
+        1479,
+        1037
+      ],
+      "cumulativePixelCounts": {
+        "1985": 153,
+        "1990": 274,
+        "1995": 645,
+        "2000": 1329,
+        "2005": 4276,
+        "2010": 9448,
+        "2015": 16506
+      },
+      "confidenceAvailable": true,
+      "confidenceYears": [
+        1985,
+        1990,
+        1995,
+        2000,
+        2005,
+        2010,
+        2015
+      ],
+      "confidenceUrl": "/data/regional-places/evolution-shigatse.idc.bin",
+      "confidenceFormat": "uint8-year-major-row-major-north-to-south",
+      "confidenceBytes": 977865,
+      "confidenceSha256": "eb532c067e03b62e68fc2d1c6a6a22c9824d2ee3bb6485a8f35e984537b0834c",
+      "confidenceSources": [
+        {
+          "url": "https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/IDC_Score_88_28.tif",
+          "bands": [
+            1,
+            6,
+            11,
+            16,
+            21,
+            26,
+            31
+          ],
+          "bandNames": [
+            "IDC_Score_1985",
+            "IDC_Score_1990",
+            "IDC_Score_1995",
+            "IDC_Score_2000",
+            "IDC_Score_2005",
+            "IDC_Score_2010",
+            "IDC_Score_2015"
+          ],
+          "sourceWindowPixels": [
+            3172,
+            2646,
+            417,
+            335
+          ],
+          "httpRangeStatus": 206,
+          "httpContentRange": "bytes 0-15/120007659",
+          "sourceHeaderSha256": "c5ec31c03e1edb3f67ae99b3f4f06475ccaa763dfc8533b8ee25597c152a5e7e",
+          "etag": "\"615c5cc1-7272beb\"",
+          "lastModified": "Tue, 05 Oct 2021 14:10:09 GMT"
+        }
+      ],
+      "confidenceByYear": {
+        "1985": {
+          "detectedPixels": 153,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "noScorePixels": 153
+        },
+        "1990": {
+          "detectedPixels": 274,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 274
+          },
+          "noScorePixels": 0
+        },
+        "1995": {
+          "detectedPixels": 645,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 645
+          },
+          "noScorePixels": 0
+        },
+        "2000": {
+          "detectedPixels": 1329,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1329
+          },
+          "noScorePixels": 0
+        },
+        "2005": {
+          "detectedPixels": 4276,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 4276
+          },
+          "noScorePixels": 0
+        },
+        "2010": {
+          "detectedPixels": 9448,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 9448
+          },
+          "noScorePixels": 0
+        },
+        "2015": {
+          "detectedPixels": 16506,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 16506
+          },
+          "noScorePixels": 0
+        }
+      },
+      "confidenceNote": "IDC表示生成聚居地估计时Landsat资料的一致性：1很低、2低、3中等、4尚可、5好、6很好；不是此城市的分类准确率或建筑年份置信区间。"
+    },
+    {
+      "id": "shannan",
+      "label": "泽当城区—山南站观察窗",
+      "sourceTiles": [
+        "90_28"
+      ],
+      "sourceUrls": [
+        "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_90_28/WSFevolution_v1_90_28.tif"
+      ],
+      "requestedBbox": [
+        91.73,
+        29.223,
+        91.805,
+        29.295
+      ],
+      "bounds": {
+        "west": 91.72975843882513,
+        "south": 29.222914844635334,
+        "east": 91.80521692269116,
+        "north": 29.295139393478543
+      },
+      "columns": 280,
+      "rows": 268,
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        91.72975843882513,
+        0.0,
+        -0.00026949458523585647,
+        29.295139393478543
+      ],
+      "sourceWindowPixels": [
+        6456,
+        2653,
+        280,
+        268
+      ],
+      "pixelSizeDegrees": [
+        0.00026949458523585647,
+        0.00026949458523585647
+      ],
+      "dataUrl": "/data/regional-places/evolution-shannan.years.bin",
+      "format": "uint16-le-row-major-north-to-south",
+      "bytes": 150080,
+      "sha256": "8d73568bf782a215d09c82a04dcf29e16602c6ecc9889c87921f773af41e43fe",
+      "detectedPixels": 13662,
+      "noDetectionOrNoDataPixels": 61378,
+      "firstDetectionYearCounts": [
+        8653,
+        205,
+        0,
+        7,
+        11,
+        353,
+        114,
+        662,
+        279,
+        144,
+        73,
+        41,
+        71,
+        52,
+        377,
+        158,
+        167,
+        198,
+        444,
+        181,
+        236,
+        392,
+        120,
+        95,
+        91,
+        120,
+        100,
+        138,
+        70,
+        57,
+        53
+      ],
+      "cumulativePixelCounts": {
+        "1985": 8653,
+        "1990": 9229,
+        "1995": 10501,
+        "2000": 11200,
+        "2005": 12426,
+        "2010": 13244,
+        "2015": 13662
+      },
+      "confidenceAvailable": true,
+      "confidenceYears": [
+        1985,
+        1990,
+        1995,
+        2000,
+        2005,
+        2010,
+        2015
+      ],
+      "confidenceUrl": "/data/regional-places/evolution-shannan.idc.bin",
+      "confidenceFormat": "uint8-year-major-row-major-north-to-south",
+      "confidenceBytes": 525280,
+      "confidenceSha256": "31a9b10795e7a1e1091898506286e20ec33efcea7bba0fc53b9615060e7ea31c",
+      "confidenceSources": [
+        {
+          "url": "https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/IDC_Score_90_28.tif",
+          "bands": [
+            1,
+            6,
+            11,
+            16,
+            21,
+            26,
+            31
+          ],
+          "bandNames": [
+            "IDC_Score_1985",
+            "IDC_Score_1990",
+            "IDC_Score_1995",
+            "IDC_Score_2000",
+            "IDC_Score_2005",
+            "IDC_Score_2010",
+            "IDC_Score_2015"
+          ],
+          "sourceWindowPixels": [
+            6456,
+            2653,
+            280,
+            268
+          ],
+          "httpRangeStatus": 206,
+          "httpContentRange": "bytes 0-15/156510977",
+          "sourceHeaderSha256": "c5ec31c03e1edb3f67ae99b3f4f06475ccaa763dfc8533b8ee25597c152a5e7e",
+          "etag": "\"615c2d4d-9542b01\"",
+          "lastModified": "Tue, 05 Oct 2021 10:47:41 GMT"
+        }
+      ],
+      "confidenceByYear": {
+        "1985": {
+          "detectedPixels": 8653,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "noScorePixels": 8653
+        },
+        "1990": {
+          "detectedPixels": 9229,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 9229
+          },
+          "noScorePixels": 0
+        },
+        "1995": {
+          "detectedPixels": 10501,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 10501
+          },
+          "noScorePixels": 0
+        },
+        "2000": {
+          "detectedPixels": 11200,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 11200
+          },
+          "noScorePixels": 0
+        },
+        "2005": {
+          "detectedPixels": 12426,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 12426
+          },
+          "noScorePixels": 0
+        },
+        "2010": {
+          "detectedPixels": 13244,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 13244
+          },
+          "noScorePixels": 0
+        },
+        "2015": {
+          "detectedPixels": 13662,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 13662
+          },
+          "noScorePixels": 0
+        }
+      },
+      "confidenceNote": "IDC表示生成聚居地估计时Landsat资料的一致性：1很低、2低、3中等、4尚可、5好、6很好；不是此城市的分类准确率或建筑年份置信区间。"
+    },
+    {
+      "id": "chamdo",
+      "label": "昌都城区两河谷观察窗",
+      "sourceTiles": [
+        "96_30"
+      ],
+      "sourceUrls": [
+        "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_96_30/WSFevolution_v1_96_30.tif"
+      ],
+      "requestedBbox": [
+        97.13,
+        31.1,
+        97.23,
+        31.2
+      ],
+      "bounds": {
+        "west": 97.12989093778121,
+        "south": 31.099944630803076,
+        "east": 97.23014292348896,
+        "north": 31.200196616510816
+      },
+      "columns": 372,
+      "rows": 372,
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        97.12989093778121,
+        0.0,
+        -0.00026949458523585647,
+        31.200196616510816
+      ],
+      "sourceWindowPixels": [
+        4230,
+        3005,
+        372,
+        372
+      ],
+      "pixelSizeDegrees": [
+        0.00026949458523585647,
+        0.00026949458523585647
+      ],
+      "dataUrl": "/data/regional-places/evolution-chamdo.years.bin",
+      "format": "uint16-le-row-major-north-to-south",
+      "bytes": 276768,
+      "sha256": "3c62611bbb3db404c6dab7563ca180790660a378a2d7712e19930b6f81e25b98",
+      "detectedPixels": 4017,
+      "noDetectionOrNoDataPixels": 134367,
+      "firstDetectionYearCounts": [
+        1644,
+        271,
+        85,
+        229,
+        28,
+        85,
+        72,
+        80,
+        40,
+        66,
+        59,
+        7,
+        18,
+        23,
+        54,
+        59,
+        160,
+        42,
+        98,
+        72,
+        114,
+        86,
+        76,
+        75,
+        57,
+        150,
+        55,
+        29,
+        103,
+        36,
+        44
+      ],
+      "cumulativePixelCounts": {
+        "1985": 1644,
+        "1990": 2342,
+        "1995": 2659,
+        "2000": 2820,
+        "2005": 3306,
+        "2010": 3750,
+        "2015": 4017
+      },
+      "confidenceAvailable": true,
+      "confidenceYears": [
+        1985,
+        1990,
+        1995,
+        2000,
+        2005,
+        2010,
+        2015
+      ],
+      "confidenceUrl": "/data/regional-places/evolution-chamdo.idc.bin",
+      "confidenceFormat": "uint8-year-major-row-major-north-to-south",
+      "confidenceBytes": 968688,
+      "confidenceSha256": "c4757ea8068d6405a4c0fa42575885087e410b974ef5ea890805f18bb58e5cef",
+      "confidenceSources": [
+        {
+          "url": "https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/IDC_Score_96_30.tif",
+          "bands": [
+            1,
+            6,
+            11,
+            16,
+            21,
+            26,
+            31
+          ],
+          "bandNames": [
+            "IDC_Score_1985",
+            "IDC_Score_1990",
+            "IDC_Score_1995",
+            "IDC_Score_2000",
+            "IDC_Score_2005",
+            "IDC_Score_2010",
+            "IDC_Score_2015"
+          ],
+          "sourceWindowPixels": [
+            4230,
+            3005,
+            372,
+            372
+          ],
+          "httpRangeStatus": 206,
+          "httpContentRange": "bytes 0-15/181463282",
+          "sourceHeaderSha256": "c5ec31c03e1edb3f67ae99b3f4f06475ccaa763dfc8533b8ee25597c152a5e7e",
+          "etag": "\"615c3e5b-ad0e8f2\"",
+          "lastModified": "Tue, 05 Oct 2021 12:00:27 GMT"
+        }
+      ],
+      "confidenceByYear": {
+        "1985": {
+          "detectedPixels": 1644,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "noScorePixels": 1644
+        },
+        "1990": {
+          "detectedPixels": 2342,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 2342
+          },
+          "noScorePixels": 0
+        },
+        "1995": {
+          "detectedPixels": 2659,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 2659
+          },
+          "noScorePixels": 0
+        },
+        "2000": {
+          "detectedPixels": 2820,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 2820
+          },
+          "noScorePixels": 0
+        },
+        "2005": {
+          "detectedPixels": 3306,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 3306
+          },
+          "noScorePixels": 0
+        },
+        "2010": {
+          "detectedPixels": 3750,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 3750
+          },
+          "noScorePixels": 0
+        },
+        "2015": {
+          "detectedPixels": 4017,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 4017
+          },
+          "noScorePixels": 0
+        }
+      },
+      "confidenceNote": "IDC表示生成聚居地估计时Landsat资料的一致性：1很低、2低、3中等、4尚可、5好、6很好；不是此城市的分类准确率或建筑年份置信区间。"
+    },
+    {
+      "id": "nagqu",
+      "label": "那曲城区—车站物流观察窗",
+      "sourceTiles": [
+        "90_30",
+        "92_30"
+      ],
+      "sourceUrls": [
+        "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_90_30/WSFevolution_v1_90_30.tif",
+        "https://download.geoservice.dlr.de/WSF_EVO/files/WSFevolution_v1_92_30/WSFevolution_v1_92_30.tif"
+      ],
+      "requestedBbox": [
+        91.958,
+        31.42,
+        92.09,
+        31.52
+      ],
+      "bounds": {
+        "west": 91.95775085793466,
+        "south": 31.41983470347804,
+        "east": 92.09007269928547,
+        "north": 31.520086689185778
+      },
+      "columns": 491,
+      "rows": 372,
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        91.95775085793466,
+        0.0,
+        -0.00026949458523585647,
+        31.520086689185778
+      ],
+      "sourceWindowPixels": [
+        7302,
+        1818,
+        491,
+        372
+      ],
+      "pixelSizeDegrees": [
+        0.00026949458523585647,
+        0.00026949458523585647
+      ],
+      "dataUrl": "/data/regional-places/evolution-nagqu.years.bin",
+      "format": "uint16-le-row-major-north-to-south",
+      "bytes": 365304,
+      "sha256": "89829248c58166db5c882022ef254f17785ef7fd24f72bb327fde572cfbefa9a",
+      "detectedPixels": 14650,
+      "noDetectionOrNoDataPixels": 168002,
+      "firstDetectionYearCounts": [
+        1226,
+        1945,
+        213,
+        917,
+        187,
+        398,
+        158,
+        342,
+        56,
+        156,
+        165,
+        166,
+        67,
+        222,
+        259,
+        288,
+        138,
+        123,
+        530,
+        1098,
+        1271,
+        900,
+        539,
+        642,
+        460,
+        467,
+        365,
+        318,
+        375,
+        150,
+        509
+      ],
+      "cumulativePixelCounts": {
+        "1985": 1226,
+        "1990": 4886,
+        "1995": 5763,
+        "2000": 6765,
+        "2005": 9925,
+        "2010": 12933,
+        "2015": 14650
+      },
+      "confidenceAvailable": true,
+      "confidenceYears": [
+        1985,
+        1990,
+        1995,
+        2000,
+        2005,
+        2010,
+        2015
+      ],
+      "confidenceUrl": "/data/regional-places/evolution-nagqu.idc.bin",
+      "confidenceFormat": "uint8-year-major-row-major-north-to-south",
+      "confidenceBytes": 1278564,
+      "confidenceSha256": "63903d5508a15438e7068468169377aa56ed3a03bb3fa2c455eb248eab94bfd5",
+      "confidenceSources": [
+        {
+          "url": "https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/IDC_Score_90_30.tif",
+          "bands": [
+            1,
+            6,
+            11,
+            16,
+            21,
+            26,
+            31
+          ],
+          "bandNames": [
+            "IDC_Score_1985",
+            "IDC_Score_1990",
+            "IDC_Score_1995",
+            "IDC_Score_2000",
+            "IDC_Score_2005",
+            "IDC_Score_2010",
+            "IDC_Score_2015"
+          ],
+          "sourceWindowPixels": [
+            7302,
+            1818,
+            491,
+            372
+          ],
+          "httpRangeStatus": 206,
+          "httpContentRange": "bytes 0-15/187181946",
+          "sourceHeaderSha256": "c5ec31c03e1edb3f67ae99b3f4f06475ccaa763dfc8533b8ee25597c152a5e7e",
+          "etag": "\"615c36a4-b282b7a\"",
+          "lastModified": "Tue, 05 Oct 2021 11:27:32 GMT"
+        },
+        {
+          "url": "https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/IDC_Score_92_30.tif",
+          "bands": [
+            1,
+            6,
+            11,
+            16,
+            21,
+            26,
+            31
+          ],
+          "bandNames": [
+            "IDC_Score_1985",
+            "IDC_Score_1990",
+            "IDC_Score_1995",
+            "IDC_Score_2000",
+            "IDC_Score_2005",
+            "IDC_Score_2010",
+            "IDC_Score_2015"
+          ],
+          "sourceWindowPixels": [
+            -119,
+            1818,
+            491,
+            372
+          ],
+          "httpRangeStatus": 206,
+          "httpContentRange": "bytes 0-15/225022299",
+          "sourceHeaderSha256": "c5ec31c03e1edb3f67ae99b3f4f06475ccaa763dfc8533b8ee25597c152a5e7e",
+          "etag": "\"615c3030-d69915b\"",
+          "lastModified": "Tue, 05 Oct 2021 11:00:00 GMT"
+        }
+      ],
+      "confidenceByYear": {
+        "1985": {
+          "detectedPixels": 1226,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          "noScorePixels": 1226
+        },
+        "1990": {
+          "detectedPixels": 4886,
+          "scoreCounts": {
+            "1": 31,
+            "2": 0,
+            "3": 2,
+            "4": 72,
+            "5": 713,
+            "6": 4068
+          },
+          "noScorePixels": 0
+        },
+        "1995": {
+          "detectedPixels": 5763,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 301,
+            "6": 5462
+          },
+          "noScorePixels": 0
+        },
+        "2000": {
+          "detectedPixels": 6765,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 6765
+          },
+          "noScorePixels": 0
+        },
+        "2005": {
+          "detectedPixels": 9925,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 9925
+          },
+          "noScorePixels": 0
+        },
+        "2010": {
+          "detectedPixels": 12933,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 12933
+          },
+          "noScorePixels": 0
+        },
+        "2015": {
+          "detectedPixels": 14650,
+          "scoreCounts": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 5923,
+            "6": 8727
+          },
+          "noScorePixels": 0
+        }
+      },
+      "confidenceNote": "IDC表示生成聚居地估计时Landsat资料的一致性：1很低、2低、3中等、4尚可、5好、6很好；不是此城市的分类准确率或建筑年份置信区间。"
+    }
+  ]
+}

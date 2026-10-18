@@ -1,0 +1,19 @@
+{
+  "id": "230dbbc605487a5cf8780fae261c7d3f33791d96d7c8db391b51d599fa2f27fa",
+  "url": "/assets/audio/narration/230dbbc605487a5cf8780fae261c7d3f33791d96d7c8db391b51d599fa2f27fa.mp3",
+  "text": "先留在大昭寺周围，把建筑放回街区。七世纪创建的宗教场所，今天仍与广场、街巷和周边生活相连。沿现状步行街巷移动，能看到活动需要通行空间；再看广场与周边商业用地，同一街区承载着不同使用。二〇〇〇年，大昭寺作为扩展列入世界遗产。二〇二一年，世界遗产委员会要求广场管理照顾朝拜者，让祈祷通行不受游客干扰。这不是再造一座古城，而是理解保护怎样进入今天的生活：既要看建筑，也要看使用它的人和空间。接下来，仍在拉萨，看白宫和红宫的建设与用途。",
+  "duration": 46.584,
+  "bytes": 747060,
+  "sha256": "dfd9016e7e79af02164b7787f03eefe373003cbfa5dea64a3f0b49bc32b4e3a3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T04:24:59.480Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/230dbbc605487a5cf8780fae261c7d3f33791d96d7c8db391b51d599fa2f27fa.subtitles.json",
+  "subtitleSha256": "f74f7fb4644421f5ecbb53b82a3e0156d031f05232478cda4ed85a4e07e1a957",
+  "timingLevel": "word"
+}

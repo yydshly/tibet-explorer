@@ -1,0 +1,19 @@
+{
+  "id": "d3176e41328ac78e90f117cf2449fdaab55bced40c6478109091cdc253908dd3",
+  "url": "/assets/audio/narration/d3176e41328ac78e90f117cf2449fdaab55bced40c6478109091cdc253908dd3.mp3",
+  "text": "形成以后，还需要有人继续实践。以藏戏为例，先有讲述、表演与观看。学习者靠近示范者，再进入共同练习，观察观看怎样接到参与机会。这里不复原具体演出，靠近也不等于已经学会。二〇〇九年联合国教科文组织的列入决定提出年轻实践者培训等保护措施，列入不是文化起源。你可以回拖比较：只有观看，与获得练习机会，差别在哪里？把学习与实践放回全域。已有的场所与生活继续存在，下一步看新的交通怎样改变进入和使用它们的条件。",
+  "duration": 40.824,
+  "bytes": 654900,
+  "sha256": "0d895714b3267ab05c167eafff12dea3f19582ae1a98b0375794b8f33400c0f7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T08:59:39.787Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d3176e41328ac78e90f117cf2449fdaab55bced40c6478109091cdc253908dd3.subtitles.json",
+  "subtitleSha256": "8909aff4cf75dc9d4648cd902f2d2e86d2951bfbff3e8af05c49a3c82d8f26e1",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "37cd42c822d51d943b23c3d8f7c85d605c9b8fa19850b49c851aec11533f35a3",
+  "url": "/assets/audio/narration/37cd42c822d51d943b23c3d8f7c85d605c9b8fa19850b49c851aec11533f35a3.mp3",
+  "text": "请退回抵达坡脚，再观察通过通口与节点交接。地形保持不变，改变的是载体和人的行动。对照阿底峡材料，区分已经知道的停留节点和仍缺乏依据的路段；这里的通用路径帮助理解条件，没有代替那段真实历史。",
+  "duration": 18.612,
+  "bytes": 299508,
+  "sha256": "9a65f1c285588dec12c731760509f97d8549c3b7923541bccdbdb4e28169f743",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:54:40.822Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

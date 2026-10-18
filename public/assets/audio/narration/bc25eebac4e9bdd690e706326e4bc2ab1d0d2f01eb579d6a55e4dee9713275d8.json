@@ -1,0 +1,15 @@
+{
+  "id": "bc25eebac4e9bdd690e706326e4bc2ab1d0d2f01eb579d6a55e4dee9713275d8",
+  "url": "/assets/audio/narration/bc25eebac4e9bdd690e706326e4bc2ab1d0d2f01eb579d6a55e4dee9713275d8.mp3",
+  "text": "现在可以拖动过程进度，并从侧面观察地层与板块。先看相向运动，再看变形与地表起伏。这个模型帮助辨认关系，具体地区什么时候抬升、抬升多少，仍需要岩石、年代和地质研究来回答。",
+  "duration": 16.236,
+  "bytes": 261492,
+  "sha256": "ddc764b05532b7d8d7239e22920cdabde9238c1a1ab873af9f4a26c7d74b3b3a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:42.226Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

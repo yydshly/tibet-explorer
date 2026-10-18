@@ -1,0 +1,15 @@
+{
+  "id": "70f7e76424bcb50a6d5b18e75888f1308ff0466e6844365828e66ce41f617289",
+  "url": "/assets/audio/narration/70f7e76424bcb50a6d5b18e75888f1308ff0466e6844365828e66ce41f617289.mp3",
+  "text": "地表吸收能量会升温，也会以长波辐射向外交换；大气参与吸收、发射和输送。地面还通过水的蒸发等方式分配热量。温度取决于这些过程的收支与储存，箭头方向不能直接当成实际能量数值。",
+  "duration": 16.308,
+  "bytes": 262644,
+  "sha256": "8c927a9c976c341cf130c28f8824e8942f8f4750cd9b153ebb9762992b5ff8e5",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:50:52.731Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

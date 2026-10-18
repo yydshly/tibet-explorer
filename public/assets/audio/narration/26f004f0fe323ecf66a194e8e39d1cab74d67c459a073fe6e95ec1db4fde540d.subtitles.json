@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "audioSha256": "43e88ec1f6f1a191b79717b7837bb168b7b9b221dca7f70c655abe899647b52d",
+  "textSha256": "466949fb8976f4f79a8a44c355523571ac243fab487bd0b8461642c5ab21faaf",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 4.716,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 4.567210884353741,
+      "text": "环境不同，能够取用的水和土地就要分别认识。",
+      "textStart": 0,
+      "textEnd": 21
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.6974358974358974,
+      "text": "环",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.6974358974358974,
+      "end": 0.9435897435897436,
+      "text": "境",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 1.0666666666666664,
+      "text": "不",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 1.0666666666666664,
+      "end": 1.1487179487179484,
+      "text": "同",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 1.1487179487179484,
+      "end": 1.1897435897435897,
+      "text": "，",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 1.1897435897435897,
+      "end": 1.517948717948718,
+      "text": "能",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 1.517948717948718,
+      "end": 2.051282051282051,
+      "text": "够",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 2.051282051282051,
+      "end": 2.215384615384615,
+      "text": "取",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 2.215384615384615,
+      "end": 2.3794871794871795,
+      "text": "用",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 2.3794871794871795,
+      "end": 2.4205128205128204,
+      "text": "的",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 2.4205128205128204,
+      "end": 2.5846153846153843,
+      "text": "水",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 2.5846153846153843,
+      "end": 2.7897435897435896,
+      "text": "和",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.7897435897435896,
+      "end": 2.9128205128205122,
+      "text": "土",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.9128205128205122,
+      "end": 3.076923076923076,
+      "text": "地",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 3.076923076923076,
+      "end": 3.487179487179487,
+      "text": "就",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.487179487179487,
+      "end": 3.733333333333333,
+      "text": "要",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.733333333333333,
+      "end": 3.8564102564102565,
+      "text": "分",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.8564102564102565,
+      "end": 4.0205128205128196,
+      "text": "别",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 4.0205128205128196,
+      "end": 4.143589743589743,
+      "text": "认",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 4.143589743589743,
+      "end": 4.266666666666666,
+      "text": "识",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.471794871794872,
+      "text": "。",
+      "textStart": 20,
+      "textEnd": 21
+    }
+  ]
+}

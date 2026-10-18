@@ -1,0 +1,19 @@
+{
+  "id": "918ac089502361597dc840a08d4580a37ae616f887b0e3acf5e4d5657bef3e95",
+  "url": "/assets/audio/narration/918ac089502361597dc840a08d4580a37ae616f887b0e3acf5e4d5657bef3e95.mp3",
+  "text": "少雨与多风时再看宽谷，河流附近也会面临风沙和用水问题。桑耶镇长期植树治沙的地方记录，说明有水并不等于环境会自动适合生活；河谷提供基础，人的管理继续改变地表条件和日常安排。",
+  "duration": 17.784,
+  "bytes": 286260,
+  "sha256": "c5b1b2a5d264e64b6d0b193924033692b75912a5c6d51ea2f350038900bc3f44",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:51:26.609Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/918ac089502361597dc840a08d4580a37ae616f887b0e3acf5e4d5657bef3e95.subtitles.json",
+  "subtitleSha256": "971c2aad1fb530d1259929904902e56deb62be4ea34de3a4f4f4a13c744bbba4",
+  "timingLevel": "word"
+}

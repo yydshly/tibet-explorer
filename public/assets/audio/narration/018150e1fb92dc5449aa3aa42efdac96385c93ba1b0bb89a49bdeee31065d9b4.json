@@ -1,0 +1,19 @@
+{
+  "id": "018150e1fb92dc5449aa3aa42efdac96385c93ba1b0bb89a49bdeee31065d9b4",
+  "url": "/assets/audio/narration/018150e1fb92dc5449aa3aa42efdac96385c93ba1b0bb89a49bdeee31065d9b4.mp3",
+  "text": "以下是一九九一至二零二零年七月气候标准值，不是当天预报。林芝站月平均气温十六点五摄氏度，月降水量均值一百三十七点四毫米。拉萨站也是十六点五摄氏度，降水一百四十点五毫米。狮泉河站十五摄氏度，降水二十二点九毫米。这个月拉萨略多于林芝，东西之间不是每月固定递减。统计只代表站点，不能概括全域。",
+  "duration": 28.188,
+  "bytes": 452724,
+  "sha256": "f658434c581ecce9939ad3c62560f360decbc83b59f3e89007c6aea7bf73f51c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T19:45:03.907Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/018150e1fb92dc5449aa3aa42efdac96385c93ba1b0bb89a49bdeee31065d9b4.subtitles.json",
+  "subtitleSha256": "28fdb303d6698e0a5be11412f7886b39dc811979e78bb308626153c242c27e49",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "39d61e5468ab6bf23612748739ede59fab7a2bb91c74bc0f3c7af6e21bae98bb",
+  "url": "/assets/audio/narration/39d61e5468ab6bf23612748739ede59fab7a2bb91c74bc0f3c7af6e21bae98bb.mp3",
+  "text": "上一小步认识了人物和文本，现在把目光收近到材料与形式。碑刻、手稿、绘画和建筑构件都有不同制作与阅读方法。眼前构造帮助理解部位关系，具体文字和艺术作品则要从真实材料与图像继续观察。",
+  "duration": 18.936,
+  "bytes": 304692,
+  "sha256": "d184dcbca5644e3a4dc4d116a47256fcefa7c677959d4b8fa36386de021fb9a7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:15.431Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

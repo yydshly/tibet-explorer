@@ -1,0 +1,19 @@
+{
+  "id": "5065bf0c77c8c42c17c0b8337cb287f2616917ba8bdec58266262da10126edfd",
+  "url": "/assets/audio/narration/5065bf0c77c8c42c17c0b8337cb287f2616917ba8bdec58266262da10126edfd.mp3",
+  "text": "打开情境，再把器物与研究记录关联。尼阿底二零一八年研究支持约四万至三万年前的高海拔活动；活动不自动等于全年定居。另一项农业研究讨论高原东北部特定时期的全年生活，地域、样本和结论不能混在一起。",
+  "duration": 19.476,
+  "bytes": 313332,
+  "sha256": "ca7ff59a330635be42d5ec52247e24ec50d831f2e3b60e0c6646f68c730a1c14",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:37:18.529Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5065bf0c77c8c42c17c0b8337cb287f2616917ba8bdec58266262da10126edfd.subtitles.json",
+  "subtitleSha256": "bd8e7de75c79ab09dcfefe59f271fdaa4efc77e48ac1fb2e4a0dfc5c7afd6b47",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "6f45204a32ce9ef6e685703ea705efde76f0b3d09ca9cc0e53a41788b51eba7d",
+  "url": "/assets/audio/narration/6f45204a32ce9ef6e685703ea705efde76f0b3d09ca9cc0e53a41788b51eba7d.mp3",
+  "text": "现在保持同一山体与后段进度，把初始水汽切到较少，再比较云滴与降水。空气仍会抬升，却在本设定里没有形成地面降水。可以回拖观察条件怎样接起来：有来流、有云，都不等于已经下雨。",
+  "duration": 17.136,
+  "bytes": 275892,
+  "sha256": "f34259e37ee0688ba7f5f19f0eae9e3f378c1739a9a5abc26db92bb7c0089d65",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T15:17:49.214Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

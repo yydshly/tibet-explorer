@@ -1,0 +1,19 @@
+{
+  "id": "25d5320ff4304a9a8167e7bf7148e1989893c018c600fee6983ca9f7bf764820",
+  "url": "/assets/audio/narration/25d5320ff4304a9a8167e7bf7148e1989893c018c600fee6983ca9f7bf764820.mp3",
+  "text": "再把暖湿来流放回这些岭谷。昌都生态规划的环境分析指出，近南北向谷地有利于暖湿空气输送；空气遇坡上升时会冷却，水汽充足才可能凝结成云。转动来流，比较沿谷经过与迎坡抬升的差别。",
+  "duration": 19.548,
+  "bytes": 314484,
+  "sha256": "d94678e3e0dc7fc2abefdc68ad7687fc4038378f280836ae4aafa1e3a42abafa",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:09.395Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/25d5320ff4304a9a8167e7bf7148e1989893c018c600fee6983ca9f7bf764820.subtitles.json",
+  "subtitleSha256": "3bb39006eba550c57157408ba43621bf7291ccda1e30a93fea407d882d20579a",
+  "timingLevel": "word"
+}

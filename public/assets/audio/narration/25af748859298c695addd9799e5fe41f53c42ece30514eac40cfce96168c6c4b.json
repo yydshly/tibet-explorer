@@ -1,0 +1,15 @@
+{
+  "id": "25af748859298c695addd9799e5fe41f53c42ece30514eac40cfce96168c6c4b",
+  "url": "/assets/audio/narration/25af748859298c695addd9799e5fe41f53c42ece30514eac40cfce96168c6c4b.mp3",
+  "text": "我们保留刚才的候选站点，现在补充日期、交通和备注。地图认识顺序还不是可执行行程：道路、开放、预约、天气与适用手续都需要核实。保存时把这些未知项一起留下，后面才能围绕同一目的继续修改。",
+  "duration": 19.908,
+  "bytes": 320244,
+  "sha256": "70f7838d13bd63016b05813f35e395295508a1f3132d8e728616f6c1aa9d1596",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:03:28.676Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

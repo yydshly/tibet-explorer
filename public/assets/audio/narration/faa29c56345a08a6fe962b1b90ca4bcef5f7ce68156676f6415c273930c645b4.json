@@ -1,0 +1,15 @@
+{
+  "id": "faa29c56345a08a6fe962b1b90ca4bcef5f7ce68156676f6415c273930c645b4",
+  "url": "/assets/audio/narration/faa29c56345a08a6fe962b1b90ca4bcef5f7ce68156676f6415c273930c645b4.mp3",
+  "text": "保存狮泉河问题时，分开写清公路、航空和河岸建设各改变了什么，再核实日期与接驳。托林和札布让另选跨县一站，那里的教师交流和家庭经营有自己的年代，不能与狮泉河压成同一处地方或一条短线。",
+  "duration": 19.332,
+  "bytes": 311028,
+  "sha256": "472361cce0773543db3bb4831b456958a98f8ffcee95ad2b82c5f55b7f613c92",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:27:30.923Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

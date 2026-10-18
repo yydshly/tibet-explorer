@@ -1,0 +1,19 @@
+{
+  "id": "c18c1626ea196be7782ec93692d7113b3fd6076978ef0d9b9783e1719d3000c0",
+  "url": "/assets/audio/narration/c18c1626ea196be7782ec93692d7113b3fd6076978ef0d9b9783e1719d3000c0.mp3",
+  "text": "从三地生活回到全域。地形提供条件，地方的用途还要由人的历史行动解释。先看拉萨：七世纪创建的大昭寺，是宗教活动的场所；布达拉宫的礼仪、接见与居住用途，则说明政治与宗教活动怎样组织空间。再看西部托林：博物馆材料记载，阿底峡一〇四二年来到这里，人物与知识交流把不同地方联系起来。这些是营建、使用和交流的具体线索，不能由气候直接推出，也不代表全部西藏的历史。更完整的年代放在专题。现在回到共同问题：场所和文化已经形成，为什么还能持续到后来的生活中？",
+  "duration": 46.548,
+  "bytes": 746484,
+  "sha256": "3847fd7d8e1c73ff56a3bc710d7a6fb32a2a7866e1c776b622cf17569bc23077",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T08:59:31.563Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c18c1626ea196be7782ec93692d7113b3fd6076978ef0d9b9783e1719d3000c0.subtitles.json",
+  "subtitleSha256": "2909fd03cba2aa6ef51b82a0851f77b3b1d09c1e190dbdeb4b10196302b7662b",
+  "timingLevel": "word"
+}

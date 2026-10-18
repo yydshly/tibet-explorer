@@ -1,0 +1,15 @@
+{
+  "id": "07915bf864600c9569a90afa8c148fd4123574db57ba11c7d8adb8409edff26b",
+  "url": "/assets/audio/narration/07915bf864600c9569a90afa8c148fd4123574db57ba11c7d8adb8409edff26b.mp3",
+  "text": "历史这一章让我们会定位时期、事件和材料。下一章继续走近建筑本身，从院落、木构、用途与交流开始，理解信仰、文字、艺术和日常怎样被人创造与传承；环境是背景，人的实践才是解释的重要部分。",
+  "duration": 19.476,
+  "bytes": 313332,
+  "sha256": "e9aeb9a127afb50e0bc563dc4aa844f1b64cadcd89b8fd71982fe503d25b4070",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:18.144Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

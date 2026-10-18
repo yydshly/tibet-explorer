@@ -1,0 +1,19 @@
+{
+  "id": "0b976699110cba81883866f59d5dd2ca67e9a84abb5dbc94b5b939d088a12c32",
+  "url": "/assets/audio/narration/0b976699110cba81883866f59d5dd2ca67e9a84abb5dbc94b5b939d088a12c32.mp3",
+  "text": "能量收支让我们知道温度不是阳光的简单复制。西藏还有一个突出的条件：高度。下一步保留地表与空气这个尺度，沿高差观察空气和温度的关系，也辨认哪些判断需要实际观测支持。",
+  "duration": 15.48,
+  "bytes": 249396,
+  "sha256": "c057f517047ef9aadc4da2ef4ad19fc439bb3e4e6af17de6a228f7fbfa1e2056",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:11:04.162Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/0b976699110cba81883866f59d5dd2ca67e9a84abb5dbc94b5b939d088a12c32.subtitles.json",
+  "subtitleSha256": "c17a1d93b7942cfd5180023fd4d6053ddde3ba027494210877e634a9ffd13b81",
+  "timingLevel": "word"
+}

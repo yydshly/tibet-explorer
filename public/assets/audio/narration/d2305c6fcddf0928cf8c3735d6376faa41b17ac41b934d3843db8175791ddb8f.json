@@ -1,0 +1,15 @@
+{
+  "id": "d2305c6fcddf0928cf8c3735d6376faa41b17ac41b934d3843db8175791ddb8f",
+  "url": "/assets/audio/narration/d2305c6fcddf0928cf8c3735d6376faa41b17ac41b934d3843db8175791ddb8f.mp3",
+  "text": "在阿里，再换到札达托林，带上阿底峡和十一至十二世纪的交流材料。教师怎样往来，文本怎样被翻译，图像怎样被学习，是可以保存的历史问题，不能由一条古道线代答。",
+  "duration": 15.228,
+  "bytes": 245364,
+  "sha256": "fa98f4113d165ba0e8640144436689c505141fd090cecb063669ec9384b5a286",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:49:18.920Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

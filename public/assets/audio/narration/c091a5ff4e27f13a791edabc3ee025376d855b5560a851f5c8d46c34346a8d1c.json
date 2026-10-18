@@ -1,0 +1,15 @@
+{
+  "id": "c091a5ff4e27f13a791edabc3ee025376d855b5560a851f5c8d46c34346a8d1c",
+  "url": "/assets/audio/narration/c091a5ff4e27f13a791edabc3ee025376d855b5560a851f5c8d46c34346a8d1c.mp3",
+  "text": "水从高处向低处流动，但上下游影响要结合实际水量、季节、生态和社会使用研究。拥有水源位置并不能自动推算政治影响。蓝色路径帮助辨认流向；它没有给出真实流量、分水或跨区域治理的完整结果。",
+  "duration": 18.072,
+  "bytes": 290868,
+  "sha256": "e9b905cf209d097df3b86168a16f7912673f4d5c36b942c48d790c8562277be9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:12.074Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

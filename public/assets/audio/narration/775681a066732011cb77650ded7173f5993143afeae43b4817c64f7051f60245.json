@@ -1,0 +1,19 @@
+{
+  "id": "775681a066732011cb77650ded7173f5993143afeae43b4817c64f7051f60245",
+  "url": "/assets/audio/narration/775681a066732011cb77650ded7173f5993143afeae43b4817c64f7051f60245.mp3",
+  "text": "湿空气沿坡上升，冷却后更容易凝结成云；但有山并不保证每次都下雨，还要有足够水汽和适合的天气条件。日喀则南北地形和区域气候存在差异，画面展示抬升原理，不重放某一天的实测降雨。",
+  "duration": 16.92,
+  "bytes": 272436,
+  "sha256": "709d9d8e4aab9563778f1e61c58e30eab42ed3ed7fa287256223c8de7376e0bb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:48:35.245Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/775681a066732011cb77650ded7173f5993143afeae43b4817c64f7051f60245.subtitles.json",
+  "subtitleSha256": "b46f8784babb06ae76a72dff665a124a123c265dc7e6649aa16cb130f32fc384",
+  "timingLevel": "word"
+}

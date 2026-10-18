@@ -1,0 +1,15 @@
+{
+  "id": "c446b8b18be1493bd7f6ff80df075b3c3d742c92d14a95111ebf8f0f2f466937",
+  "url": "/assets/audio/narration/c446b8b18be1493bd7f6ff80df075b3c3d742c92d14a95111ebf8f0f2f466937.mp3",
+  "text": "现在停在吐蕃与唐朝交往中的会盟案例。八二一年双方在长安会盟，八二二年在拉萨举行会盟，八二三年立碑。画面先显示地点关系，连线表达事件联系，不是在还原参与者行走的精确道路。",
+  "duration": 16.02,
+  "bytes": 258036,
+  "sha256": "6a96f2bff6d6907ac02f607f96c08e6207f4cd48db7fb72213a40ced05114117",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:34.392Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

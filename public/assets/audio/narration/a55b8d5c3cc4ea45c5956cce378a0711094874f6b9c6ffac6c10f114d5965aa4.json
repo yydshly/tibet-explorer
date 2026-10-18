@@ -1,0 +1,15 @@
+{
+  "id": "a55b8d5c3cc4ea45c5956cce378a0711094874f6b9c6ffac6c10f114d5965aa4",
+  "url": "/assets/audio/narration/a55b8d5c3cc4ea45c5956cce378a0711094874f6b9c6ffac6c10f114d5965aa4.mp3",
+  "text": "旅游、科研、产业和保护行动各有目的，也需要相应证据评估影响。规划说明打算做什么，项目状态说明推进到哪一步，实际成效则要继续调查。这里切换主题帮助组织关系，不把示意表面变化当成生态改善数据。",
+  "duration": 18.504,
+  "bytes": 297780,
+  "sha256": "761353622c6b8a705622ad90fe202051c132a03ee1a4923baab9ce3abfdff356",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:19.368Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

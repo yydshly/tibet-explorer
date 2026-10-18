@@ -1,0 +1,15 @@
+{
+  "id": "16b89884656d8ad61b4c8b7f22290e62c95c5c8b5f82fb0c8468260ff6fd0082",
+  "url": "/assets/audio/narration/16b89884656d8ad61b4c8b7f22290e62c95c5c8b5f82fb0c8468260ff6fd0082.mp3",
+  "text": "请把问题切到全年定居，或现代族群来源，再对照研究材料能支持与不能支持的内容。看见活动证据，并不能直接回答所有后续问题。灰色材料位提示仍需核查，不是模型替历史补出的一段空白。",
+  "duration": 17.172,
+  "bytes": 276468,
+  "sha256": "17550e807f2f43ae2a34a9dbba26c55394792127936b77eabb7414e754f404d4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:05:29.535Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

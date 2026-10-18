@@ -1,0 +1,15 @@
+{
+  "id": "399402c6b4af22698564b8141211e9a467f23b653748881800073265663e2b6c",
+  "url": "/assets/audio/narration/399402c6b4af22698564b8141211e9a467f23b653748881800073265663e2b6c.mp3",
+  "text": "阿里先分清狮泉河与札达托林。二〇一〇年报道记录的航空联系，是进入地区的一种方式；去另一个地方仍需地面接续。千年前的教师交流与今天的交通属于不同时期，不能画成同一条路线。",
+  "duration": 15.228,
+  "bytes": 245364,
+  "sha256": "2325b35b810c3a504da07b17b3b3abe07b9a723afde2a28bb793cb38d7d8c70d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:57:26.347Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

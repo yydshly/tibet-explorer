@@ -1,0 +1,15 @@
+{
+  "id": "988528652b1e2bb2d6805b5b17520139f3c0dd1de6edd69fcdaa9725cbe3a6ad",
+  "url": "/assets/audio/narration/988528652b1e2bb2d6805b5b17520139f3c0dd1de6edd69fcdaa9725cbe3a6ad.mp3",
+  "text": "仍看同一片地形。林芝附近的青色流点沿坡面下降，遇到局部低处便停下来。有水汽和地表水，还不能直接说明居民怎样取水；这段先分清水往哪里去，与人能否使用水。",
+  "duration": 15.984,
+  "bytes": 257460,
+  "sha256": "ac8d2195c4172350894e7bd934afebb15bf4c15b89253b9cdaf7ad09c45c0e52",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:19:18.395Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

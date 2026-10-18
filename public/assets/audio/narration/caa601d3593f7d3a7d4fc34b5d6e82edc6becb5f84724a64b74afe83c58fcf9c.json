@@ -1,0 +1,15 @@
+{
+  "id": "caa601d3593f7d3a7d4fc34b5d6e82edc6becb5f84724a64b74afe83c58fcf9c",
+  "url": "/assets/audio/narration/caa601d3593f7d3a7d4fc34b5d6e82edc6becb5f84724a64b74afe83c58fcf9c.mp3",
+  "text": "地表受热不均，参与形成气压差，空气便在气压差推动下流动。看上升、向外输送、下沉与返回怎样连起来；地球自转还使运动方向偏转。空气同时搬运热量与水汽：水从地表蒸发，随风移动，湿空气上升冷却时才可能成云。这是大尺度平均关系。",
+  "duration": 23.292,
+  "bytes": 374388,
+  "sha256": "ea596f9ebda53aedb72726bba779536b3b707d62720c98684cf9e9325c60875e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T07:31:44.343Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

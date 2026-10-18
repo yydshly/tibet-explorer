@@ -1,0 +1,15 @@
+{
+  "id": "bc2a8f46913cd03f8d1f988c6b6b61979375d9c6332d9fc332939e5df6a65a38",
+  "url": "/assets/audio/narration/bc2a8f46913cd03f8d1f988c6b6b61979375d9c6332d9fc332939e5df6a65a38.mp3",
+  "text": "先在西藏整体地图找到色林错，再读有年份的研究数值。朱立平等二〇一九年的研究总结报告：一九七六年湖面面积为一千六百六十七平方公里，二〇一七年为两千三百八十九平方公里。这里比较的是湖面面积。",
+  "duration": 18.648,
+  "bytes": 300084,
+  "sha256": "d3e00c5a0d76ea8d60eb7bd1479bfdca9bce16c4b1f539e5be398ed6fb464d06",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:50:23.372Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

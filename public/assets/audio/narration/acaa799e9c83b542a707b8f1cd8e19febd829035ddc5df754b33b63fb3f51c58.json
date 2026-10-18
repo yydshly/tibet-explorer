@@ -1,0 +1,15 @@
+{
+  "id": "acaa799e9c83b542a707b8f1cd8e19febd829035ddc5df754b33b63fb3f51c58",
+  "url": "/assets/audio/narration/acaa799e9c83b542a707b8f1cd8e19febd829035ddc5df754b33b63fb3f51c58.mp3",
+  "text": "认识西藏，我们先从地球出发。纬度决定太阳照射的方式，高度和山脉又改变温度与水汽的路径。接下来，把视线沿着山谷移动，看看自然条件如何与人的生活相遇。",
+  "duration": 13.86,
+  "bytes": 223476,
+  "sha256": "52488a2cdae499dd5a83f48aa73c160f1a21202378ca934f6da244fec5315cd3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:35:56.397Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

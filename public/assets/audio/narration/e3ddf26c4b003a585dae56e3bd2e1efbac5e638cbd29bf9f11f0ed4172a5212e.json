@@ -1,0 +1,19 @@
+{
+  "id": "e3ddf26c4b003a585dae56e3bd2e1efbac5e638cbd29bf9f11f0ed4172a5212e",
+  "url": "/assets/audio/narration/e3ddf26c4b003a585dae56e3bd2e1efbac5e638cbd29bf9f11f0ed4172a5212e.mp3",
+  "text": "2014年8月16日，首趟拉日铁路客车从拉萨驶向日喀则，城际往来增加了铁路这一种方式。真实车站在城区南侧，车站、城区与寺院是不同地点；运输演示表示联系改变，连接的示意轨迹不等于真实铁路线路。",
+  "duration": 18.9,
+  "bytes": 304116,
+  "sha256": "bc34ec5d06c9011e18f96869315a43f68ec82804060786e610510665eacd18e0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:50:07.300Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e3ddf26c4b003a585dae56e3bd2e1efbac5e638cbd29bf9f11f0ed4172a5212e.subtitles.json",
+  "subtitleSha256": "87818133eda62ec671536df6f9e4dd9064dde5da204be15a371d517017a09200",
+  "timingLevel": "word"
+}

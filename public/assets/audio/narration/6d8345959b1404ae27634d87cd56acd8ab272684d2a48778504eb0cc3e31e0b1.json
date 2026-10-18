@@ -1,0 +1,15 @@
+{
+  "id": "6d8345959b1404ae27634d87cd56acd8ab272684d2a48778504eb0cc3e31e0b1",
+  "url": "/assets/audio/narration/6d8345959b1404ae27634d87cd56acd8ab272684d2a48778504eb0cc3e31e0b1.mp3",
+  "text": "再看西部的狮泉河。盆地里可以找到相对平缓的地面，走向周围高地又会改变通行条件。阿里还有湖盆和峡谷，不能用驻地周围这一条试线概括整个地区。",
+  "duration": 14.22,
+  "bytes": 229236,
+  "sha256": "0143c7ccd8209c6c58a7ba9617716f5708e0b17ac6e0c56a304703a286e9d137",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:19:02.607Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

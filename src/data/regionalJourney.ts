@@ -1,0 +1,11 @@
+import {westernRegionalJourneys,westernRegionalSources} from './regionalJourneyWest';
+import {easternRegionalJourneys,easternRegionalSources} from './regionalJourneyEast';
+import type {RegionalJourney,RegionalJourneySource} from './regionalJourneyTypes';
+import {regionalSpatialNarration,regionalSpatialNarrationSources} from './regionalSpatialNarration';
+import {westernRegionalSpatialSources} from './regionalSpatialWest';
+import {easternSpatialSources} from './regionalSpatialEast';
+export * from './regionalJourneyTypes';
+export const regionalJourneys:RegionalJourney[]=[...westernRegionalJourneys,...easternRegionalJourneys].map(journey=>({...journey,stages:journey.stages.map(stage=>({...stage,cues:stage.id==='history'?[...stage.cues,regionalSpatialNarration[journey.cityId].history]:stage.id==='connections'?[...stage.cues.slice(0,2),regionalSpatialNarration[journey.cityId].connections,...stage.cues.slice(2)]:stage.cues}))}));
+export const regionalJourneySources:RegionalJourneySource[]=[...westernRegionalSources,...easternRegionalSources,...westernRegionalSpatialSources,...easternSpatialSources,...regionalSpatialNarrationSources];
+export const getRegionalJourney=(id:string)=>regionalJourneys.find(item=>item.cityId===id);
+export const regionalJourneyNarrationCues=regionalJourneys.flatMap(journey=>journey.stages.flatMap(stage=>stage.cues.map(cue=>({id:cue.id,narration:cue.text,title:`${journey.title} · ${stage.title}`,stepId:`REGION-${journey.cityId}`,chapterId:'regional'}))));

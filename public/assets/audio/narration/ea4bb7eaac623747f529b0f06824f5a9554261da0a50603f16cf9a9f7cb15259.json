@@ -1,0 +1,19 @@
+{
+  "id": "ea4bb7eaac623747f529b0f06824f5a9554261da0a50603f16cf9a9f7cb15259",
+  "url": "/assets/audio/narration/ea4bb7eaac623747f529b0f06824f5a9554261da0a50603f16cf9a9f7cb15259.mp3",
+  "text": "拉萨城区位于较平缓的河谷，但谷底仍在高原上。把谷底与周围山地一起看，平缓就不再等于海拔低。",
+  "duration": 9.072,
+  "bytes": 146868,
+  "sha256": "25a5df990c36f4cb01bf6131da161d4d2a811d3b21c48c69086517e200cd6382",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:19:32.288Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ea4bb7eaac623747f529b0f06824f5a9554261da0a50603f16cf9a9f7cb15259.subtitles.json",
+  "subtitleSha256": "120d16140f40f5feacf4623e946185dfe015bdc8c84ebdd34c0957ea0e092680",
+  "timingLevel": "word"
+}

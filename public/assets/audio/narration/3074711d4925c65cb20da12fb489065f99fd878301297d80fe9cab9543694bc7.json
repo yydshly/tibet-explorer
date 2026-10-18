@@ -1,0 +1,19 @@
+{
+  "id": "3074711d4925c65cb20da12fb489065f99fd878301297d80fe9cab9543694bc7",
+  "url": "/assets/audio/narration/3074711d4925c65cb20da12fb489065f99fd878301297d80fe9cab9543694bc7.mp3",
+  "text": "历史事件让我们认识了制度与地方，水的联系则穿过不同地区。以雅鲁藏布江为例，降雨、冰雪消融与土壤地下水过程都参与来水。先把完整山地、支沟和干流放在一起，再看这些地方为什么需要共同理解上游与下游。",
+  "duration": 20.52,
+  "bytes": 330036,
+  "sha256": "9f81d0a6378ee1f7c01265566182381259f4ea18a8ac75d7340626cfe690b671",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:10:57.941Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3074711d4925c65cb20da12fb489065f99fd878301297d80fe9cab9543694bc7.subtitles.json",
+  "subtitleSha256": "f427f4dbe66a8a64afc3d6476ff387c22f465d9e727a3de06fa3bc36032d303c",
+  "timingLevel": "word"
+}

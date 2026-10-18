@@ -1,0 +1,15 @@
+{
+  "id": "608566c47bc7cc776e1ea49785a9d9538e1031795bbebae36c60a6a83af9520d",
+  "url": "/assets/audio/narration/608566c47bc7cc776e1ea49785a9d9538e1031795bbebae36c60a6a83af9520d.mp3",
+  "text": "沿同一坡面看人从取水位置走到使用地点，再看通行、工作地块和房屋怎样接续。水不会自行流向高处，地面较缓也不等于可以随处使用。技术、设施和组织把自然条件接到生活，具体地区还需要季节、土壤、权利与人的资料。",
+  "duration": 22.716,
+  "bytes": 365172,
+  "sha256": "fce1a109ce8c274f1773e4413d7b43f26bee20de5088c68daa62145226f9896e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:01:34.669Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

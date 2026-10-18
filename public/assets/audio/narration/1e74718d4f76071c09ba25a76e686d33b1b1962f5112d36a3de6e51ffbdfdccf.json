@@ -1,0 +1,15 @@
+{
+  "id": "1e74718d4f76071c09ba25a76e686d33b1b1962f5112d36a3de6e51ffbdfdccf",
+  "url": "/assets/audio/narration/1e74718d4f76071c09ba25a76e686d33b1b1962f5112d36a3de6e51ffbdfdccf.mp3",
+  "text": "从史前材料退回更长的时间，我们把全史作为九个阅读入口。时期之间涉及政治组织、社会生活、宗教交流和对外关系的变化。今天底图用于定位，时期切换用于查阅材料，不能把它看成已完成的古代城市复原。",
+  "duration": 19.152,
+  "bytes": 308148,
+  "sha256": "6df51931e0b720fcebdaebced3b9d83e6f942aa8390ccb45e823d8eb8a5fd6f3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:07.796Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

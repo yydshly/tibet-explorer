@@ -1,0 +1,15 @@
+{
+  "id": "adbc957ea19f984433c17b5be109bf20323f8d46443acc2da7fb5b33ff9343d3",
+  "url": "/assets/audio/narration/adbc957ea19f984433c17b5be109bf20323f8d46443acc2da7fb5b33ff9343d3.mp3",
+  "text": "切到拉萨会盟，再把目光放到立碑。碑以藏、汉文字留下盟文与参与者等信息，为研究交往提供具体材料。事件年代与立碑年代要分开，碑文能说明什么，也应结合文本、保存和研究背景继续阅读。",
+  "duration": 18.9,
+  "bytes": 304116,
+  "sha256": "36e14148f240e7c051328d622c45ea592f24727217daf5293bf5364fafcb8394",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:40.462Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

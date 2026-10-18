@@ -1,0 +1,15 @@
+{
+  "id": "6054a3109367f9277a87e1d432fb16117bc65290fabe0b9781b6fd6e63f9eb88",
+  "url": "/assets/audio/narration/6054a3109367f9277a87e1d432fb16117bc65290fabe0b9781b6fd6e63f9eb88.mp3",
+  "text": "沿山脊到坡面，再沿河道辨认水从哪里来、往哪里去。景观既是一个对象，也是周围过程的组成部分。模型用来理解这些空间关系；具体山峰、峡谷和湖泊的形状与尺度，应继续查阅真实地图和地点资料。",
+  "duration": 18.576,
+  "bytes": 298932,
+  "sha256": "a3e28e6ba52467f0a395eb5920be2616ccb5e9958691b508d8078915da7f32f3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:55:32.882Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3182134b214e6d426066ffe3caf476cf077e83eac3d550270386c2463ac78bb4",
+  "url": "/assets/audio/narration/3182134b214e6d426066ffe3caf476cf077e83eac3d550270386c2463ac78bb4.mp3",
+  "text": "切到五带，观察回归线与极圈怎样划分照射背景。拉萨附近处于北温带，但这个名字不能直接告诉我们当地温度。西藏自治区是行政范围，青藏高原是自然范围，历史中的地区还要按时代研究。",
+  "duration": 16.74,
+  "bytes": 269556,
+  "sha256": "914b326bb5bbc88836289cd2b571d2661cf2a506d56e788bb77192ea78106227",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:11.279Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

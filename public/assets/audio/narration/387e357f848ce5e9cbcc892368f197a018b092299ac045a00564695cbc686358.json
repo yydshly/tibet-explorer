@@ -1,0 +1,15 @@
+{
+  "id": "387e357f848ce5e9cbcc892368f197a018b092299ac045a00564695cbc686358",
+  "url": "/assets/audio/narration/387e357f848ce5e9cbcc892368f197a018b092299ac045a00564695cbc686358.mp3",
+  "text": "展开剖面后，院落、立柱、梁与墙体之间的关系更清楚。材料选择受到获取、工艺和用途影响，空间安排还与制度、信仰及后续改建有关。相似外观未必有相同功能，不能只凭颜色判断传统或年代。",
+  "duration": 18.432,
+  "bytes": 296628,
+  "sha256": "94f9bb42cfcd678137bdd42f9b6469d020bf9eb569c701cf6949824644a5c136",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:30.418Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

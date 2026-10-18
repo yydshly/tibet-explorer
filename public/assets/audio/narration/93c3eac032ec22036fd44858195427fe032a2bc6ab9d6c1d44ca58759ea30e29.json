@@ -1,0 +1,19 @@
+{
+  "id": "93c3eac032ec22036fd44858195427fe032a2bc6ab9d6c1d44ca58759ea30e29",
+  "url": "/assets/audio/narration/93c3eac032ec22036fd44858195427fe032a2bc6ab9d6c1d44ca58759ea30e29.mp3",
+  "text": "新的联系会带来不同用途，地方的文化、生态和日常也需要持续维护。接下来回到拉萨的布达拉宫、大昭寺和罗布林卡，用具体保护材料讨论：怎样让人继续使用地方，同时照顾实物、环境与长久价值。",
+  "duration": 18.828,
+  "bytes": 302964,
+  "sha256": "926325150f445506703284c07c70b3bb267c68f7ec47551f61c35087ba9bd74d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:12:58.032Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/93c3eac032ec22036fd44858195427fe032a2bc6ab9d6c1d44ca58759ea30e29.subtitles.json",
+  "subtitleSha256": "1b22984b44aab9136be3c8b92df21b451fb82727bc319046bd048b46cc2a301a",
+  "timingLevel": "word"
+}

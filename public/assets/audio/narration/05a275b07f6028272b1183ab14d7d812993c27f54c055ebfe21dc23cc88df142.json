@@ -1,0 +1,19 @@
+{
+  "id": "05a275b07f6028272b1183ab14d7d812993c27f54c055ebfe21dc23cc88df142",
+  "url": "/assets/audio/narration/05a275b07f6028272b1183ab14d7d812993c27f54c055ebfe21dc23cc88df142.mp3",
+  "text": "博物馆材料记载阿底峡一〇四二年入藏，并与托林相联系。",
+  "duration": 5.04,
+  "bytes": 82356,
+  "sha256": "873b194c9425065d8de41f81f1fd9d88123649876bce7202e2147424fa3dfe02",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:18:52.064Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/05a275b07f6028272b1183ab14d7d812993c27f54c055ebfe21dc23cc88df142.subtitles.json",
+  "subtitleSha256": "05df306708eb10a56a159a7a2f2d55bf7906b37f2164331c100d30fe27f18197",
+  "timingLevel": "word"
+}

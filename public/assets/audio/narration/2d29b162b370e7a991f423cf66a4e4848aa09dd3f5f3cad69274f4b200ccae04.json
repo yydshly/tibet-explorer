@@ -1,0 +1,19 @@
+{
+  "id": "2d29b162b370e7a991f423cf66a4e4848aa09dd3f5f3cad69274f4b200ccae04",
+  "url": "/assets/audio/narration/2d29b162b370e7a991f423cf66a4e4848aa09dd3f5f3cad69274f4b200ccae04.mp3",
+  "text": "先把西藏全域留在眼前。中南部的拉萨、日喀则和山南，沿河谷认识城市与生产；东部昌都和东南部林芝，高山峡谷组织不同来路；北部那曲与西部阿里，又有高原、草地、湖盆和宽谷。七市地帮助找到入口，自然环境并不沿行政线整齐分开。",
+  "duration": 21.816,
+  "bytes": 350772,
+  "sha256": "9a956c81677712995fba20c5dabfa26600c3043d5627036f6af6da69aecee094",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:42:52.072Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/2d29b162b370e7a991f423cf66a4e4848aa09dd3f5f3cad69274f4b200ccae04.subtitles.json",
+  "subtitleSha256": "b7cd55804a2abbe1dff52941a626f7cf464b97cc42b65d1ad5a999f5e8f706ae",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "42c47fc9ae9bff499bcddc94217a6101c7cc199972add993057cd72bd78fe54a",
+  "url": "/assets/audio/narration/42c47fc9ae9bff499bcddc94217a6101c7cc199972add993057cd72bd78fe54a.mp3",
+  "text": "狮泉河的报道则记录护林员开闸引水、安排冬灌。三地都要靠人的工作，再沿所选城市进入文化与历史。",
+  "duration": 9.432,
+  "bytes": 152628,
+  "sha256": "2937cdb4175200220a94af149da6e0c268f40d69f16ef708ec6f267b987ba2a8",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T09:28:37.037Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

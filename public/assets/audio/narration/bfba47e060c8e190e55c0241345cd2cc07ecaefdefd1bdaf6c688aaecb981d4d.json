@@ -1,0 +1,19 @@
+{
+  "id": "bfba47e060c8e190e55c0241345cd2cc07ecaefdefd1bdaf6c688aaecb981d4d",
+  "url": "/assets/audio/narration/bfba47e060c8e190e55c0241345cd2cc07ecaefdefd1bdaf6c688aaecb981d4d.mp3",
+  "text": "会盟案例说明了事件怎样成为今天可读的材料。进入近现代制度变化时，也要分开文件、事件、实施和地方生活，不能从一个年份自动推出所有人的经历。",
+  "duration": 13.824,
+  "bytes": 222900,
+  "sha256": "78ed1f999d066bf87a894f08551b900802243ba7d7d0ad1473e1afc68cd41251",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:38:33.733Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/bfba47e060c8e190e55c0241345cd2cc07ecaefdefd1bdaf6c688aaecb981d4d.subtitles.json",
+  "subtitleSha256": "4bed78d472f20e6a0fb1a49f3905a626473d97ed97183abd154766e7ea99e06b",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4fe1d2a706f07f9322b394c09ca2434973f529e840cf345ba5ce9fc211a87f21",
+  "url": "/assets/audio/narration/4fe1d2a706f07f9322b394c09ca2434973f529e840cf345ba5ce9fc211a87f21.mp3",
+  "text": "请展开剖面，再选择梁柱或院落，对照内部连接与人的通行位置。旁边的遗产资料可以核对真实建筑的材料和空间用途。模型只说明怎么辨认关系，不能凭一面厚墙替所有地方给出同一种功能解释。",
+  "duration": 17.244,
+  "bytes": 277620,
+  "sha256": "1db11db33e4074a4e606645fb172b3daef65013c9a194684eae6942e3fbe3bce",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:57.185Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "31eadb4632a9fb0813bd269045b05c7bc0329911a01535d03bb9950c94451cc2",
+  "url": "/assets/audio/narration/31eadb4632a9fb0813bd269045b05c7bc0329911a01535d03bb9950c94451cc2.mp3",
+  "text": "在流域与通道之后，我们可以更具体地理解战略意义。一个地方通过生态水系、交通、文化、国家关系与公共治理联系更大范围。先选择议题，再识别对象和材料日期，避免把复杂关系归结为一个地形结论。",
+  "duration": 18.144,
+  "bytes": 292020,
+  "sha256": "f1b84c40a0094074df3c1d58cbc96aa0cf21ae8a4b961300964e21b0c57678b9",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:56.158Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

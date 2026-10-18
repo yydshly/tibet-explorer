@@ -1,0 +1,19 @@
+{
+  "id": "e0a669ad9774e7ef2e626ad8ef8924f454552e3ed0eb5829de3179eea553a3e5",
+  "url": "/assets/audio/narration/e0a669ad9774e7ef2e626ad8ef8924f454552e3ed0eb5829de3179eea553a3e5.mp3",
+  "text": "从形成过程回到今天，先把整片地形留在眼前。南侧低地、喜马拉雅和更北的高原内部，是连续的地面。只看一座山，难以感觉这片地方究竟有多高；接下来沿同一条南北线，从低地走过山系，再进入高原内部，用共同的海平面基准比较。",
+  "duration": 22.032,
+  "bytes": 354228,
+  "sha256": "173da0952e4d6f7af4880c37cfbe428996adafb8e8a3bf10b292d76cfb80b190",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:32:34.323Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e0a669ad9774e7ef2e626ad8ef8924f454552e3ed0eb5829de3179eea553a3e5.subtitles.json",
+  "subtitleSha256": "c9c699766800191e5b2c7ee45540b82a43e0ecd55e5300358e41c6d219f7c7c9",
+  "timingLevel": "word"
+}

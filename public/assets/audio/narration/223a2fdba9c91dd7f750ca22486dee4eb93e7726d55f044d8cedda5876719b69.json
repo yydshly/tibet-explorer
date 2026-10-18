@@ -1,0 +1,15 @@
+{
+  "id": "223a2fdba9c91dd7f750ca22486dee4eb93e7726d55f044d8cedda5876719b69",
+  "url": "/assets/audio/narration/223a2fdba9c91dd7f750ca22486dee4eb93e7726d55f044d8cedda5876719b69.mp3",
+  "text": "仍在狮泉河盆地，先看河水与需要用水的林地。二〇二三年的报道中，护林员伦珠把挡水板放进水渠，再打开闸门，让水进入林地。入秋降水减少，冬灌需要及时安排，渠道也要持续管护。切换教学条件，比较有水和能够按需要用水的差别，再把这个问题带往历史。",
+  "duration": 24.552,
+  "bytes": 394548,
+  "sha256": "3e7ecebd5ec61937103af290a88dae52fc62287c46b0bc4646309fb3df4c5589",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:45:48.507Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

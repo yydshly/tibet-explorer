@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-18",
+  "scope": "Bounded six-chapter acceptance and report entry only",
+  "checks": {
+    "typecheck": "passed",
+    "reportEvidenceAndAnchors": "passed: 6 chapters, 4 issues, 12 evidence images",
+    "browserNavigation": "passed: overview to report, report to home, home to report, report to overview; paused overview restored",
+    "productionBuild": "passed",
+    "reportEvidenceDisclosure": "passed: history evidence expanded and images displayed"
+  },
+  "limits": [
+    "No repeated full playback",
+    "No full audio synchronization revalidation",
+    "No new participant comprehension test",
+    "No comprehensive external historical source re-audit"
+  ],
+  "verdict": "Not accepted overall: 3 functionally basic, 2 partial, 1 failed",
+  "pending": [
+    "M2 history causal case",
+    "M1 life service result",
+    "M3 observation handoff",
+    "M4 bounded comprehension acceptance"
+  ]
+}

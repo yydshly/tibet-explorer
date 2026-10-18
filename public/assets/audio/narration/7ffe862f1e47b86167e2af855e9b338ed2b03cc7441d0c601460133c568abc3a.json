@@ -1,0 +1,19 @@
+{
+  "id": "7ffe862f1e47b86167e2af855e9b338ed2b03cc7441d0c601460133c568abc3a",
+  "url": "/assets/audio/narration/7ffe862f1e47b86167e2af855e9b338ed2b03cc7441d0c601460133c568abc3a.mp3",
+  "text": "现在把旅行变成观察：先在城区辨认河谷与跨河联系，再从博物馆材料读卡若生活，继续比较强巴林寺的年代和用途。官方文旅资料把这些地点联系起来；按当前开放与交通安排核对后，再回到地图解释看到的差异。",
+  "duration": 19.296,
+  "bytes": 310452,
+  "sha256": "313fa5a7e00704d7f7073d057c272f184e510a6707db1910481a2c4c90db5e10",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:54:12.723Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7ffe862f1e47b86167e2af855e9b338ed2b03cc7441d0c601460133c568abc3a.subtitles.json",
+  "subtitleSha256": "5388b8b26a29dad165fd5245496a9e6fb2eee4c10eaffc6a260b38e7e54df08f",
+  "timingLevel": "word"
+}

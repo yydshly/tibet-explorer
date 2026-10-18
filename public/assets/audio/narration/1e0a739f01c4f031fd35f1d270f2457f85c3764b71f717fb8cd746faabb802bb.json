@@ -1,0 +1,15 @@
+{
+  "id": "1e0a739f01c4f031fd35f1d270f2457f85c3764b71f717fb8cd746faabb802bb",
+  "url": "/assets/audio/narration/1e0a739f01c4f031fd35f1d270f2457f85c3764b71f717fb8cd746faabb802bb.mp3",
+  "text": "从地球进入亚洲，先找到中国，再看它与邻近大陆和海洋的相对位置。印度洋在南侧，广阔的大陆向周围延伸。镜头靠近时，大陆、国家和地区依次成为观察重点；我们保留海陆方向，让西藏始终处在更大的环境中。",
+  "duration": 19.692,
+  "bytes": 316788,
+  "sha256": "0da8863763e9fab690814ac99352f286b1e400ae1dd902ecdec2ff902d8232a4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:18:44.054Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "7996f79b246d20bc8a4394f7261c59bf8b3383fd949ff8fdd7c4a4ceb6a55616",
+  "url": "/assets/audio/narration/7996f79b246d20bc8a4394f7261c59bf8b3383fd949ff8fdd7c4a4ceb6a55616.mp3",
+  "text": "最后保存自己的观察问题：从主通道到地方服务，还需要什么接续？把选中的林芝或鲁朗候选站加入计划，继续修改顺序和备注；路况、接驳与访问日期留待核实。",
+  "duration": 15.48,
+  "bytes": 249396,
+  "sha256": "e691a03fd156367915791cdefc7289f4bb77d31013da453bdcc0c05dff7e420b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:44:52.747Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "f73b1f9241f5259fa1f56437a2991a9deb5ecc3f49703cf0264ed37d58cae40f",
+  "url": "/assets/audio/narration/f73b1f9241f5259fa1f56437a2991a9deb5ecc3f49703cf0264ed37d58cae40f.mp3",
+  "text": "切换教学条件，比较有水和能够按需要用水的差别，再把这个问题带往历史。",
+  "duration": 6.084,
+  "bytes": 99060,
+  "sha256": "0f5a47522bfe293a20f9b686cfb535234215e16263a0a84aec4f8d3288e2df72",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:58:07.520Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

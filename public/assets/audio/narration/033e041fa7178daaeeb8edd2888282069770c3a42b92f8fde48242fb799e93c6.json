@@ -1,0 +1,19 @@
+{
+  "id": "033e041fa7178daaeeb8edd2888282069770c3a42b92f8fde48242fb799e93c6",
+  "url": "/assets/audio/narration/033e041fa7178daaeeb8edd2888282069770c3a42b92f8fde48242fb799e93c6.mp3",
+  "text": "最后看盆地中相对低缓的空间。用水与管护参与生活；接着移到另一处地方，札达和托林，再读历史。",
+  "duration": 9.936,
+  "bytes": 160692,
+  "sha256": "984ba0778afbe7ff2bb14e8ec7c764bed97f1e80d374c0beaa1d3bae7edf5c46",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:18:39.731Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/033e041fa7178daaeeb8edd2888282069770c3a42b92f8fde48242fb799e93c6.subtitles.json",
+  "subtitleSha256": "59d73688bca886d89d8c3a117bf3ce89a0a11a8c09edf2e19c1f3c666b1b0d17",
+  "timingLevel": "word"
+}

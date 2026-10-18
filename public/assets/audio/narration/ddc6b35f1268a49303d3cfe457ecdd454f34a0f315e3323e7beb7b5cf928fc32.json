@@ -1,0 +1,15 @@
+{
+  "id": "ddc6b35f1268a49303d3cfe457ecdd454f34a0f315e3323e7beb7b5cf928fc32",
+  "url": "/assets/audio/narration/ddc6b35f1268a49303d3cfe457ecdd454f34a0f315e3323e7beb7b5cf928fc32.mp3",
+  "text": "西藏的位置找到了，但一个地方并不只与边界以内有关。下一步保留它的位置，把视线放到南侧海洋、周边山地和高原内部。先认清范围与外部来路，随后再解释这片高地怎样形成、这些条件怎样发挥作用。",
+  "duration": 17.676,
+  "bytes": 284532,
+  "sha256": "119be0b05e6030fb7699e180ab3fa814fa0a0f0614fd8ca2aa72a460cbb3d79e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:18:56.033Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

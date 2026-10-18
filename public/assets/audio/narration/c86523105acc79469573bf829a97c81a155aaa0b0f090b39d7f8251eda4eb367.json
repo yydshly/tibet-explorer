@@ -1,0 +1,15 @@
+{
+  "id": "c86523105acc79469573bf829a97c81a155aaa0b0f090b39d7f8251eda4eb367",
+  "url": "/assets/audio/narration/c86523105acc79469573bf829a97c81a155aaa0b0f090b39d7f8251eda4eb367.mp3",
+  "text": "回到林芝的工布区域，保护需要传承人、社区演出队和学习者参与。山谷提供背景，人的组织与学习延续文化。接下来换到米林彩门村，看交通怎样接到地方使用。",
+  "duration": 15.624,
+  "bytes": 251700,
+  "sha256": "4612638aedea0c5b810b0cc3b7737dabdd369f6c13d45070281a1198dcb4eb1e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:07.808Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

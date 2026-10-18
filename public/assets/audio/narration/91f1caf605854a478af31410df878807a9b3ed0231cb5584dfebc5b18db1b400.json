@@ -1,0 +1,19 @@
+{
+  "id": "91f1caf605854a478af31410df878807a9b3ed0231cb5584dfebc5b18db1b400",
+  "url": "/assets/audio/narration/91f1caf605854a478af31410df878807a9b3ed0231cb5584dfebc5b18db1b400.mp3",
+  "text": "请选择文本工作桌，再阅读真实交流材料的年代、人物与作品身份。1042年的行程材料和后来绘制的画像不是同一时间形成。分开传入、学习与使用，才能避免把一条连线当成完整的宗教传播史。",
+  "duration": 15.84,
+  "bytes": 255156,
+  "sha256": "732679d748261d6ae3443e00c44931c88d3ead2da5aedac6476d228ae07dddea",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:41:20.836Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/91f1caf605854a478af31410df878807a9b3ed0231cb5584dfebc5b18db1b400.subtitles.json",
+  "subtitleSha256": "a3031d4e340a3d8e4b2499fbfbda1aa37d91cf7373c273d5b4d7f5fbce2abe2f",
+  "timingLevel": "word"
+}

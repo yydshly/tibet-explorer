@@ -1,0 +1,15 @@
+{
+  "id": "b7e700fb6a8b5cb7e2b34a2cb4644d7e63ee8acfdf5e4ea9e5f8938f0746d47f",
+  "url": "/assets/audio/narration/b7e700fb6a8b5cb7e2b34a2cb4644d7e63ee8acfdf5e4ea9e5f8938f0746d47f.mp3",
+  "text": "请把进度退到起点，再慢慢推到后段，观察气流、水汽、云与雨怎样先后出现。你也可以转到侧面寻找上升位置。最后切水循环层看看地表去向：降水只是水在空气与地表之间的一次转移。",
+  "duration": 18.108,
+  "bytes": 291444,
+  "sha256": "ebc1ce75d711bd98a34d58daa07f4c20d322d28941039ee30e33984e53dcb71b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:14.064Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

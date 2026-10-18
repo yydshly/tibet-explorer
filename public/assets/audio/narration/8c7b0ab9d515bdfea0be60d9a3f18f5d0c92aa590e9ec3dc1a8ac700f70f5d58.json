@@ -1,0 +1,19 @@
+{
+  "id": "8c7b0ab9d515bdfea0be60d9a3f18f5d0c92aa590e9ec3dc1a8ac700f70f5d58",
+  "url": "/assets/audio/narration/8c7b0ab9d515bdfea0be60d9a3f18f5d0c92aa590e9ec3dc1a8ac700f70f5d58.mp3",
+  "text": "空气上升进入较低气压环境，可以膨胀并冷却；周围空气的垂直温度分布，却是另一种需要观测的状态。云、湿度、地表和天气都会参与其中。画面用高度参照帮助理解，不提供某处今天的真实气温。",
+  "duration": 18.144,
+  "bytes": 292020,
+  "sha256": "849d100b275d891ee047019a72cd6dd53dae4e5e19a54a2872936e889a2fec52",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:11:16.830Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8c7b0ab9d515bdfea0be60d9a3f18f5d0c92aa590e9ec3dc1a8ac700f70f5d58.subtitles.json",
+  "subtitleSha256": "02a62eed9152418fc50b2e8b0db7cb3c53a2573d8f6d9249b0d1ebc6e7026787",
+  "timingLevel": "word"
+}

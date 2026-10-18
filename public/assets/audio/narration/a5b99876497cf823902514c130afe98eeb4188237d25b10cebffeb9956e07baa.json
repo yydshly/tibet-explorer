@@ -1,0 +1,19 @@
+{
+  "id": "a5b99876497cf823902514c130afe98eeb4188237d25b10cebffeb9956e07baa",
+  "url": "/assets/audio/narration/a5b99876497cf823902514c130afe98eeb4188237d25b10cebffeb9956e07baa.mp3",
+  "text": "藏、汉、印的建筑艺术联系，说明文化形成包含人的来往与知识传播。寺院资料中的僧人讲经、建筑和文物需要分别阅读；山川解释通行与生活的条件，却不能单独解释宗教制度和艺术选择。文化不是从海拔直接推导出来的。",
+  "duration": 18.612,
+  "bytes": 299508,
+  "sha256": "1c29ae3cb989cc2b4490123ff0a1bd6a5ff56b495fa3f35f110c6ef481dc3647",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:52:17.513Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a5b99876497cf823902514c130afe98eeb4188237d25b10cebffeb9956e07baa.subtitles.json",
+  "subtitleSha256": "b7a6bde273a53a45809a88510e1ae4610d9f46f08e464aa0e3f1bdcbc4470ec9",
+  "timingLevel": "word"
+}

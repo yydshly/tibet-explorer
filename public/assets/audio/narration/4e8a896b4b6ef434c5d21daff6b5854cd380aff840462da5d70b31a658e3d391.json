@@ -1,0 +1,19 @@
+{
+  "id": "4e8a896b4b6ef434c5d21daff6b5854cd380aff840462da5d70b31a658e3d391",
+  "url": "/assets/audio/narration/4e8a896b4b6ef434c5d21daff6b5854cd380aff840462da5d70b31a658e3d391.mp3",
+  "text": "雨落到坡面后，一部分汇流进入支沟，再到干支流汇合处和下游使用地点。王磊团队自二〇一七年起加强雅鲁藏布江多圈层同期监测，把气象、径流、冰川与地温等资料联系起来。看见水路，只能说明方向；水源贡献还要由观测和模型判断。",
+  "duration": 22.104,
+  "bytes": 355380,
+  "sha256": "66344b068e558859384ef072d16231453cf7cf7c3d669e0fd10443229aecfe9a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:11:04.381Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4e8a896b4b6ef434c5d21daff6b5854cd380aff840462da5d70b31a658e3d391.subtitles.json",
+  "subtitleSha256": "ce6bf3a35da0e8dec9c59aaada1468a4384e6b45a44312f4aee93281a9d8b115",
+  "timingLevel": "word"
+}

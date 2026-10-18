@@ -1,0 +1,15 @@
+{
+  "id": "5fd70cd9eb16be5ec558927149805cba62cac82979bb375a6493c329a7fb23b9",
+  "url": "/assets/audio/narration/5fd70cd9eb16be5ec558927149805cba62cac82979bb375a6493c329a7fb23b9.mp3",
+  "text": "仍在狮泉河盆地，先看河水与需要用水的林地。",
+  "duration": 3.996,
+  "bytes": 65652,
+  "sha256": "e0482484780f752e4c3c6d5fd73d64319c70402596b591565ea5185208865a97",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:54.777Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

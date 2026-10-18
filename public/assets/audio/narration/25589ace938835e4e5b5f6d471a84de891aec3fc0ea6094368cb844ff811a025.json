@@ -1,0 +1,15 @@
+{
+  "id": "25589ace938835e4e5b5f6d471a84de891aec3fc0ea6094368cb844ff811a025",
+  "url": "/assets/audio/narration/25589ace938835e4e5b5f6d471a84de891aec3fc0ea6094368cb844ff811a025.mp3",
+  "text": "阿里先保留狮泉河的用水问题。二〇二三年报道中的伦珠开闸冬灌，也要持续巡护。旅行观察可以分别记录自然水、取用和管护，再把问题带到另一处地方。",
+  "duration": 14.112,
+  "bytes": 227508,
+  "sha256": "34b3a37028c3dd89f8cae9f475baea8dea53b62d302dfd1d872d6e8a38b5f474",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:49:14.124Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

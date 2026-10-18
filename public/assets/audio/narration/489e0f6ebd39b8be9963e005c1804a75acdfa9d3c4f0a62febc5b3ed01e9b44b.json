@@ -1,0 +1,15 @@
+{
+  "id": "489e0f6ebd39b8be9963e005c1804a75acdfa9d3c4f0a62febc5b3ed01e9b44b",
+  "url": "/assets/audio/narration/489e0f6ebd39b8be9963e005c1804a75acdfa9d3c4f0a62febc5b3ed01e9b44b.mp3",
+  "text": "条件模型让我们看见了自然与人的行动怎样接续，但还不能代替具体地方。下一步回到真实高程，沿山脊、河谷和较低处建立景观来路，再看地表过程怎样留下可被使用的空间。",
+  "duration": 15.984,
+  "bytes": 257460,
+  "sha256": "07645309c360fedd0c02a12b769a08d0abcbea978c7155884bec619335b7554d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:01:58.003Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

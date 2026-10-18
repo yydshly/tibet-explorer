@@ -1,0 +1,19 @@
+{
+  "id": "2535ad5257e800a0eb742b94e3fe854254c24b368b3e79e1a9b53eb2cbf939ec",
+  "url": "/assets/audio/narration/2535ad5257e800a0eb742b94e3fe854254c24b368b3e79e1a9b53eb2cbf939ec.mp3",
+  "text": "沿谷活动还要考虑坡面来水与季节。谷地不是自动安全、自动便利的建设地，通行、排水和服务都需要具体安排。把生活问题保留下来，再读卡若遗址的房屋、器物和粟：过去的人怎样利用这里，要让材料回答。",
+  "duration": 17.748,
+  "bytes": 285684,
+  "sha256": "2eb4990be892ff78760be87eb870695771131d140ed2a1606d73f20cad137d5d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:34.372Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/2535ad5257e800a0eb742b94e3fe854254c24b368b3e79e1a9b53eb2cbf939ec.subtitles.json",
+  "subtitleSha256": "a54753b341bb53a98179ff8d17891a2c59e34290efd3a5d348cecbe17c308db0",
+  "timingLevel": "word"
+}

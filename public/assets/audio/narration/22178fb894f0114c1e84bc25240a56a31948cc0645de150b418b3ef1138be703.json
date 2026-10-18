@@ -1,0 +1,15 @@
+{
+  "id": "22178fb894f0114c1e84bc25240a56a31948cc0645de150b418b3ef1138be703",
+  "url": "/assets/audio/narration/22178fb894f0114c1e84bc25240a56a31948cc0645de150b418b3ef1138be703.mp3",
+  "text": "夏季常有南侧暖湿输送参与，冬季的西风背景更突出，但不同区域和高度并不相同。水汽可以来自海洋蒸发，也有陆地再循环补给。金色粒子只表示输送关系，气流方向本身不能告诉我们空气有多湿。",
+  "duration": 16.956,
+  "bytes": 273012,
+  "sha256": "7333fde3bc42758d39e4d954354ec4e29315ab88edc09d7fdbe4924676e9f5da",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:51:42.179Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

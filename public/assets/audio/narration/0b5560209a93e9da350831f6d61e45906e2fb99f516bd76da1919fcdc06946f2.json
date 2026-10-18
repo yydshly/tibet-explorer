@@ -1,0 +1,19 @@
+{
+  "id": "0b5560209a93e9da350831f6d61e45906e2fb99f516bd76da1919fcdc06946f2",
+  "url": "/assets/audio/narration/0b5560209a93e9da350831f6d61e45906e2fb99f516bd76da1919fcdc06946f2.mp3",
+  "text": "地质过程留下了高地，却没有把地面做成一块平板。接下来结束地质时间的观察，回到今天的山脊、盆地和河谷。它们的高度、起伏与方向，将参与影响空气、水和人们的通行。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "4da0373194c85d163a3cb4c968da60cdb9850f877abf20d4a947403afff3cea6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:32:21.570Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/0b5560209a93e9da350831f6d61e45906e2fb99f516bd76da1919fcdc06946f2.subtitles.json",
+  "subtitleSha256": "e6924a68df8833f773075f4067a324483280a4c2fef7fe0f0c3eb75ef61dc694",
+  "timingLevel": "word"
+}

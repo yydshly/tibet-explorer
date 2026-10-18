@@ -1,0 +1,15 @@
+{
+  "id": "b0e033dd049535ad90597117f047cb719529bafe4a12207595a7b50f0c9d3fdc",
+  "url": "/assets/audio/narration/b0e033dd049535ad90597117f047cb719529bafe4a12207595a7b50f0c9d3fdc.mp3",
+  "text": "交通让我们提出谁能到达的问题。接下来走进公共服务：即使看见一座设施，也还要问是否有人提供服务、什么时候开放，以及不同的人能否实际使用。地图保留地方背景，条件模型帮助把判断拆开。",
+  "duration": 17.208,
+  "bytes": 277044,
+  "sha256": "3618a3fe2af86acedcc6e9183b0d1cc0f5b36d9a349264e59532bc6fa928264a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:03.592Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

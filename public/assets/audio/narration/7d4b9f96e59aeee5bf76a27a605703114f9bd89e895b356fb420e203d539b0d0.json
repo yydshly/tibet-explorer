@@ -1,0 +1,19 @@
+{
+  "id": "7d4b9f96e59aeee5bf76a27a605703114f9bd89e895b356fb420e203d539b0d0",
+  "url": "/assets/audio/narration/7d4b9f96e59aeee5bf76a27a605703114f9bd89e895b356fb420e203d539b0d0.mp3",
+  "text": "昌都的名字联系着水的汇合：昂曲与扎曲在城区附近汇成澜沧江。河谷较低处提供活动条件，两旁山坡又限制连续的平缓空间。地图的城区点只是阅读入口，不能把这个点当作河流交汇的精确位置。",
+  "duration": 17.784,
+  "bytes": 286260,
+  "sha256": "274e16626166cc87d0c1e8ad9dcc24978eb8fd47abcc3b28c25abe4ddfcb46af",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:22.070Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7d4b9f96e59aeee5bf76a27a605703114f9bd89e895b356fb420e203d539b0d0.subtitles.json",
+  "subtitleSha256": "68781aa6451e4c23fdf4afb9f174d9f355bed66d7aaa4d296030fd95ff07e6ae",
+  "timingLevel": "word"
+}

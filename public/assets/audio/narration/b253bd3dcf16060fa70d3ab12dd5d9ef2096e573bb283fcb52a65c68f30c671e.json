@@ -1,0 +1,19 @@
+{
+  "id": "b253bd3dcf16060fa70d3ab12dd5d9ef2096e573bb283fcb52a65c68f30c671e",
+  "url": "/assets/audio/narration/b253bd3dcf16060fa70d3ab12dd5d9ef2096e573bb283fcb52a65c68f30c671e.mp3",
+  "text": "沿同一坡面看取水。人物先在水源旁把容器装水，再带着水走向用水处；水没有自行流向高处。走到以后，抬起容器，把水倒进储水构件，携带的水减少，储水增加。山坡和水源都保持原样，设施、劳动和组织把自然条件接到生活。真实地方还要核对季节、水质、土壤和使用权利。",
+  "duration": 26.496,
+  "bytes": 425652,
+  "sha256": "f0c63f8b3e5e23fd631fc100326f2e62899dd4709af5c04147be1eeacdfa3066",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:34:25.195Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b253bd3dcf16060fa70d3ab12dd5d9ef2096e573bb283fcb52a65c68f30c671e.subtitles.json",
+  "subtitleSha256": "0464a8b126e042e6bbd26f1ad3a707513fab3fcc9701ecc43d07c140df87db2c",
+  "timingLevel": "word"
+}

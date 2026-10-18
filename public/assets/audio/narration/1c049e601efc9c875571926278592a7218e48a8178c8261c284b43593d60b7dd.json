@@ -1,0 +1,15 @@
+{
+  "id": "1c049e601efc9c875571926278592a7218e48a8178c8261c284b43593d60b7dd",
+  "url": "/assets/audio/narration/1c049e601efc9c875571926278592a7218e48a8178c8261c284b43593d60b7dd.mp3",
+  "text": "温室气体改变地球向外散失能量的条件，系统需要调整到新的收支状态。冰雪、海洋和陆地各有不同响应时间，也存在反馈。眼前箭头用于理解能量关系，不能由这个动画直接读出某处冰川的变化量。",
+  "duration": 18.216,
+  "bytes": 293172,
+  "sha256": "7e18baad86dbc7002e00ea5ebe20d5f0072a84e13fe3b934fa71a53b0373bd69",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:27.296Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

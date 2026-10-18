@@ -1,0 +1,15 @@
+{
+  "id": "8e4fcfd4c7cc1befcc4ac5a80f1309a21121be761fdd5d9d23bac8a137f9fecb",
+  "url": "/assets/audio/narration/8e4fcfd4c7cc1befcc4ac5a80f1309a21121be761fdd5d9d23bac8a137f9fecb.mp3",
+  "text": "刚才看见了生活需要水、通行和可使用空间。现在让一座概念院落逐步形成：先看场地与基底，再看墙体怎样围合。材料获取与环境有关，具体建筑还要结合用途、工艺、制度和历史，不能只由气候推出样式。",
+  "duration": 20.772,
+  "bytes": 334068,
+  "sha256": "58dc8de1cd781a3180cdd87475ce114204720cff13ba5c75a1583bd775f5d49a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:03:44.950Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "c6e2e6a3c77b26e56c6dfe496f43435848f2280af3f969d879ff41dc235a0c25",
+  "url": "/assets/audio/narration/c6e2e6a3c77b26e56c6dfe496f43435848f2280af3f969d879ff41dc235a0c25.mp3",
+  "text": "沿坡上升的空气膨胀冷却，在合适条件下水汽凝结，云逐步形成。云滴或冰晶继续增长，满足条件后才会降落。画面把先后分开，帮助你找到抬升、成云与降水的位置，而不是把有云等同于一定下雨。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "a5e608e4f9aa7d84bf170ff14158abf72fcfa63ff8ea0d70e61f8a4c8e35928f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:52:07.346Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

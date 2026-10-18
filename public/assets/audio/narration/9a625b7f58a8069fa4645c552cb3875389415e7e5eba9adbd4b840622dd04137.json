@@ -1,0 +1,19 @@
+{
+  "id": "9a625b7f58a8069fa4645c552cb3875389415e7e5eba9adbd4b840622dd04137",
+  "url": "/assets/audio/narration/9a625b7f58a8069fa4645c552cb3875389415e7e5eba9adbd4b840622dd04137.mp3",
+  "text": "文化还在人的参与中延续。昌都锅庄见于节日、庆典和婚嫁，农区、牧区与寺庙又各有类型；二〇〇六年进入首批国家级非遗名录。这是保护节点，不是舞蹈起源。由地方交往继续看，现代交通怎样扩大往来的范围。",
+  "duration": 20.34,
+  "bytes": 327156,
+  "sha256": "595b6519e7807087de9734056222b7fc25418b834680866fe700e45dfabf0753",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:53:52.613Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9a625b7f58a8069fa4645c552cb3875389415e7e5eba9adbd4b840622dd04137.subtitles.json",
+  "subtitleSha256": "fef26065b34bf2508b22cbf4e5db6fb15ae8fc54ce4f43aa3f18ec6fd04dff0f",
+  "timingLevel": "word"
+}

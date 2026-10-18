@@ -1,0 +1,15 @@
+{
+  "id": "2851721310cd0a0d14db851748bf4d91774a4f63db30dc0ef4786c74b9dad4db",
+  "url": "/assets/audio/narration/2851721310cd0a0d14db851748bf4d91774a4f63db30dc0ef4786c74b9dad4db.mp3",
+  "text": "再到一六四五至一六四八年，五世达赖喇嘛主持白宫建设。礼仪、接见与居住有不同需要，也就需要相应空间。把用途加到年代上，才能继续理解拉萨的历史城市。",
+  "duration": 14.76,
+  "bytes": 237876,
+  "sha256": "75ab6881ab6a3579982a8504665833067e9c4ae1bbb2c623238327b90e8e9ecf",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:21.807Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

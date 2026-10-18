@@ -1,0 +1,19 @@
+{
+  "id": "a681ae9122604aed6a9111b85a50fb05e4bb13d04d0ced962774aebdc7f0a9f0",
+  "url": "/assets/audio/narration/a681ae9122604aed6a9111b85a50fb05e4bb13d04d0ced962774aebdc7f0a9f0.mp3",
+  "text": "带着历史问题，从西藏全域走近拉萨。先认出河谷，再进入大昭寺周围的街区。大昭寺创建于七世纪；眼前使用的是今天的地物轮廓，不能当成七世纪的城市。先看寺院与前方广场，宗教活动需要场所，也需要抵达和停留的空间。接着沿步行街巷向周围展开：活动不只发生在一栋建筑里，通行把建筑与街区接起来。再把周边商业用地内的建筑放回画面，同一街区还有日常使用。这里的移动标记解释空间关系，不是实际客流。二〇〇〇年，大昭寺扩展列入世界遗产；二〇二一年，世界遗产委员会要求广场管理照顾朝拜者的祈祷通行，避免游客干扰。请对照只看地物和恢复使用：保护面对的不只是建筑，还包括人怎样持续使用这些空间。最后退回拉萨河谷，再回到西藏全域。这是一个具体例子，不能代替其他地方的历史。带着形成历史和今天用途，再看新的交通怎样接入已有城市。",
+  "duration": 70.092,
+  "bytes": 1123188,
+  "sha256": "c036e7313b3522580c7920e0d20651b3f4dd1a7d14cbd55be9c372d0a98809bf",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-17T01:38:43.083Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a681ae9122604aed6a9111b85a50fb05e4bb13d04d0ced962774aebdc7f0a9f0.subtitles.json",
+  "subtitleSha256": "531c1a230e9ad79d16f1879cf1c1187ab0e3ff6345b2d216e70e77dc9522930a",
+  "timingLevel": "word"
+}

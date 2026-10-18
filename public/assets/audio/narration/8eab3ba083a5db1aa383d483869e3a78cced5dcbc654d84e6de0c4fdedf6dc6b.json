@@ -1,0 +1,15 @@
+{
+  "id": "8eab3ba083a5db1aa383d483869e3a78cced5dcbc654d84e6de0c4fdedf6dc6b",
+  "url": "/assets/audio/narration/8eab3ba083a5db1aa383d483869e3a78cced5dcbc654d84e6de0c4fdedf6dc6b.mp3",
+  "text": "西藏东南部色东普谷地二〇一八年曾发生堵江。崩落物从坡面进入谷地，可能影响雅鲁藏布江、道路和居民。这里先用完整上下游场景辨认参与者：只看一个取用位置，无法理解共同环境中的全部问题。",
+  "duration": 16.596,
+  "bytes": 267252,
+  "sha256": "dd5f53b8682f312fbbaabb94a3551dbbc1a3a9cddda169721a477404a3784ca3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:54:51.064Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

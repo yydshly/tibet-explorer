@@ -1,0 +1,15 @@
+{
+  "id": "7118e233012ccddd64b8e6bbca14789b84dd747826f34d7bc8509a584dc72f76",
+  "url": "/assets/audio/narration/7118e233012ccddd64b8e6bbca14789b84dd747826f34d7bc8509a584dc72f76.mp3",
+  "text": "货物到站，还要装卸并换到地方车辆。客运也需要接续，二〇〇七年四月通车的柳梧大桥连接火车站与市区。铁路入口和城市使用，需要这些具体环节相连。",
+  "duration": 13.932,
+  "bytes": 224628,
+  "sha256": "647cac0291712c402476be89da32953845593eb324828dbca45add7c419d2110",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:48.860Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

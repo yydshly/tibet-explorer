@@ -1,0 +1,15 @@
+{
+  "id": "24fefed3bcab8cae7d8f9bdfdd2effad5c0656d4c6546a34be85ab8d2e9603d1",
+  "url": "/assets/audio/narration/24fefed3bcab8cae7d8f9bdfdd2effad5c0656d4c6546a34be85ab8d2e9603d1.mp3",
+  "text": "请切换回夏至，比较高处积雪与低处地表，再回看冬至状态。选择固定地点的目的，是避免把空间差别误认成时间变化。记录你看到的是季节示意，之后再用相同地点、相同口径的资料检验它。",
+  "duration": 16.74,
+  "bytes": 269556,
+  "sha256": "863d07de277f831b987ce0e6eca57a25395210bc08b101f9c2b568cc1c5845dd",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:11.383Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

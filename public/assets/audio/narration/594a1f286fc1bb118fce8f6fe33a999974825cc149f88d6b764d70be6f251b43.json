@@ -1,0 +1,15 @@
+{
+  "id": "594a1f286fc1bb118fce8f6fe33a999974825cc149f88d6b764d70be6f251b43",
+  "url": "/assets/audio/narration/594a1f286fc1bb118fce8f6fe33a999974825cc149f88d6b764d70be6f251b43.mp3",
+  "text": "交流需要具体参与者，跨区域公共问题也一样。水、道路和环境的变化会影响不同地方，谁观察、谁使用、谁需要响应，都要明确。下一段用色东普的真实研究，说明为什么重要位置必须落实为过程、证据与组织。",
+  "duration": 20.196,
+  "bytes": 324852,
+  "sha256": "b2e7e88abdf1dac14eafeab246ece772620d29ff3302040d071b217113b197ca",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:54:46.867Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "e6f48f876fa005ec6d3d5c1623317ac4e00d402e7a17477c59207c9f77b4d814",
+  "url": "/assets/audio/narration/e6f48f876fa005ec6d3d5c1623317ac4e00d402e7a17477c59207c9f77b4d814.mp3",
+  "text": "先看墙体、木构和连接，辨认材料与工艺；再问作品由谁制作、何时使用、为了什么。形式可以提示问题，却不能单独给出文化含义。未经核实的仿造文字不应替代原文，一件作品也不能代表全部地方艺术。",
+  "duration": 19.62,
+  "bytes": 315636,
+  "sha256": "414c27d68b881fc0b1bb0e1d3b3a838a8f20408bdc3f629b236be63e875e3c85",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:59:21.978Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

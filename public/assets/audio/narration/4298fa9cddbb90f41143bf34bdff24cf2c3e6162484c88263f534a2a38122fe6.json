@@ -1,0 +1,15 @@
+{
+  "id": "4298fa9cddbb90f41143bf34bdff24cf2c3e6162484c88263f534a2a38122fe6",
+  "url": "/assets/audio/narration/4298fa9cddbb90f41143bf34bdff24cf2c3e6162484c88263f534a2a38122fe6.mp3",
+  "text": "请打开我的探索，回看收藏或写下一个具体问题，再选择有关地区。已有记录可以修改，没有记录也可以从现在开始。这个问题会帮助选择下一步的站点，让最终路线保留你想理解的内容，而不是随机连接地图标记。",
+  "duration": 17.892,
+  "bytes": 287988,
+  "sha256": "f82926a354e0425900e8fb279d32b2a887216a33605ead0d75e9df2fb909b981",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:49.763Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

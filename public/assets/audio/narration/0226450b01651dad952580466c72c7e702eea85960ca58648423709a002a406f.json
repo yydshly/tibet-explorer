@@ -1,0 +1,15 @@
+{
+  "id": "0226450b01651dad952580466c72c7e702eea85960ca58648423709a002a406f",
+  "url": "/assets/audio/narration/0226450b01651dad952580466c72c7e702eea85960ca58648423709a002a406f.mp3",
+  "text": "知识经过交流和学习，也依靠载体的制作、保护与持续使用留下来。接下来回到人的日常，看共同使用和修补；再进入历史，分开问事情何时发生、实物何时制作、今天的记录又支持什么。",
+  "duration": 15.84,
+  "bytes": 255156,
+  "sha256": "02bae00be32c69b87c17db47e21725ad5103ef5c6e5056e64f57b2fe0b354a15",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T04:23:31.242Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

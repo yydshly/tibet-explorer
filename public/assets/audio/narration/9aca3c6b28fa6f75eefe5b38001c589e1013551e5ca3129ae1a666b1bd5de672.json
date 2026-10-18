@@ -1,0 +1,19 @@
+{
+  "id": "9aca3c6b28fa6f75eefe5b38001c589e1013551e5ca3129ae1a666b1bd5de672",
+  "url": "/assets/audio/narration/9aca3c6b28fa6f75eefe5b38001c589e1013551e5ca3129ae1a666b1bd5de672.mp3",
+  "text": "同一桌面增加对照页，学习者参与译写、选择和理解，再把整理后的载体带向厅堂前。交流不是把外来形式原样搬入建筑；当地语言、传统、组织与参与者继续塑造实践。这个过程模型不复原阿底峡的一堂课。",
+  "duration": 20.772,
+  "bytes": 334068,
+  "sha256": "fd87abfc4fd04d25bbc2e114c3073c7f62a437a8d3fb2f85b8cc8125d0bd5bb7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:41:10.042Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9aca3c6b28fa6f75eefe5b38001c589e1013551e5ca3129ae1a666b1bd5de672.subtitles.json",
+  "subtitleSha256": "079ddf57187c7c1a45544b1596928698770fb108f580bbf533c2702c7cac35d4",
+  "timingLevel": "word"
+}

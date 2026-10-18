@@ -1,0 +1,19 @@
+{
+  "id": "d14f0d279a4d2b25ef7063055f02b6819f28a541c0a0a2b4237077c261a95e73",
+  "url": "/assets/audio/narration/d14f0d279a4d2b25ef7063055f02b6819f28a541c0a0a2b4237077c261a95e73.mp3",
+  "text": "二〇二一年六月二十五日拉林铁路开通，连接拉萨、山南与林芝。当年的彩门村采访中，普巴和扎西谈到交通、民宿、学生出行与特产外销。具名表述让我们看见具体用途与期待，还要继续问：哪些条件让这些联系真正进入生活？",
+  "duration": 21.6,
+  "bytes": 347316,
+  "sha256": "4ece71b4f95288ed3b9698ef6a71232952e7cdb3f80434134852e969a74d83cb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:12:39.513Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d14f0d279a4d2b25ef7063055f02b6819f28a541c0a0a2b4237077c261a95e73.subtitles.json",
+  "subtitleSha256": "3130298863390ce37d91dcedd883960013f495550dc6325a74cdbeb285b4aa2f",
+  "timingLevel": "word"
+}

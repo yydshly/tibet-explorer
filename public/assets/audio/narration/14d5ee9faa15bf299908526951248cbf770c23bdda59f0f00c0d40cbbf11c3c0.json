@@ -1,0 +1,15 @@
+{
+  "id": "14d5ee9faa15bf299908526951248cbf770c23bdda59f0f00c0d40cbbf11c3c0",
+  "url": "/assets/audio/narration/14d5ee9faa15bf299908526951248cbf770c23bdda59f0f00c0d40cbbf11c3c0.mp3",
+  "text": "我们先认识人的文化实践，再用历史时期、事件与材料追问它们怎样变化。接下来把地方重新放回更大联系：水流怎样连接上下游，通道怎样组织交换，周边事务涉及谁？先沿水系拉远，再研究这些联系的条件与影响。",
+  "duration": 19.188,
+  "bytes": 308724,
+  "sha256": "3a8adcb712b7baea9a87ec6eb0f9e88b1d0ac9fa9f5627682b1a56198ab82fe7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:40:08.884Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

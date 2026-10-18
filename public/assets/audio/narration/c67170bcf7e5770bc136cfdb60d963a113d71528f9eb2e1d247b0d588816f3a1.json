@@ -1,0 +1,19 @@
+{
+  "id": "c67170bcf7e5770bc136cfdb60d963a113d71528f9eb2e1d247b0d588816f3a1",
+  "url": "/assets/audio/narration/c67170bcf7e5770bc136cfdb60d963a113d71528f9eb2e1d247b0d588816f3a1.mp3",
+  "text": "从一座桥回到全域。先看东南部：二〇二一年六月二十五日，拉林铁路开通，联系拉萨、山南与林芝。再看西部：二〇一〇年七月一日，阿里昆莎机场通航，增加了航空抵达的选择。方式不同，到站、落地以后都还需要地方道路和服务。现在回到拉萨河谷，沿真实铁路看山体、河流和站区怎样影响通行；不要把全图上的联系理解成几条城市间的直线。",
+  "duration": 30.924,
+  "bytes": 496500,
+  "sha256": "e8fad9e2440b8ec22413f125173e9298ee8c6f5c22a8f1c2bb8778add6f43092",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T09:22:35.429Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c67170bcf7e5770bc136cfdb60d963a113d71528f9eb2e1d247b0d588816f3a1.subtitles.json",
+  "subtitleSha256": "796423cfac31436eb5a432c1c43e2c4ab71e11b409bf0c0a569d40869c7091dc",
+  "timingLevel": "word"
+}

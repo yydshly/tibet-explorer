@@ -1,0 +1,16 @@
+.city-narrative-context{padding:10px 0;margin:10px 0;border-block:1px solid #6b7d5b55;color:#bacbb2;font-size:11px;line-height:1.75}
+.city-narrative-context p{margin:0}
+.city-narrative-context-place{display:grid;gap:2px}
+.city-narrative-context-place strong{font-size:12px;color:#ddd7ae;font-weight:500}
+.city-narrative-context-place>span{font-size:10px;color:#a7b99a}
+.city-narrative-context .city-narrative-context-orientation{margin-top:7px}
+.city-narrative-context-orientation>span{display:block;font-size:10px;color:#d2c48f}
+.city-narrative-context details{margin-top:6px}
+.city-narrative-context summary{cursor:pointer;color:#bad0ad;font-size:10px;line-height:1.8}
+.city-narrative-context details>p{margin-top:7px}
+.city-narrative-context-sources{display:grid;gap:5px;margin-top:8px}
+.city-narrative-context-sources a{color:#adc9a3;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#7e916b;overflow-wrap:anywhere}
+.city-narrative-context-reading>summary{display:flex;flex-wrap:wrap;gap:3px 8px;align-items:baseline;color:#ded2a0}
+.city-narrative-context-reading>summary small{font-size:9px;color:#9eb094}
+.city-narrative-context-reading-scope{color:#a6b49b;font-size:10px}
+.city-narrative-context summary:focus-visible,.city-narrative-context a:focus-visible{outline:2px solid #e9d59a;outline-offset:3px}

@@ -1,0 +1,15 @@
+{
+  "id": "584ea59b3316cb36234d09f422fc09f8cb5a0e225861efeadd31d8b5495cc918",
+  "url": "/assets/audio/narration/584ea59b3316cb36234d09f422fc09f8cb5a0e225861efeadd31d8b5495cc918.mp3",
+  "text": "保持三地同图。林芝的鲁朗连接三一八国道，地形提供通行空间，道路和维护把这种可能接到聚落往来。",
+  "duration": 10.512,
+  "bytes": 169908,
+  "sha256": "d59f92d9d2294d31d9263bb5527c93ed0649685109d9243c7ab0962ab30548ea",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T09:28:20.394Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

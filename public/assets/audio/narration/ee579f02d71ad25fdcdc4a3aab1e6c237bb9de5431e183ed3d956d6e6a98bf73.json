@@ -1,0 +1,15 @@
+{
+  "id": "ee579f02d71ad25fdcdc4a3aab1e6c237bb9de5431e183ed3d956d6e6a98bf73",
+  "url": "/assets/audio/narration/ee579f02d71ad25fdcdc4a3aab1e6c237bb9de5431e183ed3d956d6e6a98bf73.mp3",
+  "text": "可以旋转地形，在俯视与斜视之间比较，找出一段山脊、坡面和谷底，再切到水系看它们怎样连接。这里先读高低和方向关系。带着南侧海洋与高原内部的来向，问一问空气和水来到这里可能遇到什么。",
+  "duration": 17.388,
+  "bytes": 279924,
+  "sha256": "a9d43f71b9e9a4decb9811a4dfac29d68f8c12913181b3979718c203845a4720",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:40.405Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

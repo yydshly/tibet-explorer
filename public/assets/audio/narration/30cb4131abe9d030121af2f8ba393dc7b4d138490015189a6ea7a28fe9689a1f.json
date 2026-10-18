@@ -1,0 +1,15 @@
+{
+  "id": "30cb4131abe9d030121af2f8ba393dc7b4d138490015189a6ea7a28fe9689a1f",
+  "url": "/assets/audio/narration/30cb4131abe9d030121af2f8ba393dc7b4d138490015189a6ea7a28fe9689a1f.mp3",
+  "text": "请拉远并沿河道辨认上游、支流和山脊，再看地区标记与它们怎样重叠。把流域当成独立自然范围，会帮助我们提出生态与治理问题。具体合作、利用与保护仍要查看相关年份和公开资料。",
+  "duration": 17.568,
+  "bytes": 282804,
+  "sha256": "3ead6a76e5a3766512190fd17b863e741349c199dd8ddbca8d085e3877bc403e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:00:18.879Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

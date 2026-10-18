@@ -1,0 +1,15 @@
+{
+  "id": "1b335cb28861cc582a482cd9ef93bb04755c24b25dcd1780cabacc845b008072",
+  "url": "/assets/audio/narration/1b335cb28861cc582a482cd9ef93bb04755c24b25dcd1780cabacc845b008072.mp3",
+  "text": "我们保留西藏，把周围也放进画面。向南看是喜马拉雅与南亚，再向南联系印度洋；高原内部还连着更广阔的亚洲大陆。先辨认这些相对方向，才能知道外部空气、水汽和地方之间的联系要经过怎样的环境。",
+  "duration": 17.496,
+  "bytes": 281652,
+  "sha256": "9ffd79968fefc651f17a374b1cdd33ccc7d3b7ca0cb308bb2c6473aba6e5928d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T13:19:02.523Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

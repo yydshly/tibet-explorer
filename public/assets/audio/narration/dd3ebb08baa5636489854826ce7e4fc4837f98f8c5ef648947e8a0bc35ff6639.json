@@ -1,0 +1,15 @@
+{
+  "id": "dd3ebb08baa5636489854826ce7e4fc4837f98f8c5ef648947e8a0bc35ff6639",
+  "url": "/assets/audio/narration/dd3ebb08baa5636489854826ce7e4fc4837f98f8c5ef648947e8a0bc35ff6639.mp3",
+  "text": "有了认识目的，就可以选择能共同推进它的地方。下一步打开主题路线，阅读每站为什么去、看什么，再调整顺序。路线首先表达知识联系，真实交通、日期和访问条件会在最后一步另行补齐。",
+  "duration": 17.568,
+  "bytes": 282804,
+  "sha256": "7de1a4097bfdff9eedc19d62a7fc04402916af1b259a99072b06c682739d06e8",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:57.755Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

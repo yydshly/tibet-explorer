@@ -1,0 +1,19 @@
+{
+  "id": "bcfa8667e9f6b2a47f78443543384cb865179823dbcbe5664e466316e6ecba06",
+  "url": "/assets/audio/narration/bcfa8667e9f6b2a47f78443543384cb865179823dbcbe5664e466316e6ecba06.mp3",
+  "text": "阿里既有高地、湖盆，也有宽谷和峡谷。现在比较水源、可用土地和通行要跨越的地面，准备进入生活。",
+  "duration": 10.008,
+  "bytes": 161844,
+  "sha256": "78fe71f8f78b3c60705f0c81a623db0da9e7d59d05fc9d6212e09d05fca7adf0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:19:37.158Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/bcfa8667e9f6b2a47f78443543384cb865179823dbcbe5664e466316e6ecba06.subtitles.json",
+  "subtitleSha256": "ac2336d411d1c82c1f05c5790832322a9a07d9f890c0bacf58381dbfa783e856",
+  "timingLevel": "word"
+}

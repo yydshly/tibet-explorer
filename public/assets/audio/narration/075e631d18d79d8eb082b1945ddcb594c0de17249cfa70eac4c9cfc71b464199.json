@@ -1,0 +1,19 @@
+{
+  "id": "075e631d18d79d8eb082b1945ddcb594c0de17249cfa70eac4c9cfc71b464199",
+  "url": "/assets/audio/narration/075e631d18d79d8eb082b1945ddcb594c0de17249cfa70eac4c9cfc71b464199.mp3",
+  "text": "旅行观察也按这条认识顺序进行：先读高程与当季草地条件，再通过当地公开展示了解牧业组织，最后把节会传承与交通接续对读。村庄、牧场和节会各有访问条件；不把全市当作随意穿行的草地，观察要回到具体资料。",
+  "duration": 21.384,
+  "bytes": 343860,
+  "sha256": "6c54ca139e7f0382e708348c4150ffdc393a0b4a56325350cd5650eab50dd438",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:57:28.031Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/075e631d18d79d8eb082b1945ddcb594c0de17249cfa70eac4c9cfc71b464199.subtitles.json",
+  "subtitleSha256": "0d66b4e08483ca7a53c71fc88acae45d1764cdda186d6e48b6c73c5289efde31",
+  "timingLevel": "word"
+}

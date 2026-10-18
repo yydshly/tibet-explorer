@@ -1,0 +1,19 @@
+{
+  "id": "d10a536a5621883a7840a987c39c9089b947a5362710775ea8daa7aea50681a4",
+  "url": "/assets/audio/narration/d10a536a5621883a7840a987c39c9089b947a5362710775ea8daa7aea50681a4.mp3",
+  "text": "请在我的问题里写下一个想继续理解的原因，也可以选择一组候选站。河谷、城市与新通道这条学习顺序连接拉萨、山南和林芝；阿底峡与托林则提供跨区域研读线。保存的是你的认识目的，远距离地方不必强排在同一天。",
+  "duration": 20.412,
+  "bytes": 328308,
+  "sha256": "c9d04168d99c3eeaaf88ebd1da252b4a1eb61635b2f122330c19351f68b7e010",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:13:42.603Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d10a536a5621883a7840a987c39c9089b947a5362710775ea8daa7aea50681a4.subtitles.json",
+  "subtitleSha256": "ef798788a850421cd98ab4dbfc99db9ef7b620482b152941bb47476dd670c482",
+  "timingLevel": "word"
+}

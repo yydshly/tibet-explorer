@@ -1,0 +1,15 @@
+{
+  "id": "c7672238ae70b3f6e46696d22f458b6aada3898299c9f0465dcadfe2f2d38ba0",
+  "url": "/assets/audio/narration/c7672238ae70b3f6e46696d22f458b6aada3898299c9f0465dcadfe2f2d38ba0.mp3",
+  "text": "西藏在赤道以北，属于北温带的纬度范围。但北温带不代表处处温和：同样的纬度背景下，高地常比邻近低地冷。现在把目光从纬线转向青藏高原，看南侧低地与高地的相邻位置。空气来到这里，还要面对地面高度和山系排列的变化。",
+  "duration": 19.224,
+  "bytes": 309300,
+  "sha256": "6b72db54e2bd79b301604e27bd738423be83014b3fc1b6bb905d1742684072d0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T07:32:08.236Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

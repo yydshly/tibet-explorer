@@ -1,0 +1,15 @@
+{
+  "id": "79fd2383a146af7565c2f8957338eba83660fec9e851154082c4f76b31162c22",
+  "url": "/assets/audio/narration/79fd2383a146af7565c2f8957338eba83660fec9e851154082c4f76b31162c22.mp3",
+  "text": "这个案例让我们把地点、年份和研究数值放在一起，也看见证据支持到哪里。气候章节建立了热量、空气、水与时间的联系。接下来回到西藏内部，比较林芝、那曲和阿里等地方，继续追问条件怎样组合成不同环境。",
+  "duration": 19.836,
+  "bytes": 319092,
+  "sha256": "c1a1cb152dfa9d1f25f8f9dcd51162b2901febeebf640c99c7e06c0c6dfed0ca",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T23:50:40.191Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

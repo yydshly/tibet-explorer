@@ -1,0 +1,15 @@
+{
+  "id": "36617aa2ff45e3c1130fec5161a5660a9c117708de1779eff69134f49c1c569b",
+  "url": "/assets/audio/narration/36617aa2ff45e3c1130fec5161a5660a9c117708de1779eff69134f49c1c569b.mp3",
+  "text": "保持水源条件不变，切换管护对照，看看城市生活为什么还依赖人的组织。",
+  "duration": 5.796,
+  "bytes": 94452,
+  "sha256": "42108340f10452c8b0942df14d21de578f9c4cba2ea7881d94aa975877429d93",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:57:11.371Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

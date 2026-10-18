@@ -1,0 +1,15 @@
+{
+  "id": "1158fcab7a16493be4dc3fadb1d80bda9796eba5fbba160d60b43b490922499b",
+  "url": "/assets/audio/narration/1158fcab7a16493be4dc3fadb1d80bda9796eba5fbba160d60b43b490922499b.mp3",
+  "text": "从生活条件模型回到公开高程，先辨认南侧山系、高原内部和藏东南。水、较低谷地与人的到达都在整片地形中发生。眼前高度来自网格抽样，垂直显示作了夸张；它不是某个景点的精细测绘。",
+  "duration": 18.36,
+  "bytes": 295476,
+  "sha256": "a2358ec72c9d5f92b7166f62a13fd3f626666dec2fea064605d72c50d767554d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:02:17.383Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

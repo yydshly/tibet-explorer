@@ -1,0 +1,15 @@
+{
+  "id": "8d7900c7351a9d8275e4439a7f8451daa54c98b845cff11ddaefa0172e796a39",
+  "url": "/assets/audio/narration/8d7900c7351a9d8275e4439a7f8451daa54c98b845cff11ddaefa0172e796a39.mp3",
+  "text": "理解驱动机制以后，还需要具体资料检验地方响应。下一步聚焦冰雪边界的前后比较：我们比较的是什么、日期是什么、单位是否相同？先学会读这些条件，再谈变化的方向、大小和原因。",
+  "duration": 16.091,
+  "bytes": 259188,
+  "sha256": "d4f823cbbff87709c802164626ce89adfa307751df861442d44c95248b114f69",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:38.618Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

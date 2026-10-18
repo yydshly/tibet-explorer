@@ -1,0 +1,15 @@
+{
+  "id": "12491d691107d1c1b86ff988940bbb1f2756bb24d4a9891fb8be3f6cbe324fb4",
+  "url": "/assets/audio/narration/12491d691107d1c1b86ff988940bbb1f2756bb24d4a9891fb8be3f6cbe324fb4.mp3",
+  "text": "客运接续看二〇〇七年四月三十日通车的柳梧大桥。在真实站区、道路与河流的位置上，看抵达怎样接到跨河进城。洛桑赤列的采访还提到村委会组织运输队，说明设施连通之后，地方使用仍需要人员与管理。拉萨西货场是另一处地点，下一环单独阅读。",
+  "duration": 21.348,
+  "bytes": 343284,
+  "sha256": "390216ba52da38c1a40cac130490f28383a4505ecb89ed50ef03274c59936d91",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:20:49.870Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

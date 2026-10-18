@@ -1,0 +1,15 @@
+{
+  "id": "6f8a1d9196fdbd98ff20ddb0f5371535c0105ffa508917c501dbd87803c7c375",
+  "url": "/assets/audio/narration/6f8a1d9196fdbd98ff20ddb0f5371535c0105ffa508917c501dbd87803c7c375.mp3",
+  "text": "俯视帮助认方向，斜视让高差更清楚。现在沿南北切线，从南侧山系走向高原内部，再移动经度比较别处。地形来自公开高程网格，颜色表示海拔，垂直显示作了夸张；细小河道和山峰仍需更细资料。",
+  "duration": 21.096,
+  "bytes": 339252,
+  "sha256": "19334a2ae1eaddb614f8e55bca1f8d595c74de0b77bb6a1b760572c14fd39f30",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T14:22:40.636Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

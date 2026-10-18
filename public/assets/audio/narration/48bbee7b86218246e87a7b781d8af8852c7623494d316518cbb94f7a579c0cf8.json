@@ -1,0 +1,15 @@
+{
+  "id": "48bbee7b86218246e87a7b781d8af8852c7623494d316518cbb94f7a579c0cf8",
+  "url": "/assets/audio/narration/48bbee7b86218246e87a7b781d8af8852c7623494d316518cbb94f7a579c0cf8.mp3",
+  "text": "再看生活用途。二〇二一年，普巴谈彩门村的接待管理，经营民宿的扎西谈学生出行和特产外销。这是具名用途与期待，不能推成每户已经实现的收益。",
+  "duration": 13.644,
+  "bytes": 220020,
+  "sha256": "8a01f4b3df830e0a25b0c770eea739426dfd2d65d0ba6859c01945d7f8a8aeb4",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:30.306Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

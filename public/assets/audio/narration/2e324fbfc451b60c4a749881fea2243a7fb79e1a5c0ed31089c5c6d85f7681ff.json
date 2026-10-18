@@ -1,0 +1,15 @@
+{
+  "id": "2e324fbfc451b60c4a749881fea2243a7fb79e1a5c0ed31089c5c6d85f7681ff",
+  "url": "/assets/audio/narration/2e324fbfc451b60c4a749881fea2243a7fb79e1a5c0ed31089c5c6d85f7681ff.mp3",
+  "text": "沿整体地图来到拉萨，先把城区放回拉萨河谷。",
+  "duration": 3.852,
+  "bytes": 63348,
+  "sha256": "38853120b6109ddb6a6baa349e43b563ca50574de48f310d8ea816cf5d430b60",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T08:56:35.029Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

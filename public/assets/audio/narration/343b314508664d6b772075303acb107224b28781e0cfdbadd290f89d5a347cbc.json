@@ -1,0 +1,15 @@
+{
+  "id": "343b314508664d6b772075303acb107224b28781e0cfdbadd290f89d5a347cbc",
+  "url": "/assets/audio/narration/343b314508664d6b772075303acb107224b28781e0cfdbadd290f89d5a347cbc.mp3",
+  "text": "二〇〇六年七月一日，青藏铁路全线通车。列车把人员和货物送到拉萨的铁路节点。先看同一件物品抵达站场，此时它还没有进入商店和家庭。",
+  "duration": 13.68,
+  "bytes": 220596,
+  "sha256": "a57eb9894074821ba4941db0f83fd54613d5ee1f0a7766a1740f0b51fee91224",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T11:54:42.586Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

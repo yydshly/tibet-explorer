@@ -1,0 +1,15 @@
+{
+  "id": "549f7c1c9045899944cd697abe36be2769ec791d80d7a4cfebd5489180564e03",
+  "url": "/assets/audio/narration/549f7c1c9045899944cd697abe36be2769ec791d80d7a4cfebd5489180564e03.mp3",
+  "text": "先辨认下方护板与散开的书页。推进以后，空白页逐步对齐、叠放，护板承托书页。上方护板随后降下，书页被收在两板之间。文本传播不只有内容，也需要制作和保护载体；实物上的雕刻图像和红色颜料痕迹，由馆藏原图核对，不能从这个原理模型猜出意义。",
+  "duration": 24.516,
+  "bytes": 393972,
+  "sha256": "8cde00a9a684e61f1e12c3ab97de6675ccedd0a6ab6c85d881d0b0156d8d2935",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T04:23:18.930Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

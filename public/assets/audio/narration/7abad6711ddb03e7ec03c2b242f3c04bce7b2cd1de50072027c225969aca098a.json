@@ -1,0 +1,15 @@
+{
+  "id": "7abad6711ddb03e7ec03c2b242f3c04bce7b2cd1de50072027c225969aca098a",
+  "url": "/assets/audio/narration/7abad6711ddb03e7ec03c2b242f3c04bce7b2cd1de50072027c225969aca098a.mp3",
+  "text": "相向运动使一些地壳缩短、变形并增厚，地表也会改变。高原各部分经历不同的形成阶段，山地抬升时侵蚀仍在进行。请沿剖面看层次怎样弯曲，把这个过程与一次简单的整体升高区别开。",
+  "duration": 17.424,
+  "bytes": 280500,
+  "sha256": "ae7d04b4c3b34d268db2d33761734fe393942d9c83690d83215faa7b661150c1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:49:36.175Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

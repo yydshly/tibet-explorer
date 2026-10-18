@@ -1,0 +1,15 @@
+{
+  "id": "b3d2b81870233dbb16ca2583dae6118fbd360816f7f5a5ac07fa8b294afa1801",
+  "url": "/assets/audio/narration/b3d2b81870233dbb16ca2583dae6118fbd360816f7f5a5ac07fa8b294afa1801.mp3",
+  "text": "昆莎落地后，继续沿地面联系狮泉河。吕新民口述记载，二〇〇四年这段二一九国道已建成柏油路，早于二〇一〇年通航。飞机增加抵达方式，乘客仍要沿公路进城。现状道路位置不等于当年的竣工图。",
+  "duration": 18.18,
+  "bytes": 292596,
+  "sha256": "3b1c7290a2cf8ca2c1cae43a4eec2e8a52f1d26e2692f731209934a6525c52b1",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:27:06.227Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

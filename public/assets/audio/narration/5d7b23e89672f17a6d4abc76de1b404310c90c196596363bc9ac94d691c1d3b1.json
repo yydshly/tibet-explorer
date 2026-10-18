@@ -1,0 +1,15 @@
+{
+  "id": "5d7b23e89672f17a6d4abc76de1b404310c90c196596363bc9ac94d691c1d3b1",
+  "url": "/assets/audio/narration/5d7b23e89672f17a6d4abc76de1b404310c90c196596363bc9ac94d691c1d3b1.mp3",
+  "text": "例如林芝河谷可以承接云雨与环境，拉萨的碑刻和建筑承接历史与文化，托林提供交流与艺术线索。重点不只是地点名称，而是为什么关注它、准备观察什么。收藏与笔记让这些问题在离开后仍能继续。",
+  "duration": 18.108,
+  "bytes": 291444,
+  "sha256": "f0265f63d859ba04f943e8acf934ff6624486197c2d72138606751422489254b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:44.181Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

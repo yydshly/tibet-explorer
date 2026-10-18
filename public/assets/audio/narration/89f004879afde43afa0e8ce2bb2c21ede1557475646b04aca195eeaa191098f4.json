@@ -1,0 +1,15 @@
+{
+  "id": "89f004879afde43afa0e8ce2bb2c21ede1557475646b04aca195eeaa191098f4",
+  "url": "/assets/audio/narration/89f004879afde43afa0e8ce2bb2c21ede1557475646b04aca195eeaa191098f4.mp3",
+  "text": "构造与物件完成以后，回到使用者的行动。先看人从入口进入院落，再在空间里停留。这里没有给人物固定族群、服饰或民俗身份；真实日常要结合具体社区、日期和调查，不能由旅游画面概括所有人。",
+  "duration": 17.424,
+  "bytes": 280500,
+  "sha256": "6ef53fb22533d4f105ad1196486f09642a5a9f4611613c932a67b29f39eda210",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:04:53.170Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

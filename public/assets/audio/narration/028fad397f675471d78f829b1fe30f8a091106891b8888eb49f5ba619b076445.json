@@ -1,0 +1,15 @@
+{
+  "id": "028fad397f675471d78f829b1fe30f8a091106891b8888eb49f5ba619b076445",
+  "url": "/assets/audio/narration/028fad397f675471d78f829b1fe30f8a091106891b8888eb49f5ba619b076445.mp3",
+  "text": "把狮泉河的问题保存时，分开写清公路、航空和河岸建设各改变了什么，再核实出行日期与实际接驳。如果还要观察托林和札布让，就另选跨县一站。那里教师交流和家庭经营有自己的年代，不能与狮泉河压成同一处地方或一条短线。",
+  "duration": 19.944,
+  "bytes": 320820,
+  "sha256": "46206c40e4699a0400b14a5e53070491e618815e06c502d6454608b9781d7fdb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T15:21:46.469Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

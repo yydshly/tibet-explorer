@@ -1,0 +1,15 @@
+{
+  "id": "8ee8a77eda36b7bb91ff3a03d8102945541d3629aad6d391ad6d6b21a00ab5bb",
+  "url": "/assets/audio/narration/8ee8a77eda36b7bb91ff3a03d8102945541d3629aad6d391ad6d6b21a00ab5bb.mp3",
+  "text": "现代变化带来生活与产业的可能，也会进入生态、文化与资源利用的问题。现在以林芝等地方为入口，把交通、生活和保护放在同一背景中。每一种价值都要说明使用者、受影响对象与长期维护条件。",
+  "duration": 17.748,
+  "bytes": 285684,
+  "sha256": "cb212cac4b0777036a97e5257db11e4e6cc76eff4d67272ebe20b6f8cc5dd75f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T12:02:12.839Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

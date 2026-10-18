@@ -1,0 +1,19 @@
+{
+  "id": "d898f6942d943fff581017cacdc100a3ee7b40a8e42d126999122e19efc0fc19",
+  "url": "/assets/audio/narration/d898f6942d943fff581017cacdc100a3ee7b40a8e42d126999122e19efc0fc19.mp3",
+  "text": "大都会博物馆的交流资料记述，阿底峡一〇四二年入藏前停留加德满都，随后来到西藏西部托林，后来进入中部。这些是有材料支持的地点节点。先看山口怎样约束通行，再问人为什么出发、谁接待、怎样学习与翻译。",
+  "duration": 18.504,
+  "bytes": 297780,
+  "sha256": "8c8d84e9ad9a7cadb001579c6542f2ac1f337003ebbb38f0b6f6afac7788e25e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T18:11:23.349Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d898f6942d943fff581017cacdc100a3ee7b40a8e42d126999122e19efc0fc19.subtitles.json",
+  "subtitleSha256": "1d9b09e7b14fc13bbdf0805649b64e2d75d4f34b492aa3f083e37b6436130f76",
+  "timingLevel": "word"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "67e418cf668674f2250d776a82b60bc960d74cf14478a014f7e6b3c81f8901ab",
+  "url": "/assets/audio/narration/67e418cf668674f2250d776a82b60bc960d74cf14478a014f7e6b3c81f8901ab.mp3",
+  "text": "刚才看了阿底峡与托林的交流材料，现在看一件约十二世纪早期的西藏木经板，大都会藏品号一九八七点四零七点六。馆方说明成对木护板保护脆弱书页。画面把保护关系展开：两块护板，中间是空白书页；它没有复原这件原物的另一块板、原配书册或宗教图像。",
+  "duration": 22.5,
+  "bytes": 361716,
+  "sha256": "54a487f1a29032b78ea9011176642bd16253a4c9bd7645cdfaac5aa55becfad2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T04:23:14.028Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

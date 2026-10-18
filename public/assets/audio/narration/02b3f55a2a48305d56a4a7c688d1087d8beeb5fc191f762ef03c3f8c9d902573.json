@@ -1,0 +1,19 @@
+{
+  "id": "02b3f55a2a48305d56a4a7c688d1087d8beeb5fc191f762ef03c3f8c9d902573",
+  "url": "/assets/audio/narration/02b3f55a2a48305d56a4a7c688d1087d8beeb5fc191f762ef03c3f8c9d902573.mp3",
+  "text": "先在林芝看文化怎样被保护。二〇〇六年，工布新年进入自治区级非遗名录。工布涉及巴宜、米林和工布江达一带，这个年份记录保护行动，不是节日从此诞生。",
+  "duration": 14.76,
+  "bytes": 237876,
+  "sha256": "016570722d34d02dc5883b853e42ef474cca90108a1fe83a89234f9667d29241",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:25:17.620Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/02b3f55a2a48305d56a4a7c688d1087d8beeb5fc191f762ef03c3f8c9d902573.subtitles.json",
+  "subtitleSha256": "66c82cc14af7a42570eee6c45004150a13b52b6b754df99389e9b2154fd11e0e",
+  "timingLevel": "word"
+}

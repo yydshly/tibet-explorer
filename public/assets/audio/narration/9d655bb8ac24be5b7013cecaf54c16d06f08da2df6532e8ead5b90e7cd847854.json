@@ -1,0 +1,19 @@
+{
+  "id": "9d655bb8ac24be5b7013cecaf54c16d06f08da2df6532e8ead5b90e7cd847854",
+  "url": "/assets/audio/narration/9d655bb8ac24be5b7013cecaf54c16d06f08da2df6532e8ead5b90e7cd847854.mp3",
+  "text": "狮泉河盆地的例子是冬灌。二〇二三年报道记载护林员伦珠操作挡水板和闸口，把水引向林地。切换取用与管护，水源不变，引水过程却不同；示意没有还原当地水渠的位置和形状。",
+  "duration": 17.028,
+  "bytes": 274164,
+  "sha256": "60875a36be300518197811f20d8b2be262847f71b99e605428db9b747e38141a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:24:47.819Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/9d655bb8ac24be5b7013cecaf54c16d06f08da2df6532e8ead5b90e7cd847854.subtitles.json",
+  "subtitleSha256": "78672ba89485aac1b76bee4b21dbe7c98134a9ae55d43e2d22723b333922e823",
+  "timingLevel": "word"
+}

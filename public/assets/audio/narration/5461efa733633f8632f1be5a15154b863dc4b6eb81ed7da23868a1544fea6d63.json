@@ -1,0 +1,15 @@
+{
+  "id": "5461efa733633f8632f1be5a15154b863dc4b6eb81ed7da23868a1544fea6d63",
+  "url": "/assets/audio/narration/5461efa733633f8632f1be5a15154b863dc4b6eb81ed7da23868a1544fea6d63.mp3",
+  "text": "十一至十二世纪的藏印交流提供具体材料入口，托林与相关人物、艺术之间的联系值得追问。传播不是把一种形式原样搬来，还包括翻译、学习、选择和当地解释。藏传佛教不同传统、苯教与社区实践也要分别认识。",
+  "duration": 18.936,
+  "bytes": 304692,
+  "sha256": "dfbd7f2ee665fb22ccb43f4b1f1d457520d42fc365a9d2cd654ec6dec6f672df",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:58:55.872Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

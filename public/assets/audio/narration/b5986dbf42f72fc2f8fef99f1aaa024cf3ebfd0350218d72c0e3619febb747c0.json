@@ -1,0 +1,15 @@
+{
+  "id": "b5986dbf42f72fc2f8fef99f1aaa024cf3ebfd0350218d72c0e3619febb747c0",
+  "url": "/assets/audio/narration/b5986dbf42f72fc2f8fef99f1aaa024cf3ebfd0350218d72c0e3619febb747c0.mp3",
+  "text": "阿里的狮泉河盆地也有相对低缓的地面，但绿色范围不是城市边界。进入历史时，我们还要在这张地图上找到另一处地方，札达与托林，再用阿底峡和跨地区交流的材料继续理解。",
+  "duration": 15.012,
+  "bytes": 241908,
+  "sha256": "eca1f801f699f5203a3acf8b77045bf3a8bcc1af6272e49c6f0cf7ff808c1ff6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T10:27:45.521Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

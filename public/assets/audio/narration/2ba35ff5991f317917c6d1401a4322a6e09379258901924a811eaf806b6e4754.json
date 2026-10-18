@@ -1,0 +1,19 @@
+{
+  "id": "2ba35ff5991f317917c6d1401a4322a6e09379258901924a811eaf806b6e4754",
+  "url": "/assets/audio/narration/2ba35ff5991f317917c6d1401a4322a6e09379258901924a811eaf806b6e4754.mp3",
+  "text": "先把水源与用水空间联系起来。2024年年楚河流域春灌从4月2日开始，由满拉、冲巴湖两座水库联合供水。它说明农业依靠季节性的调蓄和管理；图上的流动表示供需关系，不是已测绘的灌渠线路。",
+  "duration": 19.116,
+  "bytes": 307572,
+  "sha256": "034df344e0197535f9cddc9d15589691173a31ffcfe5f7d3fb430430492b0659",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:48:49.123Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/2ba35ff5991f317917c6d1401a4322a6e09379258901924a811eaf806b6e4754.subtitles.json",
+  "subtitleSha256": "9827b228aac8aae1e1a01199764dea7970b48bcd363d58017f38612196693a22",
+  "timingLevel": "word"
+}

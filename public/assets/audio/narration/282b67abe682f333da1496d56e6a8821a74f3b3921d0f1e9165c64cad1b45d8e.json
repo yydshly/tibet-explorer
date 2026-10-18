@@ -1,0 +1,15 @@
+{
+  "id": "282b67abe682f333da1496d56e6a8821a74f3b3921d0f1e9165c64cad1b45d8e",
+  "url": "/assets/audio/narration/282b67abe682f333da1496d56e6a8821a74f3b3921d0f1e9165c64cad1b45d8e.mp3",
+  "text": "全史给了我们方向，接下来停在七至九世纪的一个具体案例：唐蕃会盟与立碑。我们会依次区分参与者的行动、事件发生的年份和材料形成的年份，再进入碑体与文字的观察。",
+  "duration": 13.644,
+  "bytes": 220020,
+  "sha256": "8d6a81147c078a9afab6e61735fad63f6fbf69ca1e45c0df37f5da09645f860b",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:57:26.138Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

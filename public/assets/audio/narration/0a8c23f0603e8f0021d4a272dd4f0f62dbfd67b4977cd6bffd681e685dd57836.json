@@ -1,0 +1,15 @@
+{
+  "id": "0a8c23f0603e8f0021d4a272dd4f0f62dbfd67b4977cd6bffd681e685dd57836",
+  "url": "/assets/audio/narration/0a8c23f0603e8f0021d4a272dd4f0f62dbfd67b4977cd6bffd681e685dd57836.mp3",
+  "text": "林芝的旅行观察先带上地形问题。从山谷去鲁朗，色季拉越岭会带来高差。把前面看见的谷底、山脊和通行接在一起，先确定想观察什么，再选实际停留点。",
+  "duration": 15.264,
+  "bytes": 245940,
+  "sha256": "a87c2e5d0ae674a2275e4131fe20bfae27f3ea9612df2d5649fce36cc0a756e0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:44:14.621Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

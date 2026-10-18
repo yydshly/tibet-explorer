@@ -1,0 +1,15 @@
+{
+  "id": "471c8073f0d9649058daa3292c6243429310f408ae2f0344e2664952176067d1",
+  "url": "/assets/audio/narration/471c8073f0d9649058daa3292c6243429310f408ae2f0344e2664952176067d1.mp3",
+  "text": "上升空气把温度问题接到了空气运动。但空气从哪里来，为什么会有风，又怎样把水汽带到高原？下一步从局地高差退回季节与环流背景，先看风，再把风与它携带的水分区分。",
+  "duration": 16.74,
+  "bytes": 269556,
+  "sha256": "fbbf687764dc1a3e3e57ea75498f25cf4a20df86efdbb93e2afe5b65a4944f3d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:51:30.681Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

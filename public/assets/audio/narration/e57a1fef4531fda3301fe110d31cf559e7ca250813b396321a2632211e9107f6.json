@@ -1,0 +1,15 @@
+{
+  "id": "e57a1fef4531fda3301fe110d31cf559e7ca250813b396321a2632211e9107f6",
+  "url": "/assets/audio/narration/e57a1fef4531fda3301fe110d31cf559e7ca250813b396321a2632211e9107f6.mp3",
+  "text": "阿里先换到札达的托林。博物馆材料记载，阿底峡一〇四二年入藏，先停留加德满都，再到托林。具体教师把交流带入地方，狮泉河的生活案例仍是另一处地点。",
+  "duration": 13.86,
+  "bytes": 223476,
+  "sha256": "f0ab6b1a5daaa3f434f7832482472cdf9732f4ba5dbc156998efb330c85005db",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T12:40:34.849Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

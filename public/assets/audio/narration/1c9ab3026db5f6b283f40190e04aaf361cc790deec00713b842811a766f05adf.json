@@ -1,0 +1,19 @@
+{
+  "id": "1c9ab3026db5f6b283f40190e04aaf361cc790deec00713b842811a766f05adf",
+  "url": "/assets/audio/narration/1c9ab3026db5f6b283f40190e04aaf361cc790deec00713b842811a766f05adf.mp3",
+  "text": "先看1985年日喀则的聚居检出，再到2005年观察河谷中的分布，最后对照2015年。三十米网格来自卫星分析，1985年一档也包含更早聚居，早期少检出不表示古城不存在。今天的寺院与车站只作参照，检出年不是建房年，也不能单凭范围变化证明铁路造成扩张。",
+  "duration": 22.968,
+  "bytes": 369204,
+  "sha256": "2e28239cf9519c2d9580edef9c264eae419421ef6c5429a426a30b8fcce2ae3c",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T01:51:28.305Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/1c9ab3026db5f6b283f40190e04aaf361cc790deec00713b842811a766f05adf.subtitles.json",
+  "subtitleSha256": "966e7ce7be3b30cca02174c7862931ba6581efb4a899991ecd0da242382b0655",
+  "timingLevel": "word"
+}

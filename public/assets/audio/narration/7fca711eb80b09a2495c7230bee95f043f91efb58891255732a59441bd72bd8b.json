@@ -1,0 +1,15 @@
+{
+  "id": "7fca711eb80b09a2495c7230bee95f043f91efb58891255732a59441bd72bd8b",
+  "url": "/assets/audio/narration/7fca711eb80b09a2495c7230bee95f043f91efb58891255732a59441bd72bd8b.mp3",
+  "text": "请回到只有设施的阶段，再依次补上人员和开放、以及使用者的可达条件。观察哪一段关系尚未接续。然后带着这些问题阅读真实地区的指标、年份和调查，把统计数量与人的具体经验相互参照。",
+  "duration": 15.804,
+  "bytes": 254580,
+  "sha256": "889dfc8fa9b14216e7b0a1608e92b6bc04ccd5c653b691a753e39a9537657c3d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T00:23:24.318Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

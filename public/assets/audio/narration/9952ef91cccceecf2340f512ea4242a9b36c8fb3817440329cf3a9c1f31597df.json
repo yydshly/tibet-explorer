@@ -1,0 +1,15 @@
+{
+  "id": "9952ef91cccceecf2340f512ea4242a9b36c8fb3817440329cf3a9c1f31597df",
+  "url": "/assets/audio/narration/9952ef91cccceecf2340f512ea4242a9b36c8fb3817440329cf3a9c1f31597df.mp3",
+  "text": "春夏秋冬会重复出现，但气候的长期背景也可能改变。下一步离开一年循环，转到多年尺度：现代全球变暖为什么发生？我们先看能量扰动与系统响应，再学习如何读冰雪等对象的变化证据。",
+  "duration": 17.28,
+  "bytes": 278196,
+  "sha256": "afbae4afcca128f7f4aaa4cf14d890006fd0b0c9b872893fcd32bdd61238ca53",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:15.076Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

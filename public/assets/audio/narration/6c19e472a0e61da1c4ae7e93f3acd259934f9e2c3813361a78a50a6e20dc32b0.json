@@ -1,0 +1,15 @@
+{
+  "id": "6c19e472a0e61da1c4ae7e93f3acd259934f9e2c3813361a78a50a6e20dc32b0",
+  "url": "/assets/audio/narration/6c19e472a0e61da1c4ae7e93f3acd259934f9e2c3813361a78a50a6e20dc32b0.mp3",
+  "text": "温度和压力差异参与驱动空气运动，地球自转、海陆和地形也会改变流动。来到高原的风，需要放在这些更大条件中理解。眼前先读海陆受热、压力差与偏转，再看来到高原的空气携带什么，以及季节怎样改变背景。",
+  "duration": 19.08,
+  "bytes": 306996,
+  "sha256": "2ad65731c9e943ec5617b128c3af7f201ecbc34fbe4511895d6ef00b2d3511f0",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T15:17:29.734Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

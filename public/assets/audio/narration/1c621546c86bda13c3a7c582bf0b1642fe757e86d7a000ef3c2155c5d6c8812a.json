@@ -1,0 +1,15 @@
+{
+  "id": "1c621546c86bda13c3a7c582bf0b1642fe757e86d7a000ef3c2155c5d6c8812a",
+  "url": "/assets/audio/narration/1c621546c86bda13c3a7c582bf0b1642fe757e86d7a000ef3c2155c5d6c8812a.mp3",
+  "text": "已经有了地球位置、周边环境和地形背景。现在回到西藏全域，认识拉萨、日喀则、山南、林芝、昌都、那曲和阿里。每一处先看位置与环境，再看人文历史和今天的联系。遇到需要解释的原因，再打开对应专题，带着认识回到原来的城市。",
+  "duration": 21.636,
+  "bytes": 347892,
+  "sha256": "79d3a7ad6cbb50e6198166d3c2d173993c1ec58d686a286364aeb2755a0857b7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T05:48:20.339Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

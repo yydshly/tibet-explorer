@@ -1,0 +1,19 @@
+{
+  "id": "842bbe804db6fa9328bf5726a7b9cf5b40ff7ae0ffba18c3817d8dab63a522b0",
+  "url": "/assets/audio/narration/842bbe804db6fa9328bf5726a7b9cf5b40ff7ae0ffba18c3817d8dab63a522b0.mp3",
+  "text": "把各地放回水、土地和通行这三个问题。河谷较缓的地面给聚居与道路提供空间，水源还要经过取用和维护才能服务生活；越过山岭，又需要道路、桥隧和持续组织。环境提供可能与限制，人的技术、交换和历史选择，继续决定地方怎样生活。",
+  "duration": 22.824,
+  "bytes": 366900,
+  "sha256": "591054ffa298c862a43c38c66008df8adb13c3c8f8da9a67b4a8661b5404513e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:42:56.807Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/842bbe804db6fa9328bf5726a7b9cf5b40ff7ae0ffba18c3817d8dab63a522b0.subtitles.json",
+  "subtitleSha256": "4af85e8f7ee44c74486961464d8fc1198d108081dc5455ed0638ccc90a10c31f",
+  "timingLevel": "word"
+}

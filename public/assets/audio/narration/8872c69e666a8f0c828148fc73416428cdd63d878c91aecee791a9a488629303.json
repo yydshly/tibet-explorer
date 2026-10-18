@@ -1,0 +1,15 @@
+{
+  "id": "8872c69e666a8f0c828148fc73416428cdd63d878c91aecee791a9a488629303",
+  "url": "/assets/audio/narration/8872c69e666a8f0c828148fc73416428cdd63d878c91aecee791a9a488629303.mp3",
+  "text": "季节循环源于照射几何的重复变化，现在讨论的是多年气候背景。现代全球变暖主要与人类活动增加温室气体有关。我们先回到能量收支，理解系统为什么改变，再问高原上的冰雪、水与生态如何响应。",
+  "duration": 17.424,
+  "bytes": 280500,
+  "sha256": "72ea92b4a9b6f7677f82502a1efedc748e2422a9d5f7952cedefa325cd25c985",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-14T11:53:20.980Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

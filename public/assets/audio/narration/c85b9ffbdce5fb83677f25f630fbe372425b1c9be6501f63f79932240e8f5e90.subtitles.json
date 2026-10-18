@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "audioSha256": "1a4396648c79ef32c035c245a433527ea7228907c1caef7dbbf157327a4f48ad",
+  "textSha256": "d5500c1f3634dcacab99dddc76bba189324128598e25de7158de0498620bd780",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "duration": 7.632,
+  "source": "MiniMax",
+  "timingLevel": "word",
+  "indexUnit": "utf16",
+  "providerIndexUnit": "utf16-compatible",
+  "cues": [
+    {
+      "start": 0,
+      "end": 7.4813151927437636,
+      "text": "留在拉萨河谷，把时间展开。大昭寺创建于七世纪，是认识早期宗教与老城的入口。",
+      "textStart": 0,
+      "textEnd": 37
+    }
+  ],
+  "words": [
+    {
+      "start": 0.04102564102564102,
+      "end": 0.20512820512820512,
+      "text": "留",
+      "textStart": 0,
+      "textEnd": 1
+    },
+    {
+      "start": 0.20512820512820512,
+      "end": 0.36923076923076925,
+      "text": "在",
+      "textStart": 1,
+      "textEnd": 2
+    },
+    {
+      "start": 0.36923076923076925,
+      "end": 0.5333333333333332,
+      "text": "拉",
+      "textStart": 2,
+      "textEnd": 3
+    },
+    {
+      "start": 0.5333333333333332,
+      "end": 0.6564102564102563,
+      "text": "萨",
+      "textStart": 3,
+      "textEnd": 4
+    },
+    {
+      "start": 0.6564102564102563,
+      "end": 0.7794871794871795,
+      "text": "河",
+      "textStart": 4,
+      "textEnd": 5
+    },
+    {
+      "start": 0.7794871794871795,
+      "end": 0.9435897435897436,
+      "text": "谷",
+      "textStart": 5,
+      "textEnd": 6
+    },
+    {
+      "start": 0.9435897435897436,
+      "end": 0.9846153846153846,
+      "text": "，",
+      "textStart": 6,
+      "textEnd": 7
+    },
+    {
+      "start": 0.9846153846153846,
+      "end": 1.3948717948717948,
+      "text": "把",
+      "textStart": 7,
+      "textEnd": 8
+    },
+    {
+      "start": 1.3948717948717948,
+      "end": 1.558974358974359,
+      "text": "时",
+      "textStart": 8,
+      "textEnd": 9
+    },
+    {
+      "start": 1.558974358974359,
+      "end": 1.7230769230769232,
+      "text": "间",
+      "textStart": 9,
+      "textEnd": 10
+    },
+    {
+      "start": 1.7230769230769232,
+      "end": 1.8871794871794871,
+      "text": "展",
+      "textStart": 10,
+      "textEnd": 11
+    },
+    {
+      "start": 1.8871794871794871,
+      "end": 2.051282051282051,
+      "text": "开",
+      "textStart": 11,
+      "textEnd": 12
+    },
+    {
+      "start": 2.051282051282051,
+      "end": 2.133333333333333,
+      "text": "。",
+      "textStart": 12,
+      "textEnd": 13
+    },
+    {
+      "start": 2.133333333333333,
+      "end": 3.035897435897436,
+      "text": "大",
+      "textStart": 13,
+      "textEnd": 14
+    },
+    {
+      "start": 3.035897435897436,
+      "end": 3.282051282051282,
+      "text": "昭",
+      "textStart": 14,
+      "textEnd": 15
+    },
+    {
+      "start": 3.282051282051282,
+      "end": 3.4051282051282046,
+      "text": "寺",
+      "textStart": 15,
+      "textEnd": 16
+    },
+    {
+      "start": 3.4051282051282046,
+      "end": 3.5692307692307685,
+      "text": "创",
+      "textStart": 16,
+      "textEnd": 17
+    },
+    {
+      "start": 3.5692307692307685,
+      "end": 3.7743589743589743,
+      "text": "建",
+      "textStart": 17,
+      "textEnd": 18
+    },
+    {
+      "start": 3.7743589743589743,
+      "end": 3.8974358974358965,
+      "text": "于",
+      "textStart": 18,
+      "textEnd": 19
+    },
+    {
+      "start": 3.8974358974358965,
+      "end": 4.061538461538461,
+      "text": "七",
+      "textStart": 19,
+      "textEnd": 20
+    },
+    {
+      "start": 4.061538461538461,
+      "end": 4.266666666666666,
+      "text": "世",
+      "textStart": 20,
+      "textEnd": 21
+    },
+    {
+      "start": 4.266666666666666,
+      "end": 4.348717948717949,
+      "text": "纪",
+      "textStart": 21,
+      "textEnd": 22
+    },
+    {
+      "start": 4.348717948717949,
+      "end": 4.389743589743589,
+      "text": "，",
+      "textStart": 22,
+      "textEnd": 23
+    },
+    {
+      "start": 4.389743589743589,
+      "end": 4.882051282051282,
+      "text": "是",
+      "textStart": 23,
+      "textEnd": 24
+    },
+    {
+      "start": 4.882051282051282,
+      "end": 5.579487179487179,
+      "text": "认",
+      "textStart": 24,
+      "textEnd": 25
+    },
+    {
+      "start": 5.579487179487179,
+      "end": 5.702564102564102,
+      "text": "识",
+      "textStart": 25,
+      "textEnd": 26
+    },
+    {
+      "start": 5.702564102564102,
+      "end": 5.866666666666666,
+      "text": "早",
+      "textStart": 26,
+      "textEnd": 27
+    },
+    {
+      "start": 5.866666666666666,
+      "end": 6.071794871794872,
+      "text": "期",
+      "textStart": 27,
+      "textEnd": 28
+    },
+    {
+      "start": 6.071794871794872,
+      "end": 6.235897435897436,
+      "text": "宗",
+      "textStart": 28,
+      "textEnd": 29
+    },
+    {
+      "start": 6.235897435897436,
+      "end": 6.4,
+      "text": "教",
+      "textStart": 29,
+      "textEnd": 30
+    },
+    {
+      "start": 6.4,
+      "end": 6.564102564102564,
+      "text": "与",
+      "textStart": 30,
+      "textEnd": 31
+    },
+    {
+      "start": 6.564102564102564,
+      "end": 6.728205128205128,
+      "text": "老",
+      "textStart": 31,
+      "textEnd": 32
+    },
+    {
+      "start": 6.728205128205128,
+      "end": 6.851282051282051,
+      "text": "城",
+      "textStart": 32,
+      "textEnd": 33
+    },
+    {
+      "start": 6.851282051282051,
+      "end": 6.892307692307693,
+      "text": "的",
+      "textStart": 33,
+      "textEnd": 34
+    },
+    {
+      "start": 6.892307692307693,
+      "end": 7.097435897435896,
+      "text": "入",
+      "textStart": 34,
+      "textEnd": 35
+    },
+    {
+      "start": 7.097435897435896,
+      "end": 7.220512820512821,
+      "text": "口",
+      "textStart": 35,
+      "textEnd": 36
+    },
+    {
+      "start": 7.220512820512821,
+      "end": 7.425641025641024,
+      "text": "。",
+      "textStart": 36,
+      "textEnd": 37
+    }
+  ]
+}

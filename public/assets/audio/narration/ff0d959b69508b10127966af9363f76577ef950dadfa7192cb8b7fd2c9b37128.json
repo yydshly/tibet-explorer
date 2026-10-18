@@ -1,0 +1,15 @@
+{
+  "id": "ff0d959b69508b10127966af9363f76577ef950dadfa7192cb8b7fd2c9b37128",
+  "url": "/assets/audio/narration/ff0d959b69508b10127966af9363f76577ef950dadfa7192cb8b7fd2c9b37128.mp3",
+  "text": "载体先到坡脚，再通过有限通口，最后把物品交给另一侧的接收者。地形只是其中一层；运输技术、补给和组织决定联系怎样继续。历史上的教师、文本与艺术交流，也要从实际行动和留下的材料认识，不能只靠地图上出现一条线。",
+  "duration": 20.232,
+  "bytes": 325428,
+  "sha256": "18325d317917a606a309f64c5202cefe13c5bb573ac036f6b4c8fdd6d277b995",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:54:34.619Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

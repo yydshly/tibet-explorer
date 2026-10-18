@@ -1,0 +1,15 @@
+{
+  "id": "e4244a532b6720d71bd545f89098ce04326e9a51a8761b1dbc2d669fe7be27a8",
+  "url": "/assets/audio/narration/e4244a532b6720d71bd545f89098ce04326e9a51a8761b1dbc2d669fe7be27a8.mp3",
+  "text": "拉萨先从河流、道路和客站附近的联系读起，再对照二〇二二年的取供水资料。河谷空间、自然水源和居民实际取水是不同问题。本图不定位地下水井，观察地点仍需选择允许到达的位置。",
+  "duration": 18.504,
+  "bytes": 297780,
+  "sha256": "0da86837b949cc234d511c138b29b7d464001028643ad5771a2e358ed9d5a47f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T14:13:10.189Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "b0fb724ffa0c35a84d8afde58bf39452c693fdfa830e4c995bc6d5dd6a614ea4",
+  "url": "/assets/audio/narration/b0fb724ffa0c35a84d8afde58bf39452c693fdfa830e4c995bc6d5dd6a614ea4.mp3",
+  "text": "去鲁朗分两段。米林机场先经公路联系林芝，二〇二〇年资料记作省道四号；再沿三一八国道，经色季拉越岭到鲁朗。回到同一片服务用地，住宿、商业与经营者把经过接成停留。机场抵达与小镇接待各有一环。",
+  "duration": 18.792,
+  "bytes": 302388,
+  "sha256": "217deaf984503c8d7968de02161794e265e84f6079e9c22b74c081e9ad8b72c3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:29:28.527Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b0fb724ffa0c35a84d8afde58bf39452c693fdfa830e4c995bc6d5dd6a614ea4.subtitles.json",
+  "subtitleSha256": "ff5382a31015bf5a1188e201227c60c6ba4ff662a5738f6461ec7ca612dfcab3",
+  "timingLevel": "word"
+}

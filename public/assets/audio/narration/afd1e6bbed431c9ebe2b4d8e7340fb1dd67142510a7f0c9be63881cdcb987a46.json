@@ -1,0 +1,19 @@
+{
+  "id": "afd1e6bbed431c9ebe2b4d8e7340fb1dd67142510a7f0c9be63881cdcb987a46",
+  "url": "/assets/audio/narration/afd1e6bbed431c9ebe2b4d8e7340fb1dd67142510a7f0c9be63881cdcb987a46.mp3",
+  "text": "先从林芝城区向鲁朗读地形试线。山谷与山脊带来高差；三一八国道涉及色季拉越岭，试线不是公路。",
+  "duration": 9.72,
+  "bytes": 157236,
+  "sha256": "e8d8afb1bfbb8f333aa0c208438677b46e7375fcebfbd35a15c7f38613c9346e",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T17:16:33.905Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/afd1e6bbed431c9ebe2b4d8e7340fb1dd67142510a7f0c9be63881cdcb987a46.subtitles.json",
+  "subtitleSha256": "80cc388eeb64f0b70fbb42ac5d34987ac2a6b3592b584f837ab90aa784431d80",
+  "timingLevel": "word"
+}

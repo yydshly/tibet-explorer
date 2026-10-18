@@ -1,0 +1,19 @@
+{
+  "id": "d39a3e4311084947498504b7d160281924ad0202af62223104d6b5f7f17c5d14",
+  "url": "/assets/audio/narration/d39a3e4311084947498504b7d160281924ad0202af62223104d6b5f7f17c5d14.mp3",
+  "text": "从历史来到今天，西藏仍与更大范围相连。公路、铁路和航空增加不同的进入方式，河流连接上下游，商品、人员与知识也不断往来。先看通道连向哪里，再看它怎样接上城市。接下来用拉萨的铁路与跨河接续，分清到达节点和真正进入生活。",
+  "duration": 22.428,
+  "bytes": 360564,
+  "sha256": "88781c1c572b57eae49cf576391f670799e86a2340f49b58dcf868f546c726c6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T02:43:29.282Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d39a3e4311084947498504b7d160281924ad0202af62223104d6b5f7f17c5d14.subtitles.json",
+  "subtitleSha256": "51516da559a66e5f8dc83cb9180b47f193003108aa93bf9a0b4c2cfe61f910bf",
+  "timingLevel": "word"
+}

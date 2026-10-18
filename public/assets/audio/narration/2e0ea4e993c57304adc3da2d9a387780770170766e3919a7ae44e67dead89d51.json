@@ -1,0 +1,19 @@
+{
+  "id": "2e0ea4e993c57304adc3da2d9a387780770170766e3919a7ae44e67dead89d51",
+  "url": "/assets/audio/narration/2e0ea4e993c57304adc3da2d9a387780770170766e3919a7ae44e67dead89d51.mp3",
+  "text": "二〇二五年通航纪念资料记述，邦达机场距昌都市区约一百二十六公里。人和行李落地以后，还要接续山地公路与城市服务。这里分开演示空中到达和地面接续；连接是关系示意，不提供实时航班或公路导航。",
+  "duration": 18.9,
+  "bytes": 304116,
+  "sha256": "f845bed96e8c6ce41777080dd75cd8a7e0fe473746ff95584cb93b18b6d2af83",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-16T00:54:04.692Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/2e0ea4e993c57304adc3da2d9a387780770170766e3919a7ae44e67dead89d51.subtitles.json",
+  "subtitleSha256": "547b3a0a1c3e84f29e39e362cae2aaaf5157af124147cf8757393b30e4decead",
+  "timingLevel": "word"
+}

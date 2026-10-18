@@ -1,0 +1,15 @@
+{
+  "id": "273d11eb399cdcc6c0da717d6760cacf2632721acb41393b5c69e7a3590fee75",
+  "url": "/assets/audio/narration/273d11eb399cdcc6c0da717d6760cacf2632721acb41393b5c69e7a3590fee75.mp3",
+  "text": "布达拉宫、大昭寺和罗布林卡仍与今天的拉萨相连。联合国教科文组织二〇二五年保护资料同时讨论材料维护、历史环境和人的使用。发展与保护需要围绕具体对象判断，不能只看游客数量，也不能只保存一个建筑外观。",
+  "duration": 19.26,
+  "bytes": 309876,
+  "sha256": "3ce69c1856e3136fbed4b184aaa7a2dccc4a051a0f2d2b8847745a52758b30a3",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-15T01:56:01.680Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。"
+}
