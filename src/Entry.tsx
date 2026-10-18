@@ -4,6 +4,7 @@ import type {EntryAction} from './lib/entryAction';
 import './app.css';
 const StudyApp=lazy(()=>import('./App.tsx'));
 const Overview=lazy(()=>import('./components/OverviewExperience'));
+const ObservationPlanPage=lazy(()=>import('./components/ObservationPlanPage'));
 
 // The product opens on the demonstration; the catalogue remains an optional route.
 function entryHash(){
@@ -24,7 +25,7 @@ export default function Entry(){
   const resume=(()=>{try{return localStorage.getItem('tibet-explorer.last-visit.v1')||'';}catch{return '';}})();
   const study=(next:EntryAction)=>{if(overview)setReturnToOverview(true);setAction(next);};
   return <Suspense fallback={<main className="app" aria-busy="true"><p role="status">正在准备这一部分…</p></main>}>
-    {action||!home&&!overview?<StudyApp initialAction={action} initialOverviewReturn={returnToOverview}/>:overview?
+    {/^#\/observation-plan(?:\?|$)/.test(hash)?<ObservationPlanPage/>:action||!home&&!overview?<StudyApp initialAction={action} initialOverviewReturn={returnToOverview}/>:overview?
       <Overview onHome={()=>{location.hash='/home';}} onDetail={value=>study({kind:'detail',value})} onDirectory={()=>study({kind:'drawer',value:'contents'})} onMap={()=>study({kind:'city',value:'lhasa'})}/>
       :<ReferenceHome onStartEarth={()=>{location.hash='/overview?start=1';}} onContinue={()=>{location.hash=resume||'/overview';}} hasResume={Boolean(resume)}
         onCity={value=>study({kind:'city',value})} onTheme={value=>study({kind:'theme',value})} onDirectory={()=>study({kind:'drawer',value:'contents'})}

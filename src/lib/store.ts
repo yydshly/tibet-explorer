@@ -1,8 +1,10 @@
 import {cityTravelOrigin} from './cityTravelOrigin';
+import {sanitizeObservationOrigins,type ObservationOrigin} from './overviewObservation';
 import {sanitizeTravelAccessBook,type TravelAccessVerificationBook} from './travelAccessVerification';
 
 export interface SceneSettings { season: number; layer: string; progress: number; selected: string; cutaway: boolean; readingFraction?:number; airMoisture?: 'higher'|'lower'; compareRegion?: string;livingSetting?:'valley'|'upland';communitySupport?:'individual'|'shared' }
 export interface Exploration {
+  overviewObservations?:Record<string,ObservationOrigin>;
   version: 1; lastStep: string; visited: string[]; completed: string[]; bookmarks: string[];
   scenes: Record<string, SceneSettings>; route: string[]; note: string; travelDate: string; transport: string; stopNotes:Record<string,string>;stopOrigins?:Record<string,string>;accessVerifications?:TravelAccessVerificationBook;
 }
@@ -25,6 +27,7 @@ const TRANSPORTS = new Set(['', '公共交通', '包车或自驾', '混合交通
 const CHAPTER_STEPS: Record<string, string> = { position: 'G', climate: 'C', regions: 'E', landscapes: 'P', history: 'H', culture: 'K', connections: 'R', modern: 'M', travel: 'T' };
 
 export const emptyExploration = (): Exploration => ({
+  overviewObservations:{},
   version: 1, lastStep: 'G1', visited: [], completed: [], bookmarks: [], scenes: {}, route: [], note: '', travelDate: '', transport: '',stopNotes:{},stopOrigins:{},
 });
 
@@ -129,6 +132,7 @@ export function parseExploration(raw: string | null): Exploration {
       travelDate: validTravelDate(value.travelDate),
       transport: typeof value.transport === 'string' && TRANSPORTS.has(value.transport) ? value.transport : '',
       stopNotes:isRecord(value.stopNotes)?Object.fromEntries(Object.entries(value.stopNotes).filter(([id,note])=>ROUTE_IDS.has(id)&&typeof note==='string').map(([id,note])=>[id,(note as string).slice(0,1500)])):{},
+      overviewObservations:Object.fromEntries(Object.entries(sanitizeObservationOrigins(value.overviewObservations)).filter(([id])=>ROUTE_IDS.has(id))),
       ...(value.accessVerifications?{accessVerifications:sanitizeTravelAccessBook(value.accessVerifications)}:{}),
       stopOrigins:isRecord(value.stopOrigins)?Object.fromEntries(Object.entries(value.stopOrigins).flatMap(([id,origin])=>{const hash=cityTravelOrigin(origin);return ROUTE_IDS.has(id)&&hash?[[id,hash]]:[]})):{},
     };

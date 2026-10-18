@@ -1,0 +1,15 @@
+{
+  "scope": "M3 observation-plan handoff only",
+  "mainline": {"chapters":6,"beats":21,"durationSeconds":676.872,"newRecordings":0,"newModels":0},
+  "checks": [
+    "Ending at raw .437 -> one click opens editable existing Lhasa river stop with question, original recording bookmark and three matching source links.",
+    "Appended an observation about actual station-to-city transfers; explicit save then browser reload retained the full text.",
+    "Repeated handoff retained the authored text and a single route stop.",
+    "Save/return restored ending at raw .437 paused; a short normal playback continued from the source sentence.",
+    "Fixed duplicate select/seek invalidating paused word hydration; final same-position return restores the matching caption without starting playback.",
+    "Existing complete-plan editor shows the same route/note/source metadata. Its footer return was wired and tested on the final build."
+  ],
+  "automated": {"targetedTestsPassed":61,"typecheck":"passed","build":"passed; pre-existing large chunk warning remains"},
+  "limits": ["Not a full-show replay or first-time-viewer comprehension acceptance.","Browser-local storage only; no cross-device synchronization.","No current traffic, access or booking claims added or re-verified.","Export includes carried source links; browser file download itself was not exercised."],
+  "remaining": "M4: three independent first-time viewers, explanation and operation/return tasks. Do not replace their understanding with developer test results."
+}

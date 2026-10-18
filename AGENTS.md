@@ -1,5 +1,14 @@
 # Prototype Instructions
 
+## 2026-10-18 M3 observation-plan handoff
+
+Authorized M3 closure only: reuse existing travelStops, Exploration route/stopNotes, DrawerContent and JourneyPlan. New /observation-plan route is a focused editor over the same plan. overviewObservations stores corresponding source links/question and exact program/beat/recording/text/raw/voice return bookmark. Preserve existing route order and user notes, including intentionally blank notes. Native words and six chapters/21 beats/676.872s are unchanged; no new geographic facts or models.
+
+Overview entry pauses before save/navigation. App-hosted Overview must update latestSaved before unmount to prevent its persistence cleanup overwriting the appended task. ReturnStop resolves original program and compares recording/text; changed scripts return to segment start. Do not select/seek again when already at the exact saved position: that invalidated paused word-timing hydration without changed dependencies. Plan source links are sanitized; failed saves report failure, not success. Remove stops without deleting their return context; do not show removed stop as active editor.
+
+QA: qa/product-acceptance-20261018/observation-plan. Actual ending at raw .437 -> edit/save -> refresh -> return .437; repeated handoff preserves edited note; original whole-plan footer returns too. Pause captions and same-position restore checked after repair; short continuation from original sentence checked, not whole-show playback.61 targeted tests/typecheck/build passed. M1/M2/M3 implementations checked; M4 three first-time viewers remains pending. Do not start another detail/model expansion or call developer checks comprehension acceptance.
+
+
 ## 2026-10-18 M1 sourced irrigation case
 
 Current main: six chapters /21 beats /676.872s (11:16). Authorized scope is one environment-to-service case only. OVERVIEW-shiquanhe-irrigation (36.828s native MiniMax words) replaces LAB-life-ngari (37.188s); original remains in conditions-use depth. M1 and M2 implementations checked, first-viewer comprehension NOT certified; M3/M4 remain pending.

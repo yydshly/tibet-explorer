@@ -1,4 +1,7 @@
 import {advanceIrrigation,irrigationFeedback,type IrrigationState} from '../data/overviewIrrigation';
+import {observationChoices} from '../data/overviewObservation';
+import {appendOverviewObservation} from '../lib/overviewObservation';
+import {readExploration,writeExploration,type Exploration} from '../lib/store';
 import OverviewLearningGuide from './OverviewLearningGuide';
 import OverviewUnderstanding from './OverviewUnderstanding';
 import {editorialChanges} from '../data/overviewEditorial';
@@ -28,22 +31,32 @@ import './OverviewExperience.css';
 
 const clock=(seconds:number)=>`${Math.floor(seconds/60)}:${String(Math.floor(seconds%60)).padStart(2,'0')}`;
 
-interface Props {onHome:()=>void;onDetail:(stepId:string)=>void;onDirectory:()=>void;onMap:()=>void}
+interface Props {onHome:()=>void;onDetail:(stepId:string)=>void;onDirectory:()=>void;onMap:()=>void;onSavePlan?:(saved:Exploration)=>void}
 
 /** One persistent stage and one recording clock for the complete introduction.
  * Chapters explain a single question before permitting optional detail. */
-const programFromHash=()=>overviewPrograms.find(p=>p.id===new URLSearchParams(location.hash.split('?')[1]||'').get('topic'))??overviewMainProgram;
+const programFromHash=()=>{const params=new URLSearchParams(location.hash.split('?')[1]||'');const origin=readExploration().overviewObservations?.[params.get('returnStop')||''];return overviewPrograms.find(p=>p.id===(origin?.programId??params.get('topic')))??overviewMainProgram;};
 export default function OverviewExperience(props:Props){
  const [program,setProgram]=useState(programFromHash);
  useEffect(()=>{const sync=()=>setProgram(programFromHash());window.addEventListener('hashchange',sync);return()=>window.removeEventListener('hashchange',sync);},[]);
  return <OverviewPlayback key={program.id} {...props} program={program}/>;
 }
-function OverviewPlayback({onHome,onDetail,onDirectory,onMap,program}:Props & {program:OverviewProgram}){
+function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}:Props & {program:OverviewProgram}){
  const overviewBeats=program.beats,overviewChapters=program.chapters,isMain=program.id==='main';
  const [groundOverride,setGroundOverride]=useState<{id:string;state:GroundJourneyState}>();
  const playbackBeats=useMemo(()=>overviewBeats.map(beat=>({...beat,sceneIdentity:groundOverride?.id===beat.id?'atlas-local-context':overviewPresentation(beat,0).sceneIdentity})),[overviewBeats,groundOverride?.id]);
  const director=useOverviewDirector({beats:playbackBeats,resumeAliases:isMain?overviewResumeAliases:undefined,storageKey:`tibet-explorer.overview-six.v1.${program.id}`});
  const beat=overviewBeats[director.beatIndex],chapter=overviewChapters.find(item=>item.beats.some(b=>b.id===beat.id))!;
+ const [planNotice,setPlanNotice]=useState('');
+ const observations=observationChoices(beat);
+ const [observationChoice,setObservationChoice]=useState('');
+ const observation=observations.find(o=>o.stopId===observationChoice)??observations[0];
+ const openObservation=()=>{
+  director.pause();if(!observation)return;
+  const next=appendOverviewObservation(readExploration(),observation.stopId,{programId:program.id,beatId:beat.id,recordingId:beat.recordingId,text:beat.text,raw:director.raw,voice:director.voice,title:beat.title,question:observation.question,sources:[...observation.sources]});
+  if(!writeExploration(next)){setPlanNotice('观察计划未能保存，请检查浏览器存储后重试；讲述位置仍保留。');return;}
+  onSavePlan?.(next);location.hash=`/observation-plan?stop=${observation.stopId}`;
+ };
  const chapterIndex=overviewChapters.indexOf(chapter),localIndex=chapter.beats.findIndex(item=>item.id===beat.id);
  const currentStage=chapter.stages?.find(stage=>stage.beatIds.includes(beat.id));
  const beatWindowStart=chapter.beats.length>5?Math.max(0,Math.min(localIndex-1,chapter.beats.length-3)):0;
@@ -98,6 +111,11 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,program}:Props & {p
   const startFromEntry=()=>{
    const [route,query]=location.hash.split('?');if(route!=='#/overview')return;
    const params=new URLSearchParams(query||'');
+   const returnStop=params.get('returnStop');
+   if(returnStop){const origin=readExploration().overviewObservations?.[returnStop];const index=origin?overviewBeats.findIndex(b=>b.id===origin.beatId):-1;
+    if(origin&&index>=0){const same=overviewBeats[index].recordingId===origin.recordingId&&overviewBeats[index].text===origin.text;const raw=same?origin.raw:0;if(index!==director.beatIndex){director.select(index);director.seek(raw);}else if(director.raw!==raw)director.seek(raw);director.setVoice(origin.voice);setPlanNotice(same?'已回到原讲述位置，点击继续演示。':'这一段讲解已更新，已回到新版段首。');}
+    params.delete('returnStop');if(program.id!=='main')params.set('topic',program.id);history.replaceState(history.state,'',`${location.pathname}${location.search}#/overview${params.size?`?${params}`:''}`);return;
+   }
    if(params.get('explore')==='climate'){director.select(overviewBeats.findIndex(b=>b.id==='LAB-air-higher'));params.delete('explore');history.replaceState(history.state,'',`${location.pathname}${location.search}#/overview`);return;}
    const chapterId=params.get('chapter');
    if(chapterId){const target=overviewChapters.find(c=>c.id===chapterId);if(target){director.select(overviewBeats.findIndex(b=>b.id===target.beats[0].id));params.delete('chapter');history.replaceState(history.state,'',`${location.pathname}${location.search}#/overview${params.size?`?${params}`:''}`);}return;}
@@ -142,7 +160,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,program}:Props & {p
  const caption=director.timing?.caption||beat.text.split(/[。；]/u)[0]+'。';
  const pending=director.wantsPlayback&&!director.playing;
  return <main className={`overview-experience${ground?' overview-ground-mode':''}`}>
-  <header className="overview-header"><button className="overview-brand" onClick={()=>navigate(onHome)}><GlobeHemisphereEast size={21}/><span>西藏探索</span></button><p>{isMain?"完整认识西藏":"延伸阅读"}<span>{isMain?"六个核心问题 · 从整体到地方":program.title}</span></p><nav aria-label="总览与深入"><button className="project-review-entry" onClick={()=>navigate(()=>{location.assign("/project-review/index.html");})} title="最初思路、阶段验收与后续处理方案">项目说明</button><button className={!isMain?"overview-return":undefined} aria-current={isMain?"page":undefined} onClick={()=>navigate(()=>{location.hash="/overview";})}>{isMain?"完整演示":"返回认识主线"}</button><button onClick={()=>navigate(onMap)}>地图图鉴</button><button onClick={()=>navigate(onDirectory)}>全部专题</button><button onClick={()=>navigate(onHome)}>探索目录</button></nav></header>
+  <header className="overview-header"><button className="overview-brand" onClick={()=>navigate(onHome)}><GlobeHemisphereEast size={21}/><span>西藏探索</span></button><p>{isMain?"完整认识西藏":"延伸阅读"}<span>{isMain?"六个核心问题 · 从整体到地方":program.title}</span></p><nav aria-label="总览与深入"><button className="project-review-entry" onClick={()=>navigate(()=>{location.hash="/observation-plan";})}>观察计划</button><button className="project-review-entry" onClick={()=>navigate(()=>{location.assign("/project-review/index.html");})} title="最初思路、阶段验收与后续处理方案">项目说明</button><button className={!isMain?"overview-return":undefined} aria-current={isMain?"page":undefined} onClick={()=>navigate(()=>{location.hash="/overview";})}>{isMain?"完整演示":"返回认识主线"}</button><button onClick={()=>navigate(onMap)}>地图图鉴</button><button onClick={()=>navigate(onDirectory)}>全部专题</button><button onClick={()=>navigate(onHome)}>探索目录</button></nav></header>
   <div className="overview-body">
    <section className={`overview-stage${presentation.props.layer==='atlas-city-comparison'?' is-local-reading':''}`} aria-label="完整认识西藏的连续三维演示">
     <div className="overview-scene"><TibetScene key={engineRevision} {...presentation.props} cityLifeServices={presentation.props.overviewBarkhor?showStreetUses:presentation.props.cityLifeServices} overviewPresentation overviewShot={shot} overviewEvidenceWidth={(evidence?.presence??0)*240} playing={director.playing} resetKey={resetKey} airMoisture={moisture??presentation.props.airMoisture} cutaway={cutaway??presentation.props.cutaway} onGroundJourneyReading={onGroundReading} onClimateLabReading={onInteractionReading} onInteract={director.pause} onSelect={selectMap} onReady={sceneReady} onError={sceneError}/></div>
@@ -164,6 +182,8 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,program}:Props & {p
    <aside ref={readingPanel} className="overview-reading" aria-label="当前问题与讲述逻辑">
     <p className="overview-eyebrow">{String(chapterIndex+1).padStart(2,'0')} / {overviewChapters.length} · {chapter.title}</p>
     <h1>{chapter.question}</h1>
+    {planNotice&&<p role="status">{planNotice}</p>}
+    {observation&&<section className="overview-observation-handoff" aria-label="从主线生成观察任务"><strong>{beat.id==='OVERVIEW-conclusion'?'把这一程变成自己的观察计划':'带着这个问题继续观察'}</strong>{observations.length>1?<label>选择刚认识的地方<select aria-label="观察地点" value={observation.stopId} onChange={e=>{director.pause();setObservationChoice(e.target.value);}}>{observations.map(o=><option key={o.stopId} value={o.stopId}>{o.place}</option>)}</select></label>:<span>{observation.place}</span>}<p>{observation.question}</p><button onClick={openObservation}>带入观察计划 · 编辑与保存</button><small>携带本段位置与对应资料；保留已有笔记，返回时继续原讲述。</small></section>}
     {taskKind&&<OverviewLearningGuide key={`${beat.id}:${taskKind}`} kind={taskKind} manual={manual} onPause={director.pause} onResume={play}/>}
     {mechanism&&<div className="overview-mechanism-note" data-mechanism={mechanism.kind} data-mechanism-progress={mechanism.progress.toFixed(4)}>功能观察窗 · 非实地复原 · 地图保留地区背景</div>}
     {irrigation&&<div className="overview-street-key overview-change-controls" data-irrigation-delivered={irrigation.delivered} data-irrigation-flowing={irrigation.flowing}><strong>狮泉河 · 设施与持续管护</strong><span>2023年报道：伦珠挡水开闸 · 次仁桑卓清渠巡护</span><div role="group" aria-label="检验供水与管护"><button aria-pressed={irrigation.gate} onClick={()=>changeIrrigation({gate:!irrigation.gate})}>{irrigation.gate?'关闭闸门':'打开闸门'}</button><button aria-pressed={irrigation.cleared} onClick={()=>changeIrrigation({cleared:!irrigation.cleared})}>{irrigation.cleared?'对照未清渠':'完成清渠'}</button><button onClick={()=>changeIrrigation('advance')}>推进一次供水</button><button onClick={()=>changeIrrigation('reset')}>重新对照</button></div><p role="status">{irrigation.delivered===0?'尚未补水':irrigation.delivered>=1?'本次示意补水完成':'已完成部分补水'} · {irrigationFeedback(irrigation)}</p><small>蓝色沿真实渠线示意通水；林地色块为补水结果示意，不是实测水量或报道地块。未定位闸口、支渠或灌区；未清渠对照假设渠段不通，非报道故障。</small></div>}

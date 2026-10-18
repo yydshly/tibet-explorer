@@ -1,4 +1,5 @@
 import { useEffect, useState, type Dispatch, type SetStateAction } from 'react';
+import ObservationOrigin from './ObservationOrigin';
 import {
   ArrowDown, ArrowLeft, ArrowRight, ArrowSquareOut, ArrowUp, BookmarkSimple, Books,
   Check, CheckCircle, Compass, DownloadSimple, MagnifyingGlass, MapPin,
@@ -130,7 +131,7 @@ export default function DrawerContent({
         return [
         `## ${index + 1}. ${stop.name}`, '',
         `地区：${region?.name ?? stop.region} · 主题：${stop.theme}`, '',
-        `想理解的问题：${stop.question}`, '', stop.description, '', `我的观察与待核实事项：${saved.stopNotes[stop.id]||'尚未记录。'}`, '',
+        ...(saved.overviewObservations?.[stop.id]?[`从主线带来的问题：${saved.overviewObservations[stop.id].question}`,...saved.overviewObservations[stop.id].sources.map(s=>`- [${s.title}](${s.url})`)]:[]),`想理解的问题：${stop.question}`, '', stop.description, '', `我的观察与待核实事项：${saved.stopNotes[stop.id]||'尚未记录。'}`, '',
         ...(cityTravelOrigin(saved.stopOrigins?.[stop.id])?[`[回到保存这站时的三地地图](${mapReturnUrl(cityTravelOrigin(saved.stopOrigins?.[stop.id])!)})`,'']:[]),
         lesson ? `知识入口：[${lesson.step.title}](${knowledgeUrl(lesson.chapter.id,lesson.step.id)})；地区观察目标：${region?.name??stop.region}，入口介绍相关原理或材料。`
           : `知识入口：${stop.region}地区介绍及相关专题`, '',
@@ -335,7 +336,7 @@ export default function DrawerContent({
       </div>
       <section className="drawer-section"><h3>我的主题路线 · {selectedStops.length} 站</h3>
         {selectedStops.length ? <ol className="route-list">{selectedStops.map((stop, index) => <li className="route-stop" key={stop.id}>
-          <span className="route-index">{index + 1}</span><div><p className="drawer-kicker">{regions.find((region) => region.id === stop.region)?.name ?? stop.region} · {stop.theme}</p><h4>{stop.name}</h4><p>{stop.question}</p><p>{stop.description}</p>{cityContinuityTravelEvidence(stop.id).length>0&&<details><summary>地方材料与适用年代</summary><SourceList items={cityContinuityTravelEvidence(stop.id)}/></details>}<label className="drawer-field">我的问题、观察与待核实事项<textarea rows={2} maxLength={1500} value={saved.stopNotes[stop.id]||''} onChange={event=>setSaved(previous=>({...previous,stopNotes:{...previous.stopNotes,[stop.id]:event.target.value}}))}/></label>
+          <span className="route-index">{index + 1}</span><div><p className="drawer-kicker">{regions.find((region) => region.id === stop.region)?.name ?? stop.region} · {stop.theme}</p><h4>{stop.name}</h4><p>{stop.question}</p><p>{stop.description}</p><ObservationOrigin origin={saved.overviewObservations?.[stop.id]} stopId={stop.id} onReturn={()=>open(null)}/>{cityContinuityTravelEvidence(stop.id).length>0&&<details><summary>地方材料与适用年代</summary><SourceList items={cityContinuityTravelEvidence(stop.id)}/></details>}<label className="drawer-field">我的问题、观察与待核实事项<textarea rows={2} maxLength={1500} value={saved.stopNotes[stop.id]||''} onChange={event=>setSaved(previous=>({...previous,stopNotes:{...previous.stopNotes,[stop.id]:event.target.value}}))}/></label>
             <div className="route-controls">
               <button type="button" className="drawer-icon-button" aria-label={`将${stop.name}向前移动`} disabled={index === 0} onClick={() => moveStop(stop.id, -1)}><ArrowUp size={18} /></button>
               <button type="button" className="drawer-icon-button" aria-label={`将${stop.name}向后移动`} disabled={index === selectedStops.length - 1} onClick={() => moveStop(stop.id, 1)}><ArrowDown size={18} /></button>

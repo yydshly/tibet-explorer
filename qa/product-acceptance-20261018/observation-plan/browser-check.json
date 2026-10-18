@@ -1,0 +1,56 @@
+{
+  "scope": "M3实际交接；非全场重播或首次观看者理解验收",
+  "checks": [
+    {
+      "name": "01-ending-origin",
+      "time": "2026-10-18T10:46:06.821Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 103 slider (settable, float) Description: 当前讲述进度, Value: 0.43700000643730164, Details: 0.437"
+    },
+    {
+      "name": "02-edit-saved-sources",
+      "time": "2026-10-18T10:46:28.446Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/observation-plan?stop=lhasa-river\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 28 button (expanded) 本次带来的资料 · 3项, Secondary Actions: Collapse"
+    },
+    {
+      "name": "03-refresh-preserved",
+      "time": "2026-10-18T10:46:42.384Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/observation-plan?stop=lhasa-river\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/observation-plan?stop=lhasa-river"
+    },
+    {
+      "name": "04-return-original",
+      "time": "2026-10-18T10:47:06.714Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    },
+    {
+      "name": "05-resumed-narration",
+      "time": "2026-10-18T10:47:28.210Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 80 button 播放完整演示"
+    },
+    {
+      "name": "06-final-return-different-progress",
+      "time": "2026-10-18T10:48:38.473Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    },
+    {
+      "name": "07-repeat-preserves-edits",
+      "time": "2026-10-18T10:48:47.232Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/observation-plan?stop=lhasa-river\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/observation-plan?stop=lhasa-river"
+    },
+    {
+      "name": "08-final-return-caption",
+      "time": "2026-10-18T10:48:57.778Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    },
+    {
+      "name": "09-existing-plan-shared",
+      "time": "2026-10-18T10:49:55.451Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/observation-plan?stop=lhasa-river\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 26 button (expanded) 编辑候选顺序、日期与交通 / 导出完整计划, Secondary Actions: Collapse"
+    },
+    {
+      "name": "10-final-full-plan-return",
+      "time": "2026-10-18T10:50:45.001Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    }
+  ],
+  "consoleErrors": []
+}

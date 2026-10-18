@@ -1,0 +1,3 @@
+Browser tab: 2, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/observation-plan?stop=lhasa-river".
+There has been no change in the accessibility tree.
+The focused UI element is 26 button (expanded) 编辑候选顺序、日期与交通 / 导出完整计划, Secondary Actions: Collapse

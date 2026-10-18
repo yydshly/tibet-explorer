@@ -37,6 +37,15 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('regional comparison inside a paused main narration',()=>{
+ it('pauses and carries the current place, question, sources and original recording into the saved plan',()=>{
+  const memory=new Map<string,string>();vi.stubGlobal('localStorage',{getItem:(k:string)=>memory.get(k)??null,setItem:(k:string,v:string)=>memory.set(k,v)});
+  media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-shiquanhe-irrigation');
+  const action=find(render(),n=>n.type==='button'&&n.props.children==='带入观察计划 · 编辑与保存');action.props.onClick();
+  const saved=JSON.parse(memory.get('tibet-explorer.v1')!);
+  expect(saved.route).toEqual(['shiquanhe-life']);expect(saved.overviewObservations['shiquanhe-life']).toMatchObject({beatId:'OVERVIEW-shiquanhe-irrigation',raw:.43});
+  expect(saved.overviewObservations['shiquanhe-life'].sources.some((s:any)=>s.url.includes('48267'))).toBe(true);
+  expect(location.hash).toBe('/observation-plan?stop=shiquanhe-life');expect(media.current.pause).toHaveBeenCalledOnce();expect(media.current.select).not.toHaveBeenCalled();
+ });
  it('compares irrigation conditions without seeking, retains delivered water, and restores the spoken state',()=>{
   media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-shiquanhe-irrigation');
   const beat=overviewMainProgram.beats[media.current.beatIndex];

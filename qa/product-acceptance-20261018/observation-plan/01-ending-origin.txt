@@ -1,0 +1,3 @@
+Browser tab: 2, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+There has been no change in the accessibility tree.
+The focused UI element is 103 slider (settable, float) Description: 当前讲述进度, Value: 0.43700000643730164, Details: 0.437
