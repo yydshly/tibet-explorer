@@ -1,0 +1,308 @@
+{
+  "date": "2026-10-18",
+  "baseline": "952b83a",
+  "type": "最终主线内容与实现排查（非浏览器实播/用户理解验收）",
+  "verdict": "已有完整主线和关键操作闭环；不再扩充场景。两项确认问题待修，一项当前实播验证缺口待补。不能宣称整体验收通过。",
+  "changesThisRun": "仅新增排查材料与项目说明入口；应用内容、模型、镜头、录音、测试实现不改。",
+  "baselineCounts": {
+    "chapters": 6,
+    "beats": 21,
+    "seconds": 701.424,
+    "nativeWordClips": 21,
+    "nativeWordHashesMatched": 21,
+    "missingLocalSourceFiles": 0,
+    "missingNextReasons": 0
+  },
+  "checks": {
+    "selectedTests": 78,
+    "passed": 75,
+    "failed": 3,
+    "scope": "14个文件；真实程序/原生词时间/资料几何，媒体与React调度含替身，不是浏览器实播。",
+    "failedDetails": [
+      {
+        "file": "overviewCityChange.test.ts",
+        "title": "dated events explain a source-derived change of connectivity is between the historical street and the regional transport comparison"
+      },
+      {
+        "file": "overviewIrrigation.test.ts",
+        "title": "sourced Shiquanhe irrigation case replaces the generic Ngari reading within the duration budget and retains it in depth"
+      },
+      {
+        "file": "overviewPlaceActions.test.ts",
+        "title": "mainline documented protection case replaces the generic practice clip without extending the show, retaining the original in depth"
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "location",
+      "decision": "无需处理：保留定位结构",
+      "logic": "海陆与大气背景 → 亚洲 → 中国 → 自治区与自然高原；位置接到外界影响。",
+      "presentation": "逐词定位图层、范围与关系标注；本章承担空间识别，不必加入人为改变地理的实验。",
+      "operation": "暂停/继续、章节选择与回到整体由统一播放器管理。",
+      "must": [],
+      "later": [
+        "仅在实际出现误读时补充边界说明；不再堆开场标签。"
+      ],
+      "gate": "在同一地球上辨认位置层级，区分行政范围与自然高地；回到整体不丢目标。",
+      "evidence": [
+        "src/lib/overviewOrientation.ts",
+        "src/scene/earthOrientation.ts",
+        "src/hooks/useOverviewDirector.ts"
+      ],
+      "limit": "代码与原生词位对应已核对；本次无视觉指认或实播证据。",
+      "title": "地球上的西藏",
+      "seconds": 44.028,
+      "beatIds": [
+        "G1-opening",
+        "OVERVIEW-position"
+      ]
+    },
+    {
+      "id": "environment",
+      "decision": "无需新增功能：冻结当前因果链",
+      "logic": "受热差异 → 气压与自转 → 亚洲来流 → 高地形成与高程 → 抬升、冷却和云雨。",
+      "presentation": "已有自转同进度对照、按词展开的亚洲来流及真实DEM上的气团/云/雨；操作读数绑定当前条件。",
+      "operation": "自转项/方向/进度、水汽/位置均先暂停；恢复清除手动覆盖并继续原录音。",
+      "must": [],
+      "later": [
+        "真实风场驱动、体积云和更精细天气模型；有独立需求与资料后另立版本。"
+      ],
+      "gate": "相同进度的自转差异、同地形同位置的水汽差异可辨；没有差异时解释准确；原理示意与实测数据分明。",
+      "evidence": [
+        "src/lib/rotationFlow.ts",
+        "src/data/climateLab.ts",
+        "src/scene/climateLabOverlay.ts",
+        "tests/air-chain-continuity.test.ts",
+        "tests/rotation-flow.test.ts"
+      ],
+      "limit": "用户此前“看起来不错”为整体观感；不能补写其具体操作或原因复述。本次自动检查不评价云的专业观感。",
+      "title": "空气遇到高原",
+      "seconds": 171.324,
+      "beatIds": [
+        "G1-explain",
+        "G1-observe",
+        "OVERVIEW-formation-entry",
+        "G3-explain",
+        "G4-explain",
+        "LAB-air-higher"
+      ]
+    },
+    {
+      "id": "differences",
+      "decision": "无需处理：保留冬夏同尺对照",
+      "logic": "从机制推测转向站点资料核对，再回到七市地；不由三站统计独自证明地形因果。",
+      "presentation": "1991—2020站点温度/降水使用固定比例尺；7月与1月对照不是固定东西递减。",
+      "operation": "切换月份与原生词位选站；手动月份不会继承另一月份的讲述高亮。",
+      "must": [],
+      "later": [
+        "其他站点或时期的比较；须使用同统计口径，不用城市印象代替数据。"
+      ],
+      "gate": "同月份、同指标、同尺度；站点范围与全市域明确区分；恢复原月份与语句。",
+      "evidence": [
+        "src/data/climateObservations.ts",
+        "src/lib/overviewInteraction.ts",
+        "tests/climate-observations.test.js"
+      ],
+      "limit": "已核对代码及本地归档入口；未重新验证全部外部源站，也未检查当前浏览器柱形可读性。",
+      "title": "同在西藏，为何不同",
+      "seconds": 76.752,
+      "beatIds": [
+        "OBS-CLIMATE-7",
+        "OBS-CLIMATE-1",
+        "OVERVIEW-regional-system"
+      ]
+    },
+    {
+      "id": "living",
+      "decision": "无需增加案例：保留条件到服务的完整例子",
+      "logic": "林芝沿谷/跨山 → 拉萨河谷空间 → 狮泉河设施与管护；自然条件不会自动成为生活服务。",
+      "presentation": "前两地为真实高程条件阅读，后一个案例以渠线、开闸/清渠/补水过程讲人的行动；并非三座城市完整变迁复原。",
+      "operation": "地形方向与探针比较；灌渠需要相应条件才能推进，关闭保留已有补水；恢复原讲述。",
+      "must": [
+        "R2（测试基线共性项）"
+      ],
+      "later": [
+        "日喀则、山南、昌都、那曲更多完整地方案例；真实灌区/闸口与服务范围测绘。"
+      ],
+      "gate": "至少一个有依据的“条件→设施和劳动→结果”闭环；规划不冒充建成、地图邻近不冒充灌区归属。",
+      "evidence": [
+        "src/data/climateLab.ts",
+        "src/lib/overviewIrrigation.ts",
+        "public/data/shiquanhe-irrigation-evidence.json",
+        "tests/overviewIrrigation.test.ts",
+        "tests/overviewManualComparison.test.tsx"
+      ],
+      "limit": "灌溉方向、水量、作业地块等未知项已标示；不能为更真实而猜测补齐。",
+      "title": "环境怎样进入生活",
+      "seconds": 112.644,
+      "beatIds": [
+        "LAB-life-nyingchi",
+        "LAB-life-lhasa",
+        "OVERVIEW-shiquanhe-irrigation"
+      ]
+    },
+    {
+      "id": "human-history",
+      "decision": "本版必须修：历史段引导与后段不一致",
+      "logic": "营建与知识交流解释形成 → 大昭寺供灯空间调整解释延续 → 现代交通进入已有生活。",
+      "presentation": "形成段采用现状地物用途阅读与托林定位，主要为背景线索；供灯段有可对照的具体空间使用变化。不得把所有历史背景称为完整动态复原。",
+      "operation": "原有供灯关系/分开对照与拖动；恢复原状态，并退回全域。",
+      "must": [
+        "R1",
+        "R2（测试基线共性项）"
+      ],
+      "later": [
+        "增加非拉萨历史个案、传习过程及更多人物材料；继续放在专题，不能挤回主线。"
+      ],
+      "gate": "形成段结尾的字幕、说明和下一步引导共同指向保护与持续使用；具体案例能指出改变、保留和原因，2005报告不当作竣工或今天现状。",
+      "evidence": [
+        "src/lib/overviewOrigins.ts",
+        "src/data/overviewEditorial.ts",
+        "src/lib/overviewPlaceActions.ts",
+        "public/data/jokhang-protection-evidence.json",
+        "tests/overviewPlaceActions.test.ts"
+      ],
+      "limit": "未发现供灯过程本身的新程序故障；确认的是引导文字残留，不因此重做历史模型。",
+      "title": "人怎样塑造地方",
+      "seconds": 85.068,
+      "beatIds": [
+        "OVERVIEW-history-origins",
+        "OVERVIEW-jokhang-protection"
+      ]
+    },
+    {
+      "id": "today",
+      "decision": "保留闭环：重点完成最终实播核对",
+      "logic": "柳梧桥接续与运输组织 → 各地区抵达方式 → 真实铁路河谷 → 维护使用 → 可保存的观察计划。",
+      "presentation": "有实际相连道路/桥梁对照、区域现状轨道/机场定位和局部影像高程；末章211.608秒，较长本身不是必须缩短的证据。",
+      "operation": "沿线观察、恢复讲述；地点/问题/资料带入计划，保留已有笔记，保存后以原录音和原位置返回。保存失败会提示。",
+      "must": [
+        "R2（测试基线共性项）",
+        "R3（发布前共性检查）"
+      ],
+      "later": [
+        "真实日期下的出行规划、预订、更多铁路沿线；首屏负载优化仅在有测量或失败证据后立项。"
+      ],
+      "gate": "一处实际通行变化解释清楚，观察计划可编辑/保存/刷新/返回原处；观察顺序不冒充连续可订行程。",
+      "evidence": [
+        "src/lib/overviewCityChange.ts",
+        "src/lib/groundJourney.ts",
+        "src/data/overviewObservation.ts",
+        "src/lib/overviewObservation.ts",
+        "src/components/ObservationPlanPage.tsx",
+        "tests/overviewObservation.test.ts"
+      ],
+      "limit": "本次代码与媒体替身检查支持返回逻辑；没有本轮真实浏览器保存/刷新/返回证据。",
+      "title": "今天怎样联系与观察",
+      "seconds": 211.608,
+      "beatIds": [
+        "OVERVIEW-city-change",
+        "OVERVIEW-regional-connections",
+        "OVERVIEW-valley-journey",
+        "OVERVIEW-protection",
+        "OVERVIEW-conclusion"
+      ]
+    }
+  ],
+  "mustFix": [
+    {
+      "id": "R1",
+      "kind": "已确认的内容衔接缺陷",
+      "chapters": [
+        "human-history"
+      ],
+      "problem": "历史形成段结束说明仍写“下面观察学习与实践怎样延续文化”，实际下一段已换成大昭寺供灯保护。语音、底部下一步和右侧说明指向不一致。",
+      "evidence": [
+        "src/lib/overviewOrigins.ts:24（returning分支）",
+        "src/data/overviewProgram.ts（human-history两段顺序）",
+        "src/data/overviewLogic.ts（OVERVIEW-history-origins）"
+      ],
+      "action": "只统一形成段末尾的说明到“保护调整与持续使用”；保留当前录音、模型和时长。检查该段末尾到供灯段入口。",
+      "done": "三个位置共同指向同一下一问题；没有学习/实践旧分支残留误导。",
+      "status": "open_not_fixed_in_audit"
+    },
+    {
+      "id": "R2",
+      "kind": "已确认的验收基线失配",
+      "chapters": [
+        "living",
+        "human-history",
+        "today"
+      ],
+      "problem": "三项测试仍使用旧总时长上限或旧历史前置段；项目说明也混有11:16旧口径和“本轮”旧截图。影响判定可靠性，不代表三个运行故障。",
+      "evidence": [
+        "tests/overviewIrrigation.test.ts:14",
+        "tests/overviewPlaceActions.test.ts:50",
+        "tests/overviewCityChange.test.ts:15",
+        "public/project-review/index.html（末章旧11:16表述）"
+      ],
+      "action": "基于已批准的21段/701.424秒与供灯保护→交通顺序更新相关断言；历史替换时长用局部前后差值验证，不删除时长约束；旧报告标历史版，当前版只用本次基线。",
+      "done": "相关检查通过，旧证据与当前检查分开；不能为消除失败随意放宽限制或删除测试。",
+      "status": "open_not_fixed_in_audit"
+    },
+    {
+      "id": "R3",
+      "kind": "发布前验证缺口，并非已确认产品故障",
+      "chapters": [
+        "location",
+        "environment",
+        "differences",
+        "living",
+        "human-history",
+        "today"
+      ],
+      "problem": "当前952b83a版本没有本次完整实播证据。原生字时间、Three对象与组件回调检查不能证明镜头可读、音画听感和真实浏览器返回。",
+      "evidence": [
+        "qa/mainline-closeout-20261018/inventory.json",
+        "qa/mainline-closeout-20261018/tests.json",
+        "AGENTS.md（既有浏览器URL安全限制）"
+      ],
+      "action": "在可用且允许的浏览器环境中，由助手一次从首页完整走完主线；覆盖气流/水汽、灌溉、供灯、桥梁四类比较与一个计划保存刷新返回。已有控制限制不绕过，不要求本用户逐项陪测。",
+      "done": "六章无阻断加载/音画错段；四类比较恢复原处；计划保存刷新返回成功。只修复本次明确失败项并定向复查，停止再次整场美容循环。",
+      "status": "blocked_by_existing_browser_access_restriction"
+    }
+  ],
+  "later": [
+    {
+      "topic": "地区与历史覆盖深度",
+      "reason": "保留专题入口，V1不以七市地等量内容为目标；拉萨较多是取样边界，不继续用新模型填平。"
+    },
+    {
+      "topic": "视觉精度与天气模型",
+      "reason": "体积云、更多粒子、街景/全高分影像不是本轮阻断项；不得把审美可提升当作必须返工。"
+    },
+    {
+      "topic": "移动端与性能专项",
+      "reason": "用户已暂停手机专项；既有约709kB运行时块告警不等于实际加载故障。先测再决策。"
+    },
+    {
+      "topic": "完整旅行产品",
+      "reason": "V1提供可编辑保存的观察计划；实时班次、预订与到访条件另需资料/服务支持。"
+    }
+  ],
+  "noAction": [
+    "维持六章/21段/11:41，不再调整章节总数。",
+    "保留完整地球→局部解释→整体回归；空间定位和真实统计不必强行做成可改变事实的实验。",
+    "保留真实高程、站点统计、现状地物与原理示意的边界。",
+    "保留统一的操作暂停→比较→恢复原条件/原录音流程；未发现需要重建交互架构的证据。",
+    "保留历史详细年代、传习和更多地区为专题；不把所有背景句都改造成新模型。"
+  ],
+  "closure": {
+    "frozenScope": "六章、21段、701.424秒；除事实纠错或明确阻断，不新增主线录音/模型/案例。",
+    "sequence": [
+      "集中解决R1与R2，只复核对应说明、顺序和检查。",
+      "条件允许后执行R3的一次主线实播，记录失败点。",
+      "仅修复记录中的阻断、事实/示意误导、明显错段和不能返回；修后定向复查。",
+      "上述关闭后冻结可用V1，后续建议进入独立版本清单。"
+    ],
+    "stopRule": "不存在R1/R2未处理项且R3完成，无新的已证实阻断；“还能更漂亮”不重新开启主线。",
+    "comprehension": "正式首次观看者理解验收仍为0/3，沿用已有协议，未作通过或降级结论。本用户主观认可单独保留，不要求其继续逐项陪测，也不能用代码通过代替理解。"
+  },
+  "limits": [
+    "浏览器自动操作受到此前URL安全限制，本次未重试或绕过。",
+    "未使用旧截图当作当前证据；不声称完成新的视觉/无障碍评审。",
+    "本次核对了原文与本地证据边界、来源入口及关键实现，未重新在线验证每个外部事实或最新出行条件。",
+    "本次不修复R1/R2，不把验证未知包装成故障，也不把后续建议升级成本版必做。"
+  ]
+}

@@ -1,5 +1,16 @@
 # Prototype Instructions
 
+## 2026-10-18 final mainline closeout audit (no implementation edits)
+
+User requests one final six-chapter content/representation/operation-return audit, categorized must-fix/later/no-action, no polish or repeated owner testing. Current baseline952b83a,6 chapters/21 clips/701.424s. Report public/project-review/closeout.html and closeout.json; current inventory and test output in qa/mainline-closeout-20261018. Project-review index links the latest report; older records remain historical.
+
+Confirmed R1: overviewOrigins.ts returning explanation still promises learning/practice while next main clip is Jokhang protection. R2: 3 stale assertions (two old duration caps and former culture-continuity predecessor), plus mixed old report baselines. These were NOT fixed during audit. Selected78 tests:75 passed/3 failed for these expectations; do not describe all tests as green or 3 product bugs.21 exact main recordings,21 word-file hashes and local source entries checked; no missing next-reason entry. All chapter judgments are content/implementation checks, not new visual acceptance.
+
+R3 is a verification gap: current full browser playback and actual plan save/refresh/return remain unverified due prior URL security restriction. No browser attempts, no bypass, no old screenshots presented as new. Formal first-viewer comprehension still0/3, not downgraded or marked passed. Owner has delegated active review; do not assign repeated chapter questions/tasks to them.
+
+Closeout: repair R1/R2, one allowed full playback with bounded operation coverage when browser access exists, then only retest explicit failures. Freeze21 clips/11:41; cloud realism, more cities/history/models, phone/performance specialties and bookable travel are later work, not reasons for endless mainline revisions. This audit does not authorize silently implementing later work.
+
+
 ## 2026-10-18 owner delegates review responsibility
 
 Owner: “看起来不错  但是你分析优化，方向是这样，不要总要让我关注”. Treat this as positive subjective feedback and authorization for assistant-led bounded checks, NOT a new request for repeated participant tasks. Do not keep prompting the owner to operate/explain each item. Report concrete defects/fixes and unverified limits concisely; maintain scope on the current chain. Formal first-viewer evidence remains separate.
