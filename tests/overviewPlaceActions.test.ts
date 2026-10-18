@@ -46,8 +46,9 @@ describe('mainline documented protection case',()=>{
  it('replaces the generic practice clip without extending the show, retaining the original in depth',()=>{
   const chapter=overviewMainProgram.chapters.find(c=>c.id==='human-history')!;
   expect(chapter.beats.map(b=>b.id)).toEqual(['OVERVIEW-history-origins',jokhangProtectionCue.id]);
-  const seconds=overviewMainProgram.beats.reduce((sum,b)=>sum+manifest.clips.find(c=>c.cueId===b.recordingId)!.duration,0);
-  expect(seconds).toBeLessThanOrEqual(679.536);
+  const replacement=manifest.clips.find(c=>c.cueId===jokhangProtectionCue.id&&c.text===jokhangProtectionCue.narration)!;
+  const original=manifest.clips.find(c=>c.cueId==='OVERVIEW-culture-continuity')!;
+  expect(replacement.duration).toBeLessThanOrEqual(original.duration);
   expect(overviewMainProgram.beats).toHaveLength(21);
   expect(overviewDepthPrograms.find(p=>p.id==='culture-practice')!.beats.some(b=>b.id==='OVERVIEW-culture-continuity')).toBe(true);
  });

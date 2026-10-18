@@ -12,7 +12,7 @@ describe('dated events explain a source-derived change of connectivity',()=>{
  const beat=overviewDepthPrograms.find(p=>p.id==='modern-context')!.beats.find(b=>b.recordingId===overviewCityChange.id)!;
  it('is between the historical street and the regional transport comparison',()=>{
   const ids=overviewMainProgram.beats.map(b=>b.id),i=ids.indexOf(beat.id);
-  expect(ids.slice(i-1,i+2)).toEqual(['OVERVIEW-culture-continuity',beat.id,'OVERVIEW-regional-connections']);
+  expect(ids.slice(i-1,i+2)).toEqual(['OVERVIEW-jokhang-protection',beat.id,'OVERVIEW-regional-connections']);
  });
  it('derives the actual river crossing from source edges, never an arbitrary percentage',()=>{
   const archive=JSON.parse(readFileSync('public/data/local-places/transport-corridors.manifest.json','utf8'));

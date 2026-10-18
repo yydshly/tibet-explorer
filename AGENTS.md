@@ -1,5 +1,16 @@
 # Prototype Instructions
 
+## 2026-10-18 R1/R2 closed; R3 programme checks complete, browser still blocked
+
+User authorized fixing closeout list without expanding models/duration or owner testing. R1 fixed both overviewOrigins returning explanation and narratedGeography overlay; final presentation now points to Jokhang protection then modern connectivity. A new regression initially caught the overlay masking base explanation; both are now checked. Recordings unchanged.
+
+R2: release-baseline.json fixes V1-main-20261018.1 to6 chapters/21 exact recordings/701.424s plus text/word-file hashes. Local irrigation/protection tests compare replacement vs original clip duration instead of stale whole-show caps; bridge test uses actual protection predecessor. Independent baseline test retains exact global duration/order constraints. Current project-review index/review.json/closeout share this baseline. phase-review and closeout-audit preserve older records, clearly historical; no old screenshots reused as new.
+
+86 checks across16 files passed, typecheck/build passed (existing709kB runtime warning). Added actual director execution through all21 current clips with each paused/resumed, actual component callbacks for rotation/air/bridge alongside irrigation/protection/rail, and plan-page edit/save/remount-read/return plus storage-failure handling. Media, React scheduling, localStorage and location substitutes are used; these are NOT browser playback/refresh, rendered visual inspection or comprehension acceptance. Evidence qa/mainline-closeout-20261018/repair; original failed audit retained untouched.
+
+R1/R2 closed. R3 only programme checks complete; current actual full playback/visual+audio clarity/browser save-refresh-return remain blocked by existing URL security restriction. No browser attempt or workaround. Formal first-viewer0/3 still unpassed. Stop further model/scene work; next step only permitted actual playback when access exists, then targeted repairs of concrete failures. Product still starts at overview; owner need not accompany tests.
+
+
 ## 2026-10-18 final mainline closeout audit (no implementation edits)
 
 User requests one final six-chapter content/representation/operation-return audit, categorized must-fix/later/no-action, no polish or repeated owner testing. Current baseline952b83a,6 chapters/21 clips/701.424s. Report public/project-review/closeout.html and closeout.json; current inventory and test output in qa/mainline-closeout-20261018. Project-review index links the latest report; older records remain historical.

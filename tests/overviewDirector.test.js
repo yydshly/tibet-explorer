@@ -60,6 +60,25 @@ beforeEach(()=>{
 afterEach(()=>{harness.reset();refreshNarrationManifest();vi.unstubAllGlobals();vi.restoreAllMocks();});
 
 describe('continuous overview recorded director',()=>{
+ it('runs all 21 current mainline clips in order, pauses/resumes each exact recording, and ends without looping',async()=>{
+  const all=overviewMainProgram.beats.map(b=>({...b,sceneIdentity:overviewPresentation(b,0).sceneIdentity}));
+  options={beats:all,storageKey:KEY};
+  render().onSceneReady(all[0].sceneIdentity);render().playPause();
+  const visited=[];
+  for(let i=0;i<all.length;i++){
+   if(!render().ready)render().onSceneReady(all[i].sceneIdentity);
+   await waitPlaying(i);const clip=clipFor(all[i]);
+   expect(media().src).toBe(clip.url);visited.push(all[i].recordingId);
+   const timeline=timelineFor(all[i]),word=timeline.words[Math.floor(timeline.words.length*.5)],seconds=(word.start+word.end)/2;
+   tick(seconds);render().pause();const held=render();
+   expect(held.raw).toBeCloseTo(seconds/clip.duration,8);
+   expect(held.timing).toEqual(narrationTimingAt(all[i].text,seconds,clip.duration,timeline));
+   held.playPause();await waitPlaying(i);expect(media().currentTime).toBeCloseTo(seconds,8);
+   ended();
+  }
+  expect(visited).toEqual(all.map(b=>b.recordingId));expect(render().beatIndex).toBe(20);
+  expect(render()).toMatchObject({raw:1,wantsPlayback:false,playing:false});
+ },15000);
  it('resumes the new rotation recording at its original native word and continues into highland formation',async()=>{
   const original=overviewMainProgram.beats.find(b=>b.id==='G1-observe');
   const next=overviewMainProgram.beats.find(b=>b.id==='OVERVIEW-formation-entry');

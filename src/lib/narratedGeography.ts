@@ -6,7 +6,7 @@ const region=(token:string,cities:GeographyCity[],title:string,relation:string):
 /** Literal recording text owns every change. Windows are terrain samples, not
  * city footprints. Historical locations never create invented travel routes. */
 export const narratedGeographyPlans:Record<string,Stop[]>={
- 'OVERVIEW-history-origins':[{...region('先看拉萨',['lhasa'],'营建与用途：放回拉萨河谷','地形定位，历史用途依照资料；不复原古代建筑或街道。'),kind:'history'},{...region('再看西部托林',['ngari'],'托林：人物与知识交流的地方','托林来源点用于定位；阿里城区仅作区域参照，不是人物目的地。'),kind:'history'},region('这些是营建',[],'形成以后，还要解释怎样延续','回到共同问题；不把年代当作空间变化的演示。')],
+ 'OVERVIEW-history-origins':[{...region('先看拉萨',['lhasa'],'营建与用途：放回拉萨河谷','地形定位，历史用途依照资料；不复原古代建筑或街道。'),kind:'history'},{...region('再看西部托林',['ngari'],'托林：人物与知识交流的地方','托林来源点用于定位；阿里城区仅作区域参照，不是人物目的地。'),kind:'history'},region('这些是营建',[],'形成以后，还要解释怎样延续','下面看大昭寺供灯空间怎样在保护中调整，活动又怎样延续；不把年代当作空间变化的演示。')],
  'OVERVIEW-water-service':[region('狮泉河二〇二三年',['ngari'],'狮泉河：报道中的林地管护','地形窗定位狮泉河地区；功能窗不复原报道中的水渠。'),region('拉萨水利规划',['ngari','lhasa'],'具体案例与规划分别阅读','两地保留在同一全域背景；规划不等于已完成的建设。')],
  'G4-opening':[{token:'南侧低地',kind:'mountain',cities:[],rivers:false,title:'喜马拉雅：低地与高原之间的山系',relation:'浅金区域定位山系；南北高程剖面比较两侧地面，不把一根标柱当作整片山系。'}],
  'G4-explain':[{token:'沿同一条线向北',kind:'mountain',cities:[],rivers:false,title:'穿过山系，再进入高原内部',relation:'山系范围为概览参照，起伏和读数来自高程网格。'}],

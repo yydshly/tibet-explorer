@@ -37,6 +37,25 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('regional comparison inside a paused main narration',()=>{
+ it.each(['rotation','air','bridge'])('restores %s comparison to the original spoken state without selecting/seeking media',kind=>{
+  const id=kind==='rotation'?'G1-observe':kind==='air'?'LAB-air-higher':'OVERVIEW-city-change';
+  media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id===id);
+  const beat=overviewMainProgram.beats[media.current.beatIndex];
+  const token=kind==='rotation'?'来到更高纬度':kind==='air'?'云逐渐增多':'现在接回同一位置';
+  expect(beat.text.indexOf(token)).toBeGreaterThanOrEqual(0);
+  media.current.timing={textProgress:beat.text.indexOf(token)/beat.text.length};
+  const scene=()=>find(render(),node=>typeof node.props?.onGroundJourneyReading==='function');
+  const key=kind==='rotation'?'rotationFlow':kind==='air'?'climateLab':'overviewCityChange';
+  const original=scene().props[key],raw=media.current.raw;
+  if(kind==='air'){controls(render()).onChange({moisture:'lower'});expect(scene().props.climateLab.moisture).toBe('lower');}
+  else {const title=kind==='rotation'?'去掉自转项':'拿掉这座桥';find(render(),node=>node.type==='button'&&node.props.children===title).props.onClick();}
+  expect(scene().props[key]).not.toEqual(original);expect(media.current.pause).toHaveBeenCalled();
+  expect(media.current.seek).not.toHaveBeenCalled();expect(media.current.select).not.toHaveBeenCalled();expect(media.current.raw).toBe(raw);
+  const tree=render();
+  if(kind==='rotation')find(tree,node=>node.type==='button'&&node.props.children==='恢复原条件，从暂停处继续').props.onClick();
+  else find(tree,node=>node.props?.kind===kind&&typeof node.props?.onResume==='function').props.onResume();
+  expect(scene().props[key]).toEqual(original);expect(media.current.playPause).toHaveBeenCalledOnce();
+ });
  it('pauses and carries the current place, question, sources and original recording into the saved plan',()=>{
   const memory=new Map<string,string>();vi.stubGlobal('localStorage',{getItem:(k:string)=>memory.get(k)??null,setItem:(k:string,v:string)=>memory.set(k,v)});
   media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-shiquanhe-irrigation');

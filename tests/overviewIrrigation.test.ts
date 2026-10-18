@@ -10,8 +10,9 @@ import {createIrrigationReading} from '../src/scene/irrigationReading';
 import manifest from '../public/assets/audio/narration/cue-manifest.json';
 describe('sourced Shiquanhe irrigation case',()=>{
  it('replaces the generic Ngari reading within the duration budget and retains it in depth',()=>{
-  const total=overviewMainProgram.beats.reduce((sum,b)=>sum+manifest.clips.find(c=>c.cueId===b.recordingId)!.duration,0);
-  expect(total).toBeLessThanOrEqual(677.232);expect(overviewMainProgram.beats).toHaveLength(21);
+  const replacement=manifest.clips.find(c=>c.cueId===irrigationCue.id&&c.text===irrigationCue.narration)!;
+  const original=manifest.clips.find(c=>c.cueId==='LAB-life-ngari')!;
+  expect(replacement.duration).toBeLessThanOrEqual(original.duration);expect(overviewMainProgram.beats).toHaveLength(21);
   expect(overviewDepthPrograms.flatMap(p=>p.beats).some(b=>b.id==='LAB-life-ngari')).toBe(true);
  });
  it('samples native words reproducibly for forward playback and backward seeking',()=>{

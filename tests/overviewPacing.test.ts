@@ -17,6 +17,14 @@ function at(id:string,token:string){
  return {b,timing:narrationTimingAt(b.text,time,timeline.duration,timeline)};
 }
 describe('shortened mainline keeps causes visible on its new media clock',()=>{
+ it('hands historical formation to documented protection, then to modern connectivity',()=>{
+  const {b,timing}=at('OVERVIEW-history-origins','这些是营建');
+  const view=overviewPresentation(b,0,timing),index=overviewMainProgram.beats.indexOf(b);
+  expect(view.explanation).toContain('大昭寺供灯');expect(view.explanation).toContain('保护');
+  expect(view.explanation).not.toContain('学习与实践');
+  expect(view.props.overviewReturnMix).toBe(1);
+  expect(overviewMainProgram.beats.slice(index+1,index+3).map(b=>b.id)).toEqual(['OVERVIEW-jokhang-protection','OVERVIEW-city-change']);
+ });
  it('keeps a date separate from bridge restoration and crossing, without repeating the street detour',()=>{
   for(const [token,phase] of [['二〇〇六年','arrival'],['先拿掉柳梧大桥','missing'],['二〇〇七年四月三十日','opening'],['设施怎样变成生活里的机会','organization'],['最后回到全域','return']] as const){
    const {b,timing}=at('OVERVIEW-city-change',token);

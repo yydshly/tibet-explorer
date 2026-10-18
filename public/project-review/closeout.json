@@ -1,9 +1,8 @@
 {
   "date": "2026-10-18",
-  "baseline": "952b83a",
-  "type": "最终主线内容与实现排查（非浏览器实播/用户理解验收）",
-  "verdict": "已有完整主线和关键操作闭环；不再扩充场景。两项确认问题待修，一项当前实播验证缺口待补。不能宣称整体验收通过。",
-  "changesThisRun": "仅新增排查材料与项目说明入口；应用内容、模型、镜头、录音、测试实现不改。",
+  "type": "主线修复与程序层收口检查（非浏览器实播/用户理解验收）",
+  "verdict": "R1历史衔接、R2统一基线已关闭；R3程序层检查完成，真实浏览器实播仍受限制。六章21段/701.424秒保持不变，不宣称整体验收通过。",
+  "changesThisRun": "修正历史形成说明及地理说明覆盖层；修正局部替换测试、增加独立主线基线与播放/操作/计划检查。无模型、镜头或录音变动。",
   "baselineCounts": {
     "chapters": 6,
     "beats": 21,
@@ -14,24 +13,15 @@
     "missingNextReasons": 0
   },
   "checks": {
-    "selectedTests": 78,
-    "passed": 75,
-    "failed": 3,
-    "scope": "14个文件；真实程序/原生词时间/资料几何，媒体与React调度含替身，不是浏览器实播。",
-    "failedDetails": [
-      {
-        "file": "overviewCityChange.test.ts",
-        "title": "dated events explain a source-derived change of connectivity is between the historical street and the regional transport comparison"
-      },
-      {
-        "file": "overviewIrrigation.test.ts",
-        "title": "sourced Shiquanhe irrigation case replaces the generic Ngari reading within the duration budget and retains it in depth"
-      },
-      {
-        "file": "overviewPlaceActions.test.ts",
-        "title": "mainline documented protection case replaces the generic practice clip without extending the show, retaining the original in depth"
-      }
-    ]
+    "selectedTests": 86,
+    "passed": 86,
+    "failed": 0,
+    "files": 16,
+    "typecheck": "passed",
+    "build": "passed",
+    "scope": "真实播放器控制器/组件回调/资料与原生词时间；媒体、React调度、存储与location使用替身。全21段顺序检查是程序执行，不是真实11:41播放。",
+    "failedDetails": [],
+    "buildWarning": "既有运行时约709kB的大块提示仍在；本轮未扩展性能专项。"
   },
   "chapters": [
     {
@@ -119,9 +109,7 @@
       "logic": "林芝沿谷/跨山 → 拉萨河谷空间 → 狮泉河设施与管护；自然条件不会自动成为生活服务。",
       "presentation": "前两地为真实高程条件阅读，后一个案例以渠线、开闸/清渠/补水过程讲人的行动；并非三座城市完整变迁复原。",
       "operation": "地形方向与探针比较；灌渠需要相应条件才能推进，关闭保留已有补水；恢复原讲述。",
-      "must": [
-        "R2（测试基线共性项）"
-      ],
+      "must": [],
       "later": [
         "日喀则、山南、昌都、那曲更多完整地方案例；真实灌区/闸口与服务范围测绘。"
       ],
@@ -144,14 +132,11 @@
     },
     {
       "id": "human-history",
-      "decision": "本版必须修：历史段引导与后段不一致",
+      "decision": "已修正并收口：形成→保护延续→现代接续",
       "logic": "营建与知识交流解释形成 → 大昭寺供灯空间调整解释延续 → 现代交通进入已有生活。",
       "presentation": "形成段采用现状地物用途阅读与托林定位，主要为背景线索；供灯段有可对照的具体空间使用变化。不得把所有历史背景称为完整动态复原。",
       "operation": "原有供灯关系/分开对照与拖动；恢复原状态，并退回全域。",
-      "must": [
-        "R1",
-        "R2（测试基线共性项）"
-      ],
+      "must": [],
       "later": [
         "增加非拉萨历史个案、传习过程及更多人物材料；继续放在专题，不能挤回主线。"
       ],
@@ -163,7 +148,7 @@
         "public/data/jokhang-protection-evidence.json",
         "tests/overviewPlaceActions.test.ts"
       ],
-      "limit": "未发现供灯过程本身的新程序故障；确认的是引导文字残留，不因此重做历史模型。",
+      "limit": "基础说明与实际覆盖层已统一；实际浏览器画面与理解验收仍不作通过结论。",
       "title": "人怎样塑造地方",
       "seconds": 85.068,
       "beatIds": [
@@ -178,7 +163,6 @@
       "presentation": "有实际相连道路/桥梁对照、区域现状轨道/机场定位和局部影像高程；末章211.608秒，较长本身不是必须缩短的证据。",
       "operation": "沿线观察、恢复讲述；地点/问题/资料带入计划，保留已有笔记，保存后以原录音和原位置返回。保存失败会提示。",
       "must": [
-        "R2（测试基线共性项）",
         "R3（发布前共性检查）"
       ],
       "later": [
@@ -216,11 +200,13 @@
       "evidence": [
         "src/lib/overviewOrigins.ts:24（returning分支）",
         "src/data/overviewProgram.ts（human-history两段顺序）",
-        "src/data/overviewLogic.ts（OVERVIEW-history-origins）"
+        "src/data/overviewLogic.ts（OVERVIEW-history-origins）",
+        "tests/overviewPacing.test.ts（形成→保护→现代接续）"
       ],
       "action": "只统一形成段末尾的说明到“保护调整与持续使用”；保留当前录音、模型和时长。检查该段末尾到供灯段入口。",
       "done": "三个位置共同指向同一下一问题；没有学习/实践旧分支残留误导。",
-      "status": "open_not_fixed_in_audit"
+      "status": "closed",
+      "resolution": "基础说明和最终地理说明覆盖层都明确指向大昭寺供灯保护；原生词位回归检查验证最终presentation，接保护再接交通。原文字时间与录音不变。"
     },
     {
       "id": "R2",
@@ -235,11 +221,13 @@
         "tests/overviewIrrigation.test.ts:14",
         "tests/overviewPlaceActions.test.ts:50",
         "tests/overviewCityChange.test.ts:15",
-        "public/project-review/index.html（末章旧11:16表述）"
+        "public/project-review/index.html（末章旧11:16表述）",
+        "tests/overviewReleaseBaseline.test.ts；public/project-review/release-baseline.json"
       ],
       "action": "基于已批准的21段/701.424秒与供灯保护→交通顺序更新相关断言；历史替换时长用局部前后差值验证，不删除时长约束；旧报告标历史版，当前版只用本次基线。",
       "done": "相关检查通过，旧证据与当前检查分开；不能为消除失败随意放宽限制或删除测试。",
-      "status": "open_not_fixed_in_audit"
+      "status": "closed",
+      "resolution": "灌溉和供灯替换分别与原录音比较时长；交通前置段改为实际供灯保护。release-baseline.json固定21段身份、顺序、文本散列、原生词文件散列与701.424秒总时长；没有简单放宽旧上限。旧记录存入phase-review/closeout-audit，当前入口只显示当前结论。"
     },
     {
       "id": "R3",
@@ -256,11 +244,16 @@
       "evidence": [
         "qa/mainline-closeout-20261018/inventory.json",
         "qa/mainline-closeout-20261018/tests.json",
-        "AGENTS.md（既有浏览器URL安全限制）"
+        "AGENTS.md（既有浏览器URL安全限制）",
+        "tests/overviewDirector.test.js",
+        "tests/overviewManualComparison.test.tsx",
+        "tests/observationPlanFlow.test.tsx",
+        "tests/overviewObservation.test.ts"
       ],
       "action": "在可用且允许的浏览器环境中，由助手一次从首页完整走完主线；覆盖气流/水汽、灌溉、供灯、桥梁四类比较与一个计划保存刷新返回。已有控制限制不绕过，不要求本用户逐项陪测。",
       "done": "六章无阻断加载/音画错段；四类比较恢复原处；计划保存刷新返回成功。只修复本次明确失败项并定向复查，停止再次整场美容循环。",
-      "status": "blocked_by_existing_browser_access_restriction"
+      "status": "partial_automated_verified_browser_blocked",
+      "resolution": "已执行完整21段播放器顺序、每段暂停/恢复和自然结束控制检查；自转/水汽/灌溉/供灯/桥梁/沿线操作恢复检查；计划编辑、保存、组件重新挂载读取、返回哈希/原位置数据保留、保存失败不离开检查通过。仍无真实浏览器完整播放、听感或刷新返回证据。"
     }
   ],
   "later": [
@@ -291,10 +284,10 @@
   "closure": {
     "frozenScope": "六章、21段、701.424秒；除事实纠错或明确阻断，不新增主线录音/模型/案例。",
     "sequence": [
-      "集中解决R1与R2，只复核对应说明、顺序和检查。",
-      "条件允许后执行R3的一次主线实播，记录失败点。",
-      "仅修复记录中的阻断、事实/示意误导、明显错段和不能返回；修后定向复查。",
-      "上述关闭后冻结可用V1，后续建议进入独立版本清单。"
+      "R1/R2已关闭，停止扩充主线内容。",
+      "在允许且可用的浏览器环境下，仅完成R3当前版本完整播放及保存返回检查。",
+      "只处理被记录的阻断、事实/示意误导、明显错段和返回失败，并定向复查。",
+      "R3关闭后冻结可用V1；正式理解验收仍独立按原协议，不以自动检查代替。"
     ],
     "stopRule": "不存在R1/R2未处理项且R3完成，无新的已证实阻断；“还能更漂亮”不重新开启主线。",
     "comprehension": "正式首次观看者理解验收仍为0/3，沿用已有协议，未作通过或降级结论。本用户主观认可单独保留，不要求其继续逐项陪测，也不能用代码通过代替理解。"
@@ -303,6 +296,28 @@
     "浏览器自动操作受到此前URL安全限制，本次未重试或绕过。",
     "未使用旧截图当作当前证据；不声称完成新的视觉/无障碍评审。",
     "本次核对了原文与本地证据边界、来源入口及关键实现，未重新在线验证每个外部事实或最新出行条件。",
-    "本次不修复R1/R2，不把验证未知包装成故障，也不把后续建议升级成本版必做。"
-  ]
+    "本次只修R1/R2并完成R3能执行的程序层检查；没有浏览器操作，也没有把用户主观好评当作理解验收。"
+  ],
+  "auditBaseline": "952b83a",
+  "baseline": "V1-main-20261018.1",
+  "previousAuditChecks": {
+    "selectedTests": 78,
+    "passed": 75,
+    "failed": 3,
+    "scope": "14个文件；真实程序/原生词时间/资料几何，媒体与React调度含替身，不是浏览器实播。",
+    "failedDetails": [
+      {
+        "file": "overviewCityChange.test.ts",
+        "title": "dated events explain a source-derived change of connectivity is between the historical street and the regional transport comparison"
+      },
+      {
+        "file": "overviewIrrigation.test.ts",
+        "title": "sourced Shiquanhe irrigation case replaces the generic Ngari reading within the duration budget and retains it in depth"
+      },
+      {
+        "file": "overviewPlaceActions.test.ts",
+        "title": "mainline documented protection case replaces the generic practice clip without extending the show, retaining the original in depth"
+      }
+    ]
+  }
 }
