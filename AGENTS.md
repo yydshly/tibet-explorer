@@ -1,5 +1,13 @@
 # Prototype Instructions
 
+## 2026-10-18 cross-scene framing review after owner cloud feedback
+
+Owner reports the just-shown cloud result is much better and authorizes checking analogous problems. Six chapters reviewed from code, not visually replayed. public/project-review/scene-review.html and scene-review.json record per-chapter decisions, actual 21 native-word clips /676.872s and verification limits. Existing first-viewer sample remains 0/3. Guided owner session records the exact positive feedback, scoped to the cloud improvement; OWNER-ENV-02 rotation causal gap stays open.
+
+Bounded implementation: LAB-life-nyingchi and LAB-life-lhasa now derive lifeFocus from the same native text positions: approach at 再沿同一张地图拉近, close at 先看地面起伏, return during 回到全域. Both DEM transect directions and probe-label space determine fixed close bounds, cached by city/DEM/relief; direction/probe comparisons do not move camera. Whole-map locator and scale text follow focus. Manual zoom explicitly overrides the frozen recorded mix; resume clears manual state and reframes at the original sentence. Shared depth life segments inherit the camera; no new geography, model, narration or duration. Comparison chapter retains its common frame; history and ground journey cameras left intact.
+
+33 focused tests passed, typecheck/build passed; unchanged six chapters/21 clips/676.872s and native word timings verified. Build retains >500kB runtime-chunk warning. NEW CAMERA VISUAL ACCEPTANCE IS PENDING: browser control was rejected by URL security policy in preceding turn; do not bypass via raw CDP, alternate browser surfaces or shell page automation. No browser use, screenshots or full-show playback this turn. Existing localhost preview port5176 serves new dist/client; only TCP listening checked. Next: verify these two segments' readability and comparison/resume, then address the rotation causal gap separately; do not repeat full-show cosmetic expansion.
+
 ## 2026-10-18 user-requested cloud framing adjustment during guided acceptance
 
 User explicitly requested optimizing the currently shown rain segment after reporting unclear clouds/rain. Bounded exception to M4 preparation freeze: LAB-air-higher only. Same 21 clips /676.872s, acquired DEM and 18 existing cloud meshes; no new facts, scenes, recordings or weather model. Native text positions own airFocus (approach -> close through cloud/rain -> return before station evidence). Manual moisture snapshots retain focus; fixed transect bounds avoid camera change being mistaken for water-vapour effects. Existing whole-map locator reused; shaded cloud material and less flattened proportions; height exaggeration ×16 disclosed. Optional viewDirection in overviewAtlasCamera keeps the default atlas basis unchanged.

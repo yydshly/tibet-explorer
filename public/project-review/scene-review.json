@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-18",
+  "method": "代码与既有用户反馈排查；本轮未进行浏览器播放或视觉验收",
+  "scope": "六章逐项排查，只修林芝、拉萨现有生活段镜头衔接；不增模型、录音、事实或时长",
+  "userFeedback": "我已经看过了 比当时好多了",
+  "interpretation": "对刚展示的云雨改善的主观认可，不代表其他章节或正式首次观看者验收通过",
+  "chapters": [
+    {
+      "id": "location",
+      "name": "01 地球定位",
+      "finding": "现有镜头按地球、亚洲、中国、西藏及高原范围分步变化；不应统一加近景。",
+      "action": "保留",
+      "evidence": [
+        "src/lib/overviewOrientation.ts",
+        "src/scene/earthOrientation.ts"
+      ],
+      "gate": "能指出位置，区分自然地理与行政范围。"
+    },
+    {
+      "id": "environment",
+      "name": "02 整体环境",
+      "finding": "用户认可云雨段改善；自转怎样影响气流的因果缺口仍未解决。其他高程描述的镜头是否足够需观看确认。",
+      "action": "云雨保留；自转缺口单列下一项",
+      "evidence": [
+        "src/lib/overviewInteraction.ts",
+        "src/scene/storyAtlas.ts",
+        "src/scene/terrainReading.ts"
+      ],
+      "gate": "指出气团、山地、云雨的对应变化；自转机制不能仅靠转动地球替代解释。"
+    },
+    {
+      "id": "differences",
+      "name": "03 地区差异",
+      "finding": "三站冬夏同尺对照已有数据、柱形与站点强调；逐站放大反而会破坏比较。",
+      "action": "保留同图同尺",
+      "evidence": [
+        "src/scene/climateObservationMap.ts"
+      ],
+      "gate": "同一月份比较三站，并区分站点统计与整个地区。"
+    },
+    {
+      "id": "living",
+      "name": "04 环境与生活",
+      "finding": "林芝、拉萨原本由布尔开关进入固定近景，进出镜头没有随整句连续展开；本轮改为语句进度驱动，在同一DEM地图上拉近、保持剖面对照、回到全域。狮泉河现有灌溉案例保留。",
+      "action": "两段镜头已改，待实际观看",
+      "evidence": [
+        "src/lib/overviewInteraction.ts",
+        "src/scene/climateLifeCamera.ts",
+        "src/scene/storyAtlas.ts"
+      ],
+      "gate": "高程探针与剖线在画面中可读；切方向时不换尺度；返回全域、继续播放均可用；用户能说明地形条件不等于实际生活服务。"
+    },
+    {
+      "id": "human-history",
+      "name": "05 人与历史文化",
+      "finding": "现有历史空间及大昭寺供灯案例已有逐句状态、局部取景和返回全域；本轮未发现需要统一改镜头的代码依据，不代表用户已理解。",
+      "action": "保留，等待理解反馈",
+      "evidence": [
+        "src/lib/overviewPlaceActions.ts",
+        "src/scene/cityLocalMap.ts"
+      ],
+      "gate": "能指认使用安排改变、活动延续及资料边界；不是只记住一个年份。"
+    },
+    {
+      "id": "today",
+      "name": "06 联系与观察",
+      "finding": "桥梁及沿铁路观察已有词时钟驱动的沿线镜头，观察计划已承接原讲述；不增加另一条镜头或场景。",
+      "action": "保留",
+      "evidence": [
+        "src/lib/groundJourney.ts",
+        "src/lib/overviewObservation.ts"
+      ],
+      "gate": "看清河流、线路、站区关系；带问题编辑保存计划后回到原讲述。"
+    }
+  ],
+  "verification": {
+    "tests": "33 targeted tests passed",
+    "typecheck": "passed",
+    "build": "passed; existing runtime chunk >500kB warning remains",
+    "visual": "pending; browser automation rejected by URL security policy; no workaround attempted",
+    "firstViewersCompleted": 0
+  },
+  "next": "先确认两段拉近、同尺对照与回全域的实际可读性；之后单独处理自转因果缺口，不开展全场重复美化。",
+  "mainline": {
+    "count": 21,
+    "seconds": 676.8720000000001,
+    "chapters": [
+      {
+        "id": "location",
+        "beats": [
+          {
+            "id": "G1-opening",
+            "recordingId": "G1-opening",
+            "duration": 22.752
+          },
+          {
+            "id": "OVERVIEW-position",
+            "recordingId": "OVERVIEW-position",
+            "duration": 21.276
+          }
+        ]
+      },
+      {
+        "id": "environment",
+        "beats": [
+          {
+            "id": "G1-explain",
+            "recordingId": "G1-explain",
+            "duration": 22.14
+          },
+          {
+            "id": "G1-observe",
+            "recordingId": "G1-observe",
+            "duration": 24.156
+          },
+          {
+            "id": "OVERVIEW-formation-entry",
+            "recordingId": "OVERVIEW-formation-entry",
+            "duration": 18.396
+          },
+          {
+            "id": "G3-explain",
+            "recordingId": "G3-explain",
+            "duration": 18.612
+          },
+          {
+            "id": "G4-explain",
+            "recordingId": "G4-explain",
+            "duration": 25.92
+          },
+          {
+            "id": "LAB-air-higher",
+            "recordingId": "LAB-air-higher",
+            "duration": 37.548
+          }
+        ]
+      },
+      {
+        "id": "differences",
+        "beats": [
+          {
+            "id": "OBS-CLIMATE-7",
+            "recordingId": "OBS-CLIMATE-7",
+            "duration": 28.188
+          },
+          {
+            "id": "OBS-CLIMATE-1",
+            "recordingId": "OBS-CLIMATE-1",
+            "duration": 26.748
+          },
+          {
+            "id": "OVERVIEW-regional-system",
+            "recordingId": "OVERVIEW-regional-system",
+            "duration": 21.816
+          }
+        ]
+      },
+      {
+        "id": "living",
+        "beats": [
+          {
+            "id": "LAB-life-nyingchi",
+            "recordingId": "LAB-life-nyingchi",
+            "duration": 35.1
+          },
+          {
+            "id": "LAB-life-lhasa",
+            "recordingId": "OVERVIEW-life-lhasa",
+            "duration": 40.716
+          },
+          {
+            "id": "OVERVIEW-shiquanhe-irrigation",
+            "recordingId": "OVERVIEW-shiquanhe-irrigation",
+            "duration": 36.828
+          }
+        ]
+      },
+      {
+        "id": "human-history",
+        "beats": [
+          {
+            "id": "OVERVIEW-history-origins",
+            "recordingId": "OVERVIEW-history-origins",
+            "duration": 46.548
+          },
+          {
+            "id": "OVERVIEW-jokhang-protection",
+            "recordingId": "OVERVIEW-jokhang-protection",
+            "duration": 38.52
+          }
+        ]
+      },
+      {
+        "id": "today",
+        "beats": [
+          {
+            "id": "OVERVIEW-city-change",
+            "recordingId": "OVERVIEW-city-change-core",
+            "duration": 50.184
+          },
+          {
+            "id": "OVERVIEW-regional-connections",
+            "recordingId": "OVERVIEW-regional-connections-core",
+            "duration": 30.924
+          },
+          {
+            "id": "OVERVIEW-valley-journey",
+            "recordingId": "OVERVIEW-valley-journey",
+            "duration": 68.22
+          },
+          {
+            "id": "OVERVIEW-protection",
+            "recordingId": "OVERVIEW-protection",
+            "duration": 22.608
+          },
+          {
+            "id": "OVERVIEW-conclusion",
+            "recordingId": "OVERVIEW-observation-close",
+            "duration": 39.672
+          }
+        ]
+      }
+    ]
+  }
+}

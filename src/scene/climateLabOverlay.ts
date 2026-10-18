@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {climateLabCoordinates,climateLabAirState} from '../lib/climateLabProcess';
 import type {ClimateLabReading} from '../lib/climateLabProcess';
-import {climateLabPlaces,type ClimateLabState} from '../data/climateLab';
+import {climateLabPlaces,climateLabLifeFocus,type ClimateLabState} from '../data/climateLab';
 import {disposeTree,label,line} from './environment';
 
 type Runtime={at:(lon:number,lat:number,offset?:number)=>THREE.Vector3;metres:(lon:number,lat:number)=>number|undefined};
@@ -49,7 +49,7 @@ export function buildClimateLabOverlay(runtime:Runtime){
  }
  let readingKey='';
  return {group,update(state:ClimateLabState|undefined,onReading?:((reading:ClimateLabReading)=>void)){
-  insetActive=!!state&&(state.stage==='life'&&state.zoom||state.stage==='air'&&(state.airFocus??0)>.15);
+  insetActive=!!state&&(state.stage==='life'&&climateLabLifeFocus(state)>.15||state.stage==='air'&&(state.airFocus??0)>.15);
   group.visible=!!state&&state.stage!=='evidence';if(!state||!group.visible)return;
   const locality=state.stage==='air'?climateLabCoordinates(state,state.progress):climateLabPlaces[state.city];insetPin.position.copy(runtime.at(locality.longitude,locality.latitude,.2));
   rebuild(state);if(!samples.length){group.visible=false;return;}

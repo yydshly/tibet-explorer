@@ -61,6 +61,11 @@
         {
           "verbatim": "这里我时大概能看懂的，但是还可以优化吧，同时这几我看到高程的描述时，是不是对应语音可以适当优化展现效果，比如拉大地图介绍，比如其他手段等",
           "type": "elevation_presentation_improvement_request"
+        },
+        {
+          "verbatim": "我已经看过了 比当时好多了  现在这个思路实际上时一个反思，可以排查其他场景是否有类似的问题，然后继续",
+          "type": "post_change_subjective_feedback",
+          "scope": "刚展示的云雨段改善；不推广为整章或整场通过"
         }
       ],
       "understandingVerdict": "specific_rotation_causal_gap_reported_other_content_subjectively_understood",
@@ -96,7 +101,7 @@
         "samePoint": "raw .497，气团 .575，4850m；切换较少水汽后镜头不变",
         "resume": "恢复原条件后回到云逐渐增多语句并继续，随后实际进入第三章整体视角",
         "tests": "23 focused tests, typecheck and build passed",
-        "limits": "未重新播放整场；没有用户对新效果的评价；自转因果缺口未解决。"
+        "limits": "原有定向检查未重新播放整场；本次用户反馈云雨明显改善；自转因果缺口未解决。"
       }
     },
     "differences": {
@@ -182,6 +187,13 @@
       "verbatim": "看到第二章的一些细节 在描述一些雨的场景时，是不是可以适当切换角度和放大，比如当下图中的效果，做适当的优化和调整",
       "scope": "仅当前LAB-air-higher云雨段的镜头、现有云层外观与定位参照；不扩展模型、录音或时长。",
       "prechangeObservation": "第二章6/6；raw .497；气团.575；较多水汽；字幕云逐渐增多；用户窗口845×871低视角下云气团雨线重叠。"
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "environment",
+      "verbatim": "我已经看过了 比当时好多了  现在这个思路实际上时一个反思，可以排查其他场景是否有类似的问题，然后继续",
+      "assessment": "云雨改善获主观认可；授权排查同类问题，不计入首次观看者样本。",
+      "assistantOperatedControls": false
     }
   ],
   "presentationRequests": [
@@ -208,13 +220,18 @@
     {
       "id": "OWNER-ENV-01",
       "chapter": "environment",
-      "status": "framing_and_existing_cloud_appearance_adjusted_awaiting_user_review",
+      "status": "owner_reports_improvement_not_full_chapter_acceptance",
       "userQuote": "气流大概能看懂，但云雨的变化还是不够明显，效果还不够专业。先记下来，继续带我做水汽条件对照，看看操作后的变化和原因能不能看清楚，再检查能不能回到原讲述。",
       "finding": "用户报告气流大概能看懂，但云雨变化不明显、呈现不够专业。",
       "severity": "可读性问题已报告；是否阻断理解待操作验收",
       "cause": "未诊断，不推断为材质、粒子或其他实现问题。",
       "nextEvidence": "同一气团位置切换两种水汽，记录实际可辨变化、用户原因解释和恢复结果。",
-      "implementation": "语句驱动整体→侧俯视→整体；相同位置水汽对照保留镜头；既有云球使用受光材质与体积比例。未替换为天气模拟。"
+      "implementation": "语句驱动整体→侧俯视→整体；相同位置水汽对照保留镜头；既有云球使用受光材质与体积比例。未替换为天气模拟。",
+      "followupFeedback": {
+        "verbatim": "我已经看过了 比当时好多了  现在这个思路实际上时一个反思，可以排查其他场景是否有类似的问题，然后继续",
+        "type": "post_change_subjective_feedback",
+        "scope": "刚展示的云雨段改善；不推广为整章或整场通过"
+      }
     },
     {
       "id": "OWNER-ENV-02",
@@ -231,7 +248,7 @@
     {
       "id": "OWNER-ENV-03",
       "chapter": "environment",
-      "status": "cloud_segment_camera_applied_broader_elevation_presentation_still_pending",
+      "status": "life_framing_implemented_pending_visual_review",
       "userQuote": "这里我时大概能看懂的，但是还可以优化吧，同时这几我看到高程的描述时，是不是对应语音可以适当优化展现效果，比如拉大地图介绍，比如其他手段等",
       "finding": "理解大致成立，高程讲述希望通过镜头放大和对应展示加强空间感。",
       "severity": "呈现改进建议，尚未证明阻断理解；不与自转因果缺口混为一项。",
@@ -243,7 +260,7 @@
         "镜头、标注、剖面对照与对应语句同步；操作时暂停镜头跟随，恢复后返回原讲述。"
       ],
       "acceptanceTarget": "观看者能指出讲到的位置和比较对象，感知高差并解释它与当前问题的联系；镜头放大不丢失全域位置。",
-      "implementation": "仅本云雨段放大与全域定位已实施；其他高程段尚未修改。"
+      "implementation": "云雨镜头已获用户改善反馈；林芝、拉萨地形生活段新增逐句进出镜头，自动检查通过，尚未实际观看；其他高程段未改。"
     }
   ]
 }

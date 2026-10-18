@@ -24,8 +24,8 @@ import {overviewHeritagePresentation as heritageEvidence} from '../data/overview
 import {overviewShot} from '../lib/overviewShot';
 import {isUrbanPixelView,urbanComparison,urbanComparisonYears,urbanPixelCounts,type UrbanComparisonYear} from '../lib/overviewUrbanComparison';
 import OverviewInteractionControls from './OverviewInteractionControls';
-import {climateLabPlaces,type ClimateLabState} from '../data/climateLab';
-import {overviewInteractionFeedback,overviewInteractionReason} from '../lib/overviewInteraction';
+import {climateLabLifeFocus,climateLabPlaces,type ClimateLabState} from '../data/climateLab';
+import {overviewInteractionFeedback,overviewInteractionReason,overviewInteractionPatch} from '../lib/overviewInteraction';
 import type {ClimateLabReading} from '../lib/climateLabProcess';
 import './OverviewExperience.css';
 
@@ -89,7 +89,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const basePresentation=urbanComparison({...irrigationView,props:{...irrigationView.props,overviewMechanism:mechanism}},urbanYear);
  const interactionManual=interactionOverride?.id===beat.id;
  const interaction=interactionManual?interactionOverride.state:basePresentation.props.climateLab;
- const interactionPresentation=interaction?{...basePresentation,scale:interaction.stage==='air'&&(interaction.airFocus??0)>.15?'真实高程剖面与周边 · 云雨侧俯视':interaction.zoom?`${climateLabPlaces[interaction.city].name}与周边 · 同一地图放大`:'西藏与周边 · 整体地图',props:{...basePresentation.props,climateLab:interaction,progress:interaction.progress,selected:interaction.stage==='life'?`city:${interaction.city}`:'',climateObservationMonth:interaction.stage==='evidence'?interaction.month:undefined,climateObservationStationId:interactionManual?undefined:basePresentation.props.climateObservationStationId}}:basePresentation;
+ const interactionPresentation=interaction?{...basePresentation,scale:interaction.stage==='air'&&(interaction.airFocus??0)>.15?'真实高程剖面与周边 · 云雨侧俯视':climateLabLifeFocus(interaction)>.15?`${climateLabPlaces[interaction.city].name}与周边 · 同一地图放大`:'西藏与周边 · 整体地图',props:{...basePresentation.props,climateLab:interaction,progress:interaction.progress,selected:interaction.stage==='life'?`city:${interaction.city}`:'',climateObservationMonth:interaction.stage==='evidence'?interaction.month:undefined,climateObservationStationId:interactionManual?undefined:basePresentation.props.climateObservationStationId}}:basePresentation;
  const groundManual=groundOverride?.id===beat.id;
  const ground=groundManual?groundOverride.state:interactionPresentation.props.groundJourney;
  const presentation=ground?{...interactionPresentation,sceneIdentity:'atlas-local-context',scale:ground.returnMix>.99?'西藏全域 · 拉萨定位':ground.returnMix>.05?ground.stage==='return'?'拉萨河谷 → 西藏全域':'西藏全域 → 拉萨河谷':`拉萨站前 · 地形高度1× · 观察高度${Math.round(ground.height)}米`,props:{...interactionPresentation.props,scene:'region' as const,viewKey:'atlas',layer:'atlas-overview',overviewLocalContext:true,climateLab:undefined,groundJourney:ground}}:interactionPresentation;
@@ -147,7 +147,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const select=(index:number)=>{clearManual();if(index!==director.beatIndex||director.raw!==0)setGroundReading(undefined);director.select(index);};
  const play=()=>{clearManual();if(interaction&&!director.wantsPlayback)setResetKey(v=>v+1);director.playPause();};
  const changeGround=(patch:Partial<GroundJourneyState>)=>{director.pause();if(!ground)setGroundReading(undefined);setGroundOverride({id:beat.id,state:{height:1800,bearing:0,...ground,progress:groundReading?groundReading.distanceMetres/groundReading.totalMetres:.3,...patch,returnMix:0,railPhase:undefined,connectionMix:0,stage:undefined}});};
- const changeInteraction=(patch:Partial<ClimateLabState>)=>{if(!interaction)return;director.pause();setInteractionOverride({id:beat.id,state:{...interaction,landReveal:interaction.stage==='life'?1:0,...patch}});};
+ const changeInteraction=(patch:Partial<ClimateLabState>)=>{if(!interaction)return;director.pause();setInteractionOverride({id:beat.id,state:overviewInteractionPatch(interaction,patch)});};
  // Comparing places is an observation within the paused sentence. Only the
  // chapter/beat navigation may change the recording or its saved position.
  const selectInteractionCity=(city:string)=>{if(interaction?.stage!=='life'||!Object.hasOwn(climateLabPlaces,city))return;changeInteraction({city:city as ClimateLabState['city'],zoom:true});};
@@ -167,7 +167,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
     <div className="overview-scale"><span>当前尺度</span><strong>{presentation.scale}</strong>{presentation.year&&<em>{presentation.year}</em>}</div>
     {interaction&&!ground&&<div className="overview-interaction-key"><strong>{interaction.stage==='air'?'金线：真实高程 · 青色气团与云雨：原理示意':interaction.stage==='evidence'?'1991—2020气象站标准值 · 三站同一柱高比例':'金线：真实高程剖面 · 青色：较低较缓样本'}</strong>{interactionReading&&interaction.stage==='air'&&<small>当前地面样本 ≈{Math.round(interactionReading.ground/10)*10}米 · 地形高度×16显示 · 气团大小为示意</small>}</div>}
     {interaction?.stage==='air'&&(interaction.airFocus??0)>.15&&!ground&&<div className="overview-interaction-locator"><span>全域定位 · 金点为当前气团</span><div/></div>}
-    {interaction?.stage==='life'&&interaction.zoom&&!ground&&<div className="overview-interaction-locator"><span>全域定位 · 金点为当前地区</span><div/><button onClick={()=>changeInteraction({zoom:false})}>回到整体地图</button></div>}
+    {interaction?.stage==='life'&&climateLabLifeFocus(interaction)>.15&&!ground&&<div className="overview-interaction-locator"><span>全域定位 · 金点为当前地区</span><div/><button onClick={()=>changeInteraction({zoom:false})}>回到整体地图</button></div>}
 
     {presentation.props.overviewVisit&&!change&&<div className="overview-street-key" data-visit-phase={presentation.props.overviewVisit.phase} data-visit-motion={presentation.props.overviewVisit.motion.toFixed(4)}><strong>{presentation.props.overviewBarkhor?'进入以后，还要理解怎样使用':'从站区到城市：接续仍在发生'}</strong><span>{presentation.props.overviewBarkhor?'青色 · 广场与街巷；金色 · 活动示意':'车辆沿归档相连道路前进'}</span><small>{presentation.props.overviewBarkhor?'车辆停在已知路端，未延伸到寺院入口。活动非实测客流。':'同一河谷里的道路与跨河位置；移动不是行程时长或当前公交。'}</small></div>}
     {beat.recordingId==='OVERVIEW-lhasa-urban-change'&&presentation.props.overviewUrban&&<div className="overview-street-key overview-urban-key" data-urban-phase={presentation.props.overviewUrban.phase} data-urban-year={presentation.props.overviewUrban.year} data-urban-manual={urbanManual}>

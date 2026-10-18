@@ -21,7 +21,7 @@ import {overviewOrientationPresentation} from './overviewOrientation';
 import {cityChangePresentation} from './overviewCityChange';
 import {overviewVisitPresentation} from './overviewVisit';
 import {overviewInteractionState,overviewInteractionStation,overviewInteractionReason} from './overviewInteraction';
-import {climateLabPlaces} from '../data/climateLab';
+import {climateLabLifeFocus,climateLabPlaces} from '../data/climateLab';
 
 /** Structural input keeps the presentation independent of the edited outline. */
 export interface OverviewSceneBeat {
@@ -124,7 +124,7 @@ function overviewBasePresentation(beat:OverviewSceneBeat,raw:number,timing?:Narr
       climateObservationMonth:interaction.stage==='evidence'?interaction.month:undefined,
       climateObservationStationId:overviewInteractionStation(interaction,beat.text,beat.recordingId,sourceTiming)},
     title:beat.title,explanation:overviewInteractionReason(interaction),
-    scale:interaction.stage==='air'&&(interaction.airFocus??0)>.15?'真实高程剖面与周边 · 云雨侧俯视':interaction.zoom?`${climateLabPlaces[interaction.city].name}与周边 · 同一地图放大`:'西藏与周边 · 整体地图',
+    scale:interaction.stage==='air'&&(interaction.airFocus??0)>.15?'真实高程剖面与周边 · 云雨侧俯视':climateLabLifeFocus(interaction)>.15?`${climateLabPlaces[interaction.city].name}与周边 · 同一地图放大`:'西藏与周边 · 整体地图',
     sourceScope:interaction.stage==='evidence'?'1991—2020气象站标准值；不是区域平均或预报。':'真实高程×16显示；金色为采样剖面，不是道路；气团云雨为原理示意，青色较缓样本不是建设用地。',
   };
   if(['OVERVIEW-city-change','OVERVIEW-city-change-core'].includes(beat.recordingId))return cityChangePresentation(beat,fraction,sourceTiming);

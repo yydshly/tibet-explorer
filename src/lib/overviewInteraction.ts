@@ -30,7 +30,15 @@ export function overviewInteractionState(id:string,text:string,timing?:Narration
  const approach=text.indexOf('沿剖面向北移动'),close=text.indexOf('抬升时'),returnAt=text.indexOf('实际结果还受'),wholeAt=text.indexOf('现在保持同一地形');
  const airFocus=initial.stage==='air'&&approach>=0&&close>approach&&returnAt>close&&wholeAt>returnAt
   ?smooth((position-approach)/(close-approach))*(1-smooth((position-returnAt)/(wholeAt-returnAt))):undefined;
- return {...initial,progress,airFocus,direction:life&&position>=turn?'east-west':'north-south',landReveal:land>=0?Math.max(0,Math.min(1,(position-land)/18)):0,zoom:initial.stage==='life'&&enter>=0&&leave>enter&&position>=enter&&position<leave};
+ const closeLife=text.indexOf('先看地面起伏'),afterReturn=text.indexOf('，',leave);
+ const lifeFocus=life&&enter>=0&&closeLife>enter&&leave>closeLife
+  ?smooth((position-enter)/(closeLife-enter))*(1-smooth((position-leave)/Math.max(1,(afterReturn>leave?afterReturn:leave+5)-leave))):undefined;
+ return {...initial,progress,airFocus,lifeFocus,direction:life&&position>=turn?'east-west':'north-south',landReveal:land>=0?Math.max(0,Math.min(1,(position-land)/18)):0,zoom:initial.stage==='life'&&enter>=0&&leave>enter&&position>=enter&&position<leave};
+}
+/** Manual zoom overrides the recorded mix; a probe/direction comparison keeps it. */
+export function overviewInteractionPatch(state:ClimateLabState,patch:Partial<ClimateLabState>):ClimateLabState {
+ return {...state,landReveal:state.stage==='life'?1:0,...patch,
+  ...(state.stage==='life'&&patch.zoom!==undefined?{lifeFocus:patch.zoom?1:0}:{})};
 }
 export function overviewInteractionStation(state:ClimateLabState,text:string,id:string,timing?:NarrationTiming){
  return state.stage==='evidence'?climateObservationNarrationStation(state.month,{cue:{id,text},timing}):undefined;
