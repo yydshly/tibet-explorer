@@ -34,6 +34,6 @@ export function pilotNarratedView(index:number,text:string,textProgress:number,h
   const p=hold?highPoint:at<text.indexOf('停在山地观察点')?.12+(highPoint-.12)*part('沿道路向山地前进','停在山地观察点'):highPoint+(1-highPoint)*part('继续向鲁朗','接下来进入鲁朗');
   return {mode:'line',progress:p,height:hold?3000:3500,connections:false,lookBack:hold&&at<text.indexOf('这里按沿线')};
  }
- if(index===2){const placeLens=at<text.indexOf('切到生活空间')?'landscape':at<text.indexOf('地方风味的延续')?'life':'culture';return {mode:'place',progress:1,height:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','建筑轮廓'),lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','切到生活空间'),serviceFilter:placeLens==='culture'?'food':'all',servicesVisible:at>=text.indexOf('再看餐饮')};}
+ if(index===2){const placeLens=at<text.indexOf('切到生活空间')?'landscape':at<text.indexOf('地方风味的延续')?'life':'culture';return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','建筑轮廓'),lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','切到生活空间'),serviceFilter:placeLens==='culture'?'food':'all',servicesVisible:at>=text.indexOf('再看餐饮')};}
  return {mode:'whole',progress:1,height:3500,connections:false,lookBack:false};
 }

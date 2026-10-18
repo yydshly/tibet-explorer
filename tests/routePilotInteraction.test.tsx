@@ -58,6 +58,20 @@ describe('actual route callbacks and independent persistence',()=>{
   media.current.timing={textProgress:.3};
   button('恢复原条件并继续').onClick();expect(scene().view).toEqual(original);expect(media.current.raw).toBe(.43);
  });
+ it('shows the road comparison feedback after leaving service reading, and explicitly reopens a service filter',()=>{
+  media.current.beatIndex=2;
+  const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
+  const feedback=()=>find(render(),n=>n.props?.className==='pilot-reason').props.children;
+  local().props.onChange({placeLens:'culture',serviceFilter:'food',servicesVisible:true});
+  button('只看过境道路').onClick();
+  expect(scene().view).toMatchObject({placeLens:'life',connections:false,connectionProgress:0,servicesVisible:false});
+  expect(feedback()).toContain('先读青色G318');expect(feedback()).not.toContain('橙色');
+  find(render(),n=>n.props?.['aria-label']==='地方接续观察进度').props.onChange({target:{value:'.35'}});
+  expect(scene().view).toMatchObject({connections:true,connectionProgress:.35,servicesVisible:false});
+  expect(feedback()).toContain('金色地方道路');
+  local().props.onChange({serviceFilter:'lodging',servicesVisible:true});
+  expect(feedback()).toContain('当前只看淡蓝色住宿');
+ });
  it('migrates old local-script fractions to the new opening without losing notes or the original line return',()=>{
   const line={beatIndex:1,raw:.43,voice:true,view:{mode:'line',progress:.668,height:3000,lookBack:true,connections:false}};
   saved.set(PILOT_NOTE_KEY,JSON.stringify({note:'keep my observation',returnTo:{...line,beatIndex:2,raw:.62,view:{...line.view,mode:'place',connections:true}},lineReturn:line}));

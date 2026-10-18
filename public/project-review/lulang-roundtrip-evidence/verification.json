@@ -1,0 +1,54 @@
+{
+  "id": "G318-lulang-roundtrip-20261019.3",
+  "baseCommit": "7a5b0b6",
+  "story": "从线路入口进入G318，沿真实地形进入鲁朗，交互对照风景与生活及地方经营资料，编辑保存笔记、刷新返回，再恢复进入前原线原句",
+  "scope": "只验收和修复本段明确问题；六章及其他地点冻结",
+  "frozen": {"mainChapters": 6, "mainClips": 21, "mainSeconds": 750.024, "pilotClips": 4, "pilotSeconds": 152.82, "recordingsChanged": false, "sourceObjectsChanged": false, "newStopsOrModels": false},
+  "boundaries": [
+    {"boundary": "线路入口到首段", "status": "passed", "evidence": "实际点击/routes入口卡片，进入首段并启动录音"},
+    {"boundary": "归档影像、高程、路线和地方资料到地图", "status": "passed", "evidence": "实际渲染并操作；18项相关检查含原始坐标、文件哈希、65个同DSM剖面样本和38个源服务点身份"},
+    {"boundary": "录音进度到字幕、镜头和图层", "status": "passed within observed frames", "evidence": "修改前四段原生播放至最后100%一次；观察整体、山地、鲁朗生活、文化和回到整体的离散帧。修复后复核原句恢复和接续，不额外完整重播"},
+    {"boundary": "操作到画面和反馈", "status": "fixed and rechecked", "evidence": "近远镜头、剖面、0/35%地方接续、餐饮住宿筛选的实际截图和读数"},
+    {"boundary": "笔记编辑保存到刷新恢复", "status": "passed", "evidence": "临时笔记保存后刷新，正文保留；返回恢复文化角度、住宿筛选、2500m和原句64%；结束后通过界面恢复原有空白笔记"},
+    {"boundary": "原观察到原线原句及继续", "status": "passed", "evidence": "恢复原条件返回64%餐饮词；回原线恢复48.1km、43%、3000m；从原句继续后在句尾接入第四段，未强制重播鲁朗"}
+  ],
+  "fixed": [
+    {
+      "id": "LULANG-HEIGHT",
+      "before": "风景模式观察高度2500→6500时滑块改变，镜头仍固定3km，画面无变化",
+      "cause": "地方相机对landscape使用固定高度，忽略view.height",
+      "after": "相机读取实际观察高度；原生风景初始值明确为3000m以保留原镜头。实际3000/6500对照已看见范围变化",
+      "evidence": ["height-before.png", "height-unresponsive-before-fix.png", "height-fixed-near.png", "height-fixed-far.png"]
+    },
+    {
+      "id": "LULANG-ROAD-FEEDBACK",
+      "before": "点只看过境道路后餐饮住宿仍显示，反馈仍解释服务分布；拖动地方道路未得到对应原因",
+      "cause": "道路操作保留servicesVisible，服务反馈优先于道路反馈",
+      "after": "道路操作收起服务点，未激活服务筛选；0%说明国道接点，35%显示约192m和部分金色接续。明确选择餐饮住宿后再打开相应层",
+      "evidence": ["trunk-only-fixed.png", "local-partial-fixed.png", "plan-restored-final.png"]
+    }
+  ],
+  "understandingReview": {
+    "landscape": "可在同一地图比较河段约3380m、西侧约3440m、东侧约3510m的地表样本，并拉近拉远；这些是DSM表面而非河床实测",
+    "life": "可对照国道、实际地方道路和建筑轮廓，再分别看归档餐饮住宿，操作结果可见且反馈对应",
+    "humanValue": "2017经营资料与现状服务位置的年代和适用范围明确；仍属于有出处的空间与史料对照，制作、供货和诚信管理不是经过测绘的历史过程动画",
+    "verdict": "本段功能往返和本轮两处对应问题收口；不将开发者检查记作首次观看者理解通过"
+  },
+  "checks": {
+    "tests": {"passed": 18, "files": ["tests/routePilot.test.ts", "tests/routePilotInteraction.test.tsx"], "newRegression": "从文化服务角度操作道路时收起服务、反馈跟随接续，再显式选择住宿恢复服务反馈"},
+    "typecheck": "passed",
+    "build": "passed; existing631kB shared Three/Line2 chunk warning",
+    "browserConsoleWarningsOrErrors": [],
+    "reactReview": "只修改原事件状态及派生选中状态；复用单一媒体时钟、原保存结构和原相机清理，不新增effect、网络依赖或计时器"
+  },
+  "playbackEvidence": ["mountain-playback.png", "life-native.png", "culture-native.png", "route-completed.png"],
+  "returnEvidence": ["note-refreshed.png", "plan-restored-final.png", "original-line-restored.png"],
+  "limits": [
+    "完整四段播放发生在本轮修复前的基线；修复未改录音或时长，最终构建仅针对操作和恢复复核，没有反复完整播放",
+    "浏览器媒体进度、字幕、标注和画面已核对；未取得系统音频回听，不宣称发音与听感全部验收",
+    "画面观察为离散截图，不是全程逐帧录像，也不是首次观看者理解验收",
+    "不把归档商户当作今天营业或2017参与者，不复原缺少证据的供应路线和经营场景",
+    "用户原标签未操作；独立检查标签关闭，线路进度恢复首句0%，临时笔记正文已撤回"
+  ],
+  "stop": "不扩展景点、模型、录音、章节或时长。本轮不再重复播放或进行局部美化"
+}

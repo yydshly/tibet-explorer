@@ -118,7 +118,7 @@ export default function PilotRouteTerrain(props:Props){
      desiredTarget.set(0,3.7,0);const width=(east-west)*mx/1000,depth=(north-south)*mz/1000,tan=Math.tan(camera.fov*Math.PI/360),distance=Math.max(width/(2*tan*camera.aspect),depth/(2*tan))*1.45;
      desiredPosition.copy(desiredTarget).add(new THREE.Vector3(0,1,.75).normalize().multiplyScalar(distance));
     }else if(state.mode==='place'){
-     const centre=at(lens==='landscape'?local.riverPoint:lens==='culture'&&foodSample?foodSample.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(lens==='landscape'?3:state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(new THREE.Vector3(0,altitude,altitude*1.25));
+     const centre=at(lens==='landscape'?local.riverPoint:lens==='culture'&&foodSample?foodSample.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(new THREE.Vector3(0,altitude,altitude*1.25));
     }else{
      const ahead=at(along(Math.min(1,state.progress+220/total))),behind=at(along(Math.max(0,state.progress-220/total))),direction=ahead.sub(behind);direction.y=0;direction.normalize();if(state.lookBack)direction.negate();
      desiredTarget.copy(position).addScaledVector(direction,.85);desiredTarget.y+=.08;
