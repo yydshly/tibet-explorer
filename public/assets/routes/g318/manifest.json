@@ -72,8 +72,8 @@
       "sha256": "eab5578ae1de8784ae84e771ecb6385bda3d0d4c89cb5a019718da0aade84582"
     },
     "sentinel-item.json": {
-      "bytes": 35106,
-      "sha256": "cdec95d0ef30884f3481bacf81ef894bb24aa30b3946dcc337d043a5ed8ac840"
+      "bytes": 33648,
+      "sha256": "8e4416a8e3804a96f51ce806b0cce3fd8fcf9c8ddcc27e3783bfa94ee4d270da"
     },
     "terrain.int16": {
       "bytes": 1616482,
