@@ -3,6 +3,7 @@ import {LineSegments2} from 'three/examples/jsm/lines/LineSegments2.js';
 import {LineSegmentsGeometry} from 'three/examples/jsm/lines/LineSegmentsGeometry.js';
 import {LineMaterial} from 'three/examples/jsm/lines/LineMaterial.js';
 import data from '../../public/data/narrated-geography.json';
+import regionProfiles from '../data/region-comparison.json';
 import {regionalAnchors} from '../data/regionalStudy';
 import type {GeographyReading} from '../lib/narratedGeography';
 import {label,line} from './environment';
@@ -55,7 +56,7 @@ export function buildMountainReading(at:At){
 }
 export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:At){
  const group=new THREE.Group();group.visible=false;group.name='narrated-geographic-relations';
- const windows=new Map<string,THREE.Group>();let ready=false;
+ const windows=new Map<string,THREE.Group>();let ready=false,compareProfiles=false;
  const redrape:(()=>void)[]=[];let terrainKey='';
  const lineObjects:LineSegments2[]=[],names:{sprite:THREE.Sprite;leader:THREE.Line;coordinate:XY;offset:[number,number];owner:THREE.Group}[]=[];
  const water=new THREE.Group(),rail=new THREE.Group(),airport=new THREE.Group();group.add(water,rail,airport);
@@ -81,9 +82,10 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
    const border=[...Array.from({length:31},(_,i)=>[w+(e-w)*i/30,s]),...Array.from({length:21},(_,i)=>[e,s+(n-s)*i/20]),...Array.from({length:31},(_,i)=>[e-(e-w)*i/30,n]),...Array.from({length:21},(_,i)=>[w,n-(n-s)*i/20])];
    const boundary=line(border.map(p=>at(p[0],p[1],.04)),0xf1d8a0,.65);(boundary.material as THREE.LineBasicMaterial).depthTest=false;root.add(boundary);
    redrape.push(()=>{boundary.geometry.setFromPoints(border.map(p=>at(p[0],p[1],.04)));boundary.geometry.computeBoundingSphere();});
-   const profile=Array.from({length:61},(_,i)=>at(w+(e-w)*i/60,city.latitude,.055));
+   const profilePoints=()=>compareProfiles?regionProfiles.places.find(p=>p.id===city.id)!.points.map(p=>at(p.longitude,p.latitude,.055)):Array.from({length:61},(_,i)=>at(w+(e-w)*i/60,city.latitude,.055));
+   const profile=profilePoints();
    const section=line(profile,0xffe9ad,1);root.add(section);
-   redrape.push(()=>{section.geometry.setFromPoints(Array.from({length:61},(_,i)=>at(w+(e-w)*i/60,city.latitude,.055)));section.geometry.computeBoundingSphere();});
+   redrape.push(()=>{const old=section.geometry;section.geometry=new THREE.BufferGeometry().setFromPoints(profilePoints());old.dispose();section.geometry.computeBoundingSphere();});
    root.userData={cityId:city.id,kind:'dem-observation-window',bounds:[w,s,e,n],scope:'真实高程观察窗，不是城市边界、建设范围或古代聚落'};root.visible=false;windows.set(city.id,root);group.add(root);
   }
   for(const [id,sourceNames] of [['south',['Maquan','Yarlung','Dihang']],['east',['Za','Lancang','Nu']],['west',['Shiquan']]] as const){
@@ -109,11 +111,12 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
  }
  return {group,update(state:GeographyReading|undefined,viewport:THREE.Vector2){
   group.visible=Boolean(state)&&state?.kind!=='mountain';if(!group.visible||!state||viewport.x<1||viewport.y<1)return;
+  compareProfiles=Boolean(state.compareProfiles);
   if(!ready)prepare();
   // DEM arrival and the existing macro/local height-scale switch must update
   // all geometry, not just the moving pins. Otherwise an oblique view exposes
   // old windows and routes under the new terrain, displaced from their labels.
-  const key=regionalAnchors.map(city=>at(city.longitude,city.latitude).y).join(':');
+  const key=String(compareProfiles)+regionalAnchors.map(city=>at(city.longitude,city.latitude).y).join(':');
   if(key!==terrainKey){redrape.forEach(refresh=>refresh());terrainKey=key;}
   for(const [id,root] of windows){root.visible=state.cities.includes(id as GeographyReading['cities'][number]);if(root.visible){const mesh=root.children[0] as THREE.Mesh<THREE.BufferGeometry,THREE.MeshBasicMaterial>;mesh.material.opacity=.23+.1*Math.min(1,state.progress*4);}}
   water.visible=state.rivers;rail.visible=state.kind==='rail';airport.visible=state.kind==='airport';

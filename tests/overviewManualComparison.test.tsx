@@ -37,6 +37,16 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('regional comparison inside a paused main narration',()=>{
+ it('walks into any regional reference, back to the whole map, then restores the same spoken state',()=>{
+  media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.recordingId==='OVERVIEW-regional-system');
+  const beat=overviewMainProgram.beats[media.current.beatIndex];media.current.timing={textProgress:beat.text.indexOf('东部昌都')/beat.text.length};
+  const scene=()=>find(render(),node=>typeof node.props?.onGroundJourneyReading==='function');
+  const panel=()=>find(render(),node=>typeof node.props?.onChoose==='function'&&typeof node.props?.onWhole==='function').props;
+  const original=scene().props.narratedGeography,raw=media.current.raw;
+  for(const id of ['lhasa','shigatse','shannan','nyingchi','chamdo','nagqu','ngari']){panel().onChoose(id);expect(scene().props.narratedGeography.compareFocus).toBe(id);}
+  expect(media.current.pause).toHaveBeenCalled();panel().onWhole();expect(scene().props.narratedGeography.cities).toHaveLength(7);expect(panel().manual).toBe(true);
+  panel().onResume();expect(scene().props.narratedGeography).toEqual(original);expect(media.current.raw).toBe(raw);expect(media.current.seek).not.toHaveBeenCalled();expect(media.current.select).not.toHaveBeenCalled();expect(media.current.playPause).toHaveBeenCalledOnce();
+ });
  it.each(['rotation','air','bridge'])('restores %s comparison to the original spoken state without selecting/seeking media',kind=>{
   const id=kind==='rotation'?'G1-observe':kind==='air'?'LAB-air-higher':'OVERVIEW-city-change';
   media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id===id);

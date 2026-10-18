@@ -51,7 +51,11 @@ describe('the main programme shows the places and relations it names',()=>{
     const word=timeline.words!.find(w=>w.textEnd>offset)!,time=word.start+(word.end-word.start)*.8;
     const timing=narrationTimingAt(beat.text,time,timeline.duration,timeline),a=overviewPresentation(beat,.01,timing),b=overviewPresentation(beat,.99,timing);
     expect(a.props.narratedGeography).toEqual(b.props.narratedGeography);
-    expect(a.props.narratedGeography).toMatchObject({kind:stop.kind,cities:stop.cities});
+    if(id==='OVERVIEW-history-origins'&&stop.token==='再看西部托林'){
+     // The shipped V1.2 exchange process replaced this earlier locator overlay.
+     expect(a.props.narratedGeography).toBeUndefined();expect(a.props.overviewFocusedProcess?.kind).toBe('exchange');
+     expect(a.props.overviewFocusedProcess).toEqual(b.props.overviewFocusedProcess);
+    }else expect(a.props.narratedGeography).toMatchObject({kind:stop.kind,cities:stop.cities});
    }
   }
   expect(narratedGeographyState('OVERVIEW-conclusion','',undefined)).toBeUndefined();
@@ -76,5 +80,15 @@ describe('the main programme shows the places and relations it names',()=>{
   expect(Array.from(surface.geometry.index!.array).every(index=>heights.getX(index)<=88)).toBe(true);
   mountain.update(true,.5);expect(surface.geometry.index!.count).toBe(fullCount);
   mountain.update(false,0);expect(mountain.group.visible).toBe(false);
+ });
+ it('uses the same 100 km comparison transect on the map and restores archived windows outside the comparison',()=>{
+  const model=buildNarratedGeographyReading(new THREE.PerspectiveCamera(),(lon,lat,h=0)=>new THREE.Vector3(lon,h,lat)),size=new THREE.Vector2(900,700);
+  const state={kind:'regions' as const,cities:['nyingchi' as const],rivers:true,progress:1,title:'',relation:''};
+  model.update({...state,compareProfiles:true},size);
+  const window=model.group.children.find(c=>c.userData.cityId==='nyingchi')!,section=window.children[2] as THREE.Line;
+  const positions=section.geometry.getAttribute('position');expect(positions.count).toBe(21);
+  const width=(positions.getX(20)-positions.getX(0))*111.32*Math.cos(positions.getZ(0)*Math.PI/180);
+  expect(width).toBeCloseTo(100,1);
+  model.update(state,size);expect(section.geometry.getAttribute('position').count).toBe(61);
  });
 });

@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "2ca52cf",
+  "audioBaseline": "V1-main-20261018.2",
+  "scope": "只补第三章七处地区辨识；规划第二阶段，不实施线路",
+  "status": "整体认识版功能收口候选；正式理解验收未完成",
+  "implemented": [
+    "已有DEM生成七条100km东西剖面，同一0—8000m纵轴",
+    "七地同屏比较；原地图同角度/同距离走近；地图剖面与右侧数据一致",
+    "手动操作暂停且保留原语句；整体回看与原句恢复",
+    "项目说明为当前阶段目标、六章标准、遗留分级及下一阶段范围；主入口不变"
+  ],
+  "frozen": {
+    "chapters": 6,
+    "recordings": 21,
+    "durationSeconds": 750.024,
+    "newRecordings": 0,
+    "newPlaceModels": 0,
+    "otherChapters": "unchanged"
+  },
+  "tests": {
+    "passed": 47,
+    "files": 6,
+    "typecheck": "passed",
+    "build": "passed",
+    "existingChunkWarning": "709 kB runtime"
+  },
+  "browser": {
+    "tab": "independent hidden tab; owner tab untouched",
+    "viewport": "1280x720 desktop",
+    "actions": [
+      "七地逐个选择，原raw=0.45不变",
+      "同一地图走近林芝、那曲、日喀则等；返回七地整体",
+      "恢复原句“高山峡谷组织不同来路”，清除手动条件",
+      "七条剖面同时可见，返回操作前置",
+      "恢复后自然进入第四章，第三章比较面板退出",
+      "实际点击项目说明按钮进入三阶段范围页面"
+    ],
+    "evidence": [
+      "stage-evidence/whole.png",
+      "stage-evidence/nyingchi.png",
+      "stage-evidence/nagqu.png",
+      "stage-evidence/returned-whole.png"
+    ],
+    "limits": [
+      "没有新版全程12:30重播",
+      "无系统音频回录，未直接核验听感",
+      "正式首次观看者理解验收0/3，不以测试代替"
+    ],
+    "consoleWarningsErrors": []
+  },
+  "data": {
+    "source": "/assets/terrain/tibet-regional-dem.source.json",
+    "method": "与实际地形三角网一致；东西各50km、每5km采样；同一海拔基准，参考点读数约百米显示",
+    "limits": "5—6km粗网格；参考点不等于城区官方海拔、行政区平均或气候观测，不能推导发展优势"
+  },
+  "nextPhase": {
+    "status": "planning only",
+    "spine": [
+      "林芝",
+      "山南（泽当一带）",
+      "拉萨",
+      "日喀则"
+    ],
+    "scope": "四节点、三衔接，一条认识走廊；并非当前可订行程",
+    "gates": [
+      "逐段交通几何、站区到城区接续和资料核验",
+      "复用已有拉萨河谷段验证线路—地方—操作—原线原句",
+      "接齐三段，验证四节点理解与计划往返后收口"
+    ],
+    "excluded": [
+      "新景点清单",
+      "新增人物模型",
+      "多条环线",
+      "实时票价/班次/酒店",
+      "未经核验的开放、进入、天气和健康结论"
+    ],
+    "sources": [
+      "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248183.html",
+      "https://source.nra.gov.cn/xwzx/tpsp/tpxx/202204/t20220405_284807.shtml"
+    ]
+  },
+  "testMaintenance": "原narratedGeography测试仍期待托林旧定位层；按已提交V1.2明确断言exchange过程替代，未改历史功能"
+}

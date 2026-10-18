@@ -1,6 +1,6 @@
 import type {NarrationTiming} from './narrationTiming';
 export type GeographyCity='lhasa'|'shigatse'|'shannan'|'nyingchi'|'chamdo'|'nagqu'|'ngari';
-export interface GeographyReading {kind:'regions'|'history'|'rail'|'airport'|'mountain';cities:GeographyCity[];rivers:boolean;progress:number;title:string;relation:string}
+export interface GeographyReading {kind:'regions'|'history'|'rail'|'airport'|'mountain';cities:GeographyCity[];rivers:boolean;progress:number;title:string;relation:string;compareFocus?:GeographyCity;compareProfiles?:boolean}
 type Stop=Omit<GeographyReading,'progress'> & {token:string};
 const region=(token:string,cities:GeographyCity[],title:string,relation:string):Stop=>({token,cities,title,relation,kind:'regions',rivers:true});
 /** Literal recording text owns every change. Windows are terrain samples, not

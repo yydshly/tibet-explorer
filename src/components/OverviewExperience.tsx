@@ -1,5 +1,7 @@
 import {focusedProcessCopy,focusedProcessFeedback,type FocusedProcessState} from '../lib/overviewFocusedProcesses';
 import type {GeographyReading} from '../lib/narratedGeography';
+import OverviewRegionComparison from './OverviewRegionComparison';
+import {regionComparisonState} from '../lib/regionComparison';
 import type {RotationFlowState} from '../data/rotationFlow';
 import {rotationManualState,rotationFeedback} from '../lib/rotationFlow';
 import {rotationPresentation} from '../lib/overviewRotation';
@@ -84,13 +86,13 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const riverManual=riverOverride?.id===beat.id,geographyManual=geographyOverride?.id===beat.id;
  const originalPresentation=overviewPresentation(beat,director.raw,director.timing);
  const riverBase=riverManual?overviewPresentation(beat,0):originalPresentation;
- const recordedBase={...riverBase,props:{...riverBase.props,...(riverManual?{overviewRiver:{emphasized:true,reveal:riverOverride.progress}}:{}),...(geographyManual?{narratedGeography:geographyOverride.state}:{})}};
+ const recordedBase={...riverBase,...(geographyManual&&geographyOverride.state.kind==='regions'?{title:geographyOverride.state.title,explanation:geographyOverride.state.relation,scale:geographyOverride.state.compareFocus?'原地图走近地区 · 高差×16 · 非街道尺度':'七处聚居地 · 整体对照'}:{}),props:{...riverBase.props,...(riverManual?{overviewRiver:{emphasized:true,reveal:riverOverride.progress}}:{}),...(geographyManual?{narratedGeography:geographyOverride.state}:{})}};
  const focused=focusedManual?focusedOverride.state:recordedBase.props.overviewFocusedProcess;
  const recordedPresentation={...recordedBase,props:{...recordedBase.props,overviewFocusedProcess:focused}};
  const processCopy=focused?focusedProcessCopy[focused.kind]:undefined;
  const geography=recordedPresentation.props.narratedGeography;
  const riverFeedback='沿相连干流向下游读：上游与下游共享这条河，色点示意传递次序，不能据此推算水量与影响大小。';
- const geographyFeedback=geography?.kind==='airport'?'航空抵达停在机场；光标沿归档道路向狮泉河方向推进，落地还需要地面接续。':'沿现状轨道读拉萨、山南与林芝的联系；移动标记不是列车速度或当前班次。';
+ const geographyFeedback=geography?.kind==='regions'?geography.relation:geography?.kind==='airport'?'航空抵达停在机场；光标沿归档道路向狮泉河方向推进，落地还需要地面接续。':'沿现状轨道读拉萨、山南与林芝的联系；移动标记不是列车速度或当前班次。';
  const boundedEvidence=beat.recordingId==='OVERVIEW-protection'||beat.recordingId==='OVERVIEW-regional-connections-core';
  const rotationManual=rotationOverride?.id===beat.id;
  const rotation=rotationManual?rotationOverride.state:recordedPresentation.props.rotationFlow;
@@ -119,7 +121,8 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const presentation=ground?{...interactionPresentation,sceneIdentity:'atlas-local-context',scale:ground.returnMix>.99?'西藏全域 · 拉萨定位':ground.returnMix>.05?ground.stage==='return'?'拉萨河谷 → 西藏全域':'西藏全域 → 拉萨河谷':`拉萨站前 · 地形高度1× · 观察高度${Math.round(ground.height)}米`,props:{...interactionPresentation.props,scene:'region' as const,viewKey:'atlas',layer:'atlas-overview',overviewLocalContext:true,climateLab:undefined,groundJourney:ground}}:interactionPresentation;
  const pixelView=isUrbanPixelView(presentation),urbanManual=pixelView&&urbanYear!==undefined;
  const pixelCounts=pixelView?urbanPixelCounts(presentation.props.overviewUrban!.year):undefined;
- const shot=overviewShot(beat,director.raw,director.timing);
+ const recordedShot=overviewShot(beat,director.raw,director.timing);
+ const shot=geographyManual&&geography?.kind==='regions'?{...recordedShot,focusIds:geography.cities,primaryFocus:geography.compareFocus,title:geography.title}:recordedShot;
  const evidence=heritageEvidence(beat.recordingId,beat.text,director.timing?.textProgress??director.raw);
  const phaseName=rotation?rotation.phase==='arrival'?'回到亚洲':rotationManual?'手动对照':'地球自转与气流':groundManual?'沿线观察':interaction?(interaction.zoom?'走近地区':interaction.stage==='life'&&(director.timing?.textProgress??0)*beat.text.length>=beat.text.indexOf('回到全域')?'回到整体':'整体对照'):beat.recordingId==='OVERVIEW-heritage-return'?'回到整体':beat.kind==='heritage'&&shot.phase==='whole'?'保留城市背景':{whole:'先看整体',context:'建立来路',evidence:'走近证据',return:'回到整体'}[shot.phase];
  const [engineRevision,setEngineRevision]=useState(0),[resetKey,setResetKey]=useState(0),[moisture,setMoisture]=useState<'higher'|'lower'>(),[cutaway,setCutaway]=useState<boolean>();
@@ -187,7 +190,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const pending=director.wantsPlayback&&!director.playing;
  const placeActionControls=placeAction&&<div className="overview-street-key overview-change-controls" data-place-action={placeAction.phase} data-place-separation={placeAction.separation}><strong>{placeAction.caseId==='jokhang'?'2005年监测记录 · 大昭寺供灯空间调整':'2005年监测记录 · 活动与公共空间'}</strong><span>{placeAction.caseId==='jokhang'?'现状地物定位；金色灯光为供灯关系示意':'现状地物定位；金色灯光与人物为关系示意'}</span><div role="group" aria-label="对照保护与公共使用">{[{title:'供灯原有关系',phase:'lamps',separation:0,activity:0},{title:'供灯空间分开',phase:'separate',separation:1,activity:0},{title:'广场行走与停留',phase:'public',separation:1,activity:1}].filter(option=>placeAction.caseId!=='jokhang'||option.phase!=='public').map(option=><button key={option.phase} aria-pressed={placeManual&&placeAction.phase===option.phase} onClick={()=>{director.pause();setPlaceOverride({id:beat.id,state:{...placeAction,phase:option.phase as PlaceActionState['phase'],progress:1,separation:option.separation,activity:option.activity}});}}>{option.title}</button>)}</div>{placeAction.caseId==='jokhang'&&<label>对照活动空间：原有关系 ↔ 报告记录的调整<input type="range" min="0" max="1" step="0.01" aria-label="供灯空间对照" value={placeAction.separation} onChange={e=>{director.pause();const separation=Number(e.target.value);setPlaceOverride({id:beat.id,state:{...placeAction,phase:separation===0?'lamps':'separate',progress:1,separation,activity:0}});}}/><small>拖动比较使用关系；不是施工进度或历史年份。</small></label>}<small>2005年是报告年份；现状地物定位，灯光非实际灯数，寺前符号非供灯室测绘。</small>{boundedEvidence&&placeManual&&<button onClick={play}>恢复原条件，从暂停处继续</button>}</div>;
  const observationHandoff=observation&&<section className="overview-observation-handoff" aria-label="从主线生成观察任务"><strong>{beat.id==='OVERVIEW-conclusion'?'把这一程变成自己的观察计划':'带着这个问题继续观察'}</strong>{observations.length>1?<label>选择刚认识的地方<select aria-label="观察地点" value={observation.stopId} onChange={e=>{director.pause();setObservationChoice(e.target.value);}}>{observations.map(o=><option key={o.stopId} value={o.stopId}>{o.place}</option>)}</select></label>:<span>{observation.place}</span>}<p>{observation.question}</p><button onClick={openObservation}>带入观察计划 · 编辑与保存</button><small>携带本段位置与对应资料；保留已有笔记，返回时继续原讲述。</small></section>;
- return <main className={`overview-experience${ground?' overview-ground-mode':''}${boundedEvidence?' overview-evidence-mode':''}`}>
+ return <main className={`overview-experience${beat.recordingId==='OVERVIEW-regional-system'?' overview-region-mode':''}${ground?' overview-ground-mode':''}${boundedEvidence?' overview-evidence-mode':''}`}>
   <header className="overview-header"><button className="overview-brand" onClick={()=>navigate(onHome)}><GlobeHemisphereEast size={21}/><span>西藏探索</span></button><p>{isMain?"完整认识西藏":"延伸阅读"}<span>{isMain?"六个核心问题 · 从整体到地方":program.title}</span></p><nav aria-label="总览与深入"><button className="project-review-entry" onClick={()=>navigate(()=>{location.hash="/observation-plan";})}>观察计划</button><button className="project-review-entry" onClick={()=>navigate(()=>{location.assign("/project-review/index.html");})} title="最初思路、阶段验收与后续处理方案">项目说明</button><button className={!isMain?"overview-return":undefined} aria-current={isMain?"page":undefined} onClick={()=>navigate(()=>{location.hash="/overview";})}>{isMain?"完整演示":"返回认识主线"}</button><button onClick={()=>navigate(onMap)}>地图图鉴</button><button onClick={()=>navigate(onDirectory)}>全部专题</button><button onClick={()=>navigate(onHome)}>探索目录</button></nav></header>
   <div className="overview-body">
    <section className={`overview-stage${presentation.props.layer==='atlas-city-comparison'?' is-local-reading':''}`} aria-label="完整认识西藏的连续三维演示">
@@ -214,6 +217,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
     <p className="overview-eyebrow">{String(chapterIndex+1).padStart(2,'0')} / {overviewChapters.length} · {chapter.title}</p>
     <h1>{chapter.question}</h1>
     {planNotice&&<p role="status">{planNotice}</p>}
+    {beat.recordingId==='OVERVIEW-regional-system'&&<OverviewRegionComparison active={originalPresentation.props.narratedGeography?.cities??[]} selected={geography?.compareFocus} manual={geographyManual} onChoose={id=>{director.pause();setGeographyOverride({id:beat.id,state:regionComparisonState(id)});}} onWhole={()=>{director.pause();setGeographyOverride({id:beat.id,state:regionComparisonState()});}} onResume={play}/>}
     {focused&&processCopy&&<section className="overview-ground-controls" aria-label="当前过程操作对照">
      <strong>{processCopy.title}</strong><p>{processCopy.steps.join(' → ')}</p>
      <label>拖动查看过程<input aria-label="过程演示进度" type="range" min="0" max="1" step=".01" value={focused.progress} onChange={e=>changeFocused({progress:Number(e.target.value)})}/></label>

@@ -1,0 +1,951 @@
+{
+  "demSha256": "f3de5c1ae3bce8aac154f3c43d5e1a017c1c8230c8c86ffe8408b86698dcb126",
+  "source": "/assets/terrain/tibet-regional-dem.source.json",
+  "locators": "/assets/atlas-place-references.json",
+  "lengthKm": 100,
+  "axisMetres": [
+    0,
+    8000
+  ],
+  "method": "聚居地参考点东西各50km，间隔5km；与地图相同的三角网插值。中点值为粗网格采样，不是城区官方海拔、地区平均或山峰实测。",
+  "places": [
+    {
+      "id": "lhasa",
+      "name": "拉萨",
+      "longitude": 91.10001,
+      "latitude": 29.645024,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 90.58320845646018,
+          "latitude": 29.645024,
+          "metres": 5563.178
+        },
+        {
+          "km": -45,
+          "longitude": 90.63488861081417,
+          "latitude": 29.645024,
+          "metres": 5561.773
+        },
+        {
+          "km": -40,
+          "longitude": 90.68656876516815,
+          "latitude": 29.645024,
+          "metres": 5316.909
+        },
+        {
+          "km": -35,
+          "longitude": 90.73824891952214,
+          "latitude": 29.645024,
+          "metres": 5077.237
+        },
+        {
+          "km": -30,
+          "longitude": 90.78992907387611,
+          "latitude": 29.645024,
+          "metres": 5108.688
+        },
+        {
+          "km": -25,
+          "longitude": 90.8416092282301,
+          "latitude": 29.645024,
+          "metres": 5007.369
+        },
+        {
+          "km": -20,
+          "longitude": 90.89328938258407,
+          "latitude": 29.645024,
+          "metres": 4126.445
+        },
+        {
+          "km": -15,
+          "longitude": 90.94496953693806,
+          "latitude": 29.645024,
+          "metres": 3947.139
+        },
+        {
+          "km": -10,
+          "longitude": 90.99664969129203,
+          "latitude": 29.645024,
+          "metres": 3945.292
+        },
+        {
+          "km": -5,
+          "longitude": 91.04832984564602,
+          "latitude": 29.645024,
+          "metres": 3704.974
+        },
+        {
+          "km": 0,
+          "longitude": 91.10001,
+          "latitude": 29.645024,
+          "metres": 3698.501
+        },
+        {
+          "km": 5,
+          "longitude": 91.15169015435397,
+          "latitude": 29.645024,
+          "metres": 3825.395
+        },
+        {
+          "km": 10,
+          "longitude": 91.20337030870796,
+          "latitude": 29.645024,
+          "metres": 3782.747
+        },
+        {
+          "km": 15,
+          "longitude": 91.25505046306193,
+          "latitude": 29.645024,
+          "metres": 3800.46
+        },
+        {
+          "km": 20,
+          "longitude": 91.30673061741592,
+          "latitude": 29.645024,
+          "metres": 3853.404
+        },
+        {
+          "km": 25,
+          "longitude": 91.3584107717699,
+          "latitude": 29.645024,
+          "metres": 4013.587
+        },
+        {
+          "km": 30,
+          "longitude": 91.41009092612389,
+          "latitude": 29.645024,
+          "metres": 4156.517
+        },
+        {
+          "km": 35,
+          "longitude": 91.46177108047786,
+          "latitude": 29.645024,
+          "metres": 4458.888
+        },
+        {
+          "km": 40,
+          "longitude": 91.51345123483185,
+          "latitude": 29.645024,
+          "metres": 4708.574
+        },
+        {
+          "km": 45,
+          "longitude": 91.56513138918582,
+          "latitude": 29.645024,
+          "metres": 5167.253
+        },
+        {
+          "km": 50,
+          "longitude": 91.61681154353981,
+          "latitude": 29.645024,
+          "metres": 4913.976
+        }
+      ]
+    },
+    {
+      "id": "shigatse",
+      "name": "日喀则",
+      "longitude": 88.88335,
+      "latitude": 29.250009,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 88.36855609450797,
+          "latitude": 29.250009,
+          "metres": 3993.169
+        },
+        {
+          "km": -45,
+          "longitude": 88.42003548505717,
+          "latitude": 29.250009,
+          "metres": 4352.966
+        },
+        {
+          "km": -40,
+          "longitude": 88.47151487560637,
+          "latitude": 29.250009,
+          "metres": 4403.388
+        },
+        {
+          "km": -35,
+          "longitude": 88.52299426615558,
+          "latitude": 29.250009,
+          "metres": 4319.906
+        },
+        {
+          "km": -30,
+          "longitude": 88.57447365670478,
+          "latitude": 29.250009,
+          "metres": 4161.713
+        },
+        {
+          "km": -25,
+          "longitude": 88.62595304725397,
+          "latitude": 29.250009,
+          "metres": 4049.139
+        },
+        {
+          "km": -20,
+          "longitude": 88.67743243780318,
+          "latitude": 29.250009,
+          "metres": 4126.867
+        },
+        {
+          "km": -15,
+          "longitude": 88.72891182835238,
+          "latitude": 29.250009,
+          "metres": 4141.13
+        },
+        {
+          "km": -10,
+          "longitude": 88.78039121890158,
+          "latitude": 29.250009,
+          "metres": 4276.705
+        },
+        {
+          "km": -5,
+          "longitude": 88.83187060945079,
+          "latitude": 29.250009,
+          "metres": 4006.804
+        },
+        {
+          "km": 0,
+          "longitude": 88.88335,
+          "latitude": 29.250009,
+          "metres": 3856.255
+        },
+        {
+          "km": 5,
+          "longitude": 88.9348293905492,
+          "latitude": 29.250009,
+          "metres": 3979.91
+        },
+        {
+          "km": 10,
+          "longitude": 88.9863087810984,
+          "latitude": 29.250009,
+          "metres": 4285.397
+        },
+        {
+          "km": 15,
+          "longitude": 89.0377881716476,
+          "latitude": 29.250009,
+          "metres": 4286.924
+        },
+        {
+          "km": 20,
+          "longitude": 89.08926756219681,
+          "latitude": 29.250009,
+          "metres": 4286.563
+        },
+        {
+          "km": 25,
+          "longitude": 89.14074695274601,
+          "latitude": 29.250009,
+          "metres": 4234.477
+        },
+        {
+          "km": 30,
+          "longitude": 89.1922263432952,
+          "latitude": 29.250009,
+          "metres": 4071.556
+        },
+        {
+          "km": 35,
+          "longitude": 89.24370573384441,
+          "latitude": 29.250009,
+          "metres": 4119.762
+        },
+        {
+          "km": 40,
+          "longitude": 89.29518512439361,
+          "latitude": 29.250009,
+          "metres": 4352.432
+        },
+        {
+          "km": 45,
+          "longitude": 89.34666451494282,
+          "latitude": 29.250009,
+          "metres": 4330.772
+        },
+        {
+          "km": 50,
+          "longitude": 89.39814390549202,
+          "latitude": 29.250009,
+          "metres": 4667.088
+        }
+      ]
+    },
+    {
+      "id": "shannan",
+      "name": "山南·泽当",
+      "longitude": 91.77275,
+      "latitude": 29.24372,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 91.25798773419345,
+          "latitude": 29.24372,
+          "metres": 3908.986
+        },
+        {
+          "km": -45,
+          "longitude": 91.30946396077411,
+          "latitude": 29.24372,
+          "metres": 3737.222
+        },
+        {
+          "km": -40,
+          "longitude": 91.36094018735477,
+          "latitude": 29.24372,
+          "metres": 3663.422
+        },
+        {
+          "km": -35,
+          "longitude": 91.41241641393542,
+          "latitude": 29.24372,
+          "metres": 3586.369
+        },
+        {
+          "km": -30,
+          "longitude": 91.46389264051608,
+          "latitude": 29.24372,
+          "metres": 3869.313
+        },
+        {
+          "km": -25,
+          "longitude": 91.51536886709673,
+          "latitude": 29.24372,
+          "metres": 3725.058
+        },
+        {
+          "km": -20,
+          "longitude": 91.56684509367739,
+          "latitude": 29.24372,
+          "metres": 3842.459
+        },
+        {
+          "km": -15,
+          "longitude": 91.61832132025803,
+          "latitude": 29.24372,
+          "metres": 3786.27
+        },
+        {
+          "km": -10,
+          "longitude": 91.6697975468387,
+          "latitude": 29.24372,
+          "metres": 3942.021
+        },
+        {
+          "km": -5,
+          "longitude": 91.72127377341934,
+          "latitude": 29.24372,
+          "metres": 4005.175
+        },
+        {
+          "km": 0,
+          "longitude": 91.77275,
+          "latitude": 29.24372,
+          "metres": 3689.488
+        },
+        {
+          "km": 5,
+          "longitude": 91.82422622658066,
+          "latitude": 29.24372,
+          "metres": 3587.918
+        },
+        {
+          "km": 10,
+          "longitude": 91.87570245316131,
+          "latitude": 29.24372,
+          "metres": 4000.877
+        },
+        {
+          "km": 15,
+          "longitude": 91.92717867974197,
+          "latitude": 29.24372,
+          "metres": 3912.727
+        },
+        {
+          "km": 20,
+          "longitude": 91.97865490632262,
+          "latitude": 29.24372,
+          "metres": 3823.348
+        },
+        {
+          "km": 25,
+          "longitude": 92.03013113290328,
+          "latitude": 29.24372,
+          "metres": 3764.951
+        },
+        {
+          "km": 30,
+          "longitude": 92.08160735948393,
+          "latitude": 29.24372,
+          "metres": 4237.963
+        },
+        {
+          "km": 35,
+          "longitude": 92.13308358606459,
+          "latitude": 29.24372,
+          "metres": 4528.92
+        },
+        {
+          "km": 40,
+          "longitude": 92.18455981264523,
+          "latitude": 29.24372,
+          "metres": 4081.471
+        },
+        {
+          "km": 45,
+          "longitude": 92.2360360392259,
+          "latitude": 29.24372,
+          "metres": 4458.733
+        },
+        {
+          "km": 50,
+          "longitude": 92.28751226580655,
+          "latitude": 29.24372,
+          "metres": 4845.813
+        }
+      ]
+    },
+    {
+      "id": "nyingchi",
+      "name": "林芝",
+      "longitude": 94.36651,
+      "latitude": 29.650744,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 93.84967908922883,
+          "latitude": 29.650744,
+          "metres": 4161.303
+        },
+        {
+          "km": -45,
+          "longitude": 93.90136218030595,
+          "latitude": 29.650744,
+          "metres": 4850.246
+        },
+        {
+          "km": -40,
+          "longitude": 93.95304527138308,
+          "latitude": 29.650744,
+          "metres": 4686.697
+        },
+        {
+          "km": -35,
+          "longitude": 94.00472836246018,
+          "latitude": 29.650744,
+          "metres": 4083.115
+        },
+        {
+          "km": -30,
+          "longitude": 94.05641145353731,
+          "latitude": 29.650744,
+          "metres": 4265.498
+        },
+        {
+          "km": -25,
+          "longitude": 94.10809454461442,
+          "latitude": 29.650744,
+          "metres": 4390.489
+        },
+        {
+          "km": -20,
+          "longitude": 94.15977763569154,
+          "latitude": 29.650744,
+          "metres": 4710.474
+        },
+        {
+          "km": -15,
+          "longitude": 94.21146072676865,
+          "latitude": 29.650744,
+          "metres": 4656.927
+        },
+        {
+          "km": -10,
+          "longitude": 94.26314381784577,
+          "latitude": 29.650744,
+          "metres": 4148.319
+        },
+        {
+          "km": -5,
+          "longitude": 94.31482690892288,
+          "latitude": 29.650744,
+          "metres": 3848.435
+        },
+        {
+          "km": 0,
+          "longitude": 94.36651,
+          "latitude": 29.650744,
+          "metres": 3178.806
+        },
+        {
+          "km": 5,
+          "longitude": 94.41819309107713,
+          "latitude": 29.650744,
+          "metres": 3952.192
+        },
+        {
+          "km": 10,
+          "longitude": 94.46987618215424,
+          "latitude": 29.650744,
+          "metres": 4439.3
+        },
+        {
+          "km": 15,
+          "longitude": 94.52155927323136,
+          "latitude": 29.650744,
+          "metres": 4275.861
+        },
+        {
+          "km": 20,
+          "longitude": 94.57324236430847,
+          "latitude": 29.650744,
+          "metres": 4404.218
+        },
+        {
+          "km": 25,
+          "longitude": 94.6249254553856,
+          "latitude": 29.650744,
+          "metres": 4532.498
+        },
+        {
+          "km": 30,
+          "longitude": 94.6766085464627,
+          "latitude": 29.650744,
+          "metres": 4464.581
+        },
+        {
+          "km": 35,
+          "longitude": 94.72829163753983,
+          "latitude": 29.650744,
+          "metres": 3991.489
+        },
+        {
+          "km": 40,
+          "longitude": 94.77997472861693,
+          "latitude": 29.650744,
+          "metres": 4158.689
+        },
+        {
+          "km": 45,
+          "longitude": 94.83165781969406,
+          "latitude": 29.650744,
+          "metres": 4494.899
+        },
+        {
+          "km": 50,
+          "longitude": 94.88334091077118,
+          "latitude": 29.650744,
+          "metres": 3492.795
+        }
+      ]
+    },
+    {
+      "id": "chamdo",
+      "name": "昌都",
+      "longitude": 97.180939,
+      "latitude": 31.140938,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 96.65616187508581,
+          "latitude": 31.140938,
+          "metres": 4040.082
+        },
+        {
+          "km": -45,
+          "longitude": 96.70863958757724,
+          "latitude": 31.140938,
+          "metres": 4234.267
+        },
+        {
+          "km": -40,
+          "longitude": 96.76111730006866,
+          "latitude": 31.140938,
+          "metres": 4102.449
+        },
+        {
+          "km": -35,
+          "longitude": 96.81359501256007,
+          "latitude": 31.140938,
+          "metres": 4291.164
+        },
+        {
+          "km": -30,
+          "longitude": 96.8660727250515,
+          "latitude": 31.140938,
+          "metres": 4567.345
+        },
+        {
+          "km": -25,
+          "longitude": 96.9185504375429,
+          "latitude": 31.140938,
+          "metres": 4131.377
+        },
+        {
+          "km": -20,
+          "longitude": 96.97102815003433,
+          "latitude": 31.140938,
+          "metres": 4313.779
+        },
+        {
+          "km": -15,
+          "longitude": 97.02350586252574,
+          "latitude": 31.140938,
+          "metres": 3994.837
+        },
+        {
+          "km": -10,
+          "longitude": 97.07598357501716,
+          "latitude": 31.140938,
+          "metres": 3952.065
+        },
+        {
+          "km": -5,
+          "longitude": 97.12846128750857,
+          "latitude": 31.140938,
+          "metres": 3642.628
+        },
+        {
+          "km": 0,
+          "longitude": 97.180939,
+          "latitude": 31.140938,
+          "metres": 3675.687
+        },
+        {
+          "km": 5,
+          "longitude": 97.23341671249142,
+          "latitude": 31.140938,
+          "metres": 4095.872
+        },
+        {
+          "km": 10,
+          "longitude": 97.28589442498283,
+          "latitude": 31.140938,
+          "metres": 4300.346
+        },
+        {
+          "km": 15,
+          "longitude": 97.33837213747425,
+          "latitude": 31.140938,
+          "metres": 4157.14
+        },
+        {
+          "km": 20,
+          "longitude": 97.39084984996566,
+          "latitude": 31.140938,
+          "metres": 4245.197
+        },
+        {
+          "km": 25,
+          "longitude": 97.44332756245709,
+          "latitude": 31.140938,
+          "metres": 4602.152
+        },
+        {
+          "km": 30,
+          "longitude": 97.4958052749485,
+          "latitude": 31.140938,
+          "metres": 4790.873
+        },
+        {
+          "km": 35,
+          "longitude": 97.54828298743992,
+          "latitude": 31.140938,
+          "metres": 4594.335
+        },
+        {
+          "km": 40,
+          "longitude": 97.60076069993133,
+          "latitude": 31.140938,
+          "metres": 4768.277
+        },
+        {
+          "km": 45,
+          "longitude": 97.65323841242275,
+          "latitude": 31.140938,
+          "metres": 4660.899
+        },
+        {
+          "km": 50,
+          "longitude": 97.70571612491418,
+          "latitude": 31.140938,
+          "metres": 4627.432
+        }
+      ]
+    },
+    {
+      "id": "nagqu",
+      "name": "那曲",
+      "longitude": 92.05003,
+      "latitude": 31.480002,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 91.52336050227652,
+          "latitude": 31.480002,
+          "metres": 4527.932
+        },
+        {
+          "km": -45,
+          "longitude": 91.57602745204886,
+          "latitude": 31.480002,
+          "metres": 4572.429
+        },
+        {
+          "km": -40,
+          "longitude": 91.6286944018212,
+          "latitude": 31.480002,
+          "metres": 4621.189
+        },
+        {
+          "km": -35,
+          "longitude": 91.68136135159357,
+          "latitude": 31.480002,
+          "metres": 4676.368
+        },
+        {
+          "km": -30,
+          "longitude": 91.73402830136591,
+          "latitude": 31.480002,
+          "metres": 4619.793
+        },
+        {
+          "km": -25,
+          "longitude": 91.78669525113826,
+          "latitude": 31.480002,
+          "metres": 4604.2
+        },
+        {
+          "km": -20,
+          "longitude": 91.83936220091061,
+          "latitude": 31.480002,
+          "metres": 4574.32
+        },
+        {
+          "km": -15,
+          "longitude": 91.89202915068296,
+          "latitude": 31.480002,
+          "metres": 4603.921
+        },
+        {
+          "km": -10,
+          "longitude": 91.9446961004553,
+          "latitude": 31.480002,
+          "metres": 4589.074
+        },
+        {
+          "km": -5,
+          "longitude": 91.99736305022766,
+          "latitude": 31.480002,
+          "metres": 4538.408
+        },
+        {
+          "km": 0,
+          "longitude": 92.05003,
+          "latitude": 31.480002,
+          "metres": 4518.318
+        },
+        {
+          "km": 5,
+          "longitude": 92.10269694977235,
+          "latitude": 31.480002,
+          "metres": 4610.133
+        },
+        {
+          "km": 10,
+          "longitude": 92.15536389954471,
+          "latitude": 31.480002,
+          "metres": 4654.889
+        },
+        {
+          "km": 15,
+          "longitude": 92.20803084931705,
+          "latitude": 31.480002,
+          "metres": 4774.358
+        },
+        {
+          "km": 20,
+          "longitude": 92.2606977990894,
+          "latitude": 31.480002,
+          "metres": 4831.494
+        },
+        {
+          "km": 25,
+          "longitude": 92.31336474886176,
+          "latitude": 31.480002,
+          "metres": 4603.459
+        },
+        {
+          "km": 30,
+          "longitude": 92.3660316986341,
+          "latitude": 31.480002,
+          "metres": 4538.75
+        },
+        {
+          "km": 35,
+          "longitude": 92.41869864840645,
+          "latitude": 31.480002,
+          "metres": 4593.533
+        },
+        {
+          "km": 40,
+          "longitude": 92.4713655981788,
+          "latitude": 31.480002,
+          "metres": 4579.953
+        },
+        {
+          "km": 45,
+          "longitude": 92.52403254795115,
+          "latitude": 31.480002,
+          "metres": 4505.513
+        },
+        {
+          "km": 50,
+          "longitude": 92.5766994977235,
+          "latitude": 31.480002,
+          "metres": 4534.616
+        }
+      ]
+    },
+    {
+      "id": "ngari",
+      "name": "阿里·狮泉河",
+      "longitude": 80.09758,
+      "latitude": 32.50124,
+      "points": [
+        {
+          "km": -50,
+          "longitude": 79.56501379641693,
+          "latitude": 32.50124,
+          "metres": 5195.685
+        },
+        {
+          "km": -45,
+          "longitude": 79.61827041677523,
+          "latitude": 32.50124,
+          "metres": 4615.411
+        },
+        {
+          "km": -40,
+          "longitude": 79.67152703713354,
+          "latitude": 32.50124,
+          "metres": 4415.15
+        },
+        {
+          "km": -35,
+          "longitude": 79.72478365749186,
+          "latitude": 32.50124,
+          "metres": 4392.953
+        },
+        {
+          "km": -30,
+          "longitude": 79.77804027785015,
+          "latitude": 32.50124,
+          "metres": 4471.802
+        },
+        {
+          "km": -25,
+          "longitude": 79.83129689820846,
+          "latitude": 32.50124,
+          "metres": 4305.187
+        },
+        {
+          "km": -20,
+          "longitude": 79.88455351856676,
+          "latitude": 32.50124,
+          "metres": 4247.245
+        },
+        {
+          "km": -15,
+          "longitude": 79.93781013892507,
+          "latitude": 32.50124,
+          "metres": 4259.197
+        },
+        {
+          "km": -10,
+          "longitude": 79.99106675928338,
+          "latitude": 32.50124,
+          "metres": 4292.35
+        },
+        {
+          "km": -5,
+          "longitude": 80.04432337964168,
+          "latitude": 32.50124,
+          "metres": 4321.994
+        },
+        {
+          "km": 0,
+          "longitude": 80.09758,
+          "latitude": 32.50124,
+          "metres": 4331.216
+        },
+        {
+          "km": 5,
+          "longitude": 80.1508366203583,
+          "latitude": 32.50124,
+          "metres": 4606.53
+        },
+        {
+          "km": 10,
+          "longitude": 80.2040932407166,
+          "latitude": 32.50124,
+          "metres": 4657.63
+        },
+        {
+          "km": 15,
+          "longitude": 80.25734986107491,
+          "latitude": 32.50124,
+          "metres": 4478.205
+        },
+        {
+          "km": 20,
+          "longitude": 80.31060648143323,
+          "latitude": 32.50124,
+          "metres": 4544.915
+        },
+        {
+          "km": 25,
+          "longitude": 80.36386310179152,
+          "latitude": 32.50124,
+          "metres": 4690.868
+        },
+        {
+          "km": 30,
+          "longitude": 80.41711972214983,
+          "latitude": 32.50124,
+          "metres": 4725.945
+        },
+        {
+          "km": 35,
+          "longitude": 80.47037634250813,
+          "latitude": 32.50124,
+          "metres": 4863.859
+        },
+        {
+          "km": 40,
+          "longitude": 80.52363296286644,
+          "latitude": 32.50124,
+          "metres": 4966.962
+        },
+        {
+          "km": 45,
+          "longitude": 80.57688958322476,
+          "latitude": 32.50124,
+          "metres": 4735.51
+        },
+        {
+          "km": 50,
+          "longitude": 80.63014620358305,
+          "latitude": 32.50124,
+          "metres": 4815.068
+        }
+      ]
+    }
+  ]
+}

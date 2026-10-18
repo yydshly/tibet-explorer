@@ -515,7 +515,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       if(nextRelief!==displayedRelief){displayedRelief=nextRelief;refreshDisplayedTerrain();}
       if(wasLocal||wasRegional){wasLocal=false;wasRegional=false;if(!recordedAtlas)focusCities(home,!p.overviewPresentation,life||regional?selected:undefined,comparison,regional&&p.regionalCloseView);}
       if(recordedAtlas&&p.overviewShot){
-        const shot=p.overviewShot,transport=p.narratedGeography&&transportReadingCoordinates(p.narratedGeography.kind),key=JSON.stringify([shot.cameraFrom,shot.cameraTo,shot.cameraMix,Boolean(p.overviewRiver),p.narratedGeography?.kind,transport?.length?shot.progress:0,p.overviewFocusedProcess?.kind,p.overviewFocusedProcess?Math.min(1,p.overviewFocusedProcess.progress/.25):0,p.overviewEvidenceWidth??0,viewport.x,viewport.y,p.resetKey]);
+        const shot=p.overviewShot,transport=p.narratedGeography&&transportReadingCoordinates(p.narratedGeography.kind),key=JSON.stringify([shot.cameraFrom,shot.cameraTo,shot.cameraMix,Boolean(p.overviewRiver),p.narratedGeography?.kind,p.narratedGeography?.compareFocus,transport?.length?shot.progress:0,p.overviewFocusedProcess?.kind,p.overviewFocusedProcess?Math.min(1,p.overviewFocusedProcess.progress/.25):0,p.overviewEvidenceWidth??0,viewport.x,viewport.y,p.resetKey]);
         if(key!==lastOverviewCamera){
           lastOverviewCamera=key;
           const resolve=(id:string)=>{const city=verifiedPlaceReferences[id],point=atlasHotspots.find(item=>item.id===id);return city?at(city.longitude,city.latitude,.18):point?at(point.longitude,point.latitude,.18):undefined;};
@@ -532,6 +532,15 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
             const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:points,resolve,shot:{cameraFrom:{...shot.cameraFrom,focusIds:[],amount:0},cameraTo:{...shot.cameraTo,focusIds:[],amount:0},cameraMix:shot.cameraMix}});
             const t=Math.min(1,p.overviewFocusedProcess.progress/.25),mix=t*t*(3-2*t)*.65;
             pose.position.lerp(close.position,mix);pose.target.lerp(close.target,mix);
+          }
+          const compared=p.narratedGeography?.compareFocus,reference=compared?verifiedPlaceReferences[compared]:undefined;
+          if(reference){
+            // Fixed distance/angle/height range for every region; the original
+            // terrain stays in place. Never auto-normalize each local relief.
+            const tan=Math.tan(runtime.camera.fov*Math.PI/360);
+            const distance=Math.max(250000/METRES_PER_UNIT/(2*tan*runtime.camera.aspect),260000/METRES_PER_UNIT/(2*tan))*1.3;
+            pose.target.copy(storyAtlasPosition(reference.longitude,reference.latitude,height(4000)));
+            pose.position.copy(pose.target).addScaledVector(new THREE.Vector3(0,.7,1).normalize(),distance);
           }
           runtime.focus(pose.position,pose.target,'recorded');
         }
