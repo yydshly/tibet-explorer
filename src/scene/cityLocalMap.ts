@@ -189,9 +189,10 @@ export function buildCityLocalMap(runtime: Runtime,options:{enabled?:boolean;loc
       } catch(error) { fail(id,error); }
     }));
   }).catch(error => { fail('manifest',error); });
-  const corridorsReady=!loadSources||options.groundView?Promise.resolve():readJSON('/data/local-places/transport-corridors.manifest.json').then((manifest:{routes:ArchivedCorridor[]})=>{
+  const corridorsReady=!loadSources?Promise.resolve():readJSON('/data/local-places/transport-corridors.manifest.json').then((manifest:{routes:ArchivedCorridor[]})=>{
     if(!alive)return;
     for(const route of manifest.routes){
+      if(options.groundView&&route.id!=='lhasa-station-liuwu-north-bank')continue;
       if(scoped&&(route.localityId?route.localityId!==options.localityId:route.cityId!==scopeCity))continue;
       if(route.connected&&route.coordinates.length>1&&route.sourceNodeIds?.length===route.coordinates.length&&route.sourceWayIdsByEdge?.length===route.coordinates.length-1)corridors.set(route.id,route);
     }
@@ -445,7 +446,9 @@ export function buildCityLocalMap(runtime: Runtime,options:{enabled?:boolean;loc
         if(!place.group.userData.groundReading){
           const data={...place.data,features:place.data.features.filter(f=>f.properties.featureClass!=='railway'||f.properties.tags.usage==='main')};
           const route=localRoadRouteEvidence(data,(place.data.metadata.groundRouteStart as LocalCoordinate|undefined)??[place.dem.bbox[0]+.001,29.6202],[91.0690419,29.6251928],'railway');
-          const reading=createGroundRouteReading(route.coordinates,data.features,place.toWorld,runtime.metresPerUnit,LOCAL_MAP_VERTICAL_EXAGGERATION);
+          const connection=corridors.get('lhasa-station-liuwu-north-bank');
+          if(!connection)throw new Error('拉萨站到柳梧大桥的归档相连道路缺失');
+          const reading=createGroundRouteReading(route.coordinates,data.features,place.toWorld,runtime.metresPerUnit,LOCAL_MAP_VERTICAL_EXAGGERATION,connection);
           place.group.userData.groundReading=reading;place.group.add(reading.group);
         }
         const reading=place.group.userData.groundReading;

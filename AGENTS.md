@@ -1,5 +1,10 @@
 # Prototype Instructions
 
+## 2026-10-18 railway visual gap reopened by concrete user feedback
+
+User reports later sections, especially rail, remain narration/text heavy. This explicitly reopens rail visual readability, not unlimited polishing. Existing 21 clips/701.424s and source data unchanged. In groundRouteReading: source bridge/tunnel extents read by native-word traceProgress, readable source bands and observation cursor (NOT train), station footprint, existing archived directional station-side road chain through northbound Liuwu to city (no station-door gap filled). Native clock determines all reveal; seeking/pause does not introduce free-running animation. Controls now first in rail sidebar; redundant guide/current explanation hidden only in rail, long details and plan handoff collapsed. Short resume control retained. 40 focused tests/typecheck/build passed; targeted original-browser rail playback and operations, not a repeat whole-show acceptance. No system audio listening. Real imagery remains10m; schematic widths/pins are not measured engineering geometry. Current review includes this feedback separately from historical functional closure.
+
+
 ## 2026-10-18 current browser access and functional playback verified
 
 Supersedes older browser-blocked status below. User explicitly requested resolving access and actual verification. CUA documentation/inventory and the SAME getTab URL at localhost5176 now succeeded. No security settings, alternate port, raw CDP or shell browser workaround; cause of prior denial disappearing is unknown. Do not keep asserting browser remains blocked based on older notes.

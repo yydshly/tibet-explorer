@@ -1,14 +1,14 @@
 import type {NarrationTiming} from './narrationTiming';
 
 export interface GroundReading {longitude:number;latitude:number;distanceMetres:number;totalMetres:number;tunnel:boolean;height:number;bridge?:boolean;surfaceMetres?:number;stops?:{id:string;title:string;progress:number}[]}
-export interface GroundJourneyState {progress:number;height:number;bearing:number;returnMix:number;railPhase?:'approach'|'river'|'mountain'|'crossing'|'tunnel'|'arrival';lookAt?:'river'|'station'|'crossing'|'tunnel';connectionMix?:number;stage?:'whole'|'valley'|'river'|'tunnel'|'station'|'city'|'return'}
+export interface GroundJourneyState {progress:number;height:number;bearing:number;returnMix:number;railPhase?:'approach'|'river'|'mountain'|'crossing'|'tunnel'|'arrival';lookAt?:'river'|'station'|'crossing'|'tunnel';connectionMix?:number;traceProgress?:number;stage?:'whole'|'valley'|'river'|'tunnel'|'station'|'city'|'return'}
 export const valleyJourneyText='前面认识了高原环境、生活与历史，现在沿一段真实铁路，看这些条件怎样联系起来。从西藏全图拉近拉萨。这里观察青藏线进入拉萨站前的一段，不是拉林铁路全线；底图是有日期的卫星影像。沿线向前看，山体、河流与城市逐渐进入同一视野。停在跨河段，铁路跨过河流，桥梁接起两岸，但地表高程不等于桥面高度。继续往站区方向，山体开始遮挡视线。停在虚线段，这是地图记录的隧道水平走向，不能据此判断地下深度。再沿线到拉萨站，俯看站场和周围街区。铁路完成区域抵达，还需要道路把人和物接入生活目的地。转向柳梧大桥，看站区怎样通过跨河道路联系对岸城市。你可以点选线路，前后比较视野；继续播放时会回到原来的讲解。最后回到西藏全图：地形影响通行条件，交通工程增加联系，地方接续把抵达带进生活。接下来再看这些联系的共同维护。';
 export function valleyJourneyState(text:string,timing?:NarrationTiming):GroundJourneyState {
  const at=(timing?.textProgress??0)*text.length,has=(word:string)=>at>=text.indexOf(word);
  const range=(a:string,b:string)=>Math.max(0,Math.min(1,(at-text.indexOf(a))/(text.indexOf(b)-text.indexOf(a))));
  const stage=has('最后回到')?'return':has('转向柳梧大桥')?'city':has('再沿线到')?'station':has('继续往站区')?'tunnel':has('停在跨河段')?'river':has('从西藏全图')?'valley':'whole';
  const railPhase=has('再沿线到')?'arrival':has('停在虚线段')?'tunnel':has('继续往站区')?'mountain':has('停在跨河段')?'crossing':'river';
- return {stage,railPhase,progress:railPhase==='river'?range('沿线向前看','停在跨河段'):railPhase==='mountain'?range('继续往站区方向','停在虚线段'):railPhase==='arrival'?range('再沿线到拉萨站','铁路完成区域抵达'):1,
+ return {stage,railPhase,traceProgress:railPhase==='crossing'?range('停在跨河段','但地表高程'):railPhase==='tunnel'?range('停在虚线段','不能据此判断'):undefined,progress:railPhase==='river'?range('沿线向前看','停在跨河段'):railPhase==='mountain'?range('继续往站区方向','停在虚线段'):railPhase==='arrival'?range('再沿线到拉萨站','铁路完成区域抵达'):1,
   height:2000-900*range('沿线向前看','停在跨河段')-200*range('继续往站区方向','停在虚线段')+700*range('再沿线到拉萨站','铁路完成区域抵达'),bearing:0,
   returnMix:has('最后回到')?range('最后回到西藏全图','接下来再看'):1-range('从西藏全图拉近拉萨','沿线向前看'),connectionMix:range('转向柳梧大桥','你可以点选线路')};
 }

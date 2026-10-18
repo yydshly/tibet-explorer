@@ -11,6 +11,30 @@ const data=JSON.parse(readFileSync('public/data/local-places/lhasa.geojson','utf
 const main={...data,features:data.features.filter(f=>f.properties.featureClass!=='railway'||f.properties.tags.usage==='main')};
 const route=localRoadRouteEvidence(main,[91.036,29.6202],[91.0690419,29.6251928],'railway');
 describe('sourced ground journey',()=>{
+ it('reads bridge and tunnel extents with the word clock and rewinds the same geometry',()=>{
+  const acquired=JSON.parse(readFileSync('public/assets/terrain/lhasa-ground/lhasa.geojson','utf8')) as LocalCollection;
+  const rail=localRoadRouteEvidence({...acquired,features:acquired.features.filter(f=>f.properties.featureClass!=='railway'||f.properties.tags.usage==='main')},acquired.metadata.groundRouteStart as [number,number],[91.0690419,29.6251928],'railway');
+  const connection=JSON.parse(readFileSync('public/data/local-places/transport-corridors.manifest.json','utf8')).routes.find((r:{id:string})=>r.id==='lhasa-station-liuwu-north-bank');
+  const reader=createGroundRouteReading(rail.coordinates,acquired.features,([x,z],offset=0)=>new THREE.Vector3(x,offset/100000,z),100000,1.8,connection);
+  const camera=new THREE.PerspectiveCamera(42,1.4),size=new THREE.Vector2(900,600);
+  const at=(token:string)=>{reader.update(valleyJourneyState(valleyJourneyText,{textProgress:(valleyJourneyText.indexOf(token)+.001)/valleyJourneyText.length} as NarrationTiming),camera,size);return {...reader.group.userData.visualReading};};
+  const bridgeStart=at('停在跨河段'),bridgeEnd=at('但地表高程');
+  expect(bridgeEnd.traceDistance-bridgeStart.traceDistance).toBeGreaterThan(100);
+  const tunnelStart=at('停在虚线段'),tunnelEnd=at('不能据此判断');
+  expect(tunnelEnd.traceDistance-tunnelStart.traceDistance).toBeGreaterThan(100);
+  expect(at('停在跨河段')).toEqual(bridgeStart);
+  at('你可以点选线路');
+  const roads=reader.group.children.find(o=>o.userData.kind==='archived-station-city-connection')!;
+  expect(roads.visible).toBe(true);
+  expect(roads.userData.coordinates).toEqual(connection.coordinates);
+  expect(roads.children.map(o=>o.userData.sourceId)).toEqual(connection.sourceWayIdsByEdge);
+  expect(connection.coordinates[0]).not.toEqual(rail.coordinates.at(-1));
+  expect(roads.children.every(o=>(o as THREE.Mesh).geometry.drawRange.count>0)).toBe(true);
+  at('停在跨河段');expect(roads.visible).toBe(false);
+  reader.update({progress:1,height:1800,bearing:0,returnMix:0,lookAt:'river'},camera,size);
+  expect(roads.visible).toBe(true);
+  expect(reader.group.children.find(o=>o.userData.kind==='source-station-footprint')?.visible).toBe(true);
+ });
  it('aligns the expanded imagery, finer DSM and a source-connected western railway approach',()=>{
   const manifest=JSON.parse(readFileSync('public/assets/terrain/lhasa-ground/manifest.json','utf8'));
   const acquired=JSON.parse(readFileSync('public/assets/terrain/lhasa-ground/lhasa.geojson','utf8')) as LocalCollection;
