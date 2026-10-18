@@ -1,5 +1,10 @@
 # Prototype Instructions
 
+## 2026-10-18 owner reopens corridors, drainage and heritage presentation
+
+User says these are still only spoken. Bounded changes reuse archived rail/runway/airport-road, generalized mainstem, and the existing Jokhang lamp-separation case; no new recordings or duration. Protection recap preloads atlas-local-context, approaches Jokhang at its exact native phrase, shows documented use separation, then returns. River view now fits the actual downstream course too; moving reading marks show downstream order, NOT hydrological simulation or watershed boundary. Corridor camera approaches the source route and runway/road reading, manual sliders pause and restore the source sentence. Do NOT describe basin mechanisms or grassland management as complete: runoff/tributaries, water quantity and real stewardship actions remain a presentation gap; this turn does not invent them. 40 targeted tests/typecheck/build; bounded actual-browser checks, not a repeat whole-program acceptance or audio listening.
+
+
 ## 2026-10-18 railway visual gap reopened by concrete user feedback
 
 User reports later sections, especially rail, remain narration/text heavy. This explicitly reopens rail visual readability, not unlimited polishing. Existing 21 clips/701.424s and source data unchanged. In groundRouteReading: source bridge/tunnel extents read by native-word traceProgress, readable source bands and observation cursor (NOT train), station footprint, existing archived directional station-side road chain through northbound Liuwu to city (no station-door gap filled). Native clock determines all reveal; seeking/pause does not introduce free-running animation. Controls now first in rail sidebar; redundant guide/current explanation hidden only in rail, long details and plan handoff collapsed. Short resume control retained. 40 focused tests/typecheck/build passed; targeted original-browser rail playback and operations, not a repeat whole-show acceptance. No system audio listening. Real imagery remains10m; schematic widths/pins are not measured engineering geometry. Current review includes this feedback separately from historical functional closure.

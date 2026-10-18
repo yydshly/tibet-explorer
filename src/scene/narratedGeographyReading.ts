@@ -8,6 +8,9 @@ import type {GeographyReading} from '../lib/narratedGeography';
 import {label,line} from './environment';
 type At=(lon:number,lat:number,offset?:number)=>THREE.Vector3;
 type XY=readonly number[];
+export function transportReadingCoordinates(kind:string):readonly XY[]{
+ return kind==='airport'?[...data.gunsaRunway.geometry.coordinates,...data.airportConnection.coordinates]:kind==='rail'?data.railParts.flatMap(part=>part.coordinates):[];
+}
 export const himalayaRing=data.himalaya.geometry.coordinates[0];
 export function insideHimalaya(x:number,y:number){
  let inside=false;const ring=himalayaRing;
@@ -64,7 +67,9 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
   const object=new LineSegments2(geometry,material);object.frustumCulled=false;object.renderOrder=order;owner.add(object);lineObjects.push(object);return object;
  }
  function name(owner:THREE.Group,text:string,coordinate:XY,offset:[number,number]){const sprite=label(text,'#f4ecd4');sprite.onBeforeRender=()=>{};sprite.renderOrder=60;const leader=line([new THREE.Vector3(),new THREE.Vector3()],0xd6d9b3,.8);(leader.material as THREE.LineBasicMaterial).depthTest=false;leader.frustumCulled=false;leader.renderOrder=59;owner.add(sprite,leader);names.push({sprite,leader,coordinate,offset,owner});}
- let railRead:LineSegments2|undefined;
+ let railRead:LineSegments2|undefined,airportRead:LineSegments2|undefined;
+ let airportPath:number[][]=[];
+ const transferMarker=new THREE.Mesh(new THREE.SphereGeometry(1,12,8),new THREE.MeshBasicMaterial({color:0xffecb0,depthTest:false,depthWrite:false,toneMapped:false}));transferMarker.renderOrder=42;transferMarker.userData.kind='road-reading-position-not-vehicle';airport.add(transferMarker);
  function prepare(){
   for(const city of regionalAnchors){
    const root=new THREE.Group(),w=city.longitude-1,e=city.longitude+1,s=city.latitude-.55,n=city.latitude+.55;
@@ -86,7 +91,10 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
   rail.userData={kind:'source-connected-lhasa-nyingchi-rail',source:'/data/narrated-geography.json',wayIds:data.railParts.map(p=>p.wayId),scope:'OSM现状轨道，桥隧均为水平投影，含拉萨共线接入；非2021年轨道复原或列车运行模拟'};
   const runway=data.gunsaRunway.geometry.coordinates as number[][];
   stroke(airport,[runway],0xf5d695,5,30);const center=runway[Math.floor(runway.length/2)];
-  stroke(airport,[data.airportConnection.coordinates],0x142522,6,28);stroke(airport,[data.airportConnection.coordinates],0xf0b77c,2.8,29);
+  airportPath=data.airportConnection.coordinates.map(p=>[...p]);
+  const distance=(p:number[])=>Math.hypot(p[0]-center[0],p[1]-center[1]);
+  if(distance(airportPath[0])>distance(airportPath.at(-1)!))airportPath.reverse();
+  stroke(airport,[airportPath],0x142522,8,28);stroke(airport,[airportPath],0x76c8cc,4,29);airportRead=stroke(airport,[airportPath],0xffd68b,4,31);
   name(airport,'昆莎机场 · 实际跑道位置',center,[70,40]);
   const ring=new THREE.Mesh(new THREE.RingGeometry(.09,.12,32),new THREE.MeshBasicMaterial({color:0xffd995,side:THREE.DoubleSide,depthTest:false}));ring.rotation.x=-Math.PI/2;ring.position.copy(at(center[0],center[1],.1));airport.add(ring);
   ready=true;
@@ -100,6 +108,12 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
   for(const object of lineObjects)object.material.resolution.copy(viewport);
   if(railRead)railRead.geometry.instanceCount=Math.floor(data.railParts.reduce((n,p)=>n+p.coordinates.length-1,0)*Math.min(1,state.progress*1.5));
   const focal=viewport.y/(2*Math.tan(camera.fov*Math.PI/360));
+  if(airportRead&&airportPath.length>1){
+   const progress=Math.min(1,state.progress*1.5),t=progress*(airportPath.length-1),i=Math.min(airportPath.length-2,Math.floor(t)),mix=t-i,a=airportPath[i],b=airportPath[i+1];
+   airportRead.geometry.instanceCount=Math.floor(t);
+   transferMarker.position.copy(at(THREE.MathUtils.lerp(a[0],b[0],mix),THREE.MathUtils.lerp(a[1],b[1],mix),.14));
+   transferMarker.scale.setScalar(7*transferMarker.position.distanceTo(camera.position)/focal);
+  }
   for(const {sprite,leader,coordinate,offset,owner} of names){
    sprite.visible=false;leader.visible=false;if(!owner.visible)continue;
    // The airport phase needs an uncluttered western reading.

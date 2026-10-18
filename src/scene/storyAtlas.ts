@@ -29,7 +29,8 @@ import {buildRegionalSpatialMap,REGIONAL_SPATIAL_RELIEF} from './regionalSpatial
 import type {RegionalJourneyCityId} from '../data/regionalJourneyTypes';
 import {overviewAtlasCamera,overviewReturnCamera} from './overviewAtlasCamera';
 import {buildOverviewRiverReading} from './overviewRiverReading';
-import {buildNarratedGeographyReading} from './narratedGeographyReading';
+import {yarlungReadingCoordinates} from '../lib/overviewRiver';
+import {buildNarratedGeographyReading,transportReadingCoordinates} from './narratedGeographyReading';
 
 type Runtime = {
   renderer: THREE.WebGLRenderer;
@@ -510,11 +511,18 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       if(nextRelief!==displayedRelief){displayedRelief=nextRelief;refreshDisplayedTerrain();}
       if(wasLocal||wasRegional){wasLocal=false;wasRegional=false;if(!recordedAtlas)focusCities(home,!p.overviewPresentation,life||regional?selected:undefined,comparison,regional&&p.regionalCloseView);}
       if(recordedAtlas&&p.overviewShot){
-        const shot=p.overviewShot,key=JSON.stringify([shot.cameraFrom,shot.cameraTo,shot.cameraMix,p.overviewEvidenceWidth??0,viewport.x,viewport.y,p.resetKey]);
+        const shot=p.overviewShot,transport=p.narratedGeography&&transportReadingCoordinates(p.narratedGeography.kind),key=JSON.stringify([shot.cameraFrom,shot.cameraTo,shot.cameraMix,Boolean(p.overviewRiver),p.narratedGeography?.kind,transport?.length?shot.progress:0,p.overviewEvidenceWidth??0,viewport.x,viewport.y,p.resetKey]);
         if(key!==lastOverviewCamera){
           lastOverviewCamera=key;
           const resolve=(id:string)=>{const city=verifiedPlaceReferences[id],point=atlasHotspots.find(item=>item.id===id);return city?at(city.longitude,city.latitude,.18):point?at(point.longitude,point.latitude,.18):undefined;};
-          const pose=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:regionalAnchors.map(city=>at(city.longitude,city.latitude,.18)),resolve,shot,evidenceWidth:p.overviewEvidenceWidth});
+          const wholePoints=regionalAnchors.map(city=>at(city.longitude,city.latitude,.18));
+          if(p.overviewRiver)wholePoints.push(...yarlungReadingCoordinates.map(point=>at(point[0],point[1],.12)));
+          const pose=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints,resolve,shot,evidenceWidth:p.overviewEvidenceWidth});
+          if(transport?.length){
+            const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:transport.map(p=>at(p[0],p[1],.18)),resolve,shot:{cameraFrom:{focusIds:[],amount:0},cameraTo:{focusIds:[],amount:0},cameraMix:1}});
+            const t=Math.min(1,shot.progress/.24),mix=t*t*(3-2*t)*.88;
+            pose.position.lerp(close.position,mix);pose.target.lerp(close.target,mix);
+          }
           runtime.focus(pose.position,pose.target,'recorded');
         }
       }else lastOverviewCamera='';

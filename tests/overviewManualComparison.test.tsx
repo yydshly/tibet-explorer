@@ -114,6 +114,19 @@ describe('regional comparison inside a paused main narration',()=>{
 });
 
 describe('documented history comparison without replacing the narration clock',()=>{
+ it('holds the closing sentence while reading upstream/downstream, then restores the exact river state',()=>{
+  media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-protection');
+  const beat=overviewMainProgram.beats[media.current.beatIndex];
+  media.current.timing={textProgress:(beat.text.indexOf('雅鲁藏布江')+3)/beat.text.length};
+  const scene=()=>find(render(),node=>typeof node.props?.onGroundJourneyReading==='function');
+  const original=scene().props.overviewRiver;
+  const slider=find(render(),node=>node.props?.['aria-label']==='干流上下游观察进度');
+  slider.props.onChange({target:{value:'.85'}});
+  expect(scene().props.overviewRiver).toEqual({emphasized:true,reveal:.85});
+  expect(media.current.seek).not.toHaveBeenCalled();expect(media.current.select).not.toHaveBeenCalled();
+  find(render(),node=>node.type==='button'&&node.props.children==='恢复原条件，从暂停处继续').props.onClick();
+  expect(scene().props.overviewRiver).toEqual(original);expect(media.current.playPause).toHaveBeenCalledOnce();
+ });
  it('changes the same place, pauses, then restores the original state on resume',()=>{
   const beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-jokhang-protection');
   const beat=overviewMainProgram.beats[beatIndex];

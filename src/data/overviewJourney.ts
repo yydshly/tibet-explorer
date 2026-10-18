@@ -70,6 +70,8 @@ export const overviewSourceNotes: Record<string, OverviewSource[]> = {
   objects:overviewHeritageObjects.map(object=>({title:`Met · ${object.title} · ${object.accession}`,url:object.source,note:`${object.date}；馆方公开实物图像，CC0；物件年代与历史事件分别阅读。`})),
   connections: refs('railway', 'continuity-lalin-opening-2021', 'continuity-ngari-airport-2010', 'yarlung-river'),
   protection: [...refs('yarlung-river', 'changtang-protection', 'continuity-unesco-decision-2025'),
+    {title:'UNESCO / ICOMOS · 2005年监测报告，第3页',url:'https://whc.unesco.org/document/5816',note:'回看前例：多数供灯迁出传统木构，寺前供灯继续；报告所见不是竣工日期，灯光为关系示意。'},
+    {title:'大昭寺及寺前现状地物',url:'/data/local-places/lhasa.geojson',note:'仅用真实现状轮廓定位，不复原供灯室或历史灯位。'},
     {title:'Natural Earth · 河流中心线（1:1000万）',url:'https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/',note:'公共领域概览数据；10m 表示 1:1000万比例尺，不是10米精度。河道宽度和金色讲解进度是阅读符号，不表示实测河宽、流速或流量。'},
     {title:'当前画面的河道数据与处理记录',url:'/data/hydrography/yarlung-river.geojson',note:'保留 Maquan、Yarlung、Dihang、Brahmaputra 原始几何。仅沿端点相接的主部件展示，不连接分支；名称与上下游关系参照中科院地理所资料。'},
     {title:'中科院青藏高原所 · 雅鲁藏布江多圈层水文观测',url:'https://www.itpcas.ac.cn/new_kycg/new_kyjz/202204/t20220426_6439458.html',note:'上下游水文过程需要观测资料支持，画面中的概览河道不能用于推算水量。'},

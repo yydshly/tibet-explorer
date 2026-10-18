@@ -61,6 +61,10 @@
 .overview-ground-controls details a,.overview-ground-controls details small{display:block;margin-top:7px}
 .overview-ground-controls summary,.ground-plan-handoff summary{cursor:pointer;font-size:11px;line-height:1.7}
 .ground-plan-handoff{margin:12px 0;color:#bdd0c5}
+.overview-evidence-mode .overview-learning-path{display:none}
+.overview-evidence-mode .overview-reading{padding-top:15px}
+.overview-evidence-mode .overview-reading>h1{font-size:18px;margin-bottom:10px}
+.overview-evidence-mode .overview-ground-controls{padding:12px;margin:8px 0}
 @media(max-width:760px){
  .overview-ground-mode .overview-body{grid-template-rows:minmax(340px,1.8fr) minmax(190px,1fr)}
  .overview-ground-mode .overview-reading{padding:10px 18px}

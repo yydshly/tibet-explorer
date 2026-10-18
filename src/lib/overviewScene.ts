@@ -1,4 +1,5 @@
 import {rotationNarratedState} from './rotationFlow';
+import {maintenanceHeritagePresentation} from './overviewMaintenance';
 import {rotationPresentation} from './overviewRotation';
 import {irrigationPresentation} from './overviewIrrigation';
 import {placeActionPresentation} from './overviewPlaceActions';
@@ -212,6 +213,12 @@ function overviewBasePresentation(beat:OverviewSceneBeat,raw:number,timing?:Narr
  * model. The identity changes before loading, never after audio has started. */
 export function overviewPresentation(beat:OverviewSceneBeat,raw:number,timing?:NarrationTiming):OverviewPresentation {
  const base=overviewBasePresentation(beat,raw,timing);
+ if(beat.recordingId==='OVERVIEW-protection'){
+  const heritage=maintenanceHeritagePresentation(beat.text,timing?.textProgress??raw);
+  // The local source is acquired before this recording starts, rather than
+  // switching renderer identity/loading midway through the heritage sentence.
+  return heritage??{...base,sceneIdentity:'atlas-local-context',props:{...base.props,overviewLocalContext:true}};
+ }
  const geography=narratedGeographyState(beat.recordingId,beat.text,timing);
  const presentation={...base,...(geography&&!base.props.overviewMechanism&&geography.kind!=='history'?{explanation:geography.relation}:{}),props:{...base.props,narratedGeography:geography}};
  if(beat.overviewScope!=='whole'&&['history','connections','observation'].includes(beat.chapterId))return {...presentation,sceneIdentity:'atlas-local-context',props:{...presentation.props,overviewLocalContext:true},sourceScope:`${presentation.sourceScope??''} 同一人文地图与地方窗口均以真实高程×1.8显示；当前地理不随历史年代改变。`};
