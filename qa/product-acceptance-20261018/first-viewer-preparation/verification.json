@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-18",
+  "scope": "M4 preparation only",
+  "completedParticipantSessions": 0,
+  "comprehensionVerdict": "not_conducted",
+  "applicationChanged": false,
+  "wholeShowReplayed": false,
+  "checked": [
+    "six chapters mapped to existing program and controls",
+    "12 local document links resolve",
+    "blank CSV rows: records18 sessions3 summary6 issues0",
+    "seven served documents return HTTP200",
+    "browser: project-review M4 link opens moderator guide",
+    "browser: participant tasks initially collapsed; sixth task expands with save/refresh/return instructions"
+  ],
+  "screenshot": "guide.png",
+  "limits": "No participant understanding or operation outcomes. Page/template verification cannot certify user comprehension."
+}

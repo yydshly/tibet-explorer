@@ -1,5 +1,14 @@
 # Prototype Instructions
 
+## 2026-10-18 M4 first-viewer acceptance PREPARED, NOT CONDUCTED
+
+User requested preparation only. public/project-review/first-viewer contains a moderator guide, separate participant tasks without answers, six-chapter protocol.json, and blank records/sessions/issues/summary CSVs. Secondary entry from project-review only; demonstration remains product entry. Six chapters/21 beats/676.872s and all models/recordings/application code unchanged. Three first-time viewers planned, zero completed; no comprehension pass may be inferred from developer checks or these templates.
+
+Protocol: first open recall before exposing task, then unaided interaction and post-operation explanation; log replays, answer-key exposure and help separately. Per chapter at least 2 of 3 must individually satisfy cause, visual identification, evidence boundary, operation and resume. All 3 need one causal comparison/resume AND full observation-plan edit/save/refresh/original-narration return; at least 2 of 3 must connect a place across the narrative. Unresolved factual/schematic misconceptions or blocking save/sync/return failures prevent closure. One bounded repair/retest of failed tasks only; repeat participants are not fresh first-viewer evidence.
+
+Preparation verification is limited to task/control correspondence, static report navigation/download templates and template completeness. No whole-show replay and no participant sessions this turn. Do not expand product content to improve an unmeasured score.
+
+
 ## 2026-10-18 M3 observation-plan handoff
 
 Authorized M3 closure only: reuse existing travelStops, Exploration route/stopNotes, DrawerContent and JourneyPlan. New /observation-plan route is a focused editor over the same plan. overviewObservations stores corresponding source links/question and exact program/beat/recording/text/raw/voice return bookmark. Preserve existing route order and user notes, including intentionally blank notes. Native words and six chapters/21 beats/676.872s are unchanged; no new geographic facts or models.
