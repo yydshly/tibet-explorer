@@ -1,5 +1,11 @@
 # Prototype Instructions
 
+## 2026-10-19 concrete Lulang landscape/life/local-food reading
+
+Owner explicitly reopened only Lulang scenery, life and human value. Same terrain/imagery/source objects, no new scenic stops or reconstructed models. Three lenses: archived Lulang River/wood edge +65-point east-west2.6km DSM section; current archived food/lodging points and existing roads/footprints;2017 operating-account evidence for stone-pot-chicken preparation, supply organization and merchant integrity.38 service records within declared local window (17 food/21 lodging), not a census/current business guarantee. Source feature IDs, coordinates, sampled heights and evidence boundaries in public/data/lulang-place-reading.json, reproducible via scripts/prepare-lulang-reading.mjs. No source/transport path for suppliers invented; current shops not identified as2017 participants. Nature river blue and road muted, faded river retained for life context.
+
+Replaced ONLY ROUTE-G318-lulang with47.736s native-word MiniMax clip, +2.556s; pilot4/152.820s. Other330 clip objects incl six chapters/21clips/750.024s unchanged. Same clock selects landscape→life→culture and displays services at matching words. Manual lens, section probe and service filter pause original; note save/refresh retains conditions, resume clears overrides. Local snapshot scriptVersion2 and same-ID resume alias restart only obsolete local text at its new opening; notes and original line return survive. Context/source entry only, no added standalone experience. Stop after bounded actual-browser checks of the three lenses and original-line return. No full-system audio listening or formal first-viewer pass inferred.
+
 ## 2026-10-19 route reading and terminal-road correction
 
 Only the same pilot reopened on owner continue. Added keyboard/pointer profile linked to the same1147 source-node terrain samples, shared2500–5000m axis; it is a surface sample/profile with unequal horizontal/vertical scale, not a surveyed road longitudinal section. Render sampler now shared with profile; unchanged DEM/image/route vertices and all recordings. Main remains6/21/750.024s; pilot4/150.264s.

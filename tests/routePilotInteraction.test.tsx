@@ -47,6 +47,22 @@ describe('actual route callbacks and independent persistence',()=>{
   button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
   expect(scene().view).toMatchObject({mode:'place',connections:true,connectionProgress:.35});expect(media.current.raw).toBe(.43);
  });
+ it('retains a chosen culture filter through plan refresh, then resumes the original narrated lens',()=>{
+  media.current.beatIndex=2;
+  const original=scene().view;
+  const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
+  local().props.onChange({placeLens:'culture',serviceFilter:'lodging',servicesVisible:true});
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject({placeLens:'culture',serviceFilter:'lodging'});expect(media.current.raw).toBe(.43);
+  // The media double does not asynchronously hydrate native timing after seek.
+  media.current.timing={textProgress:.3};
+  button('恢复原条件并继续').onClick();expect(scene().view).toEqual(original);expect(media.current.raw).toBe(.43);
+ });
+ it('migrates old local-script fractions to the new opening without losing notes or the original line return',()=>{
+  const line={beatIndex:1,raw:.43,voice:true,view:{mode:'line',progress:.668,height:3000,lookBack:true,connections:false}};
+  saved.set(PILOT_NOTE_KEY,JSON.stringify({note:'keep my observation',returnTo:{...line,beatIndex:2,raw:.62,view:{...line.view,mode:'place',connections:true}},lineReturn:line}));
+  const note=readPilotNote();expect(note.note).toBe('keep my observation');expect(note.returnTo).toMatchObject({beatIndex:2,raw:0,scriptVersion:'2',view:{placeLens:'landscape'}});expect(note.lineReturn).toMatchObject({beatIndex:1,raw:.43});
+ });
  it('compares route views and local access, returns the exact line/sentence, and skips the completed local passage once',()=>{
   find(render(),n=>n.props?.['aria-label']==='G318沿线位置').props.onChange({target:{value:'.61'}});
   const original={...scene().view};expect(original).toMatchObject({mode:'line',progress:.61});expect(media.current.raw).toBe(.43);

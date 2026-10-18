@@ -1,7 +1,8 @@
 import {routeArcLengths} from './routeArcLength';
+import type {LulangPlaceData} from './lulangPlaceData';
 export type PilotTerrainMeta={bbox:number[];columns:number;rows:number};
 export type PilotProfilePoint={distance:number;elevation:number;coordinate:number[]};
-export type PilotTerrainContext={profile:PilotProfilePoint[];total:number;highestIndex:number;connectionStartIndex:number;connectionLength:number};
+export type PilotTerrainContext={profile:PilotProfilePoint[];total:number;highestIndex:number;connectionStartIndex:number;connectionLength:number;lulang?:LulangPlaceData};
 /** Same diagonal and north-to-south vertex order as the rendered PlaneGeometry. */
 export function pilotElevationSampler(meta:PilotTerrainMeta,grid:Int16Array){
  const [w,s,e,n]=meta.bbox;

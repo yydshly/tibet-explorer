@@ -1,0 +1,19 @@
+{
+  "id": "a914977020a2ae6094577e10ecab219d95e0bbf52477c4da265efd2e47dbbe44",
+  "url": "/assets/audio/narration/a914977020a2ae6094577e10ecab219d95e0bbf52477c4da265efd2e47dbbe44.mp3",
+  "text": "顺着原线进入鲁朗。先看鲁朗河与两侧地形，沿同一剖面比较谷底和坡面。深色坡面来自冬季影像，林地边线来自地图，不能据颜色判断树种。切到生活空间，先看国道，再展开地方接续，建筑轮廓随之出现，观察道路怎样进入谷地。再看餐饮和住宿的归档位置。地方风味的延续也有具体记录：二零一七年管委会材料记录石锅鸡制作规范、供货组织和商户诚信管理。食物成为地方日常与旅游服务，还需要制作、经营和共同维护。现状点位不能定位当年商户，也不保证今天营业。对照自然、生活与地方风味后，回到刚才的道路。",
+  "duration": 47.736,
+  "bytes": 765492,
+  "sha256": "12e469ab426f25fb6a2c94a68fd91c1ef9286ae265dde6b1d091be57815958c7",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T16:58:45.271Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/a914977020a2ae6094577e10ecab219d95e0bbf52477c4da265efd2e47dbbe44.subtitles.json",
+  "subtitleSha256": "a96f4c2a35cdb64e7731ada4f5b005193e5729faaf637094babd4f89529b355a",
+  "timingLevel": "word"
+}

@@ -1,0 +1,12 @@
+import {build} from 'esbuild';
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const load=async file=>{const result=await build({entryPoints:[file],bundle:true,platform:'node',format:'esm',write:false});return import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));};
+const {lulangPlaceData}=await load('src/scene/lulangPlaceData.ts'),{pilotElevationSampler}=await load('src/scene/routePilotTerrainData.ts');
+const {lulangOperationSource,lulangReadingWindow,lulangRiverId,lulangWoodId}=await load('src/data/lulangPlace.ts');
+const root='public/assets/routes/g318/',raw=await fs.readFile(root+'terrain.int16'),meta=JSON.parse(await fs.readFile(root+'manifest.json','utf8')),geo=await fs.readFile(root+'lulang.geojson'),place=JSON.parse(geo),route=JSON.parse(await fs.readFile(root+'route.json','utf8'));
+const grid=new Int16Array(meta.columns*meta.rows);for(let i=0;i<grid.length;i++)grid[i]=raw.readInt16LE(i*2);
+const data=lulangPlaceData(place,pilotElevationSampler(meta,grid),route.coordinates.at(-1));
+const record={id:'lulang-place-reading-v2',checkedAt:'2026-10-19',window:lulangReadingWindow,source:{geometry:'/assets/routes/g318/lulang.geojson',sha256:createHash('sha256').update(geo).digest('hex'),terrain:'/assets/routes/g318/manifest.json',attribution:'© OpenStreetMap contributors; Copernicus GLO-30 DSM'},landscape:{river:{id:lulangRiverId,sample:data.riverPoint,scope:'原河段顶点，不是河床实测水位'},wood:{id:lulangWoodId,scope:'只显示原始林地边线在当前窗口内的连续源边；不是全区植被分类或树种识别'},section:{direction:'east-west',lengthMetres:2600,method:'以最近的源河段顶点为中点，65个等距位置，读取同一渲染三角面DSM；两轴比例不同',points:data.section}},services:{records:data.services,scope:'只统计当前资料窗口内已记录的餐饮和住宿，不是全镇普查、推荐、营业或公共入口保证'},culture:{source:lulangOperationSource,claims:['2017材料记载石锅鸡制作规范','2017材料记载引进养殖企业组织供货','2017材料记载商户诚信经营承诺'],scope:'材料解释持续制作与经营组织；现状节点不定位当年商户、供应源或运输路径，不推算收入和实施成效'},display:'同一地形和已有地物，按原生逐字音频切换自然/生活/地方风味；不复原历史建筑，不新增景点模型'};
+await fs.writeFile('public/data/lulang-place-reading.json',JSON.stringify(record,null,2)+'\n');
+console.log(JSON.stringify({section:data.section.length,food:data.services.filter(s=>s.kind==='food').length,lodging:data.services.filter(s=>s.kind==='lodging').length,river:data.riverPoint}));

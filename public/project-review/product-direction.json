@@ -92,7 +92,18 @@
         "观察位置未核实为实地停靠/开放入口",
         "现状轮廓不作历史重建",
         "系统音频回听与正式首次理解验收仍缺证据"
-      ]
+      ],
+      "localReading": {
+        "lenses": [
+          "鲁朗河谷与林地",
+          "道路与餐饮住宿",
+          "地方风味与经营"
+        ],
+        "sources": "/data/lulang-place-reading.json",
+        "evidence": "/project-review/lulang-place-evidence/verification.json",
+        "pilotSeconds": 152.82,
+        "mainFrozen": true
+      }
     }
   },
   "documents": {

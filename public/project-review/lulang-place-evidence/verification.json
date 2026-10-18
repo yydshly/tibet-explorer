@@ -1,0 +1,93 @@
+{
+  "id": "G318-lulang-place-20261019.2",
+  "baseCommit": "bde159b",
+  "scope": "仅补鲁朗风景、生活与地方风味阅读，复用原线路、影像、地形和归档地物；其他部分冻结",
+  "frozen": {
+    "mainBaseline": "V1-main-20261018.2",
+    "mainChapters": 6,
+    "mainClips": 21,
+    "mainSeconds": 750.024,
+    "unchangedOtherCueObjects": 330,
+    "imageryTerrainRouteCoordinatesChanged": false
+  },
+  "recording": {
+    "replacedCue": "ROUTE-G318-lulang",
+    "previousSeconds": 45.18,
+    "seconds": 47.736,
+    "deltaSeconds": 2.556,
+    "pilotClips": 4,
+    "pilotSeconds": 152.82,
+    "timing": "MiniMax原生逐字时间，共用原媒体时钟",
+    "hash": "a914977020a2ae6094577e10ecab219d95e0bbf52477c4da265efd2e47dbbe44"
+  },
+  "grounding": {
+    "source": "/data/lulang-place-reading.json",
+    "riverFeature": "way/26406905",
+    "woodFeature": "way/969705523",
+    "window": [
+      94.715,
+      29.705,
+      94.75,
+      29.755
+    ],
+    "section": "以源河段顶点为中点的东西向2.6公里剖面，65个位置读取同一DSM；非河床水位实测，两轴比例不同",
+    "services": {
+      "foodRecords": 17,
+      "lodgingRecords": 21,
+      "scope": "窗口内归档点位，不是全镇普查、营业保证或商户推荐"
+    },
+    "historicSource": "https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml",
+    "historicClaim": "2017年度经营材料记录石锅鸡制作规范、供货组织和商户诚信管理；不将现状店铺定位为当年参与者，不虚构供应路线"
+  },
+  "checks": {
+    "tests": {
+      "targetedPassed": 17,
+      "targetedFiles": [
+        "tests/routePilot.test.ts",
+        "tests/routePilotInteraction.test.tsx"
+      ],
+      "existingOverviewChecksPassed": 17,
+      "existingOverviewFiles": [
+        "tests/overviewProgram.test.ts",
+        "tests/overviewDirector.test.js"
+      ],
+      "typecheck": "passed",
+      "finalBuild": "passed; existing Three/Line2 chunk >500kB warning"
+    },
+    "browser": [
+      "从原线第48.1公里、原讲述43%处进入鲁朗，同一地形显示源河流、林地边线与剖面",
+      "原生播放在约15.7%处为风景角度，在约64.2%处为经营材料与餐饮角度；不是完整六章重播",
+      "原生35%对应展开地方接续、尚未显示服务；46%对应餐饮住宿词及两类服务；生活段逐字状态另由定点检查确认",
+      "手动移动同一剖面：东侧约3510m，河段约3380m，地图探针与读数联动；原句暂停",
+      "手动切换地方风味突出橙色餐饮，切换住宿突出淡蓝色住宿；筛选反馈与当前颜色一致",
+      "计划保存、页面刷新、返回后：地方风味角度、住宿筛选、2500m观察高度及原句46%均恢复；未改变笔记正文",
+      "恢复原条件继续后，回到46%原生生活角度与餐饮住宿词；返回进入前原线恢复48.1公里、43%及3000m观察高度",
+      "最终文化资料块顺序已在构建后确认：制作—供货—经营材料位于筛选按钮之后，不必先读完整资料说明",
+      "本次检查标签console warning/error为空；结束时恢复本段首句0%，保留已有笔记，关闭独立检查标签"
+    ],
+    "concreteFixes": [
+      "住宿筛选后旧反馈仍提橙色餐饮，改为随当前筛选生成原因反馈",
+      "不展示未独立核实的商户名称为推荐，改为带原节点链接的归档样本",
+      "旧鲁朗录音的存储进度迁移到新录音开头，保留原笔记和进入前线路返回"
+    ],
+    "reactReview": [
+      "剖面路径按资料缓存；原始地物与三维高程共用采样",
+      "单一媒体时钟驱动角度、服务出现和接续变化；操作通过现有事件暂停原句",
+      "独立存储版本迁移，筛选与探针保留；标注与反馈由同一观察状态生成",
+      "新增几何与材质沿原清理路径释放，按钮与滑块有可访问名称"
+    ]
+  },
+  "evidence": [
+    "landscape.png",
+    "life.png",
+    "culture.png",
+    "plan-restored-lodging.png"
+  ],
+  "limitations": [
+    "10m冬季影像和DSM表面不提供街景、树种识别、河床测量或逐年历史外观",
+    "现状服务位置与2017经营材料是两类资料，不能推断当前营业、当年商户位置或经营成效",
+    "地方风味是一个有依据的人文价值线索，不宣称覆盖鲁朗全部文化",
+    "本次为有界开发者实播与操作核查，未做系统音频回听或正式首次观看者理解验收，也未重播冻结的六章"
+  ],
+  "stop": "这一段功能与往返验证后收口；不扩展景点、模型或其他章节，等待具体体验反馈"
+}
