@@ -2,7 +2,7 @@ import {climateLabCue,climateLabNarratedProgress,type ClimateLabState} from '../
 import {climateObservationNarrationStation} from '../data/climateObservationNarration';
 import {climateObservationReading} from '../data/climateObservations';
 import type {NarrationTiming} from './narrationTiming';
-import type {ClimateLabReading} from './climateLabProcess';
+import {climateAirAppearance,type ClimateLabReading} from './climateLabProcess';
 
 export const overviewInteractionStates:Readonly<Record<string,ClimateLabState>>=Object.fromEntries([
  {stage:'air',moisture:'higher'},
@@ -45,7 +45,11 @@ export function overviewInteractionStation(state:ClimateLabState,text:string,id:
 }
 export function overviewInteractionFeedback(state:ClimateLabState,reading?:ClimateLabReading){
  if(state.stage==='evidence')return climateObservationReading(state.month);
- if(state.stage==='air')return `${reading?.phase??'沿金色剖面移动气团，观察高差'}。${state.moisture==='lower'?'地形不变，较少水汽使示意云雨减少。':'保持位置，再减少水汽，对照云雨变化。'}`;
+ if(state.stage==='air'){
+  if(!reading)return '沿金色剖面移动气团，等高程读数出现后保持位置，对照水汽条件。';
+  const bothClear=reading.comparison&&reading.comparison.higher.cloud===0&&reading.comparison.lower.cloud===0;
+  return `${reading.phase}。${bothClear?'此处两种条件都尚未成云，切换不会出现云雨差异；继续向山地移动。':`${climateAirAppearance(reading)}。同一位置的抬升不变；较少水汽需要更多冷却才可能凝结。`}`;
+ }
  const reason=state.city==='nyingchi'?'沿谷与跨山面对不同高差；实际通行还需道路与桥梁。':state.city==='lhasa'?'较缓地面提供聚居条件；用水与通行还需设施和组织。':'盆地内也有高差；林地灌溉需要设施和持续管护。';
  return `${state.direction==='north-south'?'南北':'东西'}剖面${reading?`当前样本约${Math.round(reading.ground/10)*10}米`:'来自真实高程'}。${reason}`;
 }

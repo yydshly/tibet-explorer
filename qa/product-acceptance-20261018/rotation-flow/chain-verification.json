@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-18",
+  "scope": "自转对照→亚洲来流→既有高地形成与高程→气团抬升云雨；不增加场景、录音或时长",
+  "status": "implemented_pending_actual_viewing",
+  "mainline": {
+    "chapters": 6,
+    "beats": 21,
+    "seconds": 701.424
+  },
+  "findings": [
+    {
+      "problem": "亚洲西侧与南侧来流同步显现，未逐词引导",
+      "change": "西侧、南侧分别由本段原生词位推进；空气携带水汽时定位高原与喜马拉雅。试验轨迹与来流示意分开。"
+    },
+    {
+      "problem": "抬升时原位置0.313处已下降",
+      "before": {
+        "ground": 1589.287763692341,
+        "lift": 1546.1395790769561,
+        "cloud": 0.30025803731276374,
+        "rain": 0.00012901865638187404,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      },
+      "change": "讲述位点对齐档案高程：前山上升段21–27、主脊60–61、背风70–85；移动快慢是演示节奏，不是实测风速。"
+    },
+    {
+      "problem": "少水汽反馈在未成云处仍声称云雨减少",
+      "change": "同位置计算两种示意结果；无差异时明确两者尚未成云。当前云雨、气团旁标注、手动字幕与说明共用状态。"
+    }
+  ],
+  "terrain": {
+    "file": "public/assets/terrain/tibet-regional-dem.int16",
+    "longitude": 91.1,
+    "south": 26.1,
+    "north": 29.9,
+    "samples": 101,
+    "source": "/assets/terrain/tibet-regional-dem.source.json",
+    "boundary": "区域真实高程；选线、气团离地高度、运动历时、凝结阈值与云雨强度为教学设定，不是风场或降水观测。"
+  },
+  "anchors": [
+    {
+      "token": "沿剖面向北移动",
+      "progress": 0.05,
+      "higher": {
+        "ground": 41.57245538461559,
+        "lift": 0,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "来流接近地形 · 先比较水汽条件"
+      },
+      "lower": {
+        "ground": 41.57245538461559,
+        "lift": 0,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "来流接近地形 · 先比较水汽条件"
+      }
+    },
+    {
+      "token": "抬升时",
+      "progress": 0.21,
+      "higher": {
+        "ground": 570.7917440000283,
+        "lift": 527.6435593846434,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "正在抬升 · 冷却不等于已经下雨"
+      },
+      "lower": {
+        "ground": 570.7917440000283,
+        "lift": 527.6435593846434,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "正在抬升 · 冷却不等于已经下雨"
+      }
+    },
+    {
+      "token": "足够湿润",
+      "progress": 0.23,
+      "higher": {
+        "ground": 913.6699815384226,
+        "lift": 870.5217969230378,
+        "cloud": 0.0775099076922899,
+        "rain": 0,
+        "descending": false,
+        "phase": "抬升冷却 · 水汽开始凝结"
+      },
+      "lower": {
+        "ground": 913.6699815384226,
+        "lift": 870.5217969230378,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "正在抬升 · 冷却不等于已经下雨"
+      }
+    },
+    {
+      "token": "云逐渐增多",
+      "progress": 0.24,
+      "higher": {
+        "ground": 1294.4342498461083,
+        "lift": 1251.2860652307234,
+        "cloud": 0.25058457510487425,
+        "rain": 0,
+        "descending": false,
+        "phase": "抬升冷却 · 水汽开始凝结"
+      },
+      "lower": {
+        "ground": 1294.4342498461083,
+        "lift": 1251.2860652307234,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "正在抬升 · 冷却不等于已经下雨"
+      }
+    },
+    {
+      "token": "继续越过山地",
+      "progress": 0.27,
+      "higher": {
+        "ground": 2084.457250461536,
+        "lift": 2041.3090658461513,
+        "cloud": 0.6096859390209779,
+        "rain": 0.44240848431568275,
+        "descending": false,
+        "phase": "抬升冷却 · 云与降水形成条件"
+      },
+      "lower": {
+        "ground": 2084.457250461536,
+        "lift": 2041.3090658461513,
+        "cloud": 0,
+        "rain": 0,
+        "descending": false,
+        "phase": "正在抬升 · 冷却不等于已经下雨"
+      }
+    },
+    {
+      "token": "降水离开气团",
+      "progress": 0.6,
+      "higher": {
+        "ground": 5655.3753599999,
+        "lift": 5612.227175384515,
+        "cloud": 1,
+        "rain": 1,
+        "descending": false,
+        "phase": "抬升冷却 · 云与降水形成条件"
+      },
+      "lower": {
+        "ground": 5655.3753599999,
+        "lift": 5612.227175384515,
+        "cloud": 0.24,
+        "rain": 0,
+        "descending": false,
+        "phase": "抬升冷却 · 水汽开始凝结"
+      }
+    },
+    {
+      "token": "背风侧",
+      "progress": 0.7,
+      "higher": {
+        "ground": 4604.227667692292,
+        "lift": 4561.079483076907,
+        "cloud": 0.5899130240308912,
+        "rain": 0.1449565120154456,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      },
+      "lower": {
+        "ground": 4604.227667692292,
+        "lift": 4561.079483076907,
+        "cloud": 0.09402652540487888,
+        "rain": 0,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      }
+    },
+    {
+      "token": "实际结果还受",
+      "progress": 0.85,
+      "higher": {
+        "ground": 3647.7881600000237,
+        "lift": 3604.639975384639,
+        "cloud": 0.3656788010346659,
+        "rain": 0.032839400517332945,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      },
+      "lower": {
+        "ground": 3647.7881600000237,
+        "lift": 3604.639975384639,
+        "cloud": 0.020131215398489246,
+        "rain": 0,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      }
+    },
+    {
+      "token": "现在保持同一地形",
+      "progress": 1,
+      "higher": {
+        "ground": 3992.2864000000204,
+        "lift": 3949.1382153846357,
+        "cloud": 0.43441681450293657,
+        "rain": 0.06720840725146829,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      },
+      "lower": {
+        "ground": 3992.2864000000204,
+        "lift": 3949.1382153846357,
+        "cloud": 0.04024144566546566,
+        "rain": 0,
+        "descending": true,
+        "phase": "背风下沉 · 增温、相对湿度可能降低"
+      }
+    }
+  ],
+  "verification": {
+    "focusedTests": 43,
+    "files": 6,
+    "typecheck": "passed",
+    "build": "passed",
+    "scope": "真实DEM和MiniMax词时间、Three.js对象/雨迹drawRange、反向定位、控制器暂停恢复（媒体替身）。不含浏览器渲染、音频听感或理解验收。",
+    "buildWarning": "既有TibetSceneRuntime约709kB，大于500kB提示，未在本轮扩展处理"
+  },
+  "browser": {
+    "performed": false,
+    "reason": "此前URL安全策略拒绝浏览器自动操作；未绕过限制。"
+  },
+  "acceptance": {
+    "status": "pending",
+    "firstViewers": 0,
+    "tasks": [
+      "从自转试验返回亚洲，能区分两类线条的含义和接下来要解释的地形问题。",
+      "在成云段保持位置切换水汽，指出抬升未变、云雨变了；在起点能解释为什么两者都没有雨。",
+      "恢复原条件，从暂停语句接着播放，之后进入气象站证据。"
+    ]
+  }
+}

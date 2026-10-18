@@ -1,5 +1,14 @@
 # Prototype Instructions
 
+## 2026-10-18 bounded rotation → inflow → orographic chain follow-up
+
+User authorized only this chain. No new scenes/recordings or duration: 6 chapters,21 slots,701.424s. Asian west/south schematic paths now reveal from their own native tokens; terrain/Himalaya attention follows 空气携带水汽. Same Earth and existing formation/DEM/cloud sequence retained. Actual archived91.1E DEM exposed old 抬升时 at progress.313 as descending; main LAB-air-higher now anchors ascent/condensation to rising samples21–27, ridge60–61 and lee70–85. Sample selection is presentation timing, NOT simulated physical speed or weather trajectory. Generic/depth recording timing remains unchanged.
+
+Cloud overlay now exposes same-position high/low moisture readings, attached phase label and dynamic manual feedback. Early positions correctly report both clear instead of claiming an unseen reduction. Rain drawRange and cloud visibility actually change at fixed parcel/camera. Removed duplicate absolute rotation legend; arrival legend no longer calls the Asian schematic an angular-momentum trajectory. React review: derived data, same native clock, controls pause via existing event handler; no new effects or fetches.
+
+43 scoped tests (6 files), typecheck and build passed; native sidecars untouched. See public/project-review/rotation-chain-review.json and qa/product-acceptance-20261018/rotation-flow/chain-verification.json. Verification uses actual DEM/native words and Three objects, controller media doubles; NO browser visual playback. Prior URL security restriction still applies, no alternate UI/CDP/shell browser workaround. OWNER-ENV-02 remains implemented/pending owner viewing; formal first-viewers0/3. Stop adding detail; next acceptance is this chain's clarity and comparison/resume.
+
+
 ## 2026-10-18 rotation-to-air causal comparison replacement
 
 User authorized addressing OWNER-ENV-02 with dynamic comparison and narration, continuing naturally into terrain. Main G1-observe slot now uses OVERVIEW-rotation-air (48.708s, 234 MiniMax native words), replacing old24.156s. Six chapters/21 slots remain, total701.424s (11:41), +24.552s; disclosed to user. Old G1-observe remains in air-process depth; resume alias resets old text/recording to new segment start. Sources freshly checked NOAA Origin of Wind, The Jet Stream, MIT GeneralCirculationNotes §9.1 (PDFpp99–100). Evidence public/data/rotation-flow-evidence.json; report public/project-review/rotation-review.html and JSON; QA qa/product-acceptance-20261018/rotation-flow.

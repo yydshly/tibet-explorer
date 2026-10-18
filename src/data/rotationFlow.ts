@@ -9,4 +9,4 @@ export const rotationFlowSources=[
  {title:'本例参数与证据边界',url:'/data/rotation-flow-evidence.json',note:'纬度、经度、历时均为教学选择；不是西藏来流观测或预测。'},
 ];
 export type RotationPhase='pressure'|'latitude'|'baseline'|'rotation'|'direction'|'limits'|'arrival';
-export interface RotationFlowState {phase:RotationPhase;progress:number;enabled:boolean;direction:'north'|'south';latitudeProgress:number;cameraMix:number;arrivalProgress:number;}
+export interface RotationFlowState {phase:RotationPhase;progress:number;enabled:boolean;direction:'north'|'south';latitudeProgress:number;cameraMix:number;arrivalProgress:number;arrivalStage?:'asia'|'west'|'south'|'terrain';westProgress?:number;southProgress?:number;}

@@ -22,6 +22,18 @@ export function climateLabCue(state:ClimateLabState){
 }
 /** Literal text intervals, driven only by native-word position. */
 export function climateLabNarratedProgress(text:string,textProgress:number){
+ // Main narration follows actual portions of the archived 91.1E transect:
+ // rising foothill samples 21–27, main ridge 60–61, lee descent 70–85.
+ // These are presentation positions, NOT parcel speed or measured wind paths.
+ // Generic fractional anchors previously put “抬升时” at sample31, a descent.
+ if(text===climateLabNarrationCues[0].narration){
+  const keys:[string,number][]=[['沿剖面向北移动',.05],['空气遇到高地',.19],['抬升时',.21],['足够湿润',.23],['云逐渐增多',.24],['继续越过山地',.27],['部分水分',.55],['降水离开气团',.60],['背风侧',.70],['实际结果还受',.85],['现在保持同一地形',1]];
+  const anchors=[{at:0,value:0},...keys.map(([token,value])=>({at:text.indexOf(token)/text.length,value})),{at:1,value:1}];
+  const t=Math.max(0,Math.min(1,textProgress));
+  if(t===1)return 1;
+  const index=Math.max(0,anchors.findIndex((a,i)=>i<anchors.length-1&&t>=a.at&&t<anchors[i+1].at));
+  const a=anchors[index],b=anchors[index+1];return a.value+(b.value-a.value)*(t-a.at)/(b.at-a.at);
+ }
  const tokens=['沿剖面向北移动','抬升','继续越过山地','背风侧','现在保持同一地形'];
  if(!text.includes('沿剖面向北移动'))return Math.max(0,Math.min(1,(textProgress-.12)/.67));
  const anchors=[{at:0,value:0},...tokens.map((token,i)=>({at:text.indexOf(token)/text.length,value:[.05,.28,.6,.83,1][i]})).filter(p=>p.at>0).sort((a,b)=>a.at-b.at),{at:1,value:1}];

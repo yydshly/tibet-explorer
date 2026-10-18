@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {climateLabCoordinates,climateLabAirState} from '../lib/climateLabProcess';
+import {climateLabCoordinates,climateLabAirState,climateAirAnnotation} from '../lib/climateLabProcess';
 import type {ClimateLabReading} from '../lib/climateLabProcess';
 import {climateLabPlaces,climateLabLifeFocus,type ClimateLabState} from '../data/climateLab';
 import {disposeTree,label,line} from './environment';
@@ -26,6 +26,7 @@ export function buildClimateLabOverlay(runtime:Runtime){
  const probe=new THREE.Mesh(new THREE.SphereGeometry(.095,14,10),basic(0xffd286));profileGroup.add(probe);
  const mast=line([new THREE.Vector3(),new THREE.Vector3()],0xffd286,.9);profileGroup.add(mast);
  let reading=label('真实高程采样','#fff0b1');reading.scale.set(2.4,.3,1);profileGroup.add(reading);let previousText='';
+ let airLabel=label('接近山地 · 观察水汽条件','#dbf6f4'),airLabelText='';airLabel.scale.set(2.6,.32,1);airGroup.add(airLabel);
  let trace:THREE.Line|undefined;
  const picks=Array.from({length:5},(_,i)=>{const dot=new THREE.Mesh(new THREE.SphereGeometry(.09,10,8),basic(0xffd286,.75));dot.userData.selectId=`lab-probe:${i/4}`;profileGroup.add(dot);return dot;});
  const cells=new THREE.InstancedMesh(new THREE.PlaneGeometry(.063,.063),basic(0x69e1c3,.8),625);cells.rotation.x=-Math.PI/2;landGroup.add(cells);cells.frustumCulled=false;
@@ -55,15 +56,18 @@ export function buildClimateLabOverlay(runtime:Runtime){
   rebuild(state);if(!samples.length){group.visible=false;return;}
   const progress=Math.max(0,Math.min(1,state.progress)),index=Math.round(progress*100),sample=samples[index];
   airGroup.visible=state.stage==='air';landGroup.visible=state.stage==='life'&&(state.landReveal??1)>0;
-  const value=climateLabAirState(samples.map(s=>s.metres),progress,state.moisture)!;
+  const elevations=samples.map(s=>s.metres),value=climateLabAirState(elevations,progress,state.moisture)!;
   const nextReading=JSON.stringify([state.stage,state.city,Math.round(value.ground),Math.round(value.lift),value.phase,Math.round(value.cloud*100),Math.round(value.rain*100)]);
-  if(nextReading!==readingKey){readingKey=nextReading;onReading?.({ground:value.ground,lift:value.lift,phase:value.phase,cloud:value.cloud,rain:value.rain});}
+  if(nextReading!==readingKey){readingKey=nextReading;onReading?.({...value,comparison:{higher:climateLabAirState(elevations,progress,'higher')!,lower:climateLabAirState(elevations,progress,'lower')!}});}
   probe.position.copy(sample.point);const top=sample.point.clone().add(new THREE.Vector3(0,.65,0));
   const attr=mast.geometry.attributes.position as THREE.BufferAttribute;attr.setXYZ(0,...sample.point.toArray());attr.setXYZ(1,...top.toArray());attr.needsUpdate=true;mast.geometry.computeBoundingSphere();
   const text=`高程样本 ≈${Math.round(sample.metres/10)*10}米`;
   if(text!==previousText){previousText=text;profileGroup.remove(reading);reading.material.map?.dispose();reading.material.dispose();reading=label(text,'#fff0b1');reading.scale.set(2.4,.3,1);profileGroup.add(reading);}reading.position.copy(top).add(new THREE.Vector3(-2.0,-.3,0));
   reading.visible=state.stage==='life';
   parcel.position.copy(sample.point).add(new THREE.Vector3(0,clearance,0));parcel.material.color.set(value.descending?0xf1bc82:0x70dddc);parcel.scale.setScalar(1+value.lift/9000);
+  const annotation=climateAirAnnotation(value);
+  if(annotation!==airLabelText){airLabelText=annotation;airGroup.remove(airLabel);airLabel.material.map?.dispose();airLabel.material.dispose();airLabel=label(annotation,'#dbf6f4');airLabel.scale.set(2.6,.32,1);airGroup.add(airLabel);}
+  airLabel.position.copy(parcel.position).add(new THREE.Vector3(0,.85,0));
   vapour.forEach((dot,i)=>{dot.visible=i<(state.moisture==='higher'?30:9);const t=Math.max(0,progress-i*.009),s=samples[Math.round(t*100)];dot.position.copy(s.point).add(new THREE.Vector3(Math.sin(i*2.4)*.12,clearance+Math.cos(i*1.8)*.1,0));});
   clouds.forEach((cloud,i)=>{cloud.visible=value.cloud>i/23;cloud.position.copy(parcel.position).add(new THREE.Vector3(((i%6)-2.5)*.24,.38+Math.sin(i)*.1,(Math.floor(i/6)-1)*.26));cloud.material.opacity=value.cloud*.8;});
   const count=Math.round(value.rain*120);rainGeometry.setDrawRange(0,count*2);

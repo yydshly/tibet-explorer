@@ -322,14 +322,16 @@ export function buildEarthOrientation(runtime: Runtime) {
       relationshipFlows.visible = layer === 'moisture'; runtime.sun.position.set(-4, 8, -11);
       if(foundation)runtime.sun.position.copy(latLon(18,54,15));
       for (const flow of flows) {
-        const emphasized = guided && targetSet.has(flow.id), segments = emphasized ? Math.floor(80 * inkProgress) : 80;
+        const arrival=p.rotationFlow?.phase==='arrival'?p.rotationFlow:undefined;
+        const flowProgress=arrival?(flow.id==='central-asia'?arrival.westProgress:arrival.southProgress)??0:inkProgress;
+        const emphasized = guided && targetSet.has(flow.id), segments = emphasized ? Math.floor(80 * flowProgress) : 80;
         flow.ink.geometry.setDrawRange(0, segments * 5 * 6);
-        flow.ink.material.opacity = guided ? (emphasized ? 1 : .18) : .88;
+        flow.ink.material.opacity = guided ? (emphasized ? 1 : arrival?0:.18) : .88;
         flow.particles.forEach((particle, index) => {
           // Both narration and manual silent playback have a single explicit
           // progress clock. Pausing never leaves a wall-clock particle running.
-          const fraction = emphasized ? (inkProgress * (index + 1) / flow.particles.length) : (p.progress * 1.8 + index / flow.particles.length) % 1;
-          particle.visible = !guided || emphasized && inkProgress > .02;
+          const fraction = emphasized ? (flowProgress * (index + 1) / flow.particles.length) : (p.progress * 1.8 + index / flow.particles.length) % 1;
+          particle.visible = !guided || emphasized && flowProgress > .02;
           particle.position.copy(flow.curve.getPointAt(fraction)); particle.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), flow.curve.getTangentAt(fraction).normalize());
         });
       }

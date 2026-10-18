@@ -21,14 +21,16 @@ export function rotationSample(progress:number,enabled=true,direction:RotationFl
 
 const plan:[string,RotationPhase][]=[['受热差异','pressure'],['先看同一地球','latitude'],['让空气向北移动','baseline'],['加入自转','rotation'],['右是相对','direction'],['这里固定','limits'],['回到亚洲','arrival']];
 export function rotationNarratedState(timing?:NarrationTiming):RotationFlowState{
- const text=rotationFlowCue.narration,at=clamp(timing?.textProgress??0)*text.length;
+ const text=rotationFlowCue.narration,at=Math.round(clamp(timing?.textProgress??0)*text.length*1e7)/1e7;
  const start=(token:string)=>text.indexOf(token),interval=(a:string,b:string)=>clamp((at-start(a))/(start(b)-start(a)));
  let index=0;while(index+1<plan.length&&at>=start(plan[index+1][0])-1e-7)index++;
  const phase=plan[index][1];
  return {phase,progress:phase==='pressure'?interval('受热差异','先看同一地球'):phase==='baseline'?interval('让空气向北移动','加入自转'):phase==='rotation'?interval('加入自转','右是相对'):phase==='direction'&&at>=start('向南时')?interval('向南时','这里固定'):1,
   enabled:phase!=='baseline',direction:at>=start('向南时')?'south':'north',latitudeProgress:interval('先看同一地球','让空气向北移动'),
   cameraMix:smooth(interval('让空气向北移动','加入自转')),
-  arrivalProgress:phase==='arrival'?clamp((at-start('回到亚洲'))/(text.length-start('回到亚洲'))):0};
+  arrivalProgress:phase==='arrival'?clamp((at-start('回到亚洲'))/(text.length-start('回到亚洲'))):0,
+  arrivalStage:at>=start('空气携带水汽')?'terrain':at>=start('南侧')?'south':at>=start('西侧')?'west':'asia',
+  westProgress:interval('西侧','并不是这条试验轨迹'),southProgress:interval('南侧','空气携带水汽')};
 }
 export function rotationManualState(state:RotationFlowState,patch:Partial<Pick<RotationFlowState,'enabled'|'direction'|'progress'>>):RotationFlowState{
  return {...state,phase:'rotation',cameraMix:1,arrivalProgress:0,latitudeProgress:1,...patch,progress:clamp(patch.progress??state.progress)};
@@ -39,10 +41,11 @@ export function rotationFeedback(state:RotationFlowState){
  return state.direction==='north'?'向北移动：空气保留绕地轴的角动量，相对更高纬的地面向东超前。实线离开虚线，向前进方向右偏。':'向南移动：相对更低纬的地面，空气向东运动落后，路径向西偏；向南看，西侧仍是右侧。';
 }
 export function rotationDescription(state:RotationFlowState){
+ if(state.phase==='arrival')return ({asia:'先收起自转试验轨迹，回到亚洲与西藏的位置。接下来读实际地理中的来流联系。',west:'金色线从西侧接近高原；它表示环流联系，不是刚才的角动量试验轨迹。',south:'青色线从印度洋一侧接近高原；西侧与南侧来流均受季节等条件影响。两线不是实测风场。',terrain:'先定位来流前方的喜马拉雅山系与高原，再看高地如何形成；随后沿真实高程比较抬升与水汽条件。'} as const)[state.arrivalStage??'terrain'];
  return ({pressure:'气压差推动运动；自转改变运动的方向。',latitude:'低纬绕行圈更大；转过相同角度，低纬地面走过更长距离。',baseline:'同一个起点和南北运动，先去掉自转项建立参照。',rotation:rotationFeedback(state),direction:'右侧相对于前进方向；可切到向南对照。',limits:'固定南北运动、无东西向力矩；不是实际天气或完整环流模型。',arrival:'试验轨迹已经收起；西侧与南侧来流是另一层概念联系，接着读高原形成与抬升。'} as const)[state.phase];
 }
 export function rotationTargets(state:RotationFlowState):string[]{
- if(state.phase==='arrival')return ['central-asia','indian-ocean',state.arrivalProgress>.35?'plateau':'tibet'];
+ if(state.phase==='arrival')return ['tibet',...(state.arrivalStage!=='asia'?['central-asia']:[]),...(['south','terrain'].includes(state.arrivalStage??'terrain')?['indian-ocean']:[]),...(state.arrivalStage==='terrain'?['plateau','himalaya']:[])];
  if(state.phase==='pressure')return ['rotation-high','rotation-low'];
  if(state.phase==='latitude')return ['rotation-lower','rotation-upper'];
  return ['rotation-parcel','rotation-reference',...(state.enabled&&state.progress>.02?['rotation-difference']:[])];
