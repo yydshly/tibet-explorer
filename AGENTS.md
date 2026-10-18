@@ -1,5 +1,12 @@
 # Prototype Instructions
 
+## 2026-10-18 next-version integration before implementation
+
+Owner starts phase2 but explicitly asks integration/impact analysis before implementation (whether chapters7/8/9). Decision: sibling route mode in same product, never append to six-question overview. Existing overview programme/audio/storage frozen; no empty route entry this turn. Route/player state independent; Exploration.route is observation stop order, not physical routing. Plan returns need typed route origin preserving segment/distance/cue/raw/camera, old overview origins compatible. Lazy route assets, one active audio clock, no local camera leakage.
+
+Read current App/store/overview and ground/local renderers. Official G318/Lulang sources checked; chose G318 Nyingchi—Sejila—Lulang as first pilot candidate to explain actual regional changes, rather than expand Lhasa again. Verified1147 original nodes/1146 source edges, oneway/access=no, existing0.4km DEM coverage and regional/local terrain hashes. Still missing suitable licensed corridor imagery, close-terrain fidelity or bounded height, public observation points and history-to-space evidence; not production-ready. Existing Lhasa station approach is Qinghai-Tibet railway, NOT Lalin or G318. Prior four-city corridor remains an outline, not a confirmed classic road. Current turn only docs/source audit, no new route player or new scenes. route-integration.html/json record decision, impact and gates.
+
+
 ## 2026-10-18 phase-one boundary and regional recognition
 
 Owner explicitly reopened only minimum regional differences and stage planning. Phase1 = six-question overall understanding, not exhaustive tourism. Added seven identical100km west-east transects, shared0–8000m axis, existing DEM triangle sampling and published settlement references (NOT city official elevation or administrative means). In OVERVIEW-regional-system only, select any seven places to approach the SAME map at fixed distance/angle; retain raw; whole/resume clears manual overrides. Original geography windows reused; comparison profile coordinates match UI. No new location models, recordings or duration. Other chapters freeze.47 tests/6 files/typecheck/build; actual hidden browser seven selections at raw.45, whole and original-sentence return, screenshots under project-review/stage-evidence. Old Tholing locator expectation corrected to already-shipped exchange process; no history edits. No full-show replay/audio listening/first-viewer claim.

@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-18",
+  "implementationBase": "8f0f544",
+  "status": "接入分析和资料初核，尚未新增线路播放器",
+  "decision": {
+    "addChapters789": false,
+    "mode": "同一产品中的并列线路体验板块",
+    "overviewFrozen": {
+      "chapters": 6,
+      "recordings": 21,
+      "durationSeconds": 750.024
+    },
+    "candidateURLs": [
+      "/#/routes",
+      "/#/routes/g318-east/nyingchi-lulang"
+    ],
+    "entryPolicy": "首段达到可用标准再出现产品入口；不放空入口，不更改默认启动",
+    "newState": "独立线路进度与地方返回快照；不覆盖overview进度或Exploration.route观察站点"
+  },
+  "pilot": {
+    "id": "nyingchi-lulang-g318",
+    "role": "G318经典线路的学习片段候选",
+    "sequence": [
+      "林芝附近城区道路",
+      "色季拉山地背景",
+      "鲁朗地方观察",
+      "返回原路段原句"
+    ],
+    "selectionReason": "连续现状道路及区域DEM已有，包含地形变化和有据小镇建设/运营案例；不继续扩大拉萨比重",
+    "distanceScope": "归档链约72km不是官方里程或实时导航",
+    "endScope": "Present-day G318 source-node chain from a road node near Nyingchi city through the actual mountain-road alignment to a service-road node inside the Lulang hotel commercial parcel. The source chain is not the 2016 alignment, a hotel door or guaranteed public visitor access.",
+    "accessGaps": [
+      {
+        "kind": "hotel-entry-unverified",
+        "description": "The target is a mapped service-road node in commercial land use, not a verified visitor entrance or current booking/access condition."
+      }
+    ],
+    "ready": false,
+    "blockingBeforeRealPlaceProduction": [
+      "许可明确且覆盖实际演示段的影像/现场视角",
+      "近景需要的更精细高程或限制观察高度",
+      "可定位的公共观察位置与进入条件",
+      "历史行动与具体空间变化的材料对应"
+    ],
+    "lhasaReuse": "只复用播放/沿线观察机制及回归样例；青藏线站前段不冒充拉林或G318"
+  },
+  "localAudit": {
+    "manifest": "public/data/local-places/transport-corridors.manifest.json",
+    "manifestSha256": "cd2288ff8dee5fd33d10e10aeef173008a5e9b5a96480c3444a3f8be36a58bd5",
+    "coordinates": 1147,
+    "edgesVerifiedAgainstSourceWays": 1146,
+    "nodeCoordinatesAllOriginal": true,
+    "onewayAndAccessNoChecked": true,
+    "allCoordinatesInsideNyingchiDEM": true,
+    "archivedLengthMetres": 71971.7,
+    "terrainHashVerified": true,
+    "rawArchives": [
+      {
+        "file": "qa/place-grounding/raw/lulang-map.osm",
+        "sha256": "d7f0efaf7416a67625e3b0be4896c77916208bcda42bd1f8d76d3134b0690a79"
+      },
+      {
+        "file": "qa/place-grounding/raw/lhasa-map.osm",
+        "sha256": "cf418bc6c304854df901cb96e1712e7335f80877377d5ad7c8a4b4e91c33d503"
+      },
+      {
+        "file": "qa/place-grounding/raw/shiquanhe-map.osm",
+        "sha256": "753a39bb213dd9b452e21302fb55823abae2ef040837df5ec7cfe05f2464039e"
+      },
+      {
+        "file": "qa/place-grounding/raw/gunsa-airport-map.osm",
+        "sha256": "7275620a7b80179c17a05204878f2498be3ed9c8225643468a95a1809ab00a2d"
+      },
+      {
+        "file": "qa/event-continuity/raw/gunsa-shiquanhe.osm",
+        "sha256": "a3a6ad9c6bc5c8eae8a2e51afa91826552fbbb2f3b5280296604d137c9082191"
+      },
+      {
+        "file": "qa/place-grounding/raw/mainling-airport-map.osm",
+        "sha256": "36b3a8d5586171615146186b1f78c2f6d83a12b3fc748f2265da92071a4c4fa7"
+      },
+      {
+        "file": "qa/event-continuity/raw/mainling-nyingchi.osm",
+        "sha256": "68e0470c182faca21e9b622ae4a13c3492a4bacb1ae0224e792eee3e4a497551"
+      },
+      {
+        "file": "qa/event-continuity/raw/nyingchi-lulang.osm",
+        "sha256": "9a4a3ff743a1f1b009acb70f258c6053f93afe153b65337e2b96793c9dc38be8"
+      },
+      {
+        "file": "qa/event-continuity/raw/sejila-south-gap.osm",
+        "sha256": "27d1c2fc163307349373bdfb989d252165f601f61e181cb7b83672e9dcc8e868"
+      },
+      {
+        "file": "qa/event-continuity/raw/s4-middle-gap.osm",
+        "sha256": "4976dca69fcdb6af570cb8fb4ade7b2fbce0a037fbe200fd0ec0132dc1907b7d"
+      }
+    ]
+  },
+  "architectureImpact": [
+    {
+      "area": "六章内容、录音与恢复",
+      "action": "冻结并以现有基线回归"
+    },
+    {
+      "area": "App路由与导航",
+      "action": "新增懒加载的并列模式，单段就绪后启用入口"
+    },
+    {
+      "area": "共享地图与资料",
+      "action": "复用投影、长度采样、来源与渲染；局部状态仅在线路实例内生效"
+    },
+    {
+      "area": "播放",
+      "action": "独立录音ID/原生逐字时间轴；退出暂停，避免双播放器发声"
+    },
+    {
+      "area": "存储和观察计划",
+      "action": "线路来源和返回快照独立保存；旧笔记、旧overview来源兼容"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.linzhi.gov.cn/linzhi/zmlz/201812/bc6ff62e851d4e97bd808c157857485c.shtml",
+      "title": "林芝市政府：国道",
+      "pageDate": "2026-04-05",
+      "supports": "G318林芝段的地区顺序，非实时路况"
+    },
+    {
+      "url": "https://linzhi.gov.cn/linzhi/xwzx/202206/dcd23620a58d45558ba4c351d58b17a3.shtml",
+      "title": "林芝市政府：粤藏筑梦鲁朗",
+      "pageDate": "2022-06-09",
+      "supports": "林芝向东经色季拉至鲁朗的地理来路及小镇建设运营材料；不把报道旧统计当今天"
+    },
+    {
+      "url": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202401/1e7571fb9481402b876fcf2bcb42fdef.shtml",
+      "title": "林芝文旅：G318波密—鲁朗介绍",
+      "pageDate": "2023-12-25",
+      "supports": "风景与人文选题线索；不接受宣传性健康或可达保证，网页图片版权须另核"
+    }
+  ],
+  "thisTurn": "只调整接入与资料文档，当前播放器、模型、音频和保存逻辑均未修改"
+}
