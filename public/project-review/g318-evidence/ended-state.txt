@@ -1,0 +1,73 @@
+Browser tab: 14, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/routes/g318-east/nyingchi-lulang".
+1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/routes/g318-east/nyingchi-lulang
+	2 container
+		3 link Description: ← 认识西藏, Value: 127.0.0.1:5176/#/overview
+		4 text G318 · 林芝—鲁朗
+		5 text 一条真实道路，三个观察尺度
+		6 container
+			7 link Description: 线路总览, Value: 127.0.0.1:5176/#/routes
+			8 button 线路观察笔记
+		9 container G318真实沿线三维观察
+			10 container 真实卫星影像与高程上的G318林芝至鲁朗道路，可旋转缩放
+			11 container
+				12 text Sentinel-2 · 2025.12.13 · 10 m像元 GLO-30地表高程 · 高度1×
+			13 container
+				14 text 整段来路
+				15 heading 林芝—色季拉山地—鲁朗, Value: 1
+					16 text 林芝—色季拉山地—鲁朗
+			17 container
+				18 text 已暂停
+				69 container
+					80 text 保留整条线路的来路 。
+		19 container
+			20 text 沿途观察 ·  4  / 4
+		21 heading 带着问题回到线路, Value: 2
+			22 text 带着问题回到线路
+		23 container 本段认识顺序
+			24 button 1 · 先认路线：从城区到山地
+				25 text 1
+				26 text  ·
+				27 text 先认路线：从城区到山地
+			28 button 2 · 沿路观察：高差怎样改变视野
+				29 text 2
+				30 text  ·
+				31 text 沿路观察：高差怎样改变视野
+			32 button 3 · 进入鲁朗：道路、生活与人的组织
+				33 text 3
+				34 text  ·
+				35 text 进入鲁朗：道路、生活与人的组织
+			36 button 4 · 带着问题回到线路
+				37 text 4
+				38 text  ·
+				39 text 带着问题回到线路
+		40 container 沿真实道路操作
+			41 text 位置改变，视野也改变
+			71 container
+				72 text 沿线位置 ·  72.0  km
+				73 slider (settable, integer) Description: G318沿线位置, Value: 1
+			74 button 城区出发
+			75 button 山地对照
+			76 button 鲁朗附近
+			77 checkbox 在原位回望, Value: 0
+			78 button 回看整段
+			79 button 进入鲁朗 · 保留原路段
+		51 container
+			52 text 观察高度
+			53 slider (settable, integer) Description: 沿线观察高度, Value: 3500
+		54 text 卫星像元10m，限制近距离放大；不是街景。拖动地图旋转会暂停讲述。
+		67 container
+			68 text 当前位置地表样本约 3390 m · 总归档路长约 72.0 km
+		55 text 先把城区、山地与鲁朗放在一条真实道路中看；三个位置是地图观察参照，不是核实的实地停车点。
+		56 text 已保存到当前浏览器。
+		57 button (collapsed) 真实资料、时间与展示边界, Secondary Actions: Expand
+			58 text 真实资料、时间与展示边界
+		59 button 重新沿线观察
+		60 button 关闭声音
+		61 text 100 % · 讲述进度
+		62 button 保存观察问题
+		63 container
+			64 text 当前语句进度
+			65 slider (settable, integer) Description: 线路讲述进度, Value: 1
+		66 text 含修改的Copernicus Sentinel数据（2025） · Copernicus GLO-30 · © OpenStreetMap contributors。地图观察位置不代表可停靠/开放条件。
+
+The focused UI element is 59 button 重新沿线观察

@@ -57,6 +57,7 @@ import './reference-experience.css';
 // controls and drawers also download on first use.
 const StoryAtlasExperience=lazy(()=>import('./components/StoryAtlasExperience'));
 const OverviewExperience=lazy(()=>import('./components/OverviewExperience'));
+const RouteExperience=lazy(()=>import('./components/RouteExperience'));
 const DrawerContent=lazy(()=>import('./components/DrawerContent'));
 const ReferenceLibrary=lazy(()=>import('./components/ReferenceLibrary'));
 
@@ -273,6 +274,7 @@ export default function App({initialAction,initialOverviewReturn=false}:{initial
   else {const target=allSteps.find(item=>item.step.id===initialAction.value);if(target)navigate(target.chapter,target.step,false,true);}
  },[initialAction]);
  const overviewReturnControl=overviewReturn&&!overviewRoute&&(!route.home||atlasLocation)?<button className="overview-return-control" onClick={()=>{pauseRef.current(false);setOverviewReturn(false);location.hash='/overview';}}>← 回到完整演示</button>:null;
+ if(/^#?\/?routes(?:\/|\?|$)/.test(locationHash))return <Suspense fallback={<main className="app" aria-busy="true"><p role="status">正在准备线路体验…</p></main>}><RouteExperience/></Suspense>;
  if(overviewRoute)return <><Suspense fallback={<main className="app" aria-busy="true"><p role="status">正在准备完整认识主线…</p></main>}><OverviewExperience onSavePlan={next=>{latestSaved.current=next;setSaved(next);}} onHome={()=>{location.hash='/';}} onDetail={id=>{const target=allSteps.find(item=>item.step.id===id);if(target){setOverviewReturn(true);navigate(target.chapter,target.step,false,true);}}} onDirectory={()=>openLibrary()} onMap={()=>{setOverviewReturn(true);goAtlas(cityAtlasLocation('lhasa','environment',false));}}/></Suspense>{drawerPanel}</>;
  if(atlasLocation)return <>{overviewReturnControl}<Suspense fallback={<main className="app" aria-busy="true"><p role="status">正在展开地图…</p></main>}><StoryAtlasExperience location={atlasLocation} saved={saved} onSave={setSaved} onDetail={openDetail} onEarth={goTo} onDirectory={()=>openLibrary()} onModels={()=>open('models')} onSaved={()=>open('saved')} onTravel={()=>open('travel')} onReturn={exploreOrigin?returnToOrigin:undefined} returnTitle={allSteps.find(item=>item.step.id===exploreOrigin?.stepId)?.step.title}/></Suspense>{drawerPanel}{toast&&!drawer&&<div className="toast" role="status"><Check size={18}/>{toast}</div>}</>;
  if(route.home)return <><ReferenceHome onRecognitionNavigate={navigateRecognition} onStartEarth={()=>{location.hash='/overview?start=1';}} onContinue={()=>{if(lastVisit.current)location.hash=lastVisit.current;else location.hash='/overview';}} hasResume={Boolean(saved.visited.length||lastVisit.current)} onCity={id=>goAtlas(cityAtlasLocation(id))} onTheme={openHomeTheme} onDirectory={()=>openLibrary()} onModels={()=>open('models')} onSaved={()=>open('saved')}/>{drawerPanel}</>;

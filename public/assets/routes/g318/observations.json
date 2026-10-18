@@ -1,0 +1,70 @@
+{
+  "id": "g318-nyingchi-lulang",
+  "preparedAt": "2026-10-19",
+  "method": "原始道路顶点 + 渲染同一三角面高程插值；最高点仅为这条归档顶点链的最高DSM样本，不是色季拉山口实测定位/标高",
+  "sources": [
+    "/assets/routes/g318/route.json",
+    "/assets/routes/g318/manifest.json"
+  ],
+  "points": [
+    {
+      "id": "origin",
+      "title": "林芝附近·源道路起点",
+      "sourceNodeIndex": 0,
+      "sourceNodeId": 8539730136,
+      "coordinate": [
+        94.3607525,
+        29.6513654
+      ],
+      "distanceMetres": 0,
+      "progress": 0,
+      "surfaceElevationMetres": 2989.2769599999983,
+      "question": "道路怎样从建成区走向山地？",
+      "scope": "资料阅读位置；未核实实地停靠、安全进入或开放条件"
+    },
+    {
+      "id": "mountain",
+      "title": "色季拉山地·沿线高程样本",
+      "sourceNodeIndex": 830,
+      "sourceNodeId": 624467736,
+      "coordinate": [
+        94.6519287,
+        29.6107711
+      ],
+      "distanceMetres": 48111.395370602506,
+      "progress": 0.6679400679860609,
+      "surfaceElevationMetres": 4558.5505353845665,
+      "question": "固定位置向前/回望，山体遮挡与来路有何差异？",
+      "scope": "资料阅读位置；未核实实地停靠、安全进入或开放条件"
+    },
+    {
+      "id": "lulang",
+      "title": "鲁朗·源服务道路末端",
+      "sourceNodeIndex": 1146,
+      "sourceNodeId": 12237649787,
+      "coordinate": [
+        94.7273961,
+        29.7302903
+      ],
+      "distanceMetres": 72029.50934754603,
+      "progress": 1,
+      "surfaceElevationMetres": 3385.212387692249,
+      "question": "过境道路、地方接续与已记录的建成空间怎样相连？",
+      "scope": "资料阅读位置；未核实实地停靠、安全进入或开放条件"
+    }
+  ],
+  "history": [
+    {
+      "date": "2016-10-01",
+      "event": "报道记载鲁朗小镇开始试运营",
+      "source": "https://www.linzhi.gov.cn/xwzx_406/dsdt/201812/t20181216_22625.html",
+      "scope": "不是2016年建筑轮廓或施工过程证据"
+    },
+    {
+      "date": "2017",
+      "event": "部门决算记录商街经营、地方产品展示、活动组织和沿线服务",
+      "source": "https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml",
+      "scope": "不是当前经营、收入或开放状态；现状地图只解释空间接续"
+    }
+  ]
+}

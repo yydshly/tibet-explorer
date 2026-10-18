@@ -1,0 +1,75 @@
+import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
+import {useOverviewDirector} from '../hooks/useOverviewDirector';
+import {routePilotCues,routePilotIdentity,routePilotPath,routePilotSources,pilotNarratedView,type PilotView} from '../data/routePilot';
+import {PILOT_POSITION_KEY,readPilotNote,writePilotNote,type PilotNote,type PilotReturn} from '../lib/routePilotStore';
+import PilotRouteTerrain,{type PilotReading} from '../scene/PilotRouteTerrain';
+import NarrationCaption from './NarrationCaption';
+import './RouteExperience.css';
+
+export default function RouteExperience(){
+ const route=location.hash.split('?')[0].replace(/^#/,'');
+ if(route==='/routes')return <main className="pilot-catalog"><header><a href="#/overview">← 认识西藏 · 六章</a><span>沿线路认识地方</span></header><p className="pilot-eyebrow">经典线路 · 第一段</p><h1>把刚认识的西藏，<br/>放进真实的山谷和道路。</h1><a className="pilot-route-card" href={`#${routePilotPath}`}><img src="/assets/routes/g318/sentinel-20251213.webp" alt="2025年12月13日林芝至鲁朗区域的真实卫星影像"/><div><span>G318 · 已开放一段</span><h2>林芝—色季拉山地—鲁朗</h2><p>沿约72公里归档道路前进，进入鲁朗，比较过境与地方接续，再返回原线。</p><strong>开始沿线观察 →</strong></div></a><p>真实卫星影像与地表高程。路线位置与讲述同步；地图观察不提供实时导航或实地停靠保证。</p></main>;
+ return <PilotPlayback/>;
+}
+function PilotPlayback(){
+ const beats=useMemo(()=>routePilotCues.map(c=>({id:c.id,recordingId:c.id,text:c.narration,sceneIdentity:routePilotIdentity})),[]);
+ const director=useOverviewDirector({beats,storageKey:PILOT_POSITION_KEY});
+ const initial=useMemo(readPilotNote,[]),[note,setNote]=useState<PilotNote>(initial),[status,setStatus]=useState(''),[saveOK,setSaveOK]=useState(true);
+ const [override,setOverride]=useState<PilotView|undefined>(initial.returnTo?.view),[lineReturn,setLineReturn]=useState<PilotReturn|undefined>(initial.lineReturn);
+ const [reading,setReading]=useState<PilotReading>(),[cameraKey,setCameraKey]=useState(0);
+ const beat=beats[director.beatIndex],planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
+ const native=pilotNarratedView(director.beatIndex,beat.text,director.timing?.textProgress??0,reading?.highProgress??.5),view=override??native;
+ const manual=Boolean(override),lastLine=useRef<PilotReturn|undefined>(undefined);
+ const snapshot=():PilotReturn=>({beatIndex:director.beatIndex,raw:director.raw,voice:director.voice,view:{...view}});
+ if(director.beatIndex<2&&!planMode)lastLine.current=snapshot();
+ const persist=(next:PilotNote)=>{setNote(next);const ok=writePilotNote(next);setSaveOK(ok);setStatus(ok?'已保存到当前浏览器。':'保存失败，请先复制观察笔记；原讲述仍保留。');return ok;};
+ useEffect(()=>{
+  // Returning to the approach sentence must not automatically repeat the
+  // already visited place. Explicit place selection starts a fresh visit.
+  if(director.beatIndex===2&&note.skipPlaceOnce){
+   const run=director.wantsPlayback,next={...readPilotNote(),skipPlaceOnce:false,lineReturn:undefined};
+   setLineReturn(undefined);writePilotNote(next);setNote(next);director.select(3);if(run)director.playPause();return;
+  }
+  if(director.beatIndex===2&&!lineReturn&&lastLine.current){setLineReturn(lastLine.current);const next={...readPilotNote(),lineReturn:lastLine.current};writePilotNote(next);setNote(next);}
+ },[director.beatIndex,lineReturn,note.skipPlaceOnce,director.wantsPlayback,director.select,director.playPause]);
+ const onReady=useCallback(()=>director.onSceneReady(routePilotIdentity),[director.onSceneReady]);
+ const onError=useCallback((s:string)=>director.onSceneError(routePilotIdentity,s),[director.onSceneError]);
+ const onReading=useCallback((r:PilotReading)=>setReading(r),[]);
+ const onInteract=useCallback(()=>director.pause(),[director.pause]);
+ const change=(patch:Partial<PilotView>)=>{director.pause();setOverride({...view,...patch});setCameraKey(k=>k+1);setStatus('观察已暂停原句；继续讲述时恢复原来的线路位置与条件。');};
+ const play=()=>{setOverride(undefined);setCameraKey(k=>k+1);const next={...readPilotNote(),returnTo:undefined};writePilotNote(next);setNote(next);director.playPause();};
+ const select=(i:number)=>{const next={...readPilotNote(),skipPlaceOnce:false,returnTo:undefined,lineReturn:undefined};writePilotNote(next);setNote(next);setLineReturn(undefined);setOverride(undefined);setCameraKey(k=>k+1);director.select(i);};
+ const enterPlace=()=>{
+  const original=snapshot();director.pause();setLineReturn(original);const next={...note,lineReturn:original,returnTo:undefined,skipPlaceOnce:false};persist(next);setOverride(undefined);setCameraKey(k=>k+1);director.select(2);director.playPause();
+ };
+ const restore=(target:PilotReturn)=>{director.pause();director.select(target.beatIndex);director.seek(target.raw);director.setVoice(target.voice);setOverride(target.view);setCameraKey(k=>k+1);};
+ const backToLine=()=>{
+  const target=lineReturn??lastLine.current??{beatIndex:1,raw:0,voice:director.voice,view:pilotNarratedView(1,beats[1].text,0)};
+  restore(target);setLineReturn(undefined);persist({...note,lineReturn:undefined,returnTo:target,skipPlaceOnce:true});setStatus('已回到进入鲁朗前的原路段和原句。继续后接回整段总结，不重复地方讲述。');
+ };
+ const openPlan=()=>{const target=snapshot();director.pause();if(persist({...note,returnTo:target,lineReturn})){director.retryScene();location.hash=routePilotPath+'?plan=1';}};
+ const returnPlan=()=>{if(!persist(note))return;if(note.returnTo)restore(note.returnTo);location.hash=routePilotPath;};
+ const km=reading?(view.progress*reading.total/1000).toFixed(1):'—';
+ const reason=view.mode==='place'?view.connections?'金色接入道路与白色建筑轮廓同时展开：过境道路提供来路，接续、经营和维护让人进入地方生活。这是同一现状的使用关系对照，非历史施工模拟。':'先读青色过境道路：它经过鲁朗，却不能仅凭道路经过就断言服务已形成。展开接续，观察实际服务道路与地块的位置。':view.mode==='whole'?'先把城区、山地与鲁朗放在一条真实道路中看；三个位置是地图观察参照，不是核实的实地停车点。':view.lookBack?'在同一位置回望：比较山体遮挡、道路绕行和刚经过的谷地。位置不变，观察方向改变。':'沿归档道路连续改变观察位置；金点是阅读位置，移动速度不代表实际车速。高程来自地表模型，不是道路工程标高。';
+ if(planMode)return <main className="pilot-plan"><header><a href="#/overview">西藏探索</a><span>我的线路观察计划</span></header><h1>带着问题，回到同一段路。</h1><p>G318林芝—鲁朗 · 保留线路位置、语句与观察条件。</p><label>我的观察问题与笔记<textarea aria-label="线路观察笔记" maxLength={2000} rows={8} value={note.note} onChange={e=>persist({...note,note:e.target.value})}/></label><p>建议观察：谷地与沿途高差怎样改变视野？为什么过境交通还需要地方接续、经营和维护？</p><div><button onClick={()=>persist(note)}>保存观察计划</button><button onClick={returnPlan}>保存并返回原线</button></div><p role={saveOK?'status':'alert'}>{status}</p><Sources/></main>;
+ return <main className="pilot-experience">
+  <header className="pilot-header"><a href="#/overview">← 认识西藏</a><div><strong>G318 · 林芝—鲁朗</strong><small>一条真实道路，三个观察尺度</small></div><nav><a href="#/routes">线路总览</a><button onClick={openPlan}>线路观察笔记</button></nav></header>
+  <div className="pilot-body"><section className="pilot-stage" aria-label="G318真实沿线三维观察">
+   <PilotRouteTerrain view={view} cameraKey={cameraKey} onReady={onReady} onError={onError} onReading={onReading} onInteract={onInteract}/>
+   {!director.ready&&!director.error&&<div className="pilot-loading" role="status">正在准备真实影像、高程与道路…</div>}
+   {director.error&&<div className="pilot-loading" role="alert">{director.error}<button onClick={()=>location.reload()}>重新加载本段</button></div>}
+   <div className="pilot-map-meta"><span>Sentinel-2 · 2025.12.13 · 10 m像元</span><span>GLO-30地表高程 · 高度1×</span></div>
+   <div className="pilot-place-title"><span>{view.mode==='whole'?'整段来路':view.mode==='place'?'进入地方':'沿真实道路前进'}</span><h1>{view.mode==='place'?'鲁朗：从过境到地方生活':view.mode==='line'?`G318 · 第${km}公里`:'林芝—色季拉山地—鲁朗'}</h1></div>
+   <div className="pilot-caption" data-route-beat={beat.id} data-route-mode={view.mode} data-route-progress={view.progress} data-route-manual={manual} data-route-connections={view.connections}><small>{manual?'手动观察 · 原句已暂停':director.playing?'跟随讲述':'已暂停'}</small><p>{manual?reason:<NarrationCaption text={director.timing?.caption||beat.text.split('。')[0]+'。'} timing={director.timing}/>}</p></div>
+  </section><aside className="pilot-reading">
+   <p className="pilot-eyebrow">沿途观察 · {director.beatIndex+1} / 4</p><h2>{routePilotCues[director.beatIndex].title}</h2>
+   <nav aria-label="本段认识顺序">{routePilotCues.map((b,i)=><button key={b.id} aria-current={director.beatIndex===i?'step':undefined} onClick={()=>select(i)}>{i+1} · {b.title}</button>)}</nav>
+   {view.mode!=='place'?<section className="pilot-controls" aria-label="沿真实道路操作"><strong>位置改变，视野也改变</strong><label>沿线位置 · {km} km<input aria-label="G318沿线位置" type="range" min="0" max="1" step=".001" value={view.progress} onChange={e=>change({mode:'line',progress:Number(e.target.value)})}/></label><div><button onClick={()=>change({mode:'line',progress:0})}>城区出发</button><button onClick={()=>change({mode:'line',progress:reading?.highProgress??.5})}>山地对照</button><button onClick={()=>change({mode:'line',progress:1})}>鲁朗附近</button></div><div><button aria-pressed={view.lookBack} onClick={()=>change({mode:'line',lookBack:!view.lookBack})}>{view.lookBack?'向前看':'在原位回望'}</button><button onClick={()=>change({mode:'whole'})}>回看整段</button></div><button className="pilot-primary" onClick={enterPlace}>进入鲁朗 · 保留原路段</button></section>:<section className="pilot-controls" aria-label="鲁朗过境与地方接续对照"><strong>同一现状，比较两种观察范围</strong><div><button aria-pressed={!view.connections} onClick={()=>change({connections:false})}>只看过境道路</button><button aria-pressed={view.connections} onClick={()=>change({connections:true})}>展开地方接续</button></div><p>金：服务道路 · 白：源建筑轮廓 · 浅绿：源地块/水面边线。没有推算建筑高度或复原2016年街区。</p><button className="pilot-primary" onClick={backToLine}>返回进入前的原线原句</button></section>}
+   <div className="pilot-controls"><label>观察高度<input aria-label="沿线观察高度" type="range" min="2500" max="6500" step="100" value={Math.max(2500,view.height)} onChange={e=>change({height:Number(e.target.value)})}/></label><small>卫星像元10m，限制近距离放大；不是街景。拖动地图旋转会暂停讲述。</small>{reading&&<output>当前位置地表样本约{Math.round(reading.elevation/10)*10}m · 总归档路长约{(reading.total/1000).toFixed(1)}km</output>}</div>
+   <p className="pilot-reason" role="status">{reason}</p>{status&&<p role={saveOK?'status':'alert'}>{status}</p>}
+   <Sources/>
+  </aside></div>
+  <footer className="pilot-player"><div><button className="pilot-primary" onClick={play} disabled={!director.ready}>{director.playing?'暂停讲述':manual?'恢复原条件并继续':director.beatIndex===beats.length-1&&director.raw>=1?'重新沿线观察':'继续讲述'}</button><button onClick={()=>director.setVoice(!director.voice)}>{director.voice?'关闭声音':'开启声音'}</button><span>{Math.round(director.raw*100)}% · 讲述进度</span><button onClick={openPlan}>保存观察问题</button></div><label>当前语句进度<input aria-label="线路讲述进度" type="range" min="0" max="1" step=".001" value={director.raw} onChange={e=>{setOverride(undefined);setCameraKey(k=>k+1);director.seek(Number(e.target.value));}}/></label><small>含修改的Copernicus Sentinel数据（2025） · Copernicus GLO-30 · © OpenStreetMap contributors。地图观察位置不代表可停靠/开放条件。</small></footer>
+ </main>;
+}
+function Sources(){return <details className="pilot-sources"><summary>真实资料、时间与展示边界</summary>{routePilotSources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></p>)}<p>冬季卫星影像不是实时天气。2016试运营、2017运营记录解释人的组织，不用现状建筑假造历史外观；路线末端不是核实的酒店入口或实地停靠建议。</p></details>;}

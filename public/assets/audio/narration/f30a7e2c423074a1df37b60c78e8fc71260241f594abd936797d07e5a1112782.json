@@ -1,0 +1,19 @@
+{
+  "id": "f30a7e2c423074a1df37b60c78e8fc71260241f594abd936797d07e5a1112782",
+  "url": "/assets/audio/narration/f30a7e2c423074a1df37b60c78e8fc71260241f594abd936797d07e5a1112782.mp3",
+  "text": "现在在同一地形上靠近鲁朗。先看过境道路，再展开地方接续，服务道路与已记录的建筑、地块同时出现。道路把人带到附近，生活和服务还需要真实的连接、经营与维护。二零一六年的报道记录小镇试运营；二零一七年的部门决算又记录商街经营、地方产品展示、活动组织和沿线服务。画面仍是今天归档的地物与二零二五年的影像，不把它复原成当年的建筑外观。工布文化、地方产品和持续运营让这里具有生活与文化价值，不能只把鲁朗理解成一片好看的林海。你可以比较过境与地方接续，再回到刚才的道路继续。",
+  "duration": 45.18,
+  "bytes": 724596,
+  "sha256": "007812210457c9ad43cc5ac8f7c7bf1feda30ee0e58895e211811a318644fabc",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T15:57:30.254Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f30a7e2c423074a1df37b60c78e8fc71260241f594abd936797d07e5a1112782.subtitles.json",
+  "subtitleSha256": "bf0cef90e14177ebc174d1afe3c79a0d9d6138d5a284991491fd4791cb782b9e",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ff1faa559d2c8ed23f8812fea6e1544e3b11698e95e423ab2b38b0d11c109c2b",
+  "url": "/assets/audio/narration/ff1faa559d2c8ed23f8812fea6e1544e3b11698e95e423ab2b38b0d11c109c2b.mp3",
+  "text": "沿道路向山地前进。线路连续转弯，身边地面逐渐抬高；道路绕行和山体遮挡，都能在真实地形上对应。停在山地观察点，比较回望和向前的视野。这里按沿线高程样本选择观察位置，不是实测山口标高，也不是建议停车的位置。高处较开阔的视野，并不说明所有方向都没有遮挡。继续向鲁朗方向，道路进入另一侧谷地。地形、季节与水热共同参与风景形成，这一张冬季影像不能独立证明植被和气候的全部原因。接下来进入鲁朗，看过境道路怎样接向地方生活。",
+  "duration": 41.976,
+  "bytes": 673332,
+  "sha256": "8b49ffa3f84300f9cad7d29d2aad770d2682331f34685f7f3bee719dbb863c27",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T15:57:21.955Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ff1faa559d2c8ed23f8812fea6e1544e3b11698e95e423ab2b38b0d11c109c2b.subtitles.json",
+  "subtitleSha256": "6bc35f368dbb37d3b60cebfbc143853a38cd0718de66f3b798195c03b1994a70",
+  "timingLevel": "word"
+}

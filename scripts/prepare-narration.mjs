@@ -25,7 +25,8 @@ const { climateObservationNarrationCues } = await importContent('src/data/climat
 const { regionalJourneyNarrationCues } = await importContent('src/data/regionalJourney.ts');
 const { climateLabNarrationCues } = await importContent('src/data/climateLab.ts');
 const { overviewNarrationCues } = await importContent('src/data/overviewNarration.ts');
-const cues = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => (journey.getJourneyStep(step.id)?.cues || []).map(cue => ({ ...cue, stepId: step.id, chapterId: chapter.id })))), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues];
+const { routePilotCues } = await importContent('src/data/routePilot.ts');
+const cues = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => (journey.getJourneyStep(step.id)?.cues || []).map(cue => ({ ...cue, stepId: step.id, chapterId: chapter.id })))), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues,...routePilotCues];
 const selected = cues.filter(cue => !only || cue.id === only || cue.stepId === only || only === cue.chapterId && ['cities','comparison','regional','overview'].includes(only));
 if (!selected.length) throw new Error('No matching narration cue.');
 // Native upgrades prioritize the opening, climate, and both city journeys.

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "implementationBase": "fa3dcd6",
   "currentVersion": {
     "name": "整体认识第一版",
@@ -18,7 +18,7 @@
   },
   "nextVersion": {
     "name": "经典线路与真实地方",
-    "status": "方向与范围规划，尚未实现",
+    "status": "已实现独立G318林芝—色季拉山地—鲁朗首段；其他线路暂不扩展",
     "entry": "以有真实交通依据、能解释沿途变化的经典线路为入口",
     "journey": [
       "选择线路",
@@ -81,6 +81,18 @@
       "status": "资料初核完成，影像、近景高程/观察高度、观察位置及历史空间对应仍需补齐",
       "geometry": "1147个原始坐标，1146条原始来源边已核验；归档链约72km，不是实时导航",
       "lhasa": "既有青藏线拉萨站前段只作机制复用与回归参考"
+    },
+    "pilotDelivery": {
+      "entry": "/#/routes/g318-east/nyingchi-lulang",
+      "report": "/project-review/g318-pilot.html",
+      "evidence": "/project-review/g318-evidence/verification.json",
+      "scope": "真实道路前进、鲁朗地方对照、原线原句、独立笔记保存刷新返回",
+      "limits": [
+        "卫星三维观察，不是街景、实时导航或可订行程",
+        "观察位置未核实为实地停靠/开放入口",
+        "现状轮廓不作历史重建",
+        "系统音频回听与正式首次理解验收仍缺证据"
+      ]
     }
   },
   "documents": {

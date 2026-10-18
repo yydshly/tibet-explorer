@@ -1,5 +1,11 @@
 # Prototype Instructions
 
+## 2026-10-19 bounded first G318 route pilot
+
+Owner authorized implementing only G318 Nyingchi—Sejila mountain area—Lulang. Separate lazy /routes mode, not chapters7/8/9. Six chapters/21 clips/750.024s and old storage freeze; only overview navigation entry added. Preserve original1147-node/1146-edge OSM route. Licensed Sentinel-2 2025-12-13 true-colour and GLO-30 DSM, height1×; mesh sampling approximately45–46m is not native30m measurement precision. Virtual observation nodes are NOT surveyed pass height, roadside stopping, hotel entrance or public access guarantees.
+
+Four MiniMax native-word clips (~150s), independent route position/note keys. Same map whole→line→place→whole; distance slider, high sample, look-back and altitude comparisons pause original sentence. Current OSM local roads/footprints display spatial connections;2016 trial operation/2017 operating accounts support human organization, not historic building reconstruction. No measured building heights. Back preserves original raw/voice/view and skips already visited automatic place once; explicit revisit allowed. Plan edit/save/refresh restores route snapshot; old plans untouched. Report g318-pilot.html and g318-evidence/verification.json record actual checks/limits. Do not expand stops, fabricate street scenes or unfreeze six chapters. Formal first-viewer and system-audio listening remain separate.
+
 ## 2026-10-18 next-version integration before implementation
 
 Owner starts phase2 but explicitly asks integration/impact analysis before implementation (whether chapters7/8/9). Decision: sibling route mode in same product, never append to six-question overview. Existing overview programme/audio/storage frozen; no empty route entry this turn. Route/player state independent; Exploration.route is observation stop order, not physical routing. Plan returns need typed route origin preserving segment/distance/cue/raw/camera, old overview origins compatible. Lazy route assets, one active audio clock, no local camera leakage.

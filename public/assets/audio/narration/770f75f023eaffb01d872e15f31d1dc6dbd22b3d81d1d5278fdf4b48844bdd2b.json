@@ -1,0 +1,19 @@
+{
+  "id": "770f75f023eaffb01d872e15f31d1dc6dbd22b3d81d1d5278fdf4b48844bdd2b",
+  "url": "/assets/audio/narration/770f75f023eaffb01d872e15f31d1dc6dbd22b3d81d1d5278fdf4b48844bdd2b.mp3",
+  "text": "这次沿真实的三一八国道，从林芝城区附近向东，进入鲁朗。青色线保留地图原有的道路转折，这段归档道路约七十二公里，不是城市之间的直线。先看起点周围的河谷和建成区，再看道路怎样走向山地。底图来自二零二五年十二月十三日的真实卫星影像，白色和阴影包含当时的积雪与日照条件，不能当作全年景观。现在沿道路前进，观察谷地、坡面与视野怎样随着位置改变。",
+  "duration": 32.724,
+  "bytes": 525300,
+  "sha256": "86d1742b9e2f9341b2cefe6d47c7a61fddd3c817384b2947960da3b371983e47",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T15:57:09.661Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/770f75f023eaffb01d872e15f31d1dc6dbd22b3d81d1d5278fdf4b48844bdd2b.subtitles.json",
+  "subtitleSha256": "28f5ac54e03a09f272057830edc2f46e0a0b4808739714ed09a85ed0850bec91",
+  "timingLevel": "word"
+}

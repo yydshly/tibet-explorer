@@ -1,0 +1,19 @@
+{
+  "id": "3c26f4c5e96334079001f4ed527ead133161aac20c952fa3e160dce38ca375a9",
+  "url": "/assets/audio/narration/3c26f4c5e96334079001f4ed527ead133161aac20c952fa3e160dce38ca375a9.mp3",
+  "text": "把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。",
+  "duration": 30.384,
+  "bytes": 487860,
+  "sha256": "42e85b3eeed3512d9ea325260c589cc33cccfcd6d6c19ca2f12fa4eded1ca063",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T15:57:37.179Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/3c26f4c5e96334079001f4ed527ead133161aac20c952fa3e160dce38ca375a9.subtitles.json",
+  "subtitleSha256": "ea544982091f41d89506d27f84b1a7453274e2367b05e29518b3fd882a3f7639",
+  "timingLevel": "word"
+}

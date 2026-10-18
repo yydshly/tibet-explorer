@@ -1,0 +1,84 @@
+{
+  "id": "g318-nyingchi-lulang",
+  "bbox": [
+    94.3,
+    29.51,
+    94.82,
+    29.81
+  ],
+  "columns": 1121,
+  "rows": 721,
+  "verticalExaggeration": 1,
+  "accessedAt": "2026-10-19",
+  "imagery": {
+    "url": "/assets/routes/g318/sentinel-20251213.webp",
+    "source": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FT/2025/12/S2C_46RFT_20251213_0_L2A/TCI.tif",
+    "item": "S2C_46RFT_20251213_0_L2A",
+    "capturedAt": "2025-12-13T04:30:29.723000Z",
+    "sourcePixelMetres": 10,
+    "width": 5000,
+    "height": 3300,
+    "missingFraction": 0.00010593939393939394,
+    "processing": "True-colour TCI; bilinear crop/reprojection, WebP92; no generated pixels",
+    "license": "https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice",
+    "attribution": "Contains modified Copernicus Sentinel data (2025); COG conversion by Element 84"
+  },
+  "elevation": {
+    "url": "/assets/routes/g318/terrain.int16",
+    "source": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N29_00_E094_00_DEM/Copernicus_DSM_COG_10_N29_00_E094_00_DEM.tif",
+    "dataset": "Copernicus DEM GLO-30 DSM",
+    "nativeSpacing": "1 arc second, approximately30m",
+    "sampleMetres": {
+      "eastWest": 44.91,
+      "northSouth": 46.38
+    },
+    "verticalDatum": "EGM2008",
+    "minimum": 2936,
+    "maximum": 5267,
+    "processing": "Bilinear to mesh vertices; rounded metres; little-endian Int16",
+    "attribution": "Copernicus WorldDEM-30 © DLR e.V.2010–2014 and © Airbus Defence and Space GmbH2014–2018, provided by EU/ESA",
+    "license": "https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model",
+    "scope": "Surface elevation includes canopy/buildings, not surveyed road surface"
+  },
+  "geometry": {
+    "route": "/assets/routes/g318/route.json",
+    "place": "/assets/routes/g318/lulang.geojson",
+    "source": "/data/local-places/transport-corridors.manifest.json",
+    "acquiredAt": "2026-10-15T15:26:17.488534+00:00",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "https://www.openstreetmap.org/copyright",
+    "scope": "Original source-node chain and present-day footprints; endpoints are not verified public visitor entrances"
+  },
+  "limits": [
+    "Winter image from a single day, not current weather or all-season appearance",
+    "No street-view claim, no measured building heights or historic footprint reconstruction",
+    "Virtual map observation positions are not recommended roadside stopping points"
+  ],
+  "files": {
+    "lulang.geojson": {
+      "bytes": 569812,
+      "sha256": "fc20671549dbf97ec43229889461b57cf975cb2f24014d97a40a2b9af493b4d3"
+    },
+    "observations.json": {
+      "bytes": 2468,
+      "sha256": "06aafd85770fb7575436cc8796357d4e414a395ee03556c373e7f34926d35105"
+    },
+    "route.json": {
+      "bytes": 56988,
+      "sha256": "e3d90b0f1a11edcb397a2cb3a3696e21fed0c86633bde17be4bda784998a9914"
+    },
+    "sentinel-20251213.webp": {
+      "bytes": 4629666,
+      "sha256": "eab5578ae1de8784ae84e771ecb6385bda3d0d4c89cb5a019718da0aade84582"
+    },
+    "sentinel-item.json": {
+      "bytes": 35106,
+      "sha256": "cdec95d0ef30884f3481bacf81ef894bb24aa30b3946dcc337d043a5ed8ac840"
+    },
+    "terrain.int16": {
+      "bytes": 1616482,
+      "sha256": "3d365d9973ddb5f253daa3ba43aacf28b6513a71ebed98ae23889135f58c9c04"
+    }
+  },
+  "observations": "/assets/routes/g318/observations.json"
+}

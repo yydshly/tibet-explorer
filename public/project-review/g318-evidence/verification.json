@@ -1,0 +1,105 @@
+{
+  "id": "G318-pilot-20261019.1",
+  "baseCommit": "91a063a",
+  "date": "2026-10-19",
+  "entry": "/#/routes/g318-east/nyingchi-lulang",
+  "mainBaseline": {
+    "id": "V1-main-20261018.2",
+    "chapters": 6,
+    "clips": 21,
+    "durationSeconds": 750.024,
+    "existingClipObjectsCompared": 327,
+    "changedExistingClips": []
+  },
+  "route": {
+    "nodes": 1147,
+    "sourceEdges": 1146,
+    "sourceGeometryUnmodified": true,
+    "displayLengthMetres": 72029.50934754602,
+    "archiveDeclaredLengthMetres": 71971.7,
+    "lengthDifference": "显示使用局部平面投影累计；归档原长度保留。均约72km，不冒充官方公路里程。",
+    "sourceManifest": "/assets/routes/g318/manifest.json",
+    "observations": "/assets/routes/g318/observations.json"
+  },
+  "media": {
+    "clips": [
+      {
+        "cueId": "ROUTE-G318-orientation",
+        "durationSeconds": 32.724,
+        "timingLevel": "word",
+        "sha256": "86d1742b9e2f9341b2cefe6d47c7a61fddd3c817384b2947960da3b371983e47"
+      },
+      {
+        "cueId": "ROUTE-G318-mountains",
+        "durationSeconds": 41.976,
+        "timingLevel": "word",
+        "sha256": "8b49ffa3f84300f9cad7d29d2aad770d2682331f34685f7f3bee719dbb863c27"
+      },
+      {
+        "cueId": "ROUTE-G318-lulang",
+        "durationSeconds": 45.18,
+        "timingLevel": "word",
+        "sha256": "007812210457c9ad43cc5ac8f7c7bf1feda30ee0e58895e211811a318644fabc"
+      },
+      {
+        "cueId": "ROUTE-G318-return",
+        "durationSeconds": 30.384,
+        "timingLevel": "word",
+        "sha256": "42e85b3eeed3512d9ea325260c589cc33cccfcd6d6c19ca2f12fa4eded1ca063"
+      }
+    ],
+    "totalSeconds": 150.264
+  },
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed; existing shared Three/Line2 chunk >500kB warning",
+    "tests": {
+      "files": 4,
+      "checks": 26,
+      "passed": 26,
+      "scope": [
+        "real asset hashes/source node identity/coverage",
+        "native-word scene state and reverse seek",
+        "actual component callbacks: local comparison/exact return/note refresh/save failure",
+        "frozen six-chapter programme and actual controller with media doubles"
+      ]
+    },
+    "browser": {
+      "surface": "independent IAB QA tab, localhost5176 production build",
+      "entry": "overview -> route catalog -> first segment passed",
+      "naturalPlayback": "Native clip1 ->2 ->3 observed, moving route position and word captions; closing clip also sampled. Not claimed as uninterrupted audiovisual listening.",
+      "comparison": "Same48.1km sample: look-back, enter Lulang, local roads/footprints on/off visibly different",
+      "localReturn": "Restored mountains raw0.43, line progress0.668, height3000, lookBack=true",
+      "note": "Edited test question, saved, reloaded, text retained, returned raw0.43/progress0.668/height3000/lookBack=true",
+      "resume": "Actual browser: raw0.43 resumed the native word, naturally reached clip4 (observed61%), skipped the completed local visit exactly once, then ended at100% with replay control.",
+      "limits": [
+        "No system audio loopback/listening judgement",
+        "No formal first-viewer comprehension pass; existing mainline sample remains0/3"
+      ],
+      "console": "No error/warning entries during scoped pilot check",
+      "qaCleanup": "Cleared only the new pilot test note, selected first cue and reloaded at0%; owner overview tab untouched."
+    },
+    "reactReview": [
+      "Single recorded-media clock, derived scene state",
+      "Event-owned comparisons pause original, no media seek while comparing",
+      "Independent state keys and source-preserving geometry",
+      "Labeled range controls and keyboard buttons",
+      "Lazy route entry; abort/dispose Three resources on exit"
+    ]
+  },
+  "fixes": [
+    "Full-clip caption replaced by active recording phrase",
+    "No out-of-DEM local edges clamped to a false boundary route",
+    "Expanded same-corridor imagery context; separated labels with leaders",
+    "Place return skips completed automatic local visit once",
+    "Persisted height range matches UI; explicit step selection clears old return snapshot"
+  ],
+  "boundaries": [
+    "Single dated winter image, not streetscape/current weather/all-season appearance",
+    "GLO-30 surface model at approximately45-46m display sampling; true height1x; not surveyed road profile",
+    "2016/2017 documents support trial/operating organization, not historic footprint reconstruction",
+    "Virtual observation nodes are not verified roadside stopping/public entrances",
+    "Independent local browser notes, no account sync, old plans unchanged"
+  ],
+  "stopRule": "Freeze other content; no extra stops/models/duration; only fix reproduced blockers in this segment."
+}
