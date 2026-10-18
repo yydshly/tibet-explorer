@@ -1,5 +1,12 @@
 # Prototype Instructions
 
+## 2026-10-18 owner delegates review responsibility
+
+Owner: “看起来不错  但是你分析优化，方向是这样，不要总要让我关注”. Treat this as positive subjective feedback and authorization for assistant-led bounded checks, NOT a new request for repeated participant tasks. Do not keep prompting the owner to operate/explain each item. Report concrete defects/fixes and unverified limits concisely; maintain scope on the current chain. Formal first-viewer evidence remains separate.
+
+Fixed climate reading provenance: UI accepts only matching beat, sample, location/direction and moisture. Overlay emits on condition/receiver changes even if both results are clear, and refreshes after re-entry; prevents stale numbers/explanation following a new picture. Native playback/camera and content unchanged. 23 targeted checks and typecheck passed; browser restriction unchanged, no actual playback this turn.
+
+
 ## 2026-10-18 bounded rotation → inflow → orographic chain follow-up
 
 User authorized only this chain. No new scenes/recordings or duration: 6 chapters,21 slots,701.424s. Asian west/south schematic paths now reveal from their own native tokens; terrain/Himalaya attention follows 空气携带水汽. Same Earth and existing formation/DEM/cloud sequence retained. Actual archived91.1E DEM exposed old 抬升时 at progress.313 as descending; main LAB-air-higher now anchors ascent/condensation to rising samples21–27, ridge60–61 and lee70–85. Sample selection is presentation timing, NOT simulated physical speed or weather trajectory. Generic/depth recording timing remains unchanged.

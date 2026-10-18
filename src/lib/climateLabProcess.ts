@@ -1,5 +1,10 @@
 import {climateLabPlaces,type ClimateLabState} from '../data/climateLab';
-export interface ClimateLabReading {ground:number;lift:number;phase:string;cloud:number;rain:number;comparison?:Record<'higher'|'lower',{cloud:number;rain:number}>;}
+export interface ClimateLabReading {ground:number;lift:number;phase:string;cloud:number;rain:number;sourceKey?:string;comparison?:Record<'higher'|'lower',{cloud:number;rain:number}>;}
+/** Bind callback data to the rendered sample/conditions, not the previous frame. */
+export const climateLabReadingKey=(state:ClimateLabState)=>[state.stage,state.city,state.direction,Math.round(Math.max(0,Math.min(1,state.progress))*100),state.moisture].join(':');
+export function currentClimateLabReading(state:ClimateLabState|undefined,reading:ClimateLabReading|undefined){
+ return state&&reading?.sourceKey===climateLabReadingKey(state)?reading:undefined;
+}
 /** Qualitative appearance of this teaching overlay, never observed cloud cover/mm. */
 export function climateAirAppearance(value:{cloud:number;rain:number}){
  return `${value.cloud===0?'尚未成云':value.cloud<.35?'少量云':value.cloud<.75?'云增多':'云明显增多'} · ${Math.round(value.rain*120)===0?'无示意雨迹':value.rain<.35?'少量示意雨迹':'示意雨迹明显'}`;

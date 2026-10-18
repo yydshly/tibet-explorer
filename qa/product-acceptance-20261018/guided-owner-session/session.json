@@ -219,9 +219,9 @@
   ],
   "nextPrompt": {
     "chapter": "environment",
-    "stage": "review_scoped_visual_change",
-    "prompt": "当前用户窗口保持原暂停点，查看新的侧俯视与放大效果；后续继续原验收主线。",
-    "constraints": "不预填专业感或理解通过；不扩大修复范围。"
+    "stage": "assistant_led_bounded_review",
+    "prompt": "助手自行检查自转、亚洲来流、高原云雨链；直接处理确证缺陷，简要报告结果。无需向用户逐项布置验收任务。",
+    "constraints": "不扩展场景和时长；不绕过浏览器限制；保留未实际观看的证据边界。"
   },
   "issues": [
     {
@@ -271,5 +271,10 @@
       "implementation": "云雨镜头已获用户改善反馈；林芝、拉萨地形生活段新增逐句进出镜头，自动检查通过，尚未实际观看；其他高程段未改。"
     }
   ],
-  "currentProductBaseline": "六章 / 21段 / 701.424秒（自转段替换后；此前回答对应旧版）"
+  "currentProductBaseline": "六章 / 21段 / 701.424秒（自转段替换后；此前回答对应旧版）",
+  "ownerWorkflowPreference": {
+    "verbatim": "看起来不错  但是你分析优化，方向是这样，不要总要让我关注",
+    "meaning": "用户认可当前整体方向，要求助手主动分析、排查和改进；不要继续逐项主持用户操作或频繁索取确认。",
+    "acceptanceBoundary": "主观观感反馈；未记录具体比较操作、原因复述或返回结果，不伪填正式理解验收。"
+  }
 }

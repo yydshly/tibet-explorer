@@ -29,7 +29,7 @@ import {isUrbanPixelView,urbanComparison,urbanComparisonYears,urbanPixelCounts,t
 import OverviewInteractionControls from './OverviewInteractionControls';
 import {climateLabLifeFocus,climateLabPlaces,type ClimateLabState} from '../data/climateLab';
 import {overviewInteractionFeedback,overviewInteractionReason,overviewInteractionPatch} from '../lib/overviewInteraction';
-import type {ClimateLabReading} from '../lib/climateLabProcess';
+import {currentClimateLabReading,type ClimateLabReading} from '../lib/climateLabProcess';
 import './OverviewExperience.css';
 
 const clock=(seconds:number)=>`${Math.floor(seconds/60)}:${String(Math.floor(seconds%60)).padStart(2,'0')}`;
@@ -72,8 +72,8 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const [bridgeOverride,setBridgeOverride]=useState<{id:string;connected:boolean}>();
  const [urbanYear,setUrbanYear]=useState<UrbanComparisonYear>();
  const [interactionOverride,setInteractionOverride]=useState<{id:string;state:ClimateLabState}>();
- const [interactionReading,setInteractionReading]=useState<ClimateLabReading>();
- const onInteractionReading=useCallback((value:ClimateLabReading)=>setInteractionReading(value),[]);
+ const [interactionSample,setInteractionReading]=useState<{beatId:string;reading:ClimateLabReading}>();
+ const onInteractionReading=useCallback((value:ClimateLabReading)=>setInteractionReading({beatId:beat.id,reading:value}),[beat.id]);
  const [rotationOverride,setRotationOverride]=useState<{id:string;state:RotationFlowState}>();
  const recordedPresentation=overviewPresentation(beat,director.raw,director.timing);
  const rotationManual=rotationOverride?.id===beat.id;
@@ -96,6 +96,7 @@ function OverviewPlayback({onHome,onDetail,onDirectory,onMap,onSavePlan,program}
  const basePresentation=urbanComparison({...irrigationView,props:{...irrigationView.props,overviewMechanism:mechanism}},urbanYear);
  const interactionManual=interactionOverride?.id===beat.id;
  const interaction=interactionManual?interactionOverride.state:basePresentation.props.climateLab;
+ const interactionReading=currentClimateLabReading(interaction,interactionSample?.beatId===beat.id?interactionSample.reading:undefined);
  const interactionPresentation=interaction?{...basePresentation,scale:interaction.stage==='air'&&(interaction.airFocus??0)>.15?'真实高程剖面与周边 · 云雨侧俯视':climateLabLifeFocus(interaction)>.15?`${climateLabPlaces[interaction.city].name}与周边 · 同一地图放大`:'西藏与周边 · 整体地图',props:{...basePresentation.props,climateLab:interaction,progress:interaction.progress,selected:interaction.stage==='life'?`city:${interaction.city}`:'',climateObservationMonth:interaction.stage==='evidence'?interaction.month:undefined,climateObservationStationId:interactionManual?undefined:basePresentation.props.climateObservationStationId}}:basePresentation;
  const groundManual=groundOverride?.id===beat.id;
  const ground=groundManual?groundOverride.state:interactionPresentation.props.groundJourney;

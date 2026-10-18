@@ -2,7 +2,7 @@
 import {readFileSync} from 'node:fs';
 import {describe,expect,it,vi} from 'vitest';
 import * as THREE from 'three';
-import {climateLabCoordinates,climateLabAirState} from '../src/lib/climateLabProcess';
+import {climateLabCoordinates,climateLabAirState,currentClimateLabReading,type ClimateLabReading} from '../src/lib/climateLabProcess';
 import {climateLabNarrationCues,climateLabNarratedProgress,type ClimateLabState} from '../src/data/climateLab';
 import {sampleTerrainMetres} from '../src/scene/terrainReading';
 import {buildClimateLabOverlay} from '../src/scene/climateLabOverlay';
@@ -30,6 +30,21 @@ describe('interactive climate-to-life chain',()=>{
  });
  it('does not extrapolate if elevation is unavailable',()=>{
   const scene=buildClimateLabOverlay({metres:()=>undefined,at:()=>new THREE.Vector3()});scene.update(state);expect(scene.group.visible).toBe(false);scene.dispose();
+ });
+ it('rejects stale conditions and renews readings even when both moisture modes are clear',()=>{
+  const scene=buildClimateLabOverlay({metres,at:(lon,lat,offset=0)=>new THREE.Vector3(lon-90,metres(lon,lat)/1000+offset,32-lat)});
+  let latest:ClimateLabReading|undefined;const receive=vi.fn((r:ClimateLabReading)=>latest=r);
+  const first={...state,progress:0},changed={...first,moisture:'lower' as const};
+  scene.update(first,receive);const old=latest;
+  expect(currentClimateLabReading(first,old)).toBe(old);
+  expect(currentClimateLabReading(changed,old)).toBeUndefined();
+  scene.update(changed,receive);expect(receive).toHaveBeenCalledTimes(2);
+  expect(currentClimateLabReading(changed,latest)).toBe(latest);expect(latest?.cloud).toBe(0);
+  expect(currentClimateLabReading({...changed,progress:.6},latest)).toBeUndefined();
+  expect(currentClimateLabReading({...changed,city:'lhasa'},latest)).toBeUndefined();
+  scene.update(undefined);scene.update(changed,receive);expect(receive).toHaveBeenCalledTimes(3);
+  const nextBeat=vi.fn();scene.update(changed,nextBeat);expect(nextBeat).toHaveBeenCalledTimes(1);
+  scene.dispose();
  });
  it('changes actual cloud visibility and rain geometry at a fixed parcel, with a matching attached annotation',()=>{
   const scene=buildClimateLabOverlay({metres,at:(lon,lat,offset=0)=>new THREE.Vector3(lon-90,metres(lon,lat)/1000+offset,32-lat)});

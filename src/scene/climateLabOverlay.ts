@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {climateLabCoordinates,climateLabAirState,climateAirAnnotation} from '../lib/climateLabProcess';
+import {climateLabCoordinates,climateLabAirState,climateAirAnnotation,climateLabReadingKey} from '../lib/climateLabProcess';
 import type {ClimateLabReading} from '../lib/climateLabProcess';
 import {climateLabPlaces,climateLabLifeFocus,type ClimateLabState} from '../data/climateLab';
 import {disposeTree,label,line} from './environment';
@@ -48,17 +48,17 @@ export function buildClimateLabOverlay(runtime:Runtime){
    });cells.count=n;cells.instanceMatrix.needsUpdate=true;landGroup.userData={kind:'relative-low-gentle-dem-samples',thresholdMetres:threshold,scope:'观察窗内较低40%且相邻0.1度样本高差不超过250m；非建设适宜性或耕地'};
   }
  }
- let readingKey='';
+ let readingKey='',lastReceiver:((reading:ClimateLabReading)=>void)|undefined;
  return {group,update(state:ClimateLabState|undefined,onReading?:((reading:ClimateLabReading)=>void)){
   insetActive=!!state&&(state.stage==='life'&&climateLabLifeFocus(state)>.15||state.stage==='air'&&(state.airFocus??0)>.15);
-  group.visible=!!state&&state.stage!=='evidence';if(!state||!group.visible)return;
+  group.visible=!!state&&state.stage!=='evidence';if(!state||!group.visible){readingKey='';return;}
   const locality=state.stage==='air'?climateLabCoordinates(state,state.progress):climateLabPlaces[state.city];insetPin.position.copy(runtime.at(locality.longitude,locality.latitude,.2));
   rebuild(state);if(!samples.length){group.visible=false;return;}
   const progress=Math.max(0,Math.min(1,state.progress)),index=Math.round(progress*100),sample=samples[index];
   airGroup.visible=state.stage==='air';landGroup.visible=state.stage==='life'&&(state.landReveal??1)>0;
   const elevations=samples.map(s=>s.metres),value=climateLabAirState(elevations,progress,state.moisture)!;
-  const nextReading=JSON.stringify([state.stage,state.city,Math.round(value.ground),Math.round(value.lift),value.phase,Math.round(value.cloud*100),Math.round(value.rain*100)]);
-  if(nextReading!==readingKey){readingKey=nextReading;onReading?.({...value,comparison:{higher:climateLabAirState(elevations,progress,'higher')!,lower:climateLabAirState(elevations,progress,'lower')!}});}
+  const sourceKey=climateLabReadingKey(state),nextReading=JSON.stringify([sourceKey,Math.round(value.ground),Math.round(value.lift),value.phase,Math.round(value.cloud*100),Math.round(value.rain*100)]);
+  if(nextReading!==readingKey||onReading!==lastReceiver){readingKey=nextReading;lastReceiver=onReading;onReading?.({...value,sourceKey,comparison:{higher:climateLabAirState(elevations,progress,'higher')!,lower:climateLabAirState(elevations,progress,'lower')!}});}
   probe.position.copy(sample.point);const top=sample.point.clone().add(new THREE.Vector3(0,.65,0));
   const attr=mast.geometry.attributes.position as THREE.BufferAttribute;attr.setXYZ(0,...sample.point.toArray());attr.setXYZ(1,...top.toArray());attr.needsUpdate=true;mast.geometry.computeBoundingSphere();
   const text=`高程样本 ≈${Math.round(sample.metres/10)*10}米`;
