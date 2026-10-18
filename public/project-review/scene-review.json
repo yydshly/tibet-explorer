@@ -221,5 +221,6 @@
         ]
       }
     ]
-  }
+  },
+  "supersedingUpdate": "rotation-review.json"
 }

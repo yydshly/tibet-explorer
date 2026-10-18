@@ -6,6 +6,7 @@ import type {ClimateLabReading} from '../lib/climateLabProcess';
 
 export type SceneName = 'earth'|'tectonics'|'sun'|'atmosphere'|'rain'|'climate'|'region'|'landscape'|'history'|'culture'|'connections'|'modern'|'travel';
 export interface TibetSceneProps {
+  rotationFlow?:import('../data/rotationFlow').RotationFlowState;
   narratedGeography?:import('../lib/narratedGeography').GeographyReading;
   scene: SceneName; step:number; season:number; layer:string; progress:number; playing:boolean;
   selected:string; cutaway:boolean; resetKey:number; onSelect:(id:string)=>void; onInteract:()=>void;

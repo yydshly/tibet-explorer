@@ -3,6 +3,7 @@ export const historyOriginsCue={id:'OVERVIEW-history-origins',title:'形成：�
 export const cultureContinuityCue={id:'OVERVIEW-culture-continuity',title:'延续：从观看到学习与实践',stepId:'OVERVIEW' as const,chapterId:'overview' as const,
  narration:'形成以后，还需要有人继续实践。以藏戏为例，先有讲述、表演与观看。学习者靠近示范者，再进入共同练习，观察观看怎样接到参与机会。这里不复原具体演出，靠近也不等于已经学会。二〇〇九年联合国教科文组织的列入决定提出年轻实践者培训等保护措施，列入不是文化起源。你可以回拖比较：只有观看，与获得练习机会，差别在哪里？把学习与实践放回全域。已有的场所与生活继续存在，下一步看新的交通怎样改变进入和使用它们的条件。'};
 export const editorialChanges=[
+ {action:'替换',content:'自转一句带过 → 同一地球上的角动量对照',reason:'气压推动、自转偏转与地形影响分开解释；旧全球环流录音移入专题，主线仍21段，新增约25秒原因演示。',destination:'主线第2章 / 地形与云雨专题'},
  {action:'替换',content:'阿里通用生活说明 → 狮泉河灌渠与管护案例',reason:'用2023年报道和现状渠线区分自然条件、设施、劳动与补水结果；原说明移至专题，不增段落和时长。',destination:'主线第4章 / 高程与用水专题'},
  {action:'保留',content:'地球定位、全球来流、真实高程、三地气候与生活',reason:'构成自然条件到生活的共同解释基础。',destination:'主线第1—4章'},
  {action:'合并并缩短',content:'历史入口与跨时期概览',reason:'合为营建、用途与交流的问题；完整年代移入专题。',destination:'形成：营建与交流怎样赋予地方用途'},

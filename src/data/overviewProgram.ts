@@ -1,3 +1,4 @@
+import {rotationFlowCue,rotationFlowSources} from './rotationFlow';
 import {irrigationCue,irrigationSources} from './overviewIrrigation';
 import {historyOriginsCue} from './overviewEditorial';
 import {overviewCityChangeCore,overviewRegionalConnectionsCore,overviewObservationClose} from './overviewPacing';
@@ -64,6 +65,7 @@ const jokhangProtection:ProgramBeat={...placeActions,id:jokhangProtectionCue.id,
 const oldHistorySpace:ProgramBeat={id:historySpaceStory.id,recordingId:historySpaceStory.id,title:historySpaceStory.title,text:historySpaceStory.narration,kind:'heritage',chapterId:'history',topic:'culture',sources:historySpaceStory.sources,detailStepId:'K1'};
 const oldCityChange:ProgramBeat={id:overviewCityChange.id,recordingId:overviewCityChange.id,title:overviewCityChange.title,text:overviewCityChange.narration,kind:'atlas',chapterId:'history',topic:'connections',sources:cityChangeSources,detailStepId:'M1'};
 const cityChange:ProgramBeat={...oldCityChange,recordingId:overviewCityChangeCore.id,title:overviewCityChangeCore.title,text:overviewCityChangeCore.narration};
+const rotationFlow:ProgramBeat={...source('G1-observe'),recordingId:rotationFlowCue.id,title:rotationFlowCue.title,text:rotationFlowCue.narration,overviewScope:'whole',sources:rotationFlowSources};
 const irrigation:ProgramBeat={...interactive('LAB-life-ngari'),id:irrigationCue.id,recordingId:irrigationCue.id,title:irrigationCue.title,text:irrigationCue.narration,sources:irrigationSources};
 const chapters:ProgramChapter[]=[
  {id:'location',title:'地球上的西藏',question:'西藏在地球的哪里，周围有什么？',
@@ -81,7 +83,7 @@ const chapters:ProgramChapter[]=[
    {title:'高地',reason:'再认识来流要遇到的高地及真实高差。',beatIds:['OVERVIEW-formation-entry','G3-explain','G4-explain']},
    {title:'云雨',reason:'亲手移动气团，保持地形不变，对照水汽条件。',beatIds:['LAB-air-higher']},
   ],
-  beats:[...whole('G1-explain','G1-observe','OVERVIEW-formation-entry','G3-explain','G4-explain'),interactive('LAB-air-higher')]},
+  beats:[...whole('G1-explain'),rotationFlow,...whole('OVERVIEW-formation-entry','G3-explain','G4-explain'),interactive('LAB-air-higher')]},
  {id:'differences',title:'同在西藏，为何不同',question:'各地区的环境有哪些共同点和差别？',
   premise:'保留同一高原，先对照林芝、拉萨与阿里，再把七市地放回共同的区域背景。',
   conclusion:'用东部与东南部、中南部、北部与西部作比较入口；自然差异跨越行政线。',
@@ -143,7 +145,7 @@ export const overviewDepthPrograms=[
   {token:'再看阿里',title:'林地灌溉需要设施与维护',explanation:'2023年狮泉河林地案例，不是全阿里家庭供水。',focus:'ngari'},
   {token:'回到全域',title:'自然条件与人的行动',explanation:'自然条件需要经过建设、使用和维护才能进入生活。'},
  ]),sources:[...overviewSourceNotes.life,...placeSources.filter(s=>['lhasa-water-plan','chamdo-water','ngari-valley'].includes(s.id))]}]),
- depth('air-process','地形与云雨：分步观察','来流怎样经历抬升、凝结和地区差异？',['C4-arrival','C4-uplift','C4-cloud','C4-regions']),
+ depth('air-process','地形与云雨：分步观察','来流怎样经历抬升、凝结和地区差异？',['G1-observe','C4-arrival','C4-uplift','C4-cloud','C4-regions']),
  depth('formation','高原形成：完整过程','地壳怎样变形，为什么不能把高原理解成一块被顶起的平板？',archiveChapters.find(c=>c.id==='formation')!.beats.map(b=>b.id)),
  depth('objects','历史材料：怎样阅读实物','事件年代、物件年代与图像表现怎样区分？',['OVERVIEW-evidence-reading']),
  depth('lhasa-space','拉萨：建筑、街区与空间变化','历史用途怎样进入今天的城市空间？',[oldHistorySpace,'OVERVIEW-heritage-entry','CONT-history-lhasa-1','OVERVIEW-barkhor-life','CONT-history-lhasa-2','CONT-history-lhasa-3','OVERVIEW-lhasa-urban-change','OVERVIEW-heritage-return']),

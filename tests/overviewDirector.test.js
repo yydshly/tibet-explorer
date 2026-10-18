@@ -1,3 +1,6 @@
+import {overviewMainProgram} from '../src/data/overviewProgram';
+import {overviewPresentation} from '../src/lib/overviewScene';
+import {rotationManualState} from '../src/lib/rotationFlow';
 import {afterEach,beforeEach,describe,expect,it,vi} from 'vitest';
 import {readFileSync} from 'node:fs';
 
@@ -57,6 +60,27 @@ beforeEach(()=>{
 afterEach(()=>{harness.reset();refreshNarrationManifest();vi.unstubAllGlobals();vi.restoreAllMocks();});
 
 describe('continuous overview recorded director',()=>{
+ it('resumes the new rotation recording at its original native word and continues into highland formation',async()=>{
+  const original=overviewMainProgram.beats.find(b=>b.id==='G1-observe');
+  const next=overviewMainProgram.beats.find(b=>b.id==='OVERVIEW-formation-entry');
+  options={beats:[original,next].map(b=>({...b,sceneIdentity:overviewPresentation(b,0).sceneIdentity})),storageKey:KEY};
+  render().onSceneReady('journey:G1');render().playPause();await waitPlaying(0);
+  const clip=clipFor(original),timeline=timelineFor(original);
+  const offset=original.text.indexOf('来到更高纬度'),word=timeline.words.find(w=>w.textEnd>offset),seconds=word.start+.001;
+  tick(seconds);render().pause();const paused=render(),raw=paused.raw,caption=paused.timing.caption;
+  const state=overviewPresentation(original,raw,paused.timing).props.rotationFlow;
+  expect(rotationManualState(state,{enabled:false}).progress).toBe(state.progress);
+  expect(rotationManualState(state,{direction:'south'}).progress).toBe(state.progress);
+  expect(render().raw).toBe(raw);expect(render().playing).toBe(false);expect(render().timing.caption).toBe(caption);
+  render().playPause();await waitPlaying(0);
+  expect(media().currentTime).toBeCloseTo(seconds,8);expect(render().timing.caption).toBe(caption);
+  expect(overviewPresentation(original,render().raw,render().timing).props.rotationFlow).toEqual(state);
+  const advanced=ended();expect(advanced.beatIndex).toBe(1);expect(advanced.beat.id).toBe(next.id);
+  if(!advanced.ready)advanced.onSceneReady(options.beats[1].sceneIdentity);
+  await waitPlaying(1);expect(media().src).toBe(clipFor(next).url);
+ });
+
+
  it('waits for the current actual scene, rejecting old ready callbacks, before any audio',async()=>{
   let director=render();expect(director.ready).toBe(false);expect(director.playing).toBe(false);
   director.playPause();director=render();expect(director.wantsPlayback).toBe(true);expect(media().play).not.toHaveBeenCalled();

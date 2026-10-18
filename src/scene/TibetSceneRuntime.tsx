@@ -45,7 +45,11 @@ const sceneLoaders:Record<string,()=>Promise<SceneFactory>>={
   'living-landscape':()=>import('./livingLandscape').then(module=>(_props,_runtime,map)=>module.buildLivingLandscapeScene(map)),
   'landform-process':()=>import('./landformProcess').then(module=>(_props,_runtime,map)=>module.buildLandformProcessScene(map)),
   'history-inquiry':()=>import('./historyInquiry').then(module=>(_props,_runtime,map)=>module.buildHistoryInquiryScene(map)),
-  earth:()=>import('./earthOrientation').then(module=>(_props,runtime,map)=>module.buildEarthOrientation({...map,focus:(position,target)=>{
+  earth:()=>import('./earthOrientation').then(module=>(_props,runtime,map)=>module.buildEarthOrientation({...map,focusRecorded:(position,target)=>{
+    if(!map.isActive())return;
+    const aspect=earthFitAspect(runtime.camera.aspect);runtime.earthFramingAspect=aspect;
+    map.focus(earthFramedPosition(position,target,1,aspect),target,'recorded');
+  },focus:(position,target)=>{
     if(!map.isActive())return;
     const aspect=earthFitAspect(runtime.camera.aspect),framed=earthFramedPosition(position,target,1,aspect);
     runtime.earthFramingAspect=aspect;runtime.controls.minDistance=4.15;runtime.controls.maxDistance=20/aspect;

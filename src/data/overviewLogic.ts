@@ -8,7 +8,7 @@ export const overviewNextReason:Record<string,string>={
  'G1-opening':'有了海陆与大气背景，接下来沿洲、国家、自治区逐层定位，避免只记住一个点。',
  'OVERVIEW-position':'位置确定以后，要先解释太阳能量如何形成地区受热差异，才能理解空气为什么移动。',
  'G1-explain':'受热不均留下能量差异；下一步看大气怎样在全球搬运热与水。',
- 'G1-observe':'全球来流不会遇到平坦地表；回到亚洲，先认识它将遇到的高原。',
+ 'G1-observe':'自转改变水平运动方向；来到亚洲高地，还要看山地怎样使气流绕行或抬升。先认识高原形成，再读真实高差。',
  'OVERVIEW-formation-entry':'先解释高地形成的机制，再回到今天实际量得的地形。',
  'G3-explain':'形成模型解释变形原理，不能给出今天每个山谷的高度；下一步换回真实高程。',
  'G4-opening':'知道南北两侧有高差以后，沿同一剖线读出高差怎样连续变化。',
@@ -39,6 +39,7 @@ export const overviewNextReason:Record<string,string>={
 };
 
 export const overviewResumeAliases:Readonly<Record<string,string>>={
+ 'G1-observe':'G1-observe',
  'OVERVIEW-city-change':'OVERVIEW-city-change',
  'OVERVIEW-regional-connections':'OVERVIEW-regional-connections',
  'OVERVIEW-regional-observation':'OVERVIEW-conclusion',

@@ -194,6 +194,13 @@
       "verbatim": "我已经看过了 比当时好多了  现在这个思路实际上时一个反思，可以排查其他场景是否有类似的问题，然后继续",
       "assessment": "云雨改善获主观认可；授权排查同类问题，不计入首次观看者样本。",
       "assistantOperatedControls": false
+    },
+    {
+      "type": "implementation_update",
+      "chapter": "environment",
+      "issueId": "OWNER-ENV-02",
+      "result": "已替换并定向检查；实际视觉与用户理解待验收",
+      "assistantOperatedControls": false
     }
   ],
   "presentationRequests": [
@@ -236,14 +243,15 @@
     {
       "id": "OWNER-ENV-02",
       "chapter": "environment",
-      "status": "reported_causal_gap",
+      "status": "implemented_pending_visual_and_comprehension_acceptance",
       "userQuote": "比如 这里地球自转对他的影响，只是提了一下，但是如何影响的没说清楚，其他的我大概能看懂",
       "finding": "用户明确报告地球自转的影响只被提及，作用过程未说明清楚。",
       "scope": "自转如何影响气流及其与地区环境的联系；最终具体断点需原片段核对。",
       "severity": "已影响该机制的理解；不等于整章全部无法理解。",
-      "cause": "尚未检查原讲述和演示，不预判缺少的是文字、动画还是衔接。",
+      "cause": "代码核对：原讲述只提偏转，原环流返回支仅画示意弯曲，缺少原因展开与可控对照。",
       "acceptanceTarget": "用户能指着现有或修复后的过程说明自转影响了什么、通过什么关系发生，且不把自转当成气流运动的唯一原因。此为后续主持标准，不提前教给参与者。",
-      "implementation": "仅记录；当前不增加内容、模型或修改效果。"
+      "implementation": "主线G1-observe槽位替换为48.708秒OVERVIEW-rotation-air，原生逐词计时；同一地球上比较自转项、南北方向与相同运动进度，再收起轨迹转入亚洲来流。",
+      "verification": "42项定向检查、类型检查与新录音完整性检查通过；无本轮浏览器观看记录，尚无用户理解反馈。"
     },
     {
       "id": "OWNER-ENV-03",
@@ -262,5 +270,6 @@
       "acceptanceTarget": "观看者能指出讲到的位置和比较对象，感知高差并解释它与当前问题的联系；镜头放大不丢失全域位置。",
       "implementation": "云雨镜头已获用户改善反馈；林芝、拉萨地形生活段新增逐句进出镜头，自动检查通过，尚未实际观看；其他高程段未改。"
     }
-  ]
+  ],
+  "currentProductBaseline": "六章 / 21段 / 701.424秒（自转段替换后；此前回答对应旧版）"
 }

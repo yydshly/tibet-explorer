@@ -1,0 +1,19 @@
+{
+  "id": "0313712062bea23289de19f7ded555f0b965f19af84b246822dc69d6c2174609",
+  "url": "/assets/audio/narration/0313712062bea23289de19f7ded555f0b965f19af84b246822dc69d6c2174609.mp3",
+  "text": "受热差异参与形成气压差，推动空气。先看同一地球：各纬度转一圈的时间相同，低纬绕行的圈更大，地面向东速度更快。让空气向北移动，先去掉自转项，路径沿经线。加入自转，空气保留绕地轴的角动量；来到更高纬度，相对当地地面向东超前，路径向右偏。右是相对前进方向，向南时会向西偏。这里固定南北运动，忽略摩擦，不是实测风场。回到亚洲，西侧与南侧的来流受季节等条件影响，并不是这条试验轨迹。空气携带水汽遇到高原，还会绕行或抬升。接下来先看高原怎样形成，再沿真实高程观察抬升、冷却与云雨。",
+  "duration": 48.708,
+  "bytes": 781044,
+  "sha256": "0695d74cb0ca76604c3abffa8d96398c6649231dabc56005a14d350a4d528343",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-18T11:55:25.965Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/0313712062bea23289de19f7ded555f0b965f19af84b246822dc69d6c2174609.subtitles.json",
+  "subtitleSha256": "506ee5d97d0ada75371d216b2196a9c63177a20ad4783116ffd57943762b210b",
+  "timingLevel": "word"
+}

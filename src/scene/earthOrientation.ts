@@ -1,3 +1,4 @@
+import {buildRotationFlow,rotationFlowCamera} from './rotationFlow';
 import * as THREE from 'three';
 import { GOLD, TEAL, label, latLon, line } from './environment';
 import type { TibetSceneProps } from './TibetScene';
@@ -8,6 +9,7 @@ type Runtime = {
   camera: THREE.PerspectiveCamera;
   sun: THREE.DirectionalLight;
   focus: (position: THREE.Vector3, target: THREE.Vector3) => void;
+  focusRecorded?: (position:THREE.Vector3,target:THREE.Vector3)=>void;
   hasSavedView: (key: string) => boolean;
 };
 type Geometry = { type: 'Polygon' | 'MultiPolygon'; coordinates: number[][][] | number[][][][] };
@@ -107,6 +109,7 @@ export function buildEarthOrientation(runtime: Runtime) {
   const group = new THREE.Group(), earthMaterial = new THREE.MeshStandardMaterial({ color: 0x84b3bb, roughness: .95, metalness: 0 });
   const earth = new THREE.Mesh(new THREE.SphereGeometry(RADIUS, 112, 80), earthMaterial); earth.userData.blocksSelection = true; group.add(earth);
   const foundations = buildEarthFoundations(RADIUS, earthMaterial); group.add(foundations.group);
+  const rotationFlow=buildRotationFlow(RADIUS);group.add(rotationFlow.group);
   let alive = true;
   const textureReady=new Promise<void>(resolve=>new THREE.TextureLoader().load('/assets/earth-blue-marble.jpg', texture => {
     if (!alive) { texture.dispose();resolve(); return; }
@@ -164,6 +167,7 @@ export function buildEarthOrientation(runtime: Runtime) {
     callouts.push({ id, text, anchor, sprite, leader, pin, offset, layers, width: Math.max(74, text.length * (options.foundation ? 12 : 15) + 22), show: options.show, foundation: options.foundation });
   };
   for(const item of foundations.labels)addCallout(item.id,item.text,item.latitude,item.longitude,item.layers,item.offset,item.color,{radius:item.radius,selectable:item.selectable===true,show:item.show,foundation:true});
+  for(const item of rotationFlow.labels)addCallout(item.id,item.text,item.latitude,item.longitude,['earth-circulation'],item.offset,'#bce8ef',{radius:RADIUS+.13,foundation:true,show:p=>!!p.rotationFlow});
   addCallout('tibet', '西藏自治区', 31.1, 88.6, ['home', 'globe', 'asia', 'china', 'tibet', 'surroundings', 'plateau', 'moisture'], [-36, -20], '#f8dba1');
   addCallout('asia', '亚洲 · 洲', 46, 98, ['globe', 'asia'], [20, -24]);
   addCallout('china', '中国 · 国家', 35.5, 112, ['asia', 'china', 'tibet'], [35, -12]);
@@ -252,7 +256,7 @@ export function buildEarthOrientation(runtime: Runtime) {
   const ring = new THREE.Mesh(new THREE.RingGeometry(.10, .12, 44), new THREE.MeshBasicMaterial({ color: GOLD, side: THREE.DoubleSide }));
   ring.position.copy(latLon(31.1, 88.6, RADIUS + .067)); ring.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), ring.position.clone().normalize()); group.add(ring);
   const viewport = new THREE.Vector2(), projected = new THREE.Vector3(), cameraDirection = new THREE.Vector3(), worldPoint = new THREE.Vector3(), screenPosition = new THREE.Vector3();
-  let previousLayer = '', previousView = '';
+  let previousLayer = '', previousView = '',rotationCameraKey='';
   const focusLayer = (layer: string) => {
     const view: Record<string, [number, number, number]> = {
       globe: [17, 104, 12.7], asia: [25, 100, 10.5], china: [34, 103, 8.4], tibet: [32, 91, 6.9],
@@ -267,13 +271,14 @@ export function buildEarthOrientation(runtime: Runtime) {
     update: (p: TibetSceneProps, _time: number, _dt: number) => {
       const layer = canonicalLayer(p.layer);
       const foundation = isEarthFoundation(layer); foundations.update(p);
-      if(foundation)for(const callout of callouts){const anchor=foundations.anchor(callout.id);if(anchor)callout.anchor.copy(anchor);}
+      rotationFlow.update(p.rotationFlow);if(p.rotationFlow)foundations.group.visible=false;
+      if(foundation)for(const callout of callouts){const anchor=rotationFlow.anchor(callout.id)??foundations.anchor(callout.id);if(anchor){callout.anchor.copy(anchor);callout.pin.position.copy(anchor);}}
       const guide = p.guide, guided = !!guide?.active;
       const targets = guided ? guideTargets(guide.targets) : [], targetSet = new Set(targets);
       const inkProgress = guided ? THREE.MathUtils.clamp(guide.drawProgress, 0, 1) : 0;
       // Moving air/water examples use a leader attached to their actual body;
       // a surface bracket must not project them back down onto the globe.
-      const attentionTargets=targets.filter(id=>!['earth-vapour','circulation-cooling','circulation-cloud'].includes(id));
+      const attentionTargets=targets.filter(id=>!id.startsWith('rotation-')&&!['earth-vapour','circulation-cooling','circulation-cloud'].includes(id));
       const nextAttentionKey = `${attentionTargets.join('|')}:${guide?.relation ?? 'focus'}`;
       if (nextAttentionKey !== attentionKey) { attentionKey = nextAttentionKey; rebuildAttention(attentionTargets, guide?.relation === 'sequence'); }
       attention.visible = guided;
@@ -302,8 +307,16 @@ export function buildEarthOrientation(runtime: Runtime) {
       const restoringView = view !== previousView && runtime.hasSavedView(view);
       // The old G1 cache may contain a close Tibet camera. Foundation entries
       // establish a whole-Earth frame before any subsequent manual exploration.
-      if (layer !== previousLayer) { previousLayer = layer; if (foundation || !restoringView) focusLayer(layer); }
+      if (layer !== previousLayer) { previousLayer = layer; if (!p.rotationFlow&&(foundation || !restoringView)) focusLayer(layer); }
       previousView = view;
+      if(p.rotationFlow){
+        const state=p.rotationFlow,key=JSON.stringify([state.cameraMix,state.arrivalProgress,p.resetKey,runtime.camera.aspect]);
+        if(key!==rotationCameraKey){
+          rotationCameraKey=key;
+          const pose=rotationFlowCamera(state);
+          (runtime.focusRecorded??runtime.focus)(pose.position,pose.target);
+        }
+      }else rotationCameraKey='';
       china.visible = !foundation && (targetSet.has('china') || ['asia', 'china', 'tibet', 'latitude', 'zones'].includes(layer)); tibet.visible = !foundation && (targetSet.has('tibet') || !['home', 'globe'].includes(layer));
       plateau.visible = !foundation && (targetSet.has('plateau') || ['plateau', 'tibet'].includes(layer)); grid.visible = layer === 'latitude' || layer === 'zones'; zones.visible = layer === 'zones';
       relationshipFlows.visible = layer === 'moisture'; runtime.sun.position.set(-4, 8, -11);
@@ -344,7 +357,7 @@ export function buildEarthOrientation(runtime: Runtime) {
       for (const callout of visibleCallouts) {
         const facing = callout.anchor.clone().normalize().dot(cameraDirection);
         const emphasized = guidedCallouts.get(callout.id) === callout;
-        const enabled = (callout.layers.includes(layer) || emphasized) && facing > (callout.foundation ? .07 : .3) && (emphasized||!callout.show || callout.show(p)) && (!foundation || callout.foundation===true)&&(!foundation||!guided||emphasized);
+        const enabled = (!callout.id.startsWith('rotation-')||!!p.rotationFlow) && (callout.layers.includes(layer) || emphasized) && facing > (callout.foundation ? .07 : .3) && (emphasized||!callout.show || callout.show(p)) && (!foundation || callout.foundation===true)&&(!foundation||!guided||emphasized);
         callout.sprite.visible = enabled; callout.leader.visible = enabled;
         callout.pin.visible = enabled;
         callout.pin.scale.setScalar(emphasized ? 2.1 : callout.id === p.selected ? 1.45 : 1);

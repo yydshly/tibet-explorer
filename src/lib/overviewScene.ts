@@ -1,3 +1,5 @@
+import {rotationNarratedState} from './rotationFlow';
+import {rotationPresentation} from './overviewRotation';
 import {irrigationPresentation} from './overviewIrrigation';
 import {placeActionPresentation} from './overviewPlaceActions';
 import {overviewOriginsPresentation} from './overviewOrigins';
@@ -103,6 +105,7 @@ function selectedFocus(focus?:string) {
  * words drive the actual existing models and are kept within their clip. */
 function overviewBasePresentation(beat:OverviewSceneBeat,raw:number,timing?:NarrationTiming):OverviewPresentation {
   const fraction=clamp(raw),sourceTiming=recordedTiming(timing);
+  if(beat.recordingId==='OVERVIEW-rotation-air')return rotationPresentation(rotationNarratedState(sourceTiming));
   const mechanism=overviewMechanismState(beat.recordingId,beat.text,fraction,sourceTiming);
   if(mechanism)return {sceneIdentity:'atlas-overview',props:{scene:'region',viewKey:'atlas',layer:'atlas-overview',step:0,season:1,progress:mechanism.progress,selected:'',cutaway:false,overviewTopic:mechanism.kind==='water'?'life':'culture',overviewMechanism:mechanism},title:mechanism.title,explanation:mechanism.reason,scale:'西藏全域背景 · 功能观察窗',sourceScope:'功能示意与真实地理分开显示；不定位未知设施，不复原文物缺失部分、具体演出或实测人数。'};
   if(beat.recordingId==='OVERVIEW-history-origins')return overviewOriginsPresentation(beat.text,fraction,sourceTiming);
@@ -130,7 +133,20 @@ function overviewBasePresentation(beat:OverviewSceneBeat,raw:number,timing?:Narr
   if(['OVERVIEW-city-change','OVERVIEW-city-change-core'].includes(beat.recordingId))return cityChangePresentation(beat,fraction,sourceTiming);
   if(beat.recordingId==='OVERVIEW-lived-city')return overviewVisitPresentation(beat,fraction,sourceTiming);
   if(beat.recordingId==='OVERVIEW-heritage-return')return overviewHeritageReturnPresentation(beat,fraction,sourceTiming);
-  if(beat.kind==='orientation')return overviewOrientationPresentation(beat,fraction,sourceTiming);
+  if(beat.kind==='orientation'){
+    const view=overviewOrientationPresentation(beat,fraction,sourceTiming);
+    // The revised mainline already arrived at Asia on this same Earth. Keep
+    // its loaded renderer and frame instead of replaying globe -> Asia. The
+    // standalone archived orientation retains its original opening.
+    if(beat.recordingId==='OVERVIEW-formation-entry'&&beat.overviewScope==='whole'){
+      const opening=view.props.layer==='globe';
+      return {...view,sceneIdentity:'journey:G1',
+        ...(opening?{title:'保留亚洲来流，继续读高地',explanation:'刚才解释水平运动；现在保留同一地球，追问来流将遇到的地形。',scale:'亚洲与高原周边 · 延续上一段'}:{}),
+        props:{...view.props,viewKey:'G1',...(opening?{layer:'moisture',selected:'plateau',guide:view.props.guide?{...view.props.guide,targets:['central-asia','indian-ocean','plateau'],drawProgress:1}:undefined}:{})},
+      };
+    }
+    return view;
+  }
   if(beat.kind==='heritage')return overviewHeritagePresentation(beat,fraction,sourceTiming);
   if(beat.kind==='journey') {
     const script=beat.stepId?journeySteps[beat.stepId]:undefined;

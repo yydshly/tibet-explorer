@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "version": "六章 / 21段 / 11:16",
+  "version": "六章 / 21段 / 11:41",
   "verdict": "主线已贯通，整体产品尚未验收通过。",
   "scope": "本次仅准备M4首次观看者理解验收：六章任务、开放提问、主持判定与空白记录表。不改主线内容、模型、录音或时长，不重播整场。",
   "method": "按现有六章与实际控件编写任务，区分首次回答、自主操作后理解和提示后完成。计划3名首次观看者，目前0场；没有用户理解通过结论。此前功能与操作证据保留在更新记录中。",
@@ -187,5 +187,13 @@
     "status": "prepared_not_conducted",
     "completedSessions": 0,
     "plannedSessions": 3
+  },
+  "latestUpdate": {
+    "id": "OWNER-ENV-02",
+    "status": "implemented_pending_visual_and_comprehension_acceptance",
+    "report": "rotation-review.html",
+    "seconds": 701.424,
+    "previousSeconds": 676.872,
+    "notes": "原段替换，非新增场景；历史截图和此前结论不作为本次效果验收。"
   }
 }

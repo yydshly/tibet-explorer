@@ -51,7 +51,12 @@ describe('the complete overview keeps one causal route and exact recording ident
     const interactions=recordings.filter(b=>/^(LAB-|OBS-CLIMATE)/.test(b.recordingId));
     const cues=[...climateLabNarrationCues,...climateObservationNarrationCues];
     for(const beat of interactions)expect(cues.find(c=>c.id===beat.recordingId)?.narration).toBe(beat.text);
-    expect(recordings.filter(beat => !interactions.includes(beat)&&(beat.kind === 'atlas'||beat.kind==='orientation'||['OVERVIEW-barkhor-life','OVERVIEW-lhasa-urban-change'].includes(beat.recordingId))).map(beat => beat.recordingId).sort())
+    // Rendering kind does not own recording identity: mainline replacements can
+    // reuse the Earth or heritage renderer with their own exact audio.
+    const overviewIds=new Set(overviewNarrationCues.map(c=>c.id));
+    const overviewRecordings=recordings.filter(beat=>overviewIds.has(beat.recordingId));
+    for(const beat of overviewRecordings)expect(overviewNarrationCues.find(c=>c.id===beat.recordingId)?.narration).toBe(beat.text);
+    expect(overviewRecordings.map(beat => beat.recordingId).sort())
       .toEqual(overviewNarrationCues.filter(cue=>cue.id!=='OVERVIEW-ground-rail').map(cue => cue.id).sort()); // Preserved archive, superseded by valley-journey.
   });
 

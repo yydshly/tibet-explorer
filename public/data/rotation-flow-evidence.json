@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-18",
+  "title": "地球自转与气流：依据、计算与演示边界",
+  "sources": [
+    {
+      "title": "NOAA · 风的动力与自转偏转",
+      "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+      "note": "气压梯度推动空气；科里奥利效应改变方向，北半球右偏、南半球左偏。"
+    },
+    {
+      "title": "NOAA · 纬度、自转与向极运动",
+      "url": "https://www.noaa.gov/jetstream/global/jet-stream",
+      "note": "各纬度角速度相同，地面向东线速度不同；向极运动的空气相对地面向东超前。"
+    },
+    {
+      "title": "MIT · 大气角动量守恒",
+      "url": "https://pog.mit.edu/src/GeneralCirculationNotes_withFigs.pdf",
+      "note": "第9节：M=(Ωa cosφ+u)a cosφ。本例指定南北运动，忽略东西向力矩，不求解全球天气。"
+    }
+  ],
+  "verifiedFacts": [
+    "气压梯度力推动空气从高压向低压运动；自转产生的科里奥利效应使北半球水平运动向前进方向右偏。",
+    "地球各纬度角速度相同；向东线速度随纬度变化。",
+    "薄壳近似下，单位质量绕地轴角动量M=Ωa²cos²φ+ua cosφ；无东西向力矩时M守恒。"
+  ],
+  "sourceLocation": "MIT GeneralCirculationNotes，第9.1节，PDF第99—100页（从1计）；NOAA Origin of Wind 与 The Jet Stream。",
+  "model": {
+    "parameters": {
+      "startLatitude": 20,
+      "endLatitude": 40,
+      "longitude": 62,
+      "durationSeconds": 21600,
+      "omega": 0.00007292115,
+      "radiusMetres": 6371000
+    },
+    "parameterMeaning": "20—40°N、62°E与6小时为教学设定，不是观测。初始相对地面东西速度为0，假定南北匀速运动；去掉自转项令Ω=0，其余设定不变。",
+    "equations": [
+      "φ(t)=φ0+(φ1−φ0)t，t为0—1过程比例",
+      "M0=Ωa²cos²φ0；u=Ωa(cos²φ0/cosφ−cosφ)",
+      "Δλ=ΩT[cos²φ0(tanφ−tanφ0)/(φ1−φ0)−t]"
+    ],
+    "interpretation": "北移时相对地面向东超前，南移时向西落后。本例说明向极/向赤道运动的关系，不单独解释全部环流。",
+    "excluded": [
+      "不求解气压场或南北运动方程；开场气压箭头仅解释动力来源",
+      "不含东西向气压梯度、地表摩擦、地形或季节变化",
+      "不是完整无自转地球气候实验，不是实测风场或西藏来流轨迹"
+    ],
+    "display": "地球底图为地面参照；纬圈光标是等角推进的自转示意。离地高度、线宽、箭头大小为可读性夸张；云雨和降水不在本模型中计算。"
+  },
+  "handoff": "收起试验轨迹后，复用同一地球的西侧和南侧来流联系；再接现有高原形成、真实高程、抬升冷却云雨段。关系线不延续为同一个真实气团。"
+}

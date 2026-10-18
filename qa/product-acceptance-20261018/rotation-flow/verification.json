@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-18",
+  "scope": "替换主线G1-observe槽位；不增加章节或独立场景；旧G1-observe录音保留在air-process专题",
+  "sourcesVerified": [
+    {
+      "title": "NOAA · 风的动力与自转偏转",
+      "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+      "note": "气压梯度推动空气；科里奥利效应改变方向，北半球右偏、南半球左偏。"
+    },
+    {
+      "title": "NOAA · 纬度、自转与向极运动",
+      "url": "https://www.noaa.gov/jetstream/global/jet-stream",
+      "note": "各纬度角速度相同，地面向东线速度不同；向极运动的空气相对地面向东超前。"
+    },
+    {
+      "title": "MIT · 大气角动量守恒",
+      "url": "https://pog.mit.edu/src/GeneralCirculationNotes_withFigs.pdf",
+      "note": "第9节：M=(Ωa cosφ+u)a cosφ。本例指定南北运动，忽略东西向力矩，不求解全球天气。"
+    }
+  ],
+  "mainline": {
+    "chapters": 6,
+    "beats": 21,
+    "seconds": 701.424,
+    "previousSeconds": 676.872,
+    "deltaSeconds": 24.552,
+    "newRecordingSeconds": 48.708,
+    "previousRecordingSeconds": 24.156,
+    "chaptersInventory": [
+      {
+        "id": "location",
+        "beats": [
+          {
+            "id": "G1-opening",
+            "recordingId": "G1-opening",
+            "duration": 22.752
+          },
+          {
+            "id": "OVERVIEW-position",
+            "recordingId": "OVERVIEW-position",
+            "duration": 21.276
+          }
+        ]
+      },
+      {
+        "id": "environment",
+        "beats": [
+          {
+            "id": "G1-explain",
+            "recordingId": "G1-explain",
+            "duration": 22.14
+          },
+          {
+            "id": "G1-observe",
+            "recordingId": "OVERVIEW-rotation-air",
+            "duration": 48.708
+          },
+          {
+            "id": "OVERVIEW-formation-entry",
+            "recordingId": "OVERVIEW-formation-entry",
+            "duration": 18.396
+          },
+          {
+            "id": "G3-explain",
+            "recordingId": "G3-explain",
+            "duration": 18.612
+          },
+          {
+            "id": "G4-explain",
+            "recordingId": "G4-explain",
+            "duration": 25.92
+          },
+          {
+            "id": "LAB-air-higher",
+            "recordingId": "LAB-air-higher",
+            "duration": 37.548
+          }
+        ]
+      },
+      {
+        "id": "differences",
+        "beats": [
+          {
+            "id": "OBS-CLIMATE-7",
+            "recordingId": "OBS-CLIMATE-7",
+            "duration": 28.188
+          },
+          {
+            "id": "OBS-CLIMATE-1",
+            "recordingId": "OBS-CLIMATE-1",
+            "duration": 26.748
+          },
+          {
+            "id": "OVERVIEW-regional-system",
+            "recordingId": "OVERVIEW-regional-system",
+            "duration": 21.816
+          }
+        ]
+      },
+      {
+        "id": "living",
+        "beats": [
+          {
+            "id": "LAB-life-nyingchi",
+            "recordingId": "LAB-life-nyingchi",
+            "duration": 35.1
+          },
+          {
+            "id": "LAB-life-lhasa",
+            "recordingId": "OVERVIEW-life-lhasa",
+            "duration": 40.716
+          },
+          {
+            "id": "OVERVIEW-shiquanhe-irrigation",
+            "recordingId": "OVERVIEW-shiquanhe-irrigation",
+            "duration": 36.828
+          }
+        ]
+      },
+      {
+        "id": "human-history",
+        "beats": [
+          {
+            "id": "OVERVIEW-history-origins",
+            "recordingId": "OVERVIEW-history-origins",
+            "duration": 46.548
+          },
+          {
+            "id": "OVERVIEW-jokhang-protection",
+            "recordingId": "OVERVIEW-jokhang-protection",
+            "duration": 38.52
+          }
+        ]
+      },
+      {
+        "id": "today",
+        "beats": [
+          {
+            "id": "OVERVIEW-city-change",
+            "recordingId": "OVERVIEW-city-change-core",
+            "duration": 50.184
+          },
+          {
+            "id": "OVERVIEW-regional-connections",
+            "recordingId": "OVERVIEW-regional-connections-core",
+            "duration": 30.924
+          },
+          {
+            "id": "OVERVIEW-valley-journey",
+            "recordingId": "OVERVIEW-valley-journey",
+            "duration": 68.22
+          },
+          {
+            "id": "OVERVIEW-protection",
+            "recordingId": "OVERVIEW-protection",
+            "duration": 22.608
+          },
+          {
+            "id": "OVERVIEW-conclusion",
+            "recordingId": "OVERVIEW-observation-close",
+            "duration": 39.672
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "cueId": "OVERVIEW-rotation-air",
+    "mp3Sha256": "0695d74cb0ca76604c3abffa8d96398c6649231dabc56005a14d350a4d528343",
+    "subtitleSha256": "506ee5d97d0ada75371d216b2196a9c63177a20ad4783116ffd57943762b210b",
+    "nativeWords": 234,
+    "ffprobeSeconds": 48.708,
+    "assetIntegrity": "passed"
+  },
+  "checks": {
+    "focusedTests": 42,
+    "typecheck": "passed",
+    "build": "passed; existing runtime chunk >500kB warning retained",
+    "browser": "not conducted; prior browser automation was rejected by URL security policy; no alternate surface or automation workaround used",
+    "firstViewerAcceptance": "pending; 0/3"
+  },
+  "acceptanceTasks": [
+    "比较两条纬圈的推进，指出相同的是角度还是路程。",
+    "拖动到同一进度，切换自转项，指出路径变化并解释原因。",
+    "改为向南，解释为什么右偏不等于一直向东。",
+    "恢复原条件，从暂停处继续，听到亚洲来流与高原后指出两类影响的区别。"
+  ],
+  "limits": "数学、原生词时钟与播放器自动检查不证明用户看懂；未实听完整段、未浏览器视觉验收。",
+  "handoffCheck": "主线formation-entry复用journey:G1和同一地球，开场保留moisture/亚洲来流层；专题独立开场保持原样。"
+}
