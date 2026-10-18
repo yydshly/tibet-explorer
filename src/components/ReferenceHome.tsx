@@ -43,7 +43,7 @@ export default function ReferenceHome({onStartEarth,onContinue,hasResume,onCity,
   <div className="reference-home-shade" aria-hidden="true"/>
   <header className="reference-home-header">
    <a href="#/" className="reference-home-brand"><i/>西藏地理与人文<span>互动图鉴</span></a>
-   <nav aria-label="首页工具"><a className="project-review-entry" href="/project-review/index.html">项目思路与验收</a><button type="button" onClick={onSaved}><BookmarkSimple size={15}/>我的探索</button><button type="button" onClick={onDirectory}><List size={16}/>全部专题</button></nav>
+   <nav aria-label="首页工具"><a className="project-review-entry" href="/project-review/index.html" title="最初思路、阶段验收与后续处理方案">项目说明</a><button type="button" onClick={onSaved}><BookmarkSimple size={15}/>我的探索</button><button type="button" onClick={onDirectory}><List size={16}/>全部专题</button></nav>
   </header>
   <section className="reference-home-intro" aria-labelledby="reference-home-title">
    <h1 id="reference-home-title">西藏<span>XIZANG</span></h1>

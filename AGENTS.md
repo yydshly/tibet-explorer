@@ -1,5 +1,10 @@
 # Prototype Instructions
 
+## 2026-10-18 demonstration-first entry
+
+Root and #/ now resolve to #/overview and start at the opening (audio waits for user play). The optional catalogue is #/home. Project acceptance is secondary, via the 项目说明 button. Do not use the acceptance report as the default product entry. The four acceptance issues remain pending; changing navigation does not resolve them.
+
+
 ## 2026-10-18 bounded product acceptance; mainline frozen
 
 User requested a one-time whole-product acceptance, not another playback/optimization cycle. Current audit: public/project-review/index.html and review.json, linked from Home and overview. New evidence captured this turn is in public/project-review/evidence and qa/product-acceptance-20261018. Only chapter sampling and manual contrasts were done; no continuous playback this turn. Mainline recordings, models, cameras and content were not changed.
