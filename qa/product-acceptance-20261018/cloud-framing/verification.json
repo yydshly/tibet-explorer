@@ -1,0 +1,28 @@
+{
+  "scope": "User-requested cloud sequence framing adjustment",
+  "recording": "LAB-air-higher",
+  "raw": 0.497,
+  "parcel": 0.575,
+  "narrationAndDurationChanged": false,
+  "newModels": false,
+  "changes": [
+    "Native-word smooth framing from regional map to fixed oblique transect bounds, back to regional map",
+    "Moisture-independent camera and existing whole-map locator",
+    "Existing cloud meshes use shaded material and less flattened proportions",
+    "Displayed terrain exaggeration disclosed as ×16"
+  ],
+  "checks": [
+    "23 focused tests passed",
+    "typecheck passed",
+    "production build passed",
+    "same-caption screenshot in original viewport",
+    "wet/dry comparison and original-sentence resume",
+    "automatic entry to third chapter observed"
+  ],
+  "limits": [
+    "not whole-show playback",
+    "not participant comprehension acceptance",
+    "clouds and rain remain qualitative symbols",
+    "rotation explanation remains an open issue"
+  ]
+}

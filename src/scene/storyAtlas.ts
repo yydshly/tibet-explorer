@@ -638,14 +638,21 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       if (failed.visible) screenSprite(failed, viewport.x / 2, minY + 24, Math.min(viewport.x - 25, 315), 22);
       climateLab.update(p.climateLab,p.onClimateLabReading);
       if(p.climateLab){
-        const lab=p.climateLab,labKey=JSON.stringify([lab.stage,lab.city,lab.zoom,viewport.x,viewport.y,p.resetKey]);
+        const lab=p.climateLab,airFocus=lab.stage==='air'?(lab.airFocus??0):0,labKey=JSON.stringify([lab.stage,lab.city,lab.zoom,airFocus,Boolean(dem),viewport.x,viewport.y,p.resetKey]);
         if(lastLabCamera!==labKey){
           lastLabCamera=labKey;
           const whole=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},safeRect:{left:24,right:viewport.x-24,top:65,bottom:viewport.y-105},wholePoints:[...regionalAnchors.map(city=>at(city.longitude,city.latitude,.18)),...(lab.stage==='air'?[at(91.1,26.1,1.6),at(91.1,29.9,1.6)]:[])],resolve:()=>undefined,shot:{cameraFrom:{focusIds:[],amount:0},cameraTo:{focusIds:[],amount:0},cameraMix:0}});
-          if(lab.zoom&&lab.stage==='life'){
+          if(lab.stage==='air'&&airFocus>0){
+            // Frame the whole sourced transect and its atmosphere, not a floating
+            // isolated cloud. Fixed bounds keep wet/dry comparisons identical.
+            const profile=Array.from({length:21},(_,i)=>at(91.1,26.1+i/20*3.8,.04));
+            const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},safeRect:{left:30,right:viewport.x-30,top:100,bottom:viewport.y-135},wholePoints:profile.flatMap(point=>[point,point.clone().add(new THREE.Vector3(0,2.5,0))]),resolve:()=>undefined,shot:{cameraFrom:{focusIds:[],amount:0},cameraTo:{focusIds:[],amount:0},cameraMix:0},viewDirection:new THREE.Vector3(1.15,1,.55)});
+            const pose=overviewReturnCamera(whole,close,airFocus);
+            runtime.focus(pose.position,pose.target,'recorded');
+          }else if(lab.zoom&&lab.stage==='life'){
             const place=climateLabPlaces[lab.city],target=at(place.longitude,place.latitude,.1);
             runtime.focus(target.clone().add(new THREE.Vector3(0,5.3,4.6)),target,'local-place');
-          }else runtime.focus(whole.position,whole.target,'local-place');
+          }else runtime.focus(whole.position,whole.target,lab.stage==='air'?'recorded':'local-place');
         }
       }else lastLabCamera='';
       cityLife.update(p,viewport);

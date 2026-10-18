@@ -1,0 +1,115 @@
+Browser tab: 4, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 26-27, 44
+~				25 text 02  /  6  ·  空气遇到高原  ·  整体对照 手动观察，讲解已暂停 正在抬升 · 冷却不等于已经下雨。地形不变，较少水汽使示意云雨减少。
++				127 button 恢复原条件，从暂停处继续
+~					48 checkbox 较多水汽, Value: 0
+~					49 checkbox 较少水汽, Value: 1
+~			55 text 正在比较 · 主线已保留暂停位置
+~			59 text 整体对照  · 镜头为什么这样接 这是当前讲述中的同图对照。继续时恢复「较多水汽：从抬升到云雨」的暂停位置与画面，再按主线顺序前进。
+The focused UI element is 49 checkbox 较少水汽, Value: 1
+
+RESUME
+Browser tab: 4, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 19, 91, 127
++			127 text 全域定位 · 金点为当前气团
+~				25 text 02  /  6  ·  空气遇到高原  ·  整体对照 跟随讲述
++				128 container
++					129 text 云逐渐 增 多。
++				130 text 操作会暂停讲解，并保留当前语句。
+~					48 checkbox 较多水汽, Value: 1
+~					49 checkbox 较少水汽, Value: 0
+~			55 text 现在看什么
+~			59 text 整体对照  · 镜头为什么这样接 先改变水汽与气团位置，再用观测资料检查真实地区差异。
+~		90 button 暂停完整演示
++			131 image
+~			92 text 暂停演示
+The focused UI element is 0 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview
+
+LATER
+Browser tab: 4, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 17-18, 33-43, 47-53, 61-73, 76-77, 127, 129-130
+~				16 text 当前尺度 西藏与周边 · 整体地图
++			132 text 1991—2020气象站标准值 · 三站同一柱高比例
+~				25 text 03  /  6  ·  同在西藏，为何不同  ·  整体对照 跟随讲述
++					133 text 不是当天预 报 。
+~				30 text 03  /  6  ·  同在西藏，为何不同
+~			31 heading 各地区的环境有哪些共同点和差别？, Value: 1
+~				32 text 各地区的环境有哪些共同点和差别？
++			134 container 统一观察步骤
++				135 content list
++					136 text 看问题
++					137 text 操作比较
++					138 text 解释原因
++				139 text 夏季的差异能代表全年吗？
++				140 text 切换7月和1月，比较同一组三站。
++				141 container
++					142 text 看变化： 柱形与数值同步变化，比例尺保持一致。
++				143 button (collapsed) 比较后，核对原因, Secondary Actions: Expand
++					144 text 比较后，核对原因
++				145 text 操作会暂停讲解，并保留当前语句。
+~				46 text 动手对照：三站的冬夏差异
++				146 container 对照月份
++					147 checkbox 7月 · 夏季, Value: 1
++						148 text 7
++						149 text 月 · 
++						150 text 夏季
++					151 checkbox 1月 · 冬季, Value: 0
++						152 text 1
++						153 text 月 · 
++						154 text 冬季
++				155 table 1991—2020 · 站点常年值
++					156 text 1991—2020 · 站点常年值
++					157 row
++						158 cell
++							159 text 站点
++						160 cell
++							161 text 气温 °C
++						162 cell
++							163 text 降水 mm
++					164 row
++						165 cell
++							166 text 林芝
++						167 cell
++							168 text 16.5
++						169 cell
++							170 text 137.4
++					171 row
++						172 cell
++							173 text 拉萨
++						174 cell
++							175 text 16.5
++						176 cell
++							177 text 140.5
++					178 row
++						179 cell
++							180 text 狮泉河
++						181 cell
++							182 text 15.0
++						183 cell
++							184 text 22.9
+~				54 text 实测统计只代表站点；不能单独证明地形因果。
+~			56 heading 七月：用真实数据检验东西差异, Value: 2
+~				57 text 七月：用真实数据检验东西差异
+~			58 text 先比较同一统计尺度下的冬夏，再放大地区，读通行、用水与生活条件。
+~			59 text 整体对照  · 镜头为什么这样接 先比较同一统计尺度下的冬夏，再放大地区，读通行、用水与生活条件。
++				185 button 1 七月：用真实数据检验东西差异
++					186 text 1
++					187 text 七月：用真实数据检验东西差异
++				188 button 2 一月：同在高原，冬季条件仍不同
++					189 text 2
++					190 text 一月：同在高原，冬季条件仍不同
++				191 button 3 一张地图读懂七市地
++					192 text 3
++					193 text 一张地图读懂七市地
++			194 button (collapsed) 理解检查：我能解释变化和原因吗？, Secondary Actions: Expand
++				195 text 理解检查：我能解释变化和原因吗？
+~			79 text 七月的对照只是一个季节；再看一月，避免把夏季条件当作全年。
+~		97 text 3:15 / 11:16 自动衔接下一段
+~			103 text 下一段为什么接在这里 七月的对照只是一个季节；再看一月，避免把夏季条件当作全年。
+~			105 text 本段  1  /  3
+~			106 slider (settable, float) Description: 当前讲述进度, Value: 0.1550000011920929, Details: 0.155
+~			107 text 15 %
+The focused UI element is 0 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview

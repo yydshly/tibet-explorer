@@ -12,6 +12,8 @@ export interface OverviewAtlasCameraInput {
    * geographic coordinate or start an independent camera transition. */
   evidenceWidth?: number;
   safeRect?:OverviewAtlasSafeRect;
+  /** Optional oblique reading direction; existing atlas shots keep their default. */
+  viewDirection?:THREE.Vector3;
 }
 export interface OverviewAtlasCameraPose {position:THREE.Vector3;target:THREE.Vector3}
 export interface OverviewAtlasSafeRect {left:number;right:number;top:number;bottom:number}
@@ -60,8 +62,9 @@ export function overviewAtlasCamera(input:OverviewAtlasCameraInput):OverviewAtla
     return wholeCentre.clone().lerp(centre,clamp(frame.amount,0,.24));
   };
   const centre=emphasizedCentre(shot.cameraFrom).lerp(emphasizedCentre(shot.cameraTo),clamp(shot.cameraMix,0,1));
-  const direction=new THREE.Vector3(0,1,.7).normalize();
-  const up=new THREE.Vector3(0,direction.z,-direction.y),right=new THREE.Vector3(1,0,0);
+  const direction=(input.viewDirection??new THREE.Vector3(0,1,.7)).clone().normalize();
+  const right=new THREE.Vector3().crossVectors(new THREE.Vector3(0,1,0),direction).normalize();
+  const up=new THREE.Vector3().crossVectors(direction,right).normalize();
   const tanY=Math.tan(THREE.MathUtils.degToRad(camera.fov/2)),tanX=tanY*camera.aspect;
   const xMin=rect.left/viewport.width*2-1,xMax=rect.right/viewport.width*2-1;
   const yMin=1-rect.bottom/viewport.height*2,yMax=1-rect.top/viewport.height*2;

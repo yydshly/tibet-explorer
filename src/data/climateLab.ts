@@ -3,7 +3,7 @@ import {climateObservationNarrationCues} from './climateObservationNarration';
 
 export type ClimateLabStage='air'|'evidence'|'life';
 export type ClimateLabCity='nyingchi'|'lhasa'|'ngari';
-export interface ClimateLabState {stage:ClimateLabStage;progress:number;moisture:'higher'|'lower';city:ClimateLabCity;month:number;zoom:boolean;direction:'north-south'|'east-west';landReveal?:number;}
+export interface ClimateLabState {stage:ClimateLabStage;progress:number;moisture:'higher'|'lower';city:ClimateLabCity;month:number;zoom:boolean;direction:'north-south'|'east-west';landReveal?:number;airFocus?:number;}
 export const climateLabPlaces={
  nyingchi:{name:'林芝',longitude:verifiedPlaceReferences.nyingchi.longitude,latitude:verifiedPlaceReferences.nyingchi.latitude,question:'山地起伏怎样限制连续可用的地面？',reason:'先读周围坡面与较低地带，再讨论聚居和沿谷通行；高程概览不能认定街道、可建设地块或安全路线。'},
  lhasa:{name:'拉萨',longitude:verifiedPlaceReferences.lhasa.longitude,latitude:verifiedPlaceReferences.lhasa.latitude,question:'河谷提供了土地，城市为什么还需要建设？',reason:'较缓地面只是条件。城市用水和通行仍需要设施、管理与劳动；2022年水利规划是规划材料，不表示所有工程已完成。'},

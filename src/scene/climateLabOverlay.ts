@@ -20,7 +20,7 @@ export function buildClimateLabOverlay(runtime:Runtime){
  const parcel=new THREE.Mesh(new THREE.SphereGeometry(.25,20,14),basic(0x70dddc));airGroup.add(parcel);
  const airGeometry=new THREE.BufferGeometry();const airLine=new THREE.Line(airGeometry,new THREE.LineBasicMaterial({color:0x70dddc,transparent:true,opacity:.8}));airGroup.add(airLine);
  const vapour=Array.from({length:30},()=>{const sphere=new THREE.Mesh(new THREE.SphereGeometry(.045,8,6),basic(0x8ce9e7,.8));airGroup.add(sphere);return sphere;});
- const clouds=Array.from({length:18},(_,i)=>{const cloud=new THREE.Mesh(new THREE.SphereGeometry(.24,10,8),basic(0xe9f4f6,.85));cloud.scale.set(1.9,.7,1.1);cloud.userData.seed=i;airGroup.add(cloud);return cloud;});
+ const clouds=Array.from({length:18},(_,i)=>{const cloud=new THREE.Mesh(new THREE.SphereGeometry(.24,10,8),new THREE.MeshStandardMaterial({color:0xddebf0,roughness:1,transparent:true,opacity:.85,depthWrite:false}));cloud.scale.set(1.3+(i%3)*.14,.85+(i%2)*.16,1.05);cloud.userData.seed=i;airGroup.add(cloud);return cloud;});
  const rainPositions=new Float32Array(120*6),rainGeometry=new THREE.BufferGeometry();rainGeometry.setAttribute('position',new THREE.BufferAttribute(rainPositions,3));
  const rain=new THREE.LineSegments(rainGeometry,new THREE.LineBasicMaterial({color:0x96dfff,transparent:true,opacity:.85}));airGroup.add(rain);
  const probe=new THREE.Mesh(new THREE.SphereGeometry(.095,14,10),basic(0xffd286));profileGroup.add(probe);
@@ -49,9 +49,9 @@ export function buildClimateLabOverlay(runtime:Runtime){
  }
  let readingKey='';
  return {group,update(state:ClimateLabState|undefined,onReading?:((reading:ClimateLabReading)=>void)){
-  insetActive=!!state&&state.stage==='life'&&state.zoom;
+  insetActive=!!state&&(state.stage==='life'&&state.zoom||state.stage==='air'&&(state.airFocus??0)>.15);
   group.visible=!!state&&state.stage!=='evidence';if(!state||!group.visible)return;
-  const locality=climateLabPlaces[state.city];insetPin.position.copy(runtime.at(locality.longitude,locality.latitude,.2));
+  const locality=state.stage==='air'?climateLabCoordinates(state,state.progress):climateLabPlaces[state.city];insetPin.position.copy(runtime.at(locality.longitude,locality.latitude,.2));
   rebuild(state);if(!samples.length){group.visible=false;return;}
   const progress=Math.max(0,Math.min(1,state.progress)),index=Math.round(progress*100),sample=samples[index];
   airGroup.visible=state.stage==='air';landGroup.visible=state.stage==='life'&&(state.landReveal??1)>0;
@@ -65,7 +65,7 @@ export function buildClimateLabOverlay(runtime:Runtime){
   reading.visible=state.stage==='life';
   parcel.position.copy(sample.point).add(new THREE.Vector3(0,clearance,0));parcel.material.color.set(value.descending?0xf1bc82:0x70dddc);parcel.scale.setScalar(1+value.lift/9000);
   vapour.forEach((dot,i)=>{dot.visible=i<(state.moisture==='higher'?30:9);const t=Math.max(0,progress-i*.009),s=samples[Math.round(t*100)];dot.position.copy(s.point).add(new THREE.Vector3(Math.sin(i*2.4)*.12,clearance+Math.cos(i*1.8)*.1,0));});
-  clouds.forEach((cloud,i)=>{cloud.visible=value.cloud>i/23;cloud.position.copy(parcel.position).add(new THREE.Vector3(((i%6)-2.5)*.22,.27+Math.sin(i)*.05,(Math.floor(i/6)-1)*.22));cloud.material.opacity=value.cloud*.8;});
+  clouds.forEach((cloud,i)=>{cloud.visible=value.cloud>i/23;cloud.position.copy(parcel.position).add(new THREE.Vector3(((i%6)-2.5)*.24,.38+Math.sin(i)*.1,(Math.floor(i/6)-1)*.26));cloud.material.opacity=value.cloud*.8;});
   const count=Math.round(value.rain*120);rainGeometry.setDrawRange(0,count*2);
   for(let i=0;i<count;i++){const x=parcel.position.x+Math.sin(i*31.7)*.5,z=parcel.position.z+Math.cos(i*12.3)*.25,y=parcel.position.y-((i*.137+progress*7)%1)*.8;rainPositions.set([x,y,z,x,y-.19,z],i*6);}rainGeometry.attributes.position.needsUpdate=true;rainGeometry.computeBoundingSphere();
   landGroup.scale.setScalar(1);cells.material.opacity=state.landReveal===undefined?.25+progress*.6:.8*state.landReveal;

@@ -1,0 +1,249 @@
+{
+  "sessionId": "owner-guided-01",
+  "participant": "项目用户（匿名）",
+  "kind": "existing_participant_guided_acceptance",
+  "countsTowardFirstViewerSample": false,
+  "reason": "参与过项目讨论且已接触验收标准，不作为首次观看者样本。",
+  "status": "in_progress",
+  "productBaseline": "六章 / 21段 / 676.872秒",
+  "chapters": {
+    "location": {
+      "status": "discussion_complete_advance_at_user_request",
+      "initialResponse": "我觉得可以的   大概能清楚",
+      "operationEvidence": {
+        "kind": "participant_self_report",
+        "verbatim": "暂停再继续暂时没发现问题",
+        "result": "用户确认暂停与继续暂未发现问题；未由主持人现场观察"
+      },
+      "returnEvidence": {
+        "kind": "participant_self_report",
+        "result": "暂停后继续暂未报告问题；没有逐句或进度实测记录，不宣称已独立验证精确返回"
+      },
+      "understandingVerdict": "core_verbal_distinction_demonstrated_not_full_rubric_pass",
+      "reportedConfusion": [],
+      "initialResponseInterpretation": "主观上大致清楚；尚未提供位置与范围关系的解释、画面指认或暂停恢复结果。不据此判定通过，也不判定理解失败。",
+      "responses": [
+        {
+          "verbatim": "在中国的西南方  然后 西藏自治区和青藏高原实际上时重叠交叉的关系吧，代表地理， 暂时没感觉到画面和声音有异常",
+          "type": "explanation_and_subjective_sync_feedback"
+        },
+        {
+          "verbatim": "青藏高原指自然地理，自治区是行政划分。暂停再继续暂时没发现问题，继续第二章吧，重点看看气流、云雨的变化能不能看清楚，效果是否专业。",
+          "type": "range_clarification_and_resume_self_report"
+        }
+      ],
+      "understandingEvidence": {
+        "position": "正确说出中国西南方；未取得画面指认证据。",
+        "ranges": "用户明确区分青藏高原的自然地理含义与自治区的行政划分；此前范围表述歧义已澄清。"
+      },
+      "synchronizationFeedback": {
+        "verbatim": "暂时没感觉到画面和声音有异常",
+        "kind": "participant_self_report",
+        "reportedAnomaly": false,
+        "limits": "未独立观察操作；尚未确认用户实际暂停、继续与恢复原处。"
+      },
+      "remainingEvidenceLimits": [
+        "未取得画面指认、观看尺度与章间联系的完整证据；本次不继续追问，按用户要求转第二章。",
+        "不计入首次观看者样本，不自动升级正式整章验收结论。"
+      ]
+    },
+    "environment": {
+      "status": "advance_at_user_request_with_open_findings",
+      "responses": [
+        {
+          "verbatim": "气流大概能看懂，但云雨的变化还是不够明显，效果还不够专业。先记下来，继续带我做水汽条件对照，看看操作后的变化和原因能不能看清楚，再检查能不能回到原讲述。",
+          "type": "initial_visual_comprehension_feedback"
+        },
+        {
+          "verbatim": "比如 这里地球自转对他的影响，只是提了一下，但是如何影响的没说清楚，其他的我大概能看懂",
+          "type": "causal_explanation_gap"
+        },
+        {
+          "verbatim": "这里我时大概能看懂的，但是还可以优化吧，同时这几我看到高程的描述时，是不是对应语音可以适当优化展现效果，比如拉大地图介绍，比如其他手段等",
+          "type": "elevation_presentation_improvement_request"
+        }
+      ],
+      "understandingVerdict": "specific_rotation_causal_gap_reported_other_content_subjectively_understood",
+      "operationEvidence": null,
+      "returnEvidence": null,
+      "presentationEvidence": [
+        {
+          "issueId": "OWNER-ENV-01",
+          "verbatim": "云雨的变化还是不够明显，效果还不够专业",
+          "type": "participant_report",
+          "scope": "云雨变化辨识度与呈现质量；具体片段、参数和画面细节仍待对照定位"
+        },
+        {
+          "issueId": "OWNER-ENV-03",
+          "verbatim": "这里我时大概能看懂的，但是还可以优化吧，同时这几我看到高程的描述时，是不是对应语音可以适当优化展现效果，比如拉大地图介绍，比如其他手段等",
+          "type": "participant_improvement_request",
+          "finding": "用户表示大概能看懂，并建议高程描述配合语音放大地图等展示手段；尚未定位具体片段。"
+        }
+      ],
+      "reportedConfusion": [
+        {
+          "issueId": "OWNER-ENV-01",
+          "description": "云雨变化不够明显，可能影响辨识操作结果；暂不能确定是否也影响因果理解。"
+        },
+        {
+          "issueId": "OWNER-ENV-02",
+          "description": "地球自转影响被提及，但如何产生影响未讲清；用户指代的具体对象和片段待定位。"
+        }
+      ],
+      "closureNote": "按用户“继续我们的主线”进入第三章。保留OWNER-ENV-01/02/03；未明确取得水汽对照和返回结果，不判定已完成或通过。",
+      "developerVerification": {
+        "scope": "局部实现检查，不是用户验收结果",
+        "samePoint": "raw .497，气团 .575，4850m；切换较少水汽后镜头不变",
+        "resume": "恢复原条件后回到云逐渐增多语句并继续，随后实际进入第三章整体视角",
+        "tests": "23 focused tests, typecheck and build passed",
+        "limits": "未重新播放整场；没有用户对新效果的评价；自转因果缺口未解决。"
+      }
+    },
+    "differences": {
+      "status": "awaiting_watch_and_initial_explanation",
+      "responses": [],
+      "understandingVerdict": "not_assessed",
+      "operationEvidence": null,
+      "returnEvidence": null,
+      "presentationEvidence": [],
+      "reportedConfusion": []
+    }
+  },
+  "events": [
+    {
+      "type": "read_only_initial_ui",
+      "url": "http://127.0.0.1:5176/#/overview",
+      "chapter": "06 今天怎样联系与观察",
+      "position": "11:16 / 11:16；当前段100%；完整演示结束",
+      "interpretation": "只证明当前页面状态，不证明本次用户已观看、操作或理解。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "location",
+      "verbatim": "我觉得可以的   大概能清楚",
+      "assessment": "初步感受；需要具体解释与操作证据",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "location",
+      "verbatim": "在中国的西南方  然后 西藏自治区和青藏高原实际上时重叠交叉的关系吧，代表地理， 暂时没感觉到画面和声音有异常",
+      "assessment": "定位部分正确；范围含义待澄清；用户自报暂未觉察音画异常，暂停恢复尚未确认。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "location",
+      "verbatim": "青藏高原指自然地理，自治区是行政划分。暂停再继续暂时没发现问题，继续第二章吧，重点看看气流、云雨的变化能不能看清楚，效果是否专业。",
+      "assessment": "核心范围区别已解释；暂停继续用户自报正常；按用户要求进入第二章。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "environment",
+      "verbatim": "气流大概能看懂，但云雨的变化还是不够明显，效果还不够专业。先记下来，继续带我做水汽条件对照，看看操作后的变化和原因能不能看清楚，再检查能不能回到原讲述。",
+      "assessment": "记录具体呈现问题，未取得操作与原因解释证据。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "read_only_ui",
+      "tabId": "2",
+      "url": "http://127.0.0.1:5176/#/overview",
+      "chapter": "02 空气遇到高原",
+      "position": "本段1/6；86%；1:03/11:16；已暂停",
+      "visibleTitle": "空气和水 · 继续搬运热",
+      "controls": "水汽条件对照尚未显示",
+      "interpretation": "当前所读标签页的位置；不据此推断用户此前未看过云雨或否定其反馈。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "environment",
+      "verbatim": "比如 这里地球自转对他的影响，只是提了一下，但是如何影响的没说清楚，其他的我大概能看懂",
+      "assessment": "记录自转影响的具体因果缺口；其他大致可懂不代表已完成水汽操作或返回验证。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_feedback",
+      "chapter": "environment",
+      "verbatim": "这里我时大概能看懂的，但是还可以优化吧，同时这几我看到高程的描述时，是不是对应语音可以适当优化展现效果，比如拉大地图介绍，比如其他手段等",
+      "assessment": "理解大致成立的主观反馈，以及高程同步呈现改进建议；水汽具体对照和返回结果仍未得到明确回答。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "participant_steering",
+      "verbatim": "继续我们的主线",
+      "action": "从第二章验收转到第三章，不实施局部效果修改。",
+      "assistantOperatedControls": false
+    },
+    {
+      "type": "scoped_implementation_request",
+      "verbatim": "看到第二章的一些细节 在描述一些雨的场景时，是不是可以适当切换角度和放大，比如当下图中的效果，做适当的优化和调整",
+      "scope": "仅当前LAB-air-higher云雨段的镜头、现有云层外观与定位参照；不扩展模型、录音或时长。",
+      "prechangeObservation": "第二章6/6；raw .497；气团.575；较多水汽；字幕云逐渐增多；用户窗口845×871低视角下云气团雨线重叠。"
+    }
+  ],
+  "presentationRequests": [
+    {
+      "quote": "这里的效果呈现尽量专业化一些 比如云雨的介绍等",
+      "kind": "user_quality_requirement",
+      "target": "第二章云雨等呈现",
+      "status": "已有用户反馈云雨变化不明显、效果不够专业；记入OWNER-ENV-01，待操作对照定位。",
+      "evaluate": [
+        "过程变化是否看得清",
+        "语音与云雨变化及标注是否对应",
+        "能否区分真实数据与原理示意"
+      ],
+      "implementation": "本轮不修改内容、模型或效果"
+    }
+  ],
+  "nextPrompt": {
+    "chapter": "environment",
+    "stage": "review_scoped_visual_change",
+    "prompt": "当前用户窗口保持原暂停点，查看新的侧俯视与放大效果；后续继续原验收主线。",
+    "constraints": "不预填专业感或理解通过；不扩大修复范围。"
+  },
+  "issues": [
+    {
+      "id": "OWNER-ENV-01",
+      "chapter": "environment",
+      "status": "framing_and_existing_cloud_appearance_adjusted_awaiting_user_review",
+      "userQuote": "气流大概能看懂，但云雨的变化还是不够明显，效果还不够专业。先记下来，继续带我做水汽条件对照，看看操作后的变化和原因能不能看清楚，再检查能不能回到原讲述。",
+      "finding": "用户报告气流大概能看懂，但云雨变化不明显、呈现不够专业。",
+      "severity": "可读性问题已报告；是否阻断理解待操作验收",
+      "cause": "未诊断，不推断为材质、粒子或其他实现问题。",
+      "nextEvidence": "同一气团位置切换两种水汽，记录实际可辨变化、用户原因解释和恢复结果。",
+      "implementation": "语句驱动整体→侧俯视→整体；相同位置水汽对照保留镜头；既有云球使用受光材质与体积比例。未替换为天气模拟。"
+    },
+    {
+      "id": "OWNER-ENV-02",
+      "chapter": "environment",
+      "status": "reported_causal_gap",
+      "userQuote": "比如 这里地球自转对他的影响，只是提了一下，但是如何影响的没说清楚，其他的我大概能看懂",
+      "finding": "用户明确报告地球自转的影响只被提及，作用过程未说明清楚。",
+      "scope": "自转如何影响气流及其与地区环境的联系；最终具体断点需原片段核对。",
+      "severity": "已影响该机制的理解；不等于整章全部无法理解。",
+      "cause": "尚未检查原讲述和演示，不预判缺少的是文字、动画还是衔接。",
+      "acceptanceTarget": "用户能指着现有或修复后的过程说明自转影响了什么、通过什么关系发生，且不把自转当成气流运动的唯一原因。此为后续主持标准，不提前教给参与者。",
+      "implementation": "仅记录；当前不增加内容、模型或修改效果。"
+    },
+    {
+      "id": "OWNER-ENV-03",
+      "chapter": "environment",
+      "status": "cloud_segment_camera_applied_broader_elevation_presentation_still_pending",
+      "userQuote": "这里我时大概能看懂的，但是还可以优化吧，同时这几我看到高程的描述时，是不是对应语音可以适当优化展现效果，比如拉大地图介绍，比如其他手段等",
+      "finding": "理解大致成立，高程讲述希望通过镜头放大和对应展示加强空间感。",
+      "severity": "呈现改进建议，尚未证明阻断理解；不与自转因果缺口混为一项。",
+      "location": "高程描述段；具体片段与语句尚未确认。",
+      "proposedScope": [
+        "保留整体定位，在提及地区时平滑放大并保留全域参照。",
+        "提及高程时标明真实数据对应点或范围、海拔基准与单位；只展示已有资料支持的数值。",
+        "复用已有剖面或高程探针比较实际地面起伏，明确绝对海拔与两点高差；不虚构地形或用不标明的垂直夸张制造效果。",
+        "镜头、标注、剖面对照与对应语句同步；操作时暂停镜头跟随，恢复后返回原讲述。"
+      ],
+      "acceptanceTarget": "观看者能指出讲到的位置和比较对象，感知高差并解释它与当前问题的联系；镜头放大不丢失全域位置。",
+      "implementation": "仅本云雨段放大与全域定位已实施；其他高程段尚未修改。"
+    }
+  ]
+}

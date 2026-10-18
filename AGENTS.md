@@ -1,5 +1,12 @@
 # Prototype Instructions
 
+## 2026-10-18 user-requested cloud framing adjustment during guided acceptance
+
+User explicitly requested optimizing the currently shown rain segment after reporting unclear clouds/rain. Bounded exception to M4 preparation freeze: LAB-air-higher only. Same 21 clips /676.872s, acquired DEM and 18 existing cloud meshes; no new facts, scenes, recordings or weather model. Native text positions own airFocus (approach -> close through cloud/rain -> return before station evidence). Manual moisture snapshots retain focus; fixed transect bounds avoid camera change being mistaken for water-vapour effects. Existing whole-map locator reused; shaded cloud material and less flattened proportions; height exaggeration ×16 disclosed. Optional viewDirection in overviewAtlasCamera keeps the default atlas basis unchanged.
+
+QA: qa/product-acceptance-20261018/cloud-framing. Original viewport before/after at raw .497 /parcel .575; independent check tab verified lower moisture, resume at original cloud sentence and automatic chapter3. 23 focused tests/typecheck/build passed. No full-show playback or participant re-acceptance. User tab stays at original paused sentence. OWNER-ENV-02 rotation causal gap remains open; other elevation passages untouched. Guided owner session is separate from 0/3 first-viewer sample; never count developer interaction as user operation evidence.
+
+
 ## 2026-10-18 M4 first-viewer acceptance PREPARED, NOT CONDUCTED
 
 User requested preparation only. public/project-review/first-viewer contains a moderator guide, separate participant tasks without answers, six-chapter protocol.json, and blank records/sessions/issues/summary CSVs. Secondary entry from project-review only; demonstration remains product entry. Six chapters/21 beats/676.872s and all models/recordings/application code unchanged. Three first-time viewers planned, zero completed; no comprehension pass may be inferred from developer checks or these templates.

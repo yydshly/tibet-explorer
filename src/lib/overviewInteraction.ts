@@ -24,7 +24,13 @@ export function overviewInteractionState(id:string,text:string,timing?:Narration
  const probe=text.indexOf('移动探针'),turn=text.indexOf('切换剖面方向');
  const life=initial.stage==='life'&&probe>=0&&turn>probe&&land>turn;
  const progress=life?(position<probe?0:position<turn?(position-probe)/(turn-probe):position<land?(position-turn)/(land-turn):1):climateLabNarratedProgress(text,at);
- return {...initial,progress,direction:life&&position>=turn?'east-west':'north-south',landReveal:land>=0?Math.max(0,Math.min(1,(position-land)/18)):0,zoom:initial.stage==='life'&&enter>=0&&leave>enter&&position>=enter&&position<leave};
+ // Focus uses the same spoken-word position as the parcel. Manual snapshots
+ // preserve it across moisture changes; no timer or moisture-dependent camera.
+ const smooth=(n:number)=>{const t=Math.max(0,Math.min(1,n));return t*t*(3-2*t);};
+ const approach=text.indexOf('沿剖面向北移动'),close=text.indexOf('抬升时'),returnAt=text.indexOf('实际结果还受'),wholeAt=text.indexOf('现在保持同一地形');
+ const airFocus=initial.stage==='air'&&approach>=0&&close>approach&&returnAt>close&&wholeAt>returnAt
+  ?smooth((position-approach)/(close-approach))*(1-smooth((position-returnAt)/(wholeAt-returnAt))):undefined;
+ return {...initial,progress,airFocus,direction:life&&position>=turn?'east-west':'north-south',landReveal:land>=0?Math.max(0,Math.min(1,(position-land)/18)):0,zoom:initial.stage==='life'&&enter>=0&&leave>enter&&position>=enter&&position<leave};
 }
 export function overviewInteractionStation(state:ClimateLabState,text:string,id:string,timing?:NarrationTiming){
  return state.stage==='evidence'?climateObservationNarrationStation(state.month,{cue:{id,text},timing}):undefined;

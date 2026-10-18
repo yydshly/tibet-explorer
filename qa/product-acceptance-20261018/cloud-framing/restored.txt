@@ -1,0 +1,14 @@
+Browser tab: 4, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 136, 185-187
+~				16 text 当前尺度 真实高程剖面与周边 · 云雨侧俯视
+~				184 text 金线：真实高程 · 青色气团与云雨：原理示意 当前地面样本 ≈ 4850 米 · 地形高度×16显示 · 气团大小为示意
++			219 text 全域定位 · 金点为当前气团
++				220 container
++					221 text 云逐渐 增 多。
+~					207 slider (settable, float) Description: 气团位置, Value: 0.574999988079071, Details: 0.575
+~					208 text 当前地面样本 ≈4850米  · 金线不是道路
+~		97 text 2:51 / 11:16 自动衔接下一段
+~			106 slider (settable, float) Description: 当前讲述进度, Value: 0.4970000088214874, Details: 0.497
+~			107 text 50 %
+The focused UI element is 106 slider (settable, float) Description: 当前讲述进度, Value: 0.4970000088214874, Details: 0.497
