@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-18",
+  "scope": "M1: one sourced environment/facility/service case, not whole-show acceptance",
+  "source": "https://www.al.gov.cn/info/1035/48267.htm",
+  "duration": {"oldSeconds": 37.188, "newSeconds": 36.828, "mainSeconds": 676.872, "mainBeats": 21},
+  "automated": {"targetedTestsPassed": 37, "typecheck": "passed", "productionBuild": "passed; existing chunk-size warning", "nativeWordClipsVerified": 326},
+  "browser": [
+    "Gate open without clearing in the stated blocked-channel experiment does not advance delivery.",
+    "Gate plus clearing advances blue canal overlay and forest-footprint result; geography stays fixed.",
+    "Closing stops canal overlay while retaining delivered result.",
+    "Manual action preserves recording point and resume restores original narrated state.",
+    "New 36.828 second segment played normally from opening through automatic history chapter entry.",
+    "Final river-label correction checked in the released build with before/supply/stop screenshots; not another full playback."
+  ],
+  "fixedDuringInspection": ["Macro scene previously loaded only Lhasa, so Shiquanhe case remained at whole map; load required locality explicitly.", "Labels obscured the small result footprint; reserve that space and frame the acquired canal segment.", "River label anchor outside focus; use nearest acquired river node rather than an invented point."],
+  "limits": ["Not first-time-viewer comprehension acceptance.", "No full-show replay or mobile project this turn.", "Canal geometry is current OSM; flow direction, quantity and forest service relation are teaching symbols, not observations.", "No surveyed gate, branch, service area, household water claim or reported canal failure."]
+}

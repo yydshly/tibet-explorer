@@ -23,6 +23,18 @@ function setup(options={localityId:'lhasa'},override){
 }
 
 describe('scoped local map preload on the same regional world',()=>{
+  it('loads and frames the Shiquanhe irrigation locality rather than silently falling back to the macro map',async()=>{
+    const {model,fetch,size}=setup({localityId:'shiquanhe'});await model.ready;
+    expect([...model.places.keys()]).toEqual(['shiquanhe']);
+    expect(fetch.mock.calls.map(([url])=>url)).not.toContain('/data/local-places/lhasa.geojson');
+    const props={scene:'region',viewKey:'atlas',layer:'atlas-city-comparison',step:5,season:1,progress:0,selected:'city:ngari',cutaway:false,playing:false,overviewPresentation:true,resetKey:0,overviewIrrigation:{phase:'supply',progress:1,gate:true,cleared:true,delivered:.5,flowing:true}};
+    model.update(props,size);expect(model.active().id).toBe('shiquanhe');
+    const reading=model.active().group.userData.irrigation;
+    expect(reading.group.visible).toBe(true);expect(reading.group.children[0].visible).toBe(true);
+    model.update({...props,overviewIrrigation:{...props.overviewIrrigation,gate:false,flowing:false}},size);
+    expect(reading.group.children[0].visible).toBe(false);expect(reading.group.userData.reading.delivered).toBe(.5);
+    expect(model.group.userData.cameraFrame.localityId).toBe('shiquanhe');model.dispose();
+  });
   it('reads only Lhasa OSM and fine DEM while retaining original source nodes and route geometry',async()=>{
     const {model,fetch,size}=setup();await model.ready;
     const urls=fetch.mock.calls.map(([url])=>url),meta=manifest.places.find(place=>place.id==='lhasa');

@@ -28,6 +28,7 @@ export interface TibetSceneProps {
   overviewShot?:OverviewShot;
   overviewEvidenceWidth?:number;
   overviewReturnMix?:number;
+  overviewIrrigation?:import('../data/overviewIrrigation').IrrigationState;
   overviewPlaceAction?:import('../data/overviewPlaceActions').PlaceActionState;
   overviewCityChange?:import('../data/overviewCityChange').CityChangeState;
   overviewVisit?:{phase:'context'|'crossing'|'organization'|'street'|'shared'|'return';progress:number;motion:number};

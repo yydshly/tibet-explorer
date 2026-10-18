@@ -1,3 +1,4 @@
+import {irrigationPresentation} from './overviewIrrigation';
 import {placeActionPresentation} from './overviewPlaceActions';
 import {overviewOriginsPresentation} from './overviewOrigins';
 import {overviewMechanismState} from './overviewMechanisms';
@@ -105,6 +106,7 @@ function overviewBasePresentation(beat:OverviewSceneBeat,raw:number,timing?:Narr
   const mechanism=overviewMechanismState(beat.recordingId,beat.text,fraction,sourceTiming);
   if(mechanism)return {sceneIdentity:'atlas-overview',props:{scene:'region',viewKey:'atlas',layer:'atlas-overview',step:0,season:1,progress:mechanism.progress,selected:'',cutaway:false,overviewTopic:mechanism.kind==='water'?'life':'culture',overviewMechanism:mechanism},title:mechanism.title,explanation:mechanism.reason,scale:'西藏全域背景 · 功能观察窗',sourceScope:'功能示意与真实地理分开显示；不定位未知设施，不复原文物缺失部分、具体演出或实测人数。'};
   if(beat.recordingId==='OVERVIEW-history-origins')return overviewOriginsPresentation(beat.text,fraction,sourceTiming);
+  if(beat.recordingId==='OVERVIEW-shiquanhe-irrigation')return irrigationPresentation(fraction,sourceTiming);
   if(beat.recordingId==='OVERVIEW-jokhang-protection')return placeActionPresentation(fraction,sourceTiming,true);
   if(beat.recordingId==='OVERVIEW-place-actions')return placeActionPresentation(fraction,sourceTiming);
   if(beat.recordingId==='OVERVIEW-history-space')return historySpacePresentation(fraction,sourceTiming);

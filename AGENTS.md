@@ -1,5 +1,16 @@
 # Prototype Instructions
 
+## 2026-10-18 M1 sourced irrigation case
+
+Current main: six chapters /21 beats /676.872s (11:16). Authorized scope is one environment-to-service case only. OVERVIEW-shiquanhe-irrigation (36.828s native MiniMax words) replaces LAB-life-ngari (37.188s); original remains in conditions-use depth. M1 and M2 implementations checked, first-viewer comprehension NOT certified; M3/M4 remain pending.
+
+2023-11-20 Ngari government repost of Tibet Daily https://www.al.gov.cn/info/1035/48267.htm supports autumn low precipitation/evaporation, ranger Lunzhu opening irrigation and Tsering Sangzhuo clearing canals/patrol. public/data/shiquanhe-irrigation-evidence.json separates facts and unknowns. Current OSM way/307861096 is canal, way/1070107996 is forest reference, way/154210514 is river. Forest is NOT confirmed reported work parcel or canal service area. No surveyed gate, branch, flow direction, irrigation volume or actual obstruction.
+
+Same regional world and acquired Shiquanhe local DEM. Runtime macro-irrigation variant must load scoped shiquanhe instead of the old lhasa-only macro detail. Caption/state/camera read native word clock. Manual actions pause without seeking; gate+clearing advances qualitative delivery, closing removes flowing overlay and preserves prior delivery. Result fill is a teaching symbol on actual forest outline, not tree growth or measured soil moisture. Reserve label space around the result, river anchor uses nearest acquired node.
+
+QA: qa/product-acceptance-20261018/irrigation-case. Actual manual comparison/resume; new segment played from opening through automatic history transition; last river-label repair checked separately. NOT whole-show replay or first-viewer understanding test.37 scoped tests/typecheck/326 native word clips/build passed. Stop extending this case; project-review remains secondary to demonstration entry.
+
+
 ## 2026-10-18 M2 documented history case
 
 User authorized history only. Main chapter5 keeps origins and replaces generic culture-continuity with OVERVIEW-jokhang-protection (38.520s, MiniMax native word timing). Original continuity is retained in culture-practice depth. Six chapters/21 beats/677.232s (11:17); other closure items M1/M3 remain pending. Report chapter5 is partial: implementation checked, new-viewer comprehension NOT certified.

@@ -85,7 +85,7 @@ export function storyAtlasTravelProcess(_p: Pick<TibetSceneProps,'layer'|'step'|
 }
 
 /** Keep the actual source footprint explicit; never extrapolate its elevations. */
-export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boolean;overviewMesh?:boolean;regionalCityId?:RegionalJourneyCityId;requireElevation?:boolean;macroOverviewLocal?:boolean;groundView?:boolean}={}) {
+export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boolean;overviewMesh?:boolean;regionalCityId?:RegionalJourneyCityId;requireElevation?:boolean;macroOverviewLocal?:boolean;irrigationView?:boolean;groundView?:boolean}={}) {
   const group = new THREE.Group();
   group.userData.kind = 'continuous-story-atlas';
   const sourceAbort = new AbortController();
@@ -133,7 +133,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
     metres:(longitude,latitude)=>dem&&storyAtlasHasElevation(longitude,latitude)?sampleTerrainMetres(dem,longitude,latitude):undefined,
   });
   group.add(cityContinuity.group);
-  const localMap=buildCityLocalMap({maxAnisotropy:runtime.renderer.capabilities.getMaxAnisotropy(),camera:runtime.camera,project:storyAtlasPosition,metresPerUnit:METRES_PER_UNIT,regionalReady,regionalMetres:(longitude,latitude)=>dem?sampleRegionalSurfaceMetres(dem,longitude,latitude):undefined,focus:runtime.focus},{enabled:options.localDetails!==false,localityId:options.macroOverviewLocal?'lhasa':undefined,groundView:options.groundView});group.add(localMap.group);
+  const localMap=buildCityLocalMap({maxAnisotropy:runtime.renderer.capabilities.getMaxAnisotropy(),camera:runtime.camera,project:storyAtlasPosition,metresPerUnit:METRES_PER_UNIT,regionalReady,regionalMetres:(longitude,latitude)=>dem?sampleRegionalSurfaceMetres(dem,longitude,latitude):undefined,focus:runtime.focus},{enabled:options.localDetails!==false,localityId:options.irrigationView?'shiquanhe':options.macroOverviewLocal?'lhasa':undefined,groundView:options.groundView});group.add(localMap.group);
   const regionalSpatial=buildRegionalSpatialMap({camera:runtime.camera,project:storyAtlasPosition,metresPerUnit:METRES_PER_UNIT,regionalReady,regionalMetres:(longitude,latitude)=>dem?sampleRegionalSurfaceMetres(dem,longitude,latitude):undefined,focus:runtime.focus},options.regionalCityId);group.add(regionalSpatial.group);
   const localLocator=buildCityLocalLocator(at);group.add(localLocator.group);
   const transportReferences=buildTransportGeographicReferences({camera:runtime.camera,at},{enabled:options.localDetails!==false});group.add(transportReferences.group);

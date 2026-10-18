@@ -2,6 +2,7 @@
  * next place. These are editorial commitments, not claims of visual QA. */
 export const overviewNextReason:Record<string,string>={
  'OVERVIEW-history-origins':'营建与交流解释形成；下面看大昭寺供灯空间怎样在保护中调整，活动又怎样延续。',
+ 'OVERVIEW-shiquanhe-irrigation':'地形和水分是条件，设施与管护让条件进入生活；接着看营建与交流怎样形成地方用途。',
  'OVERVIEW-jokhang-protection':'活动延续但空间安排改变；新交通又怎样接入已有城市与生活？',
  'OVERVIEW-culture-continuity':'场所与实践仍被使用；新的交通怎样进入已有城市、改变接续条件？',
  'G1-opening':'有了海陆与大气背景，接下来沿洲、国家、自治区逐层定位，避免只记住一个点。',
@@ -42,6 +43,7 @@ export const overviewResumeAliases:Readonly<Record<string,string>>={
  'OVERVIEW-regional-connections':'OVERVIEW-regional-connections',
  'OVERVIEW-regional-observation':'OVERVIEW-conclusion',
  'OVERVIEW-conclusion':'OVERVIEW-conclusion',
+ 'LAB-life-ngari':'OVERVIEW-shiquanhe-irrigation',
  'G4-opening':'G4-explain',
  'OVERVIEW-water-service':'OVERVIEW-history-origins',
  'OVERVIEW-history-entry':'OVERVIEW-history-origins',

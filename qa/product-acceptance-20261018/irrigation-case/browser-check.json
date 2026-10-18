@@ -1,0 +1,71 @@
+{
+  "scope": "只核对本案例操作与正常播放自动进入历史；末次河流标注修复另作定点检查，未重播整场",
+  "checks": [
+    {
+      "name": "01-closed",
+      "time": "2026-10-18T10:33:17.055Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 47 button 重新对照"
+    },
+    {
+      "name": "02-gate-only",
+      "time": "2026-10-18T10:33:33.170Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 46 button 推进一次供水"
+    },
+    {
+      "name": "03-final-closed",
+      "time": "2026-10-18T10:35:24.645Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 47 button 重新对照"
+    },
+    {
+      "name": "04-final-gate-only",
+      "time": "2026-10-18T10:35:25.088Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 46 button 推进一次供水"
+    },
+    {
+      "name": "05-final-supply",
+      "time": "2026-10-18T10:35:25.507Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 46 button 推进一次供水"
+    },
+    {
+      "name": "06-final-stopped-retained",
+      "time": "2026-10-18T10:35:35.231Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 46 button 推进一次供水"
+    },
+    {
+      "name": "07-playback-context",
+      "time": "2026-10-18T10:35:47.025Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 117\n+\t\t\t\t120 container\n+\t\t\t\t\t121 text 次 仁桑卓清渠巡护。\n~\t\t89 text 5:54 / 11:16\n~\t\t\t96 slider (settable, float) Description: 当前讲述进度, Value: 0.30399999022483826, Details: 0.304\n~\t\t\t97 text 30 %\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    },
+    {
+      "name": "08-playback-supply",
+      "time": "2026-10-18T10:35:56.895Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t\t\t13 text 当前尺度 狮泉河 · 同一地形上的灌渠与城镇 2023年报道 · 现状地图\n~\t\t\t\t17 text 04  /  6  ·  环境怎样进入生活  ·  走近证据 跟随讲述\n~\t\t\t\t\t121 text 林 地获得补水。\n~\t\t\t\t44 checkbox 关闭闸门, Value: 1\n~\t\t\t\t45 checkbox 对照未清渠, Value: 1\n~\t\t\t\t49 text 已完成部分补水  ·  闸门打开且已清渠：可推进供水，观察补水结果增加。\n~\t\t\t52 heading 设施与管护共同让补水发生, Value: 2\n~\t\t\t\t53 text 设施与管护共同让补水发生\n~\t\t\t54 text 闸门打开且已清渠：可推进供水，观察补水结果增加。\n~\t\t\t55 text 走近证据  · 镜头为什么这样接 通水带与补水效果共同变化，非流量或灌区测量。\n~\t\t89 text 6:04 / 11:16\n~\t\t\t96 slider (settable, float) Description: 当前讲述进度, Value: 0.5730000138282776, Details: 0.573\n~\t\t\t97 text 57 %\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    },
+    {
+      "name": "09-auto-history",
+      "time": "2026-10-18T10:36:09.296Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~\t\t\t\t\t121 text 水量与灌区仅为示 意 。\n~\t\t\t\t44 checkbox 打开闸门, Value: 0\n~\t\t\t\t49 text 本次示意补水完成  ·  闸门关闭：本次补水停止，已完成的补水保留。\n~\t\t\t52 heading 补水停止，已完成的补水保留, Value: 2\n~\t\t\t\t53 text 补水停止，已完成的补水保留\n~\t\t\t54 text 闸门关闭：本次补水停止，已完成的补水保留。\n~\t\t\t55 text 走近证据  · 镜头为什么这样接 通道开关不改变已经完成的补水。\n~\t\t89 text 6:16 / 11:16\n~\t\t\t96 slider (settable, float) Description: 当前讲述进度, Value: 0.9089999794960022, Details: 0.909\n~\t\t\t97 text 91 %\nThe focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview"
+    },
+    {
+      "name": "10-actual-auto-history",
+      "time": "2026-10-18T10:36:30.665Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 82 button 播放完整演示"
+    },
+    {
+      "name": "11-release-closed",
+      "time": "2026-10-18T10:38:14.496Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 144 button 重新对照"
+    },
+    {
+      "name": "12-release-supply",
+      "time": "2026-10-18T10:38:15.004Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 143 button 推进一次供水"
+    },
+    {
+      "name": "13-release-stopped",
+      "time": "2026-10-18T10:38:26.560Z",
+      "state": "Browser tab: 2, Title: \"西藏探索 · 从地球到这片土地\", URL: \"http://127.0.0.1:5176/#/overview\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 141 checkbox 打开闸门, Value: 0"
+    }
+  ],
+  "consoleErrors": []
+}

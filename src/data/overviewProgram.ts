@@ -1,3 +1,4 @@
+import {irrigationCue,irrigationSources} from './overviewIrrigation';
 import {historyOriginsCue} from './overviewEditorial';
 import {overviewCityChangeCore,overviewRegionalConnectionsCore,overviewObservationClose} from './overviewPacing';
 import {overviewPlaceActions,jokhangProtectionCue} from './overviewPlaceActions';
@@ -63,6 +64,7 @@ const jokhangProtection:ProgramBeat={...placeActions,id:jokhangProtectionCue.id,
 const oldHistorySpace:ProgramBeat={id:historySpaceStory.id,recordingId:historySpaceStory.id,title:historySpaceStory.title,text:historySpaceStory.narration,kind:'heritage',chapterId:'history',topic:'culture',sources:historySpaceStory.sources,detailStepId:'K1'};
 const oldCityChange:ProgramBeat={id:overviewCityChange.id,recordingId:overviewCityChange.id,title:overviewCityChange.title,text:overviewCityChange.narration,kind:'atlas',chapterId:'history',topic:'connections',sources:cityChangeSources,detailStepId:'M1'};
 const cityChange:ProgramBeat={...oldCityChange,recordingId:overviewCityChangeCore.id,title:overviewCityChangeCore.title,text:overviewCityChangeCore.narration};
+const irrigation:ProgramBeat={...interactive('LAB-life-ngari'),id:irrigationCue.id,recordingId:irrigationCue.id,title:irrigationCue.title,text:irrigationCue.narration,sources:irrigationSources};
 const chapters:ProgramChapter[]=[
  {id:'location',title:'地球上的西藏',question:'西藏在地球的哪里，周围有什么？',
   premise:'先认识海洋、陆地和大气，再沿亚洲、中国、西藏逐层定位。',
@@ -90,8 +92,8 @@ const chapters:ProgramChapter[]=[
   premise:'带着各地差异，用土地、水和通行三个共同问题理解聚居与生活。',
   conclusion:'有较缓的地面、有水、有通道，都不等于已经获得服务；还需要设施、劳动与组织。',
   nextQuestion:'环境解释了条件，城市中心、信仰与文化又是怎样在历史中形成的？',scale:'区域差异 → 共同生活问题 → 全域',
-  stages:[{title:'比较地形',reason:'同图进入三地，对照起伏、连续地面与用水条件。',beatIds:['LAB-life-nyingchi','LAB-life-lhasa','LAB-life-ngari']}],
-  beats:[interactive('LAB-life-nyingchi'),interactive('LAB-life-lhasa'),interactive('LAB-life-ngari')]},
+  stages:[{title:'比较地形',reason:'同图进入三地，对照起伏、连续地面与用水条件。',beatIds:['LAB-life-nyingchi','LAB-life-lhasa']},{title:'设施与管护',reason:'狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。',beatIds:[irrigationCue.id]}],
+  beats:[interactive('LAB-life-nyingchi'),interactive('LAB-life-lhasa'),irrigation]},
  {id:'human-history',title:'人怎样塑造地方',question:'人的行动怎样形成地方历史与文化？',
   premise:'刚才比较了三地的自然条件和人的建设。现在回到全域，把生活放进时间，认识城市用途、知识交流和文化实践。',
   conclusion:'营建与交流帮助解释地方怎样形成；保护调整活动空间，供灯仍可延续。拉萨与托林提供具体线索，完整年代与更多地区保留在专题。',
@@ -131,7 +133,7 @@ function depth(id:string,title:string,question:string,ids:(string|ProgramBeat)[]
 }
 export const overviewDepthPrograms=[
  depth('modern-context','现代联系与观察：完整案例','通道、街区使用与地区观察怎样互相补充？',[oldCityChange,linking('OVERVIEW-regional-connections','connections',[]),linking('OVERVIEW-regional-observation','observation',[]),...whole('OVERVIEW-conclusion')]),
- depth('conditions-use','高程与用水：从条件到使用','怎样把地形与实际服务分开？',[...whole('G4-opening','G4-explain'),mechanism('OVERVIEW-water-service')]),
+ depth('conditions-use','高程与用水：从条件到使用','怎样把地形与实际服务分开？',[...whole('G4-opening','G4-explain'),interactive('LAB-life-ngari'),mechanism('OVERVIEW-water-service')]),
  depth('culture-practice','物件与传习：文化如何持续','保存物件与组织学习分别做了什么？',[mechanism('OVERVIEW-culture-actions'),mechanism('OVERVIEW-culture-continuity')]),
  depth('place-protection','拉萨保护与公共空间','保护怎样改变活动与公共使用？',[placeActions]),
  depth('history-context','历史与文化：补充阅读','怎样区分历史线索、文化概览与功能案例？',[...whole('OVERVIEW-history-entry'),historicalFrame(),'OVERVIEW-history-early','OVERVIEW-history-middle','OVERVIEW-history-modern','OVERVIEW-culture','OVERVIEW-life-conditions']),

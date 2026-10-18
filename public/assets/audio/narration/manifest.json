@@ -13349,6 +13349,25 @@
       "subtitleUrl": "/assets/audio/narration/7ca77997c6853f0936ac982386d8a0d7dc0d13b78f45590e9ba7a14c09c26ee4.subtitles.json",
       "subtitleSha256": "dfd06e9ead299173eb460b345dd6ffbd3c87dbd073beec4f59491f5c6c78d2f3",
       "timingLevel": "word"
+    },
+    {
+      "id": "6440e4bd5ed19a88232cca6311f7cb77c525983a732df76c3b531ee2f75af418",
+      "url": "/assets/audio/narration/6440e4bd5ed19a88232cca6311f7cb77c525983a732df76c3b531ee2f75af418.mp3",
+      "text": "狮泉河怎样用水？拉近看河流、灌渠与城镇。二〇二三年报道说，秋季少雨、蒸发大，护林员伦珠挡水开闸，次仁桑卓清渠巡护。先保留灌渠，停止供水。开闸并完成清渠，蓝色通水带推进，林地获得补水。关闭后停止补水，已送入的水保留。设施仍需管护，才能服务城镇周边绿化。渠线取自地图，水量与灌区仅为示意。回到全域，再问历史怎样塑造地方。",
+      "duration": 36.828,
+      "bytes": 590964,
+      "sha256": "0c7eb6d01e5a2c86ab005ec7e50976c0a18b1cbc01225f15777035a7bedaa811",
+      "provider": "MiniMax",
+      "model": "speech-2.8-hd",
+      "voice": "Chinese (Mandarin)_Gentleman",
+      "sampleRate": 32000,
+      "channel": 1,
+      "generatedAt": "2026-10-18T10:28:06.639Z",
+      "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+      "subtitleStatus": "provider",
+      "subtitleUrl": "/assets/audio/narration/6440e4bd5ed19a88232cca6311f7cb77c525983a732df76c3b531ee2f75af418.subtitles.json",
+      "subtitleSha256": "98bbf5262c7108c8e1d6286adc4185f5b6cf01a7fc3a9c79d69720ac750d15b8",
+      "timingLevel": "word"
     }
   ]
 }

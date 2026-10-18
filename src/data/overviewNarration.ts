@@ -1,3 +1,4 @@
+import {irrigationCue} from './overviewIrrigation';
 import {historyOriginsCue} from './overviewEditorial';
 import {overviewPacingCues} from './overviewPacing';
 import {overviewPlaceActions,jokhangProtectionCue} from './overviewPlaceActions';
@@ -24,7 +25,7 @@ export const barkhorNarration = '先留在大昭寺周围，把建筑放回街�
 export const lhasaUrbanNarration = '把布达拉宫和大昭寺一起放回拉萨河谷。它们承接了不同历史用途，周围的城市却没有停在那些年代。先看一九八五年已经检出的聚居地，青色像元保留早期基底。推进到二〇〇〇年，保持同一视角，比较青色基底周围新增了哪些范围。再到二〇一五年，金色像元显示后来检出的空间。这里是三十米遥感估计，不是古代城界，也不是每栋房子的建成年份；不能把这些变化全部归因于铁路。再回到现状街区，读改变怎样进入生活。二〇〇五年世界遗产报告记述，布达拉宫广场扩展为公共休憩空间，也涉及住户和机构搬迁。大昭寺周围的八廓街则有供排水和街面改善的记录。保护、居住和参访因此要共同安排，不能只保存一个建筑外形。拉回河谷，老城、宫殿和跨河交通仍在同一座城市里。接下来回到全域，再看铁路抵达以后，怎样通过道路和桥梁接入生活。';
 
 export const overviewNarrationCues: OverviewNarrationCue[] = [
-  overviewHistoryFrame, overviewCityChange, overviewPlaceActions, jokhangProtectionCue, historyOriginsCue, ...overviewPacingCues,
+  irrigationCue, overviewHistoryFrame, overviewCityChange, overviewPlaceActions, jokhangProtectionCue, historyOriginsCue, ...overviewPacingCues,
   ...overviewMechanismCues,
   historySpaceStory,
   {id:'OVERVIEW-valley-journey',title:'沿河谷理解：铁路怎样接入城市生活',narration:valleyJourneyText,stepId:'OVERVIEW',chapterId:'overview'},

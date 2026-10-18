@@ -9,10 +9,10 @@ describe('six-question editorial programme',()=>{
   const environment=overviewMainProgram.chapters.find(c=>c.id==='environment')!;
   expect(environment.stages!.flatMap(s=>s.beatIds)).toEqual(environment.beats.map(b=>b.id));
   const living=overviewMainProgram.chapters.find(c=>c.id==='living')!;
-  expect(living.beats.map(b=>b.id)).toEqual(['LAB-life-nyingchi','LAB-life-lhasa','LAB-life-ngari']);
+  expect(living.beats.map(b=>b.id)).toEqual(['LAB-life-nyingchi','LAB-life-lhasa','OVERVIEW-shiquanhe-irrigation']);
   const beat=living.beats[2];
   expect(beat.sources.some(s=>s.url==='https://www.al.gov.cn/info/1035/48267.htm')).toBe(true);
-  for(const raw of [0,.25,.5,.75,1])expect(overviewPresentation(beat,raw).sceneIdentity).toBe('atlas-overview');
+  for(const raw of [0,.25,.5,.75,1])expect(overviewPresentation(beat,raw).sceneIdentity).toBe('atlas-local-context');
  });
  it('keeps moved recordings reachable and includes a bounded animated street example in the main story',()=>{
   for(const decision of overviewEditorialDecisions)expect(Boolean(decision.mainChapter)||decision.depthPrograms.length>0,decision.id).toBe(true);
@@ -36,7 +36,7 @@ describe('six-question editorial programme',()=>{
   }
  });
  it('keeps whole-region narration except the explicit sourced ground journey',()=>{
-  for(const beat of overviewMainProgram.beats.filter(b=>b.kind==='atlas'&&!['OVERVIEW-valley-journey','OVERVIEW-city-change','OVERVIEW-history-origins','OVERVIEW-jokhang-protection'].includes(b.id))){
+  for(const beat of overviewMainProgram.beats.filter(b=>b.kind==='atlas'&&!['OVERVIEW-valley-journey','OVERVIEW-city-change','OVERVIEW-history-origins','OVERVIEW-jokhang-protection','OVERVIEW-shiquanhe-irrigation'].includes(b.id))){
    const p=overviewPresentation(beat,.5);
    expect(p.sceneIdentity).toBe('atlas-overview');
    expect(p.props.overviewLocalContext).not.toBe(true);

@@ -1,5 +1,6 @@
 export interface ObservationTask {question:string;action:string;change:string;reason:string}
 export const observationTasks:Record<string,ObservationTask>={
+ irrigation:{question:'有河流、有灌渠，为什么还需要人持续工作？',action:'重新对照：仅开闸后推进一次，再完成清渠并推进；最后关闭闸门对照。',change:'蓝色通水带与林地补水效果一起变化；停止供水不抹去已完成的补水。',reason:'2023年报道记录开闸、清渠、冬灌和巡护。设施提供条件，劳动与管护维持使用；地图林地只是参照，不能据此推断报道地块、实际灌区或家庭供水。'},
  air:{question:'地形相同，水汽不同，会怎样？',action:'先把气团停在同一位置，再切换较多 / 较少水汽。',change:'比较气团高度、云和降雨符号；地形保持不变。',reason:'地形抬升提供冷却条件，能否凝结还与水汽有关；符号解释原理，不预测雨量。'},
  evidence:{question:'夏季的差异能代表全年吗？',action:'切换7月和1月，比较同一组三站。',change:'柱形与数值同步变化，比例尺保持一致。',reason:'季节影响温度和降水；站点常年值不能代替整个地区，也不能单独证明地形因果。'},
  life:{question:'沿谷与跨山，面对的地面一样吗？',action:'保持同一地区，切换剖面方向并移动探针。',change:'比较高差与较缓地面的连续性。',reason:'地形改变通行与土地使用条件，实际城市仍需设施、劳动和组织；样本不是建设用地。'},
@@ -15,7 +16,7 @@ export const understandingChecks:Record<string,{prompt:string;points:string[];re
  location:{prompt:'在地图上指出西藏，说明自治区与青藏高原有什么区别。',points:['西藏自治区位于中国西南；青藏高原是跨行政范围的自然高地。','位置还包括周围海陆与山地，不能只记一个点。'],revisit:'OVERVIEW-position'},
  environment:{prompt:'同一座山，为什么改变水汽后，云雨表现会不同？',points:['地形抬升、冷却与水汽共同影响凝结。','气团和云雨是原理示意；真实高程没有随操作改变。'],revisit:'LAB-air-higher'},
  differences:{prompt:'比较三个站点的冬夏资料：哪些差异不能概括成“越往西越干”？',points:['比较同一月份、同一指标和同一比例尺。','季节不同，比较结果可改变；站点不能代表全部市域。'],revisit:'OBS-CLIMATE-7'},
- living:{prompt:'选一地说明：地形提供了什么条件，人的行动又补上了什么？',points:['用起伏或地面连续性说明通行、土地使用的条件。','用具体地方的设施、维护或组织说明条件怎样进入生活。'],revisit:'LAB-life-ngari'},
+ living:{prompt:'狮泉河有河流和灌渠，为什么还要开闸、清渠与巡护？关闭后什么停止，什么保留？',points:['盆地提供城镇与林地空间；报道中的秋季少雨、蒸发大使林地需要冬灌。','仅有渠道不等于持续供水；护林员的开闸、清渠和巡护让设施进入使用。','停止供水不抹去已完成补水；蓝色为功能示意，不能推断实际流量、闸口、灌区或家庭用水。'],revisit:'OVERVIEW-shiquanhe-irrigation'},
  'human-history':{prompt:'大昭寺供灯调整改变了什么、保留了什么，为什么这样安排？地图上的什么不能当作历史实测？',points:['形成可由拉萨营建用途与托林交流解释；后来保护也会调整已有用途。','2005年报告记载多数供灯转至寺前半地下供灯室；火源与木构分开，供灯仍继续。','2005年是监测报告年份，不是竣工日期；现状地物和关系符号不能当作历史灯位或供灯室测绘。'],revisit:'OVERVIEW-jokhang-protection'},
  today:{prompt:'桥接通以后，什么改变了，什么仍需要人来完成？把这个问题带到一次地方观察。',points:['这条道路能够跨河接续，但交通服务仍需要车辆、组织与地方道路。','到地方观察地形、历史用途和今天生活；认识顺序不是可订旅行路线。'],revisit:'OVERVIEW-city-change'},
 };

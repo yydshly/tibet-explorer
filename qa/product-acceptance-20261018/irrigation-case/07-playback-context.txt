@@ -1,0 +1,9 @@
+Browser tab: 2, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 117
++				120 container
++					121 text 次 仁桑卓清渠巡护。
+~		89 text 5:54 / 11:16
+~			96 slider (settable, float) Description: 当前讲述进度, Value: 0.30399999022483826, Details: 0.304
+~			97 text 30 %
+The focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview

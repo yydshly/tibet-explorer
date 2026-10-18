@@ -30,7 +30,7 @@ type SceneFactory=(props:TibetSceneProps,runtime:Runtime,mapRuntime:MapRuntime)=
 const sceneFactories=new Map<string,SceneFactory>();
 const pendingFactories=new Map<string,Promise<SceneFactory>>();
 const sceneLoaders:Record<string,()=>Promise<SceneFactory>>={
-  'story-atlas':()=>import('./storyAtlas').then(module=>(props,_runtime,map)=>module.buildStoryAtlasScene(map,{localDetails:props.overviewLocalContext||props.viewKey!=='atlas-home'&&props.layer!=='atlas-regional-journey'&&props.layer!=='atlas-overview',overviewMesh:props.viewKey==='atlas-home',requireElevation:props.layer==='atlas-overview'||props.overviewLocalContext,macroOverviewLocal:props.overviewLocalContext,groundView:Boolean(props.groundJourney),regionalCityId:props.layer==='atlas-regional-journey'?props.selected.replace(/^city:/,'') as 'shigatse'|'shannan'|'chamdo'|'nagqu':undefined})),
+  'story-atlas':()=>import('./storyAtlas').then(module=>(props,_runtime,map)=>module.buildStoryAtlasScene(map,{localDetails:props.overviewLocalContext||props.viewKey!=='atlas-home'&&props.layer!=='atlas-regional-journey'&&props.layer!=='atlas-overview',overviewMesh:props.viewKey==='atlas-home',requireElevation:props.layer==='atlas-overview'||props.overviewLocalContext,macroOverviewLocal:props.overviewLocalContext,irrigationView:Boolean(props.overviewIrrigation),groundView:Boolean(props.groundJourney),regionalCityId:props.layer==='atlas-regional-journey'?props.selected.replace(/^city:/,'') as 'shigatse'|'shannan'|'chamdo'|'nagqu':undefined})),
   'terrain-reading':()=>import('./terrainReading').then(module=>(props,_runtime,map)=>module.buildTerrainReadingScene(map,{regional:['E1','E2'].includes(props.viewKey||'')})),
   'local-landscape':()=>import('./localLandscape').then(module=>(_props,_runtime,map)=>module.buildLocalLandscapeScene(map)),
   'potala-study':()=>import('./palaceStudy').then(module=>(_props,_runtime,map)=>module.buildPalaceStudyScene(map)),
@@ -598,7 +598,7 @@ export default function TibetSceneRuntime(props:TibetSceneProps){
   const viewKey=props.viewKey??(home?'home':`${props.scene}:${props.step}`);
   const factoryKey=specializedStep.startsWith('connection-')?'connection-processes':specializedStep==='regional-study'?'terrain-reading':specializedStep||(['earth','tectonics','culture','sun'].includes(props.scene)?props.scene:isOverview(props.scene)?'overview':'terrain');
   const factory=sceneFactories.get(factoryKey)||builtInFactories[factoryKey];
-  const modelVariant=specializedStep==='story-atlas'?(props.groundJourney?'macro-ground':props.overviewLocalContext?'macro-with-local':props.layer==='atlas-overview'?'macro-overview':props.layer==='atlas-regional-journey'?`regional:${props.selected}`:'standard'):'';
+  const modelVariant=specializedStep==='story-atlas'?(props.groundJourney?'macro-ground':props.overviewIrrigation?'macro-irrigation':props.overviewLocalContext?'macro-with-local':props.layer==='atlas-overview'?'macro-overview':props.layer==='atlas-regional-journey'?`regional:${props.selected}`:'standard'):'';
   useEffect(()=>{markSceneTiming('tibet:scene-request',viewKey);},[viewKey,specializedStep]);
   useEffect(()=>{
     if(factory)return;

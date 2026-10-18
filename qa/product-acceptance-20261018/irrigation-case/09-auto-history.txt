@@ -1,0 +1,13 @@
+Browser tab: 2, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~					121 text 水量与灌区仅为示 意 。
+~				44 checkbox 打开闸门, Value: 0
+~				49 text 本次示意补水完成  ·  闸门关闭：本次补水停止，已完成的补水保留。
+~			52 heading 补水停止，已完成的补水保留, Value: 2
+~				53 text 补水停止，已完成的补水保留
+~			54 text 闸门关闭：本次补水停止，已完成的补水保留。
+~			55 text 走近证据  · 镜头为什么这样接 通道开关不改变已经完成的补水。
+~		89 text 6:16 / 11:16
+~			96 slider (settable, float) Description: 当前讲述进度, Value: 0.9089999794960022, Details: 0.909
+~			97 text 91 %
+The focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview

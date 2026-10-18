@@ -37,6 +37,23 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('regional comparison inside a paused main narration',()=>{
+ it('compares irrigation conditions without seeking, retains delivered water, and restores the spoken state',()=>{
+  media.current.beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-shiquanhe-irrigation');
+  const beat=overviewMainProgram.beats[media.current.beatIndex];
+  media.current.timing={textProgress:beat.text.indexOf('先保留灌渠')/beat.text.length};
+  const scene=()=>find(render(),node=>typeof node.props?.onGroundJourneyReading==='function');
+  const original=scene().props.overviewIrrigation;
+  const button=(text:string)=>find(render(),node=>node.type==='button'&&node.props.children===text);
+  button('打开闸门').props.onClick();button('推进一次供水').props.onClick();
+  expect(scene().props.overviewIrrigation.delivered).toBe(0);
+  button('完成清渠').props.onClick();button('推进一次供水').props.onClick();
+  expect(scene().props.overviewIrrigation).toMatchObject({delivered:.25,flowing:true});
+  button('关闭闸门').props.onClick();button('推进一次供水').props.onClick();
+  expect(scene().props.overviewIrrigation).toMatchObject({delivered:.25,flowing:false});
+  expect(media.current.pause).toHaveBeenCalled();expect(media.current.seek).not.toHaveBeenCalled();expect(media.current.select).not.toHaveBeenCalled();
+  const guide=find(render(),node=>node.props?.kind==='irrigation'&&typeof node.props?.onResume==='function');guide.props.onResume();
+  expect(scene().props.overviewIrrigation).toEqual(original);expect(media.current.playPause).toHaveBeenCalledOnce();
+ });
  it('compares regions without losing the original sentence, then restores its exact conditions',()=>{
   const original=controls(render()).state;
   controls(render()).onCity('ngari');

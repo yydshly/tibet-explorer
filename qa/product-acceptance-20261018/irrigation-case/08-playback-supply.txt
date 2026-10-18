@@ -1,0 +1,16 @@
+Browser tab: 2, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~				13 text 当前尺度 狮泉河 · 同一地形上的灌渠与城镇 2023年报道 · 现状地图
+~				17 text 04  /  6  ·  环境怎样进入生活  ·  走近证据 跟随讲述
+~					121 text 林 地获得补水。
+~				44 checkbox 关闭闸门, Value: 1
+~				45 checkbox 对照未清渠, Value: 1
+~				49 text 已完成部分补水  ·  闸门打开且已清渠：可推进供水，观察补水结果增加。
+~			52 heading 设施与管护共同让补水发生, Value: 2
+~				53 text 设施与管护共同让补水发生
+~			54 text 闸门打开且已清渠：可推进供水，观察补水结果增加。
+~			55 text 走近证据  · 镜头为什么这样接 通水带与补水效果共同变化，非流量或灌区测量。
+~		89 text 6:04 / 11:16
+~			96 slider (settable, float) Description: 当前讲述进度, Value: 0.5730000138282776, Details: 0.573
+~			97 text 57 %
+The focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview
