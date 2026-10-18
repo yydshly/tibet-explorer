@@ -14,6 +14,10 @@ export function createPlaceActionReading(data:LocalCollection,toWorld:(p:LocalCo
  const lamps=Array.from({length:7},()=>{const m=new THREE.Mesh(new THREE.ConeGeometry(.7,2,8),lampMaterial);lampGroup.add(m);m.renderOrder=70;return m;});
  const outside=Array.from({length:6},()=>{const m=new THREE.Mesh(new THREE.ConeGeometry(.7,2,8),lampMaterial);lampGroup.add(m);m.renderOrder=70;return m;});
 
+ const relationAreas=[temple,front].map(feature=>{
+  const material=new THREE.MeshBasicMaterial({color:0xffc15e,transparent:true,opacity:0,depthTest:false,depthWrite:false,side:THREE.DoubleSide});
+  const mesh=new THREE.Mesh(polygon(feature,0),material);mesh.renderOrder=59;lampGroup.add(mesh);return mesh;
+ });
  const floor=new THREE.Mesh(polygon(square,0),new THREE.MeshBasicMaterial({color:0x26b4bd,transparent:true,opacity:.34,depthTest:false,depthWrite:false,side:THREE.DoubleSide}));publicGroup.add(floor);floor.renderOrder=60;
  // Triangle centroids guarantee that all example activity remains on the
  // acquired surface, with no inferred old plots or streets between locations.
@@ -27,6 +31,8 @@ export function createPlaceActionReading(data:LocalCollection,toWorld:(p:LocalCo
  group.visible=Boolean(state);if(!state)return;
  lampGroup.visible=['lamps','separate'].includes(state.phase);publicGroup.visible=['square','public'].includes(state.phase);
  const separation=state.separation;
+ relationAreas[0].material.opacity=.06+.16*(1-separation);
+ relationAreas[1].material.opacity=.22*separation;
  lamps.forEach((m,i)=>{m.position.copy(templeAnchor);m.position.x+=(i-3)*scale*2.6;m.scale.setScalar(scale*(i===0?1:1-separation));});
  outside.forEach((m,i)=>{m.position.copy(frontAnchor);m.position.x+=(i-2.5)*scale*2.6;m.scale.setScalar(scale*separation);});
 

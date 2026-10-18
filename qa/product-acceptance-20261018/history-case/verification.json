@@ -1,0 +1,34 @@
+{
+  "scope": "M2 history replacement only",
+  "durationSeconds": 677.232,
+  "newClipSeconds": 38.52,
+  "originalClipSeconds": 40.824,
+  "sourcesChecked": [
+    "https://whc.unesco.org/document/5816 printed p3(viii)"
+  ],
+  "browser": {
+    "originsToProtection": "observed normal playback",
+    "protectionToTransport": "observed auto transition after pause/resume near final sentence; final build also auto transitioned after manual resume",
+    "comparison": "same frame, original/separated/halfway, labels updated, original media position retained",
+    "fixed": "label cache omitted place-action state, now keyed to phase and separation threshold"
+  },
+  "acceptance": "Functional comparison checked; first-time viewer explanation not yet obtained",
+  "remaining": [
+    "M1 life service",
+    "M3 observation handoff",
+    "M4 comprehension acceptance"
+  ],
+  "notClaimed": [
+    "whole-show uninterrupted playback",
+    "historic chamber geometry",
+    "measured historical counts or risk",
+    "2026 arrangement identical to 2005"
+  ],
+  "checks": {
+    "typecheck": "passed",
+    "targetedTests": "29 passed across 6 files",
+    "narrationAssets": "325/325 verified, native word timing",
+    "productionBuild": "passed; existing large-chunk warning remains",
+    "reportEntry": "verified current progress and return to chapter5"
+  }
+}

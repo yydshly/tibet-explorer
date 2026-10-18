@@ -5,8 +5,8 @@ export const cultureContinuityCue={id:'OVERVIEW-culture-continuity',title:'延�
 export const editorialChanges=[
  {action:'保留',content:'地球定位、全球来流、真实高程、三地气候与生活',reason:'构成自然条件到生活的共同解释基础。',destination:'主线第1—4章'},
  {action:'合并并缩短',content:'历史入口与跨时期概览',reason:'合为营建、用途与交流的问题；完整年代移入专题。',destination:'形成：营建与交流怎样赋予地方用途'},
- {action:'缩短',content:'文化延续',reason:'主线集中观看→学习→实践；木经板保存细读留给专题。',destination:'延续：从观看到学习与实践'},
- {action:'移到专题',content:'高程重复开场、取水功能、木经板细读、供灯与广场',reason:'保留原录音和操作，减少主线重复入场与局部案例叠加。',destination:'高程与用水 / 物件与传习 / 拉萨保护与公共空间'},
+ {action:'替换',content:'通用学习示意 → 大昭寺供灯空间调整',reason:'以报告支持的空间变化解释活动怎样延续；原学习录音和操作保留在专题。',destination:'主线第5章 / 物件与传习专题'},
+ {action:'移到专题',content:'高程重复开场、取水功能、木经板细读、供灯与广场完整解读',reason:'保留原录音和操作，减少主线重复入场与局部案例叠加。',destination:'高程与用水 / 物件与传习 / 拉萨保护与公共空间'},
  {action:'合并',content:'桥梁接续、地区交通与铁路观察',reason:'统一归入现代变化：新设施如何接入已有城市及生活。',destination:'主线第6章'},
  {action:'缩短',content:'桥梁案例与地区交通',reason:'保留开通日期、人物组织与真实接续；去掉桥梁后的街区绕行，完整讲解保留在专题。',destination:'主线第6章 / 现代联系与观察专题'},
  {action:'合并并缩短',content:'旅游观察与整体结论',reason:'一次收束到各地观察问题和具体原因，完整地区观察保留在专题；认识顺序不是实际行程。',destination:'主线结尾 / 现代联系与观察专题'},

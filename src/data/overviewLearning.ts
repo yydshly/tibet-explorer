@@ -8,6 +8,7 @@ export const observationTasks:Record<string,ObservationTask>={
  ground:{question:'铁路怎样同时面对山体、河流和城市？',action:'沿线路前后观察，比较跨河、隧道和站区。',change:'同一线路在地形中的位置改变，站区与城市仍同图。',reason:'通行需要穿山、跨河与城市接续。虚线只是隧道水平走向，影像和高程不提供地下深度。'},
  water:{question:'有水源就能持续取水吗？',action:'推进转移，再关闭通道。',change:'比较补水停止与已有储水仍保留。',reason:'资源需经过设施和维护进入使用；水位是守恒功能示意，不是当地流量。'},
  manuscript:{question:'护板怎样保护易损书页？',action:'展开、整理，再合拢护板。',change:'观察书页与两块板的相对关系。',reason:'功能示意解释包护，不能复原原件已失的配套经书。'},
+ jokhang:{question:'保护改变了什么，又保留了什么？',action:'拖动对照条，或切换原有关系与供灯空间分开。',change:'建筑上多数灯光退去，寺前亮起；同一地物与供灯活动仍保留。',reason:'2005年报告记载多数供灯迁至寺前半地下供灯室：火源与木构分开，供灯活动继续。报告不提供迁移竣工日期、精确灯位或风险降幅。'},
  place:{question:'活动延续时，空间安排能改变吗？',action:'比较供灯原有关系、分开供灯和广场活动。',change:'看活动位置与公共空间使用，不把符号当作实际人数。',reason:'2005年报告支持用途调整；没有可靠的地下室、旧地块或搬迁路线测绘。'},
 };
 export const understandingChecks:Record<string,{prompt:string;points:string[];revisit:string}>={
@@ -15,6 +16,6 @@ export const understandingChecks:Record<string,{prompt:string;points:string[];re
  environment:{prompt:'同一座山，为什么改变水汽后，云雨表现会不同？',points:['地形抬升、冷却与水汽共同影响凝结。','气团和云雨是原理示意；真实高程没有随操作改变。'],revisit:'LAB-air-higher'},
  differences:{prompt:'比较三个站点的冬夏资料：哪些差异不能概括成“越往西越干”？',points:['比较同一月份、同一指标和同一比例尺。','季节不同，比较结果可改变；站点不能代表全部市域。'],revisit:'OBS-CLIMATE-7'},
  living:{prompt:'选一地说明：地形提供了什么条件，人的行动又补上了什么？',points:['用起伏或地面连续性说明通行、土地使用的条件。','用具体地方的设施、维护或组织说明条件怎样进入生活。'],revisit:'LAB-life-ngari'},
- 'human-history':{prompt:'分别用一个例子解释地方用途怎样形成、文化怎样延续。',points:['营建和用途可看拉萨；跨地区人物与知识交流可看托林。','延续需要学习与持续实践，保护列入年份不等于文化起源。','地形不能单独推出城市用途、信仰或文化。'],revisit:'OVERVIEW-history-origins'},
+ 'human-history':{prompt:'大昭寺供灯调整改变了什么、保留了什么，为什么这样安排？地图上的什么不能当作历史实测？',points:['形成可由拉萨营建用途与托林交流解释；后来保护也会调整已有用途。','2005年报告记载多数供灯转至寺前半地下供灯室；火源与木构分开，供灯仍继续。','2005年是监测报告年份，不是竣工日期；现状地物和关系符号不能当作历史灯位或供灯室测绘。'],revisit:'OVERVIEW-jokhang-protection'},
  today:{prompt:'桥接通以后，什么改变了，什么仍需要人来完成？把这个问题带到一次地方观察。',points:['这条道路能够跨河接续，但交通服务仍需要车辆、组织与地方道路。','到地方观察地形、历史用途和今天生活；认识顺序不是可订旅行路线。'],revisit:'OVERVIEW-city-change'},
 };

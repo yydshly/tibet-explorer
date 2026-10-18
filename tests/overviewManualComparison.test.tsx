@@ -67,3 +67,24 @@ describe('regional comparison inside a paused main narration',()=>{
  });
 
 });
+
+describe('documented history comparison without replacing the narration clock',()=>{
+ it('changes the same place, pauses, then restores the original state on resume',()=>{
+  const beatIndex=overviewMainProgram.beats.findIndex(b=>b.id==='OVERVIEW-jokhang-protection');
+  const beat=overviewMainProgram.beats[beatIndex];
+  media.current.beatIndex=beatIndex;media.current.raw=.4;
+  media.current.timing={textProgress:beat.text.indexOf('先看原有关系')/beat.text.length};
+  const scene=()=>find(render(),node=>typeof node.props?.onGroundJourneyReading==='function');
+  const original=scene().props.overviewPlaceAction;
+  const slider=()=>find(render(),node=>node.props?.['aria-label']==='供灯空间对照');
+  slider().props.onChange({target:{value:'1'}});
+  expect(scene().props.overviewPlaceAction).toMatchObject({caseId:'jokhang',separation:1,activity:0});
+  slider().props.onChange({target:{value:'0'}});
+  expect(scene().props.overviewPlaceAction.separation).toBe(0);
+  expect(media.current.pause).toHaveBeenCalled();expect(media.current.seek).not.toHaveBeenCalled();expect(media.current.select).not.toHaveBeenCalled();expect(media.current.raw).toBe(.4);
+  const guide=find(render(),node=>node.props?.kind==='jokhang'&&typeof node.props?.onResume==='function');
+  expect(guide.props.manual).toBe(true);guide.props.onResume();
+  expect(scene().props.overviewPlaceAction).toEqual(original);
+  expect(media.current.playPause).toHaveBeenCalledOnce();
+ });
+});

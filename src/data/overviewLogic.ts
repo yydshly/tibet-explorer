@@ -1,7 +1,8 @@
 /** A transition must explain the unanswered question, not merely announce the
  * next place. These are editorial commitments, not claims of visual QA. */
 export const overviewNextReason:Record<string,string>={
- 'OVERVIEW-history-origins':'营建与交流解释形成；下面操作学习过程，理解文化怎样持续进入生活。',
+ 'OVERVIEW-history-origins':'营建与交流解释形成；下面看大昭寺供灯空间怎样在保护中调整，活动又怎样延续。',
+ 'OVERVIEW-jokhang-protection':'活动延续但空间安排改变；新交通又怎样接入已有城市与生活？',
  'OVERVIEW-culture-continuity':'场所与实践仍被使用；新的交通怎样进入已有城市、改变接续条件？',
  'G1-opening':'有了海陆与大气背景，接下来沿洲、国家、自治区逐层定位，避免只记住一个点。',
  'OVERVIEW-position':'位置确定以后，要先解释太阳能量如何形成地区受热差异，才能理解空气为什么移动。',
@@ -49,8 +50,9 @@ export const overviewResumeAliases:Readonly<Record<string,string>>={
  'OVERVIEW-place-actions':'OVERVIEW-city-change',
  'OVERVIEW-lived-city':'OVERVIEW-city-change',
  'OVERVIEW-life-conditions':'OVERVIEW-history-origins',
- 'OVERVIEW-culture':'OVERVIEW-culture-continuity',
- 'OVERVIEW-culture-actions':'OVERVIEW-culture-continuity',
+ 'OVERVIEW-culture':'OVERVIEW-jokhang-protection',
+ 'OVERVIEW-culture-actions':'OVERVIEW-jokhang-protection',
+ 'OVERVIEW-culture-continuity':'OVERVIEW-jokhang-protection',
  'OVERVIEW-history-early':'OVERVIEW-history-origins',
  'OVERVIEW-history-middle':'OVERVIEW-history-origins',
  'OVERVIEW-history-modern':'OVERVIEW-history-origins',

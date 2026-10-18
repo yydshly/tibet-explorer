@@ -1,6 +1,6 @@
 import {historyOriginsCue} from './overviewEditorial';
 import {overviewCityChangeCore,overviewRegionalConnectionsCore,overviewObservationClose} from './overviewPacing';
-import {overviewPlaceActions} from './overviewPlaceActions';
+import {overviewPlaceActions,jokhangProtectionCue} from './overviewPlaceActions';
 import {overviewCityChange,cityChangeSources} from './overviewCityChange';
 import {overviewHistoryFrame} from './overviewHistoryFrame';
 import {overviewMechanismCues,overviewMechanismSources} from './overviewMechanisms';
@@ -56,9 +56,10 @@ function historicalFrame():ProgramBeat {
 const historyOrigins:ProgramBeat={id:historyOriginsCue.id,recordingId:historyOriginsCue.id,title:historyOriginsCue.title,text:historyOriginsCue.narration,kind:'atlas',chapterId:'history',topic:'history',overviewScope:'whole',detailStepId:'H2',sources:[{title:'UNESCO · 大昭寺的创建与布达拉宫用途',url:'https://whc.unesco.org/en/list/707/',note:'只采用有据的创建和用途，不把现状几何当作古代测绘。'},{title:'The Met · Tibet and India 展览：阿底峡与托林',url:'https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india',note:'Map of the Region说明1042年行旅经加德满都到西部托林；不据此重建古道，也不把画像年代当事件年代。'}],moments:[
  {token:'先看拉萨',title:'营建与用途：宗教、礼仪、接见和居住',explanation:'地方用途由历史行动与制度解释，地形只提供空间条件。',focus:'lhasa'},
  {token:'再看西部托林',title:'1042：人物与知识交流进入地方',explanation:'托林在西部札达；不是现代生活案例中的狮泉河。地图定位，不补画行旅路线。',focus:'tholing-exchange',year:'1042年'},
- {token:'这些是营建',title:'回到全域：形成与延续是两个问题',explanation:'案例说明营建、使用和交流；文化延续还需要后来的学习与实践。'},
+ {token:'这些是营建',title:'回到全域：形成与延续是两个问题',explanation:'案例说明营建、使用和交流；文化延续还涉及后来的保护与持续使用。'},
 ]};
 const placeActions:ProgramBeat={id:overviewPlaceActions.id,recordingId:overviewPlaceActions.id,title:overviewPlaceActions.title,text:overviewPlaceActions.narration,kind:'heritage',chapterId:'history',topic:'culture',sources:overviewPlaceActions.sources,detailStepId:'K1'};
+const jokhangProtection:ProgramBeat={...placeActions,id:jokhangProtectionCue.id,recordingId:jokhangProtectionCue.id,title:jokhangProtectionCue.title,text:jokhangProtectionCue.narration,sources:[...placeActions.sources,{title:'本段证据边界：原文核对与示意范围',url:'/data/jokhang-protection-evidence.json',note:'报告所见、解释与未知信息分列；不将2005年情况直接当作今天现状。'}],kind:'atlas',overviewScope:'whole'};
 const oldHistorySpace:ProgramBeat={id:historySpaceStory.id,recordingId:historySpaceStory.id,title:historySpaceStory.title,text:historySpaceStory.narration,kind:'heritage',chapterId:'history',topic:'culture',sources:historySpaceStory.sources,detailStepId:'K1'};
 const oldCityChange:ProgramBeat={id:overviewCityChange.id,recordingId:overviewCityChange.id,title:overviewCityChange.title,text:overviewCityChange.narration,kind:'atlas',chapterId:'history',topic:'connections',sources:cityChangeSources,detailStepId:'M1'};
 const cityChange:ProgramBeat={...oldCityChange,recordingId:overviewCityChangeCore.id,title:overviewCityChangeCore.title,text:overviewCityChangeCore.narration};
@@ -93,10 +94,10 @@ const chapters:ProgramChapter[]=[
   beats:[interactive('LAB-life-nyingchi'),interactive('LAB-life-lhasa'),interactive('LAB-life-ngari')]},
  {id:'human-history',title:'人怎样塑造地方',question:'人的行动怎样形成地方历史与文化？',
   premise:'刚才比较了三地的自然条件和人的建设。现在回到全域，把生活放进时间，认识城市用途、知识交流和文化实践。',
-  conclusion:'营建与交流帮助解释地方怎样形成；学习与持续实践解释文化怎样延续。拉萨与托林提供具体线索，完整年代与更多地区保留在专题。',
-  nextQuestion:'已有的地方与生活，怎样接入今天的新通道与更广泛联系？',scale:'全域背景 → 营建与交流 → 学习与实践 → 现代变化',
-  stages:[{title:'怎样形成',reason:'从营建、用途和跨地区交流认识地方，避免把地形当作文化成因。',beatIds:[historyOrigins.id]},{title:'怎样延续',reason:'形成以后仍需要学习与实践；已有生活接向现代变化。',beatIds:['OVERVIEW-culture-continuity']}],
-  beats:[historyOrigins,mechanism('OVERVIEW-culture-continuity')]},
+  conclusion:'营建与交流帮助解释地方怎样形成；保护调整活动空间，供灯仍可延续。拉萨与托林提供具体线索，完整年代与更多地区保留在专题。',
+  nextQuestion:'已有的地方与生活，怎样接入今天的新通道与更广泛联系？',scale:'全域背景 → 营建与交流 → 保护与持续使用 → 现代变化',
+  stages:[{title:'怎样形成',reason:'从营建、用途和跨地区交流认识地方，避免把地形当作文化成因。',beatIds:[historyOrigins.id]},{title:'怎样延续',reason:'用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。',beatIds:[jokhangProtectionCue.id]}],
+  beats:[historyOrigins,jokhangProtection]},
  {id:'today',title:'今天怎样联系与观察',question:'现代联系改变了什么，我们该怎样观察？',
   premise:'已有场所与文化继续被使用。先看新桥怎样接入城市，再回全域比较不同地区的交通，最后带着问题观察地方。',
   conclusion:'交通增加选择，接续和组织决定怎样使用；观察要把地形、历史与今天生活一起核对。',
@@ -131,7 +132,7 @@ function depth(id:string,title:string,question:string,ids:(string|ProgramBeat)[]
 export const overviewDepthPrograms=[
  depth('modern-context','现代联系与观察：完整案例','通道、街区使用与地区观察怎样互相补充？',[oldCityChange,linking('OVERVIEW-regional-connections','connections',[]),linking('OVERVIEW-regional-observation','observation',[]),...whole('OVERVIEW-conclusion')]),
  depth('conditions-use','高程与用水：从条件到使用','怎样把地形与实际服务分开？',[...whole('G4-opening','G4-explain'),mechanism('OVERVIEW-water-service')]),
- depth('culture-practice','物件与传习：文化如何持续','保存物件与组织学习分别做了什么？',[mechanism('OVERVIEW-culture-actions')]),
+ depth('culture-practice','物件与传习：文化如何持续','保存物件与组织学习分别做了什么？',[mechanism('OVERVIEW-culture-actions'),mechanism('OVERVIEW-culture-continuity')]),
  depth('place-protection','拉萨保护与公共空间','保护怎样改变活动与公共使用？',[placeActions]),
  depth('history-context','历史与文化：补充阅读','怎样区分历史线索、文化概览与功能案例？',[...whole('OVERVIEW-history-entry'),historicalFrame(),'OVERVIEW-history-early','OVERVIEW-history-middle','OVERVIEW-history-modern','OVERVIEW-culture','OVERVIEW-life-conditions']),
  depth('living-context','生活条件：七市地放在一起看','地区差异怎样进入土地、通行和用水？',[{...linking('OVERVIEW-living-comparison','life',[

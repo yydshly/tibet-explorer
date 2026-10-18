@@ -13330,6 +13330,25 @@
       "subtitleUrl": "/assets/audio/narration/4c7cd8e5cf04c3b25e3682055bae15ebb4eb763677e0d6810e78e2c0ac15e8c7.subtitles.json",
       "subtitleSha256": "899a7d6399565d05d28bb17f77971273d25071f2adeb8f4613536e5582a46d3e",
       "timingLevel": "word"
+    },
+    {
+      "id": "7ca77997c6853f0936ac982386d8a0d7dc0d13b78f45590e9ba7a14c09c26ee4",
+      "url": "/assets/audio/narration/7ca77997c6853f0936ac982386d8a0d7dc0d13b78f45590e9ba7a14c09c26ee4.mp3",
+      "text": "回到拉萨，靠近大昭寺。场所怎样在保护中继续使用？二〇〇五年监测报告记录，多数供灯已从木构建筑移到寺前半地下供灯室。先看原有关系：供灯与木构在一起。现在分开供灯与木构，寺前供灯亮起。供灯继续，活动空间改变，让火源与木构分开。你可以来回对照：保留了什么，改变了什么？灯光是关系示意，寺前符号不是供灯室测绘，二〇〇五年也不是竣工日期。最后退回全域，再看新交通怎样接入已有生活。",
+      "duration": 38.52,
+      "bytes": 618036,
+      "sha256": "d070f9dbd6a378c8651f399939a2524494e9da25ba8ef5474dfa2fa6715ef2f2",
+      "provider": "MiniMax",
+      "model": "speech-2.8-hd",
+      "voice": "Chinese (Mandarin)_Gentleman",
+      "sampleRate": 32000,
+      "channel": 1,
+      "generatedAt": "2026-10-18T10:13:51.726Z",
+      "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+      "subtitleStatus": "provider",
+      "subtitleUrl": "/assets/audio/narration/7ca77997c6853f0936ac982386d8a0d7dc0d13b78f45590e9ba7a14c09c26ee4.subtitles.json",
+      "subtitleSha256": "dfd06e9ead299173eb460b345dd6ffbd3c87dbd073beec4f59491f5c6c78d2f3",
+      "timingLevel": "word"
     }
   ]
 }

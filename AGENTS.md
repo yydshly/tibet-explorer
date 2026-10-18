@@ -1,5 +1,16 @@
 # Prototype Instructions
 
+## 2026-10-18 M2 documented history case
+
+User authorized history only. Main chapter5 keeps origins and replaces generic culture-continuity with OVERVIEW-jokhang-protection (38.520s, MiniMax native word timing). Original continuity is retained in culture-practice depth. Six chapters/21 beats/677.232s (11:17); other closure items M1/M3 remain pending. Report chapter5 is partial: implementation checked, new-viewer comprehension NOT certified.
+
+Source freshly checked: UNESCO WHC-05/29.COM/7B.Add, printed p3(viii), https://whc.unesco.org/document/5816. Report dated 2005-06-30 describes most lamps moved from wooden buildings to a semi-underground chamber in front. Date is NOT completion; no chamber survey, historic lamp count/layout, measured fire-risk reduction or proof of unchanged present arrangement. Evidence boundary: public/data/jokhang-protection-evidence.json.
+
+Same acquired map and existing lamp reading; floor emphasis reuses actual polygons, not a new chamber. New core keeps caseId=jokhang through manual overrides and returns camera from oldtown, not unrelated palace. Label cache must include place-action phase and separation threshold, otherwise geometry updates but labels remain stale. Caption, slider, narration and shot read the same word clock; manual comparison pauses without seeking.
+
+QA evidence: qa/product-acceptance-20261018/history-case. Observed origins -> protection, paused at final sentence and resumed -> automatic transport; final label fix checked with before/after/halfway/manual-resume and final core auto-transition. Not a whole-show replay, and not first-time-viewer acceptance. Keep product entry on demonstration; project notes remain secondary.
+
+
 ## 2026-10-18 demonstration-first entry
 
 Root and #/ now resolve to #/overview and start at the opening (audio waits for user play). The optional catalogue is #/home. Project acceptance is secondary, via the 项目说明 button. Do not use the acceptance report as the default product entry. The four acceptance issues remain pending; changing navigation does not resolve them.

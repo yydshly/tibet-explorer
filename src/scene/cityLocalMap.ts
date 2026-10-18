@@ -275,7 +275,7 @@ export function buildCityLocalMap(runtime: Runtime,options:{enabled?:boolean;loc
   }
   function setHighlights(place: Place, p: TibetSceneProps) {
     const state = mapState(p), stage = stageFor(p.step), usage=cityLocalUsageState(p,place.id),feature = p.cityLocalFeatureId ? place.featureById.get(p.cityLocalFeatureId) : undefined, targets = localMapTargets(place.data, stage, state.index),focusPhase=Math.min(2,Math.floor(state.partProgress*3)), key = `${stage}:${state.index}:${feature?.id ?? ''}:${focusPhase}:${usage.beat}:${usage.corridorLeg}:${Boolean(runtime.regionalMetres?.(place.dem.bbox[0],place.dem.bbox[1]))}`;
-    const readingKey=`${key}:${p.overviewBarkhor?.phase??''}:${p.overviewUrban?.phase??''}:${p.overviewVisit?.phase??''}:${p.overviewCityChange?.phase??''}`;
+    const readingKey=`${key}:${p.overviewBarkhor?.phase??''}:${p.overviewUrban?.phase??''}:${p.overviewVisit?.phase??''}:${p.overviewCityChange?.phase??''}:${p.overviewPlaceAction?.phase??''}:${Boolean(p.overviewPlaceAction&&p.overviewPlaceAction.separation>.5)}`;
     if (place.lastKey === readingKey) return; place.lastKey = readingKey; clear(place.highlights); clear(place.labels); place.routePoints = []; place.route = undefined;
     const natureIndex=place.id==='lulang'?[1,0,2][focusPhase]:place.id==='lhasa'?[2,1,0][focusPhase]:focusPhase;
     const primary = feature ?? (stage==='travel'&&state.index===0?targets[natureIndex]:place.id === 'lhasa' && stage === 'history' ? targets[state.index ? 1 : 0] : place.id === 'lulang' && (stage === 'history' || state.index === 1) ? targets[focusPhase===0?0:2] :place.id==='shiquanhe'&&stage==='history'?targets[0]: targets[0]);
@@ -296,7 +296,7 @@ export function buildCityLocalMap(runtime: Runtime,options:{enabled?:boolean;loc
       item.userData = { kind: 'actual-local-feature-focus', featureId: f.id, localityId: place.id, sourceTags: f.properties.tags, anchor: localFeatureAnchor(f), selected: f === feature, scope: '现状要素高亮，不定义历史工程边界' }; place.highlights.add(item);
       const text = featureName(f); if (!text) continue;let short=f.id==='way/31475419'&&stage==='history'?`布达拉宫 · ${state.index===1?'白宫':'红宫'}用途`:f.properties.tags.ref==='G318'?'G318 · 沪聂线':text.replace(/^林芝/,'').replace('鲁朗恒大艺术馆艺术馆','鲁朗恒大艺术馆').slice(0,15);const sourceAnchor=localDisplayedAnchor(f,place.data.metadata.bbox)??localFeatureAnchor(f),metres=sampleLocalMetres(place.grid,place.dem,sourceAnchor[0],sourceAnchor[1]);if(stage==='travel'&&state.index===0&&metres!==undefined)short+=` · ${Math.round(metres)}m`;
       if(p.overviewVisit){short=f.id==='way/122707268'?'拉萨站 · 区域抵达':f.id==='way/122707217'?(p.overviewCityChange?'柳梧大桥 · 2007年新连接':'柳梧大桥 · 跨河接城'):f.id==='way/408117841'?'拉萨河 · 站区与城区之间':f.id==='relation/2358701'?'大昭寺 · 历史与当下使用':f.id==='way/177796787'?'广场 · 朝圣与参访':'布达拉宫 · 同城历史参照';}
-      else if(p.overviewPlaceAction){short=f.id==='relation/2358701'?'大昭寺 · 木构与供灯示意':f.id==='way/177796787'?'寺前独立供灯 · 位置示意':f.id==='way/61818449'?'现状广场 · 休憩活动示意':'布达拉宫 · 同城参照';}
+      else if(p.overviewPlaceAction){short=f.id==='relation/2358701'?(p.overviewPlaceAction.separation>.5?'大昭寺 · 多数供灯已迁出（报告）':'大昭寺 · 供灯与木构原有关系'):f.id==='way/177796787'?(p.overviewPlaceAction.separation>.5?'寺前供灯继续 · 非供灯室测绘':'寺前参照 · 调整后在此方向供灯'):f.id==='way/61818449'?'现状广场 · 休憩活动示意':'布达拉宫 · 同城参照';}
       else if(p.overviewUrban){short=f.id==='way/31475419'?'布达拉宫 · 位置参照':f.id==='relation/2358701'?'大昭寺 · 老城位置':f.id==='way/61818449'?'广场 · 现状开放空间':f.id==='way/880932156'?'八廓街 · 生活与保护':'拉萨站 · 现状位置参照';}
       else if(p.overviewBarkhor){short=f.id==='way/177796787'?(p.overviewBarkhor.phase==='protection'?'广场 · 祈祷通行与参访':'大昭寺广场 · 开放空间'):f.id==='way/880932156'?'八廓街 · 现状商业用地':'大昭寺 · 7世纪创建';}
       else if(usage.useReading&&usage.beat!=='approach'&&f===primary&&!feature){if(place.id==='lulang'&&f.id==='way/1322496961')short=usage.beat==='arrival'?'服务用地 · 已知路端停靠':'服务用地 · 住宿与商业';else if(place.id==='lhasa')short=f.id==='way/31475419'?`${stage==='history'&&state.index===1?'白宫':stage==='history'&&state.index===2?'红宫':'历史'}用途 · 布宫整体轮廓`:'宗教用途 · 大昭寺轮廓';else if(place.id==='shiquanhe')short='两岸生活 · 现状河段';}
@@ -386,7 +386,7 @@ export function buildCityLocalMap(runtime: Runtime,options:{enabled?:boolean;loc
       if(phase==='context'){from=bounds.clone();to=valley;}
       else if(phase==='plaza'){from=p.overviewPlaceAction?oldtown:valley;to=palace;}
       else if(phase==='barkhor'){from=p.overviewPlaceAction?valley:palace;to=oldtown;}
-      else if(phase==='return'){from=p.overviewPlaceAction?palace:oldtown;to=valley;}
+      else if(phase==='return'){from=p.overviewPlaceAction&&p.overviewPlaceAction.caseId!=='jokhang'?palace:oldtown;to=valley;}
       bounds=from.clone();bounds.min.lerp(to.min,t);bounds.max.lerp(to.max,t);
       geographicBounds=[91.04,29.615,91.14,29.675];
     }

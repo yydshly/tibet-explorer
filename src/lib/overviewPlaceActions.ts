@@ -1,4 +1,4 @@
-import {overviewPlaceActions,type PlaceActionState} from '../data/overviewPlaceActions';
+import {overviewPlaceActions,jokhangProtectionCue,type PlaceActionState} from '../data/overviewPlaceActions';
 import {overviewHeritageLessons,overviewHeritagePresentation} from './overviewHeritageScene';
 import type {NarrationTiming} from './narrationTiming';
 import type {OverviewPresentation} from './overviewScene';
@@ -12,16 +12,23 @@ export const placeActionStages=[
  {token:'让使用活动进入广场',phase:'public',title:'公共地面承载行走与停留',reason:'活动符号在现状广场内展开，说明公共使用。数量、路径与速度均为示意，不是客流调查或搬迁模拟。'},
  {token:'最后退回河谷',phase:'return',title:'局部变化 → 城市 → 全域',reason:'保护与公共使用改变生活的安排；下一步看新交通怎样接入这些已有用途。'},
 ] as const;
-export function placeActionState(textProgress:number):PlaceActionState {
- const text=overviewPlaceActions.narration,pos=clamp(textProgress)*text.length;
- let i=0;while(i+1<placeActionStages.length&&pos>=text.indexOf(placeActionStages[i+1].token))i++;
- const stage=placeActionStages[i],start=text.indexOf(stage.token),end=i+1<placeActionStages.length?text.indexOf(placeActionStages[i+1].token):text.length;
+export const jokhangProtectionStages=[
+ {token:'回到拉萨',phase:'context',title:'全域 → 拉萨 → 大昭寺',reason:'接续营建与交流：已有场所怎样在保护中继续被使用？'},
+ {token:'先看原有关系',phase:'lamps',title:'调整前的关系：供灯与木构共处',reason:'只对照报告所述的使用关系，不复原2005年室内灯位。'},
+ {token:'现在分开供灯与木构',phase:'separate',title:'报告记录的调整：多数供灯转至寺前',reason:'多数灯光退出木构，寺前供灯示意亮起；供灯活动保留，火源与木构分开。'},
+ {token:'最后退回全域',phase:'return',title:'活动延续，空间调整 → 现代联系',reason:'回到同一河谷和全域：新交通接入的是已有历史用途与生活。'},
+] as const;
+export function placeActionState(textProgress:number,core=false):PlaceActionState {
+ const text=core?jokhangProtectionCue.narration:overviewPlaceActions.narration,pos=clamp(textProgress)*text.length;
+ const stages=core?jokhangProtectionStages:placeActionStages;
+ let i=0;while(i+1<stages.length&&pos>=text.indexOf(stages[i+1].token))i++;
+ const stage=stages[i],start=text.indexOf(stage.token),end=i+1<stages.length?text.indexOf(stages[i+1].token):text.length;
  const progress=clamp((pos-start)/(end-start));
- const separateStart=text.indexOf('现在分开供灯与木构'),separateEnd=text.indexOf('活动仍然延续');
- return {phase:stage.phase,progress,separation:clamp((pos-separateStart)/(separateEnd-separateStart)),activity:i<4?0:clamp(progress*3)};
+ const separateStart=text.indexOf('现在分开供灯与木构'),separateEnd=text.indexOf(core?'供灯继续':'活动仍然延续');
+ return {phase:stage.phase,progress,separation:clamp((pos-separateStart)/(separateEnd-separateStart)),activity:core||i<4?0:clamp(progress*3),...(core?{caseId:'jokhang' as const}:{})};
 }
-export function placeActionPresentation(raw:number,timing?:NarrationTiming):OverviewPresentation {
- const state=placeActionState(timing?.textProgress??raw),stage=placeActionStages.find(s=>s.phase===state.phase)!;
+export function placeActionPresentation(raw:number,timing?:NarrationTiming,core=false):OverviewPresentation {
+ const state=placeActionState(timing?.textProgress??raw,core),stage=(core?jokhangProtectionStages:placeActionStages).find(s=>s.phase===state.phase)!;
  const first=overviewHeritageLessons[0],held=overviewHeritagePresentation({id:first.id,title:first.title,recordingId:first.id,text:first.narration},1);
  return {...held,sceneIdentity:'atlas-local-context',props:{...held.props,overviewLocalContext:true,overviewTopic:'culture',overviewYear:undefined,
  overviewPlaceAction:state,overviewReturnMix:state.phase==='context'?1-smooth(state.progress):state.phase==='return'?smooth((state.progress-.2)/.8):0,
