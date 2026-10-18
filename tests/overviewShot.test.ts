@@ -7,6 +7,7 @@ import {cityContinuityLessons} from '../src/data/cityContinuityLessons';
 import {cityAccessAudioSegments} from '../src/lib/cityAccessAudio';
 import {atlasHotspots} from '../src/data/atlas';
 import {regionalAnchors} from '../src/data/regionalStudy';
+import {overviewMainProgram} from '../src/data/overviewProgram';
 import {overviewShot,type OverviewShotBeat} from '../src/lib/overviewShot';
 import {narrationTimingAt,type NarrationTiming,type NarrationTimeline} from '../src/lib/narrationTiming';
 
@@ -19,6 +20,17 @@ const candidates:OverviewShotBeat[]=[
 ];
 const beats=[...new Map(candidates.map(beat=>[beat.recordingId,beat])).values()];
 const get=(id:string)=>{const beat=beats.find(item=>item.recordingId===id);if(!beat)throw new Error(`Missing source ${id}`);return beat;};
+
+it('keeps every current main clip seekable and switches reading targets at the literal protection phrases',()=>{
+ for(const beat of overviewMainProgram.beats)for(const raw of [0,.1,.3,.5,.7,.9,1])expect(()=>overviewShot(beat,raw)).not.toThrow();
+ const beat=overviewMainProgram.beats.find(b=>b.recordingId==='OVERVIEW-protection')!;
+ const cue=(token:string)=>overviewShot(beat,(beat.text.indexOf(token)+1)/beat.text.length);
+ expect(cue('雅鲁藏布江').cameraTo.view).toBe('plan');
+ expect(cue('羌塘').focusIds).toEqual(['nagqu','ngari']);
+ expect(cue('羌塘').cameraTo.view).toBe('relief');
+ expect(cue('拉萨遗产保护').focusIds).toEqual(['lhasa']);
+ expect(cue('理解周边和战略价值').phase).toBe('return');
+});
 const nativeText=(beat:OverviewShotBeat,position:number):NarrationTiming=>({
   caption:beat.text,spokenText:beat.text.slice(position,position+1),textStart:0,textEnd:beat.text.length,
   textProgress:position/beat.text.length,precision:'provider',timingLevel:'word',

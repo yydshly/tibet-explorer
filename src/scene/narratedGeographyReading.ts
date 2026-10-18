@@ -56,13 +56,14 @@ export function buildMountainReading(at:At){
 export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:At){
  const group=new THREE.Group();group.visible=false;group.name='narrated-geographic-relations';
  const windows=new Map<string,THREE.Group>();let ready=false;
+ const redrape:(()=>void)[]=[];let terrainKey='';
  const lineObjects:LineSegments2[]=[],names:{sprite:THREE.Sprite;leader:THREE.Line;coordinate:XY;offset:[number,number];owner:THREE.Group}[]=[];
  const water=new THREE.Group(),rail=new THREE.Group(),airport=new THREE.Group();group.add(water,rail,airport);
  const waterRegions=new Map<string,THREE.Group>();
  function stroke(owner:THREE.Group,paths:readonly (readonly XY[])[],color:number,width:number,order:number){
-  const positions:number[]=[];
-  for(const path of paths)for(let i=1;i<path.length;i++)positions.push(...at(path[i-1][0],path[i-1][1],.09).toArray(),...at(path[i][0],path[i][1],.09).toArray());
-  const geometry=new LineSegmentsGeometry();geometry.setPositions(positions);
+  const geometry=new LineSegmentsGeometry();
+  const refresh=()=>{const positions:number[]=[];for(const path of paths)for(let i=1;i<path.length;i++)positions.push(...at(path[i-1][0],path[i-1][1],.09).toArray(),...at(path[i][0],path[i][1],.09).toArray());geometry.setPositions(positions);};
+  refresh();redrape.push(refresh);
   const material=new LineMaterial({color,linewidth:width,transparent:true,opacity:.9,depthTest:false,depthWrite:false,toneMapped:false});
   const object=new LineSegments2(geometry,material);object.frustumCulled=false;object.renderOrder=order;owner.add(object);lineObjects.push(object);return object;
  }
@@ -73,11 +74,17 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
  function prepare(){
   for(const city of regionalAnchors){
    const root=new THREE.Group(),w=city.longitude-1,e=city.longitude+1,s=city.latitude-.55,n=city.latitude+.55;
-   root.add(surfacePatch(at,w,e,s,n,30,20));
+   const patch=surfacePatch(at,w,e,s,n,30,20);root.add(patch);
+   redrape.push(()=>{const positions=patch.geometry.getAttribute('position') as THREE.BufferAttribute;
+    for(let y=0;y<=20;y++)for(let x=0;x<=30;x++){const point=at(w+x/30*(e-w),s+y/20*(n-s),.025);positions.setXYZ(y*31+x,point.x,point.y,point.z);}
+    positions.needsUpdate=true;patch.geometry.computeBoundingSphere();});
    const border=[...Array.from({length:31},(_,i)=>[w+(e-w)*i/30,s]),...Array.from({length:21},(_,i)=>[e,s+(n-s)*i/20]),...Array.from({length:31},(_,i)=>[e-(e-w)*i/30,n]),...Array.from({length:21},(_,i)=>[w,n-(n-s)*i/20])];
    const boundary=line(border.map(p=>at(p[0],p[1],.04)),0xf1d8a0,.65);(boundary.material as THREE.LineBasicMaterial).depthTest=false;root.add(boundary);
+   redrape.push(()=>{boundary.geometry.setFromPoints(border.map(p=>at(p[0],p[1],.04)));boundary.geometry.computeBoundingSphere();});
    const profile=Array.from({length:61},(_,i)=>at(w+(e-w)*i/60,city.latitude,.055));
-   root.add(line(profile,0xffe9ad,1));root.userData={cityId:city.id,kind:'dem-observation-window',bounds:[w,s,e,n],scope:'真实高程观察窗，不是城市边界、建设范围或古代聚落'};root.visible=false;windows.set(city.id,root);group.add(root);
+   const section=line(profile,0xffe9ad,1);root.add(section);
+   redrape.push(()=>{section.geometry.setFromPoints(Array.from({length:61},(_,i)=>at(w+(e-w)*i/60,city.latitude,.055)));section.geometry.computeBoundingSphere();});
+   root.userData={cityId:city.id,kind:'dem-observation-window',bounds:[w,s,e,n],scope:'真实高程观察窗，不是城市边界、建设范围或古代聚落'};root.visible=false;windows.set(city.id,root);group.add(root);
   }
   for(const [id,sourceNames] of [['south',['Maquan','Yarlung','Dihang']],['east',['Za','Lancang','Nu']],['west',['Shiquan']]] as const){
    const owner=new THREE.Group();water.add(owner);waterRegions.set(id,owner);
@@ -97,11 +104,17 @@ export function buildNarratedGeographyReading(camera:THREE.PerspectiveCamera,at:
   stroke(airport,[airportPath],0x142522,8,28);stroke(airport,[airportPath],0x76c8cc,4,29);airportRead=stroke(airport,[airportPath],0xffd68b,4,31);
   name(airport,'昆莎机场 · 实际跑道位置',center,[70,40]);
   const ring=new THREE.Mesh(new THREE.RingGeometry(.09,.12,32),new THREE.MeshBasicMaterial({color:0xffd995,side:THREE.DoubleSide,depthTest:false}));ring.rotation.x=-Math.PI/2;ring.position.copy(at(center[0],center[1],.1));airport.add(ring);
+  redrape.push(()=>ring.position.copy(at(center[0],center[1],.1)));
   ready=true;
  }
  return {group,update(state:GeographyReading|undefined,viewport:THREE.Vector2){
   group.visible=Boolean(state)&&state?.kind!=='mountain';if(!group.visible||!state||viewport.x<1||viewport.y<1)return;
   if(!ready)prepare();
+  // DEM arrival and the existing macro/local height-scale switch must update
+  // all geometry, not just the moving pins. Otherwise an oblique view exposes
+  // old windows and routes under the new terrain, displaced from their labels.
+  const key=regionalAnchors.map(city=>at(city.longitude,city.latitude).y).join(':');
+  if(key!==terrainKey){redrape.forEach(refresh=>refresh());terrainKey=key;}
   for(const [id,root] of windows){root.visible=state.cities.includes(id as GeographyReading['cities'][number]);if(root.visible){const mesh=root.children[0] as THREE.Mesh<THREE.BufferGeometry,THREE.MeshBasicMaterial>;mesh.material.opacity=.23+.1*Math.min(1,state.progress*4);}}
   water.visible=state.rivers;rail.visible=state.kind==='rail';airport.visible=state.kind==='airport';
   for(const [id,owner] of waterRegions)owner.visible=!state.cities.length||state.cities.some(city=>id==='south'?['lhasa','shannan','shigatse','nyingchi'].includes(city):id==='east'?city==='chamdo':city==='ngari');

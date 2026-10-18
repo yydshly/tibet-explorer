@@ -21,6 +21,15 @@ export interface OverviewAtlasSafeRect {left:number;right:number;top:number;bott
 const clamp=(value:number,min:number,max:number)=>Number.isFinite(value)?Math.max(min,Math.min(max,value)):min;
 const finitePoint=(point:THREE.Vector3)=>Number.isFinite(point.x)&&Number.isFinite(point.y)&&Number.isFinite(point.z);
 
+/** Keep north on the same side of the picture. Only pitch changes, so a viewer
+ * can compare a landform view with a plan without having to relocate east/west.
+ * Exact recorded words own both endpoints and the interpolation. */
+export function overviewReadingDirection(shot:OverviewAtlasCameraInput['shot']):THREE.Vector3 {
+  const pitch=(view:OverviewShotCamera['view'])=>view==='plan'?76:view==='relief'?38:Math.atan2(1,.7)*180/Math.PI;
+  const angle=THREE.MathUtils.degToRad(THREE.MathUtils.lerp(pitch(shot.cameraFrom.view),pitch(shot.cameraTo.view),clamp(shot.cameraMix,0,1)));
+  return new THREE.Vector3(0,Math.sin(angle),Math.cos(angle));
+}
+
 /** Screen space for the historical index, source image and real subtitles.
  * Tiny viewports use a finite fallback; desktop teaching dimensions retain the
  * exact top115/bottom125 offsets. This helper does not resize the viewport. */
@@ -62,7 +71,7 @@ export function overviewAtlasCamera(input:OverviewAtlasCameraInput):OverviewAtla
     return wholeCentre.clone().lerp(centre,clamp(frame.amount,0,.24));
   };
   const centre=emphasizedCentre(shot.cameraFrom).lerp(emphasizedCentre(shot.cameraTo),clamp(shot.cameraMix,0,1));
-  const direction=(input.viewDirection??new THREE.Vector3(0,1,.7)).clone().normalize();
+  const direction=(input.viewDirection??overviewReadingDirection(shot)).clone().normalize();
   const right=new THREE.Vector3().crossVectors(new THREE.Vector3(0,1,0),direction).normalize();
   const up=new THREE.Vector3().crossVectors(direction,right).normalize();
   const tanY=Math.tan(THREE.MathUtils.degToRad(camera.fov/2)),tanX=tanY*camera.aspect;

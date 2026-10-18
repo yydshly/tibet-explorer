@@ -10,6 +10,23 @@ import {narrationTimingAt,type NarrationTimeline} from '../src/lib/narrationTimi
 import {buildNarratedGeographyReading,buildMountainReading} from '../src/scene/narratedGeographyReading';
 vi.mock('../src/scene/environment',async original=>({...await original<typeof import('../src/scene/environment')>(),label:()=>new THREE.Sprite(new THREE.SpriteMaterial())}));
 describe('the main programme shows the places and relations it names',()=>{
+ it('redrapes windows and route bands after terrain loads or height scale changes without moving longitude/latitude',()=>{
+  let height=0;const at=(lon:number,lat:number,h=0)=>new THREE.Vector3(lon,height+h,lat);
+  const model=buildNarratedGeographyReading(new THREE.PerspectiveCamera(),at),size=new THREE.Vector2(900,700);
+  const state={progress:.4,rivers:true,title:'',relation:'',kind:'rail' as const,cities:['lhasa' as const]};
+  model.update(state,size);
+  const window=model.group.children.find(c=>c.userData.cityId==='lhasa')!;
+  const patch=(window.children[0] as THREE.Mesh).geometry.getAttribute('position');
+  const x=patch.getX(0),z=patch.getZ(0);
+  const rail=model.group.children.find(c=>c.userData.kind==='source-connected-lhasa-nyingchi-rail')!;
+  for(const next of [3,.3375,3,0]){
+   height=next;model.update(state,size);
+   expect(patch.getY(0)).toBeCloseTo(next+.025,5);
+   expect(patch.getX(0)).toBe(x);expect(patch.getZ(0)).toBe(z);
+   const start=(rail.children[0] as THREE.Mesh).geometry.getAttribute('instanceStart');
+   expect(start.getY(0)).toBeCloseTo(next+.09,5);
+  }
+ });
  it('preserves every displayed rail edge and never connects disconnected source nodes',()=>{
   const raw=JSON.parse(readFileSync('qa/narrated-geography-20261017/lalin-area-osm.json','utf8'));
   const byId=new Map<number,{nodes:number[];geometry:{lon:number;lat:number}[]}>(raw.elements.map((w:{id:number})=>[w.id,w]));

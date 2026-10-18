@@ -12,6 +12,8 @@ export interface OverviewShotBeat {
   topic?: string;
 }
 export interface OverviewShotCamera {
+  /** Authored reading angle, not a change to the terrain or its height scale. */
+  view?: 'relief' | 'plan';
   /** These are existing atlas reference IDs. Frame their combined geographic
    * bounds; primaryFocus is an annotation and must not initiate another flight. */
   focusIds: readonly string[];
@@ -44,6 +46,7 @@ export interface OverviewShot {
 }
 
 interface ShotAnchor {
+  view?: OverviewShotCamera['view'];
   /** Missing on the first anchor only: this is the clip's opening frame. */
   token?: string;
   phase: OverviewShotPhase;
@@ -60,6 +63,7 @@ const context = (token:string,title:string,purpose:string,focusIds:readonly stri
 const evidence = (token:string,title:string,purpose:string,focusIds:readonly string[] = [],amount=.24):ShotAnchor =>
   ({token,phase:'evidence',title,purpose,focusIds,amount,...(focusIds.length===1?{primaryFocus:focusIds[0]}:{})});
 const back = (token:string,title:string,purpose:string):ShotAnchor => ({token,phase:'return',title,purpose});
+const reading = (view:NonNullable<OverviewShotCamera['view']>, anchor:ShotAnchor):ShotAnchor => ({...anchor,view});
 
 /** One context/evidence pair is enough for each macro historical clip. Dates
  * may change map annotations without forcing a succession of city flights. */
@@ -74,17 +78,17 @@ const plans:Readonly<Record<string,readonly ShotAnchor[]>> = {
  ],
  'OVERVIEW-regional-connections-core':[
   whole('一座桥之后，比较地区联系','各地抵达方式有别，地方接续仍然必要。'),
-  context('先看东南部','铁路联系三个地区','轨道与概览河道同图，不画城市间直线。',['lhasa','shannan','nyingchi'],.08),
-  context('再看西部','机场与聚居地分别定位','跑道和狮泉河分处不同地点。',['ngari'],.08),
+  reading('plan',context('先看东南部','俯看铁路、河流与三个地区','俯视辨认线路与河道的位置；金色沿来源线路推进。',['lhasa','shannan','nyingchi'],.08)),
+  reading('plan',context('再看西部','俯看机场与城镇接续','先辨跑道，再沿已归档的道路观察接续。',['ngari'],.08)),
   back('方式不同','抵达以后还需要什么','站区、机场与地方生活之间仍需接续。'),
   context('现在回到拉萨河谷','进入实际地形核对','下一段读山体、河流与站区。',['lhasa'],.08),
  ],
  'OVERVIEW-observation-close':[
   whole('把认识转成观察任务','先问条件和变化，再选择地方。'),
-  context('去林芝','观察地形气候与生活','保留其他地区作为比较背景。',['nyingchi'],.08),
-  context('到山南','把历史用途与今天对照','山南、拉萨与日喀则有各自的历史。',['shannan','lhasa','shigatse'],.08),
-  context('看昌都','问峡谷怎样影响通行','地形条件不等于实际道路。',['chamdo'],.08),
-  context('看那曲与阿里','问高地用水与接续','不同地方共享同一组观察问题。',['nagqu','ngari'],.08),
+  reading('relief',context('去林芝','斜看东南部山地与河谷','先读山地起伏，再问水热怎样影响地方使用。',['nyingchi'],.08)),
+  reading('plan',context('到山南','俯看南部河谷城市的相对位置','三地共同入镜；各自历史需回到具体材料，不画成旅游线路。',['shannan','lhasa','shigatse'],.08)),
+  reading('relief',context('看昌都','斜看峡谷与跨山条件','金色地区为当前观察对象；地形条件不等于实际道路。',['chamdo'],.08)),
+  reading('relief',context('看那曲与阿里','保持斜视，对照北部与西部高地','保持同一角度，用相同的用水、通行问题对照两个地区。',['nagqu','ngari'],.08)),
   back('每次都问','说明条件、变化与原因','用一个具体地方复述，未理解处再深入。'),
  ],
   'OVERVIEW-history-origins':[whole('从条件转向历史行动','地形解释条件，营建与交流解释用途。'),context('先看拉萨','营建与用途','宗教活动与政治用途不能由地形直接推出。',['lhasa'],.08),context('再看西部托林','人物与知识交流','定位托林，不绘制未经核实的古道。',['tholing-exchange'],.08),back('这些是营建','由形成追问延续','回到共同问题：文化怎样继续进入后来的生活。')],
@@ -224,8 +228,9 @@ const plans:Readonly<Record<string,readonly ShotAnchor[]>> = {
   ],
   'OVERVIEW-regional-system':[
     whole('一张图保留七市地','先看到全域，行政入口与自然区域分别认识。'),
-    context('中南部的拉萨','按区域组阅读，不逐城跳转','河谷、高山峡谷、北部与西部高地保持在同一幅地形中。',
-      ['lhasa','shigatse','shannan','chamdo','nyingchi','nagqu','ngari'],.08),
+    reading('plan',context('中南部的拉萨','俯看中南部河谷与城市分布','先看河道与三处聚居地的相对位置；观察窗不是行政边界。',['lhasa','shigatse','shannan'],.08)),
+    reading('relief',context('东部昌都','斜看东部与东南部山谷','保持整体地形，对照两地高差与河道，不把它们连成同一条谷地。',['chamdo','nyingchi'],.08)),
+    reading('relief',context('北部那曲','同一角度，比较北部与西部高地','保持刚才的斜视尺度，高原内部也有盆地和宽谷。',['nagqu','ngari'],.08)),
     back('七市地帮助找到入口','自然环境跨过行政入口','回到整体后，继续用共同问题读生活。'),
   ],
   'OVERVIEW-life-conditions':[
@@ -312,8 +317,9 @@ const plans:Readonly<Record<string,readonly ShotAnchor[]>> = {
   ],
   'OVERVIEW-protection':[
     whole('把拉萨例证重新放回全域','局部接续说明使用环节，整体还包括共同维护。'),
-    context('雅鲁藏布江','同时读流域、草地与历史城市','这些共同议题跨越地方，不用虚构路线把它们连成行程。',
-      ['shannan','changtang-stewardship','lhasa-buildings'],.1),
+    reading('plan',context('雅鲁藏布江','沿干流辨认上游与下游','青色保留完整河道，金色逐段引导；这是干流次序，不是完整流域或水量模拟。',['shannan'],.1)),
+    reading('relief',context('羌塘','回看北部与西部高地','强调那曲与阿里的共同地理背景；当前画面不代表具体管护行动或成效。',['nagqu','ngari'],.1)),
+    evidence('拉萨遗产保护','回到已认识的大昭寺空间','同一地图进入前例，供灯与木构分开，活动仍然保留。',['lhasa'],.12),
     back('理解周边和战略价值','把联系读成条件与责任','回到全域，用共同依赖、使用条件和维护解释价值。'),
   ],
   'OVERVIEW-observation':[
@@ -363,7 +369,7 @@ const plans:Readonly<Record<string,readonly ShotAnchor[]>> = {
 
 const clamp=(value:number)=>Number.isFinite(value)?Math.max(0,Math.min(1,value)):0;
 const smooth=(value:number)=>{const t=clamp(value);return t*t*(3-2*t);};
-const cameraFor=(anchor:ShotAnchor):OverviewShotCamera=>({focusIds:anchor.focusIds??[],amount:anchor.phase==='whole'||anchor.phase==='return'?0:clamp(anchor.amount??0)});
+const cameraFor=(anchor:ShotAnchor):OverviewShotCamera=>({focusIds:anchor.focusIds??[],amount:anchor.phase==='whole'||anchor.phase==='return'?0:clamp(anchor.amount??0),...(anchor.view?{view:anchor.view}:{})});
 
 /** Pure text-clock sampling: no Date, performance, setTimeout, seconds or
  * mutations. Seeking back across an anchor exactly reconstructs the same shot.

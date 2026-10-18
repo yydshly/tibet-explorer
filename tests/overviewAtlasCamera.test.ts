@@ -8,7 +8,7 @@ import {overviewBeats} from '../src/data/overviewJourney';
 import {overviewShot} from '../src/lib/overviewShot';
 import {storyAtlasPosition,STORY_ATLAS_META} from '../src/scene/storyAtlas';
 import {sampleTerrainMetres,TERRAIN_READING_META} from '../src/scene/terrainReading';
-import {overviewAtlasCamera,overviewAtlasSafeRect,overviewReturnCamera,type OverviewAtlasCameraInput} from '../src/scene/overviewAtlasCamera';
+import {overviewAtlasCamera,overviewAtlasSafeRect,overviewReturnCamera,overviewReadingDirection,type OverviewAtlasCameraInput} from '../src/scene/overviewAtlasCamera';
 
 const bytes=readFileSync(`public${TERRAIN_READING_META.dataUrl}`);
 const dem=new Int16Array(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength));
@@ -127,6 +127,18 @@ const assertVisible=(input:OverviewAtlasCameraInput)=>{
 };
 
 describe('whole-map overview framing from the same source word progress',()=>{
+  it('changes reading pitch visibly while preserving all regions, north and deterministic seeking',()=>{
+    const frame=(view:'relief'|'plan')=>({focusIds:['lhasa','shannan','shigatse'],amount:.08,view});
+    const sample=(mix:number)=>({...base(),shot:{cameraFrom:frame('relief'),cameraTo:frame('plan'),cameraMix:mix}});
+    const a=overviewReadingDirection(sample(0).shot),b=overviewReadingDirection(sample(1).shot);
+    expect(THREE.MathUtils.radToDeg(a.angleTo(b))).toBeCloseTo(38,8);
+    for(const mix of [0,.05,.25,.5,.8,1]){
+      const input=sample(mix);assertVisible(input);
+      expect(overviewReadingDirection(input.shot).x).toBe(0);
+      expect(overviewReadingDirection(input.shot).z).toBeGreaterThan(0);
+      expect(overviewAtlasCamera(input)).toEqual(overviewAtlasCamera(sample(mix)));
+    }
+  });
   it('keeps all actual seven place references and padded world corners visible on both desktop stages',()=>{
     for(const [width,height]of [[950,490],[1280,700]])for(const evidenceWidth of [0,60,120,180,240]){
       const input={...base(width,height),evidenceWidth};

@@ -1,5 +1,14 @@
 # Prototype Instructions
 
+## 2026-10-18 shared visual guidance comparison
+
+Owner requests richer, consistent narration-to-picture guidance, not more detached models. Authored atlas shots now distinguish plan (76deg) and relief (38deg) views, keeping north on the same side and using native-word cameraMix; whole/return retain the original angle. Chapter3 regional-system and chapter6 corridors/observation are grouped by exact spoken targets. Current shot targets take marker/short-label priority; existing globe, climate and local case camera ownership is preserved. Protection has separate river/grassland/heritage cues, not one stale combined description. River moving label avoids fixed names.
+
+Actual oblique-view inspection exposed cached geometry at previous DEM/height scale: narrated geography windows, outlines, profiles, source water/rail/airport bands now redrape when terrain samples change. No geographic coordinates, source records, height exaggeration settings, recordings or duration changed. 57 targeted tests across8 files/typecheck/build pass; existing709kB chunk warning. Browser sampled regional groups, rail/airport plan, river labels and heritage local view; airport and river manual overrides restore original word/condition. Native playback advanced region section into life and protection back to whole, but observations are discrete, not complete latest-version playback/audio listening. Logs empty. Evidence and six-chapter comparison: public/project-review/visual-guidance.html and visual-guidance-evidence. User tab untouched; independent QA tab closed, original stored protection raw.694 restored.
+
+Do not call all presentation complete: Tholing exchange still mainly source location/event, basin runoff/tributaries/use consequences and concrete grassland stewardship remain process gaps. A new camera angle is not evidence of explaining a mechanism. Keep formal first-viewer acceptance separate; no new owner陪测.
+
+
 ## 2026-10-18 owner reopens corridors, drainage and heritage presentation
 
 User says these are still only spoken. Bounded changes reuse archived rail/runway/airport-road, generalized mainstem, and the existing Jokhang lamp-separation case; no new recordings or duration. Protection recap preloads atlas-local-context, approaches Jokhang at its exact native phrase, shows documented use separation, then returns. River view now fits the actual downstream course too; moving reading marks show downstream order, NOT hydrological simulation or watershed boundary. Corridor camera approaches the source route and runway/road reading, manual sliders pause and restore the source sentence. Do NOT describe basin mechanisms or grassland management as complete: runoff/tributaries, water quantity and real stewardship actions remain a presentation gap; this turn does not invent them. 40 targeted tests/typecheck/build; bounded actual-browser checks, not a repeat whole-program acceptance or audio listening.

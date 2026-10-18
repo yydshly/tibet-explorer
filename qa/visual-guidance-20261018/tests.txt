@@ -1,0 +1,20 @@
+
+ RUN  v3.2.7 F:/codex_project/1014_gpt6project/tibet-explorer
+
+ ✓ tests/overviewReleaseBaseline.test.ts (1 test) 13ms
+ ✓ tests/overviewMaintenance.test.ts (2 tests) 7ms
+ ✓ tests/overviewShot.test.ts (12 tests) 591ms
+   ✓ one continuous overview camera and reading plan > frames only existing source locations and supplies no historical geometry or new route  500ms
+ ✓ tests/overviewRiver.test.ts (3 tests) 178ms
+ ✓ tests/narratedGeography.test.ts (4 tests) 336ms
+ ✓ tests/overviewAtlasCamera.test.ts (17 tests) 566ms
+   ✓ whole-map overview framing from the same source word progress > retains the whole geographic context at every authored atlas shot and intermediate emphasis  472ms
+ ✓ tests/overviewScene.test.ts (9 tests) 1015ms
+   ✓ one overview uses the original physical scene and recording clock > keeps one loaded map identity through macro history, three true local readings, return and the complete transport example  913ms
+ ✓ tests/overviewManualComparison.test.tsx (9 tests) 74ms
+
+ Test Files  8 passed (8)
+      Tests  57 passed (57)
+   Start at  21:55:41
+   Duration  5.48s (transform 2.42s, setup 0ms, collect 17.12s, tests 2.78s, environment 3ms, prepare 1.78s)
+

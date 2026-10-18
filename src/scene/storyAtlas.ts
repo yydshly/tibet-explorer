@@ -519,7 +519,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
           if(p.overviewRiver)wholePoints.push(...yarlungReadingCoordinates.map(point=>at(point[0],point[1],.12)));
           const pose=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints,resolve,shot,evidenceWidth:p.overviewEvidenceWidth});
           if(transport?.length){
-            const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:transport.map(p=>at(p[0],p[1],.18)),resolve,shot:{cameraFrom:{focusIds:[],amount:0},cameraTo:{focusIds:[],amount:0},cameraMix:1}});
+            const close=overviewAtlasCamera({camera:runtime.camera,viewport:{width:viewport.x,height:viewport.y},wholePoints:transport.map(p=>at(p[0],p[1],.18)),resolve,shot:{cameraFrom:{...shot.cameraFrom,focusIds:[],amount:0},cameraTo:{...shot.cameraTo,focusIds:[],amount:0},cameraMix:shot.cameraMix}});
             const t=Math.min(1,shot.progress/.24),mix=t*t*(3-2*t)*.88;
             pose.position.lerp(close.position,mix);pose.target.lerp(close.target,mix);
           }
@@ -563,11 +563,14 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
       if(!cities)showContextLabels();else contextLabels.forEach(item=>{item.sprite.visible=false;});
       let secondaryLabelsShown = 0;
       const compactCityPriority=['ngari','nagqu','shigatse','chamdo','nyingchi','shannan','lhasa'];
-      const ordered = [...callouts].sort((a, c) => Number(overview?(c.cityId===selected||c.id===selected):(cities?c.cityId:c.id) === selected) - Number(overview?(a.cityId===selected||a.id===selected):(cities?a.cityId:a.id) === selected) ||
+      const readingFocus=recordedAtlas?p.overviewShot?.focusIds??[]:[];
+      const isReadingFocus=(item:typeof callouts[number])=>readingFocus.includes(item.id)||Boolean(item.cityId&&readingFocus.includes(item.cityId));
+      const ordered = [...callouts].sort((a, c) => Number(isReadingFocus(c))-Number(isReadingFocus(a)) || Number(overview?(c.cityId===selected||c.id===selected):(cities?c.cityId:c.id) === selected) - Number(overview?(a.cityId===selected||a.id===selected):(cities?a.cityId:a.id) === selected) ||
         (cities&&mobile&&a.cityId&&c.cityId?compactCityPriority.indexOf(a.cityId)-compactCityPriority.indexOf(c.cityId):Number(a.background)-Number(c.background)));
       for (const item of ordered) {
         const geographicCity=Boolean(p.narratedGeography?.cities.some(id=>id===item.cityId));
-        const active = item.themes.includes(theme), chosen = overview?(item.cityId===selected||item.id===selected||Boolean(p.narratedGeography?.cities.some(id=>id===item.cityId))):cities?item.cityId===selected:!item.background && item.id === selected;
+        const readingChosen=isReadingFocus(item);
+        const active = item.themes.includes(theme), chosen = overview?(readingFocus.length?readingChosen:item.cityId===selected||item.id===selected||Boolean(p.narratedGeography?.cities.some(id=>id===item.cityId))):cities?item.cityId===selected:!item.background && item.id === selected;
         const city=Boolean(item.cityId);
         const compared=comparison&&CITY_COMPARISON_IDS.some(id=>id===item.cityId);
         if(city)for(const object of [item.sprite,item.compactSprite,item.pin,item.halo,item.leader]){
@@ -582,7 +585,7 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
         const ax = (projected.x + 1) * viewport.x / 2, ay = (1 - projected.y) * viewport.y / 2;
         const focal = viewport.y / (2 * Math.tan(THREE.MathUtils.degToRad(runtime.camera.fov / 2)));
         item.pin.scale.setScalar((chosen ? 5 : cities?4.2:item.background ? 2.4 : 3.6) * anchor.distanceTo(runtime.camera.position) / focal / .1);
-        item.halo.scale.setScalar((geographicCity?.85:chosen?1.65:cities?1.1:1.65) * item.pin.scale.x);
+        item.halo.scale.setScalar((readingChosen?1.7:geographicCity?.85:chosen?1.65:cities?1.1:1.65) * item.pin.scale.x);
         item.halo.material.color.set(cities&&!chosen?TEAL:GOLD);
         item.halo.material.opacity=chosen?.95:compared?.8:comparison?.15:.38;
         item.pin.material.color.set(chosen ? GOLD : compared?0xb2e1ca:comparison?0x778f83:cities?TEAL:item.background ? 0xc7d8cf : themeColor);
@@ -595,7 +598,8 @@ export function buildStoryAtlasScene(runtime: Runtime,options:{localDetails?:boo
         // cluster of names around the southern river valleys.
         if(cities&&(mobile||life)&&!chosen&&secondaryLabelsShown>=3)continue;
         if (!cities&&(item.background || materialAtCity || (!chosen && secondaryLabelsShown >= (mobile ? 2 : 3)))) continue;
-        const text = chosen&&!comparison&&!geographicCity ? item.title : item.compactTitle, sprite = chosen&&!comparison&&!geographicCity ? item.sprite : item.compactSprite;
+        const detailed=chosen&&!comparison&&!geographicCity&&!readingChosen;
+        const text = detailed ? item.title : item.compactTitle, sprite = detailed ? item.sprite : item.compactSprite;
         const textUnits = Array.from(text).reduce((total, character) => total + (character.charCodeAt(0) < 128 ? .55 : 1), 0);
         const width = Math.min(viewport.x - 24, textUnits * (mobile ? 11.5 : 12) + 25);
         let best = placeAtlasLabel({ anchorX: ax, anchorY: ay, width, height: labelHeight, viewportWidth: viewport.x, minY, maxY, occupied, selected: chosen });
