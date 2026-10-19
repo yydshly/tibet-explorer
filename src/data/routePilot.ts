@@ -1,4 +1,5 @@
 import {lulangNarratedCultureProgress} from './lulangCulture';
+import {pilotNarratedCamera} from './routePilotCamera';
 import type {LulangLens,LulangServiceFilter} from './lulangPlace';
 export const routePilotPath='/routes/g318-east/nyingchi-lulang';
 export const pilotScriptVersions=['1','1','2','1'] as const;
@@ -25,9 +26,12 @@ export const routePilotCues=[
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
 
-export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number};
+export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean};
 export const pilotConnectionProgress=(view:PilotView)=>view.connections?Math.max(0,Math.min(1,view.connectionProgress??1)):0;
 export function pilotNarratedView(index:number,text:string,textProgress:number,highPoint=.5):PilotView{
+ return {...pilotNarratedBase(index,text,textProgress,highPoint),...pilotNarratedCamera(index,text,textProgress,highPoint)};
+}
+function pilotNarratedBase(index:number,text:string,textProgress:number,highPoint:number):PilotView{
  const at=Math.max(0,Math.min(1,textProgress))*text.length;
  const part=(a:string,b:string)=>Math.max(0,Math.min(1,(at-text.indexOf(a))/Math.max(1,text.indexOf(b)-text.indexOf(a))));
  if(index===0){const t=part('现在沿道路前进','观察谷地');return {mode:at<text.indexOf('现在沿道路前进')?'whole':'line',progress:t*.12,height:3500,connections:false,lookBack:false};}

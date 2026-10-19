@@ -34,6 +34,13 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('preserves a manual height view through plan refresh and resumes the same sentence camera',()=>{
+  const original={...scene().view};button('高程对照').onClick();
+  expect(scene().view).toMatchObject({cameraPitch:28,cameraBearing:22,elevation:true,progress:original.progress});expect(media.current.raw).toBe(.43);
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject({cameraPitch:28,cameraBearing:22,elevation:true});expect(media.current.raw).toBe(.43);
+  media.current.timing={textProgress:.3};button('恢复原条件并继续').onClick();expect(scene().view).toEqual(original);
+ });
  it('links profile selection to the 3D position while keeping the original recording fraction',()=>{
   scene().onContext({profile:[{distance:0,elevation:2990,coordinate:[94.36,29.65]},{distance:72000,elevation:3385,coordinate:[94.72,29.73]}],total:72000,highestIndex:1,connectionStartIndex:1,connectionLength:1051});
   const profile=find(render(),n=>typeof n.props?.onSelect==='function'&&n.props.context);

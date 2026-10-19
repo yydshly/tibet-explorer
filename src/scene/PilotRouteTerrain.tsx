@@ -11,6 +11,7 @@ import {pilotConnectionProgress,type PilotView} from '../data/routePilot';
 import {pilotElevationSampler,pilotTerrainContext,type PilotTerrainContext} from './routePilotTerrainData';
 import {lulangPlaceData} from './lulangPlaceData';
 import type {LulangLens} from '../data/lulangPlace';
+import {createPilotElevationGuide,pilotElevationMaterial,pilotElevationDatum} from './pilotElevationGuide';
 
 type Coord=readonly number[];
 type Meta={bbox:number[];columns:number;rows:number;imagery:{url:string};elevation:{url:string};geometry:{route:string;place:string}};
@@ -55,7 +56,9 @@ export default function PilotRouteTerrain(props:Props){
    const geometry=new THREE.PlaneGeometry((east-west)*mx/1000,(north-south)*mz/1000,meta.columns-1,meta.rows-1);geometry.rotateX(-Math.PI/2);
    const positions=geometry.getAttribute('position') as THREE.BufferAttribute;
    for(let i=0;i<grid.length;i++)positions.setY(i,grid[i]/1000);positions.needsUpdate=true;geometry.computeVertexNormals();
-   const terrain=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({map:texture,roughness:1,metalness:0}));scene.add(terrain);
+   const elevationMaterial=pilotElevationMaterial(texture);
+   const terrain=new THREE.Mesh(geometry,elevationMaterial.material);scene.add(terrain);
+   const routeElevation=createPilotElevationGuide([coords],at),sectionElevation=createPilotElevationGuide([local.section.map(p=>p.coordinate)],at);scene.add(routeElevation,sectionElevation);
    const lineMaterials:LineMaterial[]=[];
    const stroke=(owner:THREE.Object3D,paths:Coord[][],color:number,width:number,offset=12)=>{
     // Disjoint feature edges remain disjoint. Never connect separate OSM ways.
@@ -96,16 +99,20 @@ export default function PilotRouteTerrain(props:Props){
    const branch=coords.slice(branchStart),branchFlat=flat.slice(branchStart),trace=stroke(town,[branch],0xffd786,6,24);
    const junction=new THREE.Mesh(new THREE.RingGeometry(.045,.062,28),new THREE.MeshBasicMaterial({color:0xffd786,side:THREE.DoubleSide,depthTest:false}));junction.rotation.x=-Math.PI/2;junction.position.copy(at(coords[branchStart],28));scene.add(junction);
    const cursor=new THREE.Mesh(new THREE.SphereGeometry(.025,14,8),new THREE.MeshBasicMaterial({color:0xffebad,depthTest:false}));cursor.renderOrder=11;scene.add(cursor);
-   const pointSpecs:{title:string;coordinate:number[];local:boolean;lenses?:LulangLens[];category?:'food'|'lodging'}[]=[{title:'林芝附近 · 源道路起点',coordinate:coords[0],local:false},{title:'色季拉山地 · 沿线高程样本',coordinate:coords[high],local:false},{title:'G318 → 地方接续',coordinate:coords[branchStart],local:false},{title:'鲁朗 · 现状建筑与地块',coordinate:coords.at(-1)!,local:true},
+   const elevationPoints=[{name:'林芝附近',coordinate:coords[0],kind:'route' as const},{name:'沿线山地',coordinate:coords[high],kind:'route' as const},{name:'鲁朗',coordinate:coords.at(-1)!,kind:'route' as const},...([0,32,64].map((i,j)=>({name:['西侧坡面','鲁朗河段','东侧坡面'][j],coordinate:local.section[i].coordinate,kind:'section' as const})))];
+   const elevationStems=elevationPoints.map(p=>{const top=at(p.coordinate,15),g=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(top.x,pilotElevationDatum/1000,top.z),top]);const line=new THREE.Line(g,new THREE.LineBasicMaterial({color:0xffe6ac,transparent:true,opacity:.8,depthTest:false,depthWrite:false}));line.renderOrder=7;scene!.add(line);return {...p,line};});
+   const pointSpecs:{title:string;coordinate:number[];local:boolean;lenses?:LulangLens[];category?:'food'|'lodging';elevationOnly?:'route'|'section'}[]=[{title:'林芝附近 · 源道路起点',coordinate:coords[0],local:false},{title:'色季拉山地 · 沿线高程样本',coordinate:coords[high],local:false},{title:'G318 → 地方接续',coordinate:coords[branchStart],local:false},{title:'鲁朗 · 现状建筑与地块',coordinate:coords.at(-1)!,local:true},
     {title:'鲁朗河 · 源河段',coordinate:local.riverPoint,local:false,lenses:['landscape','life']},
     ...(local.woodPaths.length?[{title:'地图林地边线',coordinate:local.woodPaths.flat().reduce((a,b)=>Math.hypot(a[0]-local.riverPoint[0],a[1]-local.riverPoint[1])<Math.hypot(b[0]-local.riverPoint[0],b[1]-local.riverPoint[1])?a:b),local:false,lenses:['landscape'] as LulangLens[]}]:[]),
     ...(foodSample?[{title:'石锅鸡餐饮 · 地图记录',coordinate:foodSample.coordinate,local:false,lenses:['life','culture'] as LulangLens[],category:'food' as const}]:[]),
-    ...(lodgingSample?[{title:'住宿 · 地图记录',coordinate:lodgingSample.coordinate,local:false,lenses:['life','culture'] as LulangLens[],category:'lodging' as const}]:[])];
-   const pins=pointSpecs.map((p,index)=>{const pin=new THREE.Mesh(new THREE.SphereGeometry(.02,12,8),new THREE.MeshBasicMaterial({color:0xffe4a4,depthTest:false}));pin.position.copy(at(p.coordinate,30));scene!.add(pin);const div=document.createElement('div');div.className='pilot-map-label';div.textContent=p.title;const leader=document.createElement('div');leader.className='pilot-map-leader';el.append(leader,div);return {pin,div,leader,index,local:p.local,lenses:p.lenses,category:p.category};});
+    ...(lodgingSample?[{title:'住宿 · 地图记录',coordinate:lodgingSample.coordinate,local:false,lenses:['life','culture'] as LulangLens[],category:'lodging' as const}]:[]),
+    ...elevationPoints.map(p=>({title:`${p.name} · ${Math.round(sample(p.coordinate[0],p.coordinate[1])/10)*10} m`,coordinate:p.coordinate,local:false,elevationOnly:p.kind}))];
+   const pins=pointSpecs.map((p,index)=>{const pin=new THREE.Mesh(new THREE.SphereGeometry(.02,12,8),new THREE.MeshBasicMaterial({color:0xffe4a4,depthTest:false}));pin.position.copy(at(p.coordinate,30));scene!.add(pin);const div=document.createElement('div');div.className='pilot-map-label';div.textContent=p.title;const leader=document.createElement('div');leader.className='pilot-map-leader';el.append(leader,div);return {pin,div,leader,index,local:p.local,lenses:p.lenses,category:p.category,elevationOnly:p.elevationOnly};});
    const size=new THREE.Vector2();const fit=()=>{const w=el.clientWidth,h=el.clientHeight;renderer!.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();lineMaterials.forEach(m=>m.resolution.set(w,h));cultureSymbols.setResolution(w,h);size.set(w,h);};resize=new ResizeObserver(fit);resize.observe(el);fit();
-   let readingKey='',traceKey=-1;const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
+   const groundLabel=document.createElement('div');groundLabel.className='pilot-map-label pilot-ground-height';groundLabel.hidden=true;el.append(groundLabel);
+   let readingKey='',traceKey=-1,lastFrame=performance.now();const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
    const render=()=>{
-    if(!alive)return;const state=latest.current.view;
+    if(!alive)return;const state=latest.current.view,now=performance.now(),alpha=1-Math.exp(-Math.min(.05,(now-lastFrame)/1000)*4);lastFrame=now;
     if(latest.current.cameraKey!==lastCameraKey){lastCameraKey=latest.current.cameraKey;held=false;}
     const localProgress=pilotConnectionProgress(state),lens=state.placeLens??'life',probe=state.sectionProgress??.5,filter=state.serviceFilter??'all';const culture=lulangCultureState(state),reference=cultureReferences[Math.min(cultureReferences.length-1,Math.max(0,Math.trunc(state.cultureSample??0)))]?.record??foodSample;let coordinate=along(state.progress);const position=at(coordinate,25);
     if(state.mode==='place'){
@@ -120,38 +127,55 @@ export default function PilotRouteTerrain(props:Props){
     river.visible=state.mode==='place';const naturalReading=state.mode==='place'&&lens==='landscape';if(trunkLine){trunkLine.material.color.setHex(naturalReading?0xa8ada3:0x6adce1);trunkLine.material.opacity=naturalReading?.4:.95;}if(trunkOutline)trunkOutline.material.opacity=naturalReading?.3:.95;
     for(const line of riverLines)if(line){line.material.opacity=naturalReading?.95:.38;line.material.linewidth=naturalReading?4:2.5;}
     for(const layer of serviceLayers)layer.points.visible=filter==='all'||filter===layer.kind;
+    const elevationKind=state.mode==='place'?'section':'route';
+    elevationMaterial.amount.value=state.elevation ? .48 : 0;
+    routeElevation.visible=state.elevation===true&&elevationKind==='route';sectionElevation.visible=state.elevation===true&&elevationKind==='section';
+    for(const stem of elevationStems)stem.line.visible=state.elevation===true&&stem.kind===elevationKind;
+    const pitch=THREE.MathUtils.degToRad(state.cameraPitch??(state.mode==='whole'?53:state.mode==='place'?39:51)),bearing=THREE.MathUtils.degToRad(state.cameraBearing??0);
+    const offset=(height:number,heading=bearing)=>new THREE.Vector3(Math.sin(heading)*height/Math.tan(pitch),height,Math.cos(heading)*height/Math.tan(pitch));
     if(state.mode==='whole'){
-     desiredTarget.set(0,3.7,0);const width=(east-west)*mx/1000,depth=(north-south)*mz/1000,tan=Math.tan(camera.fov*Math.PI/360),distance=Math.max(width/(2*tan*camera.aspect),depth/(2*tan))*1.45;
-     desiredPosition.copy(desiredTarget).add(new THREE.Vector3(0,1,.75).normalize().multiplyScalar(distance));
+     desiredTarget.set(0,3.7,0).lerp(at(along(state.mapFocus??0)),state.mapFocusWeight??0);
+     const width=(east-west)*mx/1000,depth=(north-south)*mz/1000,tan=Math.tan(camera.fov*Math.PI/360),projectedWidth=Math.abs(Math.cos(bearing))*width+Math.abs(Math.sin(bearing))*depth,projectedDepth=Math.abs(Math.cos(bearing))*depth+Math.abs(Math.sin(bearing))*width;
+     const distance=(Math.max(projectedWidth/(2*tan*camera.aspect),projectedDepth*Math.sin(pitch)/(2*tan))+projectedDepth*Math.cos(pitch)/2)*1.12*(state.mapZoom??1)*state.height/3500;
+     desiredPosition.copy(desiredTarget).add(offset(distance*Math.sin(pitch)));
     }else if(state.mode==='place'){
-     const centre=at(lens==='landscape'?local.riverPoint:lens==='culture'&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(new THREE.Vector3(0,altitude,altitude*1.25));
+     const centre=at(lens==='landscape'?local.riverPoint:lens==='culture'&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(offset(altitude));
     }else{
      const ahead=at(along(Math.min(1,state.progress+220/total))),behind=at(along(Math.max(0,state.progress-220/total))),direction=ahead.sub(behind);direction.y=0;direction.normalize();if(state.lookBack)direction.negate();
      desiredTarget.copy(position).addScaledVector(direction,.85);desiredTarget.y+=.08;
-     desiredPosition.copy(position).addScaledVector(direction,-state.height/1000*.8);desiredPosition.y+=state.height/1000;
+     const heading=Math.atan2(-direction.x,-direction.z)+bearing;
+     desiredPosition.copy(desiredTarget).add(offset(state.height/1000,heading));
     }
     if(!initialized){camera.position.copy(desiredPosition);controls!.target.copy(desiredTarget);initialized=true;}
-    else if(!held){camera.position.lerp(desiredPosition,.13);controls!.target.lerp(desiredTarget,.13);}
+    else if(!held){
+     const current=new THREE.Spherical().setFromVector3(camera.position.clone().sub(controls!.target)),next=new THREE.Spherical().setFromVector3(desiredPosition.clone().sub(desiredTarget));
+     current.radius=THREE.MathUtils.lerp(current.radius,next.radius,alpha);current.phi=THREE.MathUtils.lerp(current.phi,next.phi,alpha);current.theta+=Math.atan2(Math.sin(next.theta-current.theta),Math.cos(next.theta-current.theta))*alpha;
+     controls!.target.lerp(desiredTarget,alpha);camera.position.copy(controls!.target).add(new THREE.Vector3().setFromSpherical(current));
+    }
     const eyeLon=camera.position.x*1000/mx+lon0,eyeLat=lat0-camera.position.z*1000/mz;
     if(eyeLon>=west&&eyeLon<=east&&eyeLat>=south&&eyeLat<=north)camera.position.y=Math.max(camera.position.y,sample(eyeLon,eyeLat)/1000+.2);
     controls!.update();
     const occupied:{x:number;y:number;w:number}[]=[];
-    for(const {pin,div,leader,index,local:localOnly,lenses,category} of pins){
+    for(const {pin,div,leader,index,local:localOnly,lenses,category,elevationOnly} of pins){
      if(category==='food'&&foodSample){pin.position.copy(at(culture.active&&reference?reference.coordinate:foodSample.coordinate,30));div.textContent=culture.active?'参照餐饮 · 归档位置':'石锅鸡餐饮 · 地图记录';}
      const p=pin.position.clone().project(camera),x=(p.x+1)*size.x/2,y=(1-p.y)*size.y/2;
-     const relevant=(!culture.active||Boolean(category))&&(!lenses||state.mode==='place'&&lenses.includes(lens))&&(!category||serviceGroup.visible&&(filter==='all'||category===filter))&&(!localOnly||town.visible&&built.visible);
+     const relevant=elevationOnly?state.elevation===true&&elevationOnly===elevationKind:(!state.elevation||index>1)&&(!culture.active||Boolean(category))&&(!lenses||state.mode==='place'&&lenses.includes(lens))&&(!category||serviceGroup.visible&&(filter==='all'||category===filter))&&(!localOnly||town.visible&&built.visible);
      const show=relevant&&p.z>-1&&p.z<1&&x>15&&x<size.x-15&&y>130&&y<size.y-105;
      pin.visible=relevant;
      div.hidden=!show;leader.hidden=!show;
      if(show){
       const w=div.offsetWidth,offset=state.mode==='place'?(index===2?-130:localOnly?130:category==='food'?(culture.active?-220:-120):category==='lodging'?120:0):0,lx=Math.max(w/2+12,Math.min(size.x-w/2-12,x+offset));let ly=y-32;
       for(let i=0;i<5&&occupied.some(o=>Math.abs(o.y-ly)<34&&Math.abs(o.x-lx)<(w+o.w)/2+8);i++)ly-=36;
+      if(state.elevation&&lx-w/2<280&&ly<255)ly=270;
       if(ly<140)ly=y+36;occupied.push({x:lx,y:ly,w});
       div.style.left=`${lx}px`;div.style.top=`${ly}px`;
       const dy=ly-y,dx=lx-x;leader.style.left=`${x}px`;leader.style.top=`${y}px`;leader.style.width=`${Math.hypot(dx,dy)}px`;leader.style.transform=`rotate(${Math.atan2(dy,dx)}rad)`;
      }
      pin.scale.setScalar(Math.max(1,camera.position.distanceTo(pin.position)*.01));
     }
+    const ground=position.clone().project(camera),gx=(ground.x+1)*size.x/2,gy=(1-ground.y)*size.y/2;
+    groundLabel.hidden=!(state.elevation&&state.mode==='line'&&ground.z>-1&&ground.z<1&&gx>130&&gx<size.x-130&&gy>280&&gy<size.y-140);
+    if(!groundLabel.hidden){groundLabel.textContent=`当前位置 · 地表约${Math.round(sample(coordinate[0],coordinate[1])/10)*10} m`;groundLabel.style.left=`${gx}px`;groundLabel.style.top=`${gy-28}px`;}
     const cultureAnchor=at(reference?.coordinate??local.riverPoint,80);
     const symbolReadings=cultureSymbols.update(state,cultureAnchor,camera.position.distanceTo(cultureAnchor)*.095);
     symbolReadings.forEach((label,i)=>{const div=cultureLabels[i],p=label.position.clone().project(camera),x=(p.x+1)*size.x/2,y=(1-p.y)*size.y/2;const show=label.visible&&p.z>-1&&p.z<1&&y>145&&y<size.y-105;div.hidden=!show;if(show){div.textContent=label.title;div.dataset.muted=String(label.muted);const w=div.offsetWidth;div.style.left=`${Math.max(w/2+15,Math.min(size.x-w/2-15,x))}px`;div.style.top=`${y}px`;}});
