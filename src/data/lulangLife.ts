@@ -12,6 +12,26 @@ export const lulangCookingSteps=[
  {title:'石锅煨煮',short:'接到餐饮服务',detail:'煮熟后再移入石锅煨煮。制作之后还有订餐、明码标价和接待等服务环节。'},
 ] as const;
 export const lulangCookingIllustration={src:'/assets/routes/g318/lulang-life/cooking-process-illustration.png',kind:'AI生成工序插画，非现场影像',source:lulangCookingSource.url};
+export type LulangLifePhase='making'|'supply'|'service';
+export const lulangLifePhases=[{id:'making',title:'看制作接续'},{id:'supply',title:'比较供货条件'},{id:'service',title:'看经营与接待'}] as const;
+export function lulangNarratedLifePhase(text:string,textProgress:number):LulangLifePhase{
+ const at=Math.max(0,Math.min(1,textProgress))*text.length;
+ if(at>=text.indexOf('恢复联系'))return 'making';
+ if(at>=text.indexOf('移去供货条件'))return 'supply';
+ if(at>=text.indexOf('商户诚信管理'))return 'service';
+ return at>=text.indexOf('供货组织')?'supply':'making';
+}
+/** One presentation choice for both the scene and the side reading. */
+export function lulangLifePhase(view:PilotView):LulangLifePhase{
+ if(view.cultureSupply===false)return 'supply';
+ return view.lifePhase??((view.cultureProgress??0)<.25?'making':(view.cultureProgress??0)<.5?'supply':'service');
+}
+export function lulangLifeRecord(view:PilotView){
+ const phase=lulangLifePhase(view);
+ if(phase==='supply')return {date:'2017年度记录',text:'引进土鸡养殖企业，组织统一供应。材料未给出供应商位置或运输线路。',url:'https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml'};
+ if(phase==='service')return {date:'2017年度记录 · 2022公开解读',text:'2017年记有商户诚信经营承诺；2022年解读说明订餐、接待、明码标价等服务要求。两份材料不能证明每家店的实际成效。',url:lulangCookingSource.url};
+ return {date:'2022年公开解读',text:`当前观察：${lulangCookingSteps[lulangCookingState(view).step].title}。初加工、炒制、煮熟后，才转入石锅煨煮。`,url:lulangCookingSource.url};
+}
 const clamp=(n:number)=>Number.isFinite(n)?Math.max(0,Math.min(1,n)):0;
 export function lulangCookingProgress(text:string,progress:number){
  const at=clamp(progress)*text.length,anchors=['初加工','炒制','煮熟','石锅煨煮','不是现场录像'].map(t=>text.indexOf(t));
@@ -25,7 +45,13 @@ export function lulangCookingState(view:PilotView){
 }
 export function lulangMediaFeedback(view:PilotView){
  if(view.mode!=='place'||!view.placeMedia||view.placeMedia==='map')return;
- if(view.placeMedia==='process'){const state=lulangCookingState(view);return state.supply?lulangCookingSteps[state.step].detail:'假设移去供货：备料与后续出餐等待；归档餐饮点仍保留，不表示真实停业。';}
+ if(view.placeMedia==='process'){
+  const state=lulangCookingState(view),phase=lulangLifePhase(view);
+  if(!state.supply)return '对照假设：下一锅的原料未接入，备料等待。已做好的菜不会凭空消失；不模拟库存耗尽时间，也不表示真实停业。';
+  if(phase==='supply')return '供货先接到备料，再接入制作。2017年材料支持统一供应的组织记录；画面不代表供应商的位置、运量或真实运输路线。';
+  if(phase==='service')return '把制作接到服务：确认订餐、明示菜价、安排接待。2017诚信经营记录与2022服务要求分别注明日期，不把规则当成已经实现的经营效果。';
+  return lulangCookingSteps[state.step].detail;
+ }
  const photo=lulangLifePhotos[view.placeMedia],focus=Math.trunc(view.photoFocus??0);
  return focus>0?photo.features[Math.min(2,focus-1)].detail:photo.scope;
 }

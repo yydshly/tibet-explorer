@@ -6,4 +6,6 @@
 
 2017 supply/integrity statements are separately grounded in the [annual operating account, published 2018-09-10](https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml). They do not locate suppliers or establish contemporary business results. Missing-supply comparison is an authored dependency illustration only.
 
+The same four-station asset is cropped for closer process observation. Native words select making, supply, service and the dated daily-life photograph; manual observation pauses those words. Supply comparison concerns the **next batch's incoming ingredients**: it does not erase completed food or model inventory exhaustion. The service sheet is a functional illustration of the dated public interpretation, never an actual merchant order, price list or documentary record. No independent animation timer, extra recording or new 3D model is introduced.
+
 Machine-readable attribution, SHA-256 hashes, rejected media and unresolved kitchen-video gap: `/data/lulang-life-media.json`, generated with `node scripts/prepare-lulang-life.mjs`. No endorsements implied.

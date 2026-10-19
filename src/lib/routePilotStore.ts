@@ -12,7 +12,7 @@ function cameraSnapshot(view:any):Partial<PilotView>{
  return result;
 }
 function mediaSnapshot(view:any):Partial<PilotView>{
- return {placeMedia:['map','town','process','daily'].includes(view.placeMedia)?view.placeMedia:'map',photoFocus:Math.trunc(clamp(view.photoFocus??0,0,3)),cookingProgress:clamp(view.cookingProgress??0)};
+ return {placeMedia:['map','town','process','daily'].includes(view.placeMedia)?view.placeMedia:'map',photoFocus:Math.trunc(clamp(view.photoFocus??0,0,3)),cookingProgress:clamp(view.cookingProgress??0),...(['making','supply','service'].includes(view.lifePhase)?{lifePhase:view.lifePhase}:{})};
 }
 function snapshot(v:any):PilotReturn|undefined{
  if(!v||!Number.isInteger(v.beatIndex)||v.beatIndex<0||v.beatIndex>=routePilotCues.length||!v.view||!['whole','line','place'].includes(v.view.mode))return;

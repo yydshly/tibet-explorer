@@ -1,7 +1,8 @@
 import {lulangNarratedCultureProgress} from './lulangCulture';
 import {pilotNarratedCamera} from './routePilotCamera';
-import {lulangCookingProgress} from './lulangLife';
+import {lulangCookingProgress,lulangNarratedLifePhase} from './lulangLife';
 import type {LulangLens,LulangServiceFilter} from './lulangPlace';
+import type {LulangLifePhase} from './lulangLife';
 export const routePilotPath='/routes/g318-east/nyingchi-lulang';
 export const pilotScriptVersions=['1','1','3','1'] as const;
 export const pilotResumeAliases={'ROUTE-G318-lulang':'ROUTE-G318-lulang'};
@@ -28,7 +29,7 @@ export const routePilotCues=[
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
 
-export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean;placeMedia?:'map'|'town'|'process'|'daily';photoFocus?:number;cookingProgress?:number};
+export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean;placeMedia?:'map'|'town'|'process'|'daily';photoFocus?:number;cookingProgress?:number;lifePhase?:LulangLifePhase};
 export const pilotConnectionProgress=(view:PilotView)=>view.connections?Math.max(0,Math.min(1,view.connectionProgress??1)):0;
 export function pilotNarratedView(index:number,text:string,textProgress:number,highPoint=.5):PilotView{
  return {...pilotNarratedBase(index,text,textProgress,highPoint),...pilotNarratedCamera(index,text,textProgress,highPoint)};
@@ -42,6 +43,6 @@ function pilotNarratedBase(index:number,text:string,textProgress:number,highPoin
   const p=hold?highPoint:at<text.indexOf('停在山地观察点')?.12+(highPoint-.12)*part('沿道路向山地前进','停在山地观察点'):highPoint+(1-highPoint)*part('继续向鲁朗','接下来进入鲁朗');
   return {mode:'line',progress:p,height:hold?3000:3500,connections:false,lookBack:hold&&at<text.indexOf('这里按沿线')};
  }
- if(index===2){const placeLens=at<text.indexOf('切到生活空间')?'landscape':at<text.indexOf('地方风味的延续')?'life':'culture';return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','建筑轮廓'),lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','切到生活空间'),serviceFilter:placeLens==='culture'?'food':'all',servicesVisible:at>=text.indexOf('再看餐饮'),cultureProgress:lulangNarratedCultureProgress(text,textProgress),cultureSupply:!(at>=text.indexOf('移去供货条件')&&at<text.indexOf('恢复联系')),cultureSample:0,placeMedia:at>=text.indexOf('看过地方')?'map':at>=text.indexOf('最后看二零零八')?'daily':at>=text.indexOf('再看餐饮')?'process':at>=text.indexOf('现在看二零二四')?'town':'map',photoFocus:0,cookingProgress:lulangCookingProgress(text,textProgress)};}
+ if(index===2){const placeLens=at<text.indexOf('切到生活空间')?'landscape':at<text.indexOf('地方风味的延续')?'life':'culture';return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','建筑轮廓'),lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','切到生活空间'),serviceFilter:placeLens==='culture'?'food':'all',servicesVisible:at>=text.indexOf('再看餐饮'),cultureProgress:lulangNarratedCultureProgress(text,textProgress),cultureSupply:!(at>=text.indexOf('移去供货条件')&&at<text.indexOf('恢复联系')),cultureSample:0,placeMedia:at>=text.indexOf('看过地方')?'map':at>=text.indexOf('最后看二零零八')?'daily':at>=text.indexOf('再看餐饮')?'process':at>=text.indexOf('现在看二零二四')?'town':'map',photoFocus:0,cookingProgress:lulangCookingProgress(text,textProgress),lifePhase:lulangNarratedLifePhase(text,textProgress)};}
  return {mode:'whole',progress:1,height:3500,connections:false,lookBack:false};
 }

@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 // @ts-expect-error Node belongs to the runner.
 import {createHash} from 'node:crypto';
 import {routePilotCues,pilotNarratedView} from '../src/data/routePilot';
-import {lulangCookingState,lulangMediaFeedback} from '../src/data/lulangLife';
+import {lulangCookingState,lulangMediaFeedback,lulangLifePhase,lulangLifeRecord} from '../src/data/lulangLife';
 import {narrationTimingAt} from '../src/lib/narrationTiming';
 const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
 describe('dated real photographs and separately illustrated process',()=>{
@@ -24,5 +24,18 @@ describe('dated real photographs and separately illustrated process',()=>{
   expect(states.find(s=>s.at>cue.narration.indexOf('恢复联系'))!.view.cultureSupply).toBe(true);
   expect(pilotNarratedView(2,cue.narration,0)).toMatchObject({placeMedia:'map',cultureSupply:true,cookingProgress:0});
   const daily=states.find(s=>s.view.placeMedia==='daily')!.view;expect(lulangMediaFeedback(daily)).toContain('不能证明2017');
+ });
+ it('follows the spoken subject in both scene and source reading and restores the process after the gap',()=>{
+  const text=routePilotCues[2].narration;
+  for(const [token,phase] of [['炒制','making'],['供货组织','supply'],['商户诚信管理','service'],['移去供货条件','supply'],['恢复联系','making']] as const){
+   const view=pilotNarratedView(2,text,(text.indexOf(token)+.01)/text.length);
+   expect(lulangLifePhase(view),token).toBe(phase);
+   expect(lulangLifeRecord(view).date).toContain(phase==='supply'?'2017':'2022');
+  }
+  const cooking=pilotNarratedView(2,text,(text.indexOf('炒制')+.01)/text.length);
+  expect(lulangCookingState(cooking).step).toBe(1);expect(lulangLifeRecord(cooking).text).toContain('炒制');
+  const gap={...cooking,lifePhase:'making' as const,cultureSupply:false};
+  expect(lulangLifePhase(gap)).toBe('supply');expect(lulangMediaFeedback(gap)).toContain('已做好的菜不会凭空消失');
+  expect(lulangLifePhase({...gap,cultureSupply:true})).toBe('making');
  });
 });

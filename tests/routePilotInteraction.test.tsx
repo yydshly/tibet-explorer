@@ -37,9 +37,9 @@ describe('actual route callbacks and independent persistence',()=>{
  it('saves photo focus and the interrupted cooking condition, then restores native media on resume',()=>{
   media.current.beatIndex=2;media.current.timing={textProgress:.6};
   const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
-  local().props.onChange({placeMedia:'daily',photoFocus:2,cookingProgress:.9,cultureSupply:false});
+  local().props.onChange({placeMedia:'daily',photoFocus:2,cookingProgress:.9,cultureSupply:false,lifePhase:'service'});
   button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
-  expect(scene().view).toMatchObject({placeMedia:'daily',photoFocus:2,cookingProgress:.9,cultureSupply:false});expect(media.current.raw).toBe(.43);
+  expect(scene().view).toMatchObject({placeMedia:'daily',photoFocus:2,cookingProgress:.9,cultureSupply:false,lifePhase:'service'});expect(media.current.raw).toBe(.43);
   media.current.timing={textProgress:.6};button('恢复原条件并继续').onClick();
   expect(scene().view).toMatchObject({placeMedia:'process',photoFocus:0,cultureSupply:true});
  });
