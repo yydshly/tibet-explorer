@@ -1,0 +1,1020 @@
+{
+  "id": "G318-corridor-source-coverage-20261019",
+  "date": "2026-10-19",
+  "status": "bounded_source_audit_complete_storyboard_scope_reduced",
+  "scope": "林芝八一城区附近—色季拉—鲁朗—通麦—波密县城附近；本轮为资料核查，不是整线制作或实地导航验收",
+  "frozenProductCommit": "51f375fc242ebf540f6feda98e1739737908b4bb",
+  "planningCommit": "c2d3747",
+  "decision": "可以进入有来源约束的整体分镜；连续全实景漫游、桥隧内部与地方文化现场不具备资料条件。近景镜头须等原图或10m局部像元验证后排入制作。",
+  "road": {
+    "status": "connected_source_geometry_verified_not_navigation",
+    "nodeCount": 3164,
+    "edgesChecked": 3163,
+    "lengthMetres": 228692.8,
+    "allEdgesOriginalAdjacentSourceNodes": true,
+    "wholeChainAllEdgesTaggedG318": false,
+    "extensionAllEdgesTaggedG318": true,
+    "snapshots": {
+      "prefix": "2026-10-15 archived pilot original prefix; rechecked against raw OSM XML this round",
+      "extension": "2026-10-19 Overpass original G318-only nodes/ways",
+      "joinIsIdenticalOriginalNode": true,
+      "prefixNodes": 1133,
+      "extensionNodes": 2032,
+      "extensionLengthMetres": 157268.9,
+      "prefixArchiveHashes": {
+        "qa\\event-continuity\\raw\\nyingchi-lulang.osm": "9a4a3ff743a1f1b009acb70f258c6053f93afe153b65337e2b96793c9dc38be8",
+        "qa\\event-continuity\\raw\\sejila-south-gap.osm": "27d1c2fc163307349373bdfb989d252165f601f61e181cb7b83672e9dcc8e868",
+        "qa\\place-grounding\\raw\\lulang-map.osm": "d7f0efaf7416a67625e3b0be4896c77916208bcda42bd1f8d76d3134b0690a79"
+      }
+    },
+    "start": {
+      "node": "node/8539730136",
+      "coordinate": [
+        94.3607525,
+        29.6513654
+      ],
+      "scope": "existing pilot original road-node start"
+    },
+    "lulangJoin": {
+      "node": "node/7365874802",
+      "coordinate": [
+        94.7295088,
+        29.7276261
+      ],
+      "metresFromStart": 71423.8,
+      "scope": "actual main-road/local-branch connection, not the pilot service-road endpoint"
+    },
+    "end": {
+      "node": "node/841510013",
+      "coordinate": [
+        95.7764321,
+        29.8548118
+      ],
+      "scope": "G318 source node nearest OSM Zhamu town reference; not verified public entrance",
+      "townReference": {
+        "node": "node/766963429",
+        "coordinate": [
+          95.7746189,
+          29.8531319
+        ]
+      },
+      "distanceFromTownReferenceMetres": 255.9
+    },
+    "urbanConnectors": [
+      {
+        "id": "way/919614957",
+        "tags": {
+          "highway": "residential",
+          "source": "maxar"
+        },
+        "nodeCount": 12
+      },
+      {
+        "id": "way/308009545",
+        "tags": {
+          "highway": "secondary",
+          "name": "广福大道",
+          "name:zh": "广福大道",
+          "name:zh-Hans": "广福大道",
+          "name:zh-Hant": "广福大道",
+          "oneway": "yes"
+        },
+        "nodeCount": 9
+      },
+      {
+        "id": "way/1422670463",
+        "tags": {
+          "highway": "secondary_link",
+          "oneway": "yes"
+        },
+        "nodeCount": 8
+      },
+      {
+        "id": "way/61428431",
+        "tags": {
+          "highway": "secondary",
+          "name": "广福大道",
+          "name:zh": "广福大道",
+          "name:zh-Hans": "广福大道",
+          "name:zh-Hant": "广福大道",
+          "oneway": "yes",
+          "source": "GPS"
+        },
+        "nodeCount": 7
+      },
+      {
+        "id": "way/308009546",
+        "tags": {
+          "highway": "secondary",
+          "name": "广福大道",
+          "name:zh": "广福大道",
+          "name:zh-Hans": "广福大道",
+          "name:zh-Hant": "广福大道",
+          "oneway": "yes"
+        },
+        "nodeCount": 5
+      },
+      {
+        "id": "way/1154208300",
+        "tags": {
+          "bridge:name": "八一特大桥",
+          "highway": "trunk",
+          "lanes": "2",
+          "maxspeed": "60",
+          "name": "林拉公路",
+          "name:bo": "ཉིང་ལྷ་གཞུང་ལམ།",
+          "name:zh": "林拉公路",
+          "oneway": "yes",
+          "surface": "asphalt"
+        },
+        "nodeCount": 12
+      }
+    ],
+    "namedProjectTunnels": [
+      {
+        "id": "way/522214290",
+        "name": "帕隆2号隧道",
+        "ref": "G318",
+        "bridge": null,
+        "tunnel": "yes",
+        "layer": "-1",
+        "first": [
+          95.0091326,
+          30.040585
+        ],
+        "last": [
+          95.005005,
+          30.0235511
+        ],
+        "nodeCount": 18,
+        "timestamp": "2026-10-11T11:25:11Z",
+        "version": 4
+      },
+      {
+        "id": "way/401669066",
+        "name": "帕隆1号隧道",
+        "ref": "G318",
+        "bridge": null,
+        "tunnel": "yes",
+        "layer": "-1",
+        "first": [
+          95.02985,
+          30.0497608
+        ],
+        "last": [
+          95.0179591,
+          30.0434571
+        ],
+        "nodeCount": 11,
+        "timestamp": "2026-10-11T11:25:11Z",
+        "version": 7
+      },
+      {
+        "id": "way/624160734",
+        "name": "小老虎嘴隧道",
+        "ref": "G318",
+        "bridge": null,
+        "tunnel": "yes",
+        "layer": null,
+        "first": [
+          95.0488254,
+          30.073529
+        ],
+        "last": [
+          95.0474368,
+          30.0698592
+        ],
+        "nodeCount": 5,
+        "timestamp": "2023-07-20T11:02:22Z",
+        "version": 3
+      },
+      {
+        "id": "way/624160737",
+        "name": "飞石崖隧道",
+        "ref": "G318",
+        "bridge": null,
+        "tunnel": "yes",
+        "layer": null,
+        "first": [
+          95.057725,
+          30.0909053
+        ],
+        "last": [
+          95.0558996,
+          30.0862882
+        ],
+        "nodeCount": 2,
+        "timestamp": "2018-09-09T05:41:43Z",
+        "version": 2
+      },
+      {
+        "id": "way/522209926",
+        "name": "102隧道",
+        "ref": "G318",
+        "bridge": null,
+        "tunnel": "yes",
+        "layer": "-1",
+        "first": [
+          95.1485179,
+          30.0707465
+        ],
+        "last": [
+          95.1334771,
+          30.0737201
+        ],
+        "nodeCount": 12,
+        "timestamp": "2017-09-07T18:07:45Z",
+        "version": 2
+      }
+    ],
+    "namedProjectBridges": [
+      {
+        "id": "way/522214288",
+        "name": "迫龙沟大桥",
+        "ref": "G318",
+        "bridge": "yes",
+        "tunnel": null,
+        "layer": "1",
+        "first": [
+          95.0161612,
+          30.0434072
+        ],
+        "last": [
+          95.0091326,
+          30.040585
+        ],
+        "nodeCount": 2,
+        "timestamp": "2026-10-11T11:25:11Z",
+        "version": 7
+      },
+      {
+        "id": "way/539990326",
+        "name": "通麦特大桥",
+        "ref": "G318",
+        "bridge": "yes",
+        "tunnel": null,
+        "layer": "1",
+        "first": [
+          95.0667951,
+          30.0985284
+        ],
+        "last": [
+          95.0637683,
+          30.098656
+        ],
+        "nodeCount": 2,
+        "timestamp": "2026-09-08T13:21:32Z",
+        "version": 6
+      }
+    ],
+    "limits": [
+      "OSM is an acquisition-time database snapshot, not survey or current access confirmation.",
+      "This research chain does not replace the frozen pilot, which includes a local service-road branch.",
+      "Travel length is the archived geometry length, not official mileage or journey time.",
+      "Only mapped bridge/tunnel tags are counted; do not equate current tags with every element of the historical five-tunnel/two-bridge project.",
+      "River names and topology have OSM provenance, but local unnamed streams and flow direction still need independent hydrological checks.",
+      "DSM elevation over tunnels is mountain surface, not road or tunnel elevation."
+    ],
+    "proof": "/project-review/corridor-evidence/g318-source-chain.geojson",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "licenseUrl": "https://www.openstreetmap.org/copyright"
+  },
+  "water": {
+    "status": "named_source_geometry_and_regional_relations_checked",
+    "groups": {
+      "niyang": {
+        "sourceWays": [
+          "way/26405924",
+          "way/203779800",
+          "way/203779801",
+          "way/203779847",
+          "way/203779848",
+          "way/203779849",
+          "way/203779851",
+          "way/203779852",
+          "way/396909058",
+          "way/1054313718"
+        ],
+        "names": [
+          "尼洋曲",
+          "尼洋河"
+        ],
+        "nodeCount": 426
+      },
+      "lulang": {
+        "sourceWays": [
+          "way/26406905"
+        ],
+        "names": [
+          "鲁朗河"
+        ],
+        "nodeCount": 508
+      },
+      "layue": {
+        "sourceWays": [
+          "way/30978928",
+          "way/910591306"
+        ],
+        "names": [
+          "拉月曲"
+        ],
+        "nodeCount": 195
+      },
+      "yigong": {
+        "sourceWays": [
+          "way/67604115",
+          "way/398373303"
+        ],
+        "names": [
+          "ཡིད་འོང་གཙང་པོ 易贡藏布",
+          "易贡藏布"
+        ],
+        "nodeCount": 374
+      },
+      "parlung": {
+        "sourceWays": [
+          "way/26407649",
+          "way/26407650",
+          "way/26407652",
+          "way/67605161",
+          "way/67605162"
+        ],
+        "names": [
+          "ཕར་ལུང་གཙང་པ 帕隆藏布"
+        ],
+        "nodeCount": 620
+      }
+    },
+    "tongmaiBridgeCrossings": [
+      {
+        "roadWay": "way/539990326",
+        "waterWay": "way/398373303",
+        "waterName": "ཡིད་འོང་གཙང་པོ 易贡藏布",
+        "coordinate": [
+          95.06498572934905,
+          30.098604677155762
+        ],
+        "method": "intersection of original source segments, not a survey"
+      }
+    ],
+    "yigongParlungSharedNode": [
+      {
+        "node": "node/289310112",
+        "coordinate": [
+          95.06396,
+          30.0960196
+        ]
+      }
+    ],
+    "officialReferences": [
+      {
+        "url": "https://linzhi.gov.cn/linzhi/zmlz/201812/ab53f2adc76b4af981fd2fb072c805b8.shtml",
+        "supports": "易贡藏布在通麦附近汇入帕隆藏布，再入雅鲁藏布江；本轮检索文字可读，直接打开失败"
+      },
+      {
+        "url": "https://www.bomi.gov.cn/bmx/xwzx/202208/ce0bd19f9935485189d8c98aadcb403e.shtml",
+        "supports": "通麦特大桥跨易贡藏布，本轮官方检索文字核对"
+      },
+      {
+        "url": "https://csglj.linzhi.gov.cn/szglj/c101643/202601/c8f4c9fa58e745b9afbe215dfed90a5d.shtml",
+        "supports": "规划公示列出拉月曲、鲁朗河等水系名称；只作地名依据，不当现状工程"
+      }
+    ],
+    "limits": [
+      "照片中未核名的溪流继续保留溪流称呼，不自动套用鲁朗河。",
+      "水系线与道路方向分别处理，不由旅行方向推水流方向。",
+      "未核定流量、每段坡降或汇水动态参数，不以DSM直接生成当地实测水文。"
+    ]
+  },
+  "terrain": {
+    "status": "native_route_surface_samples_verified",
+    "nativeDataset": "Copernicus GLO-30 DSM",
+    "sources": [
+      {
+        "id": "Copernicus_DSM_COG_10_N29_00_E094_00_DEM",
+        "downloadComplete": false,
+        "bytesPresent": 37224448,
+        "sha256OfPresentBytes": "f9b8c7d3037d109e4c7e9df924e26aecf3f8964214069a366950ba51dd01621b",
+        "shape": [
+          3600,
+          3600
+        ],
+        "crs": "EPSG:4326",
+        "overviews": [
+          2,
+          4,
+          8
+        ],
+        "bounds": [
+          93.99986111111112,
+          29.000138888888888,
+          94.99986111111112,
+          30.000138888888888
+        ],
+        "nativeSpacingDegrees": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "sourceReadStatus": "coarse_overview_read"
+      },
+      {
+        "id": "Copernicus_DSM_COG_10_N29_00_E095_00_DEM",
+        "downloadComplete": false,
+        "bytesPresent": 32768000,
+        "sha256OfPresentBytes": "0d1045cf80f8653522a171d8547db763842ce3ce23843b65f0329dc75eef1fc7",
+        "shape": [
+          3600,
+          3600
+        ],
+        "crs": "EPSG:4326",
+        "overviews": [
+          2,
+          4,
+          8
+        ],
+        "bounds": [
+          94.99986111111112,
+          29.000138888888888,
+          95.99986111111112,
+          30.000138888888888
+        ],
+        "nativeSpacingDegrees": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "sourceReadStatus": "coarse_overview_read"
+      },
+      {
+        "id": "Copernicus_DSM_COG_10_N30_00_E094_00_DEM",
+        "downloadComplete": true,
+        "bytesPresent": 40268561,
+        "sha256OfPresentBytes": "916622aa6eabfdcd287a6184f190c19f489d0bc37c524b67fda3a4ab1c1c8ca6",
+        "shape": [
+          3600,
+          3600
+        ],
+        "crs": "EPSG:4326",
+        "overviews": [
+          2,
+          4,
+          8
+        ],
+        "bounds": [
+          93.99986111111112,
+          30.000138888888888,
+          94.99986111111112,
+          31.000138888888888
+        ],
+        "nativeSpacingDegrees": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "sourceReadStatus": "coarse_overview_read"
+      },
+      {
+        "id": "Copernicus_DSM_COG_10_N30_00_E095_00_DEM",
+        "downloadComplete": true,
+        "bytesPresent": 40054113,
+        "sha256OfPresentBytes": "e60d22ed46f278e8e6c20130efccf3a46f9a470a185638b10c20f41fea73173b",
+        "shape": [
+          3600,
+          3600
+        ],
+        "crs": "EPSG:4326",
+        "overviews": [
+          2,
+          4,
+          8
+        ],
+        "bounds": [
+          94.99986111111112,
+          30.000138888888888,
+          95.99986111111112,
+          31.000138888888888
+        ],
+        "nativeSpacingDegrees": [
+          0.0002777777777777778,
+          0.0002777777777777778
+        ],
+        "sourceReadStatus": "coarse_overview_read"
+      }
+    ],
+    "routeNodes": 3164,
+    "nativeSamplesRead": 3164,
+    "failedSamples": [],
+    "coarseContext": {
+      "bbox": [
+        94.3,
+        29.48,
+        95.9,
+        30.23
+      ],
+      "shape": [
+        450,
+        960
+      ],
+      "sourceOverviewsNominalMetres": 240,
+      "scope": "Research overview only; not a new runtime terrain mesh"
+    },
+    "limits": [
+      "Two source objects are partial byte downloads, explicitly retained as .part; they are not represented as complete files.",
+      "Native read verification applies to the sampled route nodes, not every30m cell or arbitrary camera view.",
+      "DSM values include mountain surfaces over tunnels, vegetation and buildings; not road/bridge/tunnel survey elevation.",
+      "Terrain samples do not establish drainage connectivity or current glacier boundaries."
+    ]
+  },
+  "satellite": {
+    "status": "catalogue_footprints_verified_pixels_not_yet_verified",
+    "selectedScenes": [
+      {
+        "id": "S2C_46RFT_20251213_0_L2A",
+        "capturedAt": "2025-12-13T04:30:29.723000Z",
+        "cloudCoverWholeTile": 0.02006,
+        "footprint": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                94.03501651049163,
+                29.826403661902923
+              ],
+              [
+                94.02505755898267,
+                28.835580215062794
+              ],
+              [
+                95.15005665388128,
+                28.822340288958415
+              ],
+              [
+                95.17093016766626,
+                29.812619352753874
+              ],
+              [
+                94.03501651049163,
+                29.826403661902923
+              ]
+            ]
+          ]
+        },
+        "visual": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FT/2025/12/S2C_46RFT_20251213_0_L2A/TCI.tif",
+        "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FT/2025/12/S2C_46RFT_20251213_0_L2A/preview.jpg",
+        "scl": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FT/2025/12/S2C_46RFT_20251213_0_L2A/SCL.tif"
+      },
+      {
+        "id": "S2C_46RFU_20251213_0_L2A",
+        "capturedAt": "2025-12-13T04:30:15.315000Z",
+        "cloudCoverWholeTile": 0.010995,
+        "footprint": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                94.04453147620677,
+                30.728857773305315
+              ],
+              [
+                94.03410926551851,
+                29.73817254265449
+              ],
+              [
+                95.16902864144436,
+                29.72443713317246
+              ],
+              [
+                95.19087269118762,
+                30.714568364965643
+              ],
+              [
+                94.04453147620677,
+                30.728857773305315
+              ]
+            ]
+          ]
+        },
+        "visual": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FU/2025/12/S2C_46RFU_20251213_0_L2A/TCI.tif",
+        "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FU/2025/12/S2C_46RFU_20251213_0_L2A/preview.jpg",
+        "scl": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FU/2025/12/S2C_46RFU_20251213_0_L2A/SCL.tif"
+      },
+      {
+        "id": "S2C_46RGU_20251213_0_L2A",
+        "capturedAt": "2025-12-13T04:30:12.071000Z",
+        "cloudCoverWholeTile": 0.001974,
+        "footprint": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                95.0881961272749,
+                30.716261196067205
+              ],
+              [
+                95.06737398130906,
+                29.726064341310543
+              ],
+              [
+                96.2013482340559,
+                29.70348779362089
+              ],
+              [
+                96.23355181309961,
+                30.692774366334145
+              ],
+              [
+                95.0881961272749,
+                30.716261196067205
+              ]
+            ]
+          ]
+        },
+        "visual": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/GU/2025/12/S2C_46RGU_20251213_0_L2A/TCI.tif",
+        "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/GU/2025/12/S2C_46RGU_20251213_0_L2A/preview.jpg",
+        "scl": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/GU/2025/12/S2C_46RGU_20251213_0_L2A/SCL.tif"
+      }
+    ],
+    "checkedSourceRoadNodes": 3164,
+    "outsideSelectedFootprints": 0,
+    "previews": [
+      {
+        "id": "S2C_46RFT_20251213_0_L2A",
+        "status": "preview_fetched",
+        "bytes": 42302
+      },
+      {
+        "id": "S2C_46RFU_20251213_0_L2A",
+        "status": "preview_fetched",
+        "bytes": 49393
+      },
+      {
+        "id": "S2C_46RGU_20251213_0_L2A",
+        "status": "preview_fetched",
+        "bytes": 50093
+      }
+    ],
+    "pixelMosaicStatus": "remote raster reads failed; not produced or certified",
+    "limits": [
+      "Footprint containment is not cloud, shadow, snow or street-level visibility verification.",
+      "Tile cloud percent is not the cloud percent of the road corridor.",
+      "These are winter2025 images, not today or all seasons."
+    ]
+  },
+  "media": {
+    "existingApprovedPhotos": [
+      {
+        "id": "forest",
+        "src": "/assets/routes/g318/lulang-life/forest-20080918.jpg",
+        "date": "2008-09-18",
+        "author": "reurinkjan",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tibetan_forest.jpg",
+        "sha256": "a7024ec486bbb9534c09c02186ee1a55373d3691cf03eaf839ca43e3ee00ccc8",
+        "status": "existing_approved_clean_original_hash_rechecked"
+      },
+      {
+        "id": "meadow",
+        "src": "/assets/routes/g318/lulang-life/meadow-20120811.jpg",
+        "date": "2012-08-11",
+        "author": "山海风",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:鲁朗草原_-_panoramio_(1).jpg",
+        "sha256": "b316e83f04720bf10bef8d4977684c97a5169ba8a881ada80db02a4f70489a8a",
+        "status": "existing_approved_clean_original_hash_rechecked"
+      },
+      {
+        "id": "grazing",
+        "src": "/assets/routes/g318/lulang-life/village-20140920.jpg",
+        "date": "2014-09-20",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Linzhi_Zhaxigang_2014.09.20_17-06-30.jpg",
+        "sha256": "cbd79ce7d43b510500f8ecbe67cf668ea7ae3f3a3dd3d09115d58091ffbd01e8",
+        "status": "existing_approved_clean_original_hash_rechecked"
+      },
+      {
+        "id": "town",
+        "src": "/assets/routes/g318/lulang-life/town-20240922.jpg",
+        "date": "2024-09-22",
+        "author": "Zhangmoon618",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lulang_Town.jpg",
+        "sha256": "c08471f784f75c33a3ec43135a718336baf5d85d09e696776077f4ae457a8021",
+        "status": "existing_approved_clean_original_hash_rechecked"
+      },
+      {
+        "id": "daily",
+        "src": "/assets/routes/g318/lulang-life/street-life-20080918.jpg",
+        "date": "2008-09-18",
+        "author": "reurinkjan",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pocket_billiards,_%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%BC%E0%BD%98%E0%BC%8B%E0%BD%A6%E0%BE%9F%E0%BD%BA%E0%BD%82%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%A4%E0%BD%BC%E0%BC%8B%E0%BD%A3%E0%BD%BC%E0%BC%8D.jpg",
+        "sha256": "c02fece7c9fa9c7b813b320de9fabd7a8cbf09167fcc9faee7f2dea1b9e367a0",
+        "status": "existing_approved_clean_original_hash_rechecked"
+      }
+    ],
+    "newCandidates": [
+      {
+        "id": "nyingchi-city-2019",
+        "title": "File:Nyingchi city June 2019.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Nyingchi_city_June_2019.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/92/Nyingchi_city_June_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "LinasD",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2019-06-10 14:47:28",
+        "description": "Southern part of Nyingchi city, June 2019. Intersection of Guangzhou Ave South Section and Fuzhou Ave West Section.",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "width": 4160,
+        "height": 3120,
+        "sha256": null,
+        "bytes": null,
+        "status": "license_metadata_only_original_visual_not_verified",
+        "scope": "元数据列出可再利用许可，但原图请求返回429，未完成像素/水印核验；不列为本轮可上画面的素材。",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/9/92/Nyingchi_city_June_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "id": "bayi-2015",
+        "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (7).jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(7).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "ping lin",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "date": "Taken on 10 April 2015",
+        "description": "Bayi, Nyingchi, Tibet, China",
+        "coordinates": [
+          "94.352508",
+          "29.660872"
+        ],
+        "width": 3264,
+        "height": 2448,
+        "sha256": "f5fb8c790a7f7e64bdb3c8561cc0f35995f25b3799e942277002787a1e322127",
+        "bytes": 1523168,
+        "status": "usable_dated_environment_record",
+        "scope": "2015年八一城区附近河谷环境记录；不据此展示今天城市日常或确认画面内每座建筑。",
+        "visualReview": "原图已解码并查看完整画面，工具显示缩放；未发现烧录水印，未裁剪或删除标记；不作逐像素鉴定。",
+        "visualEvidence": "workspace-local images/bayi-2015.jpg"
+      },
+      {
+        "id": "sejila-2011",
+        "title": "File:Namcha Barwa, 南迦巴瓦.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Namcha_Barwa,_%E5%8D%97%E8%BF%A6%E5%B7%B4%E7%93%A6.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Namcha_Barwa%2C_%E5%8D%97%E8%BF%A6%E5%B7%B4%E7%93%A6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "梁逸晨",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "date": "2011-03-26",
+        "description": "Namcha Barwa in Sejila Moutain.",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "width": 2313,
+        "height": 818,
+        "sha256": null,
+        "bytes": null,
+        "status": "license_metadata_only_original_visual_not_verified",
+        "scope": "元数据列出可再利用许可，但原图请求返回429，未完成像素/水印核验；不列为本轮可上画面的素材。",
+        "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/9/9d/Namcha_Barwa%2C_%E5%8D%97%E8%BF%A6%E5%B7%B4%E7%93%A6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "id": "tongmai-2014",
+        "title": "File:20140921 Tongmai Bridge.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:20140921_Tongmai_Bridge.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/e5/20140921_Tongmai_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Zhangmoon618",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2014-09-21 14:54:49",
+        "description": "Tongmai suspension bridge on the Sichuan-Tibet highway in Bomi county, Tibet, China.",
+        "coordinates": [
+          "95.065509",
+          "30.096708"
+        ],
+        "width": 3264,
+        "height": 1836,
+        "sha256": "10c91a1f6a15bbe588e8c993a3dd0a87576cccd4880125b3ac8a71359bf0721e",
+        "bytes": 1603232,
+        "status": "usable_dated_historical_record",
+        "scope": "2014年通麦旧桥与可见施工背景；不当作2015后新桥现状，不从画面猜测人物身份和维护成效。",
+        "visualReview": "原图已解码并查看完整画面，工具显示缩放；未发现烧录水印，未裁剪或删除标记；不作逐像素鉴定。",
+        "visualEvidence": "workspace-local images/tongmai-2014.jpg"
+      },
+      {
+        "id": "tongmai-bridge-archive",
+        "title": "File:通麦大桥 - panoramio.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%80%9A%E9%BA%A6%E5%A4%A7%E6%A1%A5_-_panoramio.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/3/30/%E9%80%9A%E9%BA%A6%E5%A4%A7%E6%A1%A5_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "山海风",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "date": "Taken on 11 August 2012",
+        "description": "通麦大桥",
+        "coordinates": [
+          "95.065931",
+          "30.097031"
+        ],
+        "width": 3888,
+        "height": 2592,
+        "sha256": null,
+        "bytes": null,
+        "status": "license_metadata_only_original_visual_not_verified",
+        "scope": "元数据列出可再利用许可，但原图请求返回429，未完成像素/水印核验；不列为本轮可上画面的素材。",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/3/30/%E9%80%9A%E9%BA%A6%E5%A4%A7%E6%A1%A5_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "id": "tongmai-valley-archive",
+        "title": "File:318 通麦 - panoramio.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:318_%E9%80%9A%E9%BA%A6_-_panoramio.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/12/318_%E9%80%9A%E9%BA%A6_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "guan",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "date": "Taken on 15 October 2011",
+        "description": "318 通麦",
+        "coordinates": [
+          "94.762610",
+          "29.847698"
+        ],
+        "width": 3072,
+        "height": 4608,
+        "sha256": "94a2237c47cc03d67c31fb6d8e41004082b17feef3ed28800e7eb781ace1851b",
+        "bytes": 5005674,
+        "status": "restricted_context_record_not_tongmai_town",
+        "scope": "2011年沿途道路记录。标题写通麦，但来源机位在94.762610,29.847698，不能标作通麦镇或通麦桥；只作带日期的沿途环境资料，机位精度未独立复核。",
+        "visualReview": "原图已解码并查看完整画面，工具显示缩放；未发现烧录水印，未裁剪或删除标记；不作逐像素鉴定。",
+        "visualEvidence": "workspace-local images/tongmai-valley-archive.jpg"
+      },
+      {
+        "id": "bomi-overview-2008",
+        "title": "File:Pome Dzong (Tramog, Bomi).jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Pome_Dzong_(Tramog,_Bomi).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/d/db/Pome_Dzong_%28Tramog%2C_Bomi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "reurinkjan",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "date": "2008-09-17 10:32:10",
+        "description": "Pome Dzong (Tramog, Bomi) in 2008",
+        "coordinates": [
+          "95.769694",
+          "29.858111"
+        ],
+        "width": 999,
+        "height": 664,
+        "sha256": "a7e3abfc526fd166aaacb8a0ddff1e534591ff39ea509c47ba9b9707cdfb55f1",
+        "bytes": 689752,
+        "status": "usable_dated_street_record",
+        "scope": "2008年波密县城街道记录，可观察街道、车辆、行人与临街建筑；999×664像素，不作今日全貌、精细放大或城市增长证据。",
+        "visualReview": "原图已解码并查看完整画面，工具显示缩放；未发现烧录水印，未裁剪或删除标记；不作逐像素鉴定。",
+        "visualEvidence": "workspace-local images/bomi-overview-2008.jpg"
+      },
+      {
+        "id": "bomi-life-2008",
+        "title": "File:Pome Dzong (Tramog, Bomi) - 2927025436.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Pome_Dzong_(Tramog,_Bomi)_-_2927025436.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/86/Pome_Dzong_%28Tramog%2C_Bomi%29_-_2927025436.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "reurinkjan",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "date": "2008-09-17 10:39:48",
+        "description": "Pome Dzong (Tramog, Bomi) in 2008",
+        "coordinates": [
+          "95.769694",
+          "29.858111"
+        ],
+        "width": 999,
+        "height": 664,
+        "sha256": null,
+        "bytes": null,
+        "status": "license_metadata_only_original_visual_not_verified",
+        "scope": "元数据列出可再利用许可，但原图请求返回429，未完成像素/水印核验；不列为本轮可上画面的素材。",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/8/86/Pome_Dzong_%28Tramog%2C_Bomi%29_-_2927025436.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "id": "bomi-street-2006",
+        "title": "File:Street of Zhamu Town.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Street_of_Zhamu_Town.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Street_of_Zhamu_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Chen Zhao from Edinburgh",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "date": "2006-09-18 17:44",
+        "description": "波密县城扎木镇街头 / Street of Zhamu Town, Bomi County, Nyingchi Prefecture, Tibet",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "width": 1280,
+        "height": 960,
+        "sha256": null,
+        "bytes": null,
+        "status": "license_metadata_only_original_visual_not_verified",
+        "scope": "元数据列出可再利用许可，但原图请求返回429，未完成像素/水印核验；不列为本轮可上画面的素材。",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/0/0b/Street_of_Zhamu_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      {
+        "id": "bomi-town-2006",
+        "title": "File:Zhamo Tibet.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Zhamo_Tibet.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/07/Zhamo_Tibet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Chen Zhao from Edinburgh",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "date": "2006-09-18",
+        "description": "Zhamu Town, Bomi County, Nyingchi Prefecture, Tibet",
+        "coordinates": [
+          "",
+          ""
+        ],
+        "width": 1280,
+        "height": 960,
+        "sha256": null,
+        "bytes": null,
+        "status": "license_metadata_only_original_visual_not_verified",
+        "scope": "元数据列出可再利用许可，但原图请求返回429，未完成像素/水印核验；不列为本轮可上画面的素材。",
+        "error": "429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/0/07/Zhamo_Tibet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      }
+    ],
+    "newOriginalsVisuallyReviewed": 4,
+    "newUsableDatedPlaceRecords": 3,
+    "additionalRestrictedContextRecords": 1,
+    "metadataOnlyNotVisuallyCleared": 6,
+    "newPaidOrWatermarkedMediaAdded": 0,
+    "continuousVideo": "鲁朗限定视频查询无结果；本轮没有通麦、波密连续视频的核准项，不声称已穷尽搜索。停止扩大检索，按现有素材缩减镜头。",
+    "culture": "已有2018鲁朗记录与波密文化出处不等于取得活动影像许可；不借其他地方节庆冒充。",
+    "searchScope": "10组成功留存的Commons查询，每组最多20条，含1组鲁朗视频查询；无关PDF、地名重名和异地画面不计有效素材。视频核查为限定范围，不代表全网或其他节点已经穷尽检索。",
+    "downloadLimit": "部分原图返回429后本轮不反复请求或绕过限制。"
+  },
+  "byUnit": [
+    {
+      "node": "林芝",
+      "usable": "已有城区接入道路与尼洋河空间依据；2015河谷环境原图可用。",
+      "missing": "现代城区生活影像不足；2019城区照片许可元数据可查，但原图429，尚未核验无水印。",
+      "reduce": "先以真实河谷与城区地图建立出发参照，旧照带日期作环境记录；不承诺街景漫游。"
+    },
+    {
+      "node": "色季拉",
+      "usable": "既有原路高差资料、整线高程原始采样与同日卫星覆盖支持跨山叙事。",
+      "missing": "新的近景与多季节资料不足；远峰候选原图未核验，天气光影时序未取得可用记录。",
+      "reduce": "保留沿真实地形上山、回望和入谷；南迦巴瓦、日照金山、冰川不列必做镜头，不新增支线。"
+    },
+    {
+      "node": "鲁朗",
+      "usable": "既有五份免费无水印原图哈希一致；主路与地方接续节点已核对。",
+      "missing": "连续地方生活、工布节庆现场视频仍未核到本轮可用素材。",
+      "reduce": "复用已收口内容及有年代的生活记录；节庆文字资料与日常照片分开，不扩展制作供货过程。"
+    },
+    {
+      "node": "通麦",
+      "usable": "完整主路延伸、通麦特大桥与易贡藏布交叉、五座具名隧道及汇合位置有来源；2014旧桥实拍已查看无烧录水印。",
+      "missing": "改建前的连续旧路几何、新桥近景和连续行车影像不足；不能由现状DSM得到桥面、隧道内高程。",
+      "reduce": "使用真实地形、当前几何、2014记录和有据工程时间解释连接变化；不做无依据旧路复原、桥隧内部驾驶或模拟通行时长。"
+    },
+    {
+      "node": "波密",
+      "usable": "终点以扎木镇参照附近G318源节点定位；2008县城街道照片可观察生活空间，现有2023镇级材料支持宏观介绍。",
+      "missing": "今日城区、具体文化活动的免费无水印实拍不足；没有可靠历史建成区序列。",
+      "reduce": "保留县城河谷、道路和生活关系，旧照明确年代；当代生活与县域文化只作简短且有据的线索，不承诺现场或城市生长复原，不用长语音和卡片填满时长。"
+    }
+  ],
+  "excludedOrDeferred": [
+    "把县名、Bayi等宽泛标题当作准确拍摄位置",
+    "把标题通麦的沿途照片放在通麦镇或桥的机位",
+    "把2008年街景当今日波密",
+    "未经许可的政府/新闻网页图片、带标识静帧及收费视频",
+    "以示意模型补齐无资料的旧路、旧城、具体节庆和冰川实体",
+    "从地表DSM推断隧道、桥面或道路实际纵断面"
+  ],
+  "nextStep": "按五个叙事节点做整线分镜，逐镜标明实际资料与限制；暂不制作镜头、不新增录音或模型。需要新近景的镜头标等待，不先做占位画面。",
+  "limits": [
+    "当前道路与水系是数据库快照，不保证实时开放或安全停靠。",
+    "两个DEM源文件下载不完整，保留.part标识；但已实际读取四分幅概览及全部3164沿线节点的原始像元。完整生产裁切与任意相机视域仍需检查。",
+    "原始10m卫星像元远程块读取失败，只有3分幅预览和覆盖范围已核；未称无云、无阴影或近景足够清楚。",
+    "没有本轮运行时修改、实播或理解验收结果。"
+  ],
+  "licenses": [
+    {
+      "kind": "road_water",
+      "url": "https://www.openstreetmap.org/copyright",
+      "requirement": "OSM贡献者署名、ODbL来源与适用共享要求"
+    },
+    {
+      "kind": "terrain",
+      "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "requirement": "GLO-30许可及DLR/Airbus/EU/ESA规定署名；不把30m数据许可与特定在线视图服务的接入条件混为一谈"
+    },
+    {
+      "kind": "sentinel",
+      "url": "https://cds.climate.copernicus.eu/licences/ec-sentinel",
+      "requirement": "按是否修改保留Copernicus Sentinel数据及年份署名"
+    },
+    {
+      "kind": "photos",
+      "requirement": "每张保留作者、来源、具体CC许可；BY-SA变更遵守相应许可，不能只写图片来自网络"
+    }
+  ],
+  "evidenceDirectory": "workspace-local ../review/g318-corridor-source-20261019; raw snapshots, originals, failed attempts and hashes retained; large files not shipped to product"
+}
