@@ -2,20 +2,107 @@
   "id": "G318-pilot-closeout-20261019",
   "scope": "林芝—色季拉山地—鲁朗首段；六章、其他线路、模型与录音冻结",
   "state": "bounded-functional-closeout-with-media-gap",
-  "baseline": {"overviewChapters": 6, "overviewClips": 21, "overviewSeconds": 750.024, "pilotClips": 4, "pilotSeconds": 148.536, "localScriptVersion": "5", "existingRecordingObjects": 339},
+  "baseline": {
+    "overviewChapters": 6,
+    "overviewClips": 21,
+    "overviewSeconds": 750.024,
+    "pilotClips": 4,
+    "pilotSeconds": 142.56,
+    "localScriptVersion": "6",
+    "existingRecordingObjects": 339
+  },
   "evidenceLedger": "/data/lulang-life-media.json",
   "sourceReview": {
     "date": "2026-10-19",
-    "reopened": ["2016-10-02鲁朗试运营报道", "2018-11-07鲁朗扎西岗工布新年报道", "Commons Lulang Town", "Commons Tibetan forest", "Commons Linzhi Zhaxigang 2014.09.20"],
+    "reopened": [
+      "2016-10-02鲁朗试运营报道",
+      "2018-11-07鲁朗扎西岗工布新年报道",
+      "Commons Lulang Town",
+      "Commons Tibetan forest",
+      "Commons Linzhi Zhaxigang 2014.09.20"
+    ],
     "retainedPriorEvidence": "七份影像的既有许可、元数据与哈希保留。本轮部分Commons网页读取失败，未把失败的再次读取记作新核实通过，也未替换原证据。",
-    "remainingGap": "没有已获核实且可控时序的连续鲁朗地方节庆/生活影像；地区静帧不填补该缺口。"
+    "remainingGap": "No new continuous video simultaneously verified free to reuse, without burned-in marks, and actually showing this Lulang segment."
   },
-  "fixes": ["放牧/草地观察保持景观尺度，不再触发地方道路语义", "手动观察清除自动入谷/返回相位；继续讲述从原句恢复", "鲁朗本地2018活动记录、2016当代旅游建设与未定位的地区静帧分开说明", "当前收口说明与历史取舍记录分开，README不再以厨房经营作为当前目标"],
+  "fixes": [
+    "放牧/草地观察保持景观尺度，不再触发地方道路语义",
+    "手动观察清除自动入谷/返回相位；继续讲述从原句恢复",
+    "鲁朗本地2018活动记录、2016当代旅游建设与未定位的地区静帧分开说明",
+    "当前收口说明与历史取舍记录分开，README不再以厨房经营作为当前目标"
+  ],
+  "notEstablished": [
+    "系统输出声音回环听审或逐帧音画认证",
+    "首次观看者理解通过",
+    "完整实地游览纪录片效果",
+    "实时路况、开放与现场通行方案"
+  ],
+  "nextGate": "通过本段功能和对应检查后冻结；新的路段或更强实地影像按独立选题推进，不重新开启无边界镜头打磨",
+  "mediaPolicyUpdate": {
+    "date": "2026-10-19",
+    "constraints": [
+      "free-reuse-only",
+      "no-burned-in-watermark",
+      "no-watermark-removal"
+    ],
+    "displayPhotos": [
+      "forest",
+      "meadow",
+      "grazing",
+      "town",
+      "daily"
+    ],
+    "archivedPhotos": [
+      "customs",
+      "target"
+    ],
+    "publisherVideo": "source-links-only, no embedded player",
+    "localNarrationSeconds": 37.476,
+    "otherRecordings": "338 cue objects unchanged; same339 cue identities",
+    "remainingGap": "No free, clean and geographically verified continuous local video found in this bounded search.",
+    "verification": "50 scoped checks across8 files, typecheck, build and339/339 native-word audio verification passed; bounded v6 browser playback and exact return checked."
+  },
+  "priorVerification": {
+    "automated": {
+      "typecheck": "passed",
+      "focusedTests": "44 passed across 7 files",
+      "build": "passed; existing shared 631kB chunk warning unchanged",
+      "photos": "7/7 files match archived sha256",
+      "frozen": "overview programme/narration, audio objects and GIS/image assets unchanged",
+      "localReportLinks": "passed"
+    },
+    "browser": {
+      "naturalPlayback": "From route-gateway start, all four beats advanced naturally to final100% once. Discrete opening/mountain/forest/street-life/closing samples observed; not continuous frame capture.",
+      "manualReturnPhase": "Old build reproduced stale return heading on daily-photo selection; final build clears it, and native resume restores original return words.",
+      "optionalPhotoVoice": "Grazing-object marks advanced1→3 while route remained paused at98.4%; optional playback stopped before plan/route return.",
+      "plan": "Temporary edited note saved and survived refresh; original note restored; grazing/focus3/raw98.4% restored without automatic optional replay.",
+      "exactRouteReturn": "Before and after: mountains/raw43%, route progress0.6679400679860606,48.1km,3000m,cameraPitch49,cameraBearing0,elevation=true.",
+      "applicationErrors": 0
+    },
+    "evidenceDirectory": "../review/g318-closeout-20261019/ (workspace-local screenshots and verification.json; not bundled as product scenery)",
+    "scope": "Prior v5 closeout; not evidence for the new v6 audio/media policy."
+  },
   "verification": {
-    "automated": {"typecheck": "passed", "focusedTests": "44 passed across 7 files", "build": "passed; existing shared 631kB chunk warning unchanged", "photos": "7/7 files match archived sha256", "frozen": "overview programme/narration, audio objects and GIS/image assets unchanged", "localReportLinks": "passed"},
-    "browser": {"naturalPlayback": "From route-gateway start, all four beats advanced naturally to final100% once. Discrete opening/mountain/forest/street-life/closing samples observed; not continuous frame capture.", "manualReturnPhase": "Old build reproduced stale return heading on daily-photo selection; final build clears it, and native resume restores original return words.", "optionalPhotoVoice": "Grazing-object marks advanced1→3 while route remained paused at98.4%; optional playback stopped before plan/route return.", "plan": "Temporary edited note saved and survived refresh; original note restored; grazing/focus3/raw98.4% restored without automatic optional replay.", "exactRouteReturn": "Before and after: mountains/raw43%, route progress0.6679400679860606,48.1km,3000m,cameraPitch49,cameraBearing0,elevation=true.", "applicationErrors": 0},
-    "evidenceDirectory": "../review/g318-closeout-20261019/ (workspace-local screenshots and verification.json; not bundled as product scenery)"
-  },
-  "notEstablished": ["系统输出声音回环听审或逐帧音画认证", "首次观看者理解通过", "完整实地游览纪录片效果", "实时路况、开放与现场通行方案"],
-  "nextGate": "通过本段功能和对应检查后冻结；新的路段或更强实地影像按独立选题推进，不重新开启无边界镜头打磨"
+    "automated": {
+      "scopedTests": "50 passed across8 files",
+      "typecheck": "passed",
+      "build": "passed; existing631kB shared chunk warning unchanged",
+      "nativeAudio": "339/339 passed; only ROUTE-G318-lulang changed, other338 objects unchanged",
+      "frozen": "Six chapters, source GIS and source images unchanged"
+    },
+    "browser": {
+      "scope": "One natural v6 local passage through closing; no repeated six-chapter replay",
+      "nativeSamples": "local55% daily activity;71% shared-space mark matches native caption; closing100%",
+      "displayChoices": [
+        "forest",
+        "meadow",
+        "grazing",
+        "town",
+        "daily"
+      ],
+      "embeddedPlayers": 0,
+      "exactReturn": "mountains/raw79.9%,routeProgress0.6679400679860606,48.1km,3000m,pitch49,bearing0,elevation=true",
+      "applicationErrors": 0
+    },
+    "evidenceDirectory": "../review/g318-footage-acquisition-20261019/ (workspace-local, excluded previews not bundled in product)"
+  }
 }

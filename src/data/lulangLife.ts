@@ -9,8 +9,22 @@ export const lulangLifePhotos={
  daily:{id:'daily',title:'街边的日常一刻',date:'2008-09-18',author:'reurinkjan',src:'/assets/routes/g318/lulang-life/street-life-20080918.jpg',source:'https://commons.wikimedia.org/wiki/File:Pocket_billiards,_%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%BC%E0%BD%98%E0%BC%8B%E0%BD%A6%E0%BE%9F%E0%BD%BA%E0%BD%82%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%A4%E0%BD%BC%E0%BC%8B%E0%BD%A3%E0%BD%BC%E0%BC%8D.jpg',original:'https://upload.wikimedia.org/wikipedia/commons/9/9d/Pocket_billiards%2C_%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%BC%E0%BD%98%E0%BC%8B%E0%BD%A6%E0%BE%9F%E0%BD%BA%E0%BD%82%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%A4%E0%BD%BC%E0%BC%8B%E0%BD%A3%E0%BD%BC%E0%BC%8D.jpg',license:'CC BY 2.0',licenseUrl:'https://creativecommons.org/licenses/by/2.0/',coordinate:[94.726722,29.733056],scope:'2008年的街边生活记录；不推断人物身份，不代表所有居民或全年风俗。与2024年航拍不是同一街区的前后对照。',features:[{title:'临街门面',x:36,y:31,detail:'柜中物品、门窗与屋檐构成临街界面；不推断店铺名称和当下营业情况。'},{title:'门前活动',x:47,y:66,detail:'桌球活动发生在门前空间，呈现当时日常活动的一刻。'},{title:'相邻空间',x:78,y:45,detail:'停留、交谈和门前活动在相邻空间中发生；不把人物标为商户或游客。'}]},
 } as const;
 export type LulangPhotoId=keyof typeof lulangLifePhotos;
+/** Reviewed originals: free reuse with attribution, no burned-in watermark.
+ * News stills stay in the historical source ledger, never cleaned or cropped. */
+export const lulangDisplayPhotoIds=['forest','meadow','grazing','town','daily'] as const;
+export const lulangDisplayPhotos=lulangDisplayPhotoIds.map(id=>lulangLifePhotos[id]);
+export const isLulangDisplayPhoto=(id:unknown):id is typeof lulangDisplayPhotoIds[number]=>lulangDisplayPhotoIds.some(value=>value===id);
+export function lulangDisplayView(view:PilotView):PilotView{
+ if(view.mode!=='place')return view;
+ const rejected=(view.placePhoto&&!isLulangDisplayPhoto(view.placePhoto))||(view.photoOverlay&&!isLulangDisplayPhoto(view.photoOverlay));
+ if(!rejected&&view.placeMedia!=='record')return view;
+ // Recover old saved observations without loading an excluded asset/player.
+ const photo=view.footageId==='aerial-2022'?'town':'daily';
+ return {...view,placeMedia:photo==='daily'?'daily':'town',placePhoto:photo,photoOverlay:undefined,photoReveal:1,photoFocus:0,returnProgress:undefined,arrivalProgress:undefined};
+}
 export function lulangSelectedPhoto(view:Pick<PilotView,'placeMedia'|'placePhoto'>):LulangPhoto{
  const key=view.placePhoto;
+ if(key&&!isLulangDisplayPhoto(key))return lulangLifePhotos.daily;
  return key&&Object.hasOwn(lulangLifePhotos,key)?lulangLifePhotos[key]:lulangLifePhotos[view.placeMedia==='daily'?'daily':'town'];
 }
 export const lulangCookingSteps=[

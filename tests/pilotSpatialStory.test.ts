@@ -7,7 +7,7 @@ describe('continuous route/place reading',()=>{
   expect(pilotSpatialStory(at('看道路'))).toMatchObject({focus:'access',photo:true});
   expect(pilotSpatialStory(at('房屋'))).toMatchObject({focus:'settlement',photo:true});
   expect(pilotSpatialStory(at('街边日常'))).toMatchObject({focus:'life',photo:true});
-  expect(pilotSpatialStory(at('竞赛'))).toMatchObject({focus:'regional',scope:'地区文化资料，未定位为鲁朗现场'});
+  expect(pilotSpatialStory(at('认识人文'))).toMatchObject({focus:'life',scope:'日常实拍不代表节庆现场 · 风俗影像待补'});
   expect(pilotSpatialStory({...at('看道路'),placeMedia:'map'})).toMatchObject({focus:'relief',photo:false});
  });
  it('reveals the same valley on descent and follows the local source branch back before closing',()=>{

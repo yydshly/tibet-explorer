@@ -1,0 +1,19 @@
+{
+  "id": "c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6",
+  "url": "/assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.mp3",
+  "text": "先看鲁朗河与两侧地形，比较谷底和坡面。对照林海实拍，森林与开敞地交错。进入二零二四年的河谷实拍，看道路和房屋。回到地图，先看国道，再展开地方接续，建筑轮廓随之出现。再看草地与放牧，以及街边日常：风景也是生产和停留的空间。认识人文，回到街边实拍，看门面、门前活动和共同停留。鲁朗公开资料另有工布新年的响箭和歌舞记录，不能把这张日常照片当作节庆现场。带着问题，再回到刚才的道路。",
+  "duration": 37.476,
+  "bytes": 601332,
+  "sha256": "0fd5afc96a0f7985f279ccd9d805bdd13aeae7ed3ec6b0d1627496870f66d8e6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T08:07:08.232Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.subtitles.json",
+  "subtitleSha256": "d46af98771f920951c3d71b706b341624614b60622710f533dcc4b7aa1eee3b2",
+  "timingLevel": "word"
+}

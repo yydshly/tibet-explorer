@@ -25,6 +25,6 @@ describe('optional real-photo voice binding',()=>{
    }
   }
   expect(routePilotCues).toHaveLength(4);expect(routePilotCues.some(c=>c.id.startsWith('ROUTE-PHOTO'))).toBe(false);
-  expect(routePilotCues.reduce((sum,c)=>sum+manifest.clips.find((a:any)=>a.cueId===c.id).duration,0)).toBeCloseTo(148.536,3);
+  expect(routePilotCues.reduce((sum,c)=>sum+manifest.clips.find((a:any)=>a.cueId===c.id).duration,0)).toBeCloseTo(142.560,3);
  });
 });

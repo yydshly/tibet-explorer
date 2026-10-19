@@ -342,8 +342,7 @@
       "observed": "已核对开头的餐桌加热石锅、餐具与作者就餐说明。",
       "scope": "作者标注在鲁朗用餐；拍摄日期、店铺坐标未独立核实。不是厨房全流程，也不是供货记录。",
       "rights": "作者注明禁止未经授权转载；仅使用平台提供的原播放器，不下载、改剪或再分发。",
-      "player": "https://player.bilibili.com/player.html?bvid=BV1Rc41177Jx&autoplay=0&muted=0&danmaku=0&refer=0",
-      "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
+      "reuse": "Historical external-source reference only; no embedding under the current free/no-watermark policy."
     },
     {
       "id": "banquet-2026",
@@ -356,8 +355,7 @@
       "observed": "可对照集体围桌、石锅与就餐活动的现场画面。",
       "scope": "发布于2026年，具体拍摄日期未核实；活动场面不代表普通餐厅的日常经营，也不能证明2017年制度成效。",
       "rights": "原发布账号与原播放器保留；未获得下载、改剪或再分发许可。",
-      "player": "https://player.bilibili.com/player.html?bvid=BV1RSJi6VEL5&autoplay=0&muted=0&danmaku=0&refer=0",
-      "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
+      "reuse": "Historical external-source reference only; no embedding under the current free/no-watermark policy."
     },
     {
       "id": "aerial-2022",
@@ -370,8 +368,7 @@
       "observed": "已核对片头山林、河道与聚落的航拍画面；未审看全部9分18秒。",
       "scope": "作者标注鲁朗小镇；具体拍摄日期、航线和逐镜头坐标未独立核实。不是沿G318的连续实录或实时景象。",
       "rights": "作者注明禁止未经授权转载；仅使用原发布方的平台播放器，不下载、改剪或再分发。",
-      "player": "https://player.bilibili.com/player.html?bvid=BV1LB4y1J7E4&autoplay=0&muted=0&danmaku=0&refer=0",
-      "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
+      "reuse": "Historical external-source reference only; no embedding under the current free/no-watermark policy."
     }
   ],
   "videoAudit": {
@@ -416,7 +413,7 @@
     ]
   },
   "activeScope": {
-    "version": "macro-route-5",
+    "version": "macro-route-6",
     "goal": "Route -> landscape -> settlement -> daily life and humanities -> original route.",
     "default": [
       "Source-derived river/relief",
@@ -424,11 +421,10 @@
       "Existing roads and footprints",
       "Dated2008 street activity",
       "Licensed local forest, stream/meadow and2014 grazing records",
-      "2018 Lulang customs report with clearly regional2021/2022 news stills"
+      "Street-life photograph supports actual visible objects;2018 customs are separate documentary text, not a staged event image."
     ],
     "optional": [
-      "2026 collective-banquet publisher video: contemporary activity, not universal traditional life",
-      "Food-making illustration and dated supply/operation reading: folded optional topic"
+      "Folded food reading only; publisher originals remain source references, not embedded footage."
     ],
     "frozen": "Six overview chapters, all other route recordings, source geometry and models.",
     "deferred": "Kitchen/supplier footage research is no longer an active deliverable. The old audit is retained as history, not the mainline completion criterion."
@@ -462,6 +458,67 @@
       "Original Lulang festival video with controlled narration/annotation timing remains unavailable.",
       "The regional stills do not prove that these participants or venue are in Lulang.",
       "No news-article photos without a verified reusable license bundled."
+    ],
+    "archivedRegionalPhotoIds": [
+      "customs",
+      "target"
+    ],
+    "displayPhotoIds": [
+      "forest",
+      "meadow",
+      "grazing",
+      "town",
+      "daily"
+    ]
+  },
+  "displayPolicy": {
+    "version": "free-clean-20261019",
+    "cost": "Free reuse only; no paid-video acquisition.",
+    "watermark": "No burned-in watermark, no removal/cropping to hide a mark.",
+    "displayPhotoIds": [
+      "forest",
+      "meadow",
+      "grazing",
+      "town",
+      "daily"
+    ],
+    "archivedPhotoIds": [
+      "customs",
+      "target"
+    ],
+    "archivedReason": "Reviewed originals carry the CNS video logo. Preserve originals and prior license evidence; exclude from narration, preloading, selectors and restored observations.",
+    "publisherVideoMode": "External source references only; no iframe or locally copied footage in this pilot.",
+    "continuityGap": "No qualifying continuous Lulang scene/customs video verified in this bounded audit."
+  },
+  "fieldVideoAudit": {
+    "verifiedOn": "2026-10-19",
+    "criteria": [
+      "Free reuse explicitly supported",
+      "No burned-in watermark",
+      "Actual location/content appropriate to this pilot"
+    ],
+    "outcome": "No newly approved continuous video; no purchases/downloads/re-edits.",
+    "candidates": [
+      {
+        "source": "https://www.vjshi.com/watch/9436668.html",
+        "decision": "excluded-paid",
+        "observed": "Publisher preview was played and sampled to83.53s; paid stock with preview watermark. Owner excludes paid video. No purchase or source-media copy."
+      },
+      {
+        "source": "https://sichuan.scol.com.cn/spsc/202409/82600434.html",
+        "decision": "external-source-only",
+        "observed": "Publisher player reached59.933s/end; sampled harvest beside the road and village. Publisher marks and written-authorization requirement, not a free clean embedded asset."
+      },
+      {
+        "source": "https://commons.wikimedia.org/wiki/Category:Lulang",
+        "decision": "no-continuous-video-on-reviewed-category-page",
+        "observed": "The reviewed category lists17 still-image files; this does not establish absence elsewhere."
+      },
+      {
+        "source": "https://www.pexels.com/search/videos/tibet/",
+        "decision": "not-local-evidence",
+        "observed": "Generic Tibetan imagery is not independent evidence of filming in Lulang; no substitute selected."
+      }
     ]
   }
 }

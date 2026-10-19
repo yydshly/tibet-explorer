@@ -3,7 +3,7 @@ import type {LulangLens,LulangServiceFilter} from './lulangPlace';
 import type {LulangLifePhase,LulangPhotoId} from './lulangLife';
 import type {LulangFootageId} from './lulangFootage';
 export const routePilotPath='/routes/g318-east/nyingchi-lulang';
-export const pilotScriptVersions=['1','1','5','1'] as const;
+export const pilotScriptVersions=['1','1','6','1'] as const;
 export const pilotResumeAliases={'ROUTE-G318-lulang':'ROUTE-G318-lulang'};
 export const routePilotIdentity='g318-real-corridor-v1';
 export const routePilotSources=[
@@ -24,7 +24,7 @@ export const routePilotCues=[
  {id:'ROUTE-G318-mountains',title:'沿路观察：高差怎样改变视野',chapterId:'route-pilot',stepId:'G318',sceneIdentity:routePilotIdentity,
  narration:'沿道路向山地前进。线路连续转弯，身边地面逐渐抬高；道路绕行和山体遮挡，都能在真实地形上对应。停在山地观察点，比较回望和向前的视野。这里按沿线高程样本选择观察位置，不是实测山口标高，也不是建议停车的位置。高处较开阔的视野，并不说明所有方向都没有遮挡。继续向鲁朗方向，道路进入另一侧谷地。地形、季节与水热共同参与风景形成，这一张冬季影像不能独立证明植被和气候的全部原因。接下来进入鲁朗，看过境道路怎样接向地方生活。'},
  {id:'ROUTE-G318-lulang',title:'进入鲁朗：风景、聚落与地方生活',chapterId:'route-pilot',stepId:'G318',sceneIdentity:routePilotIdentity,
- narration:'先看鲁朗河与两侧地形，比较谷底和坡面。对照林海实拍，森林与开敞地交错。进入二零二四年的河谷实拍，看道路和房屋。回到地图，先看国道，再展开地方接续，建筑轮廓随之出现。再看草地与放牧，以及街边日常：风景也是生产和停留的空间。认识人文，再对照工布地区的响箭影像：竞赛、服饰和共同参与，连接起节庆生活。鲁朗公开资料也记录了响箭和歌舞。影像拍摄场地未核实为鲁朗，不能当作本地现场。带着问题，再回到刚才的道路。'},
+ narration:'先看鲁朗河与两侧地形，比较谷底和坡面。对照林海实拍，森林与开敞地交错。进入二零二四年的河谷实拍，看道路和房屋。回到地图，先看国道，再展开地方接续，建筑轮廓随之出现。再看草地与放牧，以及街边日常：风景也是生产和停留的空间。认识人文，回到街边实拍，看门面、门前活动和共同停留。鲁朗公开资料另有工布新年的响箭和歌舞记录，不能把这张日常照片当作节庆现场。带着问题，再回到刚才的道路。'},
  {id:'ROUTE-G318-return',title:'带着问题回到线路',chapterId:'route-pilot',stepId:'G318',sceneIdentity:routePilotIdentity,
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
@@ -45,15 +45,15 @@ function pilotNarratedBase(index:number,text:string,textProgress:number,highPoin
  }
  if(index===2){
   const placeLens=at<text.indexOf('进入二零二四')?'landscape':at<text.indexOf('认识人文')?'life':'culture';
-  const placeMedia=at>=text.indexOf('再回到刚才')?'map':at>=text.indexOf('街边日常')&&at<text.indexOf('认识人文')?'daily':at>=text.indexOf('草地与放牧')?'town':at>=text.indexOf('回到地图')?'map':at>=text.indexOf('对照林海实拍')?'town':'map';
-  const placePhoto=placeMedia==='map'?undefined:at>=text.indexOf('认识人文')?'customs':at>=text.indexOf('街边日常')?'daily':at>=text.indexOf('草地与放牧')?'grazing':at>=text.indexOf('进入二零二四')?'town':'forest';
-  const photoFocus=placePhoto==='forest'?(at>=text.indexOf('开敞地')?2:1):placePhoto==='town'?(at>=text.indexOf('房屋')?3:at>=text.indexOf('看道路')?2:0):placePhoto==='customs'?(at>=text.indexOf('共同参与')?3:at>=text.indexOf('服饰')?2:at>=text.indexOf('竞赛')?1:0):placePhoto==='daily'?2:placePhoto==='grazing'?2:0;
+  const placeMedia=at>=text.indexOf('再回到刚才')?'map':at>=text.indexOf('街边日常')?'daily':at>=text.indexOf('草地与放牧')?'town':at>=text.indexOf('回到地图')?'map':at>=text.indexOf('对照林海实拍')?'town':'map';
+  const placePhoto=placeMedia==='map'?undefined:at>=text.indexOf('街边日常')?'daily':at>=text.indexOf('草地与放牧')?'grazing':at>=text.indexOf('进入二零二四')?'town':'forest';
+  const photoFocus=placePhoto==='forest'?(at>=text.indexOf('开敞地')?2:1):placePhoto==='town'?(at>=text.indexOf('房屋')?3:at>=text.indexOf('看道路')?2:0):placePhoto==='daily'?(at>=text.indexOf('共同停留')?3:at>=text.indexOf('门前活动')?2:at>=text.indexOf('看门面')?1:2):placePhoto==='grazing'?2:0;
   const returnAt=text.indexOf('再回到刚才'),returnProgress=Math.max(0,Math.min(1,(at-returnAt)/Math.max(1,text.length-returnAt)));
   const ramp=(token:string)=>{const t=Math.max(0,Math.min(1,(at-text.indexOf(token))/6));return t*t*(3-2*t);};
   let photoOverlay:LulangPhotoId|undefined=placePhoto,photoReveal=placePhoto?1:0;
   if(placePhoto==='forest')photoReveal=ramp('对照林海实拍');
   if(placePhoto==='grazing')photoReveal=ramp('草地与放牧');
-  if(placeMedia==='map'&&at>=text.indexOf('再回到刚才')){photoOverlay='customs';photoReveal=1-ramp('再回到刚才');}
+  if(placeMedia==='map'&&at>=text.indexOf('再回到刚才')){photoOverlay='daily';photoReveal=1-ramp('再回到刚才');}
   else if(placeMedia==='map'&&at>=text.indexOf('回到地图')){photoOverlay='town';photoReveal=1-ramp('回到地图');}
   return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:(1-returnProgress)*part('再展开地方接续','建筑轮廓'),returnProgress,lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','对照林海实拍'),serviceFilter:'all',servicesVisible:false,cultureProgress:0,cultureSupply:true,cultureSample:0,placeMedia,placePhoto,photoOverlay,photoReveal,photoFocus,cookingProgress:0,lifePhase:'making'};
  }

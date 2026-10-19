@@ -1,6 +1,6 @@
 import {useCallback,useEffect,useState} from 'react';
 import {lulangLifePhotos,type LulangPhotoId} from '../data/lulangLife';
-export const pilotNativePhotoIds:readonly LulangPhotoId[]=['forest','town','grazing','daily','customs'];
+export const pilotNativePhotoIds:readonly LulangPhotoId[]=['forest','town','grazing','daily'];
 /** Prepare only this pilot's existing narrated photos during the approach.
  * A cold direct entry waits for these pixels before the local media clock runs. */
 export function usePilotFieldImages(active:boolean){

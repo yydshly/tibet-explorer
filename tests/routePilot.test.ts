@@ -94,6 +94,6 @@ describe('the recording owns the route, camera and local comparison',()=>{
   expect(viewAt('鲁朗河')).toMatchObject({placeLens:'landscape',servicesVisible:false});
   expect(viewAt('先看国道')).toMatchObject({placeLens:'life',servicesVisible:false});
   expect(viewAt('建筑轮廓')).toMatchObject({placeLens:'life',servicesVisible:false});
-  expect(viewAt('认识人文')).toMatchObject({placeLens:'culture',serviceFilter:'all',servicesVisible:false,placeMedia:'town'});
+  expect(viewAt('认识人文')).toMatchObject({placeLens:'culture',serviceFilter:'all',servicesVisible:false,placeMedia:'daily'});
  });
 });

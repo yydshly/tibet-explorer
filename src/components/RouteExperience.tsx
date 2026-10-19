@@ -14,7 +14,7 @@ import {pilotCameraPresets} from '../data/routePilotCamera';
 import {pilotSpatialStory} from '../data/pilotSpatialStory';
 import LulangLifeStage from './LulangLifeStage';
 import LulangPhotoNarration from './LulangPhotoNarration';
-import {lulangMediaFeedback} from '../data/lulangLife';
+import {lulangMediaFeedback,lulangDisplayView} from '../data/lulangLife';
 import './RouteExperience.css';
 import RouteGateway from './RouteGateway';
 
@@ -35,7 +35,7 @@ function PilotPlayback(){
  const onTransit=useCallback((active:boolean)=>setCameraTransit(active),[]);
  const beat=beats[director.beatIndex],planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
  const [terrainReady,setTerrainReady]=useState(false),fieldImages=usePilotFieldImages(director.beatIndex===1||director.beatIndex===2);
- const native=pilotNarratedView(director.beatIndex,beat.text,director.timing?.textProgress??0,reading?.highProgress??.5),view=override??native;
+ const native=pilotNarratedView(director.beatIndex,beat.text,director.timing?.textProgress??0,reading?.highProgress??.5),view=lulangDisplayView(override??native);
  const culture=lulangCultureState(view);
  const publisherVideo=view.mode==='place'&&view.placeMedia==='record';
  const manual=Boolean(override),lastLine=useRef<PilotReturn|undefined>(undefined);
