@@ -1,7 +1,7 @@
 export type LulangLens='landscape'|'life'|'culture';
 import type {PilotView} from './routePilot';
 export type LulangServiceFilter='all'|'food'|'lodging';
-export const lulangLenses=[{id:'landscape' as const,title:'风景与河谷'},{id:'life' as const,title:'道路与生活'},{id:'culture' as const,title:'地方风味与经营'}];
+export const lulangLenses=[{id:'landscape' as const,title:'山谷与风景'},{id:'life' as const,title:'道路与聚落'},{id:'culture' as const,title:'生活与人文'}];
 export const lulangReadingWindow=[94.715,29.705,94.75,29.755] as const;
 export const lulangRiverId='way/26406905';
 export const lulangWoodId='way/969705523';

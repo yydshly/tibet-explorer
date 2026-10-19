@@ -1,0 +1,19 @@
+{
+  "id": "bfdf94506ad93d4cebef09b4c358626b485af31327817f3fccdec2364a07259b",
+  "url": "/assets/audio/narration/bfdf94506ad93d4cebef09b4c358626b485af31327817f3fccdec2364a07259b.mp3",
+  "text": "先看鲁朗河与两侧地形，比较谷底和坡面。进入二零二四年的河谷实拍，沿河看道路和房屋。回到地图，先看国道，再展开地方接续，建筑轮廓随之出现。再看二零零八年的街边日常，门前有人停留和活动。两张照片不是前后对照。认识人文，要区分日常、传统和当代旅游。二零一六年报道记有工布民俗，也说明建筑借鉴不同地区的民居风格，不都是古村。可自选查看当代集体宴饮原片。带着问题，再回到刚才的道路。",
+  "duration": 37.368,
+  "bytes": 599604,
+  "sha256": "662048084baf87bfc91ac1a4b03b1ce8f4ab69a34cf8706dbb9734d4cb229a99",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T04:33:14.395Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/bfdf94506ad93d4cebef09b4c358626b485af31327817f3fccdec2364a07259b.subtitles.json",
+  "subtitleSha256": "ca1bec0bb26a05f7d7ef7ad9a1b1b0ffd88c548451903de7f3ef47db1c7c604d",
+  "timingLevel": "word"
+}

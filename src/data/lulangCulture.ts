@@ -22,7 +22,7 @@ export function lulangNarratedCultureProgress(text:string,textProgress:number){
 export function lulangCultureState(view:PilotView){
  const progress=cultureClamp(view.cultureProgress??0),step=Math.min(3,Math.floor(progress*4));
  const supply=view.cultureSupply!==false;
- return {progress,step,supply,active:view.mode==='place'&&view.placeLens==='culture'&&view.servicesVisible!==false&&view.serviceFilter!=='lodging',serviceReady:progress>=.75&&supply};
+ return {progress,step,supply,active:view.mode==='place'&&view.placeMedia==='process'&&view.placeLens==='culture'&&view.servicesVisible!==false&&view.serviceFilter!=='lodging',serviceReady:progress>=.75&&supply};
 }
 
 export function lulangCultureFeedback(view:PilotView){

@@ -24,10 +24,10 @@ export function pilotNarratedCamera(index:number,text:string,progress:number,hig
   [
    {at:'',pitch:56,bearing:-20},
    {at:'两侧地形',pitch:30,bearing:-38,elevation:true},
-   {at:'深色坡面',pitch:48,bearing:-20},
-   {at:'切到生活空间',pitch:67,bearing:0},
-   {at:'地方风味的延续',pitch:56,bearing:0},
-   {at:'回到刚才的道路',pitch:48,bearing:0},
+   {at:'进入二零二四',pitch:56,bearing:-20},
+   {at:'回到地图',pitch:67,bearing:0},
+   {at:'再看二零零八',pitch:56,bearing:0},
+   {at:'再回到刚才',pitch:48,bearing:0},
   ],
   [
    {at:'',pitch:56,bearing:0,zoom:.23,focus:1,weight:1},

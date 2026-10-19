@@ -55,7 +55,7 @@
         94.726722,
         29.733056
       ],
-      "scope": "2008年的生活记录，不能证明2017年供货制度或后来的经营成效；不推断照片中人的职业、身份。",
+      "scope": "2008年的街边生活记录；不推断人物身份，不代表所有居民或全年风俗。与2024年航拍不是同一街区的前后对照。",
       "features": [
         {
           "title": "临街门面",
@@ -206,5 +206,22 @@
       "No verified Lulang supplier delivery/receiving video; do not substitute farms, food on tables or words about organized supply.",
       "Publisher iframe does not document an external time-event API. Original audio/subtitles stay with its own clock; custom word-by-word overlays are not claimed."
     ]
+  },
+  "activeScope": {
+    "version": "macro-route-4",
+    "goal": "Route -> landscape -> settlement -> daily life and humanities -> original route.",
+    "default": [
+      "Source-derived river/relief",
+      "Dated2024 settlement photograph",
+      "Existing roads and footprints",
+      "Dated2008 street activity",
+      "2016 report on Gongbo customs and borrowed dwelling styles"
+    ],
+    "optional": [
+      "2026 collective-banquet publisher video: contemporary activity, not universal traditional life",
+      "Food-making illustration and dated supply/operation reading: folded optional topic"
+    ],
+    "frozen": "Six overview chapters, all other route recordings, source geometry and models.",
+    "deferred": "Kitchen/supplier footage research is no longer an active deliverable. The old audit is retained as history, not the mainline completion criterion."
   }
 }

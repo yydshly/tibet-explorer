@@ -9,12 +9,10 @@ import {narrationTimingAt} from '../src/lib/narrationTiming';
 const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
 
 describe('grounded Lulang culture reading and explicitly hypothetical process',()=>{
- it('uses native recording words to reveal preparation, supply, care and service, including reverse seek',()=>{
+ it('does not reframe local culture as restaurant supply in the default narration',()=>{
   const cue=routePilotCues[2],clip=json('public/assets/audio/narration/cue-manifest.json').clips.find((c:any)=>c.cueId===cue.id),timeline=json('public'+clip.subtitleUrl);
-  const readings=Array.from({length:Math.ceil(clip.duration*20)},(_,i)=>{const timing=narrationTimingAt(cue.narration,i/20,clip.duration,timeline);return {at:timing.textProgress*cue.narration.length,state:lulangCultureState(pilotNarratedView(2,cue.narration,timing.textProgress))};});
-  for(const [step,token] of [[1,'供货组织'],[2,'商户诚信管理'],[3,'恢复联系']] as const){const first=readings.find(r=>r.state.step===step);expect(first).toBeDefined();expect(first!.at).toBeGreaterThanOrEqual(cue.narration.indexOf(token));}
-  const end=pilotNarratedView(2,cue.narration,1);expect(lulangCultureState(end)).toMatchObject({step:3,serviceReady:true});
-  const start=pilotNarratedView(2,cue.narration,0);expect(lulangCultureState(start)).toMatchObject({active:false,step:0,serviceReady:false});
+  for(let t=0;t<=clip.duration;t+=.1){const timing=narrationTimingAt(cue.narration,t,clip.duration,timeline);expect(lulangCultureState(pilotNarratedView(2,cue.narration,timing.textProgress)).active).toBe(false);}
+  expect(cue.narration).toContain('工布民俗');expect(cue.narration).not.toContain('供货');
  });
  it('only selects existing restaurant records and leaves all source objects unchanged',()=>{
   const place=json('public/assets/routes/g318/lulang.geojson'),before=JSON.stringify(place);

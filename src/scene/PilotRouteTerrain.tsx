@@ -136,7 +136,7 @@ export default function PilotRouteTerrain(props:Props){
      const distance=(Math.max(projectedWidth/(2*tan*camera.aspect),projectedDepth*Math.sin(pitch)/(2*tan))+projectedDepth*Math.cos(pitch)/2)*1.12*(state.mapZoom??1)*state.height/3500;
      desiredPosition.copy(desiredTarget).add(offset(distance*Math.sin(pitch)));
     }else if(state.mode==='place'){
-     const centre=at(lens==='landscape'?local.riverPoint:lens==='culture'&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(offset(altitude));
+     const centre=at(lens==='landscape'?local.riverPoint:culture.active&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(offset(altitude));
     }else{
      const ahead=at(along(Math.min(1,state.progress+220/total))),behind=at(along(Math.max(0,state.progress-220/total))),direction=ahead.sub(behind);direction.y=0;direction.normalize();if(state.lookBack)direction.negate();
      desiredTarget.copy(position).addScaledVector(direction,.85);desiredTarget.y+=.08;
