@@ -24,9 +24,9 @@ export function pilotNarratedCamera(index:number,text:string,progress:number,hig
   [
    {at:'',pitch:56,bearing:-20},
    {at:'两侧地形',pitch:30,bearing:-38,elevation:true},
-   {at:'进入二零二四',pitch:56,bearing:-20},
+   {at:'对照林海实拍',pitch:56,bearing:-20},
    {at:'回到地图',pitch:67,bearing:0},
-   {at:'再看二零零八',pitch:56,bearing:0},
+   {at:'再看草地与放牧',pitch:56,bearing:0},
    {at:'再回到刚才',pitch:48,bearing:0},
   ],
   [

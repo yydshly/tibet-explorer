@@ -1,3 +1,4 @@
+import {lulangSelectedPhoto} from '../data/lulangLife';
 import {lulangCultureReferences,lulangCultureState} from '../data/lulangCulture';
 import {useEffect,useRef} from 'react';
 import * as THREE from 'three';
@@ -111,6 +112,7 @@ export default function PilotRouteTerrain(props:Props){
    const render=()=>{
     if(!alive)return;const state=latest.current.view,now=performance.now(),alpha=1-Math.exp(-Math.min(.05,(now-lastFrame)/1000)*4);lastFrame=now;
     if(latest.current.cameraKey!==lastCameraKey){lastCameraKey=latest.current.cameraKey;held=false;}
+    const photo=state.placePhoto?lulangSelectedPhoto(state):undefined,photoCoordinate=photo?.coordinate,photoMap=state.mode==='place'&&state.placeMedia==='map'&&Boolean(photoCoordinate);
     const localProgress=pilotConnectionProgress(state),lens=state.placeLens??'life',probe=state.sectionProgress??.5,filter=state.serviceFilter??'all';const culture=lulangCultureState(state),reference=cultureReferences[Math.min(cultureReferences.length-1,Math.max(0,Math.trunc(state.cultureSample??0)))]?.record??foodSample;let coordinate=along(state.progress);const position=at(coordinate,25);
     if(state.mode==='place'){
      const s=routeSampleSegment(branchFlat,localProgress),a=branch[s.index-1],b=branch[s.index],head=[THREE.MathUtils.lerp(a[0],b[0],s.fraction),THREE.MathUtils.lerp(a[1],b[1],s.fraction)];
@@ -118,8 +120,9 @@ export default function PilotRouteTerrain(props:Props){
      const key=Math.round(localProgress*1000);if(trace&&key!==traceKey){traceKey=key;const ps=branch.slice(0,s.index).concat([head]),previous=trace.geometry;trace.geometry=new LineGeometry();trace.geometry.setPositions(ps.flatMap(p=>at(p,24).toArray()));previous.dispose();}
      if(lens==='landscape'){coordinate=[THREE.MathUtils.lerp(local.section[0].coordinate[0],local.section.at(-1)!.coordinate[0],probe),local.riverPoint[1]];position.copy(at(coordinate,30));}
      else if(culture.active&&reference){coordinate=reference.coordinate;position.copy(at(coordinate,30));}
+     if(photoCoordinate){coordinate=[...photoCoordinate];position.copy(at(coordinate,30));}
     }
-    cursor.position.copy(position);cursor.scale.setScalar(Math.max(.4,camera.position.distanceTo(position)*.013));
+    cursor.position.copy(position);cursor.scale.setScalar(photoMap?1.8:Math.max(.4,camera.position.distanceTo(position)*.013));
     approach.visible=state.mode!=='place';town.visible=state.mode==='place'&&lens!=='landscape'&&localProgress>0;built.visible=localProgress>=.65;junction.visible=state.mode==='place';nature.visible=state.mode==='place'&&lens==='landscape';serviceGroup.visible=state.mode==='place'&&lens!=='landscape'&&state.servicesVisible!==false;
     river.visible=state.mode==='place';const naturalReading=state.mode==='place'&&lens==='landscape';if(trunkLine){trunkLine.material.color.setHex(naturalReading?0xa8ada3:0x6adce1);trunkLine.material.opacity=naturalReading?.4:.95;}if(trunkOutline)trunkOutline.material.opacity=naturalReading?.3:.95;
     for(const line of riverLines)if(line){line.material.opacity=naturalReading?.95:.38;line.material.linewidth=naturalReading?4:2.5;}
@@ -136,7 +139,7 @@ export default function PilotRouteTerrain(props:Props){
      const distance=(Math.max(projectedWidth/(2*tan*camera.aspect),projectedDepth*Math.sin(pitch)/(2*tan))+projectedDepth*Math.cos(pitch)/2)*1.12*(state.mapZoom??1)*state.height/3500;
      desiredPosition.copy(desiredTarget).add(offset(distance*Math.sin(pitch)));
     }else if(state.mode==='place'){
-     const centre=at(lens==='landscape'?local.riverPoint:culture.active&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(offset(altitude));
+     const centre=at(photoCoordinate?[...photoCoordinate]:lens==='landscape'?local.riverPoint:culture.active&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(offset(altitude));
     }else{
      const ahead=at(along(Math.min(1,state.progress+220/total))),behind=at(along(Math.max(0,state.progress-220/total))),direction=ahead.sub(behind);direction.y=0;direction.normalize();if(state.lookBack)direction.negate();
      desiredTarget.copy(position).addScaledVector(direction,.85);desiredTarget.y+=.08;
@@ -171,10 +174,10 @@ export default function PilotRouteTerrain(props:Props){
      pin.scale.setScalar(Math.max(1,camera.position.distanceTo(pin.position)*.01));
     }
     const ground=position.clone().project(camera),gx=(ground.x+1)*size.x/2,gy=(1-ground.y)*size.y/2;
-    groundLabel.hidden=!(state.elevation&&state.mode==='line'&&ground.z>-1&&ground.z<1&&gx>130&&gx<size.x-130&&gy>280&&gy<size.y-140);
-    if(!groundLabel.hidden){groundLabel.textContent=`当前位置 · 地表约${Math.round(sample(coordinate[0],coordinate[1])/10)*10} m`;groundLabel.style.left=`${gx}px`;groundLabel.style.top=`${gy-28}px`;}
+    groundLabel.hidden=!(ground.z>-1&&ground.z<1&&(photoMap?gx>80&&gx<size.x-80&&gy>150&&gy<size.y-100:state.elevation&&state.mode==='line'&&gx>130&&gx<size.x-130&&gy>280&&gy<size.y-140));
+    if(!groundLabel.hidden){groundLabel.textContent=photoMap?`来源照片拍摄位置 · ${photo?.date}`:`当前位置 · 地表约${Math.round(sample(coordinate[0],coordinate[1])/10)*10} m`;groundLabel.style.left=`${gx}px`;groundLabel.style.top=`${gy-28}px`;}
     renderer!.render(scene!,camera);
-    const key=`${Math.round(state.progress*1000)}:${state.mode}:${Math.round(localProgress*1000)}:${lens}:${Math.round(probe*1000)}:${state.cultureSample??0}`;
+    const key=`${Math.round(state.progress*1000)}:${state.mode}:${Math.round(localProgress*1000)}:${lens}:${Math.round(probe*1000)}:${state.cultureSample??0}:${state.placePhoto??''}`;
     if(key!==readingKey){readingKey=key;latest.current.onReading({distance:state.mode==='place'?total-context.connectionLength*(1-localProgress):state.progress*total,total,elevation:sample(coordinate[0],coordinate[1]),longitude:coordinate[0],latitude:coordinate[1],highProgress,highCoordinate:coords[high]});}
     frame=requestAnimationFrame(render);
    };

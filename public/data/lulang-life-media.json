@@ -3,6 +3,200 @@
   "verifiedOn": "2026-10-19",
   "photos": [
     {
+      "id": "forest",
+      "title": "林海中的坡面与开敞地",
+      "date": "2008-09-18",
+      "author": "reurinkjan",
+      "src": "/assets/routes/g318/lulang-life/forest-20080918.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tibetan_forest.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/29/Tibetan_forest.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "coordinate": [
+        94.706694,
+        29.620944
+      ],
+      "aspect": 1.5028184892897407,
+      "scope": "2008年鲁朗林海记录，机位来自来源坐标；照片不能单独解释全年气候或林地形成原因。",
+      "features": [
+        {
+          "title": "林地坡面",
+          "x": 40,
+          "y": 27,
+          "detail": "林木覆盖坡面；与地图上的高低起伏对照，不把颜色当成测量的植被类型。"
+        },
+        {
+          "title": "开敞地",
+          "x": 62,
+          "y": 42,
+          "detail": "开敞地穿插在林木之间；单张照片不能证明其形成原因或管理方式。"
+        },
+        {
+          "title": "远近层次",
+          "x": 30,
+          "y": 72,
+          "detail": "近处与远处的坡面形成不同遮挡，保持整个山谷的观察尺度。"
+        }
+      ],
+      "bytes": 1114533,
+      "sha256": "a7024ec486bbb9534c09c02186ee1a55373d3691cf03eaf839ca43e3ee00ccc8",
+      "reuse": "Unmodified source/Commons thumbnail, responsive display crop; original photo license retained. No endorsements implied."
+    },
+    {
+      "id": "meadow",
+      "title": "溪流、草地与围栏",
+      "date": "2012-08-11",
+      "author": "山海风",
+      "src": "/assets/routes/g318/lulang-life/meadow-20120811.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:鲁朗草原_-_panoramio_(1).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%E9%B2%81%E6%9C%97%E8%8D%89%E5%8E%9F_-_panoramio_%281%29.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "coordinate": [
+        94.735107,
+        29.754244
+      ],
+      "aspect": 1.5,
+      "scope": "2012年鲁朗溪流与草地记录，机位来自来源坐标。溪流专名与围栏用途未核实。",
+      "features": [
+        {
+          "title": "溪流",
+          "x": 49,
+          "y": 23,
+          "detail": "流水与两侧草地在同一画面中可辨认；未核定这段溪流的专名。"
+        },
+        {
+          "title": "围栏",
+          "x": 69,
+          "y": 64,
+          "detail": "围栏分隔相邻空间；照片本身不能确认产权或具体管护制度。"
+        },
+        {
+          "title": "开敞草地",
+          "x": 20,
+          "y": 58,
+          "detail": "林地与开敞草地相邻，观察自然环境如何与被使用的空间共处。"
+        }
+      ],
+      "bytes": 892235,
+      "sha256": "b316e83f04720bf10bef8d4977684c97a5169ba8a881ada80db02a4f70489a8a",
+      "reuse": "Unmodified source/Commons thumbnail, responsive display crop; original photo license retained. No endorsements implied."
+    },
+    {
+      "id": "grazing",
+      "title": "山林之间的草地与放牧",
+      "date": "2014-09-20",
+      "author": "Zhangzhugang",
+      "src": "/assets/routes/g318/lulang-life/village-20140920.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Linzhi_Zhaxigang_2014.09.20_17-06-30.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Linzhi_Zhaxigang_2014.09.20_17-06-30.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "coordinate": [
+        94.737208,
+        29.747142
+      ],
+      "aspect": 1.5,
+      "scope": "原作者标注扎西岗，2014年拍摄。山林、草地、围栏与牲畜同处一景；不代表今日放牧范围。",
+      "features": [
+        {
+          "title": "林地与草地",
+          "x": 61,
+          "y": 49,
+          "detail": "林地、草地形成相邻的环境；这张记录不能独立解释土地利用的历史变化。"
+        },
+        {
+          "title": "放牧活动",
+          "x": 53,
+          "y": 79,
+          "detail": "草地上可见牲畜，提示风景也是生活和生产的空间；不推断牧户身份或收入。"
+        },
+        {
+          "title": "围栏与通道",
+          "x": 74,
+          "y": 72,
+          "detail": "围栏与相邻通道可辨认；不据照片给出实地通行或进入建议。"
+        }
+      ],
+      "bytes": 973159,
+      "sha256": "cbd79ce7d43b510500f8ecbe67cf668ea7ae3f3a3dd3d09115d58091ffbd01e8",
+      "reuse": "Unmodified source/Commons thumbnail, responsive display crop; original photo license retained. No endorsements implied."
+    },
+    {
+      "id": "customs",
+      "title": "工布响箭：竞赛与共同参与",
+      "date": "2021-12-02",
+      "author": "中国新闻社（Commons所列）",
+      "src": "/assets/routes/g318/lulang-life/kongpo-gathering-20211202.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Kongpo_whistling_arrows.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kongpo_whistling_arrows.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aspect": 1.7777777777777777,
+      "kind": "video-still",
+      "scope": "工布地区新闻静帧，具体拍摄场地未核实为鲁朗；日期按来源条目，非逐帧拍摄时间。",
+      "features": [
+        {
+          "title": "竞赛场景",
+          "x": 40,
+          "y": 51,
+          "detail": "射手与现场参与者共同出现在竞赛空间中。不是射箭操作教学。"
+        },
+        {
+          "title": "节庆服饰",
+          "x": 73,
+          "y": 68,
+          "detail": "观察现场穿着与节庆表达；不把这一场活动的穿着视作所有居民的日常。"
+        },
+        {
+          "title": "共同参与",
+          "x": 61,
+          "y": 49,
+          "detail": "竞赛不仅有射手，也有共同在场的人。鲁朗响箭、歌舞的联系另有地方报道支持。"
+        }
+      ],
+      "bytes": 1334980,
+      "sha256": "250bdfe2bbf380d5f973864e61ecb1e2bd492c8affbaa85631a8196a9df0d5d1",
+      "reuse": "Unmodified source/Commons thumbnail, responsive display crop; original photo license retained. No endorsements implied."
+    },
+    {
+      "id": "target",
+      "title": "工布响箭：比赛设施的影像记录",
+      "date": "2022-11-24",
+      "author": "中国新闻社（Commons所列）",
+      "src": "/assets/routes/g318/lulang-life/kongpo-target-20221124.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Arrow_target_of_Kongpo_whistling_arrows.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/84/Arrow_target_of_Kongpo_whistling_arrows.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "aspect": 1.7777777777777777,
+      "kind": "video-still",
+      "scope": "工布地区资料静帧，拍摄村落未核实；与2021年参与者画面来自不同记录，不是同一次竞赛。",
+      "features": [
+        {
+          "title": "箭靶",
+          "x": 52,
+          "y": 58,
+          "detail": "对照实际新闻画面中的比赛设施；不添加未经核实的距离、尺寸或比赛规则。"
+        },
+        {
+          "title": "场地布置",
+          "x": 31,
+          "y": 52,
+          "detail": "设施与装饰共同出现在比赛环境中；不是鲁朗某一场地的测绘。"
+        },
+        {
+          "title": "原始记录",
+          "x": 71,
+          "y": 45,
+          "detail": "保留原画面与来源标识。此图与2021年参与者画面不是同一时刻。"
+        }
+      ],
+      "bytes": 1336944,
+      "sha256": "f8b87f3782af518331112e2ec613529eba4ee3a7ddaae0f2ee47cfe0aaecdd9b",
+      "reuse": "Unmodified source/Commons thumbnail, responsive display crop; original photo license retained. No endorsements implied."
+    },
+    {
       "id": "town",
       "title": "河流、道路与聚落",
       "date": "2024-09-22",
@@ -164,6 +358,20 @@
       "rights": "原发布账号与原播放器保留；未获得下载、改剪或再分发许可。",
       "player": "https://player.bilibili.com/player.html?bvid=BV1RSJi6VEL5&autoplay=0&muted=0&danmaku=0&refer=0",
       "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
+    },
+    {
+      "id": "aerial-2022",
+      "bvid": "BV1LB4y1J7E4",
+      "title": "鲁朗航拍：山林、河道与聚落",
+      "publisher": "行走中国WalkChina",
+      "published": "2022-09-21",
+      "duration": 558,
+      "source": "https://www.bilibili.com/video/BV1LB4y1J7E4/",
+      "observed": "已核对片头山林、河道与聚落的航拍画面；未审看全部9分18秒。",
+      "scope": "作者标注鲁朗小镇；具体拍摄日期、航线和逐镜头坐标未独立核实。不是沿G318的连续实录或实时景象。",
+      "rights": "作者注明禁止未经授权转载；仅使用原发布方的平台播放器，不下载、改剪或再分发。",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1LB4y1J7E4&autoplay=0&muted=0&danmaku=0&refer=0",
+      "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
     }
   ],
   "videoAudit": {
@@ -208,14 +416,15 @@
     ]
   },
   "activeScope": {
-    "version": "macro-route-4",
+    "version": "macro-route-5",
     "goal": "Route -> landscape -> settlement -> daily life and humanities -> original route.",
     "default": [
       "Source-derived river/relief",
       "Dated2024 settlement photograph",
       "Existing roads and footprints",
       "Dated2008 street activity",
-      "2016 report on Gongbo customs and borrowed dwelling styles"
+      "Licensed local forest, stream/meadow and2014 grazing records",
+      "2018 Lulang customs report with clearly regional2021/2022 news stills"
     ],
     "optional": [
       "2026 collective-banquet publisher video: contemporary activity, not universal traditional life",
@@ -223,5 +432,36 @@
     ],
     "frozen": "Six overview chapters, all other route recordings, source geometry and models.",
     "deferred": "Kitchen/supplier footage research is no longer an active deliverable. The old audit is retained as history, not the mainline completion criterion."
+  },
+  "fieldAudit": {
+    "verifiedOn": "2026-10-19",
+    "localPhotoIds": [
+      "forest",
+      "meadow",
+      "grazing",
+      "town",
+      "daily"
+    ],
+    "regionalPhotoIds": [
+      "customs",
+      "target"
+    ],
+    "regionalScope": "CNS/Commons news stills, exact venue not established as Lulang; no geographic pins or false continuous-event edit.",
+    "sourceLicenseNote": "Commons current imageinfo and licensing mark the two CNS stills CC BY4.0; earlier cached target-page text used3.0. Keep attribution, source and change notice; no rights to the original full CNS webpage video are inferred.",
+    "rejected": [
+      {
+        "id": "kongpo-archer-20221124",
+        "reason": "Original asset returned429 twice. Not bundled; no mirror or screenshot extraction used."
+      },
+      {
+        "id": "Tibetan house7",
+        "reason": "Source description gives2019 but EXIF gives2018, and no verified camera coordinate; excluded instead of assigning to a local household."
+      }
+    ],
+    "limits": [
+      "Original Lulang festival video with controlled narration/annotation timing remains unavailable.",
+      "The regional stills do not prove that these participants or venue are in Lulang.",
+      "No news-article photos without a verified reusable license bundled."
+    ]
   }
 }

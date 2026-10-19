@@ -1,6 +1,7 @@
 import {routePilotCues,pilotScriptVersions,pilotNarratedView} from '../data/routePilot';
 import type {PilotView} from '../data/routePilot';
 import {lulangFootage} from '../data/lulangFootage';
+import {lulangLifePhotos} from '../data/lulangLife';
 export const PILOT_POSITION_KEY='tibet-explorer.route-g318.position.v1';
 export const PILOT_NOTE_KEY='tibet-explorer.route-g318.observation.v1';
 export type PilotReturn={beatIndex:number;raw:number;voice:boolean;view:PilotView;scriptVersion?:string};
@@ -13,7 +14,7 @@ function cameraSnapshot(view:any):Partial<PilotView>{
  return result;
 }
 function mediaSnapshot(view:any):Partial<PilotView>{
- return {placeMedia:['map','town','process','daily','record'].includes(view.placeMedia)?view.placeMedia:'map',...(lulangFootage.some(f=>f.id===view.footageId)?{footageId:view.footageId}:{}),photoFocus:Math.trunc(clamp(view.photoFocus??0,0,3)),cookingProgress:clamp(view.cookingProgress??0),...(['making','supply','service'].includes(view.lifePhase)?{lifePhase:view.lifePhase}:{})};
+ return {...(Object.hasOwn(lulangLifePhotos,view.placePhoto)?{placePhoto:view.placePhoto}:{}),placeMedia:['map','town','process','daily','record'].includes(view.placeMedia)?view.placeMedia:'map',...(lulangFootage.some(f=>f.id===view.footageId)?{footageId:view.footageId}:{}),photoFocus:Math.trunc(clamp(view.photoFocus??0,0,3)),cookingProgress:clamp(view.cookingProgress??0),...(['making','supply','service'].includes(view.lifePhase)?{lifePhase:view.lifePhase}:{})};
 }
 function snapshot(v:any):PilotReturn|undefined{
  if(!v||!Number.isInteger(v.beatIndex)||v.beatIndex<0||v.beatIndex>=routePilotCues.length||!v.view||!['whole','line','place'].includes(v.view.mode))return;

@@ -1,0 +1,19 @@
+{
+  "id": "8372fb37bb94478b34e6df323b231e48a729f0ee11b1556090ec6ce09f8e9a9c",
+  "url": "/assets/audio/narration/8372fb37bb94478b34e6df323b231e48a729f0ee11b1556090ec6ce09f8e9a9c.mp3",
+  "text": "先看鲁朗河与两侧地形，比较谷底和坡面。对照林海实拍，森林与开敞地交错。进入二零二四年的河谷实拍，看道路和房屋。回到地图，先看国道，再展开地方接续，建筑轮廓随之出现。再看草地与放牧，以及街边日常：风景也是生产和停留的空间。认识人文，再对照工布地区的响箭影像：竞赛、服饰和共同参与，连接起节庆生活。鲁朗公开资料也记录了响箭和歌舞。影像拍摄场地未核实为鲁朗，不能当作本地现场。带着问题，再回到刚才的道路。",
+  "duration": 43.452,
+  "bytes": 696948,
+  "sha256": "b1648c32e7734d68d9e3136bfe7823f444a3ab144f23e799a01fec614653bd9a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T04:48:37.722Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8372fb37bb94478b34e6df323b231e48a729f0ee11b1556090ec6ce09f8e9a9c.subtitles.json",
+  "subtitleSha256": "a6b74cf48a831761cea9780ccf62ad04798722aafd2be770806de9f0c4e1347e",
+  "timingLevel": "word"
+}

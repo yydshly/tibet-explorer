@@ -12,7 +12,7 @@ describe('grounded Lulang culture reading and explicitly hypothetical process',(
  it('does not reframe local culture as restaurant supply in the default narration',()=>{
   const cue=routePilotCues[2],clip=json('public/assets/audio/narration/cue-manifest.json').clips.find((c:any)=>c.cueId===cue.id),timeline=json('public'+clip.subtitleUrl);
   for(let t=0;t<=clip.duration;t+=.1){const timing=narrationTimingAt(cue.narration,t,clip.duration,timeline);expect(lulangCultureState(pilotNarratedView(2,cue.narration,timing.textProgress)).active).toBe(false);}
-  expect(cue.narration).toContain('工布民俗');expect(cue.narration).not.toContain('供货');
+  expect(cue.narration).toContain('工布地区的响箭影像');expect(cue.narration).not.toContain('供货');
  });
  it('only selects existing restaurant records and leaves all source objects unchanged',()=>{
   const place=json('public/assets/routes/g318/lulang.geojson'),before=JSON.stringify(place);

@@ -47,6 +47,15 @@ describe('actual route callbacks and independent persistence',()=>{
   expect(scene().view).toEqual(native);expect(media.current.raw).toBe(.43);
   expect(saved.get('tibet-explorer.overview-position.v1')).toBe('frozen-overview');
  });
+ it('preserves a regional customs record without fabricating a map location and returns the original route',()=>{
+  const original={...scene().view};button('进入鲁朗 · 保留原路段').onClick();
+  media.current.raw=.5;media.current.timing={textProgress:.5};
+  const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
+  local().props.onChange({placePhoto:'customs',placeMedia:'town',placeLens:'culture',photoFocus:3});
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject({placePhoto:'customs',photoFocus:3});
+  button('返回进入前的原线原句').onClick();expect(media.current.beatIndex).toBe(1);expect(media.current.raw).toBe(.43);expect(scene().view).toEqual(original);
+ });
  it('saves photo focus and the interrupted cooking condition, then restores native media on resume',()=>{
   media.current.beatIndex=2;media.current.timing={textProgress:.6};
   const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
@@ -114,7 +123,7 @@ describe('actual route callbacks and independent persistence',()=>{
  it('migrates old local-script fractions to the new opening without losing notes or the original line return',()=>{
   const line={beatIndex:1,raw:.43,voice:true,view:{mode:'line',progress:.668,height:3000,lookBack:true,connections:false}};
   saved.set(PILOT_NOTE_KEY,JSON.stringify({note:'keep my observation',returnTo:{...line,beatIndex:2,raw:.62,view:{...line.view,mode:'place',connections:true}},lineReturn:line}));
-  const note=readPilotNote();expect(note.note).toBe('keep my observation');expect(note.returnTo).toMatchObject({beatIndex:2,raw:0,scriptVersion:'4',view:{placeLens:'landscape'}});expect(note.lineReturn).toMatchObject({beatIndex:1,raw:.43});
+  const note=readPilotNote();expect(note.note).toBe('keep my observation');expect(note.returnTo).toMatchObject({beatIndex:2,raw:0,scriptVersion:'5',view:{placeLens:'landscape'}});expect(note.lineReturn).toMatchObject({beatIndex:1,raw:.43});
  });
  it('compares route views and local access, returns the exact line/sentence, and skips the completed local passage once',()=>{
   find(render(),n=>n.props?.['aria-label']==='G318沿线位置').props.onChange({target:{value:'.61'}});
