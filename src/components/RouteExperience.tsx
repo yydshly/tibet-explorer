@@ -21,9 +21,11 @@ export default function RouteExperience(){
  return <PilotPlayback/>;
 }
 function PilotPlayback(){
+ const [entryStart]=useState(()=>new URLSearchParams(location.hash.split('?')[1]||'').get('start')==='1');
+ const entryReset=useRef(false),entryAutoplay=useRef(false);
  const beats=useMemo(()=>routePilotCues.map(c=>({id:c.id,recordingId:c.id,text:c.narration,sceneIdentity:routePilotIdentity})),[]);
  const director=useOverviewDirector({beats,storageKey:PILOT_POSITION_KEY,resumeAliases:pilotResumeAliases});
- const initial=useMemo(readPilotNote,[]),[note,setNote]=useState<PilotNote>(initial),[status,setStatus]=useState(''),[saveOK,setSaveOK]=useState(true);
+ const initial=useMemo(()=>{const saved=readPilotNote();return entryStart?{...saved,returnTo:undefined,lineReturn:undefined,skipPlaceOnce:false}:saved;},[entryStart]),[note,setNote]=useState<PilotNote>(initial),[status,setStatus]=useState(''),[saveOK,setSaveOK]=useState(true);
  const [override,setOverride]=useState<PilotView|undefined>(initial.returnTo?.view),[lineReturn,setLineReturn]=useState<PilotReturn|undefined>(initial.lineReturn);
  const [reading,setReading]=useState<PilotReading>(),[context,setContext]=useState<PilotTerrainContext>(),[cameraKey,setCameraKey]=useState(0);
  const beat=beats[director.beatIndex],planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
@@ -35,6 +37,16 @@ function PilotPlayback(){
  const snapshot=():PilotReturn=>({beatIndex:director.beatIndex,raw:director.raw,voice:director.voice,scriptVersion:pilotScriptVersions[director.beatIndex],view:{...view}});
  if(director.beatIndex<2&&!planMode)lastLine.current=snapshot();
  const persist=(next:PilotNote)=>{setNote(next);const ok=writePilotNote(next);setSaveOK(ok);setStatus(ok?'已保存到当前浏览器。':'保存失败，请先复制观察笔记；原讲述仍保留。');return ok;};
+ useEffect(()=>{
+  if(!entryStart||entryReset.current)return;entryReset.current=true;
+  director.pause();director.select(0);director.setVoice(true);setOverride(undefined);setLineReturn(undefined);
+  const next={...readPilotNote(),returnTo:undefined,lineReturn:undefined,skipPlaceOnce:false};writePilotNote(next);setNote(next);
+  history.replaceState(history.state,'',`${location.pathname}${location.search}#${routePilotPath}`);
+ },[entryStart,director.pause,director.select,director.setVoice]);
+ useEffect(()=>{
+  if(!entryStart||!entryReset.current||entryAutoplay.current||!director.ready)return;
+  entryAutoplay.current=true;director.setVoice(true);director.playPause();
+ },[entryStart,director.ready,director.setVoice,director.playPause]);
  useEffect(()=>{
   // Returning to the approach sentence must not automatically repeat the
   // already visited place. Explicit place selection starts a fresh visit.
@@ -61,6 +73,7 @@ function PilotPlayback(){
   const target=lineReturn??lastLine.current??{beatIndex:1,raw:0,voice:director.voice,view:pilotNarratedView(1,beats[1].text,0)};
   restore(target);setLineReturn(undefined);persist({...note,lineReturn:undefined,returnTo:target,skipPlaceOnce:true});setStatus('已回到进入鲁朗前的原路段和原句。继续后接回整段总结，不重复地方讲述。');
  };
+ const backToGateway=()=>{director.pause();if(persist({...readPilotNote(),returnTo:snapshot(),lineReturn}))location.hash='/routes';};
  const openPlan=()=>{const target=snapshot();director.pause();if(persist({...note,returnTo:target,lineReturn})){director.retryScene();location.hash=routePilotPath+'?plan=1';}};
  const returnPlan=()=>{if(!persist(note))return;if(note.returnTo)restore(note.returnTo);location.hash=routePilotPath;};
  const km=reading?(view.progress*reading.total/1000).toFixed(1):'—';
@@ -70,7 +83,7 @@ function PilotPlayback(){
  const reason=lulangMediaFeedback(view)??(view.mode!=='place'?connectionReason:lens==='landscape'?`蓝线标出鲁朗河源河段，白线比较两侧地形；当前地表样本约${Math.round((sectionPoint?.elevation??reading?.elevation??0)/10)*10}米。移动观察点，比较河段与两侧的相对高低。绿色仅标原地图林地边线。`:culture.active?lulangCultureFeedback(view):view.servicesVisible?lulangServiceFeedback(view):lens==='culture'?'把地方生活放回同一河谷：2008年日常照片、2016年试运营报道与2026年活动原片各自有年代和范围；它们不是同一地点的历史前后对照。':connectionReason);
  if(planMode)return <main className="pilot-plan"><header><a href="#/overview">西藏探索</a><span>我的线路观察计划</span></header><h1>带着问题，回到同一段路。</h1><p>G318林芝—鲁朗 · 保留线路位置、语句与观察条件。</p><label>我的观察问题与笔记<textarea aria-label="线路观察笔记" maxLength={2000} rows={8} value={note.note} onChange={e=>persist({...note,note:e.target.value})}/></label><p>建议观察：谷地与沿途高差怎样改变视野？进入鲁朗后，道路、聚落与日常生活有什么关系？哪些属于真实记录，哪些仍需现场观察？</p><div><button onClick={()=>persist(note)}>保存观察计划</button><button onClick={returnPlan}>保存并返回原线</button></div><p role={saveOK?'status':'alert'}>{status}</p><Sources/></main>;
  return <main className="pilot-experience">
-  <header className="pilot-header"><a href="#/overview">← 认识西藏</a><div><strong>G318 · 林芝—鲁朗</strong><small>川藏南线的一段 · 从整体进入地方</small></div><nav><a href="#/routes">进藏线路 · 为什么选318</a><button onClick={openPlan}>线路观察笔记</button></nav></header>
+  <header className="pilot-header"><a href="#/overview">← 认识西藏</a><div><strong>G318 · 林芝—鲁朗</strong><small>川藏南线的一段 · 从整体进入地方</small></div><nav><a href="#/routes" onClick={event=>{event.preventDefault();backToGateway();}}>进藏线路 · 保留观察返回</a><button onClick={openPlan}>线路观察笔记</button></nav></header>
   <div className="pilot-body"><section className="pilot-stage" aria-label="G318真实沿线三维观察" data-place-media={view.mode==='place'?(view.placeMedia??'map'):'map'}>
    <PilotRouteTerrain view={view} cameraKey={cameraKey} onReady={onReady} onError={onError} onReading={onReading} onContext={onContext} onInteract={onInteract}/>
    {view.mode==='place'&&view.placeMedia&&view.placeMedia!=='map'&&<LulangLifeStage view={view} onChange={change} onBack={backToLine} manual={manual} interactionKey={cameraKey} onPhotoFocus={photoFocus}/>}

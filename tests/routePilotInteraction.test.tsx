@@ -34,6 +34,19 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('starts explicitly from the beginning with voice, keeping the existing observation text',()=>{
+  saved.set(PILOT_NOTE_KEY,JSON.stringify({version:1,note:'keep these questions',returnTo:{beatIndex:1,raw:.43,voice:false,view:{mode:'line',height:3500,progress:.3}},skipPlaceOnce:true}));
+  vi.stubGlobal('history',{state:null,replaceState:vi.fn()});vi.stubGlobal('location',{hash:'#'+routePilotPath+'?start=1',pathname:'/',search:''});
+  render();expect(media.current.beatIndex).toBe(0);expect(media.current.raw).toBe(0);expect(media.current.voice).toBe(true);expect(media.current.wantsPlayback).toBe(true);
+  expect(readPilotNote()).toMatchObject({note:'keep these questions',skipPlaceOnce:false});expect(readPilotNote().returnTo).toBeUndefined();
+  expect(saved.get('tibet-explorer.overview-position.v1')).toBe('frozen-overview');
+ });
+ it('preserves an unsaved manual observation and original-line target when returning to the route gateway',()=>{
+  button('进入鲁朗 · 保留原路段').onClick();media.current.raw=.6;
+  const local=find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');local.props.onChange({placePhoto:'grazing',placeMedia:'town',photoFocus:2});
+  const link=find(render(),n=>n.type==='a'&&n.props.href==='#/routes');link.props.onClick({preventDefault:vi.fn()});
+  expect(location.hash).toBe('/routes');expect(readPilotNote().returnTo).toMatchObject({beatIndex:2,raw:.6,view:{placePhoto:'grazing',photoFocus:2}});expect(readPilotNote().lineReturn).toMatchObject({beatIndex:1,raw:.43});
+ });
  it('explicit main playback enables sound even after a saved silent session',()=>{
   media.current.voice=false;button('继续讲述').onClick();
   expect(media.current.setVoice).toHaveBeenCalledWith(true);expect(media.current.voice).toBe(true);expect(media.current.wantsPlayback).toBe(true);

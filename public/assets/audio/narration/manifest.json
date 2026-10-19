@@ -13710,6 +13710,25 @@
       "subtitleUrl": "/assets/audio/narration/fd7f12f7be3fb401f0d078352042d709e1fbdf887a9a022b28bbbc2dde404bd8.subtitles.json",
       "subtitleSha256": "477fb1447f400a6d9c4c7018c0c4466d242987743c5f9bbb67191129ef4dfc35",
       "timingLevel": "word"
+    },
+    {
+      "id": "05ef79d2e98f004d6a7149ac43f5c69d172a697fa52f2edbd0b08687d54fc6ce",
+      "url": "/assets/audio/narration/05ef79d2e98f004d6a7149ac43f5c69d172a697fa52f2edbd0b08687d54fc6ce.mp3",
+      "text": "先辨来路，再进入地方。川藏南线向西，经芒康、林芝到拉萨；川藏北线经昌都到那曲，再接向拉萨。青藏线从格尔木向南，进入高原腹地。经典新藏线由叶城进入阿里；滇藏线从云南到芒康，接向川藏南线。不同线路经过不同环境，也联系不同地方。这一版先研究三一八，只开放林芝到鲁朗约七十二公里。从林芝向东，先翻山入谷，再看鲁朗风景、村镇生活与工布文化。接下来，可以从起点有声开始，也可以继续上次观察。",
+      "duration": 39.78,
+      "bytes": 638196,
+      "sha256": "05614e340226c99a9cd3979f84ba8047a4d75dd3678216c37eff8dc7c234150a",
+      "provider": "MiniMax",
+      "model": "speech-2.8-hd",
+      "voice": "Chinese (Mandarin)_Gentleman",
+      "sampleRate": 32000,
+      "channel": 1,
+      "generatedAt": "2026-10-19T05:28:21.486Z",
+      "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+      "subtitleStatus": "provider",
+      "subtitleUrl": "/assets/audio/narration/05ef79d2e98f004d6a7149ac43f5c69d172a697fa52f2edbd0b08687d54fc6ce.subtitles.json",
+      "subtitleSha256": "ae3dff8c947fa51298810f57820e62ff105b166704d2904c17b109d276ad76c9",
+      "timingLevel": "word"
     }
   ]
 }
