@@ -30,9 +30,9 @@ export function appendPilotQuestion(note:string,question:string){
  return next.length<=2000?next:note;
 }
 export function pilotPlanMarkdown(note:PilotNote){
- const observation=pilotObservation(note.returnTo),lines=['# G318 林芝—鲁朗 · 我的资料观察计划','','这是资料观察与研读计划。实地交通、开放、许可及进入条件尚需按日期核实。',''];
+ const observation=pilotObservation(note.observation??note.returnTo),lines=['# G318 林芝—鲁朗 · 我的资料观察计划','','这是资料观察与研读计划。实地交通、开放、许可及进入条件尚需按日期核实。',''];
  if(observation){
-  lines.push('## 当前观察',observation.title,'',`返回位置：${observation.returnDescription}`,'');
+  lines.push('## 保存的观察',observation.title,'',`观察记录位置：${observation.returnDescription}`,'');
   if(observation.selected)lines.push(`当前对象：${observation.selected.title}`,`已有资料说明：${observation.selected.detail}`,'');
   lines.push('待观察问题：'+observation.question,'','资料边界：'+observation.boundary,'','## 出处与许可',...observation.sources.map(s=>s.url.startsWith('/')?`- ${s.title}（本项目归档：${s.url}）`:`- [${s.title}](${s.url})`),'');
  }

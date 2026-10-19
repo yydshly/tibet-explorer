@@ -145,5 +145,15 @@
     "unchanged": "Six chapters, all339 audio objects, four clips142.560s, source assets/GIS/models/cameras",
     "evidence": "../review/g318-plan-handoff-20261019/verification.json (workspace-local)",
     "limits": "No new media or route, no fresh whole-show or system-output listening claim, no first-viewer understanding claim"
+  },
+  "observationPersistenceFix": {
+    "date": "2026-10-19",
+    "state": "fixed-and-verified",
+    "reproduced": "After river-plan roundtrip to original line, header notebook replaced saved river/photo/source with current mountain context",
+    "change": "Independent sanitized observation snapshot; capture updates evidence, header preserves it; returnTo remains the actual caller",
+    "checks": "39 scoped checks across4 files, typecheck and production build passed",
+    "browser": "Fixed build river capture/edit/save -> same photo/focus/raw -> original line43%/48.1km -> header reopen -> refresh -> real export still retained river/photo/source/edited note; original note restored; exact original dataset/raw43% restored; no application errors",
+    "evidence": "../review/g318-plan-live-demo-20261019/verification.json (workspace-local)",
+    "frozen": "Six chapters, source imagery/GIS/models/cameras, all339 audio objects,4 clips/142.560s"
   }
 }

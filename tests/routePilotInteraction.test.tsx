@@ -34,6 +34,16 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('keeps the saved river observation after returning to the line and reopening the notebook from its header',()=>{
+  button('进入鲁朗 · 保留原路段').onClick();media.current.raw=.22;const text=routePilotCues[2].narration;media.current.timing={textProgress:(text.indexOf('进入二零二四')+4)/text.length};
+  const local=find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');local.props.onChange({placeMedia:'town',placePhoto:'town',photoFocus:1});
+  button('保存观察问题').onClick();find(render(),n=>n.type==='textarea').props.onChange({target:{value:'保留这处河流资料。'}});
+  button('保存并返回原线').onClick();button('返回进入前的原线原句').onClick();expect(media.current.beatIndex).toBe(1);expect(media.current.raw).toBe(.43);
+  button('线路观察笔记').onClick();harness.reset();render();
+  expect(readPilotNote()).toMatchObject({note:'保留这处河流资料。',observation:{beatIndex:2,raw:.22,view:{placePhoto:'town',photoFocus:1}},returnTo:{beatIndex:1,raw:.43}});
+  expect(find(render(),n=>n.type==='h2'&&n.props.children==='河流、道路与聚落 · 河流')).toBeDefined();
+  button('保存并返回原线').onClick();expect(media.current.beatIndex).toBe(1);expect(media.current.raw).toBe(.43);
+ });
  it('carries the selected photo object to the plan, appends its question once and restores the same observation',()=>{
   media.current.beatIndex=2;const text=routePilotCues[2].narration;media.current.timing={textProgress:(text.indexOf('门前活动')+1)/text.length};
   const original={...scene().view};button('保存观察问题').onClick();

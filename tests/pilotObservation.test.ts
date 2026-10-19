@@ -3,6 +3,10 @@ import {pilotObservation,appendPilotQuestion,pilotPlanMarkdown} from '../src/lib
 import type {PilotNote,PilotReturn} from '../src/lib/routePilotStore';
 const origin:PilotReturn={beatIndex:2,raw:.438,voice:true,scriptVersion:'6',view:{mode:'place',progress:1,height:3000,connections:true,lookBack:false,placeMedia:'town',placePhoto:'town',photoFocus:2}};
 describe('evidence carried into the route observation plan',()=>{
+ it('exports the saved evidence even when the current return position is back in the mountains',()=>{
+  const note:PilotNote={version:1,note:'河流问题',observation:origin,returnTo:{...origin,beatIndex:1,raw:.43,view:{mode:'line',progress:.668,height:3000,connections:false,lookBack:false}}};
+  const md=pilotPlanMarkdown(note);expect(md).toContain('当前对象：道路');expect(md).toContain('Lulang_Town.jpg');expect(md).toContain('观察记录位置：进入鲁朗');expect(md).not.toContain('观察记录位置：沿路观察');
+ });
  it('carries the actual selected object, photograph date and license without asserting a historical reconstruction',()=>{
   const result=pilotObservation(origin)!;
   expect(result.title).toBe('河流、道路与聚落 · 道路');expect(result.selected?.title).toBe('道路');
