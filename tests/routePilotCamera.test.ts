@@ -19,7 +19,6 @@ describe('narrated route camera',()=>{
   expect(at('继续向鲁朗',1)).toMatchObject({elevation:false,lookBack:false});
   const local=routePilotCues[2].narration;
   expect(pilotNarratedView(2,local,(local.indexOf('两侧地形')+2)/local.length)).toMatchObject({elevation:true,placeLens:'landscape'});
-  expect(pilotNarratedView(2,local,(local.indexOf('深色坡面')+2)/local.length)).toMatchObject({elevation:false,placeLens:'landscape'});
   expect(pilotNarratedView(2,local,(local.indexOf('切到生活空间')+2)/local.length)).toMatchObject({elevation:false,placeLens:'life'});
  });
  it('pulls back from the same Lulang area to the whole route in the closing sentence',()=>{

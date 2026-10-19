@@ -13520,6 +13520,25 @@
       "subtitleUrl": "/assets/audio/narration/a914977020a2ae6094577e10ecab219d95e0bbf52477c4da265efd2e47dbbe44.subtitles.json",
       "subtitleSha256": "a96f4c2a35cdb64e7731ada4f5b005193e5729faaf637094babd4f89529b355a",
       "timingLevel": "word"
+    },
+    {
+      "id": "21324721bf5dccc4e43a4a6e45fe56a9019c37c5d62d7bb693dbd6c52af5bb34",
+      "url": "/assets/audio/narration/21324721bf5dccc4e43a4a6e45fe56a9019c37c5d62d7bb693dbd6c52af5bb34.mp3",
+      "text": "先看鲁朗河与两侧地形，比较谷底和坡面。切到生活空间，先看国道，再展开地方接续，建筑轮廓随之出现。现在看二零二四年的河谷实拍。再看餐饮。地方风味的延续，要靠制作规范和持续经营。二零二二年公开解读包括初加工、炒制、煮熟、石锅煨煮，不是现场录像。二零一七年材料记录供货组织和商户诚信管理。移去供货条件，备料和出餐便无法接上，这是对照假设。恢复联系，再看工序接续。最后看二零零八年的街边日常，照片不能证明后来的经营成效。看过地方，再回到刚才的道路。",
+      "duration": 45.792,
+      "bytes": 734388,
+      "sha256": "5f466f83ada718ae256dbb7b824a88e24594664ed0ddacc2368d538f8d2a824a",
+      "provider": "MiniMax",
+      "model": "speech-2.8-hd",
+      "voice": "Chinese (Mandarin)_Gentleman",
+      "sampleRate": 32000,
+      "channel": 1,
+      "generatedAt": "2026-10-19T03:26:28.354Z",
+      "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+      "subtitleStatus": "provider",
+      "subtitleUrl": "/assets/audio/narration/21324721bf5dccc4e43a4a6e45fe56a9019c37c5d62d7bb693dbd6c52af5bb34.subtitles.json",
+      "subtitleSha256": "32a38f6569c9cc702e8083e7d1f09bb5cab8e95962d5ab5f941a541020a0ed61",
+      "timingLevel": "word"
     }
   ]
 }

@@ -1,5 +1,4 @@
 import {lulangCultureReferences,lulangCultureState} from '../data/lulangCulture';
-import {createLulangCultureSymbols} from './lulangCultureSymbols';
 import {useEffect,useRef} from 'react';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
@@ -80,8 +79,6 @@ export default function PilotRouteTerrain(props:Props){
    const serviceSample=(kind:'food'|'lodging')=>local.services.filter(s=>s.kind===kind).sort((a,b)=>Math.hypot(a.coordinate[0]-local.riverPoint[0],a.coordinate[1]-local.riverPoint[1])-Math.hypot(b.coordinate[0]-local.riverPoint[0],b.coordinate[1]-local.riverPoint[1]))[0];
    const foodSample=serviceSample('food'),lodgingSample=serviceSample('lodging');
    const cultureReferences=lulangCultureReferences(local.services,local.riverPoint);
-   const cultureSymbols=createLulangCultureSymbols();scene.add(cultureSymbols.group);
-   const cultureLabels=Array.from({length:5},()=>{const div=document.createElement('div');div.className='pilot-culture-label';div.hidden=true;el.append(div);return div;});
    const townLines:number[]=[],footprints:number[]=[],landuse:number[]=[];
    const inside=(p:Coord)=>p[0]>=west&&p[0]<=east&&p[1]>=south&&p[1]<=north;
    // Omit source edges without full DEM support. Never clamp an out-of-bounds
@@ -108,7 +105,7 @@ export default function PilotRouteTerrain(props:Props){
     ...(lodgingSample?[{title:'住宿 · 地图记录',coordinate:lodgingSample.coordinate,local:false,lenses:['life','culture'] as LulangLens[],category:'lodging' as const}]:[]),
     ...elevationPoints.map(p=>({title:`${p.name} · ${Math.round(sample(p.coordinate[0],p.coordinate[1])/10)*10} m`,coordinate:p.coordinate,local:false,elevationOnly:p.kind}))];
    const pins=pointSpecs.map((p,index)=>{const pin=new THREE.Mesh(new THREE.SphereGeometry(.02,12,8),new THREE.MeshBasicMaterial({color:0xffe4a4,depthTest:false}));pin.position.copy(at(p.coordinate,30));scene!.add(pin);const div=document.createElement('div');div.className='pilot-map-label';div.textContent=p.title;const leader=document.createElement('div');leader.className='pilot-map-leader';el.append(leader,div);return {pin,div,leader,index,local:p.local,lenses:p.lenses,category:p.category,elevationOnly:p.elevationOnly};});
-   const size=new THREE.Vector2();const fit=()=>{const w=el.clientWidth,h=el.clientHeight;renderer!.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();lineMaterials.forEach(m=>m.resolution.set(w,h));cultureSymbols.setResolution(w,h);size.set(w,h);};resize=new ResizeObserver(fit);resize.observe(el);fit();
+   const size=new THREE.Vector2();const fit=()=>{const w=el.clientWidth,h=el.clientHeight;renderer!.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();lineMaterials.forEach(m=>m.resolution.set(w,h));size.set(w,h);};resize=new ResizeObserver(fit);resize.observe(el);fit();
    const groundLabel=document.createElement('div');groundLabel.className='pilot-map-label pilot-ground-height';groundLabel.hidden=true;el.append(groundLabel);
    let readingKey='',traceKey=-1,lastFrame=performance.now();const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
    const render=()=>{
@@ -176,9 +173,6 @@ export default function PilotRouteTerrain(props:Props){
     const ground=position.clone().project(camera),gx=(ground.x+1)*size.x/2,gy=(1-ground.y)*size.y/2;
     groundLabel.hidden=!(state.elevation&&state.mode==='line'&&ground.z>-1&&ground.z<1&&gx>130&&gx<size.x-130&&gy>280&&gy<size.y-140);
     if(!groundLabel.hidden){groundLabel.textContent=`当前位置 · 地表约${Math.round(sample(coordinate[0],coordinate[1])/10)*10} m`;groundLabel.style.left=`${gx}px`;groundLabel.style.top=`${gy-28}px`;}
-    const cultureAnchor=at(reference?.coordinate??local.riverPoint,80);
-    const symbolReadings=cultureSymbols.update(state,cultureAnchor,camera.position.distanceTo(cultureAnchor)*.095);
-    symbolReadings.forEach((label,i)=>{const div=cultureLabels[i],p=label.position.clone().project(camera),x=(p.x+1)*size.x/2,y=(1-p.y)*size.y/2;const show=label.visible&&p.z>-1&&p.z<1&&y>145&&y<size.y-105;div.hidden=!show;if(show){div.textContent=label.title;div.dataset.muted=String(label.muted);const w=div.offsetWidth;div.style.left=`${Math.max(w/2+15,Math.min(size.x-w/2-15,x))}px`;div.style.top=`${y}px`;}});
     renderer!.render(scene!,camera);
     const key=`${Math.round(state.progress*1000)}:${state.mode}:${Math.round(localProgress*1000)}:${lens}:${Math.round(probe*1000)}:${state.cultureSample??0}`;
     if(key!==readingKey){readingKey=key;latest.current.onReading({distance:state.mode==='place'?total-context.connectionLength*(1-localProgress):state.progress*total,total,elevation:sample(coordinate[0],coordinate[1]),longitude:coordinate[0],latitude:coordinate[1],highProgress,highCoordinate:coords[high]});}
