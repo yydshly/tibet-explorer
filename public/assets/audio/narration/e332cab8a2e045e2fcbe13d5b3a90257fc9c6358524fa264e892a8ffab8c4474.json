@@ -1,0 +1,19 @@
+{
+  "id": "e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474",
+  "url": "/assets/audio/narration/e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474.mp3",
+  "text": "把五个位置放回同一条路。林芝看城市与河谷，色季拉山地比较高差，鲁朗看道路、河流和生活空间。通麦看跨河与穿山，波密看风景进入街道生活。风景、人文和交通在沿线相遇。选一个已经看过的对象，带着问题和出处保存到观察计划；返回时，继续原来的画面和原句。这是资料观察，不是已核实的出行行程。",
+  "duration": 29.844,
+  "bytes": 479220,
+  "sha256": "35d3474ad0d67e9ecd25d3a6917641ee1d4816147b4936ffae79c79d50f2408d",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T17:17:38.404Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474.subtitles.json",
+  "subtitleSha256": "af3b1d4999253bf000c6d4629004f18fb5d8676f8b385c63e601f0653edfdf0c",
+  "timingLevel": "word"
+}

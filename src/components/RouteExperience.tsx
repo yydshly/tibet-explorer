@@ -24,10 +24,13 @@ import {tongmaiPath} from '../data/tongmaiJourney';
 const TongmaiExperience=lazy(()=>import('./TongmaiExperience'));
 import {bomiPath} from '../data/bomiJourney';
 const BomiExperience=lazy(()=>import('./BomiExperience'));
+import {corridorPath} from '../data/corridorJourney';
+const CorridorExperience=lazy(()=>import('./CorridorExperience'));
 
 export default function RouteExperience(){
  const route=location.hash.split('?')[0].replace(/^#/,'');
  if(route==='/routes')return <RouteGateway/>;
+ if(route===corridorPath)return <Suspense fallback={<main className="pilot-experience" aria-busy="true">正在准备林芝—波密完整主线…</main>}><CorridorExperience/></Suspense>;
  if(route===bomiPath)return <Suspense fallback={<main className="pilot-experience" aria-busy="true">正在接续通麦—波密来路…</main>}><BomiExperience/></Suspense>;
  if(route===tongmaiPath)return <Suspense fallback={<main className="pilot-experience" aria-busy="true">正在准备鲁朗—通麦接续…</main>}><TongmaiExperience/></Suspense>;
  return <PilotPlayback/>;

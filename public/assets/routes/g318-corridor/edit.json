@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "source": "/project-review/corridor-evidence/g318-source-chain.geojson",
+  "durations": [
+    16.848,
+    32.724,
+    41.976,
+    37.476,
+    27.684,
+    52.452,
+    19.8,
+    22.284,
+    29.844
+  ],
+  "tongmaiEnd": 0.9214754588810868,
+  "lulangCultureRaw": 0.5549972495217451,
+  "totalSeconds": 276.96923076923076,
+  "shotSeconds": [
+    16.848,
+    32.724,
+    41.976,
+    20.79907692307692,
+    16.676923076923078,
+    27.684,
+    48.33323076923077,
+    42.084,
+    29.844
+  ],
+  "markers": [
+    {
+      "name": "林芝城区附近",
+      "role": "城市河谷",
+      "coordinate": [
+        94.3607525,
+        29.6513654
+      ],
+      "sourceNode": 8539730136,
+      "index": 0
+    },
+    {
+      "name": "色季拉山地 · 沿线高样本",
+      "role": "高差与视野",
+      "coordinate": [
+        94.6519287,
+        29.6107711
+      ],
+      "sourceNode": 624467736,
+      "index": 830
+    },
+    {
+      "name": "鲁朗 · 国道接续点",
+      "role": "谷地与生活",
+      "coordinate": [
+        94.7295088,
+        29.7276261
+      ],
+      "sourceNode": 7365874802,
+      "index": 1132
+    },
+    {
+      "name": "通麦 · 原路节点",
+      "role": "跨河与穿山",
+      "coordinate": [
+        95.07479,
+        30.10082
+      ],
+      "sourceNode": 841483794,
+      "index": 2100
+    },
+    {
+      "name": "波密 · 扎木镇附近",
+      "role": "街道与交往",
+      "coordinate": [
+        95.7764321,
+        29.8548118
+      ],
+      "sourceNode": 841510013,
+      "index": 3163
+    }
+  ],
+  "policy": "Three existing terrain/image footprints only,overview downsampled from existing grids; no generated terrain beyond bounds. Existing recordings are unmodified. R03/R04 share one recording; R06 omits only its standalone return invitation. Old local closing clips are not repeated. Observation plans are optional and outside auto-play duration."
+}

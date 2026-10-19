@@ -1,0 +1,19 @@
+{
+  "id": "b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849",
+  "url": "/assets/audio/narration/b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849.mp3",
+  "text": "先把这条来路放在一起。从林芝城区附近向东，经过色季拉山地、鲁朗和通麦，到波密县城附近。沿真实道路看地形怎样变化，再进入地方，观察风景、生活与人文怎样相连。",
+  "duration": 16.848,
+  "bytes": 271284,
+  "sha256": "ad4b2711555f5d6e560ecc0209ed429e2153b5991300baf2b939f2092a26b064",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T17:17:26.221Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849.subtitles.json",
+  "subtitleSha256": "cc92b944a897153660adc43a07cf075ca7bd300b3c0b20a6e66b9f8b6d2a8874",
+  "timingLevel": "word"
+}

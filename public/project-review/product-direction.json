@@ -18,7 +18,7 @@
   },
   "nextVersion": {
     "name": "经典线路与真实地方",
-    "status": "六章和已交付路段冻结；R05—R07接续至波密已实现，整线重编与R08尚未完成",
+    "status": "九镜完整主线已接入；本次以连续播放、可选观察计划和精确返回作功能收口，首次观看者理解证据仍未完成",
     "entry": "以有真实交通依据、能解释沿途变化的经典线路为入口",
     "journey": [
       "选择线路",
@@ -127,7 +127,7 @@
     ],
     "narrativePlan": {
       "id": "G318-east-corridor-narrative-v1-20261019",
-      "status": "narrative_and_storyboard_complete_r05_r07_delivered",
+      "status": "complete_corridor_edit_functionally_closed",
       "updatedAt": "2026-10-20",
       "title": "沿G318认识真实地方：林芝—色季拉—鲁朗—通麦—波密",
       "purpose": "沿真实线路看见环境差异，理解人怎样建设、使用和延续地方，并形成可以互相比较的地方印象。",
@@ -153,7 +153,7 @@
           "seconds": 142.56,
           "localScriptVersion": 6
         },
-        "currentRound": "2026-10-20新增R07通麦—波密，48.744秒；仅在通麦结尾加下一段导航，六章、原首段和R05—R06镜头与录音不改。完整整线重编和R08不在本次范围。",
+        "currentRound": "独立整线入口/routes/g318-east/whole，复用既有镜头和7段录音，新增开场16.848秒与回看29.844秒；总276.969秒，九镜均在410秒合计上限内。六章与三个独立路段保持冻结。",
         "futureGuidedDuration": {
           "maxSeconds": 410,
           "minimumIsNotAQuota": true,
@@ -1578,7 +1578,7 @@
       "storyboard": {
         "id": "G318-east-corridor-storyboard-v1-20261019",
         "date": "2026-10-19",
-        "status": "storyboard_complete_r05_r07_delivered_full_corridor_edit_pending",
+        "status": "R00_R08_reused_continuous_edit_implemented",
         "basis": {
           "narrativePlan": "G318-east-corridor-narrative-v1-20261019",
           "sourceAudit": "G318-corridor-source-coverage-20261019",
@@ -2313,6 +2313,73 @@
             "Full-corridor R00–R04 re-edit andR08 remain pending; previous Tongmai delivery remains a dated record, but its Bomi-not-available statement is superseded here."
           ],
           "freeze": "Close this R07 batch after targeted browser checks. Six chapters750.024s, original pilot142.560s and Tongmai80.136s unchanged; only additive next-route navigation in Tongmai end panel."
+        },
+        "implementationWhole": {
+          "date": "2026-10-20",
+          "routePath": "/routes/g318-east/whole",
+          "status": "functional_closeout_not_first_viewer_acceptance",
+          "shots": [
+            "R00",
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06",
+            "R07",
+            "R08"
+          ],
+          "seconds": 276.96923076923076,
+          "shotSeconds": [
+            16.848,
+            32.724,
+            41.976,
+            20.79907692307692,
+            16.676923076923078,
+            27.684,
+            48.33323076923077,
+            42.084,
+            29.844
+          ],
+          "editorialManifest": "/assets/routes/g318-corridor/edit.json",
+          "reusedRecordings": 7,
+          "newRecordings": 2,
+          "bookendSeconds": [
+            16.848,
+            29.844
+          ],
+          "reuse": "Existing PilotRouteTerrain, TongmaiTerrain, BomiTerrain and native narration-to-view functions reused without edits. New whole-map composition downsamples the SAME source grids and keeps unsupported areas blank; no new scenery or object models.",
+          "editorialChoices": [
+            "R03/R04 share one existing37.476s Lulang recording, split for navigation at the native culture words.",
+            "The R06 standalone invitation back to Lulang is omitted only in this edit; original media stays unchanged.",
+            "Original pilot closing and Bomi local closing are not repeated; new R08 instead revisits all five roles.",
+            "2016 Lulang town event stays in existing source reading; this reuse edit does not invent a new historical scene."
+          ],
+          "interaction": "Manual position/angle/object controls pause the same media clock. Plans capture the current image/object and source, separately from the current return snapshot; edit/save/export/reload and exact return are supported. Six chapters/independent segment stores are not reused.",
+          "freeze": {
+            "overviewSeconds": 750.024,
+            "pilotSeconds": 142.56,
+            "tongmaiSeconds": 80.136,
+            "bomiSeconds": 48.744,
+            "previousCueEntries": 344
+          },
+          "checks": [
+            "58 scoped checks across7 files, typecheck and production build passed;346/346 strict native-word/hash/ffprobe verification passed.",
+            "One natural complete browser playback from route gateway reached R08/raw1. Sampled R02,R05,R06,R07 and ending; not every frame captured.",
+            "Final-build Lulang river raw0.2: capture/edit/save/export/reload/return retained exact photo/object/view/raw; actual downloaded Markdown read back provenance/question/note.",
+            "Original line return retained beat2/raw0.999; reopening notebook preserved river evidence while updating return target. Resume and reload retained later beat3/raw0.1172071725904579.",
+            "Final R06 native-media cut raw0.911 continued into Bomi; R08 native30% seek emphasized Lulang with matching caption.",
+            "R08 raw0.6 to Bomi-person observation/plan refresh/exact return/resume reached100%; ending observation returned to ending without autoplay. Error log empty.",
+            "Compact nine-shot directory keeps core controls visible on the actual desktop; stale return target no longer rewinds later progress. QA note text cleared after real export."
+          ],
+          "limits": [
+            "Dated stills and separate cultural text remain; no continuous contemporary local/performance video.",
+            "Three existing source footprints only, winter imagery and surface heights, not measured road/deck/tunnel elevations.",
+            "No live travel access, parking or travel-time guarantee; plan is a source observation artifact.",
+            "No system-output loopback, frame-level sync certificate, mobile or first-viewer comprehension acceptance."
+          ],
+          "stopRule": "Close the complete mainline increment after one full assistant browser walkthrough and targeted repair checks. No new destinations/models/content time or repeated owner task lists.",
+          "canClose": "Yes for this bounded complete-mainline functionality; the disclosed media/comprehension/audio/mobile limits are not passed criteria."
         }
       }
     }
@@ -2324,7 +2391,8 @@
     "currentNarrativePlan": "/project-review/index.html#next",
     "currentStoryboard": "/project-review/index.html#storyboard",
     "tongmaiDelivery": "/project-review/index.html#tongmai-delivery",
-    "bomiDelivery": "/project-review/index.html#bomi-delivery"
+    "bomiDelivery": "/project-review/index.html#bomi-delivery",
+    "wholeCorridorDelivery": "/project-review/index.html#corridor-delivery"
   },
   "historicalImplementationBase": "fa3dcd6"
 }
