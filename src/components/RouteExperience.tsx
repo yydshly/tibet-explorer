@@ -22,10 +22,13 @@ import RouteGateway from './RouteGateway';
 import {lazy,Suspense} from 'react';
 import {tongmaiPath} from '../data/tongmaiJourney';
 const TongmaiExperience=lazy(()=>import('./TongmaiExperience'));
+import {bomiPath} from '../data/bomiJourney';
+const BomiExperience=lazy(()=>import('./BomiExperience'));
 
 export default function RouteExperience(){
  const route=location.hash.split('?')[0].replace(/^#/,'');
  if(route==='/routes')return <RouteGateway/>;
+ if(route===bomiPath)return <Suspense fallback={<main className="pilot-experience" aria-busy="true">正在接续通麦—波密来路…</main>}><BomiExperience/></Suspense>;
  if(route===tongmaiPath)return <Suspense fallback={<main className="pilot-experience" aria-busy="true">正在准备鲁朗—通麦接续…</main>}><TongmaiExperience/></Suspense>;
  return <PilotPlayback/>;
 }

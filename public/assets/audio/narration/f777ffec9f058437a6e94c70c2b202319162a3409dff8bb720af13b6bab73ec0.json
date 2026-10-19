@@ -1,0 +1,19 @@
+{
+  "id": "f777ffec9f058437a6e94c70c2b202319162a3409dff8bb720af13b6bab73ec0",
+  "url": "/assets/audio/narration/f777ffec9f058437a6e94c70c2b202319162a3409dff8bb720af13b6bab73ec0.mp3",
+  "text": "二零零八年的波密街景里，先看行人，再看车辆与临街建筑，共用通行和交往的空间。照片不是今日全貌。回到河谷，二零二三年镇级材料记录了农业、林下资源和旅游服务。波卓用山水和生产生活表达祝愿，是县域文化线索，不是这条街的活动现场。",
+  "duration": 22.284,
+  "bytes": 358260,
+  "sha256": "d35940a9017f0988674869053680caf56e5502bb4f156bddd1ce7ee18d8bfa51",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T16:55:13.592Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/f777ffec9f058437a6e94c70c2b202319162a3409dff8bb720af13b6bab73ec0.subtitles.json",
+  "subtitleSha256": "d338556268b99903c2182f0a1ec8282383e1be823247b475e18ffafab124a8c3",
+  "timingLevel": "word"
+}

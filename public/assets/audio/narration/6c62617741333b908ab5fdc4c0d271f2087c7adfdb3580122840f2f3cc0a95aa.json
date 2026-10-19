@@ -1,0 +1,19 @@
+{
+  "id": "6c62617741333b908ab5fdc4c0d271f2087c7adfdb3580122840f2f3cc0a95aa",
+  "url": "/assets/audio/narration/6c62617741333b908ab5fdc4c0d271f2087c7adfdb3580122840f2f3cc0a95aa.mp3",
+  "text": "回到进入前的原路位置，再回看来路。风景与城镇生活，在同一条线上相连。",
+  "duration": 6.66,
+  "bytes": 108276,
+  "sha256": "c791281e64bf39ce9786a0df83aba48595b0dfc406c1d95d6c3e3bd5b780fa98",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T16:55:32.515Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/6c62617741333b908ab5fdc4c0d271f2087c7adfdb3580122840f2f3cc0a95aa.subtitles.json",
+  "subtitleSha256": "7705ae11fd0373d56ed9d982d84bf094414cc1244857e188b31a236fc11bb568",
+  "timingLevel": "word"
+}

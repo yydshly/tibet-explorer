@@ -18,7 +18,7 @@
   },
   "nextVersion": {
     "name": "经典线路与真实地方",
-    "status": "原首段冻结；新增R05—R06鲁朗—通麦已实现，整条林芝—波密线路仍未完成",
+    "status": "六章和已交付路段冻结；R05—R07接续至波密已实现，整线重编与R08尚未完成",
     "entry": "以有真实交通依据、能解释沿途变化的经典线路为入口",
     "journey": [
       "选择线路",
@@ -127,7 +127,7 @@
     ],
     "narrativePlan": {
       "id": "G318-east-corridor-narrative-v1-20261019",
-      "status": "narrative_and_storyboard_complete_r05_r06_delivered",
+      "status": "narrative_and_storyboard_complete_r05_r07_delivered",
       "updatedAt": "2026-10-20",
       "title": "沿G318认识真实地方：林芝—色季拉—鲁朗—通麦—波密",
       "purpose": "沿真实线路看见环境差异，理解人怎样建设、使用和延续地方，并形成可以互相比较的地方印象。",
@@ -153,7 +153,7 @@
           "seconds": 142.56,
           "localScriptVersion": 6
         },
-        "currentRound": "2026-10-20仅实现新增R05—R06鲁朗原主路接续至通麦，独立入口；六章750.024秒与原首段142.560秒冻结。新增80.136秒，不代表整线已实现。",
+        "currentRound": "2026-10-20新增R07通麦—波密，48.744秒；仅在通麦结尾加下一段导航，六章、原首段和R05—R06镜头与录音不改。完整整线重编和R08不在本次范围。",
         "futureGuidedDuration": {
           "maxSeconds": 410,
           "minimumIsNotAQuota": true,
@@ -1578,7 +1578,7 @@
       "storyboard": {
         "id": "G318-east-corridor-storyboard-v1-20261019",
         "date": "2026-10-19",
-        "status": "storyboard_complete_r05_r06_delivered_rest_not_implemented",
+        "status": "storyboard_complete_r05_r07_delivered_full_corridor_edit_pending",
         "basis": {
           "narrativePlan": "G318-east-corridor-narrative-v1-20261019",
           "sourceAudit": "G318-corridor-source-coverage-20261019",
@@ -2256,6 +2256,63 @@
             "R00-R04/R07-R08 have not been produced as a new continuous full-corridor edit; Bomi is still not available. Frozen overview and original pilot remain separate."
           ],
           "next": "Close R05/R06 here. Next requested increment follows the approved remaining storyboard toward Bomi and full-corridor stitching; do not resume generic acquisition or old-pilot polish."
+        },
+        "implementationBomi": {
+          "date": "2026-10-20",
+          "status": "bounded_functional_delivery_not_first_viewer_acceptance",
+          "routePath": "/routes/g318-east/tongmai-bomi",
+          "deliveredShots": [
+            "R07"
+          ],
+          "runtimeIdentity": "g318-bomi-r07-v1",
+          "seconds": 48.744,
+          "recordings": [
+            {
+              "id": "ROUTE-G318-bomi-approach",
+              "seconds": 19.8
+            },
+            {
+              "id": "ROUTE-G318-bomi-place",
+              "seconds": 22.284
+            },
+            {
+              "id": "ROUTE-G318-bomi-return",
+              "seconds": 6.66
+            }
+          ],
+          "sourceManifest": "/assets/routes/g318-bomi/manifest.json",
+          "nodes": 1064,
+          "edges": 1063,
+          "incomingSharedNode": 841483794,
+          "endpoint": 841510013,
+          "geometry": "Exact original source edges; first node/coordinate equals frozen Tongmai last node. Zhamu reference766963429 is a place reference, not a public entrance or built-up boundary.",
+          "productionPixels": "Two2025-12-13 Sentinel source native windows, validated HTTP206 reads;4200x2200 global crop, no all-black pixels. Local720x640 crop retains one all-black pixel, no fill. Native GLO30 source windows decoded;1101x601 display grid approximately68m, height1x. Local patch improves pixels only, uses same sampled elevation surface.",
+          "visibleSequence": [
+            "Original-road camera advance",
+            "Overhead river/road relation at Zhamu vicinity",
+            "Oblique valley/mountain view",
+            "Full dated2008 street image with people/vehicle/frontage selection and live map locator",
+            "Short town/county text scope on the same valley map",
+            "Saved approach position then whole-segment return"
+          ],
+          "interaction": "Position/angle/river/road selection pauses narration. Enter street view with approach snapshot; selected object and origin persist separately through reload; return restores original raw/view. Continue can leave the already-exited local beat behind. Manual observation after ending returns to ending without automatic replay.",
+          "verified": [
+            "45 scoped checks across6 files, typecheck and production build passed;344/344 native-word audio hash/timeline/ffprobe checks passed.",
+            "All341 pre-existing cue-manifest entries unchanged; three new audio/subtitle hashes and formats verified.",
+            "Browser from Tongmai end link: one natural three-beat playback reached100%; native approach/oblique and street-person caption sampled.",
+            "Manual mid-route entry at raw0.301/progress0.5082809139784948/overheadtrue; selected frontage survived refresh; original view/raw restored exactly; continued to ending.",
+            "Photo annotations under the subtitle/title were retargeted to clearly visible original objects; final production-build person/vehicle/frontage checks completed, browser error log empty.",
+            "Near-end return raw0.999 continued directly to closing; ending observation returned to ending without restart. Header return retained Tongmai ending; test state restored to original first0. Frozen pilot remained32%."
+          ],
+          "limits": [
+            "2008 street photograph999x664 is a dated still record, not modern city footage or street-to-map building registration.",
+            "2023 town-level agriculture/forest/tourism text and2020 county-level Bozhuo text are not depicted performance, current statistics or a cultural-origin reconstruction.",
+            "No free cleared modern continuous local/culture video; no new scenic stops, object models or extra R07 time.",
+            "No inside-tunnel drive, exact bridge/road heights, live access, parking or travel-time claim.",
+            "No system-output audio loopback, frame-level sync certificate, mobile acceptance or first-viewer comprehension result.",
+            "Full-corridor R00–R04 re-edit andR08 remain pending; previous Tongmai delivery remains a dated record, but its Bomi-not-available statement is superseded here."
+          ],
+          "freeze": "Close this R07 batch after targeted browser checks. Six chapters750.024s, original pilot142.560s and Tongmai80.136s unchanged; only additive next-route navigation in Tongmai end panel."
         }
       }
     }
@@ -2266,7 +2323,8 @@
     "audioBaseline": "/project-review/release-baseline.json",
     "currentNarrativePlan": "/project-review/index.html#next",
     "currentStoryboard": "/project-review/index.html#storyboard",
-    "tongmaiDelivery": "/project-review/index.html#tongmai-delivery"
+    "tongmaiDelivery": "/project-review/index.html#tongmai-delivery",
+    "bomiDelivery": "/project-review/index.html#bomi-delivery"
   },
   "historicalImplementationBase": "fa3dcd6"
 }

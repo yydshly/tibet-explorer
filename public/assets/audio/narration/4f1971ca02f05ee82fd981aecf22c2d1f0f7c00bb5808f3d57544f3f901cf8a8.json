@@ -1,0 +1,19 @@
+{
+  "id": "4f1971ca02f05ee82fd981aecf22c2d1f0f7c00bb5808f3d57544f3f901cf8a8",
+  "url": "/assets/audio/narration/4f1971ca02f05ee82fd981aecf22c2d1f0f7c00bb5808f3d57544f3f901cf8a8.mp3",
+  "text": "接上通麦段的同一个道路节点，沿三一八国道向波密前进。真实弯道中，山林、河谷和道路相互参照。来到县城驻地扎木镇附近，先俯视帕隆藏布与来路，再斜看谷底和两侧山地。接下来进入街道记录。",
+  "duration": 19.8,
+  "bytes": 318516,
+  "sha256": "d9a79ebabb787be41c32db4cce843029a8fbdb1d36f12935fda073248b9a94c2",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T16:55:00.154Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4f1971ca02f05ee82fd981aecf22c2d1f0f7c00bb5808f3d57544f3f901cf8a8.subtitles.json",
+  "subtitleSha256": "c786d98b58c4ae8f9605dd7f0ee2c8790ba9ab28266b0fb64e6658f5ff51b2f6",
+  "timingLevel": "word"
+}

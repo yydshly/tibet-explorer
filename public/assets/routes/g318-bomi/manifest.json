@@ -1,0 +1,201 @@
+{
+  "id": "g318-tongmai-bomi-r07",
+  "preparedOn": "2026-10-20",
+  "bbox": [
+    95.045,
+    29.79,
+    95.82,
+    30.145
+  ],
+  "columns": 1101,
+  "rows": 601,
+  "verticalExaggeration": 1,
+  "imagery": {
+    "url": "/assets/routes/g318-bomi/sentinel-20251213.webp",
+    "status": "native_windows_read_and_reprojected",
+    "sources": [
+      {
+        "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FU/2025/12/S2C_46RFU_20251213_0_L2A/TCI.tif",
+        "item": "S2C_46RFU_20251213_0_L2A",
+        "nativeWindow": [
+          9693,
+          6177,
+          1287,
+          4102
+        ],
+        "nativeBlocks": 10,
+        "sourceBytesRead": 17296587
+      },
+      {
+        "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/GU/2025/12/S2C_46RGU_20251213_0_L2A/TCI.tif",
+        "item": "S2C_46RGU_20251213_0_L2A",
+        "nativeWindow": [
+          0,
+          6177,
+          7268,
+          4102
+        ],
+        "nativeBlocks": 40,
+        "sourceBytesRead": 74623936
+      }
+    ],
+    "date": "2025-12-13",
+    "bbox": [
+      95.045,
+      29.79,
+      95.82,
+      30.145
+    ],
+    "sourcePixelMetres": 10,
+    "output": [
+      4200,
+      2200
+    ],
+    "missingFraction": 0.0,
+    "sha256": "fe8dd3738a2ffe60bf47a09cb42af0f78491c2f806ffd5bf9cde7d9cee7d0bb9",
+    "localCrop": {
+      "bbox": [
+        95.738,
+        29.828,
+        95.81,
+        29.883
+      ],
+      "output": [
+        720,
+        640
+      ],
+      "sourcePixelMetres": 10,
+      "allBlackFraction": 2.170138888888889e-06,
+      "sha256": "bb632c48b4e422d33048f283be4b2aae6475fa4e4ad3175d917c7037d954f4f1"
+    },
+    "scope": "Only this R07 view; sparse local source caches are NOT complete source rasters; no cloud/shadow or current-weather claim"
+  },
+  "localImagery": {
+    "url": "/assets/routes/g318-bomi/zhamu-20251213.webp",
+    "bbox": [
+      95.738,
+      29.828,
+      95.81,
+      29.883
+    ],
+    "output": [
+      720,
+      640
+    ],
+    "sourcePixelMetres": 10,
+    "allBlackFraction": 2.170138888888889e-06,
+    "sha256": "bb632c48b4e422d33048f283be4b2aae6475fa4e4ad3175d917c7037d954f4f1",
+    "scope": "Higher pixel density only; draped on the SAME display elevation surface. Not measured building detail."
+  },
+  "elevation": {
+    "url": "/assets/routes/g318-bomi/terrain.int16",
+    "dataset": "Copernicus GLO-30 DSM",
+    "nativeSpacingMetres": 30,
+    "displaySampleMetres": [
+      67.9,
+      65.9
+    ],
+    "sources": [
+      {
+        "file": "Copernicus_DSM_COG_10_N29_00_E095_00_DEM.part",
+        "sha256OfPresentBytes": "0d1045cf80f8653522a171d8547db763842ce3ce23843b65f0329dc75eef1fc7",
+        "nativeWindow": [
+          160,
+          0,
+          2795,
+          759
+        ],
+        "shape": [
+          759,
+          2795
+        ],
+        "completeObject": false
+      },
+      {
+        "file": "Copernicus_DSM_COG_10_N30_00_E095_00_DEM.tif",
+        "sha256OfPresentBytes": "e60d22ed46f278e8e6c20130efccf3a46f9a470a185638b10c20f41fea73173b",
+        "nativeWindow": [
+          160,
+          3076,
+          2795,
+          524
+        ],
+        "shape": [
+          524,
+          2795
+        ],
+        "completeObject": true
+      }
+    ],
+    "scope": "Actual source windows decoded; display grid about68m. DSM is not road/bridge/tunnel elevation."
+  },
+  "geometry": {
+    "url": "/assets/routes/g318-bomi/geometry.json",
+    "source": "/project-review/corridor-evidence/g318-source-chain.geojson",
+    "acquiredOn": "2026-10-19",
+    "nodes": 1064,
+    "edges": 1063,
+    "allEdgesOriginal": true,
+    "incomingSharedNode": 841483794
+  },
+  "photo": {
+    "url": "/assets/routes/g318-bomi/bomi-street-20080917.jpg",
+    "date": "2008-09-17",
+    "author": "reurinkjan",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pome_Dzong_(Tramog,_Bomi).jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "width": 999,
+    "height": 664,
+    "scope": "Dated whole street record. No observed watermark; no present-day/full-city/urban-growth or individual-building registration claim."
+  },
+  "sources": [
+    {
+      "id": "S07",
+      "title": "扎木镇基本情况简介",
+      "date": "2023-07-04",
+      "url": "https://www.bomi.gov.cn/bmx/newxz/202012/ee7bcc2e5e7143c59d7f4725fa059033.shtml",
+      "scope": "Town-level overview, not current urban statistics."
+    },
+    {
+      "id": "S08",
+      "title": "波卓与传承人访谈",
+      "date": "2020-08-27",
+      "url": "https://www.bomi.gov.cn/bmx/xwzx/202009/4d01ce38b8c24dbe96f5b2022022091e.shtml",
+      "scope": "County-level text only; legend not verified history; date ambiguity retained; no reused performance media or street-event location."
+    }
+  ],
+  "licenses": {
+    "osm": "https://www.openstreetmap.org/copyright",
+    "sentinel": "https://cds.climate.copernicus.eu/licences/ec-sentinel",
+    "dem": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"
+  },
+  "limits": [
+    "Winter image, not live weather or multi-season climate evidence.",
+    "No exact bridge/tunnel/road elevation, old-road drive or generated historical city.",
+    "Photo2008, town record2023 and county culture text2020 have separate temporal/spatial scope.",
+    "No current traffic, stopping, opening or travel-time guarantee."
+  ],
+  "files": {
+    "bomi-street-20080917.jpg": {
+      "bytes": 689752,
+      "sha256": "a7e3abfc526fd166aaacb8a0ddff1e534591ff39ea509c47ba9b9707cdfb55f1"
+    },
+    "geometry.json": {
+      "bytes": 62970,
+      "sha256": "8f004f452a6d1e7f1fbe067fdc1d8222bef77058b7f95e68d1ef17dd50694a08"
+    },
+    "sentinel-20251213.webp": {
+      "bytes": 3016022,
+      "sha256": "fe8dd3738a2ffe60bf47a09cb42af0f78491c2f806ffd5bf9cde7d9cee7d0bb9"
+    },
+    "terrain.int16": {
+      "bytes": 1323402,
+      "sha256": "64bfccaa48fb437ffa79f4c032cf054579558d0d382a97d2ed94e8cdcf2f810a"
+    },
+    "zhamu-20251213.webp": {
+      "bytes": 149432,
+      "sha256": "bb632c48b4e422d33048f283be4b2aae6475fa4e4ad3175d917c7037d954f4f1"
+    }
+  }
+}

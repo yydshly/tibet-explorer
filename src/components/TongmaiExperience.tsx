@@ -5,6 +5,7 @@ import {routePilotPath} from '../data/routePilot';
 import TongmaiTerrain from '../scene/TongmaiTerrain';
 import NarrationCaption from './NarrationCaption';
 import './TongmaiExperience.css';
+import {bomiPath} from '../data/bomiJourney';
 
 const beats=tongmaiCues.map(c=>({id:c.id,recordingId:c.id,text:c.narration,sceneIdentity:tongmaiIdentity}));
 const controlsKey='tibet-explorer.tongmai-controls.v1';
@@ -63,7 +64,7 @@ export default function TongmaiExperience(){
     </section>
     <p className="tongmai-reason" role="status">{reason}</p>{manual&&<button className="tongmai-primary" onClick={play}>{isEnd?'返回结束画面':'继续原句 · 恢复讲述画面'}</button>}
     <details><summary>资料、许可与范围</summary><p>原始主路接续节点7365874802，969个源节点／968条原始相邻边。这里不从鲁朗支路末端补画直线。</p><p>卫星原像元裁切来自2025-12-13，不是实时天气。地形显示采样约66米，原始GLO-30含树冠与建筑，不能当作道路纵断面。</p><p>通麦桥与飞石崖隧道使用归档平面几何；没有实测桥面或洞内高程，不做桥体细部和隧道内驾驶。</p><p><a href="/assets/routes/g318-tongmai/manifest.json" target="_blank" rel="noreferrer">数据、原图与许可台账 ↗</a></p><p><a href="https://www.xizang.gov.cn/xwzx_406/bmkx/202408/t20240806_428707.html" target="_blank" rel="noreferrer">通车节点的资料依据 ↗</a></p></details>
-    {isEnd&&<div className="tongmai-end"><strong>这一段看到的变化</strong><p>跨河与穿山改变连接方式，地形约束仍在。</p><a href={`#${routePilotPath}`}>返回进入前的鲁朗原线 →</a><small>保留旧首段原位置与原句；波密段尚未制作。</small></div>}
+    {isEnd&&<div className="tongmai-end"><strong>这一段看到的变化</strong><p>跨河与穿山改变连接方式，地形约束仍在。</p><a href={`#${bomiPath}`}>沿同一原路继续到波密 →</a><a href={`#${routePilotPath}`}>返回进入前的鲁朗原线 →</a><small>保留原位置与原句；下一段从本段同一个源节点接续。</small></div>}
    </aside>
   </div>
   <footer className="tongmai-player"><div><button className="tongmai-primary" disabled={!director.ready} onClick={play}>{director.playing?'暂停讲述':manual?(isEnd?'返回结束画面':'继续原句'):isEnd?'重看这一段':'有声播放'}</button><button onClick={()=>director.setVoice(!director.voice)}>{director.voice?'静音':'开启声音'}</button><span>{director.playing?(director.voice?'有声讲述中':'静音播放中'):'讲述已暂停'} · {Math.round(director.raw*100)}%</span><button onClick={()=>change({phase:'whole',focus:'both',overhead:false})}>回看本段</button></div><label>当前讲述进度<input aria-label="通麦讲述进度" type="range" min="0" max="1" step=".001" value={director.raw} onChange={e=>{setManual(undefined);setPhotoObject(undefined);setCameraKey(k=>k+1);director.seek(Number(e.target.value));}}/></label>{director.error&&<p role="alert">{director.error}<button onClick={()=>{director.retryScene();setTerrainLoaded(false);setPhotoReady(false);setPhotoError(false);setSceneKey(k=>k+1);}}>重新准备资料</button></p>}<small>含修改的Copernicus Sentinel数据（2025） · Copernicus GLO-30 · © OpenStreetMap contributors。虚拟观察不代表当前开放、停靠或安全条件。</small></footer>
