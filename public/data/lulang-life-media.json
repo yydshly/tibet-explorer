@@ -135,5 +135,76 @@
     "No reusable authenticated Lulang kitchen/supplier video found in this bounded source audit.",
     "The two dated photos cannot establish policy effectiveness or present-day business conditions."
   ],
-  "presentation": "Same original route/return snapshot. Replace map rings with real photographs and a clearly separated process illustration. No new 3D model, scenic node or extra overview chapter."
+  "presentation": "Same original route/return snapshot. Replace map rings with real photographs and a clearly separated process illustration. No new 3D model, scenic node or extra overview chapter.",
+  "publisherVideos": [
+    {
+      "id": "dining-2023",
+      "bvid": "BV1Rc41177Jx",
+      "title": "到店用餐：石锅、餐桌与就餐说明",
+      "publisher": "惠泽夫妇深度自驾游",
+      "published": "2023-03-16",
+      "duration": 324,
+      "source": "https://www.bilibili.com/video/BV1Rc41177Jx/",
+      "observed": "已核对开头的餐桌加热石锅、餐具与作者就餐说明。",
+      "scope": "作者标注在鲁朗用餐；拍摄日期、店铺坐标未独立核实。不是厨房全流程，也不是供货记录。",
+      "rights": "作者注明禁止未经授权转载；仅使用平台提供的原播放器，不下载、改剪或再分发。",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1Rc41177Jx&autoplay=0&muted=0&danmaku=0&refer=0",
+      "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
+    },
+    {
+      "id": "banquet-2026",
+      "bvid": "BV1RSJi6VEL5",
+      "title": "集体接待：鲁朗石锅宴发布记录",
+      "publisher": "西藏日报",
+      "published": "2026-10-17",
+      "duration": 16,
+      "source": "https://www.bilibili.com/video/BV1RSJi6VEL5/",
+      "observed": "可对照集体围桌、石锅与就餐活动的现场画面。",
+      "scope": "发布于2026年，具体拍摄日期未核实；活动场面不代表普通餐厅的日常经营，也不能证明2017年制度成效。",
+      "rights": "原发布账号与原播放器保留；未获得下载、改剪或再分发许可。",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1RSJi6VEL5&autoplay=0&muted=0&danmaku=0&refer=0",
+      "reuse": "Publisher-controlled embedding only, no local media copy or re-edit license."
+    }
+  ],
+  "videoAudit": {
+    "verifiedOn": "2026-10-19",
+    "playerDocumentation": "https://player.bilibili.com/",
+    "candidates": [
+      {
+        "source": "https://tv.cctv.com/2015/09/25/VIDE1443176765881175.shtml",
+        "status": "metadata-only",
+        "finding": "Official2015 programme description names chef Wang Xiaofei making Lulang stone-pot chicken. Browser site-safety policy blocked observation; no workaround, media extraction or embedding attempted. Not a watched/cleared asset."
+      },
+      {
+        "source": "https://www.bilibili.com/video/BV1vx411m7aC/",
+        "status": "rejected-secondary-copy",
+        "finding": "Uploader description says excerpt from The Third Pole episode5. Not creator-originated kitchen documentation; no rights chain verified."
+      },
+      {
+        "source": "https://www.bilibili.com/video/BV1q8GXzdEJt/",
+        "status": "rejected-location",
+        "finding": "Title explicitly locates cooking in Medog, not Lulang. Never relabel as a Lulang kitchen."
+      },
+      {
+        "source": "https://www.bilibili.com/video/BV1Ciu96SE55/",
+        "status": "rejected-unverified-location",
+        "finding": "Commercial recipe/tutorial title is not evidence that filming occurred in Lulang."
+      },
+      {
+        "source": "https://www.bilibili.com/video/BV1G8Jy6FEAv/",
+        "status": "metadata-only-playback-failed",
+        "finding": "Tourism-platform event promotion published2026-10-15. Actual page remained buffering at0KB/s, no kitchen frames verified. No runtime entry."
+      },
+      {
+        "source": "https://hn.ifeng.com/c/8H1js97IYrN",
+        "status": "metadata-only",
+        "finding": "2022-06-21 tasting video listed; page states all rights reserved, no local reuse license or watched cooking sequence verified."
+      }
+    ],
+    "remainingGaps": [
+      "No cleared and actually watched continuous Lulang kitchen-making footage.",
+      "No verified Lulang supplier delivery/receiving video; do not substitute farms, food on tables or words about organized supply.",
+      "Publisher iframe does not document an external time-event API. Original audio/subtitles stay with its own clock; custom word-by-word overlays are not claimed."
+    ]
+  }
 }

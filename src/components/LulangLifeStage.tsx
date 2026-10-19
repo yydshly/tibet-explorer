@@ -2,17 +2,19 @@ import './LulangLifeStage.css';
 import {ArrowLeft} from '@phosphor-icons/react';
 import {lulangLifePhotos,lulangCookingState,lulangLifePhase,lulangLifePhases} from '../data/lulangLife';
 import LulangProcessStage from './LulangProcessStage';
+import LulangFootageStage from './LulangFootageStage';
 import type {PilotView} from '../data/routePilot';
 
 type Props={view:PilotView;onChange:(v:Partial<PilotView>)=>void;onBack:()=>void};
 export default function LulangLifeStage({view,onChange,onBack}:Props){
  const media=view.placeMedia??'map',cooking=lulangCookingState(view);
  if(media==='map')return null;
+ if(media==='record')return <LulangFootageStage view={view} onChange={onChange} onBack={onBack}/>;
  const photo=media==='daily'?lulangLifePhotos.daily:lulangLifePhotos.town,focus=Math.max(0,Math.min(3,view.photoFocus??0)),feature=photo.features[focus-1];
  const process=media==='process';
  const change=(patch:Partial<PilotView>)=>onChange({placeMedia:'process',placeLens:'culture',servicesVisible:true,serviceFilter:'food',...patch});
  return <section className="lulang-life-stage" aria-label="鲁朗实景与制作观察" data-life-media={media} data-cooking-step={cooking.step} data-supply-blocked={!cooking.supply}>
-  <header><span>{process?'工序与服务示意 · 非现场录像':`真实照片 · ${photo.date}`}</span><h2>{process?'从一锅制作，到持续服务':photo.title}</h2><p>{process?'制作、供货与接待要接得上，地方风味才能成为持续的服务。':photo.scope}</p></header>
+  <header><span>{process?'工序与服务示意 · 非现场录像':`真实照片 · ${photo.date}`}</span><h2>{process?'从一锅制作，到持续服务':photo.title}</h2><p>{process?'制作、供货与接待要接得上，地方风味才能成为持续的服务。':photo.scope}</p>{process&&<button className="lulang-footage-open" onClick={()=>change({placeMedia:'record',footageId:'dining-2023'})}>对照真实用餐 · 看原片 →</button>}</header>
   <div className="lulang-context-actions"><small>原线路位置</small><button onClick={onBack}><ArrowLeft size={13}/>返回原线原句</button><button onClick={()=>onChange({placeMedia:'map'})}>回到地图</button></div>
   {process?<>
    <nav className="lulang-process-phases" aria-label="鲁朗制作与服务观察">{lulangLifePhases.map(p=><button key={p.id} aria-pressed={lulangLifePhase(view)===p.id} onClick={()=>change({lifePhase:p.id,...(p.id!=='supply'?{cultureSupply:true}:{})})}>{p.title}</button>)}</nav>

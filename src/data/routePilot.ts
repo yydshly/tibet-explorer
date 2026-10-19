@@ -3,6 +3,7 @@ import {pilotNarratedCamera} from './routePilotCamera';
 import {lulangCookingProgress,lulangNarratedLifePhase} from './lulangLife';
 import type {LulangLens,LulangServiceFilter} from './lulangPlace';
 import type {LulangLifePhase} from './lulangLife';
+import type {LulangFootageId} from './lulangFootage';
 export const routePilotPath='/routes/g318-east/nyingchi-lulang';
 export const pilotScriptVersions=['1','1','3','1'] as const;
 export const pilotResumeAliases={'ROUTE-G318-lulang':'ROUTE-G318-lulang'};
@@ -29,7 +30,7 @@ export const routePilotCues=[
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
 
-export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean;placeMedia?:'map'|'town'|'process'|'daily';photoFocus?:number;cookingProgress?:number;lifePhase?:LulangLifePhase};
+export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean;placeMedia?:'map'|'town'|'process'|'daily'|'record';footageId?:LulangFootageId;photoFocus?:number;cookingProgress?:number;lifePhase?:LulangLifePhase};
 export const pilotConnectionProgress=(view:PilotView)=>view.connections?Math.max(0,Math.min(1,view.connectionProgress??1)):0;
 export function pilotNarratedView(index:number,text:string,textProgress:number,highPoint=.5):PilotView{
  return {...pilotNarratedBase(index,text,textProgress,highPoint),...pilotNarratedCamera(index,text,textProgress,highPoint)};

@@ -6,8 +6,14 @@ import {createHash} from 'node:crypto';
 import {routePilotCues,pilotNarratedView} from '../src/data/routePilot';
 import {lulangCookingState,lulangMediaFeedback,lulangLifePhase,lulangLifeRecord} from '../src/data/lulangLife';
 import {narrationTimingAt} from '../src/lib/narrationTiming';
+import {lulangFootage,lulangFootagePlayer,lulangFootageFeedback,selectedLulangFootage} from '../src/data/lulangFootage';
 const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
 describe('dated real photographs and separately illustrated process',()=>{
+ it('only embeds the publisher player, never treats meal footage as cooking or supplier evidence',()=>{
+  for(const f of lulangFootage){const url=new URL(lulangFootagePlayer(f.id));expect(url.origin).toBe('https://player.bilibili.com');expect(url.searchParams.get('bvid')).toBe(f.bvid);expect(url.searchParams.get('autoplay')).toBe('0');expect(url.searchParams.get('danmaku')).toBe('0');expect(f.scope).toContain('未');}
+  expect(lulangFootageFeedback({footageId:'dining-2023'})).toContain('不是厨房或供货');
+  expect(selectedLulangFootage({} as any).id).toBe('dining-2023');
+ });
  it('keeps asset hashes, licenses and camera coordinates within the local area and discloses gaps',()=>{
   const ledger=json('public/data/lulang-life-media.json');
   expect(ledger.photos.map((p:any)=>p.date)).toEqual(['2024-09-22','2008-09-18']);

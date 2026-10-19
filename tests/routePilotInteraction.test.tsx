@@ -34,6 +34,19 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('pauses for a publisher video, preserves its identity through plan refresh, and resumes the original words',()=>{
+  button('进入鲁朗 · 保留原路段').onClick();
+  media.current.raw=.43;media.current.timing={textProgress:.4};
+  const native={...scene().view},local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
+  local().props.onChange({placeMedia:'record',footageId:'banquet-2026',lifePhase:'service',cookingProgress:.9});
+  expect(media.current.playing).toBe(false);expect(media.current.raw).toBe(.43);
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject({placeMedia:'record',footageId:'banquet-2026',cookingProgress:.9});
+  expect(readPilotNote().lineReturn).toMatchObject({beatIndex:1,raw:.43});
+  media.current.timing={textProgress:.4};button('恢复原条件并继续').onClick();
+  expect(scene().view).toEqual(native);expect(media.current.raw).toBe(.43);
+  expect(saved.get('tibet-explorer.overview-position.v1')).toBe('frozen-overview');
+ });
  it('saves photo focus and the interrupted cooking condition, then restores native media on resume',()=>{
   media.current.beatIndex=2;media.current.timing={textProgress:.6};
   const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');

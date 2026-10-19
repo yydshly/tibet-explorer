@@ -1,4 +1,5 @@
 import type {PilotView} from './routePilot';
+import {lulangFootageFeedback} from './lulangFootage';
 
 export const lulangCookingSource={title:'2022年地方标准公开解读',date:'2022-07-04',url:'https://lz.xzdw.gov.cn/zdgz_762/202207/t20220704_258968.html'};
 export const lulangLifePhotos={
@@ -45,6 +46,7 @@ export function lulangCookingState(view:PilotView){
 }
 export function lulangMediaFeedback(view:PilotView){
  if(view.mode!=='place'||!view.placeMedia||view.placeMedia==='map')return;
+ if(view.placeMedia==='record')return lulangFootageFeedback(view);
  if(view.placeMedia==='process'){
   const state=lulangCookingState(view),phase=lulangLifePhase(view);
   if(!state.supply)return '对照假设：下一锅的原料未接入，备料等待。已做好的菜不会凭空消失；不模拟库存耗尽时间，也不表示真实停业。';

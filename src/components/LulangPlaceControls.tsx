@@ -2,6 +2,7 @@ import {useMemo} from 'react';
 import {lulangLenses,type LulangServiceFilter} from '../data/lulangPlace';
 import {lulangCultureReferences} from '../data/lulangCulture';
 import {lulangLifePhase,lulangLifeRecord,lulangLifePhotos,lulangCookingState,lulangCookingSteps} from '../data/lulangLife';
+import {selectedLulangFootage} from '../data/lulangFootage';
 import type {PilotView} from '../data/routePilot';
 import type {LulangPlaceData} from '../scene/lulangPlaceData';
 
@@ -12,6 +13,7 @@ export default function LulangPlaceControls({view,data,onChange}:Props){
  const point=data?.section[Math.round(probe*64)],food=data?.services.filter(p=>p.kind==='food'),lodging=data?.services.filter(p=>p.kind==='lodging');
  const references=useMemo(()=>data?lulangCultureReferences(data.services,data.riverPoint):[],[data]);
  const phase=lulangLifePhase(view),record=lulangLifeRecord(view),referenceIndex=Math.min(references.length-1,Math.max(0,Math.trunc(view.cultureSample??0))),photo=view.placeMedia==='daily'?lulangLifePhotos.daily:view.placeMedia==='town'?lulangLifePhotos.town:undefined;
+ const footage=view.placeMedia==='record'?selectedLulangFootage(view):undefined;
  const sample=(kind:'food'|'lodging')=>data?.services.filter(s=>s.kind===kind).sort((a,b)=>Math.hypot(a.coordinate[0]-data.riverPoint[0],a.coordinate[1]-data.riverPoint[1])-Math.hypot(b.coordinate[0]-data.riverPoint[0],b.coordinate[1]-data.riverPoint[1]))[0];
  const example=lens==='culture'&&filter!=='lodging'?references[referenceIndex]?.record:sample(filter==='lodging'?'lodging':'food');
  const filters=<div className="pilot-service-filters" aria-label="归档服务位置对照">{(['all','food','lodging'] as LulangServiceFilter[]).map((key,i)=><button key={key} aria-pressed={view.servicesVisible!==false&&filter===key} onClick={()=>onChange({serviceFilter:key,servicesVisible:true,placeMedia:'map'})}>{['共同看','餐饮记录','住宿记录'][i]}</button>)}</div>;
@@ -23,10 +25,10 @@ export default function LulangPlaceControls({view,data,onChange}:Props){
    {chart&&data&&<><svg viewBox="0 0 310 120" role="img" aria-label="鲁朗河段东西向2.6公里地表剖面"><path d={chart.path} className="local-section"/><path d="M155 18V98" className="river-axis"/><path d={`M${20+probe*270} 18V98`} className="probe-axis"/><text x="20" y="13">{chart.high} m</text><text x="20" y="108">西侧</text><text x="155" y="116" textAnchor="middle">河段样本</text><text x="290" y="108" textAnchor="end">东侧</text><text x="20" y="94">{chart.low} m</text></svg><label>移动剖面观察点<input aria-label="鲁朗河谷剖面位置" type="range" min="0" max="1" step=".015625" value={probe} onChange={e=>onChange({sectionProgress:Number(e.target.value)})}/></label><output>{probe<.48?'西侧':probe>.52?'东侧':'河段位置'} · 地表约{Math.round((point?.elevation??0)/10)*10} m</output><small>同一DSM采样，非河床实测；剖面两轴比例不同。冬季影像不独立证明树种或全年水热。</small></>}
   </>:lens==='culture'?<>
    <div className="pilot-culture-controls">
-    <strong>{photo?'实拍生活记录':phase==='making'?`制作近看 · ${lulangCookingSteps[lulangCookingState(view).step].title}`:phase==='supply'?'供货接到备料':'经营与接待'}</strong>
-    <small>{photo?photo.scope:'主画面与这里使用同一观察状态。操作会暂停原句，继续时恢复讲述。'}</small>
-    <div className="pilot-culture-record"><span>{photo?`真实照片 · ${photo.date}`:record.date}</span><p>{photo?`${photo.author} · ${photo.license}`:record.text}</p><a href={photo?photo.source:record.url} target="_blank" rel="noreferrer">查看原始材料</a></div>
-    <small>供货对照针对下一锅的原料接续，不抹去已经做好的菜。无真实库存、供应路线或成效模拟。</small>
+    <strong>{footage?'真实原片 · 用餐与接待':photo?'实拍生活记录':phase==='making'?`制作近看 · ${lulangCookingSteps[lulangCookingState(view).step].title}`:phase==='supply'?'供货接到备料':'经营与接待'}</strong>
+    <small>{footage?footage.scope:photo?photo.scope:'主画面与这里使用同一观察状态。操作会暂停原句，继续时恢复讲述。'}</small>
+    <div className="pilot-culture-record"><span>{footage?`${footage.published}发布`:photo?`真实照片 · ${photo.date}`:record.date}</span><p>{footage?footage.publisher:photo?`${photo.author} · ${photo.license}`:record.text}</p><a href={footage?footage.source:photo?photo.source:record.url} target="_blank" rel="noreferrer">查看原始材料</a></div>
+    <small>{footage?'原声与片内字幕跟随原播放器。回到工序保留选择；恢复讲述会关闭原片，接回暂停的原句。':photo?'照片、制作示意与经营资料分别阅读，不据照片推断后来的制度效果。':'供货对照针对下一锅的原料接续，不抹去已经做好的菜。无真实库存、供应路线或成效模拟。'}</small>
    </div>
    <details className="pilot-culture-records"><summary>归档餐饮、住宿与地图记录</summary>{filters}{records}{references.length>0&&<div className="pilot-culture-reference"><span>地图参照 · {references[referenceIndex]?.label}</span><div><button disabled={referenceIndex<=0} onClick={()=>onChange({placeMedia:'map',cultureSample:referenceIndex-1})}>上一处</button><output>{referenceIndex+1} / {references.length}</output><button disabled={referenceIndex>=references.length-1} onClick={()=>onChange({placeMedia:'map',cultureSample:referenceIndex+1})}>下一处</button></div><small>地图参照点不是2017年参与者。</small></div>}</details>
   </>:<><p>先看道路接入，再对照现状餐饮和住宿记录，辨认服务怎样分布在同一谷地。</p>{filters}{records}</>}

@@ -28,6 +28,7 @@ function PilotPlayback(){
  const beat=beats[director.beatIndex],planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
  const native=pilotNarratedView(director.beatIndex,beat.text,director.timing?.textProgress??0,reading?.highProgress??.5),view=override??native;
  const culture=lulangCultureState(view);
+ const publisherVideo=view.mode==='place'&&view.placeMedia==='record';
  const manual=Boolean(override),lastLine=useRef<PilotReturn|undefined>(undefined);
  const snapshot=():PilotReturn=>({beatIndex:director.beatIndex,raw:director.raw,voice:director.voice,scriptVersion:pilotScriptVersions[director.beatIndex],view:{...view}});
  if(director.beatIndex<2&&!planMode)lastLine.current=snapshot();
@@ -88,7 +89,7 @@ function PilotPlayback(){
    <p className="pilot-reason" role="status">{reason}</p>{status&&<p role={saveOK?'status':'alert'}>{status}</p>}
    <Sources/>
   </aside></div>
-  <footer className="pilot-player"><div><button className="pilot-primary" onClick={play} disabled={!director.ready}>{director.playing?'暂停讲述':manual?'恢复原条件并继续':director.beatIndex===beats.length-1&&director.raw>=1?'重新沿线观察':'继续讲述'}</button><button onClick={()=>director.setVoice(!director.voice)}>{director.voice?'关闭声音':'开启声音'}</button><span>{Math.round(director.raw*100)}% · 讲述进度</span><button onClick={openPlan}>保存观察问题</button></div><label>当前语句进度<input aria-label="线路讲述进度" type="range" min="0" max="1" step=".001" value={director.raw} onChange={e=>{setOverride(undefined);setCameraKey(k=>k+1);director.seek(Number(e.target.value));}}/></label><small>含修改的Copernicus Sentinel数据（2025） · Copernicus GLO-30 · © OpenStreetMap contributors。地图观察位置不代表可停靠/开放条件。</small></footer>
+  <footer className="pilot-player"><div><button className="pilot-primary" onClick={play} disabled={!director.ready}>{director.playing?'暂停讲述':manual?'恢复原条件并继续':director.beatIndex===beats.length-1&&director.raw>=1?'重新沿线观察':'继续讲述'}</button>{publisherVideo?<span>原片音量在播放器内</span>:<button onClick={()=>director.setVoice(!director.voice)}>{director.voice?'关闭声音':'开启声音'}</button>}<span>{Math.round(director.raw*100)}% · 讲述进度</span><button onClick={openPlan}>保存观察问题</button></div><label>当前语句进度<input aria-label="线路讲述进度" type="range" min="0" max="1" step=".001" value={director.raw} onChange={e=>{setOverride(undefined);setCameraKey(k=>k+1);director.seek(Number(e.target.value));}}/></label><small>含修改的Copernicus Sentinel数据（2025） · Copernicus GLO-30 · © OpenStreetMap contributors。地图观察位置不代表可停靠/开放条件。</small></footer>
  </main>;
 }
 function Sources(){return <details className="pilot-sources"><summary>真实资料、时间与展示边界</summary>{routePilotSources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></p>)}<p>冬季卫星影像不是实时天气。2016试运营、2017运营记录解释人的组织，不用现状建筑假造历史外观；路线末端不是核实的酒店入口或实地停靠建议。</p></details>;}
