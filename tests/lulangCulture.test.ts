@@ -29,7 +29,10 @@ describe('grounded Lulang culture reading and explicitly hypothetical process',(
   const view={...pilotNarratedView(2,routePilotCues[2].narration,1),cultureProgress:1};
   const symbols=createLulangCultureSymbols(),anchor=new THREE.Vector3(1,3.5,2);
   const complete=symbols.update(view,anchor,.4);expect(symbols.group.visible).toBe(true);expect(symbols.halo.visible).toBe(true);expect(symbols.serviceTokens.every(p=>p.visible)).toBe(true);expect(symbols.arcs[1].geometry.instanceCount).toBe(32);
+  expect(symbols.blockedMarks.every(mark=>!mark.visible)).toBe(true);
   const missing=symbols.update({...view,cultureSupply:false},anchor,.4);expect(symbols.group.position.toArray()).toEqual(anchor.toArray());expect(symbols.halo.visible).toBe(false);expect(symbols.serviceTokens.every(p=>!p.visible)).toBe(true);expect(symbols.arcs[1].geometry.instanceCount).toBe(6);expect(missing[1].title).toContain('假设');expect(complete[3].visible).toBe(true);expect(missing[3].muted).toBe(true);
+  expect(symbols.blockedMarks.every(mark=>mark.visible)).toBe(true);expect(missing[3].title).toContain('未接通');
+  symbols.update({...view,cultureSupply:false,cultureProgress:0},anchor,.4);expect(symbols.blockedMarks.every(mark=>!mark.visible)).toBe(true);
   expect(lulangCultureFeedback({...view,cultureSupply:false})).toContain('归档餐饮点仍保留');
   symbols.update({...view,placeLens:'life'},anchor,.4);expect(symbols.group.visible).toBe(false);
   symbols.group.traverse((object:any)=>{object.geometry?.dispose();object.material?.dispose();});

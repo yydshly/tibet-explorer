@@ -1,0 +1,33 @@
+{
+  "id": "G318-lulang-owner-viewing-20261019.5",
+  "baseCommit": "ed95f0e",
+  "scope": "运行现有鲁朗段，主动核查操作、资料标识、逐字进度和返回；仅修明确问题",
+  "frozen": {"mainChapters": 6, "mainSeconds": 750.024, "pilotClips": 4, "pilotSeconds": 152.82, "factsOrSourceGeometryChanged": false, "audioChanged": false, "newScenicStopsOrPhysicalModels": false},
+  "showing": "5176服务原本已运行；用户原标签仍是较早缓存，已刷新最新版本并实际从人文原句60%播放，地图回到可见区域",
+  "repairs": [
+    {"id": "CULTURE-CONTRAST", "observed": "完整/缺供货的变化存在，但停止游标和功能光点偏小，容易只注意到文字变灰", "changed": "在示意游标到达供货缺口处显示暖色停止叉号；放大既有功能光点、加强示意连线，并显示未接通的功能标注", "scope": "仅阅读符号；归档餐饮点、原材料和实际营业含义不变", "evidence": ["viewing-gap.png", "viewing-connected-final.png", "viewing-gap-final.png"]},
+    {"id": "SUMMARY-RETURN", "observed": "鲁朗自动播完进入总结后，地方页的返回按钮消失；原返回目标仍保存在状态中", "changed": "总结段在原lineReturn存在时继续显示返回原线原句；直接选总结且无目标时不添加入口", "evidence": "viewing-summary-return.png", "actualResult": "从总结点击后恢复第48.1公里、raw.43、3000m"}
+  ],
+  "checks": {
+    "browser": [
+      "制作要求的原生65%词与第一步骤、当年原料记录、地图示意对应",
+      "相同步骤与参照位置，完整联系和移去供货的对照可见；停止叉号位于停止游标处，功能光点停止且标注未接通",
+      "地图保持真实资料底图和归档点，示意框持续声明无地理尺度与非供应路线；真实记录块保留2017年份及来源链接",
+      "选择北侧第二处参照后，保存、刷新、返回：供货缺口、过程100%、北侧参照和原句65%恢复；未修改笔记正文",
+      "恢复原条件并继续后回到原参照、供货正常、制作要求阶段；媒体进度由65%推进至后续生活功能及总结",
+      "发现并修复总结返回入口后，最终构建刷新仍保留该入口；实际点击恢复48.1公里、43%、3000m",
+      "独立检查页静音避免与观看页重复发声，结束前恢复声音并关闭；最终控制台warning/error为空"
+    ],
+    "tests": {"passed": 14, "files": ["tests/lulangCulture.test.ts", "tests/routePilotInteraction.test.tsx"], "newAssertions": "停止标记完整/缺口/反向进度可见性，及地方自动推进到总结后的原线恢复"},
+    "typecheck": "passed",
+    "build": "passed; existing631kB shared chunk warning"
+  },
+  "evidence": ["viewing-connected.png", "viewing-gap.png", "viewing-connected-final.png", "viewing-gap-final.png", "viewing-restored.png", "viewing-summary-return.png"],
+  "limits": [
+    "实际用户预览栏约625px，使用现有纵向布局，地图与操作区需要滚动；本轮没有扩展手机适配",
+    "检查媒体进度、字幕和画面对应，不等于取得系统音频回听或发音听感全验收",
+    "这是开发者主动检查与用户观看准备，不计为正式首次观看者理解验收",
+    "只核对当前鲁朗链与返回，没有重复播放冻结六章"
+  ],
+  "stop": "两处明确问题修复并复核后停止，不扩展其他模型、地点或时长"
+}

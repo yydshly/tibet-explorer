@@ -19,9 +19,11 @@ export function createLulangCultureSymbols(){
  const colors=[0xffd283,0x71dce8,0xb6e3a1];
  const arcs=colors.map((color,i)=>line(Array.from({length:33},(_,j)=>arcPoint((i+j/32)/3).toArray()).flat(),color));
  const outputs=[new THREE.Vector3(-1.75,0,-1.45),new THREE.Vector3(1.75,0,-1.45)];
- const outputsLines=outputs.map(p=>line([0,0,0,...p.toArray()],0xffe8ac,2));
+ const outputsLines=outputs.map(p=>line([0,0,0,...p.toArray()],0xffe8ac,3.5));
  const halo=line(Array.from({length:49},(_,i)=>{const a=i/48*Math.PI*2;return[Math.cos(a)*.28,0,Math.sin(a)*.28];}).flat(),0xffe8ac,3);
  const token=new THREE.Mesh(new THREE.SphereGeometry(.07,12,8),new THREE.MeshBasicMaterial({color:0xfff0b5,depthTest:false}));token.renderOrder=17;group.add(token);
+ const gapStart=arcPoint(1/3);
+ const blockedMarks=[[-1,1],[1,-1]].map(([a,b])=>line([gapStart.x-.14,.02,gapStart.z+a*.14,gapStart.x+.14,.02,gapStart.z+b*.14],0xffa27b,5));
  const serviceTokens=outputs.map(()=>{const token=new THREE.Mesh(new THREE.SphereGeometry(.065,12,8),new THREE.MeshBasicMaterial({color:0xffe8ac,depthTest:false}));token.renderOrder=17;group.add(token);return token;});
  const labels=[
   {title:'制作要求 · 2017记录',position:arcPoint(1/6).multiplyScalar(1.4)},
@@ -42,12 +44,14 @@ export function createLulangCultureSymbols(){
   });
   // No second timer. Manual scrubbing, pause and reverse use the same value.
   const travel=Math.min(1,state.progress/.75),stop=state.supply?travel:Math.min(travel,1/3);
-  token.position.copy(arcPoint(stop));token.visible=state.progress<.75||!state.supply;
-  outputsLines.forEach(shape=>{shape.visible=state.step===3;shape.material.opacity=state.serviceReady?.8:.12;});
+  const blocked=!state.supply&&state.progress>=.25;
+  token.position.copy(arcPoint(stop));token.visible=state.progress<.75||!state.supply;token.scale.setScalar(blocked?1.8:1);
+  token.material.color.setHex(blocked?0xffa27b:0xfff0b5);blockedMarks.forEach(mark=>{mark.visible=blocked;});
+  outputsLines.forEach(shape=>{shape.visible=state.step===3;shape.material.opacity=state.serviceReady?.95:.12;});
   halo.visible=state.serviceReady;halo.scale.setScalar(.9+(state.progress-.75)*1.5);
-  serviceTokens.forEach((token,i)=>{token.visible=state.serviceReady;token.position.copy(outputs[i]).multiplyScalar(Math.max(0,(state.progress-.75)/.25));});
+  serviceTokens.forEach((token,i)=>{token.visible=state.serviceReady;token.scale.setScalar(2.2);token.position.copy(outputs[i]).multiplyScalar(Math.max(0,(state.progress-.75)/.25));});
   group.updateMatrixWorld(true);
-  return labels.map((label,i)=>({title:i===1&&!state.supply?'供货缺口 · 假设移去':label.title,position:group.localToWorld(label.position.clone()),visible:state.active&&(i<3?i<revealed:i>=3&&state.step===3),muted:i>=3&&!state.serviceReady||i===1&&!state.supply}));
+  return labels.map((label,i)=>({title:i===1&&!state.supply?'供货缺口 · 假设移去':i>=3&&!state.serviceReady?`未接通 · ${i===3?'日常饮食':'旅游接待'}示意`:label.title,position:group.localToWorld(label.position.clone()),visible:state.active&&(i<3?i<revealed:i>=3&&state.step===3),muted:i>=3&&!state.serviceReady||i===1&&!state.supply}));
  };
- return {group,arcs,token,halo,outputsLines,serviceTokens,update,setResolution:(w:number,h:number)=>materials.forEach(m=>m.resolution.set(w,h))};
+ return {group,arcs,token,halo,outputsLines,serviceTokens,blockedMarks,update,setResolution:(w:number,h:number)=>materials.forEach(m=>m.resolution.set(w,h))};
 }

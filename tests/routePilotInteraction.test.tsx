@@ -99,6 +99,13 @@ describe('actual route callbacks and independent persistence',()=>{
   // Director naturally advances after the restored approach finishes.
   media.current.beatIndex=2;render();expect(media.current.beatIndex).toBe(3);expect(media.current.wantsPlayback).toBe(true);expect(readPilotNote().skipPlaceOnce).toBe(false);
  });
+ it('keeps the exact original-line return available after local narration advances into the summary',()=>{
+  const original={...scene().view};button('进入鲁朗 · 保留原路段').onClick();
+  media.current.beatIndex=3;media.current.raw=.2;media.current.timing={textProgress:.2};
+  button('返回进入前的原线原句').onClick();
+  expect(media.current.beatIndex).toBe(1);expect(media.current.raw).toBe(.43);expect(scene().view).toEqual(original);
+  expect(readPilotNote().skipPlaceOnce).toBe(true);
+ });
  it('persists note, original sentence and 6500m height across reload, then returns without touching old plans',()=>{
   find(render(),n=>n.props?.['aria-label']==='沿线观察高度').props.onChange({target:{value:'6500'}});
   const original={...scene().view};button('保存观察问题').onClick();expect(location.hash).toContain('?plan=1');
