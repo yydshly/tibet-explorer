@@ -42,6 +42,7 @@ function PilotPlayback(){
  const publisherVideo=view.mode==='place'&&view.placeMedia==='record';
  const manual=Boolean(override),lastLine=useRef<PilotReturn|undefined>(undefined);
  const closing=director.beatIndex===3&&!manual?pilotClosing(beat.text,director.timing?.textProgress??0,reading?.highProgress??.5):undefined;
+ const highLook=director.beatIndex===1&&view.mode==='line'&&Math.abs(view.progress-(reading?.highProgress??.5))<.002&&(view.routeContext??0)<.1;
  const fieldObservation=manual&&view.mode==='place'&&(view.placeMedia==='town'||view.placeMedia==='daily');
  const snapshot=():PilotReturn=>({beatIndex:director.beatIndex,raw:director.raw,voice:director.voice,scriptVersion:pilotScriptVersions[director.beatIndex],view:{...view}});
  if(director.beatIndex<2&&!planMode)lastLine.current=snapshot();
@@ -71,7 +72,7 @@ function PilotPlayback(){
  const onReading=useCallback((r:PilotReading)=>setReading(r),[]);
  const onContext=useCallback((c:PilotTerrainContext)=>setContext(c),[]);
  const onInteract=useCallback(()=>director.pause(),[director.pause]);
- const change=(patch:Partial<PilotView>)=>{director.pause();setOverride({...view,routeContext:0,arrivalProgress:undefined,returnProgress:undefined,...(view.mode==='place'?{photoOverlay:undefined,photoReveal:1}:{}),...patch});setCameraKey(k=>k+1);setStatus('观察已暂停原句；继续讲述时恢复原来的线路位置与条件。');};
+ const change=(patch:Partial<PilotView>)=>{director.pause();setOverride({...view,routeRead:undefined,routeContext:0,arrivalProgress:undefined,returnProgress:undefined,...(view.mode==='place'?{photoOverlay:undefined,photoReveal:1}:{}),...patch});setCameraKey(k=>k+1);setStatus('观察已暂停原句；继续讲述时恢复原来的线路位置与条件。');};
  const play=()=>{if(!director.wantsPlayback)director.setVoice(true);setOverride(undefined);setCameraKey(k=>k+1);const next={...readPilotNote(),returnTo:undefined};writePilotNote(next);setNote(next);director.playPause();};
  const photoFocus=useCallback((focus:number)=>setOverride(previous=>previous&&previous.photoFocus!==focus?{...previous,photoFocus:focus}:previous),[]);
  const select=(i:number)=>{const next={...readPilotNote(),skipPlaceOnce:false,returnTo:undefined,lineReturn:undefined};writePilotNote(next);setNote(next);setLineReturn(undefined);setOverride(undefined);setCameraKey(k=>k+1);director.select(i);};
@@ -93,7 +94,7 @@ function PilotPlayback(){
  const observation=planMode?pilotObservation(note.observation??note.returnTo):undefined;
  const km=reading?(view.progress*reading.total/1000).toFixed(1):'—';
  const connection=pilotConnectionProgress(view),branchMetres=Math.round((context?.connectionLength??0)*connection);
- const connectionReason=view.mode==='place'?connection===0?'先读青色G318，金色圆环标出转入地方道路的实际节点。过境道路经过附近，进入地方还要继续接续。':connection<.65?`从国道接点沿金色地方道路读到约${branchMetres}米：观察转弯与地块的关系。金点表示阅读位置，不是车辆或历史施工。`:'地方道路、白色建筑轮廓与浅绿地块共同展开：国道经过附近，地方接续让道路进入聚落。接着看真实照片中的河流、房屋与街边生活。':view.mode==='whole'?'先把城区、山地与鲁朗放在一条真实道路中看；青色为国道来路，金色为已核对的末端地方接续。剖面与同一地形联动。':view.lookBack?'在同一位置回望：比较山体遮挡、道路绕行和刚经过的谷地。位置不变，观察方向改变。':`沿归档道路改变位置，地形与高程剖面同时对应${km}公里处；比较起点、山地与鲁朗的高低，再看道路如何绕行。高程是地表采样。`;
+ const connectionReason=view.routeRead!==undefined?`金色沿归档道路原节点显露，当前读到约${Math.round(view.routeRead*100)}%；青色保留未读来路。这是顺序阅读，不是车辆位置或导航。`:view.mode==='place'?connection===0?'先读青色G318，金色圆环标出转入地方道路的实际节点。过境道路经过附近，进入地方还要继续接续。':connection<.65?`从国道接点沿金色地方道路读到约${branchMetres}米：观察转弯与地块的关系。金点表示阅读位置，不是车辆或历史施工。`:'地方道路、白色建筑轮廓与浅绿地块共同展开：国道经过附近，地方接续让道路进入聚落。接着看真实照片中的河流、房屋与街边生活。':view.mode==='whole'?'先把城区、山地与鲁朗放在一条真实道路中看；青色为国道来路，金色为已核对的末端地方接续。剖面与同一地形联动。':view.lookBack?'在同一位置回望：比较山体遮挡、道路绕行和刚经过的谷地。位置不变，观察方向改变。':`沿归档道路改变位置，地形与高程剖面同时对应${km}公里处；比较起点、山地与鲁朗的高低，再看道路如何绕行。高程是地表采样。`;
  const lens=view.placeLens??'life',sectionPoint=context?.lulang?.section[Math.round((view.sectionProgress??.5)*64)];
  const reason=lulangMediaFeedback(view)??(view.mode!=='place'?connectionReason:lens==='landscape'?`蓝线标出鲁朗河源河段，白线比较两侧地形；当前地表样本约${Math.round((sectionPoint?.elevation??reading?.elevation??0)/10)*10}米。移动观察点，比较河段与两侧的相对高低。绿色仅标原地图林地边线。`:culture.active?lulangCultureFeedback(view):view.servicesVisible?lulangServiceFeedback(view):lens==='culture'?'把地方生活放回同一河谷：2008年日常照片、2016年试运营报道与2018年工布新年文字记录各自有年代和范围；它们不是同一地点的历史前后对照。':connectionReason);
  const sceneReason=view.mode==='line'?`${km}公里处 · ${view.lookBack?'原位回望，比较山体遮挡与道路绕行。':'沿同一道路，比较谷地与坡面的高低。'}`:reason;
@@ -132,10 +133,11 @@ function PilotPlayback(){
    </div>}
    {placeStory&&<div className="pilot-spatial-reading" data-spatial-focus={spatial.focus}><strong>{closing?.title??spatial.title}</strong><small>{closing?.scope??(photograph?spatial.scope:'沿现状源道路进入聚落 · 要素按讲述显露，非历史建设复原')}</small></div>}
    {view.mode==='line'&&(view.arrivalProgress??0)>0&&context&&<div className="pilot-descent-reading">沿线高点约{Math.round(context.profile[context.highestIndex].elevation/10)*10}m → 鲁朗末端约{Math.round(context.profile.at(-1)!.elevation/10)*10}m<small>同一路径的地表采样 · 两个高程标杆落在原地形上</small></div>}
-   {view.mode==='line'&&<div className="pilot-travel-key"><span>金色：已读路段</span><span>青色：后续来路</span><small>沿归档道路压缩推进 · 非行车实录</small></div>}
+   {highLook&&<div className="pilot-look-reading"><strong>同一观察位置 · {view.lookBack?'回望来路':'向前看鲁朗方向'}</strong><small>保持第{km}公里地表样本位置，只改变观察方向；不是道路实拍。</small></div>}
+   {(view.mode==='line'||view.routeRead!==undefined)&&<div className="pilot-travel-key"><span>{view.routeRead===undefined?'金色：已读路段':'金色：正在顺着源道路阅读'}</span><span>青色：后续来路</span><small>{view.routeRead===undefined?'沿归档道路压缩推进 · 非行车实录':'展示原道路转折，不是城市间直线或行车实录'}</small></div>}
    {view.elevation&&<div className="pilot-elevation-key"><strong>同一地形 · 地表高程对照</strong><div className="pilot-height-ramp"/><div><span>2900 m</span><span>4000 m</span><span>5300 m</span></div><small>高度1× · 剖面下沿为2500 m共同基准<br/>DSM地表采样，非山口实测或城市平均海拔</small></div>}
    {culture.active&&<div className="pilot-culture-key"><strong>{culture.supply?'经营关系示意':'假设：移去供货联系'}</strong><span>工序为示意 · 实景照片独立标明日期</span><em>{lulangCultureSteps[culture.step].title}</em></div>}
-   <div className="pilot-caption" hidden={fieldObservation} data-route-beat={beat.id} data-route-mode={view.mode} data-route-progress={view.progress} data-route-context={view.routeContext??0} data-route-manual={manual} data-route-connections={view.connections} data-route-connection-progress={connection} data-place-lens={view.placeLens} data-service-filter={view.serviceFilter} data-section-progress={view.sectionProgress} data-camera-pitch={view.cameraPitch} data-camera-bearing={view.cameraBearing} data-elevation={view.elevation===true}><small>{manual?'手动观察 · 原句已暂停':director.playing?'跟随讲述':'已暂停'}</small><p>{manual?sceneReason:<NarrationCaption text={director.timing?.caption||beat.text.split('。')[0]+'。'} timing={director.timing}/>}</p></div>
+   <div className="pilot-caption" hidden={fieldObservation} data-route-read={view.routeRead} data-route-look-back={view.lookBack} data-route-beat={beat.id} data-route-mode={view.mode} data-route-progress={view.progress} data-route-context={view.routeContext??0} data-route-manual={manual} data-route-connections={view.connections} data-route-connection-progress={connection} data-place-lens={view.placeLens} data-service-filter={view.serviceFilter} data-section-progress={view.sectionProgress} data-camera-pitch={view.cameraPitch} data-camera-bearing={view.cameraBearing} data-elevation={view.elevation===true}><small>{manual?'手动观察 · 原句已暂停':director.playing?'跟随讲述':'已暂停'}</small><p>{manual?sceneReason:<NarrationCaption text={director.timing?.caption||beat.text.split('。')[0]+'。'} timing={director.timing}/>}</p></div>
   </section><aside className="pilot-reading">
    <p className="pilot-eyebrow">沿途观察 · {director.beatIndex+1} / 4</p><h2>{routePilotCues[director.beatIndex].title}</h2>
    <details className="pilot-step-list"><summary>讲述顺序 · {director.beatIndex+1} / 4</summary><nav aria-label="本段认识顺序">{routePilotCues.map((b,i)=><button key={b.id} aria-current={director.beatIndex===i?'step':undefined} onClick={()=>select(i)}>{i+1} · {b.title}</button>)}</nav></details>

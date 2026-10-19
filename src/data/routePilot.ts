@@ -30,7 +30,7 @@ export const routePilotCues=[
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
 
-export type PilotView={routeContext?:number;arrivalProgress?:number;returnProgress?:number;mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean;placeMedia?:'map'|'town'|'process'|'daily'|'record';footageId?:LulangFootageId;placePhoto?:LulangPhotoId;photoOverlay?:LulangPhotoId;photoReveal?:number;photoFocus?:number;cookingProgress?:number;lifePhase?:LulangLifePhase};
+export type PilotView={routeRead?:number;routeContext?:number;arrivalProgress?:number;returnProgress?:number;mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number;cameraPitch?:number;cameraBearing?:number;mapZoom?:number;mapFocus?:number;mapFocusWeight?:number;elevation?:boolean;placeMedia?:'map'|'town'|'process'|'daily'|'record';footageId?:LulangFootageId;placePhoto?:LulangPhotoId;photoOverlay?:LulangPhotoId;photoReveal?:number;photoFocus?:number;cookingProgress?:number;lifePhase?:LulangLifePhase};
 export const pilotConnectionProgress=(view:PilotView)=>view.connections?Math.max(0,Math.min(1,view.connectionProgress??1)):0;
 export function pilotNarratedView(index:number,text:string,textProgress:number,highPoint=.5):PilotView{
  return {...pilotNarratedBase(index,text,textProgress,highPoint),...pilotNarratedCamera(index,text,textProgress,highPoint)};
@@ -38,17 +38,17 @@ export function pilotNarratedView(index:number,text:string,textProgress:number,h
 function pilotNarratedBase(index:number,text:string,textProgress:number,highPoint:number):PilotView{
  const rawAt=Math.max(0,Math.min(1,textProgress))*text.length,at=Math.abs(rawAt-Math.round(rawAt))<1e-10?Math.round(rawAt):rawAt;
  const part=(a:string,b:string)=>Math.max(0,Math.min(1,(at-text.indexOf(a))/Math.max(1,text.indexOf(b)-text.indexOf(a))));
- if(index===0){const t=part('现在沿道路前进','观察谷地');return {mode:at<text.indexOf('现在沿道路前进')?'whole':'line',progress:t*.12,height:3500,connections:false,lookBack:false};}
+ if(index===0){const t=part('现在沿道路前进','观察谷地'),reading=at>=text.indexOf('青色线保留')&&at<text.indexOf('先看起点周围');return {mode:at<text.indexOf('现在沿道路前进')?'whole':'line',progress:t*.12,height:3500,connections:false,lookBack:false,...(reading?{routeRead:part('青色线保留','先看起点周围')}:{})};}
  if(index===1){
   const hold=at>=text.indexOf('停在山地观察点')&&at<text.indexOf('继续向鲁朗');
   const p=hold?highPoint:at<text.indexOf('停在山地观察点')?.12+(highPoint-.12)*part('沿道路向山地前进','停在山地观察点'):highPoint+(1-highPoint)*part('继续向鲁朗','接下来进入鲁朗');
-  return {mode:'line',progress:p,arrivalProgress:part('继续向鲁朗','接下来进入鲁朗'),height:hold?3000:3500,connections:false,lookBack:hold&&at<text.indexOf('这里按沿线')};
+  return {mode:'line',progress:p,arrivalProgress:part('继续向鲁朗','接下来进入鲁朗'),height:hold?3000:3500,connections:false,lookBack:hold&&at<text.indexOf('向前的视野')};
  }
  if(index===2){
   const placeLens=at<text.indexOf('进入二零二四')?'landscape':at<text.indexOf('认识人文')?'life':'culture';
   const placeMedia=at>=text.indexOf('再回到刚才')?'map':at>=text.indexOf('街边日常')?'daily':at>=text.indexOf('草地与放牧')?'town':at>=text.indexOf('回到地图')?'map':at>=text.indexOf('对照林海实拍')?'town':'map';
   const placePhoto=placeMedia==='map'?undefined:at>=text.indexOf('街边日常')?'daily':at>=text.indexOf('草地与放牧')?'grazing':at>=text.indexOf('进入二零二四')?'town':'forest';
-  const photoFocus=placePhoto==='forest'?(at>=text.indexOf('开敞地')?2:1):placePhoto==='town'?(at>=text.indexOf('房屋')?3:at>=text.indexOf('看道路')?2:0):placePhoto==='daily'?(at>=text.indexOf('共同停留')?3:at>=text.indexOf('门前活动')?2:at>=text.indexOf('看门面')?1:2):placePhoto==='grazing'?2:0;
+  const photoFocus=placePhoto==='forest'?(at>=text.indexOf('开敞地')?2:1):placePhoto==='town'?(at>=text.indexOf('房屋')?3:at>=text.indexOf('看道路')?2:1):placePhoto==='daily'?(at>=text.indexOf('鲁朗公开资料')?0:at>=text.indexOf('共同停留')?3:at>=text.indexOf('门前活动')?2:at>=text.indexOf('看门面')?1:2):placePhoto==='grazing'?2:0;
   const returnAt=text.indexOf('再回到刚才'),returnProgress=Math.max(0,Math.min(1,(at-returnAt)/Math.max(1,text.length-returnAt)));
   const ramp=(token:string)=>{const t=Math.max(0,Math.min(1,(at-text.indexOf(token))/6));return t*t*(3-2*t);};
   let photoOverlay:LulangPhotoId|undefined=placePhoto,photoReveal=placePhoto?1:0;

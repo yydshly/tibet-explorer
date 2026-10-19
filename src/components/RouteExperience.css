@@ -69,3 +69,6 @@
 .pilot-closing-reading strong{display:block;font-size:15px;color:#ffe7a9}.pilot-closing-reading small{display:block;font-size:10px;line-height:1.6;color:#c9d8c6;margin-top:5px}
 .pilot-stage[data-closing-phase=corridor]>.pilot-route-context{top:137px}
 .pilot-stage[data-closing-phase=evidence]>.pilot-travel-key{display:none}
+
+.pilot-look-reading{position:absolute;left:22px;right:22px;bottom:166px;background:#102b24ed;border-left:2px solid #e5cf97;padding:9px 12px;pointer-events:none;z-index:3}
+.pilot-look-reading strong{display:block;font-size:13px;color:#ffe7a9}.pilot-look-reading small{display:block;margin-top:5px;color:#c3d4c9;font-size:10px;line-height:1.6}

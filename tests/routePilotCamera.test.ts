@@ -5,11 +5,11 @@ import {pilotNarratedCamera} from '../src/data/routePilotCamera';
 describe('narrated route camera',()=>{
  it('links the high point back to both valleys before descending, and retraces the same framing on seek',()=>{
   const text=routePilotCues[1].narration,view=(token:string,offset=0)=>pilotNarratedView(1,text,(text.indexOf(token)+offset)/text.length,.668);
-  expect(view('这里按沿线',13)).toMatchObject({routeContext:1,progress:.668});
+  expect(view('不是实测山口标高',13)).toMatchObject({routeContext:1,progress:.668});
   expect(view('继续向鲁朗',-1).routeContext).toBe(.25);
   expect(view('继续向鲁朗',6).routeContext).toBe(1);
   expect(view('接下来进入鲁朗',14).routeContext).toBe(0);
-  expect(view('这里按沿线',13)).toMatchObject({routeContext:1,progress:.668});
+  expect(view('不是实测山口标高',13)).toMatchObject({routeContext:1,progress:.668});
  });
  it('waits for the spoken object before moving to it, and restores exactly on reverse seek',()=>{
   const text=routePilotCues[0].narration,start=text.indexOf('先看起点周围');

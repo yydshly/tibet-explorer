@@ -34,6 +34,12 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('keeps the opening source-road reading across a notebook return and clears it for manual framing',()=>{
+  media.current.beatIndex=0;const text=routePilotCues[0].narration;media.current.timing={textProgress:(text.indexOf('青色线保留')+10)/text.length};
+  const before={...scene().view};expect(before.routeRead).toBeGreaterThan(0);
+  button('线路观察笔记').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject(before);expect(find(render(),n=>n.props?.className==='pilot-reason').props.children).toContain('这是顺序阅读');button('斜看山谷').onClick();expect(scene().view.routeRead).toBeUndefined();
+ });
  it('saves the closing public-life observation and returns to its exact words, then the pre-place line',()=>{
   button('进入鲁朗 · 保留原路段').onClick();
   media.current.beatIndex=3;media.current.raw=.58;const text=routePilotCues[3].narration;media.current.timing={textProgress:(text.indexOf('保存一个观察问题')+1)/text.length};
@@ -64,7 +70,7 @@ describe('actual route callbacks and independent persistence',()=>{
   harness.reset();button('保存并返回原线').onClick();expect(scene().view).toEqual(original);expect(media.current.raw).toBe(.43);
  });
  it('preserves the broad valley comparison through a notebook return and clears it for manual local framing',()=>{
-  const text=routePilotCues[1].narration;media.current.timing={textProgress:(text.indexOf('这里按沿线')+13)/text.length};
+  const text=routePilotCues[1].narration;media.current.timing={textProgress:(text.indexOf('不是实测山口标高')+13)/text.length};
   const original={...scene().view};expect(original.routeContext).toBe(1);
   button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
   expect(scene().view).toEqual(original);
