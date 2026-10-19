@@ -18,7 +18,7 @@
   },
   "nextVersion": {
     "name": "经典线路与真实地方",
-    "status": "首段冻结；整线叙事与资料覆盖核查已完成，可按缩减范围进入整体分镜，尚未制作整线",
+    "status": "首段冻结；整线叙事、来源核查及九镜分镜完成，新增路段尚未制作",
     "entry": "以有真实交通依据、能解释沿途变化的经典线路为入口",
     "journey": [
       "选择线路",
@@ -46,10 +46,10 @@
     ],
     "corridorScope": "从林芝八一城区附近总体向东到波密县城扎木镇；与常见川藏进藏的向西观看方向相反，开场明确说明。",
     "deliveryOrder": [
-      "本轮整体方案与资料覆盖核查收口，以五节点和逐段缩减表为下一阶段基线。",
-      "按五个叙事节点做整线分镜，逐镜标明实际资料与限制；暂不制作镜头、不新增录音或模型。需要新近景的镜头标等待，不先做占位画面。",
-      "分镜确定后再制作；只使用核准资料，不把近景等待项先做成模型、假动画或长语音。",
-      "未来整线完成后由助手一次完整流程检查，只定向修明确阻断；用户给整体体验反馈即可。"
+      "整体叙事、资料覆盖与九镜分镜在此收口，不继续广泛搜素材或打磨冻结首段。",
+      "下一次实现只先做“鲁朗原主路接续—通麦跨河”一段，即R05—R06，检验新增整线的连续性；保持旧首段和六章冻结，不同时铺开波密或新景观。",
+      "新增段达到跨河关系可读、语音与画面对应、操作可恢复后，再按已定分镜串联到波密和整线结尾；未核准镜头缩减或暂缓。",
+      "未来整线完成后由助手做一次完整操作检查，分别说明功能与理解证据，不反复要求用户逐项陪测。"
     ],
     "presentation": [
       "真实影像与精度适当的地形",
@@ -128,7 +128,7 @@
     ],
     "narrativePlan": {
       "id": "G318-east-corridor-narrative-v1-20261019",
-      "status": "narrative_plan_only_not_implemented",
+      "status": "narrative_source_gate_and_storyboard_complete_not_implemented",
       "updatedAt": "2026-10-19",
       "title": "沿G318认识真实地方：林芝—色季拉—鲁朗—通麦—波密",
       "purpose": "沿真实线路看见环境差异，理解人怎样建设、使用和延续地方，并形成可以互相比较的地方印象。",
@@ -154,11 +154,11 @@
           "seconds": 142.56,
           "localScriptVersion": 6
         },
-        "currentRound": "只进行整体方案与资料覆盖核查；新增道路链仅存项目说明证据，不改变播放器、镜头、录音、模型、运行时素材或数据。",
+        "currentRound": "整线九镜分镜完成；仅更新现有说明。未制作整线、裁切、录音或模型，六章和首段继续冻结。",
         "futureGuidedDuration": {
-          "minSeconds": 360,
-          "maxSeconds": 480,
-          "status": "编排预算，非已制作录音；自由观察与查源不计入引导时长"
+          "maxSeconds": 410,
+          "minimumIsNotAQuota": true,
+          "status": "由原6—8分钟意向收紧为九镜合计不超过6分50秒；允许继续缩短，不填时长；自由观察与来源阅读另计。"
         }
       },
       "opening": "先用一张完整地图定位走廊和旅行方向，再进入林芝城区附近起点；复用六章认识，只在需要时回接原因，不从地球课程重新讲起。",
@@ -402,16 +402,16 @@
           "detail": "6份候选只有许可元数据，原图429未核水印；现代生活、文化现场和连续视频缺失，按下表缩减。"
         },
         {
-          "area": "制作与验收",
-          "state": "可进入缩减后的整体分镜，尚未制作",
-          "detail": "只规划有据镜头；新近景和现场留待核实，不用示意或长讲述填空。现有版本仍冻结。"
+          "area": "分镜与制作",
+          "state": "九镜分镜收口；制作未开始",
+          "detail": "每镜已列画面节拍、讲述意图、可选操作、原句恢复与来源；新增地形影像视域仍需在限定制作段核验。"
         }
       ],
       "nextSteps": [
-        "本轮整体方案与资料覆盖核查收口，以五节点和逐段缩减表为下一阶段基线。",
-        "按五个叙事节点做整线分镜，逐镜标明实际资料与限制；暂不制作镜头、不新增录音或模型。需要新近景的镜头标等待，不先做占位画面。",
-        "分镜确定后再制作；只使用核准资料，不把近景等待项先做成模型、假动画或长语音。",
-        "未来整线完成后由助手一次完整流程检查，只定向修明确阻断；用户给整体体验反馈即可。"
+        "整体叙事、资料覆盖与九镜分镜在此收口，不继续广泛搜素材或打磨冻结首段。",
+        "下一次实现只先做“鲁朗原主路接续—通麦跨河”一段，即R05—R06，检验新增整线的连续性；保持旧首段和六章冻结，不同时铺开波密或新景观。",
+        "新增段达到跨河关系可读、语音与画面对应、操作可恢复后，再按已定分镜串联到波密和整线结尾；未核准镜头缩减或暂缓。",
+        "未来整线完成后由助手做一次完整操作检查，分别说明功能与理解证据，不反复要求用户逐项陪测。"
       ],
       "completionCriteria": {
         "plan": [
@@ -1576,6 +1576,644 @@
           }
         ],
         "evidenceDirectory": "workspace-local ../review/g318-corridor-source-20261019; raw snapshots, originals, failed attempts and hashes retained; large files not shipped to product"
+      },
+      "storyboard": {
+        "id": "G318-east-corridor-storyboard-v1-20261019",
+        "date": "2026-10-19",
+        "status": "editorial_storyboard_complete_not_runtime_implemented",
+        "basis": {
+          "narrativePlan": "G318-east-corridor-narrative-v1-20261019",
+          "sourceAudit": "G318-corridor-source-coverage-20261019",
+          "sourceAuditCommit": "ee5959d",
+          "frozenProductCommit": "51f375fc242ebf540f6feda98e1739737908b4bb"
+        },
+        "deliverable": "九个镜头编排在现有项目说明内；不是新章节、已制作动画或已生成录音。",
+        "duration": {
+          "ceilingSeconds": 410,
+          "shotBudgetsAreCeilings": true,
+          "freeObservationExcluded": true,
+          "timing": "未来单独整线剪辑的编排上限，不要求填满；实际录音与原生词时钟产生后再定时。现有750.024秒六章与142.560秒首段不变。"
+        },
+        "visualGrammar": [
+          "全线地图只承担定位与回看；中段画面围绕当下问题连续进入地形、空间关系或有日期的记录。",
+          "道路与河流同时作空间上下文；沿线镜头基于原始相邻节点，长距离行进标明压缩，不用直线补缝或模拟实时驾车。",
+          "讲到地形用斜视、同点回望与同尺度高程；讲到生活让有日期的真实画面成为主画面，地图保留来路。",
+          "每个镜内节拍绑定一句讲述意图及可见对象／变化；词时钟正式绑定留到制作，不用增加无关运动掩盖信息空白。",
+          "照片先给完整情境，再作必要指向；静态照片不冒充视频，低像素不硬放大，标注不伪造活动。",
+          "地图贴图统一标时间和许可，默认高度比例保持一致；缺近景不靠夸张几何和长字幕补。",
+          "一镜结束保留下一镜来路；地方到原线沿同一节点返回，照片没有精确配准时只做有据语义对照。"
+        ],
+        "evidenceRegistry": [
+          {
+            "id": "road",
+            "kind": "source_geometry",
+            "label": "归档道路原始链",
+            "status": "原始链已核；新路段运行时尚未制作",
+            "boundary": "城区接入段与G318主路分别标识；鲁朗在原主路节点7365874802接续，不把地方支路终点直连延长线。",
+            "auditJsonPointer": "/road"
+          },
+          {
+            "id": "water",
+            "kind": "source_geometry",
+            "label": "河流、汇合与跨河关系",
+            "status": "关键来源关系已核；新路段运行时尚未制作",
+            "boundary": "通麦桥跨易贡藏布；汇合节点289310112。照片未核名溪流不套用河名，河流方向与行进方向分开。",
+            "auditJsonPointer": "/water"
+          },
+          {
+            "id": "terrain",
+            "kind": "source_raster",
+            "label": "GLO-30地表高程",
+            "status": "沿线采样与概览可读；制作视域待准备",
+            "boundary": "DSM不是道路纵断面；不得沿地表钻进隧道或让桥贴到河底。",
+            "auditJsonPointer": "/terrain"
+          },
+          {
+            "id": "satellite",
+            "kind": "source_raster",
+            "label": "2025-12-13 Sentinel-2",
+            "status": "覆盖与预览已核；原始10米拼接待验证",
+            "boundary": "仅为冬季资料底图；不宣称当前天气、无阴影或局部足够清晰。",
+            "auditJsonPointer": "/satellite"
+          },
+          {
+            "id": "forest",
+            "kind": "existing_photo",
+            "label": "forest",
+            "date": "2008-09-18",
+            "author": "reurinkjan",
+            "license": "CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Tibetan_forest.jpg",
+            "status": "既有已核准影像；冻结文件直接复用",
+            "boundary": "2008年林地记录，不从照片位置生成行车镜头或气候结论。",
+            "auditJsonPointer": "/media/existingApprovedPhotos/0"
+          },
+          {
+            "id": "meadow",
+            "kind": "existing_photo",
+            "label": "meadow",
+            "date": "2012-08-11",
+            "author": "山海风",
+            "license": "CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:鲁朗草原_-_panoramio_(1).jpg",
+            "status": "既有已核准影像；冻结文件直接复用",
+            "boundary": "2012年草地溪流记录；溪流名称及围栏用途未核，不据此命名或解释管理制度。",
+            "auditJsonPointer": "/media/existingApprovedPhotos/1"
+          },
+          {
+            "id": "grazing",
+            "kind": "existing_photo",
+            "label": "grazing",
+            "date": "2014-09-20",
+            "author": "Zhangzhugang",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Linzhi_Zhaxigang_2014.09.20_17-06-30.jpg",
+            "status": "既有已核准影像；冻结文件直接复用",
+            "boundary": "2014年扎西岗放牧记录，不代表今日草场范围、经营方式或节庆。",
+            "auditJsonPointer": "/media/existingApprovedPhotos/2"
+          },
+          {
+            "id": "town",
+            "kind": "existing_photo",
+            "label": "town",
+            "date": "2024-09-22",
+            "author": "Zhangmoon618",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Lulang_Town.jpg",
+            "status": "既有已核准影像；冻结文件直接复用",
+            "boundary": "2024年鲁朗河流、道路、房屋记录；与地图作语义对照，不逐栋配准。",
+            "auditJsonPointer": "/media/existingApprovedPhotos/3"
+          },
+          {
+            "id": "daily",
+            "kind": "existing_photo",
+            "label": "daily",
+            "date": "2008-09-18",
+            "author": "reurinkjan",
+            "license": "CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pocket_billiards,_%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%BC%E0%BD%98%E0%BC%8B%E0%BD%A6%E0%BE%9F%E0%BD%BA%E0%BD%82%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%A4%E0%BD%BC%E0%BC%8B%E0%BD%A3%E0%BD%BC%E0%BC%8D.jpg",
+            "status": "既有已核准影像；冻结文件直接复用",
+            "boundary": "2008年街边公共生活，不是2018工布新年现场。",
+            "auditJsonPointer": "/media/existingApprovedPhotos/4"
+          },
+          {
+            "id": "bayi-2015",
+            "kind": "reviewed_photo_not_shipped",
+            "label": "File:Bayi, Nyingchi, Tibet, China - panoramio (7).jpg",
+            "date": "Taken on 10 April 2015",
+            "author": "ping lin",
+            "license": "CC BY-SA 3.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(7).jpg",
+            "status": "原图已核准作有日期记录；尚未进入产品",
+            "boundary": "2015年八一城区附近河谷环境记录；不据此展示今天城市日常或确认画面内每座建筑。",
+            "auditJsonPointer": "/media/newCandidates/1"
+          },
+          {
+            "id": "tongmai-2014",
+            "kind": "reviewed_photo_not_shipped",
+            "label": "File:20140921 Tongmai Bridge.jpg",
+            "date": "2014-09-21 14:54:49",
+            "author": "Zhangmoon618",
+            "license": "CC BY-SA 4.0",
+            "url": "https://commons.wikimedia.org/wiki/File:20140921_Tongmai_Bridge.jpg",
+            "status": "原图已核准作有日期记录；尚未进入产品",
+            "boundary": "2014年通麦旧桥与可见施工背景；不当作2015后新桥现状，不从画面猜测人物身份和维护成效。",
+            "auditJsonPointer": "/media/newCandidates/3"
+          },
+          {
+            "id": "bomi-overview-2008",
+            "kind": "reviewed_photo_not_shipped",
+            "label": "File:Pome Dzong (Tramog, Bomi).jpg",
+            "date": "2008-09-17 10:32:10",
+            "author": "reurinkjan",
+            "license": "CC BY 2.0",
+            "url": "https://commons.wikimedia.org/wiki/File:Pome_Dzong_(Tramog,_Bomi).jpg",
+            "status": "原图已核准作有日期记录；尚未进入产品",
+            "boundary": "2008年波密县城街道记录，可观察街道、车辆、行人与临街建筑；999×664像素，不作今日全貌、精细放大或城市增长证据。",
+            "auditJsonPointer": "/media/newCandidates/6"
+          }
+        ],
+        "shots": [
+          {
+            "id": "R00",
+            "unit": "opening",
+            "title": "先知道整条路往哪里走",
+            "budgetSeconds": 20,
+            "question": "这次沿哪条走廊、朝哪个方向认识地方？",
+            "frames": {
+              "start": "藏东南整张走廊图，五节点同时可定位。",
+              "end": "沿同一条路缩近八一城区附近的真实出发节点；保留整线位置提示。"
+            },
+            "beats": [
+              {
+                "narrationCue": "从林芝八一城区附近出发，沿这条走廊总体向东到波密县城。",
+                "visibleChange": "依次读出五节点与真实道路接续；箭头仅表示本次观看方向，不冒充所有道路通行方向。",
+                "annotation": "林芝〔八一城区附近〕→色季拉→鲁朗→通麦→波密〔扎木镇附近〕"
+              },
+              {
+                "narrationCue": "这与常见川藏进藏的向西方向相反；先看出发的城市河谷。",
+                "visibleChange": "完整路线保留为位置参照，连续缩近出发节点，不切到孤立地块。",
+                "annotation": "观看方向：总体向东；城区接入段≠全段G318"
+              }
+            ],
+            "interaction": null,
+            "handoff": "地图给出我们要走的来路；现在把城、河与山放到同一视野里。",
+            "evidence": [
+              "road",
+              "terrain"
+            ],
+            "sources": [
+              "S01"
+            ],
+            "readiness": "source_backed_needs_production",
+            "boundary": "228.7公里是归档道路链长度，不作为官方里程、当前开放或旅行耗时宣传。",
+            "acceptance": "静音能指出起终点及总体方向，放大后仍知道自己在整线哪里。"
+          },
+          {
+            "id": "R01",
+            "unit": "nyingchi",
+            "title": "城市首先在一条真实河谷里",
+            "budgetSeconds": 35,
+            "question": "出发地的城、河、路与山怎样放在一起？",
+            "frames": {
+              "start": "承接R00的八一城区附近视域。",
+              "end": "回到同地图的原道路，镜头朝上山方向缓慢转向。"
+            },
+            "beats": [
+              {
+                "narrationCue": "先辨认尼洋河，再看城区附近的道路和两侧山地。",
+                "visibleChange": "在同一地形上先沿真实河线读出尼洋河，再显示道路与城区参照；降低俯视角，让山体成为可见背景。",
+                "annotation": "尼洋河／城区参照／出发道路；参照点不是城市边界"
+              },
+              {
+                "narrationCue": "这张2015年的河谷记录，留下了河床、林地和远处建筑。",
+                "visibleChange": "短暂用bayi-2015完整画面观察前景河谷和远处建筑，地形来路保留；不为画中建筑猜名字，不把照片机位当行车眼点。",
+                "annotation": "2015-04-10环境记录 · ping lin · CC BY-SA 3.0"
+              },
+              {
+                "narrationCue": "接下来仍沿这条路前进，城市河谷逐渐成为身后的参照。",
+                "visibleChange": "由照片回到原路，镜头随真实弯道转向山地，出发河谷仍可回望。",
+                "annotation": "从河谷出发 → 沿原路上山"
+              }
+            ],
+            "interaction": {
+              "action": "暂停后改变俯视与斜看角度。",
+              "change": "同一位置的山体起伏与河谷开敞程度变得可见；道路和河流不更换。",
+              "reason": "变化来自观察角度，不能解释为地形或城市发生了变化。",
+              "resume": "回到操作前同一句与自动镜头状态，继续沿出发道路。"
+            },
+            "handoff": "城与道路沿河谷展开；去往鲁朗的道路还要跨过山地。",
+            "evidence": [
+              "road",
+              "water",
+              "terrain",
+              "satellite",
+              "bayi-2015"
+            ],
+            "sources": [
+              "S01",
+              "S02"
+            ],
+            "readiness": "source_backed_needs_production",
+            "boundary": "保留城市河谷参照；删去无核准当代实拍支撑的街景漫游与生活长段。",
+            "acceptance": "城、河、路、山能在同一空间辨认；2015记录不会被理解成今日城区全貌。"
+          },
+          {
+            "id": "R02",
+            "unit": "sejila",
+            "title": "沿同一条路翻山，视野为什么变",
+            "budgetSeconds": 60,
+            "question": "高差、山体遮挡和道路绕行怎样改变眼前环境？",
+            "frames": {
+              "start": "R01朝向山地的原道路。",
+              "end": "越过既有高程样本区后朝鲁朗谷地下降，原来路仍可回望。"
+            },
+            "beats": [
+              {
+                "narrationCue": "沿道路升高，不只数字在变，山体也在逐渐挡住来时的河谷。",
+                "visibleChange": "跟随原路连续升高与转向；同尺度高程曲线同步移动读数，斜视显示前后山体遮挡。",
+                "annotation": "地表高程参照／来路；不是道路实测纵断面"
+              },
+              {
+                "narrationCue": "在同一个位置回望和向前看，看到的是不同的山地关系。",
+                "visibleChange": "固定实际沿线位置，镜头先回望来路，再转向前方；位置读数不动，不使用两个不同地点的照片冒充同点对照。",
+                "annotation": "同一位置：回望来路 ↔ 面向去路"
+              },
+              {
+                "narrationCue": "越过山地，再沿真实弯道进入另一片谷地。",
+                "visibleChange": "镜头沿原节点顺序下行，降低观察高度；山地、谷底、道路同时留在画面，逐步接近鲁朗。",
+                "annotation": "翻山 → 入谷；路线各段有起伏，并非全线一直下降"
+              }
+            ],
+            "interaction": {
+              "action": "在既有较高沿线位置切换回望／向前；可沿高程曲线移动位置。",
+              "change": "切换看向只改变遮挡与视野，移动位置才改变沿线高程读数和谷地关系。",
+              "reason": "把视角变化与真实位置变化分开，山体高低和绕行从画面解释。",
+              "resume": "恢复原位置、看向和原句，不跳过入谷过程。"
+            },
+            "handoff": "山地改变了视野；来到谷地后，再看林地、草地和村镇怎样共同出现。",
+            "evidence": [
+              "road",
+              "terrain",
+              "satellite"
+            ],
+            "sources": [
+              "S01"
+            ],
+            "readiness": "reuses_pilot_method_new_edit_only",
+            "boundary": "复用首段方法与资料，不回改现有首段。默认统一高度尺度；冬季影像不演成四季。远峰、日照金山和冰川没有合格镜头，暂不进入本次分镜。",
+            "acceptance": "静音能看出上山—同点回望—入谷，且知道哪些是地表样本、哪些是观察角度。"
+          },
+          {
+            "id": "R03",
+            "unit": "lulang",
+            "title": "谷地不是空景：水、路与居住空间",
+            "budgetSeconds": 45,
+            "question": "林海与开敞谷地里，河流、道路和房屋怎样相处？",
+            "frames": {
+              "start": "R02下行进入鲁朗谷地的同一地图。",
+              "end": "实拍生活空间成为主画面，整线来路仍可见。"
+            },
+            "beats": [
+              {
+                "narrationCue": "先留住周围山林，再靠近谷地里的河流与道路。",
+                "visibleChange": "从山地斜视自然降到谷地整体；同地图读出有来源的河线与G318地方接续，不突然换成一块独立模型。",
+                "annotation": "山林／谷地／有来源河线／道路接续"
+              },
+              {
+                "narrationCue": "在2024年的鲁朗画面里，河流、道路和房屋同时可见。",
+                "visibleChange": "town实拍成为观察主画面，依语句先看河流、再看道路、后看房屋；地图保持活的来路，标注只指画中可辨对象。",
+                "annotation": "2024-09-22 · Zhangmoon618 · CC BY-SA 4.0；实拍与地图为语义对照"
+              },
+              {
+                "narrationCue": "再看不同年份的草地和林地记录，风景里也有被使用的空间。",
+                "visibleChange": "短暂回看meadow完整草地溪流画面；森林背景由已有forest资料按需选读，不轮播所有素材。",
+                "annotation": "2012-08-11草地记录；画中溪流未核名"
+              }
+            ],
+            "interaction": {
+              "action": "点选实拍中的河流、道路或房屋。",
+              "change": "对象轮廓及对应空间关系依次清楚呈现；地图只定位已核实河线、道路或地方参照。",
+              "reason": "自然条件和交通提供空间背景，不能单凭照片推出选址制度或建筑历史。",
+              "resume": "继续后回到被暂停的画面、对象与原句；保持同一来路。"
+            },
+            "handoff": "看清空间怎样组合后，再看人怎样使用它，而不是把风景讲完就离开。",
+            "evidence": [
+              "road",
+              "water",
+              "terrain",
+              "town",
+              "meadow",
+              "forest"
+            ],
+            "sources": [
+              "S04"
+            ],
+            "readiness": "reuses_approved_pilot_material_in_future_edit",
+            "boundary": "不逐栋配准照片和地图，不为未核名溪流套上鲁朗河名称，不伪造从当前眼点拍到这张照片。",
+            "acceptance": "不靠语音也能在实拍里分清河、路、屋；进入实拍和返回地图时，仍知道原线位置。"
+          },
+          {
+            "id": "R04",
+            "unit": "lulang",
+            "title": "人怎样使用谷地，文化怎样延续",
+            "budgetSeconds": 65,
+            "question": "风景怎样接到日常活动、当代营建与地方文化？",
+            "frames": {
+              "start": "承接R03的生活空间与地图来路。",
+              "end": "从地方支路回到原G318主路接续点，镜头准备继续向通麦。"
+            },
+            "beats": [
+              {
+                "narrationCue": "这份2014年的扎西岗记录，能看到开敞地中的放牧活动。",
+                "visibleChange": "grazing先完整呈现，再按语句把注意力移到可见动物与活动空间；不增加人畜模型或假运动。",
+                "annotation": "2014-09-20扎西岗记录 · Zhangzhugang · CC BY-SA 4.0"
+              },
+              {
+                "narrationCue": "2008年的街边公共生活，是另一种使用地方的方式。",
+                "visibleChange": "daily主画面看清活动与街边空间，先呈现完整情境，再简短指向活动；照片保持静态记录身份。",
+                "annotation": "2008-09-18日常记录 · reurinkjan · CC BY 2.0"
+              },
+              {
+                "narrationCue": "2016年旅游小镇试运营，是另一个有记录的当代营建节点；它不是所有村落的起源。",
+                "visibleChange": "回看town，明确2024照片与2016事件日期不同；只在有来源的地方范围对照道路和公共空间，不播放建筑生长。",
+                "annotation": "2016-10-01试运营〔文字依据S04〕／2024实拍〔不是2016现场〕"
+              },
+              {
+                "narrationCue": "2018年扎西岗的工布新年另有文字记录；这里没有对应节庆现场影像。",
+                "visibleChange": "先显示资料范围为扎西岗，日常照片退回资料位置提示；简短独立说明后立即回到来路，不用无关风俗画面填补。",
+                "annotation": "2018鲁朗扎西岗文字记录；非2008照片所摄活动"
+              }
+            ],
+            "interaction": {
+              "action": "沿用暂停选对象和保存问题，任选一份生活记录。",
+              "change": "选中对象、照片日期、观察问题和对应来源同时改变；地图不假装切到古代或节庆现场。",
+              "reason": "人的使用、当代营建与风俗记录是不同证据，不能只由地形推出文化。",
+              "resume": "从观察或保存页回到同图、同对象、同句；离开地方沿原支路回原主路节点。"
+            },
+            "handoff": "村镇生活与来往相连；回到主路，看看峡谷中道路怎样继续接通。",
+            "evidence": [
+              "road",
+              "terrain",
+              "grazing",
+              "daily",
+              "town"
+            ],
+            "sources": [
+              "S04",
+              "S05"
+            ],
+            "readiness": "reuse_with_short_text_only_culture_boundary",
+            "boundary": "节庆仅占简短资料线索；没有现场视频不延长讲解。不得把2008/2014日常照片当2018节庆，不返回厨房、供货与单户经营。",
+            "acceptance": "能区分可见生活记录、2016营建事件和2018风俗文字；知道人的活动参与地方延续，而非地形自动产生文化。"
+          },
+          {
+            "id": "R05",
+            "unit": "connector",
+            "title": "沿主路进入峡谷，不从鲁朗瞬移通麦",
+            "budgetSeconds": 30,
+            "question": "村镇的来往如何接到下一段峡谷道路？",
+            "frames": {
+              "start": "鲁朗G318主路／地方道路共享节点7365874802。",
+              "end": "通麦附近峡谷的完整空间视域，读出下一处跨河问题。"
+            },
+            "beats": [
+              {
+                "narrationCue": "从同一个主路接续点继续，路在山谷之间转向。",
+                "visibleChange": "沿归档主路节点连续推进；长段路程以明确压缩行进表示，不跳过接续或把路画成直线。",
+                "annotation": "沿真实道路压缩行进；不是实时行车"
+              },
+              {
+                "narrationCue": "镜头拉高一点，能看见道路、山体和相邻河谷的关系。",
+                "visibleChange": "随道路弯向转动并拉出地形上下文，分段出现有来源河名；不暗示每段道路都紧贴一条同名河。",
+                "annotation": "道路与水系分别定位；不把旅行箭头当水流"
+              },
+              {
+                "narrationCue": "到了跨河处，问题不只是风景，而是人怎样把道路接过去。",
+                "visibleChange": "收束到通麦桥、易贡藏布和帕隆藏布汇合区域的整体视野。",
+                "annotation": "通麦：先看河谷条件，再看连接方式"
+              }
+            ],
+            "interaction": null,
+            "handoff": "先认清两条河与桥的位置，再看有日期的工程变化。",
+            "evidence": [
+              "road",
+              "water",
+              "terrain",
+              "satellite"
+            ],
+            "sources": [
+              "S01",
+              "S06"
+            ],
+            "readiness": "source_backed_needs_production",
+            "boundary": "不使用标题“318通麦”但机位在鲁朗北侧的旧照冒充通麦镇；不新增沿途景点单元。",
+            "acceptance": "能跟住鲁朗离开→主路接续→峡谷到达；不会误认为地图线是全程等速驾车录像。"
+          },
+          {
+            "id": "R06",
+            "unit": "tongmai",
+            "title": "跨河与穿山，怎样让道路接续",
+            "budgetSeconds": 70,
+            "question": "地形约束没有消失，工程具体改变了什么？",
+            "frames": {
+              "start": "R05的通麦峡谷全景。",
+              "end": "回到同一归档主路，沿帕隆藏布河谷方向继续至波密。"
+            },
+            "beats": [
+              {
+                "narrationCue": "通麦特大桥跨的是易贡藏布，附近与帕隆藏布汇合。",
+                "visibleChange": "依次读出两条源河线与共享汇合点；镜头从俯视转为斜看，桥的来源线与所跨河流同时可见。",
+                "annotation": "易贡藏布／帕隆藏布／汇合；桥way539990326"
+              },
+              {
+                "narrationCue": "2014年旧桥照片，留下单车道桥、河流和可见施工背景。",
+                "visibleChange": "tongmai-2014完整记录成为主画面，先指旧桥桥面再指河谷；不猜人物身份、施工进度或拍摄点精确朝向。",
+                "annotation": "2014-09-21旧桥记录 · Zhangmoon618 · CC BY-SA 4.0"
+              },
+              {
+                "narrationCue": "新桥在2015年12月通车，整段改建在2016年4月13日通车；两者是不同节点。",
+                "visibleChange": "从有日期旧照返回现状归档几何，日期条分列两个事件；逐段读出来源桥线、接路及已具名隧道，说明跨河／穿山而非沿地表越山。",
+                "annotation": "2015-12新桥／2016-04-13整段改建〔S06〕；当前几何不复原旧路"
+              },
+              {
+                "narrationCue": "连接方式变了，但峡谷、河流和持续维护的需要并未消失。",
+                "visibleChange": "把镜头再拉回峡谷上下文：读取桥与隧道对应的连通关系，山体与河流仍在。隧道以明确的地下关系虚线表示，不把DSM表面当隧道内道路。",
+                "annotation": "线路读取≠施工动画；不展示实测桥面或隧道内高程"
+              }
+            ],
+            "interaction": {
+              "action": "在同一地图切换俯视定位／斜看地形，点选桥或具名隧道接续。",
+              "change": "桥与河的交叉关系、隧道穿越山体的关系分别清楚呈现，日期记录可独立回看。",
+              "reason": "跨河和穿山改变连接方式；没有改建前完整几何，不能用“拆桥”推演真实旧交通。",
+              "resume": "恢复同一句、选中对象及原路位置；继续沿原主路前往波密。"
+            },
+            "handoff": "工程让路在峡谷里接续；这条路接到的县城，又有怎样的生活空间？",
+            "evidence": [
+              "road",
+              "water",
+              "terrain",
+              "satellite",
+              "tongmai-2014"
+            ],
+            "sources": [
+              "S06"
+            ],
+            "readiness": "source_backed_needs_bridge_tunnel_view_gate",
+            "boundary": "不虚构旧路驾驶、新桥实拍、桥体细部、隧道内景、通行速度、住户收入或灾害消失。生活影响限定为有资料支持的通行连接，不扩成全社会成效。",
+            "acceptance": "静音能指出跨哪条河、路怎样跨河穿山；能区分2014旧照、两次通车节点及2026归档几何，不误读成连续历史复原。"
+          },
+          {
+            "id": "R07",
+            "unit": "bomi",
+            "title": "路到县城，风景进入街道生活",
+            "budgetSeconds": 50,
+            "question": "同一走廊为什么又呈现不同地方印象？",
+            "frames": {
+              "start": "承接R06、沿同一主路向扎木镇附近推进。",
+              "end": "县城附近的河谷与主路保留，准备回看鲁朗及整线。"
+            },
+            "beats": [
+              {
+                "narrationCue": "到波密县城扎木镇附近，先看帕隆藏布河谷与G318接近城镇参照的位置。",
+                "visibleChange": "沿真实主路到已核终点节点，拉近路与河谷；镇的参照点只作定位，不凭空描绘建成区边界。",
+                "annotation": "波密县城驻地：扎木镇；终点为附近源道路节点841510013"
+              },
+              {
+                "narrationCue": "2008年这张街道记录里，行人、车辆与临街建筑共用一个空间。",
+                "visibleChange": "bomi-overview-2008以清楚但不超原像素的完整画面呈现，依次指向行人、车辆和临街建筑；随后退回地图，不长时间停在低分辨率旧照上。",
+                "annotation": "2008-09-17街道记录 · reurinkjan · CC BY 2.0 · 999×664"
+              },
+              {
+                "narrationCue": "2023年镇级材料还记录了与周围农业、林下资源和旅游服务的联系；街景本身不能证明这些产业的规模。",
+                "visibleChange": "画面回到县城附近道路和周围山谷上下文，仅说明材料范围；不生成仓库、工厂或产业流量动画。",
+                "annotation": "2023镇级材料S07；不是今日城区统计"
+              },
+              {
+                "narrationCue": "县域还有波卓等文化传承线索；没有现场影像，先留作可核实的问题。",
+                "visibleChange": "短暂标明“波密县域资料”，不把舞蹈、传承活动或传奇起源安到所示街道；随后回到实际到达位置。",
+                "annotation": "县域文化线索S08，非县城街头活动实拍"
+              }
+            ],
+            "interaction": {
+              "action": "暂停街道记录读图，或回到地图比较鲁朗与扎木附近的同尺度地形。",
+              "change": "照片对象与有日期的观察问题可选；地图比较保持同一尺度和变量，两地来路同时可定位。",
+              "reason": "比较的是可核实的地形／线路环境；不同年份、取景的照片不能量化城市密度、气候或生活优劣。",
+              "resume": "返回同一记录或同句，继续整线回看。"
+            },
+            "handoff": "在一个县城结束，不等于把所有文化讲完；现在回到整线，比较一路见到的空间和使用方式。",
+            "evidence": [
+              "road",
+              "water",
+              "terrain",
+              "satellite",
+              "bomi-overview-2008"
+            ],
+            "sources": [
+              "S07",
+              "S08"
+            ],
+            "readiness": "reduced_due_to_dated_low_resolution_record",
+            "boundary": "现代城市生活、文化演出与城市增长动画暂缓；不以未清原图、长文字或无关视频补齐。县域文化只作短线索，传说不作史实。",
+            "acceptance": "能指出县城到达参照、辨认街道使用，并知道2008记录／2023镇级材料／县域文化线索的不同范围。"
+          },
+          {
+            "id": "R08",
+            "unit": "whole-route",
+            "title": "回到一条完整线路，带走自己的问题",
+            "budgetSeconds": 35,
+            "question": "五段分别让我们认识了什么，下一次要观察什么？",
+            "frames": {
+              "start": "R07实际到达位置。",
+              "end": "回到完整走廊与结束状态；可进入现有观察计划并原位返回。"
+            },
+            "beats": [
+              {
+                "narrationCue": "从出发河谷、翻山、村镇到峡谷工程和县城，它们不是五个相同的景点。",
+                "visibleChange": "沿同一地图拉回全线，按实际走过次序简短回指五段；必要的局部比较保持共同尺度，不用五张不同比例照片排高低。",
+                "annotation": "林芝：出发河谷／色季拉：跨山／鲁朗：村镇使用／通麦：连接／波密：县城生活"
+              },
+              {
+                "narrationCue": "风景与生活、人文、交通在这条路上相遇；选一个值得继续核实的问题带走。",
+                "visibleChange": "在当前选中对象旁保留对应照片日期与来源，沿用现有保存入口；不自动替用户生成多站旅行日程。",
+                "annotation": "可选保存：对象＋自己的问题＋来源与日期"
+              },
+              {
+                "narrationCue": "保存之后，还能回到刚才的画面和原句。",
+                "visibleChange": "观看可直接结束；只有主动打开计划才暂停，带入已看对象，编辑保存导出后恢复精确位置。",
+                "annotation": "观察计划≠已核实的按日出行安排"
+              }
+            ],
+            "interaction": {
+              "action": "任选已经看过的对象，编辑、保存并导出一个观察问题；也可直接结束。",
+              "change": "计划显示对应记录、问题及出处，刷新不丢保存；返回恢复原图、对象、位置、看向与语句。",
+              "reason": "把刚建立的认识带走，不新加一套旅行规划课程；计划存储与播放返回状态分开。",
+              "resume": "返回精确原句和原观察状态，不从第一镜重播、不推进另一段。"
+            },
+            "handoff": "整线结束，不追加新目的地预告或强制答题。",
+            "evidence": [
+              "road",
+              "water",
+              "terrain",
+              "town",
+              "daily",
+              "bomi-overview-2008"
+            ],
+            "sources": [
+              "S01",
+              "S07"
+            ],
+            "readiness": "reuse_existing_return_and_plan_contract",
+            "boundary": "本轮仅约定复用，未增加新路线的保存字段或宣称其已实现；已有首次观看者记录仍0/3。",
+            "acceptance": "能回看整线角色；保存返回不丢对象与原句，跳过计划也能正常结束。"
+          }
+        ],
+        "sharedInteraction": {
+          "default": "可直接连续观看；自由观察、对照、保存均为可选，不做九个必答任务。",
+          "onManualAction": "暂停主讲述，停止原自动镜头装饰；界面显示当前条件、可见变化和一句原因。",
+          "onResume": "恢复原镜、原生语音时间、位置、看向及所选对象；旁支讲述结束后才恢复主讲述，声音不重叠。",
+          "onPlanReturn": "保存内容和返回目标分开存储；刷新后返回同图、同对象、同句；地方支路还能回原线。",
+          "silentMode": "地名、简短因果文字与对象指向独立可读；不把字幕全文重复堆到侧栏。"
+        },
+        "deferredShots": [
+          {
+            "item": "远峰／日照金山／具体冰川近景",
+            "decision": "不占本轮镜头和时长",
+            "reason": "地点、光照时序或原图尚未核准；景观仍是候选元素，不扩线。"
+          },
+          {
+            "item": "鲁朗工布新年与波密波卓现场",
+            "decision": "保留短文字线索，现场镜头暂缓",
+            "reason": "有出处不等于已有影像授权；不得借其他年份日常照片、异地活动或生成模型冒充。"
+          },
+          {
+            "item": "当代八一和波密街头连续生活",
+            "decision": "缩减为有日期记录与地图环境",
+            "reason": "合格连续视频与现代原图不足；旧照不作今日全貌。"
+          },
+          {
+            "item": "通麦旧路飞行、桥隧内部、城市增长",
+            "decision": "排除本轮",
+            "reason": "无时期几何、桥面／隧道高程或建成区序列；只解释已核连接方式与事件。"
+          }
+        ],
+        "nextProductionBatch": {
+          "scope": "下一次实现只先做“鲁朗原主路接续—通麦跨河”一段，即R05—R06，检验新增整线的连续性；保持旧首段和六章冻结，不同时铺开波密或新景观。",
+          "prerequisites": [
+            "按R05—R06实际镜头范围准备并核验地形／影像裁切；源采样通过不等于相机视域已通过。只验证该段，不回头全网搜素材。",
+            "桥与隧道明确区分于DSM地表；按来源关系表示接续，未测高程不作贴地驾驶，不生成无依据桥体细节。",
+            "tongmai-2014原图在正式接入时带作者、日期和CC BY-SA 4.0；2026几何与2014记录分开呈现。"
+          ],
+          "fallback": "新近景视域若不清楚，缩回可读的峡谷尺度；删去不成立的细节，不添加模型、假实拍或超长讲解。关键跨河关系仍不可读则停在该段，不铺开其他段。",
+          "stop": "一次实现＋一次助手从进入、观察到返回原线的完整检查；只定向修阻断／错指，达标结束。整线剩余镜头按此已定分镜顺序接入，不重新泛化选题。"
+        },
+        "completionCriteria": [
+          "九镜顺序与五节点角色、原路交接一致；故事从环境到人的使用、工程行动和地方印象，不变成景点清单。",
+          "每处主要讲述对象均有画面动作或有日期记录；缺影像的文化只简述边界，不强称视觉演示已完成。",
+          "各镜证据、许可、时空范围及制作状态可追溯；不把已核来源误称运行时镜头或当前实地开放。",
+          "未来整线引导上限410秒，不填时长；现有六章、首段、录音和模型冻结。",
+          "共用暂停、对照、继续原句、计划保存返回；不强制逐项陪测。"
+        ]
       }
     }
   },
@@ -1583,7 +2221,8 @@
     "stages": "/project-review/stages.html",
     "checks": "/project-review/stage-verification.json",
     "audioBaseline": "/project-review/release-baseline.json",
-    "currentNarrativePlan": "/project-review/index.html#next"
+    "currentNarrativePlan": "/project-review/index.html#next",
+    "currentStoryboard": "/project-review/index.html#storyboard"
   },
   "historicalImplementationBase": "fa3dcd6"
 }
