@@ -16,3 +16,9 @@
 .pilot-travel-key{position:absolute;left:22px;bottom:124px;display:flex;gap:10px;flex-wrap:wrap;background:#102b24dd;padding:7px 10px;pointer-events:none;font-size:10px;color:#e5e8d2}.pilot-travel-key span:first-child{color:#ffdb8a}.pilot-travel-key span:nth-child(2){color:#6adce1}.pilot-travel-key small{font-size:9px;color:#c3d4c9}
 /* Override the older immediate-inset selector, including its :not specificity. */
 .pilot-experience .pilot-stage[data-photo-frame=true][data-place-media] .pilot-terrain{inset:auto;left:var(--field-map-left);top:var(--field-map-top);width:var(--field-map-width);height:var(--field-map-height)}
+/* The desktop browser side panel needs room for both the source reading and locator. */
+@media(max-width:950px){
+ .pilot-experience .pilot-stage[data-photo-frame=true][data-place-media] .pilot-terrain{left:var(--field-map-left-compact);top:var(--field-map-top-compact);width:var(--field-map-width-compact);height:var(--field-map-height-compact)}
+ .pilot-stage[data-photo-frame=true] .lulang-life-stage:not([data-life-media=process]) header{max-width:calc(100% - 186px);padding-right:9px}
+ .pilot-stage[data-photo-frame=true] .lulang-context-actions{top:125px;right:13px;width:160px;display:grid;grid-template-columns:1fr;gap:5px}
+}
