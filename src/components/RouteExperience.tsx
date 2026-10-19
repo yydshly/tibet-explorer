@@ -11,7 +11,9 @@ import NarrationCaption from './NarrationCaption';
 import LulangPlaceControls from './LulangPlaceControls';
 import {lulangServiceFeedback} from '../data/lulangPlace';
 import {pilotCameraPresets} from '../data/routePilotCamera';
+import {pilotSpatialStory} from '../data/pilotSpatialStory';
 import LulangLifeStage from './LulangLifeStage';
+import LulangPhotoNarration from './LulangPhotoNarration';
 import {lulangMediaFeedback} from '../data/lulangLife';
 import './RouteExperience.css';
 import RouteGateway from './RouteGateway';
@@ -29,6 +31,8 @@ function PilotPlayback(){
  const initial=useMemo(()=>{const saved=readPilotNote();return entryStart?{...saved,returnTo:undefined,lineReturn:undefined,skipPlaceOnce:false}:saved;},[entryStart]),[note,setNote]=useState<PilotNote>(initial),[status,setStatus]=useState(''),[saveOK,setSaveOK]=useState(true);
  const [override,setOverride]=useState<PilotView|undefined>(initial.returnTo?.view),[lineReturn,setLineReturn]=useState<PilotReturn|undefined>(initial.lineReturn);
  const [reading,setReading]=useState<PilotReading>(),[context,setContext]=useState<PilotTerrainContext>(),[cameraKey,setCameraKey]=useState(0);
+ const [returnFlightKey,setReturnFlightKey]=useState(0),[cameraTransit,setCameraTransit]=useState(false);
+ const onTransit=useCallback((active:boolean)=>setCameraTransit(active),[]);
  const beat=beats[director.beatIndex],planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
  const [terrainReady,setTerrainReady]=useState(false),fieldImages=usePilotFieldImages(director.beatIndex===1||director.beatIndex===2);
  const native=pilotNarratedView(director.beatIndex,beat.text,director.timing?.textProgress??0,reading?.highProgress??.5),view=override??native;
@@ -58,7 +62,7 @@ function PilotPlayback(){
   }
   if(director.beatIndex===2&&!lineReturn&&lastLine.current){setLineReturn(lastLine.current);const next={...readPilotNote(),lineReturn:lastLine.current};writePilotNote(next);setNote(next);}
  },[director.beatIndex,lineReturn,note.skipPlaceOnce,director.wantsPlayback,director.select,director.playPause]);
- const onReady=useCallback(()=>setTerrainReady(true),[]);
+ const onReady=useCallback(()=>{setTerrainReady(true);setCameraTransit(false);},[]);
  useEffect(()=>{if(!planMode&&terrainReady&&(director.beatIndex!==2||fieldImages.ready))director.onSceneReady(beat.sceneIdentity);},[planMode,terrainReady,director.beatIndex,fieldImages.ready,beat.sceneIdentity,director.onSceneReady]);
  const onError=useCallback((s:string)=>director.onSceneError(beat.sceneIdentity,s),[beat.sceneIdentity,director.onSceneError]);
  const onReading=useCallback((r:PilotReading)=>setReading(r),[]);
@@ -74,7 +78,7 @@ function PilotPlayback(){
  const restore=(target:PilotReturn)=>{director.pause();director.select(target.beatIndex);director.seek(target.raw);director.setVoice(target.voice);setOverride(target.view);setCameraKey(k=>k+1);};
  const backToLine=()=>{
   const target=lineReturn??lastLine.current??{beatIndex:1,raw:0,voice:director.voice,view:pilotNarratedView(1,beats[1].text,0)};
-  restore(target);setLineReturn(undefined);persist({...note,lineReturn:undefined,returnTo:target,skipPlaceOnce:true});setStatus('已回到进入鲁朗前的原路段和原句。继续后接回整段总结，不重复地方讲述。');
+  restore(target);setReturnFlightKey(k=>k+1);setLineReturn(undefined);persist({...note,lineReturn:undefined,returnTo:target,skipPlaceOnce:true});setStatus('已回到进入鲁朗前的原路段和原句。继续后接回整段总结，不重复地方讲述。');
  };
  const backToGateway=()=>{director.pause();if(persist({...readPilotNote(),returnTo:snapshot(),lineReturn}))location.hash='/routes';};
  const openPlan=()=>{const target=snapshot();director.pause();if(persist({...note,returnTo:target,lineReturn})){setTerrainReady(false);director.retryScene();location.hash=routePilotPath+'?plan=1';}};
@@ -89,6 +93,7 @@ function PilotPlayback(){
  const photograph=view.mode==='place'&&view.placeMedia!=='record'&&view.placeMedia!=='process'&&Boolean(overlayId);
  const reveal=photograph&&overlayId&&fieldImages.loaded.has(overlayId)?Math.max(0,Math.min(1,view.photoOverlay?view.photoReveal??1:1)):0;
  const photoView: PilotView=overlayId?{...view,placePhoto:overlayId,placeMedia:overlayId==='daily'?'daily':'town'}:view;
+ const spatial=pilotSpatialStory(view),placeStory=view.mode==='place'&&!publisherVideo&&view.placeMedia!=='process';
  const photoStyle={
   '--field-reveal':reveal,
   '--field-map-left':`calc(${reveal*100}% - ${reveal*282}px)`,'--field-map-top':`${reveal*16}px`,
@@ -99,13 +104,16 @@ function PilotPlayback(){
  if(planMode)return <main className="pilot-plan"><header><a href="#/overview">西藏探索</a><span>我的线路观察计划</span></header><h1>带着问题，回到同一段路。</h1><p>G318林芝—鲁朗 · 保留线路位置、语句与观察条件。</p><label>我的观察问题与笔记<textarea aria-label="线路观察笔记" maxLength={2000} rows={8} value={note.note} onChange={e=>persist({...note,note:e.target.value})}/></label><p>建议观察：谷地与沿途高差怎样改变视野？进入鲁朗后，道路、聚落与日常生活有什么关系？哪些属于真实记录，哪些仍需现场观察？</p><div><button onClick={()=>persist(note)}>保存观察计划</button><button onClick={returnPlan}>保存并返回原线</button></div><p role={saveOK?'status':'alert'}>{status}</p><Sources/></main>;
  return <main className="pilot-experience">
   <header className="pilot-header"><a href="#/overview">← 认识西藏</a><div><strong>G318 · 林芝—鲁朗</strong><small>川藏南线的一段 · 从整体进入地方</small></div><nav><a href="#/routes" onClick={event=>{event.preventDefault();backToGateway();}}>进藏线路 · 保留观察返回</a><button onClick={openPlan}>线路观察笔记</button></nav></header>
-  <div className="pilot-body"><section className="pilot-stage" aria-label="G318真实沿线三维观察" data-place-media={view.mode==='place'?(view.placeMedia??'map'):'map'} data-photo-frame={photograph} data-photo-reveal={reveal} data-photo-ready={reveal>.8} style={photoStyle}>
-   <PilotRouteTerrain view={view} playing={director.playing} cameraKey={cameraKey} onReady={onReady} onError={onError} onReading={onReading} onContext={onContext} onInteract={onInteract}/>
-   {view.mode==='place'&&(photograph||view.placeMedia&&view.placeMedia!=='map')&&<LulangLifeStage view={photograph?photoView:view} onChange={change} onBack={backToLine} manual={manual} interactionKey={cameraKey} onPhotoFocus={photoFocus} onPhotoReady={fieldImages.markLoaded}/>}
+  <div className="pilot-body"><section className="pilot-stage" aria-label="G318真实沿线三维观察" data-place-media={view.mode==='place'?(view.placeMedia??'map'):'map'} data-photo-frame={photograph} data-spatial-bridge={photograph} data-place-story={placeStory} data-camera-transit={cameraTransit} data-photo-reveal={reveal} data-photo-ready={reveal>.8} style={photoStyle}>
+   <PilotRouteTerrain view={view} playing={director.playing} fieldReveal={reveal} returnFlightKey={returnFlightKey} onTransit={onTransit} cameraKey={cameraKey} onReady={onReady} onError={onError} onReading={onReading} onContext={onContext} onInteract={onInteract}/>
+   {view.mode==='place'&&(photograph||view.placeMedia&&view.placeMedia!=='map')&&<LulangLifeStage view={photograph?photoView:view} spatial={photograph} onChange={change} onBack={backToLine} manual={manual} interactionKey={cameraKey} onPhotoFocus={photoFocus} onPhotoReady={fieldImages.markLoaded}/>}
+   {fieldObservation&&photograph&&overlayId&&<LulangPhotoNarration key={`${overlayId}:${cameraKey}`} photoId={overlayId} onFocus={photoFocus}/>}
    {!director.ready&&!director.error&&<div className="pilot-loading" role="status">{fieldImages.error?<>{fieldImages.error}<button onClick={fieldImages.retry}>重新准备实景</button></>:director.beatIndex===2&&terrainReady?'正在准备本段实景，完成后从原句继续…':'正在准备真实影像、高程与道路…'}</div>}
    {director.error&&<div className="pilot-loading" role="alert">{director.error}<button onClick={()=>location.reload()}>重新加载本段</button></div>}
    <div className="pilot-map-meta"><span>Sentinel-2 · 2025.12.13 · 10 m像元</span><span>GLO-30地表高程 · 高度1×</span></div>
    <div className="pilot-place-title"><span>{view.mode==='whole'?'整段来路':view.mode==='place'?'进入地方':'沿真实道路前进'}</span><h1>{view.mode==='place'?'鲁朗：山谷、聚落与人文':view.mode==='line'?`G318 · 第${km}公里`:'林芝—色季拉山地—鲁朗'}</h1></div>
+   {placeStory&&<div className="pilot-spatial-reading" data-spatial-focus={spatial.focus}><strong>{spatial.title}</strong><small>{photograph?spatial.scope:'沿现状源道路进入聚落 · 要素按讲述显露，非历史建设复原'}</small></div>}
+   {view.mode==='line'&&(view.arrivalProgress??0)>0&&context&&<div className="pilot-descent-reading">沿线高点约{Math.round(context.profile[context.highestIndex].elevation/10)*10}m → 鲁朗末端约{Math.round(context.profile.at(-1)!.elevation/10)*10}m<small>同一路径的地表采样 · 两个高程标杆落在原地形上</small></div>}
    {view.mode==='line'&&<div className="pilot-travel-key"><span>金色：已读路段</span><span>青色：后续来路</span><small>沿归档道路压缩推进 · 非行车实录</small></div>}
    {view.elevation&&<div className="pilot-elevation-key"><strong>同一地形 · 地表高程对照</strong><div className="pilot-height-ramp"/><div><span>2900 m</span><span>4000 m</span><span>5300 m</span></div><small>高度1× · 剖面下沿为2500 m共同基准<br/>DSM地表采样，非山口实测或城市平均海拔</small></div>}
    {culture.active&&<div className="pilot-culture-key"><strong>{culture.supply?'经营关系示意':'假设：移去供货联系'}</strong><span>工序为示意 · 实景照片独立标明日期</span><em>{lulangCultureSteps[culture.step].title}</em></div>}
