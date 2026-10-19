@@ -21,7 +21,8 @@ const { overviewNarrationCues } = await content('src/data/overviewNarration.ts')
 const { routePilotCues } = await content('src/data/routePilot.ts');
 const { lulangPhotoNarrationCues } = await content('src/data/lulangPhotoNarration.ts');
 const { gatewayNarrationCues } = await content('src/data/routeGatewayNarration.ts');
-const expected = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => getJourneyStep(step.id).cues)), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues,...routePilotCues,...lulangPhotoNarrationCues,...gatewayNarrationCues];
+const { tongmaiCues } = await content('src/data/tongmaiJourney.ts');
+const expected = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => getJourneyStep(step.id).cues)), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues,...routePilotCues,...lulangPhotoNarrationCues,...gatewayNarrationCues,...tongmaiCues];
 const manifest = JSON.parse(await fs.readFile(path.join(root, 'public/assets/audio/narration/cue-manifest.json'), 'utf8'));
 const requireWord=process.argv.includes('--require-word');
 const expectedIds=new Set(expected.map(cue=>cue.id)),manifestIds=new Set(manifest.clips.map(clip=>clip.cueId));

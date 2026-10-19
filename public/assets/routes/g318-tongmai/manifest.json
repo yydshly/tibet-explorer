@@ -1,0 +1,192 @@
+{
+  "id": "g318-lulang-tongmai-r05-r06",
+  "preparedOn": "2026-10-20",
+  "bbox": [
+    94.68,
+    29.68,
+    95.115,
+    30.135
+  ],
+  "columns": 641,
+  "rows": 761,
+  "verticalExaggeration": 1,
+  "imagery": {
+    "url": "/assets/routes/g318-tongmai/sentinel-20251213.webp",
+    "status": "native_windows_read_and_reprojected",
+    "sources": [
+      {
+        "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FT/2025/12/S2C_46RFT_20251213_0_L2A/TCI.tif",
+        "item": "S2C_46RFT_20251213_0_L2A",
+        "nativeWindow": [
+          6179,
+          0,
+          4291,
+          1553
+        ],
+        "nativeBlocks": 10,
+        "sourceBytesRead": 19674529
+      },
+      {
+        "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/FU/2025/12/S2C_46RFU_20251213_0_L2A/TCI.tif",
+        "item": "S2C_46RFU_20251213_0_L2A",
+        "nativeWindow": [
+          6179,
+          6435,
+          4291,
+          4545
+        ],
+        "nativeBlocks": 25,
+        "sourceBytesRead": 45561083
+      }
+    ],
+    "date": "2025-12-13",
+    "bbox": [
+      94.68,
+      29.68,
+      95.115,
+      30.135
+    ],
+    "sourcePixelMetres": 10,
+    "output": [
+      2600,
+      3100
+    ],
+    "missingFraction": 2.4813895781637716e-07,
+    "sha256": "242283e5b6bc5751d619717577114f67347e1cafedfde7c45ed690314e9afc8e",
+    "scope": "Only this R05/R06 view; sparse local source caches are NOT complete source rasters; no cloud/shadow or current-weather claim"
+  },
+  "elevation": {
+    "url": "/assets/routes/g318-tongmai/terrain.int16",
+    "dataset": "Copernicus GLO-30 DSM",
+    "nativeSpacingMetres": 30,
+    "displaySampleMetres": [
+      65.6,
+      66.6
+    ],
+    "minimum": 1569,
+    "maximum": 7125,
+    "sourceCrops": [
+      {
+        "file": "Copernicus_DSM_COG_10_N29_00_E094_00_DEM.part",
+        "sourceSha256": "f9b8c7d3037d109e4c7e9df924e26aecf3f8964214069a366950ba51dd01621b",
+        "nativeWindow": [
+          2446,
+          0,
+          1154,
+          1155
+        ],
+        "nativeShape": [
+          1155,
+          1154
+        ],
+        "completeObject": false
+      },
+      {
+        "file": "Copernicus_DSM_COG_10_N29_00_E095_00_DEM.part",
+        "sourceSha256": "0d1045cf80f8653522a171d8547db763842ce3ce23843b65f0329dc75eef1fc7",
+        "nativeWindow": [
+          0,
+          0,
+          417,
+          1155
+        ],
+        "nativeShape": [
+          1155,
+          417
+        ],
+        "completeObject": false
+      },
+      {
+        "file": "Copernicus_DSM_COG_10_N30_00_E094_00_DEM.tif",
+        "sourceSha256": "916622aa6eabfdcd287a6184f190c19f489d0bc37c524b67fda3a4ab1c1c8ca6",
+        "nativeWindow": [
+          2446,
+          3112,
+          1154,
+          488
+        ],
+        "nativeShape": [
+          488,
+          1154
+        ],
+        "completeObject": true
+      },
+      {
+        "file": "Copernicus_DSM_COG_10_N30_00_E095_00_DEM.tif",
+        "sourceSha256": "e60d22ed46f278e8e6c20130efccf3a46f9a470a185638b10c20f41fea73173b",
+        "nativeWindow": [
+          0,
+          3112,
+          417,
+          488
+        ],
+        "nativeShape": [
+          488,
+          417
+        ],
+        "completeObject": true
+      }
+    ],
+    "scope": "All actual production-view native source windows decoded. DSM is surface, not road/bridge/tunnel survey. Two source objects remain partial; this crop only was verified."
+  },
+  "geometry": {
+    "url": "/assets/routes/g318-tongmai/geometry.json",
+    "source": "/project-review/corridor-evidence/g318-source-chain.geojson",
+    "acquiredOn": "2026-10-19",
+    "nodes": 969,
+    "edges": 968,
+    "allOriginalAdjacentSourceEdges": true,
+    "scope": "Actual main-road join, never snapped from pilot service-road endpoint; original source edges, no invented connection."
+  },
+  "photo": {
+    "url": "/assets/routes/g318-tongmai/tongmai-20140921.jpg",
+    "date": "2014-09-21",
+    "author": "Zhangmoon618",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:20140921_Tongmai_Bridge.jpg",
+    "scope": "Dated old bridge and visible construction background; not new bridge/current conditions. No watermark observed in reviewed full frame."
+  },
+  "sources": [
+    {
+      "title": "西藏自治区政府：一路守护幸福接力",
+      "url": "https://www.xizang.gov.cn/xwzx_406/bmkx/202408/t20240806_428707.html",
+      "scope": "2015年12月新桥通车；2016-04-13整段改建通车。"
+    },
+    {
+      "title": "© OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "title": "Copernicus GLO-30",
+      "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM"
+    },
+    {
+      "title": "Copernicus Sentinel许可",
+      "url": "https://cds.climate.copernicus.eu/licences/ec-sentinel"
+    }
+  ],
+  "limits": [
+    "Winter2025 image, not current weather; snow and shadow retained, not generated.",
+    "Projected bridge/tunnel lines locate sourced plan geometry, not measured deck or tunnel elevations.",
+    "No reconstructed historical road or drive inside tunnels; no current road-opening/parking guarantee."
+  ],
+  "files": {
+    "geometry.json": {
+      "bytes": 60302,
+      "sha256": "40be86dc33c1f3c1d568d38386707526608312abe313ddc2ba49b9547a9ee557"
+    },
+    "sentinel-20251213.webp": {
+      "bytes": 2888196,
+      "sha256": "242283e5b6bc5751d619717577114f67347e1cafedfde7c45ed690314e9afc8e"
+    },
+    "terrain.int16": {
+      "bytes": 975602,
+      "sha256": "a4f688279eddcc34bb143ed7ccabde70f16ed2da89167a56dc41dc4293086686"
+    },
+    "tongmai-20140921.jpg": {
+      "bytes": 1603232,
+      "sha256": "10c91a1f6a15bbe588e8c993a3dd0a87576cccd4880125b3ac8a71359bf0721e"
+    }
+  }
+}

@@ -28,7 +28,8 @@ const { overviewNarrationCues } = await importContent('src/data/overviewNarratio
 const { routePilotCues } = await importContent('src/data/routePilot.ts');
 const { lulangPhotoNarrationCues } = await importContent('src/data/lulangPhotoNarration.ts');
 const { gatewayNarrationCues } = await importContent('src/data/routeGatewayNarration.ts');
-const cues = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => (journey.getJourneyStep(step.id)?.cues || []).map(cue => ({ ...cue, stepId: step.id, chapterId: chapter.id })))), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues,...routePilotCues,...lulangPhotoNarrationCues,...gatewayNarrationCues];
+const { tongmaiCues } = await importContent('src/data/tongmaiJourney.ts');
+const cues = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => (journey.getJourneyStep(step.id)?.cues || []).map(cue => ({ ...cue, stepId: step.id, chapterId: chapter.id })))), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues,...routePilotCues,...lulangPhotoNarrationCues,...gatewayNarrationCues,...tongmaiCues];
 const selected = cues.filter(cue => !only || cue.id === only || cue.stepId === only || only === cue.chapterId && ['cities','comparison','regional','overview'].includes(only));
 if (!selected.length) throw new Error('No matching narration cue.');
 // Native upgrades prioritize the opening, climate, and both city journeys.

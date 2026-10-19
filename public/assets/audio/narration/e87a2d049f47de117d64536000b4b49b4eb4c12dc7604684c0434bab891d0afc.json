@@ -1,0 +1,19 @@
+{
+  "id": "e87a2d049f47de117d64536000b4b49b4eb4c12dc7604684c0434bab891d0afc",
+  "url": "/assets/audio/narration/e87a2d049f47de117d64536000b4b49b4eb4c12dc7604684c0434bab891d0afc.mp3",
+  "text": "从鲁朗的主路接续点，继续沿三一八国道前进。镜头沿归档道路压缩行进，不是实时驾车。先看道路怎样随山谷转向，再拉高视野，辨认山体与河流的相对位置。道路不是城市之间的直线，也不始终贴着同一条河。来到通麦附近，先看河谷全貌，再靠近跨河的位置：这里的问题，是人怎样把道路接过去。",
+  "duration": 27.684,
+  "bytes": 444660,
+  "sha256": "58385af373ab59526dca26d9c46451fa90d7a8a5a307d4d14708a547e0fbf06f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T16:16:07.294Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/e87a2d049f47de117d64536000b4b49b4eb4c12dc7604684c0434bab891d0afc.subtitles.json",
+  "subtitleSha256": "838374d10842b164a8a4d15ecc6548a52d93be80b7113b3260b2757811ab930f",
+  "timingLevel": "word"
+}

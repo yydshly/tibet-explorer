@@ -19,10 +19,14 @@ import LulangPhotoNarration from './LulangPhotoNarration';
 import {lulangMediaFeedback,lulangDisplayView} from '../data/lulangLife';
 import './RouteExperience.css';
 import RouteGateway from './RouteGateway';
+import {lazy,Suspense} from 'react';
+import {tongmaiPath} from '../data/tongmaiJourney';
+const TongmaiExperience=lazy(()=>import('./TongmaiExperience'));
 
 export default function RouteExperience(){
  const route=location.hash.split('?')[0].replace(/^#/,'');
  if(route==='/routes')return <RouteGateway/>;
+ if(route===tongmaiPath)return <Suspense fallback={<main className="pilot-experience" aria-busy="true">正在准备鲁朗—通麦接续…</main>}><TongmaiExperience/></Suspense>;
  return <PilotPlayback/>;
 }
 function PilotPlayback(){

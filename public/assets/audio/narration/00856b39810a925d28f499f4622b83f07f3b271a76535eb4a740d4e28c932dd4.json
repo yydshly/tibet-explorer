@@ -1,0 +1,19 @@
+{
+  "id": "00856b39810a925d28f499f4622b83f07f3b271a76535eb4a740d4e28c932dd4",
+  "url": "/assets/audio/narration/00856b39810a925d28f499f4622b83f07f3b271a76535eb4a740d4e28c932dd4.mp3",
+  "text": "先认清易贡藏布，再看它与帕隆藏布的汇合位置。通麦特大桥跨越的是易贡藏布。转为斜看，河谷仍在，桥把两岸的道路接起来。现在看二零一四年的旧桥照片：单车道桥、河流和可见施工背景，留下当时的记录，不是今天的新桥。回到有来源的现状地图，新桥在二零一五年十二月通车；二零一六年四月十三日，整段改建通车。这是两个不同节点。再看飞石崖隧道的平面位置：桥跨河，隧道穿山，改变的是道路连接方式。虚线只定位隧道，不表示洞内高程，也不复原旧路。拉回峡谷，山地和河流并没有消失，持续维护仍是往来的条件。看完这段，可以回到进入前的鲁朗原线。",
+  "duration": 52.452,
+  "bytes": 840948,
+  "sha256": "4d24391b699473e4f4c47a7f0057fd3dff831fef16525c36426574bebdf84caf",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T16:16:34.926Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/00856b39810a925d28f499f4622b83f07f3b271a76535eb4a740d4e28c932dd4.subtitles.json",
+  "subtitleSha256": "ca578d742624b4b6c52e7d3e01781ad29ca32d83b055c4c07d47c80aea8596a7",
+  "timingLevel": "word"
+}

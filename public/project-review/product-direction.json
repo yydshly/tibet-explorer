@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20",
   "implementationBase": "51f375fc242ebf540f6feda98e1739737908b4bb",
   "currentVersion": {
     "name": "整体认识第一版",
@@ -18,7 +18,7 @@
   },
   "nextVersion": {
     "name": "经典线路与真实地方",
-    "status": "首段冻结；整线叙事、来源核查及九镜分镜完成，新增路段尚未制作",
+    "status": "原首段冻结；新增R05—R06鲁朗—通麦已实现，整条林芝—波密线路仍未完成",
     "entry": "以有真实交通依据、能解释沿途变化的经典线路为入口",
     "journey": [
       "选择线路",
@@ -46,10 +46,9 @@
     ],
     "corridorScope": "从林芝八一城区附近总体向东到波密县城扎木镇；与常见川藏进藏的向西观看方向相反，开场明确说明。",
     "deliveryOrder": [
-      "整体叙事、资料覆盖与九镜分镜在此收口，不继续广泛搜素材或打磨冻结首段。",
-      "下一次实现只先做“鲁朗原主路接续—通麦跨河”一段，即R05—R06，检验新增整线的连续性；保持旧首段和六章冻结，不同时铺开波密或新景观。",
-      "新增段达到跨河关系可读、语音与画面对应、操作可恢复后，再按已定分镜串联到波密和整线结尾；未核准镜头缩减或暂缓。",
-      "未来整线完成后由助手做一次完整操作检查，分别说明功能与理解证据，不反复要求用户逐项陪测。"
+      "本轮R05—R06限定接续段在实际播放、操作恢复和原线返回检查后收口。",
+      "后续只按已定分镜推进波密及整线串联；来源不足的现场和近景继续缩减，不并行扩景点、模型或重做原首段。",
+      "正式整线完成后做一次助手全流程检查；首次观看者理解另需真实证据，不以测试或助手操作代替。"
     ],
     "presentation": [
       "真实影像与精度适当的地形",
@@ -128,8 +127,8 @@
     ],
     "narrativePlan": {
       "id": "G318-east-corridor-narrative-v1-20261019",
-      "status": "narrative_source_gate_and_storyboard_complete_not_implemented",
-      "updatedAt": "2026-10-19",
+      "status": "narrative_and_storyboard_complete_r05_r06_delivered",
+      "updatedAt": "2026-10-20",
       "title": "沿G318认识真实地方：林芝—色季拉—鲁朗—通麦—波密",
       "purpose": "沿真实线路看见环境差异，理解人怎样建设、使用和延续地方，并形成可以互相比较的地方印象。",
       "scope": {
@@ -154,7 +153,7 @@
           "seconds": 142.56,
           "localScriptVersion": 6
         },
-        "currentRound": "整线九镜分镜完成；仅更新现有说明。未制作整线、裁切、录音或模型，六章和首段继续冻结。",
+        "currentRound": "2026-10-20仅实现新增R05—R06鲁朗原主路接续至通麦，独立入口；六章750.024秒与原首段142.560秒冻结。新增80.136秒，不代表整线已实现。",
         "futureGuidedDuration": {
           "maxSeconds": 410,
           "minimumIsNotAQuota": true,
@@ -403,15 +402,14 @@
         },
         {
           "area": "分镜与制作",
-          "state": "九镜分镜收口；制作未开始",
-          "detail": "每镜已列画面节拍、讲述意图、可选操作、原句恢复与来源；新增地形影像视域仍需在限定制作段核验。"
+          "state": "九镜分镜完成；R05—R06接续段已实现",
+          "detail": "本段原始地形/卫星像元视域已制作并核验。其余新整线镜头未制作；原首段冻结，不把试制段当全线发布。"
         }
       ],
       "nextSteps": [
-        "整体叙事、资料覆盖与九镜分镜在此收口，不继续广泛搜素材或打磨冻结首段。",
-        "下一次实现只先做“鲁朗原主路接续—通麦跨河”一段，即R05—R06，检验新增整线的连续性；保持旧首段和六章冻结，不同时铺开波密或新景观。",
-        "新增段达到跨河关系可读、语音与画面对应、操作可恢复后，再按已定分镜串联到波密和整线结尾；未核准镜头缩减或暂缓。",
-        "未来整线完成后由助手做一次完整操作检查，分别说明功能与理解证据，不反复要求用户逐项陪测。"
+        "本轮R05—R06限定接续段在实际播放、操作恢复和原线返回检查后收口。",
+        "后续只按已定分镜推进波密及整线串联；来源不足的现场和近景继续缩减，不并行扩景点、模型或重做原首段。",
+        "正式整线完成后做一次助手全流程检查；首次观看者理解另需真实证据，不以测试或助手操作代替。"
       ],
       "completionCriteria": {
         "plan": [
@@ -1580,7 +1578,7 @@
       "storyboard": {
         "id": "G318-east-corridor-storyboard-v1-20261019",
         "date": "2026-10-19",
-        "status": "editorial_storyboard_complete_not_runtime_implemented",
+        "status": "storyboard_complete_r05_r06_delivered_rest_not_implemented",
         "basis": {
           "narrativePlan": "G318-east-corridor-narrative-v1-20261019",
           "sourceAudit": "G318-corridor-source-coverage-20261019",
@@ -2008,7 +2006,8 @@
             ],
             "readiness": "source_backed_needs_production",
             "boundary": "不使用标题“318通麦”但机位在鲁朗北侧的旧照冒充通麦镇；不新增沿途景点单元。",
-            "acceptance": "能跟住鲁朗离开→主路接续→峡谷到达；不会误认为地图线是全程等速驾车录像。"
+            "acceptance": "能跟住鲁朗离开→主路接续→峡谷到达；不会误认为地图线是全程等速驾车录像。",
+            "implementationStatus": "delivered_in_separate_tongmai_segment_20261020"
           },
           {
             "id": "R06",
@@ -2061,7 +2060,8 @@
             ],
             "readiness": "source_backed_needs_bridge_tunnel_view_gate",
             "boundary": "不虚构旧路驾驶、新桥实拍、桥体细部、隧道内景、通行速度、住户收入或灾害消失。生活影响限定为有资料支持的通行连接，不扩成全社会成效。",
-            "acceptance": "静音能指出跨哪条河、路怎样跨河穿山；能区分2014旧照、两次通车节点及2026归档几何，不误读成连续历史复原。"
+            "acceptance": "静音能指出跨哪条河、路怎样跨河穿山；能区分2014旧照、两次通车节点及2026归档几何，不误读成连续历史复原。",
+            "implementationStatus": "delivered_in_separate_tongmai_segment_20261020"
           },
           {
             "id": "R07",
@@ -2205,7 +2205,8 @@
             "tongmai-2014原图在正式接入时带作者、日期和CC BY-SA 4.0；2026几何与2014记录分开呈现。"
           ],
           "fallback": "新近景视域若不清楚，缩回可读的峡谷尺度；删去不成立的细节，不添加模型、假实拍或超长讲解。关键跨河关系仍不可读则停在该段，不铺开其他段。",
-          "stop": "一次实现＋一次助手从进入、观察到返回原线的完整检查；只定向修阻断／错指，达标结束。整线剩余镜头按此已定分镜顺序接入，不重新泛化选题。"
+          "stop": "一次实现＋一次助手从进入、观察到返回原线的完整检查；只定向修阻断／错指，达标结束。整线剩余镜头按此已定分镜顺序接入，不重新泛化选题。",
+          "status": "delivered_20261020_close_this_batch"
         },
         "completionCriteria": [
           "九镜顺序与五节点角色、原路交接一致；故事从环境到人的使用、工程行动和地方印象，不变成景点清单。",
@@ -2213,7 +2214,49 @@
           "各镜证据、许可、时空范围及制作状态可追溯；不把已核来源误称运行时镜头或当前实地开放。",
           "未来整线引导上限410秒，不填时长；现有六章、首段、录音和模型冻结。",
           "共用暂停、对照、继续原句、计划保存返回；不强制逐项陪测。"
-        ]
+        ],
+        "implementation": {
+          "date": "2026-10-20",
+          "status": "bounded_functional_delivery_not_first_viewer_acceptance",
+          "routePath": "/routes/g318-east/lulang-tongmai",
+          "deliveredShots": [
+            "R05",
+            "R06"
+          ],
+          "runtimeIdentity": "g318-tongmai-r05-r06-v1",
+          "seconds": 80.136,
+          "recordings": [
+            {
+              "id": "ROUTE-G318-tongmai-approach",
+              "seconds": 27.684
+            },
+            {
+              "id": "ROUTE-G318-tongmai-crossing",
+              "seconds": 52.452
+            }
+          ],
+          "sourceManifest": "/assets/routes/g318-tongmai/manifest.json",
+          "nodes": 969,
+          "edges": 968,
+          "geometry": "Original adjacent source edges beginning at main-road junction7365874802; no pilot service-road snap.",
+          "productionPixels": "Two already-selected2025-12-13 Sentinel source native windows read using validated HTTP206 ranges; reprojected2600x3100. Two all-black source/output pixels retained (fraction2.48e-7), no fill generated. Four native GLO30 windows decoded; display grid641x761,approximately66m, height1x. Applies only to this R05/R06 footprint.",
+          "interaction": "Main-road movement, overhead/oblique, bridge/river and tunnel projection selection,2014 whole-photo reading, pause/exact sentence resume; return to frozen pilot preserves its prior progress. Manual observation at the final sentence returns to ending, without restarting automatically.",
+          "verified": [
+            "Typecheck and production build passed.43 scoped checks across4 files passed; new5 source/audio-contract checks rerun after semantic update.",
+            "All339 pre-existing cue-manifest entries unchanged; two new recordings have word timing, hash and ffprobe checks.",
+            "Browser: route gateway entry, actual playing approach50%, automatic second recording12% and41%, one manual pause at68.7546% restored to same sentence, continuation reached100%. Not an uninterrupted run.",
+            "Browser return to original pilot retained first cue/raw0.316. Final label/photograph/operation checks recorded separately after scoped fixes.",
+            "Fixed actual short-desktop playback controls below fold, too-small documentary photo, and bridge label under legend."
+          ],
+          "limits": [
+            "No new-bridge near footage, bridge structural detail, inside-tunnel drive or reconstructed old road.",
+            "Historical photo2014, bridge opening2015-12, project opening2016-04-13 and2026 source geometry kept distinct.",
+            "Native media clock and displayed correspondence checked; no system-output loopback or frame-level sync certification.",
+            "No actual first-viewer comprehension result; no mobile acceptance. Existing631kB shared chunk warning remains.",
+            "R00-R04/R07-R08 have not been produced as a new continuous full-corridor edit; Bomi is still not available. Frozen overview and original pilot remain separate."
+          ],
+          "next": "Close R05/R06 here. Next requested increment follows the approved remaining storyboard toward Bomi and full-corridor stitching; do not resume generic acquisition or old-pilot polish."
+        }
       }
     }
   },
@@ -2222,7 +2265,8 @@
     "checks": "/project-review/stage-verification.json",
     "audioBaseline": "/project-review/release-baseline.json",
     "currentNarrativePlan": "/project-review/index.html#next",
-    "currentStoryboard": "/project-review/index.html#storyboard"
+    "currentStoryboard": "/project-review/index.html#storyboard",
+    "tongmaiDelivery": "/project-review/index.html#tongmai-delivery"
   },
   "historicalImplementationBase": "fa3dcd6"
 }

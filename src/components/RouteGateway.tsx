@@ -6,6 +6,7 @@ import {useOverviewDirector} from '../hooks/useOverviewDirector';
 import {readPilotEntry,pilotStartPath} from '../lib/routePilotEntry';
 import NarrationCaption from './NarrationCaption';
 import './RouteGateway.css';
+import {tongmaiPath} from '../data/tongmaiJourney';
 
 const gatewayBeats=[{id:gatewayNarrationCue.id,recordingId:gatewayNarrationCue.id,text:gatewayNarrationCue.narration,sceneIdentity:gatewayNarrationIdentity}];
 export default function RouteGateway(){
@@ -39,7 +40,8 @@ export default function RouteGateway(){
    <article className="gateway-route-reading" aria-live="polite"><span>{current.from}</span><h2>{current.name}<small>{current.road}</small></h2><p className="gateway-via">{current.via}</p><h3>{current.signature}</h3><dl><dt>环境怎么看</dt><dd>{current.environment}</dd><dt>人文看什么</dt><dd>{current.human}</dd><dt>与其他路怎样接</dt><dd>{current.connection}</dd></dl><p className="gateway-question">带着问题走：{current.question}</p><div className="gateway-inline-sources">依据：{gatewaySources.filter(s=>(current.sources as readonly string[]).includes(s.id)).map(s=><a key={s.id} href={s.url} target="_blank" rel="noreferrer">{s.id==='network'?'通道资料':'沿途资料'} ↗</a>)}</div></article>
   </section>
   <section className="gateway-pilot"><img src="/assets/routes/g318/lulang-life/town-20240922.jpg" alt="2024年鲁朗河谷、道路与聚落航拍，Zhangmoon618，CC BY-SA 4.0"/><div><span>当前可体验 · G318的一段</span><h2>林芝 → 色季拉山地 → 鲁朗</h2><p>先用真实道路与高程看翻山入谷，再进入鲁朗的风景、村镇生活与工布文化观察，保留来路并返回。</p><ol><li>沿线前进</li><li>进入地方</li><li>交互观察与听讲解</li><li>保存并回原线</li></ol>{entryActions}<small>约72公里归档道路。此处从林芝向东进入鲁朗；与常见川藏南线由东向西的进藏顺序相反，可对照阅读。其余通道暂为导览。</small><a className="gateway-photo-credit" href="https://commons.wikimedia.org/wiki/File:Lulang_Town.jpg" target="_blank" rel="noreferrer">照片：Zhangmoon618 · 2024-09-22 · CC BY-SA 4.0 · 显示裁切</a></div></section>
-  <details className="gateway-reason"><summary>为什么先从G318开始？本版做到哪里？</summary><p>选择标准是能否把整体认识落到可核实的一段道路：本段已有归档道路、卫星影像、地表高程和有来源的地方实景，可在同一来路中比较山谷、坡面、聚落和生活。先把“进入—观察—保存—返回”完成，再决定下一段。不是宣布整条318或其他线路已完成。</p><p>五条是代表性经典公路通道，另有唐蕃古道、丙察察等不同通道与组合。这里的旅行段、国道编号与完整路网是不同概念；不提供实时路况、开放与停靠结论。</p></details>
+  <section className="gateway-reason"><h2>继续沿G318 · 鲁朗 → 通麦</h2><p>从真实主路接续点进入峡谷，辨认两河汇合，看桥怎样跨河、隧道怎样穿山。2014旧桥记录与2015、2016通车节点分别阅读，观察后可返回鲁朗原线。</p><a className="gateway-start" href={`#${tongmaiPath}`}>进入已制作的接续段 →</a><p><small>整线分镜R05—R06；波密及其余新镜头仍未制作。原林芝—鲁朗首段保留。</small></p></section>
+  <details className="gateway-reason"><summary>为什么先从G318开始？本版做到哪里？</summary><p>选择标准是能否把整体认识落到可核实的一段道路：本段已有归档道路、卫星影像、地表高程和有来源的地方实景，可在同一来路中比较山谷、坡面、聚落和生活。首段保留，新增鲁朗至通麦接续；不表示整条318或其他线路已完成。</p><p>五条是代表性经典公路通道，另有唐蕃古道、丙察察等不同通道与组合。这里的旅行段、国道编号与完整路网是不同概念；不提供实时路况、开放与停靠结论。</p></details>
   <details className="gateway-reason"><summary>资料依据与示意范围 · 核实于2026-10-19</summary>{gatewaySources.map(s=><p key={s.id}><a href={s.url} target="_blank" rel="noreferrer">{s.title} ↗</a><small> {s.date}</small></p>)}<p>上图为编辑绘制的通道关系图，不是GIS道路测绘。进入已开放路段后，才使用有来源的实际道路、高程与卫星影像。</p></details>
  </main>;
 }
