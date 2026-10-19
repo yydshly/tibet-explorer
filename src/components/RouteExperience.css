@@ -62,3 +62,10 @@
 .pilot-plan-context h2{font-size:23px;font-weight:500;margin:7px 0 10px}.pilot-plan-context p{font-size:13px;margin:8px 0 12px}.pilot-plan-context small{font-size:11px;color:#b9ccb3;line-height:1.7;display:block}.pilot-plan-context .pilot-plan-question{color:#f3dfaa}.pilot-plan-context .pilot-plan-boundary{margin-top:16px}
 .pilot-plan-context nav{display:flex;gap:6px 16px;flex-wrap:wrap;margin:12px 0}.pilot-plan-context a{font-size:11px;color:#e2d099}.pilot-plan-context button{font-size:12px;margin:0}.pilot-plan button:disabled{opacity:.5;cursor:default}.pilot-plan-actions{display:flex;gap:10px;flex-wrap:wrap}.pilot-plan-actions button{margin:0}
 @media(max-width:720px){.pilot-plan-context{grid-template-columns:1fr;padding:16px;gap:16px}}
+
+/* The closing recap follows its spoken objects rather than holding an overview. */
+.pilot-stage[data-closing-phase]>.pilot-place-title{display:none}
+.pilot-closing-reading{position:absolute;left:22px;right:22px;top:54px;z-index:3;background:#102b24ed;border-left:2px solid #e5cf97;padding:9px 12px;pointer-events:none}
+.pilot-closing-reading strong{display:block;font-size:15px;color:#ffe7a9}.pilot-closing-reading small{display:block;font-size:10px;line-height:1.6;color:#c9d8c6;margin-top:5px}
+.pilot-stage[data-closing-phase=corridor]>.pilot-route-context{top:137px}
+.pilot-stage[data-closing-phase=evidence]>.pilot-travel-key{display:none}

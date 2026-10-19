@@ -7,6 +7,9 @@ export function pilotNarratedCamera(index:number,text:string,progress:number,hig
  const shots:Shot[][]=[
   [
    {at:'',pitch:57,bearing:-12,height:3500,zoom:1,focus:0,weight:0},
+   {at:'从林芝城区附近',pitch:64,bearing:-8,height:3100,zoom:.36,focus:0,weight:1},
+   {at:'青色线保留',pitch:56,bearing:8,height:3500,zoom:1,focus:0,weight:0},
+   {at:'这段归档道路',pitch:63,bearing:-12,height:3500,zoom:1,focus:0,weight:0},
    {at:'先看起点周围',pitch:66,bearing:-12,height:3100,zoom:.34,focus:0,weight:1},
    {at:'再看道路怎样走向山地',pitch:32,bearing:20,height:3400,zoom:.56,focus:high*.55,weight:1,elevation:true},
    {at:'底图来自',pitch:53,bearing:5,height:3500,zoom:.85,focus:0,weight:.15},
@@ -33,8 +36,12 @@ export function pilotNarratedCamera(index:number,text:string,progress:number,hig
    {at:'再回到刚才',pitch:48,bearing:0,height:3000},
   ],
   [
-   {at:'',pitch:48,bearing:0,height:3000,zoom:.23,focus:1,weight:1},
-   {at:'重新放回线路',pitch:57,bearing:-12,height:3500,zoom:1,focus:1,weight:0},
+   {at:'',pitch:48,bearing:-12,height:3000,context:1,elevation:true},
+   {at:'自然条件解释',pitch:32,bearing:-32,height:3000,elevation:true},
+   {at:'建设、经营',pitch:63,bearing:-5,height:2500},
+   {at:'继续解释地方怎样被使用',pitch:56,bearing:-5,height:2500},
+   {at:'地图上的观察点',pitch:48,bearing:-12,height:3000,context:1},
+   {at:'这一段到这里结束',pitch:57,bearing:-12,height:3500},
   ],
  ];
  const sequence=shots[index]??shots[3],position=Math.max(0,Math.min(1,progress))*text.length;

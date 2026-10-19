@@ -29,9 +29,15 @@ describe('narrated route camera',()=>{
   expect(pilotNarratedView(2,local,(local.indexOf('两侧地形')+2)/local.length)).toMatchObject({elevation:true,placeLens:'landscape'});
   expect(pilotNarratedView(2,local,(local.indexOf('回到地图')+2)/local.length)).toMatchObject({elevation:false,placeLens:'life'});
  });
- it('pulls back from the same Lulang area to the whole route in the closing sentence',()=>{
+ it('recaps terrain, connections and visible public life instead of holding the whole map throughout closing',()=>{
   const text=routePilotCues[3].narration;
-  expect(pilotNarratedView(3,text,0)).toMatchObject({mode:'whole',mapFocus:1,mapFocusWeight:1,mapZoom:.23});
-  expect(pilotNarratedView(3,text,(text.indexOf('沿途高差')+1)/text.length)).toMatchObject({mode:'whole',mapFocusWeight:0,mapZoom:1});
+  const at=(word:string,delta=1)=>pilotNarratedView(3,text,(text.indexOf(word)+delta)/text.length,.668);
+  expect(at('林芝附近的谷地')).toMatchObject({mode:'line',routeContext:1,elevation:true});
+  expect(at('自然条件解释',4)).toMatchObject({mode:'place',placeLens:'landscape',elevation:true});
+  expect(at('建设、经营',4)).toMatchObject({mode:'place',connections:true,servicesVisible:false});
+  expect(at('建设、经营',4).connectionProgress).toBeGreaterThan(0);
+  expect(at('保存一个观察问题')).toMatchObject({mode:'place',placePhoto:'daily',photoFocus:3,photoReveal:1});
+  expect(at('地图上的观察点',12)).toMatchObject({mode:'line',routeContext:1,elevation:false});
+  expect(pilotNarratedView(3,text,1)).toMatchObject({mode:'whole',mapFocusWeight:0,mapZoom:1});
  });
 });

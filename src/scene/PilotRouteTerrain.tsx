@@ -201,7 +201,8 @@ export default function PilotRouteTerrain(props:Props){
       const w=div.offsetWidth,offset=state.mode==='place'?(index===2?-130:localOnly?130:category==='food'?(culture.active?-220:-120):category==='lodging'?120:0):0,lx=Math.max(w/2+12,Math.min(size.x-w/2-12,x+offset));let ly=y-32;
       if(state.mode==='line'&&ly<240)ly=246;
       if(state.mode!=='line'&&state.elevation&&lx-w/2<280&&ly<255)ly=270;
-      for(let i=0;i<5&&occupied.some(o=>Math.abs(o.y-ly)<34&&Math.abs(o.x-lx)<(w+o.w)/2+8);i++)ly+=state.mode==='line'?36:-36;
+      // Height labels must not be pushed back underneath the elevation legend.
+      for(let i=0;i<5&&occupied.some(o=>Math.abs(o.y-ly)<34&&Math.abs(o.x-lx)<(w+o.w)/2+8);i++)ly+=state.mode==='line'||state.elevation?36:-36;
       if(ly<140)ly=y+36;occupied.push({x:lx,y:ly,w});
       div.style.left=`${lx}px`;div.style.top=`${ly}px`;
       const dy=ly-y,dx=lx-x;leader.style.left=`${x}px`;leader.style.top=`${y}px`;leader.style.width=`${Math.hypot(dx,dy)}px`;leader.style.transform=`rotate(${Math.atan2(dy,dx)}rad)`;

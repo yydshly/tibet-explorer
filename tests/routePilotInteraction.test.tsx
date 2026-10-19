@@ -34,6 +34,16 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('saves the closing public-life observation and returns to its exact words, then the pre-place line',()=>{
+  button('进入鲁朗 · 保留原路段').onClick();
+  media.current.beatIndex=3;media.current.raw=.58;const text=routePilotCues[3].narration;media.current.timing={textProgress:(text.indexOf('保存一个观察问题')+1)/text.length};
+  const original={...scene().view};expect(original).toMatchObject({placePhoto:'daily',photoFocus:3});
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject(original);expect(media.current.beatIndex).toBe(3);expect(media.current.raw).toBe(.58);
+  const returned=render();const collect=(n:any):number=>!n||typeof n!=='object'?0:(n.type==='button'&&n.props.children==='返回进入前的原线原句'?1:0)+[n.props?.children].flat(Infinity).reduce((sum:number,c:any)=>sum+collect(c),0);
+  expect(collect(returned)).toBe(1);
+  button('返回进入前的原线原句').onClick();expect(media.current.beatIndex).toBe(1);expect(media.current.raw).toBe(.43);
+ });
  it('keeps the saved river observation after returning to the line and reopening the notebook from its header',()=>{
   button('进入鲁朗 · 保留原路段').onClick();media.current.raw=.22;const text=routePilotCues[2].narration;media.current.timing={textProgress:(text.indexOf('进入二零二四')+4)/text.length};
   const local=find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');local.props.onChange({placeMedia:'town',placePhoto:'town',photoFocus:1});

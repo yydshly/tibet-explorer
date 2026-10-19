@@ -155,5 +155,26 @@
     "browser": "Fixed build river capture/edit/save -> same photo/focus/raw -> original line43%/48.1km -> header reopen -> refresh -> real export still retained river/photo/source/edited note; original note restored; exact original dataset/raw43% restored; no application errors",
     "evidence": "../review/g318-plan-live-demo-20261019/verification.json (workspace-local)",
     "frozen": "Six chapters, source imagery/GIS/models/cameras, all339 audio objects,4 clips/142.560s"
+  },
+  "visualCorrespondenceCorrection": {
+    "trigger": "用户指出末段长时间有声音而整线画面不变；此前功能收口不等于视觉讲述全部达标。",
+    "scope": "只修已有G318开场和末段，不解冻六章或增加录音、资料、景点、模型与时长。",
+    "changes": [
+      "开场在提到林芝起点时定位，再展开真实来路。",
+      "末段按原生逐字时钟依次回看同路高差、鲁朗河谷剖面、地方道路与建筑、2008年街边生活、资料观察位置，再回整线。",
+      "现状道路和建筑按阅读进度显露，不表示历史施工或共同维护过程；生活照片不能证明经营成效。",
+      "直接进入末段也等待原有实景预加载；观察与返回继续使用原句快照。"
+    ],
+    "checks": {
+      "focusedTests": 50,
+      "typecheck": "passed",
+      "productionBuild": "passed",
+      "liveClosing": "one natural playback to100%, plus bounded relief/access/photo/return checks",
+      "systemAudioLoopback": false,
+      "firstViewerComprehension": false,
+      "frozenOverviewReplayed": false
+    },
+    "remaining": "本次修正不证明其他所有场景已完成效果验收；连续实地影像与工布风俗现场资料缺口不变。",
+    "evidence": "../review/g318-closing-visual-20261019/"
   }
 }

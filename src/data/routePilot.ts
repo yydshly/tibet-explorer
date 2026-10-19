@@ -1,4 +1,5 @@
 import {pilotNarratedCamera} from './routePilotCamera';
+import {pilotClosing} from './pilotClosing';
 import type {LulangLens,LulangServiceFilter} from './lulangPlace';
 import type {LulangLifePhase,LulangPhotoId} from './lulangLife';
 import type {LulangFootageId} from './lulangFootage';
@@ -57,5 +58,5 @@ function pilotNarratedBase(index:number,text:string,textProgress:number,highPoin
   else if(placeMedia==='map'&&at>=text.indexOf('回到地图')){photoOverlay='town';photoReveal=1-ramp('回到地图');}
   return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:(1-returnProgress)*part('再展开地方接续','建筑轮廓'),returnProgress,lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','对照林海实拍'),serviceFilter:'all',servicesVisible:false,cultureProgress:0,cultureSupply:true,cultureSample:0,placeMedia,placePhoto,photoOverlay,photoReveal,photoFocus,cookingProgress:0,lifePhase:'making'};
  }
- return {mode:'whole',progress:1,height:3500,connections:false,lookBack:false};
+ return pilotClosing(text,textProgress,highPoint).view;
 }
