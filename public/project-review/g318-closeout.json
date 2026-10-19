@@ -129,5 +129,21 @@
       "No system-output audio loopback or first-viewer comprehension claim"
     ],
     "stop": "Freeze this batch; free clean local footage is a separate next-phase gate, no new camera/model/button polish."
+  },
+  "observationPlanHandoff": {
+    "date": "2026-10-19",
+    "state": "bounded-handoff-closed",
+    "scope": "Existing plan entry carries the saved photo/object/date/source/license and optional question; original text remains independent; export Markdown and return",
+    "checks": "37 passed across4 files, typecheck and production build passed",
+    "browser": {
+      "capture": "Town photograph/river object/2024-09-22/CC BY-SA4.0 and exact source carried into plan",
+      "question": "Appended once; duplicate action disabled; original note restored after reversible test",
+      "download": "Actual file downloaded and read back: object/date/license/source/note/boundary all present",
+      "refresh": "Added question survived refresh",
+      "return": "Town/river/raw0% restored; original mountains43%,48.1km,routeContext1,pitch42,bearing0,height3000/elevation remained recoverable"
+    },
+    "unchanged": "Six chapters, all339 audio objects, four clips142.560s, source assets/GIS/models/cameras",
+    "evidence": "../review/g318-plan-handoff-20261019/verification.json (workspace-local)",
+    "limits": "No new media or route, no fresh whole-show or system-output listening claim, no first-viewer understanding claim"
   }
 }

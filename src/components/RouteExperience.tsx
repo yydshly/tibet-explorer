@@ -4,6 +4,7 @@ import {usePilotFieldImages} from '../hooks/usePilotFieldImages';
 import {useOverviewDirector} from '../hooks/useOverviewDirector';
 import {routePilotCues,routePilotIdentity,routePilotPath,routePilotSources,pilotNarratedView,pilotConnectionProgress,pilotScriptVersions,pilotResumeAliases,type PilotView} from '../data/routePilot';
 import {PILOT_POSITION_KEY,readPilotNote,writePilotNote,type PilotNote,type PilotReturn} from '../lib/routePilotStore';
+import {pilotObservation,appendPilotQuestion,pilotPlanMarkdown} from '../lib/pilotObservation';
 import PilotRouteTerrain,{type PilotReading} from '../scene/PilotRouteTerrain';
 import type {PilotTerrainContext} from '../scene/routePilotTerrainData';
 import PilotRouteProfile from './PilotRouteProfile';
@@ -83,11 +84,16 @@ function PilotPlayback(){
  const backToGateway=()=>{director.pause();if(persist({...readPilotNote(),returnTo:snapshot(),lineReturn}))location.hash='/routes';};
  const openPlan=()=>{const target=snapshot();director.pause();if(persist({...note,returnTo:target,lineReturn})){setTerrainReady(false);director.retryScene();location.hash=routePilotPath+'?plan=1';}};
  const returnPlan=()=>{if(!persist(note))return;if(note.returnTo)restore(note.returnTo);location.hash=routePilotPath;};
+ const exportPlan=()=>{
+  const url=URL.createObjectURL(new Blob([pilotPlanMarkdown(note)],{type:'text/markdown;charset=utf-8'})),link=document.createElement('a');
+  link.href=url;link.download='G318-林芝鲁朗-观察计划.md';document.body.append(link);link.click();link.remove();window.setTimeout(()=>URL.revokeObjectURL(url),1000);setStatus('已导出观察计划；文件保留笔记、资料边界和出处。');
+ };
+ const observation=planMode?pilotObservation(note.returnTo):undefined;
  const km=reading?(view.progress*reading.total/1000).toFixed(1):'—';
  const connection=pilotConnectionProgress(view),branchMetres=Math.round((context?.connectionLength??0)*connection);
  const connectionReason=view.mode==='place'?connection===0?'先读青色G318，金色圆环标出转入地方道路的实际节点。过境道路经过附近，进入地方还要继续接续。':connection<.65?`从国道接点沿金色地方道路读到约${branchMetres}米：观察转弯与地块的关系。金点表示阅读位置，不是车辆或历史施工。`:'地方道路、白色建筑轮廓与浅绿地块共同展开：国道经过附近，地方接续让道路进入聚落。接着看真实照片中的河流、房屋与街边生活。':view.mode==='whole'?'先把城区、山地与鲁朗放在一条真实道路中看；青色为国道来路，金色为已核对的末端地方接续。剖面与同一地形联动。':view.lookBack?'在同一位置回望：比较山体遮挡、道路绕行和刚经过的谷地。位置不变，观察方向改变。':`沿归档道路改变位置，地形与高程剖面同时对应${km}公里处；比较起点、山地与鲁朗的高低，再看道路如何绕行。高程是地表采样。`;
  const lens=view.placeLens??'life',sectionPoint=context?.lulang?.section[Math.round((view.sectionProgress??.5)*64)];
- const reason=lulangMediaFeedback(view)??(view.mode!=='place'?connectionReason:lens==='landscape'?`蓝线标出鲁朗河源河段，白线比较两侧地形；当前地表样本约${Math.round((sectionPoint?.elevation??reading?.elevation??0)/10)*10}米。移动观察点，比较河段与两侧的相对高低。绿色仅标原地图林地边线。`:culture.active?lulangCultureFeedback(view):view.servicesVisible?lulangServiceFeedback(view):lens==='culture'?'把地方生活放回同一河谷：2008年日常照片、2016年试运营报道与2026年活动原片各自有年代和范围；它们不是同一地点的历史前后对照。':connectionReason);
+ const reason=lulangMediaFeedback(view)??(view.mode!=='place'?connectionReason:lens==='landscape'?`蓝线标出鲁朗河源河段，白线比较两侧地形；当前地表样本约${Math.round((sectionPoint?.elevation??reading?.elevation??0)/10)*10}米。移动观察点，比较河段与两侧的相对高低。绿色仅标原地图林地边线。`:culture.active?lulangCultureFeedback(view):view.servicesVisible?lulangServiceFeedback(view):lens==='culture'?'把地方生活放回同一河谷：2008年日常照片、2016年试运营报道与2018年工布新年文字记录各自有年代和范围；它们不是同一地点的历史前后对照。':connectionReason);
  const sceneReason=view.mode==='line'?`${km}公里处 · ${view.lookBack?'原位回望，比较山体遮挡与道路绕行。':'沿同一道路，比较谷地与坡面的高低。'}`:reason;
  const overlayId=view.photoOverlay??(view.placeMedia==='town'||view.placeMedia==='daily'?view.placePhoto??(view.placeMedia==='daily'?'daily':'town'):undefined);
  const photograph=view.mode==='place'&&view.placeMedia!=='record'&&view.placeMedia!=='process'&&Boolean(overlayId);
@@ -101,7 +107,12 @@ function PilotPlayback(){
   '--field-map-left-compact':`calc(${reveal*100}% - ${reveal*173}px)`,'--field-map-top-compact':`${reveal*13}px`,
   '--field-map-width-compact':`calc(${(1-reveal)*100}% + ${reveal*160}px)`,'--field-map-height-compact':`calc(${(1-reveal)*100}% + ${reveal*100}px)`,
  } as CSSProperties;
- if(planMode)return <main className="pilot-plan"><header><a href="#/overview">西藏探索</a><span>我的线路观察计划</span></header><h1>带着问题，回到同一段路。</h1><p>G318林芝—鲁朗 · 保留线路位置、语句与观察条件。</p><label>我的观察问题与笔记<textarea aria-label="线路观察笔记" maxLength={2000} rows={8} value={note.note} onChange={e=>persist({...note,note:e.target.value})}/></label><p>建议观察：谷地与沿途高差怎样改变视野？进入鲁朗后，道路、聚落与日常生活有什么关系？哪些属于真实记录，哪些仍需现场观察？</p><div><button onClick={()=>persist(note)}>保存观察计划</button><button onClick={returnPlan}>保存并返回原线</button></div><p role={saveOK?'status':'alert'}>{status}</p><Sources/></main>;
+ if(planMode)return <main className="pilot-plan"><header><a href="#/overview">西藏探索</a><span>我的线路观察计划</span></header><h1>带着问题，回到同一段路。</h1><p>G318林芝—鲁朗 · 资料观察计划；实地交通、开放和进入条件仍需核实。</p>
+  {observation&&<section className="pilot-plan-context" aria-label="本次观察与资料出处">
+   {observation.photo&&<figure><div className="pilot-plan-photo"><img src={observation.photo.src} alt={`${observation.photo.date} · ${observation.photo.title}`}/>{observation.selected&&<span style={{left:`${observation.selected.x}%`,top:`${observation.selected.y}%`}}>{observation.selected.title}</span>}</div><figcaption>{observation.photo.date} · {observation.photo.author} · {observation.photo.license}</figcaption></figure>}
+   <div><small>从刚才的画面带入</small><h2>{observation.title}</h2><p>{observation.selected?.detail}</p><p className="pilot-plan-question">{observation.question}</p><button disabled={note.note.includes(observation.question)||note.note.length+observation.question.length+(note.note?2:0)>2000} onClick={()=>persist({...note,note:appendPilotQuestion(note.note,observation.question)})}>将这个问题加入笔记</button><small className="pilot-plan-boundary">{observation.boundary}</small><nav aria-label="本次观察资料来源">{observation.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.title}</a>)}</nav><small>返回将恢复：{observation.returnDescription}</small></div>
+  </section>}
+  <label>我的观察问题与笔记<textarea aria-label="线路观察笔记" maxLength={2000} rows={6} value={note.note} onChange={e=>persist({...note,note:e.target.value})}/></label><p>保留自己的观察和待核实事项。工布风俗现场仍未展示，文献记录与日常照片分别阅读。</p><div className="pilot-plan-actions"><button onClick={()=>persist(note)}>保存观察计划</button><button onClick={exportPlan}>导出观察计划</button><button onClick={returnPlan}>保存并返回原线</button></div><p role={saveOK?'status':'alert'}>{status}</p><Sources/></main>;
  return <main className="pilot-experience">
   <header className="pilot-header"><a href="#/overview">← 认识西藏</a><div><strong>G318 · 林芝—鲁朗</strong><small>川藏南线的一段 · 从整体进入地方</small></div><nav><a href="#/routes" onClick={event=>{event.preventDefault();backToGateway();}}>进藏线路 · 保留观察返回</a><button onClick={openPlan}>线路观察笔记</button></nav></header>
   <div className="pilot-body"><section className="pilot-stage" aria-label="G318真实沿线三维观察" data-route-comparison={director.beatIndex===1&&view.mode==='line'} data-place-media={view.mode==='place'?(view.placeMedia??'map'):'map'} data-photo-frame={photograph} data-spatial-bridge={photograph} data-place-story={placeStory} data-camera-transit={cameraTransit} data-photo-reveal={reveal} data-photo-ready={reveal>.8} style={photoStyle}>

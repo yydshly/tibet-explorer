@@ -34,6 +34,15 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('carries the selected photo object to the plan, appends its question once and restores the same observation',()=>{
+  media.current.beatIndex=2;const text=routePilotCues[2].narration;media.current.timing={textProgress:(text.indexOf('门前活动')+1)/text.length};
+  const original={...scene().view};button('保存观察问题').onClick();
+  find(render(),n=>n.type==='textarea').props.onChange({target:{value:'保留我的原笔记。'}});
+  const context=find(render(),n=>n.props?.['aria-label']==='本次观察与资料出处');expect(context).toBeDefined();
+  button('将这个问题加入笔记').onClick();const once=readPilotNote().note;expect(once).toMatch(/^保留我的原笔记。\n\n/);
+  button('将这个问题加入笔记').onClick();expect(readPilotNote().note).toBe(once);
+  harness.reset();button('保存并返回原线').onClick();expect(scene().view).toEqual(original);expect(media.current.raw).toBe(.43);
+ });
  it('preserves the broad valley comparison through a notebook return and clears it for manual local framing',()=>{
   const text=routePilotCues[1].narration;media.current.timing={textProgress:(text.indexOf('这里按沿线')+13)/text.length};
   const original={...scene().view};expect(original.routeContext).toBe(1);
