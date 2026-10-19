@@ -12,11 +12,12 @@ import {pilotElevationSampler,pilotTerrainContext,type PilotTerrainContext} from
 import {lulangPlaceData} from './lulangPlaceData';
 import type {LulangLens} from '../data/lulangPlace';
 import {createPilotElevationGuide,pilotElevationMaterial,pilotElevationDatum} from './pilotElevationGuide';
+import {pilotTravelFrame,pilotSightlineHeight} from './pilotTravelFrame';
 
 type Coord=readonly number[];
 type Meta={bbox:number[];columns:number;rows:number;imagery:{url:string};elevation:{url:string};geometry:{route:string;place:string}};
 export type PilotReading={distance:number;total:number;elevation:number;longitude:number;latitude:number;highProgress:number;highCoordinate:number[]};
-type Props={view:PilotView;cameraKey:number;onReady:()=>void;onError:(s:string)=>void;onInteract:()=>void;onReading:(s:PilotReading)=>void;onContext:(s:PilotTerrainContext)=>void};
+type Props={view:PilotView;cameraKey:number;playing?:boolean;onReady:()=>void;onError:(s:string)=>void;onInteract:()=>void;onReading:(s:PilotReading)=>void;onContext:(s:PilotTerrainContext)=>void};
 const base='/assets/routes/g318/';
 /** A separate instance preserves the frozen overview renderer and its state.
  * All route bends, footprint vertices and image pixels come from source data. */
@@ -69,6 +70,7 @@ export default function PilotRouteTerrain(props:Props){
     const l=new Line2(g,mat);l.renderOrder=8;l.frustumCulled=false;owner.add(l);return l;
    };
    const trunkOutline=stroke(scene,[coords.slice(0,branchStart+1)],0x0a252b,7),trunkLine=stroke(scene,[coords.slice(0,branchStart+1)],0x6adce1,3.4);
+   const travelled=stroke(scene,[[coords[0],coords[0]]],0xffdb8a,4.5,22);
    const approach=new THREE.Group();scene.add(approach);stroke(approach,[coords.slice(branchStart)],0x0a252b,7);stroke(approach,[coords.slice(branchStart)],0xffd786,3.4);
    const town=new THREE.Group();scene.add(town);const built=new THREE.Group();town.add(built);
    const nature=new THREE.Group();scene.add(nature);const river=new THREE.Group();scene.add(river);
@@ -108,11 +110,11 @@ export default function PilotRouteTerrain(props:Props){
    const pins=pointSpecs.map((p,index)=>{const pin=new THREE.Mesh(new THREE.SphereGeometry(.02,12,8),new THREE.MeshBasicMaterial({color:0xffe4a4,depthTest:false}));pin.position.copy(at(p.coordinate,30));scene!.add(pin);const div=document.createElement('div');div.className='pilot-map-label';div.textContent=p.title;const leader=document.createElement('div');leader.className='pilot-map-leader';el.append(leader,div);return {pin,div,leader,index,local:p.local,lenses:p.lenses,category:p.category,elevationOnly:p.elevationOnly};});
    const size=new THREE.Vector2();const fit=()=>{const w=el.clientWidth,h=el.clientHeight;renderer!.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();lineMaterials.forEach(m=>m.resolution.set(w,h));size.set(w,h);};resize=new ResizeObserver(fit);resize.observe(el);fit();
    const groundLabel=document.createElement('div');groundLabel.className='pilot-map-label pilot-ground-height';groundLabel.hidden=true;el.append(groundLabel);
-   let readingKey='',traceKey=-1,lastFrame=performance.now();const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
+   let readingKey='',traceKey=-1,travelKey=-1,lastFrame=performance.now();const desiredTarget=new THREE.Vector3(),desiredPosition=new THREE.Vector3();let initialized=false;
    const render=()=>{
-    if(!alive)return;const state=latest.current.view,now=performance.now(),alpha=1-Math.exp(-Math.min(.05,(now-lastFrame)/1000)*4);lastFrame=now;
+    if(!alive)return;const state=latest.current.view,now=performance.now(),dt=Math.min(.05,(now-lastFrame)/1000),alpha=1-Math.exp(-dt*4);lastFrame=now;
     if(latest.current.cameraKey!==lastCameraKey){lastCameraKey=latest.current.cameraKey;held=false;}
-    const photo=state.placePhoto?lulangSelectedPhoto(state):undefined,photoCoordinate=photo?.coordinate,photoMap=state.mode==='place'&&state.placeMedia==='map'&&Boolean(photoCoordinate);
+    const photo=state.placePhoto?lulangSelectedPhoto(state):undefined,photoCoordinate=photo?.coordinate,photoMap=state.mode==='place'&&Boolean(photoCoordinate);
     const localProgress=pilotConnectionProgress(state),lens=state.placeLens??'life',probe=state.sectionProgress??.5,filter=state.serviceFilter??'all';const culture=lulangCultureState(state),reference=cultureReferences[Math.min(cultureReferences.length-1,Math.max(0,Math.trunc(state.cultureSample??0)))]?.record??foodSample;let coordinate=along(state.progress);const position=at(coordinate,25);
     if(state.mode==='place'){
      const s=routeSampleSegment(branchFlat,localProgress),a=branch[s.index-1],b=branch[s.index],head=[THREE.MathUtils.lerp(a[0],b[0],s.fraction),THREE.MathUtils.lerp(a[1],b[1],s.fraction)];
@@ -123,6 +125,7 @@ export default function PilotRouteTerrain(props:Props){
      if(photoCoordinate){coordinate=[...photoCoordinate];position.copy(at(coordinate,30));}
     }
     cursor.position.copy(position);cursor.scale.setScalar(photoMap?1.8:Math.max(.4,camera.position.distanceTo(position)*.013));
+    if(travelled){travelled.visible=state.mode==='line';const key=Math.round(state.progress*1000);if(travelled.visible&&key!==travelKey){travelKey=key;const s=routeSampleSegment(flat,state.progress),previous=travelled.geometry;travelled.geometry=new LineGeometry();travelled.geometry.setPositions(coords.slice(0,s.index).concat([along(state.progress)]).flatMap(p=>at(p,22).toArray()));previous.dispose();}}
     approach.visible=state.mode!=='place';town.visible=state.mode==='place'&&lens!=='landscape'&&localProgress>0;built.visible=localProgress>=.65;junction.visible=state.mode==='place';nature.visible=state.mode==='place'&&lens==='landscape';serviceGroup.visible=state.mode==='place'&&lens!=='landscape'&&state.servicesVisible!==false;
     river.visible=state.mode==='place';const naturalReading=state.mode==='place'&&lens==='landscape';if(trunkLine){trunkLine.material.color.setHex(naturalReading?0xa8ada3:0x6adce1);trunkLine.material.opacity=naturalReading?.4:.95;}if(trunkOutline)trunkOutline.material.opacity=naturalReading?.3:.95;
     for(const line of riverLines)if(line){line.material.opacity=naturalReading?.95:.38;line.material.linewidth=naturalReading?4:2.5;}
@@ -141,15 +144,16 @@ export default function PilotRouteTerrain(props:Props){
     }else if(state.mode==='place'){
      const centre=at(photoCoordinate?[...photoCoordinate]:lens==='landscape'?local.riverPoint:culture.active&&reference?reference.coordinate:coords.at(-1)!);desiredTarget.copy(centre);const altitude=Math.max(state.height/1000,size.y*.01/(5*Math.tan(camera.fov*Math.PI/360)));desiredPosition.copy(centre).add(offset(altitude));
     }else{
-     const ahead=at(along(Math.min(1,state.progress+220/total))),behind=at(along(Math.max(0,state.progress-220/total))),direction=ahead.sub(behind);direction.y=0;direction.normalize();if(state.lookBack)direction.negate();
-     desiredTarget.copy(position).addScaledVector(direction,.85);desiredTarget.y+=.08;
-     const heading=Math.atan2(-direction.x,-direction.z)+bearing;
+     const travel=pilotTravelFrame(context.profile,state.progress,state.lookBack,mx);
+     desiredTarget.copy(at(travel.target.coordinate,110));
+     const heading=travel.heading+bearing;
      desiredPosition.copy(desiredTarget).add(offset(state.height/1000,heading));
+     desiredPosition.y=pilotSightlineHeight(desiredPosition,desiredTarget,(x,z)=>{const lon=x*1000/mx+lon0,lat=lat0-z*1000/mz;return lon>=west&&lon<=east&&lat>=south&&lat<=north?sample(lon,lat)/1000:undefined;});
     }
     if(!initialized){camera.position.copy(desiredPosition);controls!.target.copy(desiredTarget);initialized=true;}
     else if(!held){
      const current=new THREE.Spherical().setFromVector3(camera.position.clone().sub(controls!.target)),next=new THREE.Spherical().setFromVector3(desiredPosition.clone().sub(desiredTarget));
-     current.radius=THREE.MathUtils.lerp(current.radius,next.radius,alpha);current.phi=THREE.MathUtils.lerp(current.phi,next.phi,alpha);current.theta+=Math.atan2(Math.sin(next.theta-current.theta),Math.cos(next.theta-current.theta))*alpha;
+     current.radius=THREE.MathUtils.lerp(current.radius,next.radius,alpha);current.phi=THREE.MathUtils.lerp(current.phi,next.phi,alpha);const turn=Math.atan2(Math.sin(next.theta-current.theta),Math.cos(next.theta-current.theta))*alpha;current.theta+=latest.current.playing?THREE.MathUtils.clamp(turn,-dt*Math.PI/3,dt*Math.PI/3):turn;
      controls!.target.lerp(desiredTarget,alpha);camera.position.copy(controls!.target).add(new THREE.Vector3().setFromSpherical(current));
     }
     const eyeLon=camera.position.x*1000/mx+lon0,eyeLat=lat0-camera.position.z*1000/mz;
@@ -174,7 +178,7 @@ export default function PilotRouteTerrain(props:Props){
      pin.scale.setScalar(Math.max(1,camera.position.distanceTo(pin.position)*.01));
     }
     const ground=position.clone().project(camera),gx=(ground.x+1)*size.x/2,gy=(1-ground.y)*size.y/2;
-    groundLabel.hidden=!(ground.z>-1&&ground.z<1&&(photoMap?gx>80&&gx<size.x-80&&gy>150&&gy<size.y-100:state.elevation&&state.mode==='line'&&gx>130&&gx<size.x-130&&gy>280&&gy<size.y-140));
+    groundLabel.hidden=!(ground.z>-1&&ground.z<1&&(photoMap?size.x>400&&gx>80&&gx<size.x-80&&gy>150&&gy<size.y-100:state.elevation&&state.mode==='line'&&gx>130&&gx<size.x-130&&gy>280&&gy<size.y-140));
     if(!groundLabel.hidden){groundLabel.textContent=photoMap?`来源照片拍摄位置 · ${photo?.date}`:`当前位置 · 地表约${Math.round(sample(coordinate[0],coordinate[1])/10)*10} m`;groundLabel.style.left=`${gx}px`;groundLabel.style.top=`${gy-28}px`;}
     renderer!.render(scene!,camera);
     const key=`${Math.round(state.progress*1000)}:${state.mode}:${Math.round(localProgress*1000)}:${lens}:${Math.round(probe*1000)}:${state.cultureSample??0}:${state.placePhoto??''}`;

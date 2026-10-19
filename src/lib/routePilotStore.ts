@@ -14,7 +14,7 @@ function cameraSnapshot(view:any):Partial<PilotView>{
  return result;
 }
 function mediaSnapshot(view:any):Partial<PilotView>{
- return {...(Object.hasOwn(lulangLifePhotos,view.placePhoto)?{placePhoto:view.placePhoto}:{}),placeMedia:['map','town','process','daily','record'].includes(view.placeMedia)?view.placeMedia:'map',...(lulangFootage.some(f=>f.id===view.footageId)?{footageId:view.footageId}:{}),photoFocus:Math.trunc(clamp(view.photoFocus??0,0,3)),cookingProgress:clamp(view.cookingProgress??0),...(['making','supply','service'].includes(view.lifePhase)?{lifePhase:view.lifePhase}:{})};
+ return {...(Object.hasOwn(lulangLifePhotos,view.placePhoto)?{placePhoto:view.placePhoto}:{}),...(Object.hasOwn(lulangLifePhotos,view.photoOverlay)?{photoOverlay:view.photoOverlay}:{}),...(typeof view.photoReveal==='number'?{photoReveal:clamp(view.photoReveal)}:{}),placeMedia:['map','town','process','daily','record'].includes(view.placeMedia)?view.placeMedia:'map',...(lulangFootage.some(f=>f.id===view.footageId)?{footageId:view.footageId}:{}),photoFocus:Math.trunc(clamp(view.photoFocus??0,0,3)),cookingProgress:clamp(view.cookingProgress??0),...(['making','supply','service'].includes(view.lifePhase)?{lifePhase:view.lifePhase}:{})};
 }
 function snapshot(v:any):PilotReturn|undefined{
  if(!v||!Number.isInteger(v.beatIndex)||v.beatIndex<0||v.beatIndex>=routePilotCues.length||!v.view||!['whole','line','place'].includes(v.view.mode))return;

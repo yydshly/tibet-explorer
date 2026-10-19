@@ -34,6 +34,20 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('waits for the remounted terrain after returning from the notebook',()=>{
+  scene().onReady();render();expect(media.current.onSceneReady).toHaveBeenCalledTimes(1);
+  button('保存观察问题').onClick();render();button('保存并返回原线').onClick();render();
+  expect(media.current.onSceneReady).toHaveBeenCalledTimes(1);
+  scene().onReady();render();expect(media.current.onSceneReady).toHaveBeenCalledTimes(2);
+ });
+ it('preserves a paused native photo handoff through saved return, clearing it on a new manual observation',()=>{
+  media.current.beatIndex=2;const text=routePilotCues[2].narration;media.current.timing={textProgress:(text.indexOf('回到地图')+3)/text.length};
+  const stage=()=>find(render(),n=>n.props?.['aria-label']==='G318真实沿线三维观察');
+  expect(stage().props['data-photo-frame']).toBe(true);expect(scene().view.photoReveal).toBeCloseTo(.5);
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view.photoReveal).toBeCloseTo(.5);expect(stage().props['data-photo-frame']).toBe(true);
+  button('俯视线路').onClick();expect(scene().view.photoOverlay).toBeUndefined();expect(stage().props['data-photo-frame']).toBe(false);
+ });
  it('starts explicitly from the beginning with voice, keeping the existing observation text',()=>{
   saved.set(PILOT_NOTE_KEY,JSON.stringify({version:1,note:'keep these questions',returnTo:{beatIndex:1,raw:.43,voice:false,view:{mode:'line',height:3500,progress:.3}},skipPlaceOnce:true}));
   vi.stubGlobal('history',{state:null,replaceState:vi.fn()});vi.stubGlobal('location',{hash:'#'+routePilotPath+'?start=1',pathname:'/',search:''});

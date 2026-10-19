@@ -6,8 +6,8 @@ import LulangFootageStage from './LulangFootageStage';
 import LulangPhotoNarration from './LulangPhotoNarration';
 import type {PilotView} from '../data/routePilot';
 
-type Props={view:PilotView;onChange:(v:Partial<PilotView>)=>void;onBack:()=>void;manual?:boolean;interactionKey?:number;onPhotoFocus?:(focus:number)=>void};
-export default function LulangLifeStage({view,onChange,onBack,manual,interactionKey,onPhotoFocus}:Props){
+type Props={view:PilotView;onChange:(v:Partial<PilotView>)=>void;onBack:()=>void;manual?:boolean;interactionKey?:number;onPhotoFocus?:(focus:number)=>void;onPhotoReady?:(id:string)=>void};
+export default function LulangLifeStage({view,onChange,onBack,manual,interactionKey,onPhotoFocus,onPhotoReady}:Props){
  const media=view.placeMedia??'map',cooking=lulangCookingState(view);
  if(media==='map')return null;
  if(media==='record')return <LulangFootageStage view={view} onChange={onChange} onBack={onBack}/>;
@@ -22,7 +22,7 @@ export default function LulangLifeStage({view,onChange,onBack,manual,interaction
    <nav className="lulang-process-phases" aria-label="鲁朗制作与服务观察">{lulangLifePhases.map(p=><button key={p.id} aria-pressed={lulangLifePhase(view)===p.id} onClick={()=>change({lifePhase:p.id,...(p.id!=='supply'?{cultureSupply:true}:{})})}>{p.title}</button>)}</nav>
    <LulangProcessStage view={view} onChange={onChange}/>
   </>:<>
-   <div className="lulang-real-photo"><img src={photo.src} alt={`${photo.date}来源记录：${photo.title}`} draggable={false} style={frame}/><svg className="lulang-photo-marks" viewBox={`0 0 1000 ${1000/aspect}`} aria-hidden="true" style={frame}>{photo.features.map((f,i)=><g key={f.title} className={focus===i+1?'is-current':''}><circle cx={f.x*10} cy={f.y*10/aspect} r={focus===i+1?13:7}/>{focus===i+1&&<><path d={`M${f.x*10} ${f.y*10/aspect} l35 -28 h100`}/><text x={Math.min(850,f.x*10+40)} y={f.y*10/aspect-36}>{f.title}</text></>}</g>)}</svg></div>
+   <div className="lulang-real-photo"><img key={photo.id} src={photo.src} alt={`${photo.date}来源记录：${photo.title}`} onLoad={()=>onPhotoReady?.(photo.id)} draggable={false} style={frame}/><svg className="lulang-photo-marks" viewBox={`0 0 1000 ${1000/aspect}`} aria-hidden="true" style={frame}>{photo.features.map((f,i)=><g key={f.title} className={focus===i+1?'is-current':''}><circle cx={f.x*10} cy={f.y*10/aspect} r={focus===i+1?13:7}/>{focus===i+1&&<><path d={`M${f.x*10} ${f.y*10/aspect} l35 ${f.y<35?40:-28} h100`}/><text x={Math.min(850,f.x*10+40)} y={f.y*10/aspect+(f.y<35?64:-36)}>{f.title}</text></>}</g>)}</svg></div>
    <div className="lulang-photo-credit"><a href={photo.source} target="_blank" rel="noreferrer">{photo.author} · 原始来源</a><a href={photo.licenseUrl} target="_blank" rel="noreferrer">{photo.license}</a><span>仅作显示缩放与裁切；图片沿用原许可。</span></div>
    {manual&&onPhotoFocus&&<LulangPhotoNarration key={`${photo.id}:${interactionKey}`} photoId={photo.id as LulangPhotoId} onFocus={onPhotoFocus}/>}
   </>}
