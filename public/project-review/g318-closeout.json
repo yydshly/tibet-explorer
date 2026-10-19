@@ -211,5 +211,33 @@
     ],
     "evidence": "../review/g318-other-cues-20261019/",
     "stopRule": "本次有界问题修正后冻结；不继续无明确缺陷的镜头与模型打磨。"
+  },
+  "understandingAcceptance": {
+    "status": "prepared_not_conducted",
+    "baseProductCommit": "51f375fc242ebf540f6feda98e1739737908b4bb",
+    "plannedSessions": 3,
+    "completedSessions": 0,
+    "understandingPassed": false,
+    "tasks": [
+      {
+        "id": "R1",
+        "title": "看清翻山入谷",
+        "minutes": 3
+      },
+      {
+        "id": "R2",
+        "title": "进入鲁朗，认识空间与生活",
+        "minutes": 3
+      },
+      {
+        "id": "R3",
+        "title": "带走问题，再回到原处",
+        "minutes": 4
+      }
+    ],
+    "participant": "/project-review/first-viewer/g318-participant.html",
+    "protocol": "/project-review/first-viewer/g318-protocol.json",
+    "host": "/project-review/g318-closeout.html#understanding",
+    "stopRule": "三场固定基线；只修有证据的阻断，最多一轮失败任务复测；不增加模型或时长。"
   }
 }

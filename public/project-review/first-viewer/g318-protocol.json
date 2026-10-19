@@ -1,0 +1,131 @@
+{
+  "id": "G318-first-viewer-v1-20261019",
+  "status": "prepared_not_conducted",
+  "baseProductCommit": "51f375fc242ebf540f6feda98e1739737908b4bb",
+  "baseline": {
+    "route": "G318林芝—色季拉—鲁朗",
+    "clips": 4,
+    "seconds": 142.56,
+    "localScriptVersion": "6",
+    "overviewChapters": 6,
+    "overviewClips": 21,
+    "overviewSeconds": 750.024,
+    "cueManifestSha256": "aa32de3522306e08fd854fb2de586951b6480dac455231689417f09adf4ced9d",
+    "routeRecordings": [
+      {
+        "cueId": "ROUTE-G318-orientation",
+        "duration": 32.724,
+        "sha256": "86d1742b9e2f9341b2cefe6d47c7a61fddd3c817384b2947960da3b371983e47",
+        "subtitleUrl": "/assets/audio/narration/770f75f023eaffb01d872e15f31d1dc6dbd22b3d81d1d5278fdf4b48844bdd2b.subtitles.json"
+      },
+      {
+        "cueId": "ROUTE-G318-mountains",
+        "duration": 41.976,
+        "sha256": "8b49ffa3f84300f9cad7d29d2aad770d2682331f34685f7f3bee719dbb863c27",
+        "subtitleUrl": "/assets/audio/narration/ff1faa559d2c8ed23f8812fea6e1544e3b11698e95e423ab2b38b0d11c109c2b.subtitles.json"
+      },
+      {
+        "cueId": "ROUTE-G318-lulang",
+        "duration": 37.476,
+        "sha256": "0fd5afc96a0f7985f279ccd9d805bdd13aeae7ed3ec6b0d1627496870f66d8e6",
+        "subtitleUrl": "/assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.subtitles.json"
+      },
+      {
+        "cueId": "ROUTE-G318-return",
+        "duration": 30.384,
+        "sha256": "42e85b3eeed3512d9ea325260c589cc33cccfcd6d6c19ca2f12fa4eded1ca063",
+        "subtitleUrl": "/assets/audio/narration/3c26f4c5e96334079001f4ed527ead133161aac20c952fa3e160dce38ca375a9.subtitles.json"
+      }
+    ]
+  },
+  "plannedSessions": 3,
+  "completedSessions": 0,
+  "understandingPassed": false,
+  "sessionMinutes": 15,
+  "tasks": [
+    {
+      "id": "R1",
+      "title": "看清翻山入谷",
+      "minutes": 3,
+      "stop": "观看山地段后，先说理解，再发任务。",
+      "firstQuestion": "这段路怎样进入鲁朗？你从画面看到了什么变化，依据在哪里？",
+      "task": "在同一条线路上自行选择两个位置，比较高低和视野。指出哪里在升高、哪里进入谷地；试着在同一位置看两个方向，再回到刚才的讲述。",
+      "questions": [
+        "你改变了什么，哪些条件没有改变？请指着画面说明。",
+        "这些读数能说明什么，还不能说明什么？"
+      ],
+      "hostCriteria": {
+        "understanding": "能用地表高差、道路绕行或山体遮挡解释至少一种视野变化；不只复述高低标签。",
+        "visual": "指认源道路与同尺度高程对照，两个位置的判断与当时读数一致；同点转向时位置保持。",
+        "boundary": "知道读数是沿线DSM地表样本，不把它当城市平均海拔或实测山口；认识到这是地图观察。",
+        "operation": "独立改变位置与方向；恢复原讲述时镜头、字幕与原句对应。"
+      },
+      "runtimeCues": [
+        "ROUTE-G318-orientation",
+        "ROUTE-G318-mountains"
+      ]
+    },
+    {
+      "id": "R2",
+      "title": "进入鲁朗，认识空间与生活",
+      "minutes": 3,
+      "stop": "进入鲁朗后，由观看者自己观察和回看。",
+      "firstQuestion": "这里有什么特点？哪些是你直接看见的，哪些是资料告诉你的？",
+      "task": "进入鲁朗，在地图与实拍中找到河流、道路和房屋的一处关系。再选一幅已有生活画面，说明其中可见的活动。查看相应资料，指出仍不能确定的内容。",
+      "questions": [
+        "从来路进入地方，还经过哪些连接？画面哪里能支持你的说明？",
+        "生活照片与所引用的风俗资料，是同一时间、同一现场吗？你怎样核对？"
+      ],
+      "hostCriteria": {
+        "understanding": "说明至少一个道路接续、聚落空间或门前活动的关系与使用方式；不把自然条件直接说成文化形成的唯一原因。",
+        "visual": "至少准确指认两个有关系的对象，并说明一处实际可见的连接或共同使用；不能只复述语音。",
+        "boundary": "区分2024河谷实拍、2008街边照片与2018文字记录；知道未展示工布新年现场，现状要素显露不是历史施工复原。允许自行查来源，不考记日期。",
+        "operation": "独立进入地方、选择对象或生活画面；操作有明确对应变化，主讲述暂停。"
+      },
+      "runtimeCues": [
+        "ROUTE-G318-lulang"
+      ]
+    },
+    {
+      "id": "R3",
+      "title": "带走问题，再回到原处",
+      "minutes": 4,
+      "stop": "保持观看者刚才选中的照片与对象，不替其重置。",
+      "firstQuestion": "你准备进一步观察什么？这个问题来自刚才的哪处画面或资料？",
+      "task": "把刚才的对象带入观察计划，写一个自己的问题，查看资料出处，保存并刷新。确认记录还在后，返回同一画面和对象，再回到进入鲁朗之前的原路段、原句并继续。",
+      "questions": [
+        "保存了哪些内容？刷新和返回后，你怎样确认没有丢失位置？",
+        "这份计划还缺哪些核实，才能用于实际出行？"
+      ],
+      "hostCriteria": {
+        "understanding": "问题对应刚才可指认的对象、空间关系或待核实原因，不只写景点名称或抄任务。",
+        "visual": "计划的照片、选中对象、资料出处与进入前一致；返回同一照片标注，再回原路段与字幕短句。",
+        "boundary": "知道这是本地资料观察计划，不能当已核实的实时路况、开放、酒店入口或旅行行程。",
+        "operation": "独立完成带入、编辑、查源、保存、刷新、照片返回、原线原句返回与继续。记录前后片段、进度、字幕和对象；任何丢失、错段或需要代操作都不能计独立完成。"
+      },
+      "runtimeCues": [
+        "ROUTE-G318-lulang",
+        "ROUTE-G318-return"
+      ]
+    }
+  ],
+  "rules": [
+    "P01—P03只是空白记录编号，未招募、未进行，不是实际观看者。",
+    "用未参与开发、未看过该版本的人分别体验；记录已有地理和地图经验，不据此挑容易通过的人。",
+    "每人使用自己的独立会话；不要清除现有用户的计划。新标签页仍可能共用存储。",
+    "只读任务，不指出按钮位置，不提供答案；先逐字记录首次回答，再允许自行操作、回看和查源。帮助后完成单独记录，不算独立完成。",
+    "90秒无进展可询问是否需要帮助，到单任务时间盒即记录卡点；不边测边改版本。",
+    "三场后统一判定，同一个人的理解、指认、边界、操作证据不能拆给不同人拼凑通过。",
+    "同一版本三场均完成，R1/R2各至少2人独立说清并指认，R3三人均独立完成；无未纠正关键误解、保存丢失、错段或音画错指，才可称本轮小样本理解验收通过。",
+    "这是小样本收口标准，不代表全部用户。空白或技术中断记待完成，不能删掉不利场次后宣布通过。",
+    "仅修有原话或操作证据的阻断；偏好与素材不足留到后续。最多一轮只复测失败任务及相邻衔接；复测不冒称首次观看。仍失败就公开未通过并停止本版打磨。",
+    "真实观看者记录应保存在测试负责人的本地文件，不自动上传、录音或写入公共仓库。"
+  ],
+  "technicalEvidence": "/project-review/g318-closeout.json",
+  "limitations": [
+    "本包未执行真实观看者场次。",
+    "开发者操作通过不能代替原因解释或首次观看者理解。",
+    "连续实地和工布风俗现场影像仍不足；任务不得要求从未展示的材料中读出结论。",
+    "本轮不重验或修改冻结六章，不增加景点、模型、录音、讲述时长。"
+  ]
+}
