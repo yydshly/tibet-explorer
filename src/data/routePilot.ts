@@ -7,7 +7,7 @@ export const pilotScriptVersions=['1','1','5','1'] as const;
 export const pilotResumeAliases={'ROUTE-G318-lulang':'ROUTE-G318-lulang'};
 export const routePilotIdentity='g318-real-corridor-v1';
 export const routePilotSources=[
- {title:'本版取舍：风景—聚落—生活—人文的镜头与资料',url:'/project-review/lulang-journey.html'},
+ {title:'本段范围、实景覆盖与收口记录',url:'/project-review/g318-closeout.html'},
  {title:'实景照片、公开活动原片与使用边界',url:'/data/lulang-life-media.json'},
  {title:'林芝市旅游发展局：2018年鲁朗工布新年活动记录',url:'https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/201811/b61aecd556d74753bdfb26b2210c73de.shtml'},
  {title:'林芝市政府：G318林芝段地理',url:'https://www.linzhi.gov.cn/linzhi/zmlz/201812/bc6ff62e851d4e97bd808c157857485c.shtml'},

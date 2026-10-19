@@ -68,7 +68,7 @@ function PilotPlayback(){
  const onReading=useCallback((r:PilotReading)=>setReading(r),[]);
  const onContext=useCallback((c:PilotTerrainContext)=>setContext(c),[]);
  const onInteract=useCallback(()=>director.pause(),[director.pause]);
- const change=(patch:Partial<PilotView>)=>{director.pause();setOverride({...view,...(view.mode==='place'?{photoOverlay:undefined,photoReveal:1}:{}),...patch});setCameraKey(k=>k+1);setStatus('观察已暂停原句；继续讲述时恢复原来的线路位置与条件。');};
+ const change=(patch:Partial<PilotView>)=>{director.pause();setOverride({...view,arrivalProgress:undefined,returnProgress:undefined,...(view.mode==='place'?{photoOverlay:undefined,photoReveal:1}:{}),...patch});setCameraKey(k=>k+1);setStatus('观察已暂停原句；继续讲述时恢复原来的线路位置与条件。');};
  const play=()=>{if(!director.wantsPlayback)director.setVoice(true);setOverride(undefined);setCameraKey(k=>k+1);const next={...readPilotNote(),returnTo:undefined};writePilotNote(next);setNote(next);director.playPause();};
  const photoFocus=useCallback((focus:number)=>setOverride(previous=>previous&&previous.photoFocus!==focus?{...previous,photoFocus:focus}:previous),[]);
  const select=(i:number)=>{const next={...readPilotNote(),skipPlaceOnce:false,returnTo:undefined,lineReturn:undefined};writePilotNote(next);setNote(next);setLineReturn(undefined);setOverride(undefined);setCameraKey(k=>k+1);director.select(i);};

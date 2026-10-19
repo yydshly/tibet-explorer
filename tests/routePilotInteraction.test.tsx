@@ -34,6 +34,18 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('clears native transit when exploring manually, then restores the original return words and phase',()=>{
+  media.current.beatIndex=2;media.current.raw=.98;media.current.timing={textProgress:.99};
+  const original={...scene().view};expect(original.returnProgress).toBeGreaterThan(0);
+  const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
+  local().props.onChange({placePhoto:'daily',placeMedia:'daily',placeLens:'culture',photoFocus:1});
+  expect(scene().view.returnProgress).toBeUndefined();expect(scene().view.arrivalProgress).toBeUndefined();
+  expect(media.current.raw).toBe(.98);
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view.returnProgress).toBeUndefined();expect(scene().view.placePhoto).toBe('daily');
+  media.current.timing={textProgress:.99}; // Provider clock after seeking back to the saved sentence.
+  button('恢复原条件并继续').onClick();expect(scene().view).toEqual(original);expect(media.current.raw).toBe(.98);
+ });
  it('waits for the remounted terrain after returning from the notebook',()=>{
   scene().onReady();render();expect(media.current.onSceneReady).toHaveBeenCalledTimes(1);
   button('保存观察问题').onClick();render();button('保存并返回原线').onClick();render();

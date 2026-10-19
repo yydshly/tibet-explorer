@@ -3,7 +3,7 @@ import {lulangLenses,type LulangServiceFilter} from '../data/lulangPlace';
 import {lulangCultureReferences} from '../data/lulangCulture';
 import {lulangLifePhase,lulangLifeRecord,lulangSelectedPhoto,lulangLifePhotos,type LulangPhotoId,lulangCookingState,lulangCookingSteps} from '../data/lulangLife';
 import {selectedLulangFootage} from '../data/lulangFootage';
-import {lulangCustomsSource} from '../data/lulangFieldMedia';
+import {lulangCustomsSource,lulangTownSource} from '../data/lulangFieldMedia';
 import type {PilotView} from '../data/routePilot';
 import type {LulangPlaceData} from '../scene/lulangPlaceData';
 
@@ -29,8 +29,8 @@ export default function LulangPlaceControls({view,data,onChange}:Props){
   </>:lens==='culture'?<>
    <div className="pilot-culture-controls">
     <strong>{view.placeMedia==='process'?`饮食选读 · ${phase==='making'?lulangCookingSteps[lulangCookingState(view).step].title:phase==='supply'?'供货条件':'经营与接待'}`:'共同参与的节庆生活'}</strong>
-    <p>工布响箭把竞赛、服饰、歌舞和共同庆祝联系起来。鲁朗地方报道记有相应活动，影像对照保留其真实拍摄范围。</p>
-    <div className="pilot-culture-record"><span>{lulangCustomsSource.date} · 鲁朗地方报道</span><p>报道记有鲁朗的响箭与歌舞活动。节庆提供共同参与和交流的场合；不把旅游体验当成所有居民的日常。</p><a href={lulangCustomsSource.url} target="_blank" rel="noreferrer">阅读原始报道</a></div>
+    <p>街边日常看空间如何被使用，节庆看共同参与；当代旅游小镇还包含规划建设，不能把全部建筑当作古村。</p>
+    <div className="pilot-culture-record"><span>{lulangCustomsSource.date} · 鲁朗地方报道</span><p>报道记录了鲁朗扎西岗村的响箭体验和工布歌舞。地区影像帮助辨认参与方式，不作为这次本地活动的现场画面。</p><a href={lulangCustomsSource.url} target="_blank" rel="noreferrer">扎西岗活动记录</a> · <a href={lulangTownSource.url} target="_blank" rel="noreferrer">2016年小镇建设与试运营记录</a></div>
     <div><button onClick={()=>onChange({placeMedia:'daily',placePhoto:'daily',photoFocus:0})}>看街边日常</button><button onClick={()=>onChange({placeMedia:'record',footageId:'banquet-2026'})}>看当代活动原片</button></div>
     {photo&&<small>{photo.date} · {photo.author} · {photo.license}。{photo.kind==='video-still'?photo.scope:'真实照片保留其年代和拍摄范围，不代表所有居民或全年风俗。'}</small>}
     {view.placeMedia==='process'&&<div className="pilot-culture-record"><span>{record.date}</span><p>{record.text}</p><a href={record.url} target="_blank" rel="noreferrer">查看饮食专题材料</a></div>}

@@ -18,6 +18,10 @@ describe('continuous route/place reading',()=>{
   const end=pilotNarratedView(2,local,1,.668);expect(end).toMatchObject({connectionProgress:0,returnProgress:1});
   expect(pilotSpatialStory(end)).toMatchObject({returning:true,title:'沿地方道路，接回国道来路'});
  });
+ it('keeps grassland observations at landscape scale instead of treating livestock as a road reference',()=>{
+  expect(pilotSpatialStory(at('草地与放牧'))).toMatchObject({focus:'relief',title:'林地与草地 → 生产生活'});
+  expect(pilotSpatialStory({...at('草地与放牧'),placePhoto:'meadow'})).toMatchObject({focus:'relief',title:'溪流与草地 → 使用空间'});
+ });
  it('returns monotonically along source route distance, ending at the exact paused origin',()=>{
   let previous=1;for(let elapsed=0;elapsed<=2200;elapsed+=100){const frame=pilotReturnTravel(1,.668,elapsed);expect(frame.progress).toBeLessThanOrEqual(previous);expect(frame.progress).toBeGreaterThanOrEqual(.668);previous=frame.progress;}
   expect(pilotReturnTravel(1,.668,0)).toEqual({progress:1,lift:0,done:false});
