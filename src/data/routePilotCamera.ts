@@ -1,6 +1,6 @@
 import type {PilotView} from './routePilot';
 
-type Shot={at:string;pitch:number;bearing:number;height:number;zoom?:number;focus?:number;weight?:number;elevation?:boolean};
+type Shot={at:string;pitch:number;bearing:number;height:number;zoom?:number;focus?:number;weight?:number;context?:number;elevation?:boolean};
 /** Shot timing belongs to the existing narration, including pause/reverse seek.
  * No orbit timer, invented geography or new playback duration. */
 export function pilotNarratedCamera(index:number,text:string,progress:number,high:number):Partial<PilotView>{
@@ -14,12 +14,15 @@ export function pilotNarratedCamera(index:number,text:string,progress:number,hig
    {at:'现在沿道路前进',pitch:40,bearing:0,height:2500},
   ],
   [
-   {at:'',pitch:40,bearing:0,height:2500},
-   {at:'身边地面逐渐抬高',pitch:27,bearing:22,height:2800,elevation:true},
-   {at:'停在山地观察点',pitch:30,bearing:0,height:3000,elevation:true},
-   {at:'这里按沿线',pitch:49,bearing:0,height:3000,elevation:true},
-   {at:'继续向鲁朗',pitch:37,bearing:-10,height:2800},
-   {at:'接下来进入鲁朗',pitch:56,bearing:-20,height:3000},
+   {at:'',pitch:40,bearing:0,height:2500,context:0},
+   {at:'身边地面逐渐抬高',pitch:36,bearing:0,height:3000,context:.6,elevation:true},
+   {at:'停在山地观察点',pitch:35,bearing:0,height:3000,context:0,elevation:true},
+   {at:'这里按沿线',pitch:42,bearing:0,height:3000,context:1,elevation:true},
+   {at:'高处较开阔',pitch:35,bearing:0,height:3000,context:.25,elevation:true},
+   {at:'继续向鲁朗',pitch:40,bearing:0,height:2800,context:1},
+   {at:'道路进入另一侧谷地',pitch:42,bearing:0,height:3000,context:.6},
+   {at:'地形、季节',pitch:45,bearing:0,height:3000,context:.18},
+   {at:'接下来进入鲁朗',pitch:56,bearing:-20,height:3000,context:0},
   ],
   [
    {at:'',pitch:56,bearing:-20,height:3000},
@@ -41,7 +44,7 @@ export function pilotNarratedCamera(index:number,text:string,progress:number,hig
  // Complete the move early in each phrase, then leave time to read the place.
  const f=a===b?1:Math.max(0,Math.min(1,(position-b.offset)/Math.max(1,Math.min(12,(end-b.offset)*.42)))),t=f*f*(3-2*f);
  const mix=(x:number,y:number)=>x+(y-x)*t;
- return {height:mix(a.height,b.height),cameraPitch:mix(a.pitch,b.pitch),cameraBearing:mix(a.bearing,b.bearing),mapZoom:mix(a.zoom??1,b.zoom??1),mapFocus:mix(a.focus??0,b.focus??0),mapFocusWeight:mix(a.weight??0,b.weight??0),elevation:b.elevation===true};
+ return {height:mix(a.height,b.height),cameraPitch:mix(a.pitch,b.pitch),cameraBearing:mix(a.bearing,b.bearing),mapZoom:mix(a.zoom??1,b.zoom??1),mapFocus:mix(a.focus??0,b.focus??0),mapFocusWeight:mix(a.weight??0,b.weight??0),routeContext:mix(a.context??0,b.context??0),elevation:b.elevation===true};
 }
 
 export const pilotCameraPresets={

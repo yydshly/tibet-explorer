@@ -5,9 +5,9 @@ const find=(node:any,test:(n:any)=>boolean):any=>{if(!node||typeof node!=='objec
 it('exposes real-photo objects to pointer and keyboard selection rather than hiding the interactive SVG',()=>{
  const onChange=vi.fn(),tree=LulangLifeStage({view:{mode:'place',progress:1,height:2500,connections:true,lookBack:false,placeMedia:'town',placePhoto:'town'},spatial:true,onChange,onBack:vi.fn()});
  const svg=find(tree,n=>n.type==='svg'&&n.props.className==='lulang-photo-marks');expect(svg.props['aria-hidden']).toBeUndefined();
- const road=find(svg,n=>n.props?.['aria-label']==='在同一地形观察道路');expect(road.props.role).toBe('button');expect(road.props.tabIndex).toBe(0);
+ const road=find(svg,n=>n.props?.['aria-label']==='观察实拍中的道路');expect(road.props.role).toBe('button');expect(road.props.tabIndex).toBe(0);
  road.props.onClick();expect(onChange).toHaveBeenLastCalledWith({photoFocus:2});
- const preventDefault=vi.fn(),house=find(svg,n=>n.props?.['aria-label']==='在同一地形观察房屋');house.props.onKeyDown({key:'Enter',preventDefault});
+ const preventDefault=vi.fn(),house=find(svg,n=>n.props?.['aria-label']==='观察实拍中的房屋');house.props.onKeyDown({key:'Enter',preventDefault});
  expect(preventDefault).toHaveBeenCalledOnce();expect(onChange).toHaveBeenLastCalledWith({photoFocus:3});
 });
 it('does not embed an unchecked publisher player through an old record entry',()=>{

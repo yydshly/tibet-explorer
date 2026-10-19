@@ -104,5 +104,30 @@
       "applicationErrors": 0
     },
     "evidenceDirectory": "../review/g318-footage-acquisition-20261019/ (workspace-local, excluded previews not bundled in product)"
+  },
+  "visualUnderstandingCloseout": {
+    "date": "2026-10-19",
+    "state": "M1-M3-bounded-batch-closed",
+    "implemented": [
+      "same-camera source-road near/context/descent framing with three source-height anchors",
+      "real photo becomes main observation; same live terrain becomes locator",
+      "large photo object marks and direct pointer/keyboard selection",
+      "Gongbo customs remain documentary extension, not the current street-photo event"
+    ],
+    "unchanged": "4 clips/142.560s;339 audio objects; six chapters6/21/750.024s; source GIS/imagery/models",
+    "checks": "53 passed across8 files, typecheck and production build passed",
+    "browser": {
+      "naturalPlayback": "All4 beats from gateway-start to final100%, discrete caption/object samples, not continuous frame capture",
+      "targetedFix": "High-point label could fall behind comparison header; fixed and rechecked without another full replay",
+      "plan": "Original note saved/refreshed unchanged, road photo focus and raw0.43839449247518414 restored",
+      "return": "Original mountains raw0.43,48.1km,routeContext1,pitch42,bearing0,height3000/elevation restored",
+      "errors": 0
+    },
+    "evidence": "../review/g318-visual-closeout-20261019/verification.json (workspace evidence)",
+    "remaining": [
+      "No continuous local video or Gongbo-festival field footage added",
+      "No system-output audio loopback or first-viewer comprehension claim"
+    ],
+    "stop": "Freeze this batch; free clean local footage is a separate next-phase gate, no new camera/model/button polish."
   }
 }

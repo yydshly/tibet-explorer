@@ -12,7 +12,7 @@ import {pilotElevationSampler,pilotTerrainContext,type PilotTerrainContext} from
 import {lulangPlaceData} from './lulangPlaceData';
 import type {LulangLens} from '../data/lulangPlace';
 import {createPilotElevationGuide,pilotElevationMaterial,pilotElevationDatum} from './pilotElevationGuide';
-import {pilotTravelFrame,pilotSightlineHeight} from './pilotTravelFrame';
+import {pilotTravelFrame,pilotSightlineHeight,pilotCorridorFrame} from './pilotTravelFrame';
 import {pilotSpatialStory,pilotReturnTravel} from '../data/pilotSpatialStory';
 
 type Coord=readonly number[];
@@ -45,6 +45,8 @@ export default function PilotRouteTerrain(props:Props){
    const lengths=routeArcLengths(flat),total=lengths.total;
    const high=context.highestIndex,branchStart=context.connectionStartIndex;
    const highProgress=lengths.cumulative[high]/total;
+   const roadBounds=new THREE.Box3().setFromPoints(coords.map(p=>at(p)));
+   const corridorCorners=[roadBounds.min,roadBounds.max];
    const along=(p:number)=>{const s=routeSampleSegment(flat,p),a=coords[s.index-1],b=coords[s.index];return [THREE.MathUtils.lerp(a[0],b[0],s.fraction),THREE.MathUtils.lerp(a[1],b[1],s.fraction)];};
    renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(1.5,devicePixelRatio));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setClearColor(0xb0c2c4);el.append(renderer.domElement);
    scene=new THREE.Scene();scene.background=new THREE.Color(0xabbfc2);
@@ -148,9 +150,10 @@ export default function PilotRouteTerrain(props:Props){
     for(const line of riverLines)if(line){line.material.opacity=state.mode==='place'?(naturalReading?1:.48):arrival;line.material.linewidth=naturalReading?5:3;}
     for(const layer of serviceLayers)layer.points.visible=filter==='all'||filter===layer.kind;
     const elevationKind=state.mode==='place'?'section':'route';
-    elevationMaterial.amount.value=state.elevation ? .48 : 0;
+    const routeContext=state.mode==='line'?THREE.MathUtils.clamp(state.routeContext??0,0,1):0;
+    elevationMaterial.amount.value=state.elevation ? .24 : 0;
     routeElevation.visible=state.elevation===true&&elevationKind==='route';sectionElevation.visible=state.elevation===true&&elevationKind==='section';
-    for(const stem of elevationStems)stem.line.visible=state.elevation===true&&stem.kind===elevationKind||arrival>0&&stem.kind==='route'&&stem.name!=='林芝附近';
+    for(const stem of elevationStems)stem.line.visible=state.elevation===true&&stem.kind===elevationKind||routeContext>.4&&stem.kind==='route'||arrival>0&&stem.kind==='route'&&stem.name!=='林芝附近';
     const pitch=THREE.MathUtils.degToRad(state.cameraPitch??(state.mode==='whole'?53:state.mode==='place'?39:51)),bearing=THREE.MathUtils.degToRad(state.cameraBearing??0);
     const offset=(height:number,heading=bearing)=>new THREE.Vector3(Math.sin(heading)*height/Math.tan(pitch),height,Math.cos(heading)*height/Math.tan(pitch));
     if(state.mode==='whole'){
@@ -167,6 +170,11 @@ export default function PilotRouteTerrain(props:Props){
      const heading=travel.heading+bearing;
      desiredPosition.copy(desiredTarget).add(offset(state.height/1000+(flight?.lift??0),heading));
      desiredPosition.y=pilotSightlineHeight(desiredPosition,desiredTarget,(x,z)=>{const lon=x*1000/mx+lon0,lat=lat0-z*1000/mz;return lon>=west&&lon<=east&&lat>=south&&lat<=north?sample(lon,lat)/1000:undefined;});
+     if(routeContext>0){
+      const overview=pilotCorridorFrame(corridorCorners,camera.aspect,state.cameraPitch??40,state.cameraBearing??0);
+      desiredTarget.lerp(new THREE.Vector3(overview.target.x,overview.target.y,overview.target.z),routeContext);
+      desiredPosition.lerp(new THREE.Vector3(overview.position.x,overview.position.y,overview.position.z),routeContext);
+     }
     }
     if(!initialized){camera.position.copy(desiredPosition);controls!.target.copy(desiredTarget);initialized=true;}
     else if(!held){
@@ -177,22 +185,23 @@ export default function PilotRouteTerrain(props:Props){
     const eyeLon=camera.position.x*1000/mx+lon0,eyeLat=lat0-camera.position.z*1000/mz;
     if(eyeLon>=west&&eyeLon<=east&&eyeLat>=south&&eyeLat<=north)camera.position.y=Math.max(camera.position.y,sample(eyeLon,eyeLat)/1000+.2);
     controls!.update();
-    // Keep the valley live. Move its reading target clear of the field evidence,
-    // not to an unrelated photo camera. No implied image/map registration.
-    const compact=el.clientWidth<650;frameX=THREE.MathUtils.lerp(frameX,compact?0:field*.19,alpha);frameY=THREE.MathUtils.lerp(frameY,compact?field*.19:0,alpha);
+    // The same canvas becomes the locator while the real photograph leads.
+    // No unrelated camera position or image/map registration is implied.
+    frameX=THREE.MathUtils.lerp(frameX,0,alpha);frameY=THREE.MathUtils.lerp(frameY,0,alpha);
     camera.setViewOffset(size.x,size.y,size.x*frameX,size.y*frameY,size.x,size.y);
     const occupied:{x:number;y:number;w:number}[]=[];
     for(const {pin,div,leader,index,local:localOnly,lenses,category,elevationOnly} of pins){
      if(category==='food'&&foodSample){pin.position.copy(at(culture.active&&reference?reference.coordinate:foodSample.coordinate,30));div.textContent=culture.active?'参照餐饮 · 归档位置':'石锅鸡餐饮 · 地图记录';}
      const p=pin.position.clone().project(camera),x=(p.x+1)*size.x/2,y=(1-p.y)*size.y/2;
-     const relevant=elevationOnly?state.elevation===true&&elevationOnly===elevationKind||arrival>0&&elevationOnly==='route'&&!div.textContent?.startsWith('林芝附近'):(!state.elevation||index>1)&&(!culture.active||Boolean(category))&&(!lenses||state.mode==='place'&&lenses.includes(lens)||arrival>0&&index===4)&&(!category||serviceGroup.visible&&(filter==='all'||category===filter))&&(!localOnly||town.visible&&built.visible&&field===0)&&!(field>0&&index===4&&story.focus==='river');
+     const relevant=elevationOnly?state.elevation===true&&elevationOnly===elevationKind||routeContext>.4&&elevationOnly==='route'||arrival>0&&elevationOnly==='route'&&!div.textContent?.startsWith('林芝附近'):(!state.elevation||index>1)&&(!culture.active||Boolean(category))&&(!lenses||state.mode==='place'&&lenses.includes(lens)||arrival>0&&index===4)&&(!category||serviceGroup.visible&&(filter==='all'||category===filter))&&(!localOnly||town.visible&&built.visible&&field===0)&&!(field>0&&index===4&&story.focus==='river');
      const show=relevant&&p.z>-1&&p.z<1&&x>15&&x<size.x-15&&y>130&&y<size.y-105;
      pin.visible=relevant;
      div.hidden=!show;leader.hidden=!show;
      if(show){
       const w=div.offsetWidth,offset=state.mode==='place'?(index===2?-130:localOnly?130:category==='food'?(culture.active?-220:-120):category==='lodging'?120:0):0,lx=Math.max(w/2+12,Math.min(size.x-w/2-12,x+offset));let ly=y-32;
-      for(let i=0;i<5&&occupied.some(o=>Math.abs(o.y-ly)<34&&Math.abs(o.x-lx)<(w+o.w)/2+8);i++)ly-=36;
-      if(state.elevation&&lx-w/2<280&&ly<255)ly=270;
+      if(state.mode==='line'&&ly<240)ly=246;
+      if(state.mode!=='line'&&state.elevation&&lx-w/2<280&&ly<255)ly=270;
+      for(let i=0;i<5&&occupied.some(o=>Math.abs(o.y-ly)<34&&Math.abs(o.x-lx)<(w+o.w)/2+8);i++)ly+=state.mode==='line'?36:-36;
       if(ly<140)ly=y+36;occupied.push({x:lx,y:ly,w});
       div.style.left=`${lx}px`;div.style.top=`${ly}px`;
       const dy=ly-y,dx=lx-x;leader.style.left=`${x}px`;leader.style.top=`${y}px`;leader.style.width=`${Math.hypot(dx,dy)}px`;leader.style.transform=`rotate(${Math.atan2(dy,dx)}rad)`;

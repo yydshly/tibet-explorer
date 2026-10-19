@@ -34,6 +34,13 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('preserves the broad valley comparison through a notebook return and clears it for manual local framing',()=>{
+  const text=routePilotCues[1].narration;media.current.timing={textProgress:(text.indexOf('这里按沿线')+13)/text.length};
+  const original={...scene().view};expect(original.routeContext).toBe(1);
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toEqual(original);
+  button('斜看山谷').onClick();expect(scene().view.routeContext).toBe(0);
+ });
  it('clears native transit when exploring manually, then restores the original return words and phase',()=>{
   media.current.beatIndex=2;media.current.raw=.98;media.current.timing={textProgress:.99};
   const original={...scene().view};expect(original.returnProgress).toBeGreaterThan(0);

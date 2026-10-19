@@ -9,7 +9,7 @@ export type PilotNote={version:1;note:string;returnTo?:PilotReturn;lineReturn?:P
 const clamp=(n:unknown,a=0,b=1)=>typeof n==='number'&&Number.isFinite(n)?Math.max(a,Math.min(b,n)):a;
 function cameraSnapshot(view:any):Partial<PilotView>{
  const result:Partial<PilotView>={};
- for(const [key,min,max] of [['cameraPitch',20,82],['cameraBearing',-180,180],['mapZoom',.15,2],['mapFocus',0,1],['mapFocusWeight',0,1],['arrivalProgress',0,1],['returnProgress',0,1]] as const){if(typeof view[key]==='number'&&Number.isFinite(view[key]))result[key]=clamp(view[key],min,max);}
+ for(const [key,min,max] of [['cameraPitch',20,82],['cameraBearing',-180,180],['mapZoom',.15,2],['mapFocus',0,1],['mapFocusWeight',0,1],['routeContext',0,1],['arrivalProgress',0,1],['returnProgress',0,1]] as const){if(typeof view[key]==='number'&&Number.isFinite(view[key]))result[key]=clamp(view[key],min,max);}
  if(typeof view.elevation==='boolean')result.elevation=view.elevation;
  return result;
 }

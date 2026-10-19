@@ -1,6 +1,23 @@
 import type {PilotProfilePoint} from './routePilotTerrainData';
 type Point={x:number;y:number;z:number};
 const clamp=(n:number,a=0,b=1)=>Math.max(a,Math.min(b,n));
+/** Fit the existing road's 3D bounds, including its real height range. This
+ * changes only the virtual camera; neither road vertices nor heights change. */
+export function pilotCorridorFrame(points:readonly Point[],aspect:number,pitchDegrees:number,bearingDegrees=0){
+ const xs=points.map(p=>p.x),ys=points.map(p=>p.y),zs=points.map(p=>p.z);
+ const min={x:Math.min(...xs),y:Math.min(...ys),z:Math.min(...zs)},max={x:Math.max(...xs),y:Math.max(...ys),z:Math.max(...zs)};
+ const target={x:(min.x+max.x)/2,y:(min.y+max.y)/2,z:(min.z+max.z)/2};
+ const pitch=pitchDegrees*Math.PI/180,bearing=bearingDegrees*Math.PI/180;
+ const eye={x:Math.sin(bearing)*Math.cos(pitch),y:Math.sin(pitch),z:Math.cos(bearing)*Math.cos(pitch)};
+ const right={x:Math.cos(bearing),y:0,z:-Math.sin(bearing)},up={x:-Math.sin(bearing)*Math.sin(pitch),y:Math.cos(pitch),z:-Math.cos(bearing)*Math.sin(pitch)};
+ const tanY=Math.tan(23*Math.PI/180)*.82,tanX=tanY*Math.max(.1,aspect);
+ let distance=0;
+ for(const x of [min.x,max.x])for(const y of [min.y,max.y])for(const z of [min.z,max.z]){
+  const p={x:x-target.x,y:y-target.y,z:z-target.z},dot=(v:Point)=>p.x*v.x+p.y*v.y+p.z*v.z;
+  distance=Math.max(distance,dot(eye)+Math.max(Math.abs(dot(right))/tanX,Math.abs(dot(up))/tanY));
+ }
+ return {target,position:{x:target.x+eye.x*distance,y:target.y+eye.y*distance,z:target.z+eye.z*distance}};
+}
 /** Interpolate only along consecutive archived road nodes, using source arc length. */
 export function pilotProfileSample(profile:readonly PilotProfilePoint[],distance:number){
  const d=clamp(distance,0,profile.at(-1)!.distance);let lo=0,hi=profile.length-1;
