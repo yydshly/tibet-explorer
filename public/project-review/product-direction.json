@@ -102,7 +102,14 @@
         "sources": "/data/lulang-place-reading.json",
         "evidence": "/project-review/lulang-place-evidence/verification.json",
         "pilotSeconds": 152.82,
-        "mainFrozen": true
+        "mainFrozen": true,
+        "cultureProcess": {
+          "report": "/project-review/lulang-culture.html",
+          "sources": "/data/lulang-culture-process.json",
+          "evidence": "/project-review/lulang-culture-evidence/verification.json",
+          "recordingsChanged": false,
+          "physicalModelsAdded": false
+        }
       }
     }
   },

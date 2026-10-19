@@ -41,6 +41,22 @@ describe('MiniMax narration lifecycle', () => {
     resolvePlay(); await first;
     expect(FakeAudio.current.pause.mock.calls.length).toBe(pauses); expect(controller.snapshot.cue?.id).toBe('new-play'); expect(controller.snapshot.status).toBe('playing');
   });
+  it('ignores a play rejection caused by an intentional pause or seek', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValueOnce(manifest()).mockResolvedValueOnce(asset()));
+    let rejectPlay!: (error:unknown)=>void;
+    FakeAudio.current.play.mockImplementationOnce(()=>new Promise<void>((_,reject)=>{rejectPlay=reject;}));
+    const start=controller.start([{id:'pause-play-race',text:'第一段'}]);await nextTurn();
+    controller.pause();controller.seek(6.5);rejectPlay(new DOMException('interrupted by pause','AbortError'));await start;
+    expect(controller.snapshot).toMatchObject({status:'paused',error:null,progress:.65});
+  });
+  it('an old same-cue play rejection cannot fail a newer resume attempt', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValueOnce(manifest()).mockResolvedValueOnce(asset()));
+    let rejectPlay!: (error:unknown)=>void;
+    FakeAudio.current.play.mockImplementationOnce(()=>new Promise<void>((_,reject)=>{rejectPlay=reject;}));
+    const start=controller.start([{id:'resume-play-race',text:'第一段'}]);await nextTurn();
+    controller.pause();await controller.resume();rejectPlay(new DOMException('old attempt','AbortError'));await start;
+    expect(controller.snapshot).toMatchObject({status:'playing',error:null});
+  });
   it('keeps pause effective while a new audio clip is being generated', async () => {
     let resolveAudio!: (value: unknown) => void;
     const pending = new Promise(resolve => { resolveAudio = resolve; });

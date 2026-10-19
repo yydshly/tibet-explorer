@@ -1,3 +1,4 @@
+import {lulangCultureState,lulangCultureFeedback,lulangCultureSteps} from '../data/lulangCulture';
 import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import {useOverviewDirector} from '../hooks/useOverviewDirector';
 import {routePilotCues,routePilotIdentity,routePilotPath,routePilotSources,pilotNarratedView,pilotConnectionProgress,pilotScriptVersions,pilotResumeAliases,type PilotView} from '../data/routePilot';
@@ -23,6 +24,7 @@ function PilotPlayback(){
  const [reading,setReading]=useState<PilotReading>(),[context,setContext]=useState<PilotTerrainContext>(),[cameraKey,setCameraKey]=useState(0);
  const beat=beats[director.beatIndex],planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
  const native=pilotNarratedView(director.beatIndex,beat.text,director.timing?.textProgress??0,reading?.highProgress??.5),view=override??native;
+ const culture=lulangCultureState(view);
  const manual=Boolean(override),lastLine=useRef<PilotReturn|undefined>(undefined);
  const snapshot=():PilotReturn=>({beatIndex:director.beatIndex,raw:director.raw,voice:director.voice,scriptVersion:pilotScriptVersions[director.beatIndex],view:{...view}});
  if(director.beatIndex<2&&!planMode)lastLine.current=snapshot();
@@ -58,7 +60,7 @@ function PilotPlayback(){
  const connection=pilotConnectionProgress(view),branchMetres=Math.round((context?.connectionLength??0)*connection);
  const connectionReason=view.mode==='place'?connection===0?'先读青色G318，金色圆环标出转入地方道路的实际节点。过境道路经过附近，进入地方还要继续接续。':connection<.65?`从国道接点沿金色地方道路读到约${branchMetres}米：观察转弯与地块的关系。金点表示阅读位置，不是车辆或历史施工。`:'地方道路、白色建筑轮廓与浅绿地块同时可见：交通提供来路，2017年资料记录的经营、展示和维护说明地方还需要人的持续组织。这是现状空间对照。':view.mode==='whole'?'先把城区、山地与鲁朗放在一条真实道路中看；青色为国道来路，金色为已核对的末端地方接续。剖面与同一地形联动。':view.lookBack?'在同一位置回望：比较山体遮挡、道路绕行和刚经过的谷地。位置不变，观察方向改变。':`沿归档道路改变位置，地形与高程剖面同时对应${km}公里处；比较起点、山地与鲁朗的高低，再看道路如何绕行。高程是地表采样。`;
  const lens=view.placeLens??'life',sectionPoint=context?.lulang?.section[Math.round((view.sectionProgress??.5)*64)];
- const reason=view.mode!=='place'?connectionReason:lens==='landscape'?`蓝线标出鲁朗河源河段，白线比较两侧地形；当前地表样本约${Math.round((sectionPoint?.elevation??reading?.elevation??0)/10)*10}米。移动观察点，比较河段与两侧的相对高低。绿色仅标原地图林地边线。`:lens==='culture'||view.servicesVisible?lulangServiceFeedback(view):connectionReason;
+ const reason=view.mode!=='place'?connectionReason:lens==='landscape'?`蓝线标出鲁朗河源河段，白线比较两侧地形；当前地表样本约${Math.round((sectionPoint?.elevation??reading?.elevation??0)/10)*10}米。移动观察点，比较河段与两侧的相对高低。绿色仅标原地图林地边线。`:culture.active?lulangCultureFeedback(view):lens==='culture'||view.servicesVisible?lulangServiceFeedback(view):connectionReason;
  if(planMode)return <main className="pilot-plan"><header><a href="#/overview">西藏探索</a><span>我的线路观察计划</span></header><h1>带着问题，回到同一段路。</h1><p>G318林芝—鲁朗 · 保留线路位置、语句与观察条件。</p><label>我的观察问题与笔记<textarea aria-label="线路观察笔记" maxLength={2000} rows={8} value={note.note} onChange={e=>persist({...note,note:e.target.value})}/></label><p>建议观察：谷地与沿途高差怎样改变视野？为什么过境交通还需要地方接续、经营和维护？</p><div><button onClick={()=>persist(note)}>保存观察计划</button><button onClick={returnPlan}>保存并返回原线</button></div><p role={saveOK?'status':'alert'}>{status}</p><Sources/></main>;
  return <main className="pilot-experience">
   <header className="pilot-header"><a href="#/overview">← 认识西藏</a><div><strong>G318 · 林芝—鲁朗</strong><small>一条真实道路，三个观察尺度</small></div><nav><a href="#/routes">线路总览</a><button onClick={openPlan}>线路观察笔记</button></nav></header>
@@ -68,6 +70,7 @@ function PilotPlayback(){
    {director.error&&<div className="pilot-loading" role="alert">{director.error}<button onClick={()=>location.reload()}>重新加载本段</button></div>}
    <div className="pilot-map-meta"><span>Sentinel-2 · 2025.12.13 · 10 m像元</span><span>GLO-30地表高程 · 高度1×</span></div>
    <div className="pilot-place-title"><span>{view.mode==='whole'?'整段来路':view.mode==='place'?'进入地方':'沿真实道路前进'}</span><h1>{view.mode==='place'?'鲁朗：河谷、生活与地方风味':view.mode==='line'?`G318 · 第${km}公里`:'林芝—色季拉山地—鲁朗'}</h1></div>
+   {culture.active&&<div className="pilot-culture-key"><strong>{culture.supply?'经营关系示意':'假设：移去供货联系'}</strong><span>环线无地理尺度 · 不代表供货路线或经营成效</span><em>{lulangCultureSteps[culture.step].title}</em></div>}
    <div className="pilot-caption" data-route-beat={beat.id} data-route-mode={view.mode} data-route-progress={view.progress} data-route-manual={manual} data-route-connections={view.connections} data-route-connection-progress={connection} data-place-lens={view.placeLens} data-service-filter={view.serviceFilter} data-section-progress={view.sectionProgress}><small>{manual?'手动观察 · 原句已暂停':director.playing?'跟随讲述':'已暂停'}</small><p>{manual?reason:<NarrationCaption text={director.timing?.caption||beat.text.split('。')[0]+'。'} timing={director.timing}/>}</p></div>
   </section><aside className="pilot-reading">
    <p className="pilot-eyebrow">沿途观察 · {director.beatIndex+1} / 4</p><h2>{routePilotCues[director.beatIndex].title}</h2>

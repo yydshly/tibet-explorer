@@ -1,9 +1,11 @@
+import {lulangNarratedCultureProgress} from './lulangCulture';
 import type {LulangLens,LulangServiceFilter} from './lulangPlace';
 export const routePilotPath='/routes/g318-east/nyingchi-lulang';
 export const pilotScriptVersions=['1','1','2','1'] as const;
 export const pilotResumeAliases={'ROUTE-G318-lulang':'ROUTE-G318-lulang'};
 export const routePilotIdentity='g318-real-corridor-v1';
 export const routePilotSources=[
+ {title:'鲁朗经营过程：真实记录与示意范围',url:'/data/lulang-culture-process.json'},
  {title:'林芝市政府：G318林芝段地理',url:'https://www.linzhi.gov.cn/linzhi/zmlz/201812/bc6ff62e851d4e97bd808c157857485c.shtml'},
  {title:'2016年10月：鲁朗小镇试运营报道',url:'https://www.linzhi.gov.cn/xwzx_406/dsdt/201812/t20181216_22625.html'},
  {title:'鲁朗管委会2017年部门决算与运营记录',url:'https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml'},
@@ -23,7 +25,7 @@ export const routePilotCues=[
  narration:'把地方重新放回线路。林芝附近的谷地、沿途高差与鲁朗的生活空间，属于同一段真实道路上的不同观察尺度。自然条件解释可能面对什么，建设、经营与共同维护继续解释地方怎样被使用。保存一个观察问题，再回到原来的路段和语句。地图上的观察点用于阅读资料，不代表已经核实的实地停靠、酒店入口或开放条件。这一段到这里结束，保留整条线路的来路。'},
 ];
 
-export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean};
+export type PilotView={mode:'whole'|'line'|'place';progress:number;height:number;connections:boolean;lookBack:boolean;connectionProgress?:number;placeLens?:LulangLens;sectionProgress?:number;serviceFilter?:LulangServiceFilter;servicesVisible?:boolean;cultureProgress?:number;cultureSupply?:boolean;cultureSample?:number};
 export const pilotConnectionProgress=(view:PilotView)=>view.connections?Math.max(0,Math.min(1,view.connectionProgress??1)):0;
 export function pilotNarratedView(index:number,text:string,textProgress:number,highPoint=.5):PilotView{
  const at=Math.max(0,Math.min(1,textProgress))*text.length;
@@ -34,6 +36,6 @@ export function pilotNarratedView(index:number,text:string,textProgress:number,h
   const p=hold?highPoint:at<text.indexOf('停在山地观察点')?.12+(highPoint-.12)*part('沿道路向山地前进','停在山地观察点'):highPoint+(1-highPoint)*part('继续向鲁朗','接下来进入鲁朗');
   return {mode:'line',progress:p,height:hold?3000:3500,connections:false,lookBack:hold&&at<text.indexOf('这里按沿线')};
  }
- if(index===2){const placeLens=at<text.indexOf('切到生活空间')?'landscape':at<text.indexOf('地方风味的延续')?'life':'culture';return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','建筑轮廓'),lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','切到生活空间'),serviceFilter:placeLens==='culture'?'food':'all',servicesVisible:at>=text.indexOf('再看餐饮')};}
+ if(index===2){const placeLens=at<text.indexOf('切到生活空间')?'landscape':at<text.indexOf('地方风味的延续')?'life':'culture';return {mode:'place',progress:1,height:placeLens==='landscape'?3000:2500,connections:at>=text.indexOf('再展开地方接续'),connectionProgress:part('再展开地方接续','建筑轮廓'),lookBack:false,placeLens,sectionProgress:at<text.indexOf('两侧地形')?.5:part('两侧地形','切到生活空间'),serviceFilter:placeLens==='culture'?'food':'all',servicesVisible:at>=text.indexOf('再看餐饮'),cultureProgress:lulangNarratedCultureProgress(text,textProgress),cultureSupply:true,cultureSample:0};}
  return {mode:'whole',progress:1,height:3500,connections:false,lookBack:false};
 }

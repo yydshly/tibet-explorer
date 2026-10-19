@@ -1,0 +1,10 @@
+import {build} from 'esbuild';
+import fs from 'node:fs/promises';
+const result=await build({entryPoints:['src/data/lulangCulture.ts'],bundle:true,platform:'node',format:'esm',write:false});
+const {lulangCultureReferences,lulangCultureSteps}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
+const reading=JSON.parse(await fs.readFile('public/data/lulang-place-reading.json','utf8'));
+const source=JSON.parse(await fs.readFile('public/assets/routes/g318/lulang.geojson','utf8'));
+const references=lulangCultureReferences(reading.services.records,reading.landscape.river.sample).map(r=>({...r,archivedTimestamp:source.features.find(f=>f.id===r.record.id).properties.osm_timestamp}));
+const record={id:'lulang-culture-process-v1',checkedAt:'2026-10-19',historicalRecord:{source:reading.culture.source,type:'2017年度行政运营材料，2018年发布；记载当年措施，不独立证明实施成效',claims:lulangCultureSteps.slice(0,3).map(s=>s.record)},mapRecords:{source:reading.source,references,scope:'当前归档点位作地图参照；不表示2017参与者，不复原历史商户和供货位置'},principle:{purpose:'把地方风味与原料、制作、供货组织及持续经营的依赖联系起来',steps:lulangCultureSteps.map(s=>s.short),symbols:'图上环线、游标、双向功能符号均无地理尺度；非供货线路、服务覆盖范围、建筑高度或客流',counterfactual:'移去供货联系只改变示意游标和功能符号，不移除源餐饮点，不模拟停业、销量、收入或就业',dailyAndVisitor:'日常饮食与旅游接待是功能关系，不是顾客结构统计'},narration:{recording:'ROUTE-G318-lulang',changed:false,nativeWordAnchors:['制作规范','供货组织','商户诚信管理','食物成为','现状点位'],manual:'操作暂停原句，保存假设/步骤/参照；恢复时回到原生条件和原语句'},frozen:{mainChapters:6,mainSeconds:750.024,pilotSeconds:152.82,newPhysicalModels:false,newScenicStops:false}};
+await fs.writeFile('public/data/lulang-culture-process.json',JSON.stringify(record,null,2)+'\n');
+console.log(JSON.stringify({references:references.map(r=>({id:r.record.id,coordinate:r.record.coordinate})),steps:record.principle.steps}));

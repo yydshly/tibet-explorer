@@ -57,6 +57,7 @@ export class NarrationController {
   private cues: NarrationCue[] = [];
   private state: NarrationState = initialState();
   private generation = 0;
+  private playAttempt = 0;
   private wantsPlayback = false;
   private disposed = false;
   private preparingGeneration: number | null = null;
@@ -88,14 +89,15 @@ export class NarrationController {
   private fail(message: string): void { this.wantsPlayback = false; this.audio.pause(); this.clearFrame(); this.emit({ status: 'error', error: message }); }
   private async playAudio(generation: number): Promise<void> {
     if (generation !== this.generation || !this.wantsPlayback || this.disposed) return;
+    const attempt = ++this.playAttempt;
     try {
       await this.audio.play();
       // A late play() promise from the previous cue must not pause a newer cue.
-      if (generation !== this.generation || this.disposed) return;
+      if (generation !== this.generation || attempt !== this.playAttempt || this.disposed) return;
       if (!this.wantsPlayback) { this.audio.pause(); return; }
       this.emit({ status: 'playing', error: null }); this.clearFrame(); this.frame = requestAnimationFrame(this.animate);
     } catch (error) {
-      if (generation !== this.generation || this.disposed) return;
+      if (generation !== this.generation || attempt !== this.playAttempt || this.disposed) return;
       this.wantsPlayback = false;
       if (error instanceof DOMException && error.name === 'NotAllowedError') this.emit({ status: 'paused', error: '讲述已准备好，点击继续播放。' });
       else this.fail('讲述暂时无法播放，请重试。');
@@ -112,7 +114,7 @@ export class NarrationController {
     } catch (error) { if (generation !== this.generation || this.disposed) return; this.preparingGeneration = null; this.fail(error instanceof Error ? error.message : '讲述准备失败，请稍后重试。'); }
   }
   async start(cues: NarrationCue[]): Promise<void> { this.stop(); if (this.disposed || !cues.length) return; this.cues = cues.map(cue => ({ ...cue })); this.wantsPlayback = true; await this.loadCue(0, this.generation); }
-  pause(): void { this.wantsPlayback = false; this.audio.pause(); this.clearFrame(); if (this.state.status === 'loading' || this.state.status === 'playing') this.emit({ status: 'paused' }); }
+  pause(): void { this.playAttempt++; this.wantsPlayback = false; this.audio.pause(); this.clearFrame(); if (this.state.status === 'loading' || this.state.status === 'playing') this.emit({ status: 'paused' }); }
   async resume(): Promise<void> {
     if (this.disposed || !this.state.cue) return; this.wantsPlayback = true;
     if (this.preparingGeneration === this.generation) { this.emit({ status: 'loading', error: null }); return; }

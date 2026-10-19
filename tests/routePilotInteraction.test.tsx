@@ -58,6 +58,16 @@ describe('actual route callbacks and independent persistence',()=>{
   media.current.timing={textProgress:.3};
   button('恢复原条件并继续').onClick();expect(scene().view).toEqual(original);expect(media.current.raw).toBe(.43);
  });
+ it('saves the hypothetical culture condition and selected mapped reference, then resumes the original words',()=>{
+  media.current.beatIndex=2;media.current.timing={textProgress:.8};
+  const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');
+  local().props.onChange({placeLens:'culture',serviceFilter:'food',servicesVisible:true,cultureProgress:1,cultureSupply:false,cultureSample:2});
+  const originalRaw=media.current.raw;
+  button('保存观察问题').onClick();harness.reset();button('保存并返回原线').onClick();
+  expect(scene().view).toMatchObject({cultureProgress:1,cultureSupply:false,cultureSample:2});expect(media.current.raw).toBe(originalRaw);
+  media.current.timing={textProgress:.8};button('恢复原条件并继续').onClick();
+  expect(scene().view).toMatchObject({cultureSupply:true,cultureSample:0});expect(media.current.raw).toBe(originalRaw);
+ });
  it('shows the road comparison feedback after leaving service reading, and explicitly reopens a service filter',()=>{
   media.current.beatIndex=2;
   const local=()=>find(render(),n=>n.props?.view&&typeof n.props.onChange==='function');

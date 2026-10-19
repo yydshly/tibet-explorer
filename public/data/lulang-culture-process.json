@@ -1,0 +1,99 @@
+{
+  "id": "lulang-culture-process-v1",
+  "checkedAt": "2026-10-19",
+  "historicalRecord": {
+    "source": {
+      "title": "2017年度管委会材料：石锅鸡制作、供货与诚信经营记录",
+      "url": "https://www.linzhi.gov.cn/linzhi/zwgk/201809/3262f7e1fea64f5bb86efe6da8abe370.shtml",
+      "date": "2017年度材料，2018-09-10发布",
+      "scope": "当年制度和经营组织记录，不证明今天的经营状态，也不能定位当年商户。"
+    },
+    "type": "2017年度行政运营材料，2018年发布；记载当年措施，不独立证明实施成效",
+    "claims": [
+      "2017年材料记载：制作制度要求使用活鸡，并禁用冻鸡。",
+      "同一材料记载：引进养殖企业，组织统一供货。",
+      "同一材料记载：与商户签订诚信经营承诺。"
+    ]
+  },
+  "mapRecords": {
+    "source": {
+      "geometry": "/assets/routes/g318/lulang.geojson",
+      "sha256": "fc20671549dbf97ec43229889461b57cf975cb2f24014d97a40a2b9af493b4d3",
+      "terrain": "/assets/routes/g318/manifest.json",
+      "attribution": "© OpenStreetMap contributors; Copernicus GLO-30 DSM"
+    },
+    "references": [
+      {
+        "label": "原线附近记录",
+        "record": {
+          "id": "node/12238761437",
+          "name": "鲁朗平措本地特色石锅鸡",
+          "coordinate": [
+            94.7318517,
+            29.7263584
+          ],
+          "kind": "food"
+        },
+        "archivedTimestamp": "2026-10-09T09:36:26Z"
+      },
+      {
+        "label": "北侧餐饮记录",
+        "record": {
+          "id": "node/6304966288",
+          "name": "",
+          "coordinate": [
+            94.7294887,
+            29.7523201
+          ],
+          "kind": "food"
+        },
+        "archivedTimestamp": "2019-02-27T05:24:43Z"
+      },
+      {
+        "label": "南侧餐饮记录",
+        "record": {
+          "id": "node/12238761370",
+          "name": "鲁朗边巴次仁农家石锅",
+          "coordinate": [
+            94.7315106,
+            29.7155911
+          ],
+          "kind": "food"
+        },
+        "archivedTimestamp": "2026-10-09T09:36:26Z"
+      }
+    ],
+    "scope": "当前归档点位作地图参照；不表示2017参与者，不复原历史商户和供货位置"
+  },
+  "principle": {
+    "purpose": "把地方风味与原料、制作、供货组织及持续经营的依赖联系起来",
+    "steps": [
+      "制作要求",
+      "供货组织",
+      "诚信经营",
+      "饮食与接待"
+    ],
+    "symbols": "图上环线、游标、双向功能符号均无地理尺度；非供货线路、服务覆盖范围、建筑高度或客流",
+    "counterfactual": "移去供货联系只改变示意游标和功能符号，不移除源餐饮点，不模拟停业、销量、收入或就业",
+    "dailyAndVisitor": "日常饮食与旅游接待是功能关系，不是顾客结构统计"
+  },
+  "narration": {
+    "recording": "ROUTE-G318-lulang",
+    "changed": false,
+    "nativeWordAnchors": [
+      "制作规范",
+      "供货组织",
+      "商户诚信管理",
+      "食物成为",
+      "现状点位"
+    ],
+    "manual": "操作暂停原句，保存假设/步骤/参照；恢复时回到原生条件和原语句"
+  },
+  "frozen": {
+    "mainChapters": 6,
+    "mainSeconds": 750.024,
+    "pilotSeconds": 152.82,
+    "newPhysicalModels": false,
+    "newScenicStops": false
+  }
+}
