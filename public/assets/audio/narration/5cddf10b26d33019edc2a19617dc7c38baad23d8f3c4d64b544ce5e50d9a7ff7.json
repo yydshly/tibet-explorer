@@ -1,0 +1,19 @@
+{
+  "id": "5cddf10b26d33019edc2a19617dc7c38baad23d8f3c4d64b544ce5e50d9a7ff7",
+  "url": "/assets/audio/narration/5cddf10b26d33019edc2a19617dc7c38baad23d8f3c4d64b544ce5e50d9a7ff7.mp3",
+  "text": "先沿溪流看水与草地的关系，再看围栏怎样分隔相邻空间。开敞草地与林木共同构成鲁朗的谷地风景。这是二零一二年的照片；溪流名称和围栏用途没有核实，不把画面当成通行或管护规定。",
+  "duration": 18.072,
+  "bytes": 290868,
+  "sha256": "09501a46d020eec472c16f2d8378c1326871664461a60f2167a1fbd5f7b68503",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:15:42.236Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/5cddf10b26d33019edc2a19617dc7c38baad23d8f3c4d64b544ce5e50d9a7ff7.subtitles.json",
+  "subtitleSha256": "51ad2b923fe639ef22b5fba790bc119e987c5fed90806576a6fcebb3d02e4291",
+  "timingLevel": "word"
+}

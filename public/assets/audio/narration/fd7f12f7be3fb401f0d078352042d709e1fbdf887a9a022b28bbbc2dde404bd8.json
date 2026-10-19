@@ -1,0 +1,19 @@
+{
+  "id": "fd7f12f7be3fb401f0d078352042d709e1fbdf887a9a022b28bbbc2dde404bd8",
+  "url": "/assets/audio/narration/fd7f12f7be3fb401f0d078352042d709e1fbdf887a9a022b28bbbc2dde404bd8.mp3",
+  "text": "先看箭靶，再看场地布置：竞赛需要共同使用的设施和活动空间。原始记录来自二零二二年的工布地区新闻画面，具体村落没有核实。它与前一张参与者照片不是同一次活动，也不是鲁朗场地测绘。",
+  "duration": 16.379,
+  "bytes": 263796,
+  "sha256": "c30a56a0481ed7100bbd396cf5d437fae039cac7ccd301ca4610bd34109533cb",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:16:17.244Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/fd7f12f7be3fb401f0d078352042d709e1fbdf887a9a022b28bbbc2dde404bd8.subtitles.json",
+  "subtitleSha256": "477fb1447f400a6d9c4c7018c0c4466d242987743c5f9bbb67191129ef4dfc35",
+  "timingLevel": "word"
+}

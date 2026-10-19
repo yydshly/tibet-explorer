@@ -1,0 +1,19 @@
+{
+  "id": "ab40748c55ea99676edeb1627b8119635b617c6a76533e3ed28dec3dbd056101",
+  "url": "/assets/audio/narration/ab40748c55ea99676edeb1627b8119635b617c6a76533e3ed28dec3dbd056101.mp3",
+  "text": "林地与草地在同一山谷中相邻。放牧活动让我们看到，旅行中的风景也是生产和生活的空间。围栏与通道把不同使用空间联系起来。原作者将这张二零一四年的照片标为扎西岗，它不代表今天的放牧范围。",
+  "duration": 16.416,
+  "bytes": 264372,
+  "sha256": "8472991dbd7d4ad97ad32726a1f1528cf83629a7a4f25d5c8dc088c692bacb04",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:15:48.056Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ab40748c55ea99676edeb1627b8119635b617c6a76533e3ed28dec3dbd056101.subtitles.json",
+  "subtitleSha256": "60ac1a75961b3bd8c8b4afac9f962a5233413e3e8402b6085cb69bce5e15f383",
+  "timingLevel": "word"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "d8dd43fb0382fc6e2eb6e3833b1e7648bde6d22f959d795a1bb8dd5136f1f1d0",
+  "url": "/assets/audio/narration/d8dd43fb0382fc6e2eb6e3833b1e7648bde6d22f959d795a1bb8dd5136f1f1d0.mp3",
+  "text": "先看林地坡面，林木沿山体起伏铺开。再看开敞地，它们穿插在林木之间。远近层次使山谷产生遮挡和纵深。这是二零零八年的鲁朗林海照片；风景是具体记录，单张照片不能解释全年气候。",
+  "duration": 17.892,
+  "bytes": 287988,
+  "sha256": "0e7f9892ac08a1775423b3989bbf05aa6d50c3f491f3a1b87582cab1869bbd55",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:15:36.694Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d8dd43fb0382fc6e2eb6e3833b1e7648bde6d22f959d795a1bb8dd5136f1f1d0.subtitles.json",
+  "subtitleSha256": "d869699a03cd33d52aab590e817763197084c0edf0653b3829916c96fa179d94",
+  "timingLevel": "word"
+}

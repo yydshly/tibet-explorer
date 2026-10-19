@@ -1,0 +1,19 @@
+{
+  "id": "364cf88eb8bfe731672f46bcc039865934cfb2e1a86437f500b70b2e0ca832e8",
+  "url": "/assets/audio/narration/364cf88eb8bfe731672f46bcc039865934cfb2e1a86437f500b70b2e0ca832e8.mp3",
+  "text": "先看河流穿过谷地。道路沿谷地延伸，支路与跨河连接把两侧空间联系起来。房屋和开敞地分布其间，地方生活就在这样的空间里展开。这是二零二四年的航拍，不是古村复原，也不能据照片确定每栋建筑的用途。",
+  "duration": 18.612,
+  "bytes": 299508,
+  "sha256": "3846ac58df6a4631e8e1ea3330b3850d497c13a6cfaf89de8e3ec912e5d69b09",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:15:57.732Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/364cf88eb8bfe731672f46bcc039865934cfb2e1a86437f500b70b2e0ca832e8.subtitles.json",
+  "subtitleSha256": "41aaa9c22c4487e0d6c504fef2f65876293b58e17c9a4128d0966854857b4cb5",
+  "timingLevel": "word"
+}

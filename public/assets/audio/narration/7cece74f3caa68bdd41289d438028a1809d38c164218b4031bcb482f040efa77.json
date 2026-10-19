@@ -1,0 +1,19 @@
+{
+  "id": "7cece74f3caa68bdd41289d438028a1809d38c164218b4031bcb482f040efa77",
+  "url": "/assets/audio/narration/7cece74f3caa68bdd41289d438028a1809d38c164218b4031bcb482f040efa77.mp3",
+  "text": "这是工布地区的新闻静帧，拍摄场地没有核实为鲁朗。竞赛场景把射手和现场的人联系起来；节庆服饰呈现活动中的表达，共同参与让风俗成为集体生活的一部分。鲁朗地方报道也记有响箭与歌舞，但不能把这张地区影像当作鲁朗现场。",
+  "duration": 19.44,
+  "bytes": 312756,
+  "sha256": "cb8fdb338c7c4ceb0bdee329a9996333d0892e70c1c6b1fe2b5a8596c7450582",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:16:08.980Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/7cece74f3caa68bdd41289d438028a1809d38c164218b4031bcb482f040efa77.subtitles.json",
+  "subtitleSha256": "bf7ca7fca373723910ec70d3ad8728126452ab01be4ef56617ea420a645d5b3f",
+  "timingLevel": "word"
+}

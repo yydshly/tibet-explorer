@@ -34,6 +34,15 @@ beforeEach(()=>{
 });
 afterEach(()=>vi.unstubAllGlobals());
 describe('actual route callbacks and independent persistence',()=>{
+ it('explicit main playback enables sound even after a saved silent session',()=>{
+  media.current.voice=false;button('继续讲述').onClick();
+  expect(media.current.setVoice).toHaveBeenCalledWith(true);expect(media.current.voice).toBe(true);expect(media.current.wantsPlayback).toBe(true);
+  expect(media.current.setVoice.mock.invocationCallOrder[0]).toBeLessThan(media.current.playPause.mock.invocationCallOrder[0]);
+ });
+ it('the sound recovery action starts the original narration rather than leaving it paused',()=>{
+  media.current.voice=false;button('开启声音并播放').onClick();
+  expect(media.current.voice).toBe(true);expect(media.current.wantsPlayback).toBe(true);
+ });
  it('pauses for a publisher video, preserves its identity through plan refresh, and resumes the original words',()=>{
   button('进入鲁朗 · 保留原路段').onClick();
   media.current.raw=.43;media.current.timing={textProgress:.4};

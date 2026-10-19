@@ -1,0 +1,19 @@
+{
+  "id": "4b5766236e88442e3847809f756b32dc23bec7cbd633e56499d1f613ded37c34",
+  "url": "/assets/audio/narration/4b5766236e88442e3847809f756b32dc23bec7cbd633e56499d1f613ded37c34.mp3",
+  "text": "临街门面与屋檐构成街道的一侧。门前活动中可以看到桌球和停留；相邻空间里，人们共同在场。它提醒我们，认识鲁朗不只有看风景，也要看地方怎样被使用。这张二零零八年的照片不代表所有居民的日常。",
+  "duration": 19.476,
+  "bytes": 313332,
+  "sha256": "a0fa366f85c1b918faab299861570addb15535c095fd102f0c76c9a18dc5664a",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T05:16:02.826Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/4b5766236e88442e3847809f756b32dc23bec7cbd633e56499d1f613ded37c34.subtitles.json",
+  "subtitleSha256": "7d2b9cc702c34b0144e9639e6f13da7b25239c5c6e7aba9af89b8bd01b1f2d2c",
+  "timingLevel": "word"
+}
