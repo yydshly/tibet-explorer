@@ -61,6 +61,12 @@
 
 [阶段交付说明](public/project-review/phase-delivery-20261020.md) · [最终证据与限制](https://yydshly.github.io/tibet-explorer/project-review/index.html#final-delivery-evidence) · [素材说明](ASSETS.md) · [历史迭代记录](README-history.md)
 
+## 后续方向与继续方式
+
+当前先完成冻结版本的独立听验与首次观看者理解验收；随后优先推进 **G318 旅行认识版**，在现有林芝—波密走廊内讲清沿途看什么、为什么值得停、怎样体验、条件限制，并形成可保存返回的个人观察计划。代表性新线路与长期使用能力分别留到后续阶段。
+
+阶段目标、完成标准、资料约束和继续顺序已整理为[项目共识与后续阶段交接](public/project-review/product-continuation-20261020.md)，也可在[网页项目说明](https://yydshly.github.io/tibet-explorer/project-review/index.html#continuation-plan)查看摘要。本次记录方向，后续另行启动；六章、既有路段、镜头和主线时长继续冻结。
+
 ## 本地运行与发布
 
 技术栈：React、TypeScript、Three.js、Vite；现有普通话语音由 MiniMax 预生成。建议使用 Node.js 22。

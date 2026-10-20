@@ -1,5 +1,18 @@
 {
   "updatedAt": "2026-10-20",
+  "continuationAgreement": {
+    "id": "PRODUCT-CONTINUATION-20261020",
+    "document": "product-continuation-20261020.md",
+    "webSection": "index.html#continuation-plan",
+    "status": "共识已整理；现有版本冻结，后续阶段未启动",
+    "implementationCommit": "1f38d5f",
+    "deploymentCompatibilityCommit": "a62063e",
+    "publicPresentationCommit": "9584029",
+    "phases": ["当前版本独立验收与收口", "现有G318走廊的旅行认识版", "一条代表性新线路", "按实际需求完善长期使用能力"],
+    "nextGate": "沿用C5标准完成独立真人听验与3名首次观看者记录；缺参与者则保持待验收，不自动开发",
+    "priorityAfterCloseout": "G318沿途看什么、为什么值得停、怎样体验、条件限制与个人观察计划",
+    "freeze": "六章、既有路段、镜头、录音与主线时长不变；仅明确证据支持的关键问题重开限定修复"
+  },
   "implementationBase": "51f375fc242ebf540f6feda98e1739737908b4bb",
   "currentVersion": {
     "name": "整体认识第一版",
