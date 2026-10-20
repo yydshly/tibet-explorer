@@ -6,6 +6,12 @@
 
 ## 产品演示
 
+### 19 秒动态预览 · 沿线进入鲁朗
+
+[![G318实际播放：镜头沿地形进入鲁朗，字幕与对象标注随配音时间轴变化，再切入林海及河谷实拍](docs/screenshots/g318-demo.gif)](https://yydshly.github.io/tibet-explorer/#/routes/g318-east/whole)
+
+**19 秒连续实录，原速，约 5.8 MB。** 从色季拉山地沿道路拉近到鲁朗谷地，随后进入林海、河流道路与聚落的实拍，字幕和对象标注跟随既有配音时间轴变化。GIF 本身无声；点击动图进入[有声完整体验](https://yydshly.github.io/tibet-explorer/#/routes/g318-east/whole)。录制复用当前版本，未新增场景或镜头。[录制与素材出处](docs/screenshots/README.md)
+
 以下为 **2026-10-20 在线版本实际运行截图**。点击图片进入对应体验；动态镜头、条件对照和同步讲述请在网页中观看。
 
 ### 从完整地球理解西藏
