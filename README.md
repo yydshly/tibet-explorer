@@ -1,5 +1,9 @@
 # 西藏探索
 
+网页入口：[西藏探索在线版](https://yydshly.github.io/tibet-explorer/) · [G318 整线](https://yydshly.github.io/tibet-explorer/#/routes/g318-east/whole)。默认主干为 `master`，不是 `main`；阶段提交 `1f38d5f` 已在主干上。
+
+发布使用 GitHub Pages，推送 `master` 后由 `.github/workflows/pages.yml` 自动构建部署。`npm run build:pages` 生成独立的 `dist/pages`，仅为项目子目录调整发布副本中的资源路径，并校验全部354对录音/字幕的原始 SHA-256。源影像、录音、字幕、六章和线路镜头保持冻结。网站使用预生成语音，不包含 MiniMax 密钥或在线生成服务；观察计划保存在当前浏览器，和本机 localhost 的记录不互通，可导出留存。部署成功不代替正式真人理解/听验。
+
 2026-10-20阶段提交：**整体认识＋G318示范线路冻结候选版，可交付试用；正式验收待完成。** 六章约12分30秒、林芝—波密九镜约4分37秒、地方观察和计划保存返回已经接通；D01入口、D02供灯对照和D03返回错章已修复。实际播放、系统输出录音及定点操作证据见[最终报告](public/project-review/index.html#final-delivery-evidence)。
 
 本阶段范围、交付限制和下一步见[阶段交付说明](public/project-review/phase-delivery-20261020.md)。下一阶段只做独立真人听验与3名首次观看者理解验收，不新增模型、景点、时长或写实驾驶；没有参与者就保持冻结，不以继续开发代替验收。

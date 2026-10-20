@@ -14,9 +14,20 @@ const timeline=():NarrationTimeline=>({version:1,source:'MiniMax',audioSha256:as
  {start:8,end:9.6,text:text.slice(5),textStart:5,textEnd:10},
 ]});
 beforeEach(async()=>{refreshNarrationTimelines();textSha=await sha(text);});
-afterEach(()=>vi.unstubAllGlobals());
+afterEach(()=>{vi.unstubAllGlobals();vi.unstubAllEnvs();});
 
 describe('recording-bound sentence timing',()=>{
+ it('loads the exact subtitle bytes under a project-site base without weakening path validation',async()=>{
+  vi.stubEnv('BASE_URL','/tibet-explorer/');
+  const raw=JSON.stringify(timeline()),fetch=vi.fn(async()=>({ok:true,headers:new Headers(),text:async()=>raw}));vi.stubGlobal('fetch',fetch);
+  const subtitleUrl='/tibet-explorer/assets/audio/narration/test.subtitle.json';
+  expect(await getNarrationTimeline({...asset,subtitleUrl,subtitleSha256:await sha(raw)})).toEqual(timeline());
+  expect(fetch).toHaveBeenCalledWith(subtitleUrl,expect.anything());
+  fetch.mockClear();
+  for(const invalid of ['/other/assets/audio/narration/test.json','/tibet-explorer/assets/audio/narration/../secret.json','https://example.com/assets/audio/narration/test.json'])
+   expect(await getNarrationTimeline({...asset,subtitleUrl:invalid})).toBeUndefined();
+  expect(fetch).not.toHaveBeenCalled();
+ });
  it('follows the provider sentence, including long pauses, rather than equal clip fractions',()=>{
   const at=narrationTimingAt(text,6.8,10,timeline());
   expect(at).toMatchObject({caption:'先看海洋。',precision:'provider',textStart:0,textEnd:5});

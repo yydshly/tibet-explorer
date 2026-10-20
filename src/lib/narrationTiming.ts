@@ -113,7 +113,9 @@ export function validateNarrationTimeline(value:unknown,asset:TimelineAsset,text
 export function refreshNarrationTimelines(){timelines.clear();}
 export async function getNarrationTimeline(asset:TimelineAsset):Promise<NarrationTimeline|undefined>{
  const url=asset.subtitleUrl;
- if(!url||!/^\/assets\/audio\/narration\/[a-zA-Z0-9._-]+\.json$/.test(url)||!asset.sha256)return undefined;
+ const base=import.meta.env.BASE_URL;
+ const canonicalUrl=url&&base!=='/'&&url.startsWith(base)?`/${url.slice(base.length)}`:url;
+ if(!url||!canonicalUrl||!/^\/assets\/audio\/narration\/[a-zA-Z0-9._-]+\.json$/.test(canonicalUrl)||!asset.sha256)return undefined;
  const key=JSON.stringify([url,asset.subtitleSha256,asset.sha256,asset.text,asset.duration,asset.model,asset.voice]);
  let pending=timelines.get(key);
  if(!pending){pending=(async()=>{
