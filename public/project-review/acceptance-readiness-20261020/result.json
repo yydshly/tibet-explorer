@@ -1,0 +1,75 @@
+{
+  "id": "PRODUCT-READINESS-20261020-1",
+  "date": "2026-10-20",
+  "status": "technical_supplements_closed_human_acceptance_pending",
+  "testedDeployment": "bc27de02337e65bbecacfa817ef9faeffa052531",
+  "runtimeBaseline": "PRODUCT-CLOSEOUT-20261020-2",
+  "runtimeChanged": false,
+  "mediaDataFilesVerified": 2186,
+  "mediaDataMissing": [],
+  "mediaDataChanged": [],
+  "sourceDiffSinceOriginalStage": [
+    "package.json",
+    "src/lib/narrationTiming.ts"
+  ],
+  "sourceDiffExplanation": "Only Pages build command and deployment-base subtitle URL validation; no runtime differences since a62063e.",
+  "publicManifest": {
+    "clips": 354,
+    "normalizedEqual": true
+  },
+  "onlineNativeAudioSubtitlePairs": 3,
+  "onlineNativePairsAllMatch": true,
+  "publicJavaScriptFilesVerified": 4,
+  "publicJavaScriptAllMatch": true,
+  "previousEvidenceResources": 51,
+  "previousEvidenceFailuresAfterRetry": [],
+  "r04Plan": {
+    "savedAndReloaded": true,
+    "actualMarkdownDownloaded": true,
+    "originalNotesRestored": true,
+    "exactRaw": true,
+    "exactView": true,
+    "resumeProgressed": true,
+    "nativeTiming": "word"
+  },
+  "endReturn": {
+    "shot": "R08",
+    "raw": "1",
+    "ended": true
+  },
+  "localVisit": {
+    "exactRaw": true,
+    "exactView": true
+  },
+  "consoleErrors": [],
+  "preparationGap": {
+    "item": "Historical task packets do not cover the current combined product baseline.",
+    "status": "closed_as_document_preparation_only",
+    "currentHost": "../first-viewer/current-host.md",
+    "participant": "../first-viewer/current-participant.html",
+    "protocol": "../first-viewer/current-protocol.json"
+  },
+  "newConfirmedRuntimeBlockers": [],
+  "humanRequired": [
+    {
+      "id": "E01",
+      "status": "not_conducted",
+      "completedFormalListeningSessions": 0,
+      "needs": "A real listener must record intelligibility, overlapping/missing speech and semantic correspondence; waveforms and UI are not subjective evidence."
+    },
+    {
+      "id": "E02",
+      "status": "not_conducted",
+      "completedFirstViewerSessions": 0,
+      "plannedFirstViewers": 3,
+      "needs": "Original C5: each six-chapter outcome and route causality independently explained and pointed out by at least2/3; all3 complete the chosen operation/return; no unresolved critical misunderstanding."
+    }
+  ],
+  "limits": [
+    "This run is targeted public-site supplementation, not another uninterrupted full playback.",
+    "Earlier recordings and screenshots remain historical; their existence does not prove new listening or current comprehension.",
+    "No source/season/access/license conclusions, all optional topics/mobile/device/accessibility certification, or full-frame synchronization certification were added.",
+    "Do not simulate human answers or turn blank templates into passed sessions."
+  ],
+  "stop": "No further automated/polish loop without new evidence; arrange one independent human acceptance round when participants are available."
+}

@@ -1,0 +1,641 @@
+{
+  "date": "2026-10-20",
+  "site": "https://yydshly.github.io/tibet-explorer/",
+  "gitHead": "bc27de02337e65bbecacfa817ef9faeffa052531",
+  "priorBaseline": "PRODUCT-CLOSEOUT-20261020-2",
+  "sourceDiffSinceStage": [
+    "package.json",
+    "src/lib/narrationTiming.ts"
+  ],
+  "immutableMedia": {
+    "checked": 2186,
+    "missing": [],
+    "changed": []
+  },
+  "historicalEvidence": {
+    "checked": 51,
+    "files": [
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/01-overview-start.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/01-overview-start.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 59983,
+        "ms": 1444,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/02-earth-location.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/02-earth-location.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 87770,
+        "ms": 574,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/03-rotation-flow.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/03-rotation-flow.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 84748,
+        "ms": 733,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/04-uplift-relief.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/04-uplift-relief.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 78246,
+        "ms": 1077,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/05-cloud-rain.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/05-cloud-rain.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 105903,
+        "ms": 670,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/06-regional-climate.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/06-regional-climate.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 100635,
+        "ms": 605,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/07-regions-to-life.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/07-regions-to-life.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 109976,
+        "ms": 595,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/08-irrigation.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/08-irrigation.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 110527,
+        "ms": 777,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/09-water-management.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/09-water-management.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 99885,
+        "ms": 492,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/10-water-result-desktop.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/10-water-result-desktop.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 104747,
+        "ms": 1272,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/11-history-exchange.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/11-history-exchange.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 123590,
+        "ms": 592,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/12-lamps-continuity.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/12-lamps-continuity.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 181026,
+        "ms": 505,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/13-modern-connections.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/13-modern-connections.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 154406,
+        "ms": 934,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/14-rail-valley.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/14-rail-valley.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 146053,
+        "ms": 944,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/15-runoff-playback.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/15-runoff-playback.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 145576,
+        "ms": 1051,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/16-stewardship-playback.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/16-stewardship-playback.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 151344,
+        "ms": 674,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/17-overview-ending.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/17-overview-ending.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 168556,
+        "ms": 513,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/18-corridor-start.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/18-corridor-start.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 71907,
+        "ms": 549,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/19-corridor-mountain.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/19-corridor-mountain.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 131251,
+        "ms": 556,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/20-tongmai-transition.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/20-tongmai-transition.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 146038,
+        "ms": 574,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/21-corridor-late.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/21-corridor-late.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 118615,
+        "ms": 515,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/22-plan-persisted.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/22-plan-persisted.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 64113,
+        "ms": 486,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/23-plan-return-ending.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/23-plan-return-ending.png",
+        "error": "TimeoutError: The operation was aborted due to timeout",
+        "ms": 25008
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/24-runoff-less.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/24-runoff-less.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 142195,
+        "ms": 603,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/25-runoff-more.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/25-runoff-more.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 151415,
+        "ms": 542,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/26-runoff-more-stable.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/26-runoff-more-stable.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 148029,
+        "ms": 576,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/27-runoff-restored.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/27-runoff-restored.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 144832,
+        "ms": 1177,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/28-barrier-kept.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/28-barrier-kept.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 149273,
+        "ms": 564,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/29-barrier-removed.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/29-barrier-removed.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 150022,
+        "ms": 581,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/30-closing-output-tail.png",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/30-closing-output-tail.png",
+        "status": 200,
+        "type": "image/png",
+        "bytes": 119193,
+        "ms": 533,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/audio-probe.matches.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/audio-probe.matches.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 486,
+        "ms": 489,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/audio-screen-alignment.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/audio-screen-alignment.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 983,
+        "ms": 505,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/clock-reference.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/clock-reference.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 85,
+        "ms": 573,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-cues.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-cues.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 240,
+        "ms": 496,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-end.capture.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-end.capture.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 234,
+        "ms": 502,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-end.matches.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-end.matches.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 440,
+        "ms": 613,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-end.mp3",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-end.mp3",
+        "status": 200,
+        "type": "audio/mp3",
+        "bytes": 360909,
+        "ms": 498,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-output.capture.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-output.capture.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 236,
+        "ms": 507,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-output.matches.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-output.matches.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 1187,
+        "ms": 538,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-output.mp3",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-output.mp3",
+        "status": 200,
+        "type": "audio/mp3",
+        "bytes": 2560941,
+        "ms": 541,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-tail.capture.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-tail.capture.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 235,
+        "ms": 515,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/corridor-tail.matches.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/corridor-tail.matches.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 436,
+        "ms": 586,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/exported-plan.md",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/exported-plan.md",
+        "status": 200,
+        "type": "text/markdown; charset=utf-8",
+        "bytes": 610,
+        "ms": 654,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/main-program.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/main-program.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 30093,
+        "ms": 512,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/narration-verification.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/narration-verification.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 6075,
+        "ms": 1040,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/overview-output.capture.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/overview-output.capture.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 236,
+        "ms": 826,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/overview-output.matches.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/overview-output.matches.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 2642,
+        "ms": 509,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/overview-output.mp3",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/overview-output.mp3",
+        "status": 200,
+        "type": "audio/mp3",
+        "bytes": 6400845,
+        "ms": 610,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/route-asset-check.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/route-asset-check.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 680,
+        "ms": 481,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/screen-times.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/screen-times.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 2228,
+        "ms": 3120,
+        "body": null
+      },
+      {
+        "relative": "project-review/closeout-final-evidence-20261020/source-availability.json",
+        "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/source-availability.json",
+        "status": 200,
+        "type": "application/json; charset=utf-8",
+        "bytes": 4344,
+        "ms": 586,
+        "body": null
+      }
+    ],
+    "retry": {
+      "url": "https://yydshly.github.io/tibet-explorer/project-review/closeout-final-evidence-20261020/23-plan-return-ending.png",
+      "method": "GET",
+      "status": 200,
+      "bytes": 108479,
+      "sha256": "0470cb2d0fd95bb3d4eaea85ac010f95a61ec270046cff515c525702a02413a3",
+      "localSha256": "0470cb2d0fd95bb3d4eaea85ac010f95a61ec270046cff515c525702a02413a3",
+      "match": true
+    }
+  },
+  "manifest": {
+    "relative": "assets/audio/narration/cue-manifest.json",
+    "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/cue-manifest.json",
+    "status": 200,
+    "type": "application/json; charset=utf-8",
+    "bytes": 522056,
+    "ms": 1979,
+    "sha256": "89425bd19bc06d7b7ac856cd786b62d5d6d387317c8370bc1e4446c0c8049058",
+    "clips": 354,
+    "normalizedEqual": true
+  },
+  "onlineMedia": [
+    {
+      "cue": "ROUTE-G318-lulang",
+      "checks": [
+        {
+          "relative": "assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.mp3",
+          "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.mp3",
+          "status": 200,
+          "type": "audio/mp3",
+          "bytes": 601332,
+          "ms": 1348,
+          "sha256": "0fd5afc96a0f7985f279ccd9d805bdd13aeae7ed3ec6b0d1627496870f66d8e6",
+          "expectedSha256": "0fd5afc96a0f7985f279ccd9d805bdd13aeae7ed3ec6b0d1627496870f66d8e6",
+          "match": true
+        },
+        {
+          "relative": "assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.subtitles.json",
+          "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/c0a6eefe6279668033e02b8b32eb8e8722ee79638cf5755b1868dbb68c82abd6.subtitles.json",
+          "status": 200,
+          "type": "application/json; charset=utf-8",
+          "bytes": 28542,
+          "ms": 559,
+          "sha256": "d46af98771f920951c3d71b706b341624614b60622710f533dcc4b7aa1eee3b2",
+          "expectedSha256": "d46af98771f920951c3d71b706b341624614b60622710f533dcc4b7aa1eee3b2",
+          "match": true
+        }
+      ]
+    },
+    {
+      "cue": "ROUTE-G318-corridor-opening",
+      "checks": [
+        {
+          "relative": "assets/audio/narration/b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849.mp3",
+          "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849.mp3",
+          "status": 200,
+          "type": "audio/mp3",
+          "bytes": 271284,
+          "ms": 1498,
+          "sha256": "ad4b2711555f5d6e560ecc0209ed429e2153b5991300baf2b939f2092a26b064",
+          "expectedSha256": "ad4b2711555f5d6e560ecc0209ed429e2153b5991300baf2b939f2092a26b064",
+          "match": true
+        },
+        {
+          "relative": "assets/audio/narration/b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849.subtitles.json",
+          "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/b255c12f49e4d95dc3ab2589fdaf63ff0420facfef4ca69e3aca35203de6b849.subtitles.json",
+          "status": 200,
+          "type": "application/json; charset=utf-8",
+          "bytes": 11964,
+          "ms": 344,
+          "sha256": "cc92b944a897153660adc43a07cf075ca7bd300b3c0b20a6e66b9f8b6d2a8874",
+          "expectedSha256": "cc92b944a897153660adc43a07cf075ca7bd300b3c0b20a6e66b9f8b6d2a8874",
+          "match": true
+        }
+      ]
+    },
+    {
+      "cue": "ROUTE-G318-corridor-closing",
+      "checks": [
+        {
+          "relative": "assets/audio/narration/e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474.mp3",
+          "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474.mp3",
+          "status": 200,
+          "type": "audio/mp3",
+          "bytes": 479220,
+          "ms": 1797,
+          "sha256": "35d3474ad0d67e9ecd25d3a6917641ee1d4816147b4936ffae79c79d50f2408d",
+          "expectedSha256": "35d3474ad0d67e9ecd25d3a6917641ee1d4816147b4936ffae79c79d50f2408d",
+          "match": true
+        },
+        {
+          "relative": "assets/audio/narration/e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474.subtitles.json",
+          "url": "https://yydshly.github.io/tibet-explorer/assets/audio/narration/e332cab8a2e045e2fcbe13d5b3a90257fc9c6358524fa264e892a8ffab8c4474.subtitles.json",
+          "status": 200,
+          "type": "application/json; charset=utf-8",
+          "bytes": 21249,
+          "ms": 430,
+          "sha256": "af3b1d4999253bf000c6d4629004f18fb5d8676f8b385c63e601f0653edfdf0c",
+          "expectedSha256": "af3b1d4999253bf000c6d4629004f18fb5d8676f8b385c63e601f0653edfdf0c",
+          "match": true
+        }
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "relative": "assets/CorridorExperience-ChrWPpA_.js",
+      "url": "https://yydshly.github.io/tibet-explorer/assets/CorridorExperience-ChrWPpA_.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 42460,
+      "ms": 362,
+      "sha256": "6692293c8416f7dedc9cf1e3685cbdfdcc3649ff13d533485619d0030aa2c1f9",
+      "expectedSha256": "6692293c8416f7dedc9cf1e3685cbdfdcc3649ff13d533485619d0030aa2c1f9",
+      "match": true
+    },
+    {
+      "relative": "assets/index-DX11kMbh.js",
+      "url": "https://yydshly.github.io/tibet-explorer/assets/index-DX11kMbh.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 235504,
+      "ms": 466,
+      "sha256": "1f37c60e82096db89783ce54952306961c82d37d9a9d5d2a9b2e5c352956ecbf",
+      "expectedSha256": "1f37c60e82096db89783ce54952306961c82d37d9a9d5d2a9b2e5c352956ecbf",
+      "match": true
+    },
+    {
+      "relative": "assets/NarrationCaption-DaLatxwQ.js",
+      "url": "https://yydshly.github.io/tibet-explorer/assets/NarrationCaption-DaLatxwQ.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 193866,
+      "ms": 488,
+      "sha256": "92f70117875df1494c43bee97ac2caa85862051782c49dbe69395e0b68b6a9fe",
+      "expectedSha256": "92f70117875df1494c43bee97ac2caa85862051782c49dbe69395e0b68b6a9fe",
+      "match": true
+    },
+    {
+      "relative": "assets/OverviewExperience-BMYNvW-T.js",
+      "url": "https://yydshly.github.io/tibet-explorer/assets/OverviewExperience-BMYNvW-T.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 135197,
+      "ms": 523,
+      "sha256": "3a2098f23722e4941a2cc9de926a01aef580127f47906ccaf346842a5570a5c3",
+      "expectedSha256": "3a2098f23722e4941a2cc9de926a01aef580127f47906ccaf346842a5570a5c3",
+      "match": true
+    }
+  ],
+  "oldPackets": [
+    {
+      "file": "protocol.json",
+      "id": "M4-first-viewer-20261018",
+      "scope": "六章 / 21段 / 676.872秒（11:16）",
+      "completed": 0,
+      "commit": null
+    },
+    {
+      "file": "g318-protocol.json",
+      "id": "G318-first-viewer-v1-20261019",
+      "scope": "G318林芝—色季拉—鲁朗",
+      "completed": 0,
+      "commit": "51f375fc242ebf540f6feda98e1739737908b4bb"
+    }
+  ]
+}

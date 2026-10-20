@@ -1,0 +1,51 @@
+{
+  "testedDeployment": "bc27de02337e65bbecacfa817ef9faeffa052531",
+  "date": "2026-10-20",
+  "method": "Actual browser UI on public site; assistant operation, not human comprehension or listening.",
+  "r04Plan": {
+    "before": {
+      "shot": "R04",
+      "beat": "3",
+      "raw": "0.5549972495217451",
+      "view": "{\"kind\":\"pilot\",\"value\":{\"mode\":\"place\",\"progress\":1,\"height\":2500,\"connections\":true,\"connectionProgress\":1,\"returnProgress\":0,\"lookBack\":false,\"placeLens\":\"culture\",\"sectionProgress\":1,\"serviceFilter\":\"all\",\"servicesVisible\":false,\"cultureProgress\":0,\"cultureSupply\":true,\"cultureSample\":0,\"placeMedia\":\"daily\",\"placePhoto\":\"daily\",\"photoOverlay\":\"daily\",\"photoReveal\":1,\"photoFocus\":2,\"cookingProgress\":0,\"lifePhase\":\"making\",\"cameraPitch\":56,\"cameraBearing\":0,\"mapZoom\":1,\"mapFocus\":0,\"mapFocusWeight\":0,\"routeContext\":0,\"elevation\":false}}",
+      "timing": "word"
+    },
+    "after": {
+      "shot": "R04",
+      "beat": "3",
+      "raw": "0.5549972495217451",
+      "view": "{\"kind\":\"pilot\",\"value\":{\"mode\":\"place\",\"progress\":1,\"height\":2500,\"connections\":true,\"connectionProgress\":1,\"returnProgress\":0,\"lookBack\":false,\"placeLens\":\"culture\",\"sectionProgress\":1,\"serviceFilter\":\"all\",\"servicesVisible\":false,\"cultureProgress\":0,\"cultureSupply\":true,\"cultureSample\":0,\"placeMedia\":\"daily\",\"placePhoto\":\"daily\",\"photoOverlay\":\"daily\",\"photoReveal\":1,\"photoFocus\":2,\"cookingProgress\":0,\"lifePhase\":\"making\",\"cameraPitch\":56,\"cameraBearing\":0,\"mapZoom\":1,\"mapFocus\":0,\"mapFocusWeight\":0,\"routeContext\":0,\"elevation\":false}}",
+      "timing": "word"
+    },
+    "notePersisted": true,
+    "rawEqual": true,
+    "viewEqual": true,
+    "originalNoteRestored": true,
+    "actualDownload": "exported-fixture-plan.md",
+    "resume": {
+      "shot": "R04",
+      "raw": "0.8973631657594193",
+      "timing": "word"
+    }
+  },
+  "endReturn": {
+    "shot": "R08",
+    "raw": "1",
+    "ended": true
+  },
+  "localVisit": {
+    "before": {
+      "shot": "R03",
+      "raw": "0.24",
+      "view": "{\"kind\":\"pilot\",\"value\":{\"mode\":\"place\",\"progress\":1,\"height\":2500,\"connections\":false,\"connectionProgress\":0,\"returnProgress\":0,\"lookBack\":false,\"placeLens\":\"life\",\"sectionProgress\":1,\"serviceFilter\":\"all\",\"servicesVisible\":false,\"cultureProgress\":0,\"cultureSupply\":true,\"cultureSample\":0,\"placeMedia\":\"town\",\"placePhoto\":\"town\",\"photoOverlay\":\"town\",\"photoReveal\":1,\"photoFocus\":2,\"cookingProgress\":0,\"lifePhase\":\"making\",\"cameraPitch\":56,\"cameraBearing\":-20,\"mapZoom\":1,\"mapFocus\":0,\"mapFocusWeight\":0,\"routeContext\":0,\"elevation\":false}}"
+    },
+    "after": {
+      "shot": "R03",
+      "raw": "0.24",
+      "view": "{\"kind\":\"pilot\",\"value\":{\"mode\":\"place\",\"progress\":1,\"height\":2500,\"connections\":false,\"connectionProgress\":0,\"returnProgress\":0,\"lookBack\":false,\"placeLens\":\"life\",\"sectionProgress\":1,\"serviceFilter\":\"all\",\"servicesVisible\":false,\"cultureProgress\":0,\"cultureSupply\":true,\"cultureSample\":0,\"placeMedia\":\"town\",\"placePhoto\":\"town\",\"photoOverlay\":\"town\",\"photoReveal\":1,\"photoFocus\":2,\"cookingProgress\":0,\"lifePhase\":\"making\",\"cameraPitch\":56,\"cameraBearing\":-20,\"mapZoom\":1,\"mapFocus\":0,\"mapFocusWeight\":0,\"routeContext\":0,\"elevation\":false}}"
+    },
+    "rawEqual": true,
+    "viewEqual": true
+  },
+  "consoleErrors": []
+}

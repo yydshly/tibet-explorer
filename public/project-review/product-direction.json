@@ -1,5 +1,6 @@
 {
   "updatedAt": "2026-10-20",
+  "currentAcceptanceReadiness": {"id":"PRODUCT-READINESS-20261020-1","result":"acceptance-readiness-20261020/result.json","host":"first-viewer/current-host.md","participant":"first-viewer/current-participant.html","status":"主动补查收口；E01/E02真人证据仍待完成"},
   "continuationAgreement": {
     "id": "PRODUCT-CONTINUATION-20261020",
     "document": "product-continuation-20261020.md",
