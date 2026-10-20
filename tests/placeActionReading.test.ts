@@ -13,12 +13,12 @@ describe('activity changes use acquired places without rewriting geography',()=>
  it('holds remaining temple activity, separates the majority, reverses deterministically and hides on exit',()=>{
  const before=JSON.stringify(data),reading=createPlaceActionReading(data,([x,z],y=0)=>new THREE.Vector3(x,y,z),polygon);
  const state={phase:'lamps' as const,progress:1,separation:0,activity:0};reading.update(state,.001);
- const group=reading.group.children[0];const first=group.children.map(o=>o.scale.x);
+ const group=reading.group.children[0];const first=group.children.slice(0,13).map(o=>o.scale.x);
  expect(first.filter(n=>n>0)).toHaveLength(7);
  reading.update({...state,phase:'separate',separation:1},.001);
  expect(group.children.slice(0,7).filter(o=>o.scale.x>0)).toHaveLength(1);
  expect(group.children.slice(7).every(o=>o.scale.x>0)).toBe(true);
- reading.update(state,.001);expect(group.children.map(o=>o.scale.x)).toEqual(first);
+ reading.update(state,.001);expect(group.children.slice(0,13).map(o=>o.scale.x)).toEqual(first);
  reading.update(undefined,.001);expect(reading.group.visible).toBe(false);expect(JSON.stringify(data)).toBe(before);
  });
  it('shows public use only when narrated and changes movement independently of the footprint',()=>{

@@ -1,0 +1,19 @@
+{
+  "id": "50919d97599e99fa3bf82271ae849d81ab8e8b156a0b9706096bd969343e06c5",
+  "url": "/assets/audio/narration/50919d97599e99fa3bf82271ae849d81ab8e8b156a0b9706096bd969343e06c5.mp3",
+  "text": "接近这几处转弯。跟着路面转向，前方与侧面的山坡会交替进入视野。可以暂停回望，比较同一位置朝不同方向看到的地形。",
+  "duration": 10.44,
+  "bytes": 168756,
+  "sha256": "fe148e620355799d54d91b6a45d1d3995ff26029bb26e519724f85549d710008",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T19:26:28.105Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/50919d97599e99fa3bf82271ae849d81ab8e8b156a0b9706096bd969343e06c5.subtitles.json",
+  "subtitleSha256": "547d42837fea8b2da9650a9c681d2da30a7a92fee4a173892cbcd23ef777e831",
+  "timingLevel": "word"
+}

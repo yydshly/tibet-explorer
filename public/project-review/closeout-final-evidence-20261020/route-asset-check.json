@@ -1,0 +1,127 @@
+[
+  {
+    "path": "public\\assets\\routes\\g318\\lulang.geojson",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\observations.json",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\route.json",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\sentinel-20251213.webp",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\sentinel-item.json",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\terrain.int16",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-bomi\\bomi-street-20080917.jpg",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-bomi\\geometry.json",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-bomi\\sentinel-20251213.webp",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-bomi\\terrain.int16",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-bomi\\zhamu-20251213.webp",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-tongmai\\geometry.json",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-tongmai\\sentinel-20251213.webp",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-tongmai\\terrain.int16",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-tongmai\\tongmai-20140921.jpg",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-travel\\sejila-20150410-25.jpg",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-travel\\sejila-20150410-27.jpg",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-travel\\sejila-20150410-17.jpg",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318-travel\\sejila-20150410-10.jpg",
+    "pass": true
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\forest-20080918.jpg",
+    "pass": true,
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tibetan_forest.jpg",
+    "date": "2008-09-18"
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\meadow-20120811.jpg",
+    "pass": true,
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:鲁朗草原_-_panoramio_(1).jpg",
+    "date": "2012-08-11"
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\village-20140920.jpg",
+    "pass": true,
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Linzhi_Zhaxigang_2014.09.20_17-06-30.jpg",
+    "date": "2014-09-20"
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\kongpo-gathering-20211202.jpg",
+    "pass": true,
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kongpo_whistling_arrows.jpg",
+    "date": "2021-12-02"
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\kongpo-target-20221124.jpg",
+    "pass": true,
+    "license": "CC BY 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arrow_target_of_Kongpo_whistling_arrows.jpg",
+    "date": "2022-11-24"
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\town-20240922.jpg",
+    "pass": true,
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lulang_Town.jpg",
+    "date": "2024-09-22"
+  },
+  {
+    "path": "public\\assets\\routes\\g318\\lulang-life\\street-life-20080918.jpg",
+    "pass": true,
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pocket_billiards,_%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%BC%E0%BD%98%E0%BC%8B%E0%BD%A6%E0%BE%9F%E0%BD%BA%E0%BD%82%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%A4%E0%BD%BC%E0%BC%8B%E0%BD%A3%E0%BD%BC%E0%BC%8D.jpg",
+    "date": "2008-09-18"
+  }
+]

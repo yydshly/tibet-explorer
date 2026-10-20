@@ -1,0 +1,126 @@
+[
+  {
+    "recording": "overview-output",
+    "firstSampleEpochEstimate": 1792445359.9776318,
+    "matches": 141,
+    "windows": 141,
+    "minimumWindowCorrelation": 0.92246,
+    "screens": [
+      {
+        "screenshot": "05-cloud-rain",
+        "cue": "LAB-air-higher",
+        "visibleMediaSeconds": 11.903,
+        "recordedAudioSecondsAtScreenshot": 11.625,
+        "deltaSeconds": -0.278,
+        "captureDurationSeconds": 0.36
+      },
+      {
+        "screenshot": "06-regional-climate",
+        "cue": "OBS-CLIMATE-1",
+        "visibleMediaSeconds": 0.481,
+        "recordedAudioSecondsAtScreenshot": 0.045,
+        "deltaSeconds": -0.436,
+        "captureDurationSeconds": 0.569
+      },
+      {
+        "screenshot": "07-regions-to-life",
+        "cue": "LAB-life-nyingchi",
+        "visibleMediaSeconds": 24.114,
+        "recordedAudioSecondsAtScreenshot": 24.03,
+        "deltaSeconds": -0.084,
+        "captureDurationSeconds": 0.374
+      },
+      {
+        "screenshot": "08-irrigation",
+        "cue": "OVERVIEW-life-lhasa",
+        "visibleMediaSeconds": 28.379,
+        "recordedAudioSecondsAtScreenshot": 28.306,
+        "deltaSeconds": -0.073,
+        "captureDurationSeconds": 0.242
+      },
+      {
+        "screenshot": "09-water-management",
+        "cue": "OVERVIEW-shiquanhe-irrigation",
+        "visibleMediaSeconds": 12.448,
+        "recordedAudioSecondsAtScreenshot": 12.321,
+        "deltaSeconds": -0.127,
+        "captureDurationSeconds": 0.23
+      },
+      {
+        "screenshot": "10-water-result-desktop",
+        "cue": "OVERVIEW-shiquanhe-irrigation",
+        "visibleMediaSeconds": 29.168,
+        "recordedAudioSecondsAtScreenshot": 29.088,
+        "deltaSeconds": -0.08,
+        "captureDurationSeconds": 0.285
+      },
+      {
+        "screenshot": "11-history-exchange",
+        "cue": "OVERVIEW-jokhang-protection",
+        "visibleMediaSeconds": 8.975,
+        "recordedAudioSecondsAtScreenshot": 8.905,
+        "deltaSeconds": -0.07,
+        "captureDurationSeconds": 0.21
+      },
+      {
+        "screenshot": "12-lamps-continuity",
+        "cue": "OVERVIEW-jokhang-protection",
+        "visibleMediaSeconds": 33.975,
+        "recordedAudioSecondsAtScreenshot": 33.859,
+        "deltaSeconds": -0.116,
+        "captureDurationSeconds": 0.302
+      },
+      {
+        "screenshot": "14-rail-valley",
+        "cue": "OVERVIEW-protection",
+        "visibleMediaSeconds": 7.362,
+        "recordedAudioSecondsAtScreenshot": 7.013,
+        "deltaSeconds": -0.349,
+        "captureDurationSeconds": 0.744
+      },
+      {
+        "screenshot": "15-runoff-playback",
+        "cue": "OVERVIEW-protection",
+        "visibleMediaSeconds": 15.902,
+        "recordedAudioSecondsAtScreenshot": 15.806,
+        "deltaSeconds": -0.096,
+        "captureDurationSeconds": 0.224
+      },
+      {
+        "screenshot": "16-stewardship-playback",
+        "cue": "OVERVIEW-protection",
+        "visibleMediaSeconds": 49.119,
+        "recordedAudioSecondsAtScreenshot": 48.955,
+        "deltaSeconds": -0.164,
+        "captureDurationSeconds": 0.251
+      }
+    ],
+    "boundary": "Waveform-aligned Stereo Mix output versus visible DOM slider and screenshot wall clock. DShow uses system tick clock; this estimate includes output latency, UI tick and capture timing. Not a perceptual or frame-exact certification."
+  },
+  {
+    "recording": "corridor-output",
+    "firstSampleEpochEstimate": 1792446196.9166317,
+    "matches": 51,
+    "windows": 51,
+    "minimumWindowCorrelation": 0.94931,
+    "screens": [
+      {
+        "screenshot": "19-corridor-mountain",
+        "cue": "ROUTE-G318-tongmai-approach",
+        "visibleMediaSeconds": 3.765,
+        "recordedAudioSecondsAtScreenshot": 3.721,
+        "deltaSeconds": -0.044,
+        "captureDurationSeconds": 0.202
+      },
+      {
+        "screenshot": "20-tongmai-transition",
+        "cue": "ROUTE-G318-tongmai-crossing",
+        "visibleMediaSeconds": 27.327,
+        "recordedAudioSecondsAtScreenshot": 27.368,
+        "deltaSeconds": 0.041,
+        "captureDurationSeconds": 0.222
+      }
+    ],
+    "boundary": "Waveform-aligned Stereo Mix output versus visible DOM slider and screenshot wall clock. DShow uses system tick clock; this estimate includes output latency, UI tick and capture timing. Not a perceptual or frame-exact certification."
+  }
+]

@@ -1,4 +1,4 @@
-import {useCallback,useEffect,useRef,useState} from 'react';
+import {lazy,Suspense,useCallback,useEffect,useRef,useState} from 'react';
 import {useOverviewDirector} from '../hooks/useOverviewDirector';
 import {corridorBeats,corridorPath,corridorPositionKey,corridorNarratedView,corridorShot,corridorShots,corridorTransitions,type CorridorEdit,type CorridorView} from '../data/corridorJourney';
 import {corridorPhoto,corridorObservations,savedCorridorObservation,corridorObservationFor,corridorPlanMarkdown} from '../data/corridorObservation';
@@ -10,14 +10,18 @@ import {bomiReasons} from '../data/bomiJourney';
 import CorridorStage from './CorridorStage';
 import NarrationCaption from './NarrationCaption';
 import './CorridorExperience.css';
+import {readTravelSession,writeTravelSession,type TravelSession} from '../lib/travelObservationStore';
+import {travelPositionKey,type TravelPlace} from '../data/travelObservation';
+const TravelObservation=lazy(()=>import('./TravelObservation'));
 
 export default function CorridorExperience(){
  const director=useOverviewDirector({beats:corridorBeats,storageKey:corridorPositionKey});
+ const [travel,setTravel]=useState<TravelSession|undefined>(readTravelSession);
  const [note,setNote]=useState(readCorridorNote),[manual,setManual]=useState<CorridorView>(),[edit,setEdit]=useState<CorridorEdit>(),[loadError,setLoadError]=useState(''),[retry,setRetry]=useState(0);
  const [high,setHigh]=useState(.5),[loadedSurface,setLoadedSurface]=useState(''),[imagesReady,setImagesReady]=useState(false),[cameraKey,setCameraKey]=useState(0),[status,setStatus]=useState(''),[resumeIntent,setResumeIntent]=useState(false);
  const fields=usePilotFieldImages(true),planMode=new URLSearchParams(location.hash.split('?')[1]||'').get('plan')==='1';
  const [restoreInitial]=useState(()=>planMode||!readCorridorNote().returnPending?undefined:readCorridorNote().returnTo),hydrated=useRef(false),lastLine=useRef<CorridorSnapshot|undefined>(note.lineReturn);
- const p=director.timing?.textProgress??0,native=corridorNarratedView(director.beatIndex,p,high),view=manual??native,shot=corridorShot(director.beatIndex,p),photo=corridorPhoto(view),isEnd=director.beatIndex===8&&director.raw>=1;
+ const p=director.timing?.textProgress??0,native=corridorNarratedView(director.beatIndex,p,high),view=manual??native,shot=director.beatIndex===3&&edit?(director.raw+1e-7<edit.lulangCultureRaw?3:4):corridorShot(director.beatIndex,p),photo=corridorPhoto(view),isEnd=director.beatIndex===8&&director.raw>=1;
  const snapshot=():CorridorSnapshot=>({beatIndex:director.beatIndex,raw:director.raw,view:structuredClone(view)});
  if(director.beatIndex===2&&!manual&&!planMode)lastLine.current=snapshot();
  useEffect(()=>{if(director.beatIndex===3&&!note.lineReturn&&lastLine.current){const next={...readCorridorNote(),lineReturn:lastLine.current};writeCorridorNote(next);setNote(next);}},[director.beatIndex,note.lineReturn]);
@@ -29,21 +33,21 @@ export default function CorridorExperience(){
  const onReady=useCallback((kind:CorridorView['kind'])=>setLoadedSurface(kind),[]),onHigh=useCallback((n:number)=>setHigh(old=>old===n?old:n),[]);
  const onError=useCallback((s:string)=>{setLoadError(s);director.pause();setResumeIntent(false);},[director.pause]);
  useEffect(()=>{
-  if(!edit||loadedSurface!==view.kind||!imagesReady||!fields.ready||loadError||planMode)return;
+  if(!edit||loadedSurface!==view.kind||!imagesReady||!fields.ready||loadError||planMode||travel)return;
   director.onSceneReady(corridorBeats[director.beatIndex].sceneIdentity);
   if(resumeIntent&&!manual){setResumeIntent(false);if(!isEnd)director.playPause();}
- },[edit,loadedSurface,view.kind,imagesReady,fields.ready,loadError,planMode,resumeIntent,manual,isEnd,director.beatIndex,director.onSceneReady,director.playPause]);
+ },[edit,loadedSurface,view.kind,imagesReady,fields.ready,loadError,planMode,travel,resumeIntent,manual,isEnd,director.beatIndex,director.onSceneReady,director.playPause]);
  // Only the standalone invitation back to Lulang is omitted in this new edit.
  // Its original recording and original scene are not changed.
  useEffect(()=>{
-  if(!edit||director.beatIndex!==5||!director.playing||manual)return;
+  if(!edit||director.beatIndex!==5||!director.playing||manual||travel)return;
   const remaining=(edit.durations[5]*edit.tongmaiEnd-director.audio.currentTime)*1000;
   const next=()=>{director.select(6);director.playPause();};
   // Schedule from the actual media tick so a coarse UI progress update does
   // not have to cross into the omitted standalone return invitation first.
   if(remaining<=0){next();return;}
   const timer=setTimeout(next,remaining);return()=>clearTimeout(timer);
- },[edit,director.beatIndex,director.audio?.currentTime,director.playing,manual,director.select,director.playPause]);
+ },[edit,director.beatIndex,director.audio?.currentTime,director.playing,manual,travel,director.select,director.playPause]);
  const persist=(next:CorridorNote)=>{setNote(next);const ok=writeCorridorNote(next);setStatus(ok?'已保存到当前浏览器。':'当前浏览器未能保存，请先导出或复制笔记。');return ok;};
  const change=(v:CorridorView)=>{director.pause();setResumeIntent(false);setManual(v);setCameraKey(k=>k+1);};
  const angle=(overhead:boolean)=>{
@@ -54,7 +58,14 @@ export default function CorridorExperience(){
  };
  const select=(index:number,raw=0)=>{director.pause();setResumeIntent(false);setManual(undefined);setCameraKey(k=>k+1);director.select(index);if(raw)director.seek(raw);};
  const play=()=>{if(director.wantsPlayback){director.pause();return;}if(isEnd&&manual){setManual(undefined);setCameraKey(k=>k+1);return;}setManual(undefined);setCameraKey(k=>k+1);if(isEnd){select(0);setResumeIntent(true);return;}if(edit&&director.beatIndex===5&&director.raw>=edit.tongmaiEnd)director.select(6);setResumeIntent(true);};
- const restore=(target:CorridorSnapshot)=>{director.pause();setResumeIntent(false);director.select(target.beatIndex);director.seek(target.raw);setManual(target.view);setCameraKey(k=>k+1);};
+ const restore=(target:CorridorSnapshot)=>{
+  director.pause();setResumeIntent(false);
+  // Keeping an unchanged recording/position also keeps its hydrated word
+  // timing. Reselecting it clears timing without retriggering hydration.
+  if(director.beatIndex!==target.beatIndex){director.select(target.beatIndex);director.seek(target.raw);}
+  else if(director.raw!==target.raw)director.seek(target.raw);
+  setManual(target.view);setCameraKey(k=>k+1);
+ };
  const enterLulang=()=>{persist({...readCorridorNote(),lineReturn:snapshot()});change(corridorObservations[1].view);};
  const backLine=()=>{const target=note.lineReturn??lastLine.current;if(target)restore(target);};
  const openPlan=(capture:boolean)=>{const next={...readCorridorNote(),returnTo:snapshot(),returnPending:true,observation:capture?corridorObservationFor(view):readCorridorNote().observation??corridorObservationFor(view),observationView:capture?structuredClone(view):readCorridorNote().observationView??structuredClone(view)};director.pause();setResumeIntent(false);if(persist(next)){setLoadedSurface('');location.hash=corridorPath+'?plan=1';}};
@@ -65,6 +76,23 @@ export default function CorridorExperience(){
  const shotLabels=['整线定位','城市河谷','翻山高差','鲁朗空间','鲁朗人文','峡谷接续','通麦桥隧','波密街道','整线回看'];
  const duration=edit?.durations[director.beatIndex]??1,end=director.beatIndex===5?edit?.tongmaiEnd??1:1;
  const elapsed=edit?edit.durations.slice(0,director.beatIndex).reduce((sum,n,i)=>sum+(i===5?n*edit.tongmaiEnd:n),0)+Math.min(director.raw,end)*duration:0;
+ const enterTravel=(place:TravelPlace)=>{
+  const next:TravelSession={version:1,place,returnTo:snapshot(),wasManual:!!manual};
+  director.pause();setResumeIntent(false);
+  try{localStorage.removeItem(travelPositionKey(place));}catch{/* The in-memory visit still works. */}
+  writeTravelSession(next);setTravel(next);
+ };
+ const returnTravel=(resume:boolean)=>{
+  if(!travel)return;const target=travel.returnTo;
+  director.pause();
+  // The parent clock is paused throughout the visit. Reselecting the same
+  // beat clears its hydrated word timing without changing effect inputs.
+  if(director.beatIndex!==target.beatIndex||director.raw!==target.raw){director.select(target.beatIndex);director.seek(target.raw);}
+  setManual(!resume&&travel.wasManual?target.view:undefined);
+  setLoadedSurface('');setCameraKey(k=>k+1);setResumeIntent(resume&&!(target.beatIndex===8&&target.raw>=1));
+  writeTravelSession(undefined);setTravel(undefined);
+ };
+ if(travel&&!planMode)return <Suspense fallback={<main className="corridor-plan"><h1>正在进入沿路观察…</h1><button onClick={()=>returnTravel(false)}>返回原线原句</button></main>}><TravelObservation session={travel} onReturn={returnTravel}/></Suspense>;
  if(planMode)return <main className="corridor-plan"><header><span>G318整线 · 观察计划</span><button onClick={returnPlan}>保存并返回原画面原句</button></header><h1>把问题带走，也保留来路。</h1><p>保存对象与返回目标分别保留；此页不生成按日出行安排。</p><section><h2>{observation.title}</h2>{savedPhoto&&<figure><img src={savedPhoto.src} alt={savedPhoto.title}/><figcaption>{savedPhoto.date} · {savedPhoto.author} · {savedPhoto.license}</figcaption></figure>}<p>观察问题：{observation.question}</p><p><a href={observation.source} target="_blank" rel="noreferrer">资料原出处 ↗</a>{savedPhoto&&<> · <a href={savedPhoto.licenseUrl} target="_blank" rel="noreferrer">影像许可 ↗</a></>}</p><p className="corridor-boundary">{observation.boundary}</p></section><label>我的问题与笔记<textarea aria-label="整线观察笔记" maxLength={4000} rows={7} value={note.text} onChange={e=>setNote({...note,text:e.target.value})}/></label><div className="corridor-actions"><button onClick={()=>{if(!note.text.includes(observation.question)&&note.text.length+observation.question.length+2<=4000)setNote({...note,text:note.text+(note.text?'\n\n':'')+observation.question});}}>带入观察问题</button><button onClick={()=>persist(note)}>保存计划</button><button onClick={exportPlan}>导出Markdown</button><button className="corridor-primary" onClick={returnPlan}>保存并返回原画面原句</button></div><p role="status">{status}</p><p>返回目标：整线录音段{(note.returnTo?.beatIndex??0)+1} · 原句{Math.round((note.returnTo?.raw??0)*100)}%。从其他画面打开笔记时，保存对象不会被覆盖。</p></main>;
  return <main className="corridor-experience"><header><a href="#/routes">← 线路入口</a><div><strong>G318 · 林芝—波密</strong><small>林芝 → 色季拉山地 → 鲁朗 → 通麦 → 波密</small></div><button onClick={()=>openPlan(false)}>我的观察计划</button></header>
   <div className="corridor-layout"><section className="corridor-stage" aria-label="G318完整认识主线" data-beat={director.beatIndex} data-shot={corridorShots[shot][0]} data-raw={director.raw} data-word-progress={p} data-manual={!!manual} data-view={JSON.stringify(view)} data-timing-level={director.timing?.timingLevel??'waiting'}>
@@ -75,6 +103,7 @@ export default function CorridorExperience(){
    <div className="corridor-caption"><small>{manual?'自由观察 · 原句已暂停':director.playing?(director.voice?'跟随有声讲述':'静音播放'):'已暂停'}</small><p>{manual?reason:<NarrationCaption text={director.timing?.caption||corridorBeats[director.beatIndex].text.split('。')[0]+'。'} timing={director.timing}/>}</p></div>
    {!visibleReady&&<div className="corridor-loading" role="status">{loadError||fields.error||'正在接续真实线路与既有画面…'}{(loadError||fields.error)&&<button onClick={()=>{director.retryScene();setLoadedSurface('');setLoadError('');fields.retry();setRetry(n=>n+1);}}>重试资料</button>}</div>}
   </section><aside className="corridor-reading"><p className="corridor-eyebrow">完整认识主线 · 九镜约4分37秒</p><h2>{corridorShots[shot][1]}</h2><nav aria-label="整线九镜">{corridorShots.map((s,i)=><button key={s[0]} aria-label={`${s[0]} · ${s[1]}`} aria-current={shot===i?'step':undefined} onClick={()=>select(s[3],i===4?edit?.lulangCultureRaw??0:0)}><span>{s[0]}</span><small>{shotLabels[i]}</small></button>)}</nav><p className="corridor-handoff">{corridorTransitions[shot]}</p>
+   <section className="corridor-travel-entry"><h3>{shot===2?'在色季拉，停下来看看':shot===3||shot===4?'到鲁朗，看风景与生活':'沿路停留 · 可选体验'}</h3><p>沿原路进入真实记录，了解看什么、为何值得停；观察后回到进入前的原句。</p><button onClick={()=>enterTravel('sejila')}>色季拉 · 沿路观察</button><button onClick={()=>enterTravel('lulang')}>鲁朗 · 地方体验</button></section>
    <section className="corridor-controls"><h3>暂停，看清一个关系</h3>
     {view.kind==='overview'?<><div>{['城市河谷','沿线高差','鲁朗生活','通麦桥隧','波密街道'].map((name,i)=><button key={name} aria-pressed={view.focus===i} onClick={()=>change({...view,focus:i,read:1})}>{name}</button>)}</div><button onClick={()=>change({...view,focus:-1,read:1,overhead:!view.overhead})}>{view.overhead?'斜看整线':'俯视整线'}</button></>:<>
      <label>同一路段的位置<input aria-label="完整主线沿线位置" type="range" min="0" max="1" step=".001" value={view.value.progress} onChange={e=>change(view.kind==='pilot'?{...view,value:{...view.value,mode:'line',progress:Number(e.target.value),photoOverlay:undefined,placeMedia:'map'}}:view.kind==='tongmai'?{...view,value:{...view.value,phase:'travel',progress:Number(e.target.value)}}:{...view,value:{...view.value,phase:'travel',progress:Number(e.target.value)}})}/></label>

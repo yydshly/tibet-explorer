@@ -1,0 +1,417 @@
+{
+  "scope": "53 unique sources attached to the21 current main beats; availability only, not full factual review",
+  "sources": [
+    {
+      "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+      "title": "NOAA · 全球大气环流",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+      "title": "NASA · 气候与地球能量收支",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+      "bytesRead": 373349,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+      "title": "NOAA · 水循环",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.gfdl.noaa.gov/clouds-and-convection/",
+      "title": "NOAA GFDL · 云滴增长与降水",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://www.gfdl.noaa.gov/clouds-and-convection/",
+      "bytesRead": 44406,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.noaa.gov/explainers/what-s-difference-between-climate-and-weather",
+      "title": "NOAA · 天气与气候有什么不同",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+      "title": "西藏自治区人民政府 · 自然地理",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+      "title": "Natural Earth · 自然地理范围（概略参照）",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "url": "/data/narrated-geography.json",
+      "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 338405
+    },
+    {
+      "url": "https://ieexa.cas.cn/news/kydt/202506/t20250606_7798567.html",
+      "title": "中科院地球环境所 · 印度洋水汽进入藏东南的路径研究",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://ieexa.cas.cn/news/kydt/202506/t20250606_7798567.html",
+      "bytesRead": 160575,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://itpcas.cas.cn/new_kycg/new_kyjz/202606/t20260612_8228168.html",
+      "title": "青藏高原研究所 · 西风水汽跨喜马拉雅观测",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://itpcas.cas.cn/new_kycg/new_kyjz/202606/t20260612_8228168.html",
+      "bytesRead": 239860,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+      "title": "NOAA · 风的动力与自转偏转",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.noaa.gov/jetstream/global/jet-stream",
+      "title": "NOAA · 纬度、自转与向极运动",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://pog.mit.edu/src/GeneralCirculationNotes_withFigs.pdf",
+      "title": "MIT · 大气角动量守恒",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://pog.mit.edu/src/GeneralCirculationNotes_withFigs.pdf",
+      "bytesRead": 1000000,
+      "contentType": "application/pdf"
+    },
+    {
+      "url": "/data/rotation-flow-evidence.json",
+      "title": "本例参数与证据边界",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 2831
+    },
+    {
+      "url": "https://www.usgs.gov/publications/multi-stage-crustal-thickening-surface-uplift-and-collision-western-himalaya-karakoram",
+      "title": "USGS · 西部喜马拉雅—喀喇昆仑—西藏多阶段造山研究",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://registry.opendata.aws/terrain-tiles/",
+      "title": "Mapzen / Tilezen · 公开高程数据与处理口径",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://registry.opendata.aws/terrain-tiles/",
+      "bytesRead": 12951,
+      "contentType": "text/html"
+    },
+    {
+      "url": "/assets/terrain/tibet-regional-dem.source.json",
+      "title": "本地高程来源与分辨率",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 13982
+    },
+    {
+      "url": "https://forecast.weather.gov/glossary.php?word=OROGRAPHIC",
+      "title": "美国国家气象局：地形抬升",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://forecast.weather.gov/glossary.php?word=OROGRAPHIC",
+      "bytesRead": 3190,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/products/wmo-climate-normals",
+      "title": "NOAA NCEI：WMO 1991—2020气候标准值",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://www.ncei.noaa.gov/products/wmo-climate-normals",
+      "bytesRead": 45483,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "/data/climate-normals-1991-2020/stations.json",
+      "title": "本地归档：三站原始数据与来源",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 4226
+    },
+    {
+      "url": "https://mzt.xizang.gov.cn/zxzx/tzgg/202607/t20260729_551733.html",
+      "title": "西藏自治区民政厅 · 2026年上半年行政区划代码",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+      "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://www.xizang.gov.cn/xwzx_406/dsdt/202605/t20260510_539364.html",
+      "title": "西藏自治区人民政府 · 山南河谷与地方文化",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://case.edu/artsci/artsci-fall-2009/tibet.html",
+      "title": "凯斯西储大学 · 西藏社会与牧民生活研究",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://case.edu/artsci/artsci-fall-2009/tibet.html",
+      "bytesRead": 26999,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://www.lasa.gov.cn/lasa/wjzl/202204/0195f5cb1a964d6c9121791d618ed7e2.shtml",
+      "title": "拉萨市人民政府 · 十四五水安全保障规划",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://www.al.gov.cn/info/1035/48267.htm",
+      "title": "阿里地区行政公署转载西藏日报 · 2023-11-20",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "/data/local-places/shiquanhe.geojson",
+      "title": "OSM现状狮泉河：归档灌渠、林地与城镇",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 463338
+    },
+    {
+      "url": "/data/shiquanhe-irrigation-evidence.json",
+      "title": "本段事实、解释与示意边界",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 1373
+    },
+    {
+      "url": "https://www.openstreetmap.org/copyright",
+      "title": "© OpenStreetMap contributors · ODbL",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://www.openstreetmap.org/copyright",
+      "bytesRead": 21314,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.tibetology.ac.cn/2024-08/17/content_42896506.htm",
+      "title": "周拉、拉毛肖：11—12世纪“道次第”文本研究",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.tibetology.ac.cn'. (_ssl.c:1007)>"
+    },
+    {
+      "url": "https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india",
+      "title": "The Met · Tibet and India 展览：阿底峡与托林",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/707/",
+      "title": "UNESCO · 拉萨布达拉宫历史建筑群",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://whc.unesco.org/document/5816",
+      "title": "UNESCO / ICOMOS · 2005年监测报告，第3页",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "/data/local-places/lhasa.geojson",
+      "title": "大昭寺及寺前现状地物",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 3373578
+    },
+    {
+      "url": "/data/jokhang-protection-evidence.json",
+      "title": "本段证据边界：原文核对与示意范围",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 1080
+    },
+    {
+      "url": "https://www.xizang.gov.cn/zwgk/ldzc/ldhd/201901/t20190117_54666.html",
+      "title": "2007年5月1日通车报道：柳梧大桥于4月30日通车",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://lwxq.lasa.gov.cn/lwxqgwh/lwyw/201910/56d71493c7f54244bb05018ceee8db2b.shtml",
+      "title": "2019年柳梧采访：洛桑赤列与运输组织",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "/data/local-places/transport-corridors.manifest.json",
+      "title": "现状相连道路、桥梁与源节点归档",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 148886
+    },
+    {
+      "url": "https://jtt.xizang.gov.cn/xxgk/fdzdgknr/jggk/jtgk/201611/t20161130_233601.html",
+      "title": "西藏交通运输厅 · 青藏铁路简介",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://www.bomi.gov.cn/bmx/xwzx/202106/a320365e780047a6a07eba587fb4215a.shtml",
+      "title": "波密县政府 · 拉林铁路开通事件（2021）",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://www.caac.gov.cn/XWZX/MHYW/201007/t20100702_12709.html",
+      "title": "民航局 · 阿里昆莎机场通航（2010）",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248183.html",
+      "title": "西藏自治区文旅厅 · 2021年拉林铁路开通与沿线地区",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "/assets/terrain/lhasa-ground/lhasa.geojson",
+      "title": "OSM相连铁路与城市地物（归档）",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 52534
+    },
+    {
+      "url": "/assets/terrain/lhasa-ground/manifest.json",
+      "title": "Sentinel-2影像与Copernicus GLO-30高程",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 3549
+    },
+    {
+      "url": "https://www.xizang.gov.cn/xwzx_406/ztzl_416/gdzt/jsstwmxgd/mtjj_4437/202204/t20220419_294361.html",
+      "title": "西藏自治区人民政府 · 羌塘保护与管护工作",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    },
+    {
+      "url": "https://whc.unesco.org/en/decisions/8790",
+      "title": "UNESCO · 拉萨历史建筑群决定47 COM 7B.66（2025）",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://whc.unesco.org/en/decisions/8790",
+      "bytesRead": 124812,
+      "contentType": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+      "title": "Natural Earth · 河流中心线（1:1000万）",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "url": "/data/hydrography/yarlung-river.geojson",
+      "title": "当前画面的河道数据与处理记录",
+      "claimVerification": "not implied by availability",
+      "status": "local-present",
+      "bytes": 28273
+    },
+    {
+      "url": "https://www.itpcas.ac.cn/new_kycg/new_kyjz/202204/t20220426_6439458.html",
+      "title": "中科院青藏高原所 · 雅鲁藏布江多圈层水文观测",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1007)>"
+    },
+    {
+      "url": "https://www.usgs.gov/water-science-school/science/runoff-surface-and-overland-water-runoff",
+      "title": "USGS：地表径流与下渗",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins",
+      "title": "USGS：流域与分水岭",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.xzxw.com/al/2023-07/06/content_881465.html",
+      "title": "西藏日报：全心全意守护“高原精灵”——记黄晨（2023-07-06）",
+      "claimVerification": "not implied by availability",
+      "status": 200,
+      "finalUrl": "https://www.xzxw.com/al/2023-07/06/content_881465.html",
+      "bytesRead": 24939,
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://www.xizang.gov.cn/zwgk/xxfb/zcjd_435/202505/t20250512_477605.html",
+      "title": "西藏自治区 · 文化旅游产业发展规划（2025—2035年）解读",
+      "claimVerification": "not implied by availability",
+      "status": "unavailable-in-this-check",
+      "error": "<urlopen error [Errno 2] No such file or directory>"
+    }
+  ],
+  "climateArchive": [
+    {
+      "name": "林芝",
+      "archiveHashMatches": true,
+      "months": 12
+    },
+    {
+      "name": "拉萨",
+      "archiveHashMatches": true,
+      "months": 12
+    },
+    {
+      "name": "狮泉河",
+      "archiveHashMatches": true,
+      "months": 12
+    }
+  ]
+}

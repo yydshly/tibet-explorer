@@ -1,0 +1,19 @@
+{
+  "id": "20871294ef3bd0c0763f37ea7fa4b7c42c77bc0ac15f7f14cce20f8b0643d053",
+  "url": "/assets/audio/narration/20871294ef3bd0c0763f37ea7fa4b7c42c77bc0ac15f7f14cce20f8b0643d053.mp3",
+  "text": "沿原路上山，看道路怎样绕着山体前进。转到二零一五年的沿路实拍：道路弯入谷地，近处是积雪与低矮植被，两侧是林地山坡。道路和路边风景要放在一起看。回到地图，继续向高处前进。这是当时的记录，不代表今天路况。",
+  "duration": 18.108,
+  "bytes": 291444,
+  "sha256": "2b063184e4965cc18b6ea8d5c8fd47108b1ac278e1564f87d4d56a9fa5b23b4f",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T18:51:44.393Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/20871294ef3bd0c0763f37ea7fa4b7c42c77bc0ac15f7f14cce20f8b0643d053.subtitles.json",
+  "subtitleSha256": "36f4db5263e2aa98a1d28aaa579e0e5b10a9ec2ddc2197e17d0cbbb56b860702",
+  "timingLevel": "word"
+}

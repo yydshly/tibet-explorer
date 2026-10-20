@@ -1,0 +1,19 @@
+{
+  "id": "289f85eb331cb738e40b1ccd06636e53e57c8dc5395922f709843f6454f7f55f",
+  "url": "/assets/audio/narration/289f85eb331cb738e40b1ccd06636e53e57c8dc5395922f709843f6454f7f55f.mp3",
+  "text": "沿这段道路向前。现在能看清路面和两侧坡面的关系。道路走向来自地图资料，路面的宽度和外观是示意，不代表实测道路。",
+  "duration": 10.908,
+  "bytes": 176244,
+  "sha256": "534748dfdb7841815bd5aacae40adfb856b17b1029dc15f324d0235c569f7209",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T19:26:15.906Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/289f85eb331cb738e40b1ccd06636e53e57c8dc5395922f709843f6454f7f55f.subtitles.json",
+  "subtitleSha256": "50d62a0cd77bfb71886f8999626d2910fcfc3339bc049bda9733e1547270f323",
+  "timingLevel": "word"
+}

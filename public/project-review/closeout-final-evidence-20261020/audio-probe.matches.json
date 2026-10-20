@@ -1,0 +1,63 @@
+{
+  "recording": "audio-probe",
+  "method": "2-second source windows every5s; normalized waveform cross-correlation at4kHz. This is actual-output signal evidence, not human listening or comprehension.",
+  "seconds": 34.984,
+  "rms": 0.022057990269606212,
+  "peak": 0.4672577381134033,
+  "cues": [
+    {
+      "cueId": "ROUTE-G318-mountains",
+      "duration": 41.976,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 28.93725,
+          "correlation": 0.25604,
+          "gain": 0.1797
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 31.04325,
+          "correlation": 0.14258,
+          "gain": 0.0976
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 32.70575,
+          "correlation": 0.96428,
+          "gain": 0.9343
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 28.82775,
+          "correlation": 0.17631,
+          "gain": 0.1005
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 28.40675,
+          "correlation": 0.15426,
+          "gain": 0.0432
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 31.98325,
+          "correlation": 0.22932,
+          "gain": 0.232
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 31.88825,
+          "correlation": 0.27572,
+          "gain": 0.4826
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 28.36775,
+          "correlation": 0.22539,
+          "gain": 0.0821
+        }
+      ]
+    }
+  ]
+}

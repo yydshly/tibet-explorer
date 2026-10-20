@@ -31,9 +31,13 @@ const { gatewayNarrationCues } = await importContent('src/data/routeGatewayNarra
 const { tongmaiCues } = await importContent('src/data/tongmaiJourney.ts');
 const { bomiCues } = await importContent('src/data/bomiJourney.ts');
 const { corridorCues } = await importContent('src/data/corridorJourney.ts');
+const { travelCues } = await importContent('src/data/travelObservation.ts');
+const { roadRideCues } = await importContent('src/data/roadRideNarration.ts');
 const cues = [...chapters.flatMap(chapter => chapter.steps.flatMap(step => (journey.getJourneyStep(step.id)?.cues || []).map(cue => ({ ...cue, stepId: step.id, chapterId: chapter.id })))), ...cityLifeNarrationCues, ...cityComparisonNarrationCues,...climateObservationNarrationCues,...regionalJourneyNarrationCues,...overviewNarrationCues,...climateLabNarrationCues,...routePilotCues,...lulangPhotoNarrationCues,...gatewayNarrationCues,...tongmaiCues,...bomiCues];
 // The existing cue objects stay byte-for-byte unchanged; only two editorial bookends are new.
 cues.push(...corridorCues);
+cues.push(...travelCues);
+cues.push(...roadRideCues);
 const selected = cues.filter(cue => !only || cue.id === only || cue.stepId === only || only === cue.chapterId && ['cities','comparison','regional','overview'].includes(only));
 if (!selected.length) throw new Error('No matching narration cue.');
 // Native upgrades prioritize the opening, climate, and both city journeys.

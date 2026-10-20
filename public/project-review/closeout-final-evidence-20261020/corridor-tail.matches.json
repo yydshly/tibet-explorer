@@ -1,0 +1,51 @@
+{
+  "recording": "corridor-tail",
+  "method": "2-second source windows every5s; normalized waveform cross-correlation at4kHz. This is actual-output signal evidence, not human listening or comprehension.",
+  "seconds": 89.986,
+  "rms": 0.0478479130045753,
+  "peak": 0.7117799520492554,
+  "cues": [
+    {
+      "cueId": "ROUTE-G318-corridor-closing",
+      "duration": 29.844,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 63.73825,
+          "correlation": 0.97357,
+          "gain": 1.0165
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 68.73825,
+          "correlation": 0.96772,
+          "gain": 0.8685
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 73.73825,
+          "correlation": 0.97171,
+          "gain": 0.9607
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 78.73825,
+          "correlation": 0.9678,
+          "gain": 1.3593
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 83.73825,
+          "correlation": 0.96567,
+          "gain": 1.0464
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 87.98525,
+          "correlation": 0.00909,
+          "gain": 0.0089
+        }
+      ]
+    }
+  ]
+}

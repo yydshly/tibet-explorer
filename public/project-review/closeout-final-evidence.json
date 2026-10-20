@@ -1,0 +1,153 @@
+{
+  "id": "PRODUCT-FINAL-EVIDENCE-20261020-1",
+  "baseline": "PRODUCT-CLOSEOUT-20261020-2",
+  "date": "2026-10-20",
+  "verdict": "frozen_trial_delivery_formal_acceptance_pending",
+  "conclusion": "可交付试用的冻结候选版；本轮技术检查收口，正式结项尚未通过。未降低原有真实听验和首次观看者门槛。",
+  "runtimeUnchanged": {
+    "files": 2564,
+    "sha256": "8ccbf3d2b51612b47182b9bc992d58ebcb05bb07be04d94c5691b1e2dccb92b9",
+    "changedFiles": []
+  },
+  "method": "实际浏览器操作、连续播放、系统输出Stereo Mix录音、源波形匹配、可见页面时钟及定点截图。无麦克风采集；未进行真人主观听验。",
+  "playback": [
+    {
+      "program": "六章",
+      "continuousObservedEnd": "12:30",
+      "beats": 21,
+      "recordingSeconds": 800,
+      "matchedWindows": 141,
+      "sampledWindows": 141,
+      "minimumCorrelation": 0.92246,
+      "recording": "closeout-final-evidence-20261020/overview-output.mp3",
+      "boundary": "波形每5秒取2秒窗口，不是逐采样无缺音证明；画面为分时取证，不是全程录像。"
+    },
+    {
+      "program": "林芝—波密整线",
+      "continuousObservedEnd": "4:37",
+      "recordingCues": 9,
+      "recordingSeconds": 320,
+      "matchedWindows": 51,
+      "sampledWindows": 51,
+      "minimumCorrelation": 0.94931,
+      "recording": "closeout-final-evidence-20261020/corridor-output.mp3",
+      "boundary": "录音启动早于播放，320秒时限漏掉收尾约十余秒；最后21秒和26秒两个源音频窗口用corridor-end另录匹配，相关度.96520/.97574。合计53个不同窗口有证据，但不宣称完整无间断整线录音。"
+    }
+  ],
+  "alignment": {
+    "overviewSamples": 11,
+    "overviewMaxAbsoluteEstimatedSeconds": 0.436,
+    "corridorSamples": 2,
+    "corridorMaxAbsoluteEstimatedSeconds": 0.044,
+    "file": "closeout-final-evidence-20261020/audio-screen-alignment.json",
+    "boundary": "对齐的是录音与DOM可见媒体进度；截图存在取证延时，含播放延迟，不是逐帧音画同步认证。06取证跨七月/一月切换；01与18加载帧不算画面通过证据。"
+  },
+  "actualOperations": [
+    {
+      "item": "整线R08末尾计划",
+      "result": "编辑、保存、刷新仍保留笔记；Markdown真实下载含对象、问题、出处、笔记及第9段100%返回点。返回保持R08/4:37；返回结束画面不从头播放。",
+      "evidence": [
+        "22-plan-persisted.png",
+        "23-plan-return-ending.png",
+        "exported-plan.md"
+      ]
+    },
+    {
+      "item": "汇水条件",
+      "result": "同一地形、过程0.7，对照4份/8份下渗；紫圈增加、汇流符号减少。恢复时回到原25%语句并继续；随后人工暂停已前进至40%。符号较小，不能据此代替理解通过。",
+      "evidence": [
+        "24-runoff-less.png",
+        "26-runoff-more-stable.png",
+        "27-runoff-restored.png"
+      ]
+    },
+    {
+      "item": "管护阻隔",
+      "result": "同一讲述76%，保留阻隔时符号停在一侧，拆除后跨到另一侧；恢复回到同一句并继续。未宣称生态已恢复。",
+      "evidence": [
+        "28-barrier-kept.png",
+        "29-barrier-removed.png"
+      ]
+    }
+  ],
+  "previousClosedDefects": [
+    "D01线路入口",
+    "D02供灯对照",
+    "D03返回章节错位"
+  ],
+  "confirmedNewRuntimeBlockers": [],
+  "formalCloseoutBlockers": [
+    {
+      "id": "E01",
+      "title": "真实主观声音听验仍缺",
+      "why": "录到并匹配实际声音输出补齐了技术证据，但尚无真人对清晰度、重叠声、听感与语义对应的记录。A2原标准未改，不以波形检查冒充听过。",
+      "next": "在冻结基线上由独立验收人员一次记录；不是继续改音频或反复让负责人陪测。"
+    },
+    {
+      "id": "E02",
+      "title": "首次观看者理解验收0/3",
+      "why": "C5要求3名首次观看者、每项至少2人独立解释并指认，3人完成所选操作返回。既有熟悉项目的用户反馈不计首次。",
+      "next": "独立主持人按既有任务记录真实原话和操作；只有实际暴露的关键误解或阻断才重开缺陷。"
+    }
+  ],
+  "documentationLimits": [
+    "本轮复核53个主线引用的可达性：12个本地存在、12个远端直接200、29个本环境直取受限；直取受限不等于坏链接。关键条目另用官方正文/索引补证。未重新审计所有专题的每个主张。",
+    "已复核26个线路影像/地形/照片资产哈希与既有许可台账，3个气候站归档校验；不构成对每一项素材的独立法律审查。未发现需要新增素材才能解决的核心依据缺口。",
+    "本轮没有保存所有逐句视频。托林和铁路局部画面依赖前一轮同基线实际操作证据；音频本轮已覆盖。截图文件名为取证计划标签，以画面/DOM为准，不能把11或14等文件名当作场景覆盖证明。",
+    "桌面单环境证据；手机专项、新设备兼容、所有可选深入专题和写实驾驶不在本轮验收范围。",
+    "代码工作树仍含既有未提交改动；另归档源码、构建结果和逐文件摘要供复现，不把HEAD单独当成可复现版本。未推送新发布。"
+  ],
+  "sources": [
+    {
+      "claim": "气压梯度驱动、地球自转使运动偏转；抬升冷却可形成云雨",
+      "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+      "check": "官方正文读取；不把偏转当作启动气流的唯一原因"
+    },
+    {
+      "claim": "2023年狮泉河林地闸口灌溉、清渠与巡护",
+      "url": "https://www.al.gov.cn/info/1035/48267.htm",
+      "check": "官方报道正文读取；不是家庭供水或全地区现状"
+    },
+    {
+      "claim": "2023年黄晨监测、巡护及拆除迁徙阻隔",
+      "url": "https://www.xzxw.com/al/2023-07/06/content_881465.html",
+      "check": "报道正文读取；不推出植被或种群已恢复"
+    },
+    {
+      "claim": "下渗与地表径流的关系",
+      "url": "https://www.usgs.gov/water-science-school/science/runoff-surface-and-overland-water-runoff",
+      "check": "USGS原理正文读取；12份和4/8份是教学设定"
+    },
+    {
+      "claim": "阿里昆莎机场2010年7月1日通航",
+      "url": "https://www.caac.gov.cn/XWZX/GDTPXW/202007/t20200709_203504.html",
+      "check": "原2010链接本轮读取受限，以民航局2020周年报道补证；未改运行内容"
+    },
+    {
+      "claim": "扎木镇的县城、生产与服务联系",
+      "url": "https://www.bomi.gov.cn/bmx/newxz/202012/ee7bcc2e5e7143c59d7f4725fa059033.shtml",
+      "check": "官方页面读取；未采用排版有歧义的人口统计"
+    },
+    {
+      "claim": "波密县层面的波卓文化线索",
+      "url": "https://www.bomi.gov.cn/bmx/xwzx/202009/4d01ce38b8c24dbe96f5b2022022091e.shtml",
+      "check": "官方页面读取；县级资料不冒充2008街景正在发生的活动"
+    },
+    {
+      "claim": "托林交流中的提问、著述与共同翻译",
+      "url": "https://www.tibetology.ac.cn/2024-08/17/content_42896506.htm",
+      "check": "官方研究文章的检索索引段落支持人名和翻译关系；本轮正文直取失败，非一手手稿核验"
+    },
+    {
+      "claim": "11—12世纪西藏与印度文化交流",
+      "url": "https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india",
+      "check": "博物馆正文读取；不把示意路径当成古道实测"
+    },
+    {
+      "claim": "大昭寺保护与供灯空间材料",
+      "url": "https://whc.unesco.org/document/5816",
+      "check": "本轮PDF可取；具体供灯段沿用先前D02依据核验，不算本轮重新逐条复核"
+    }
+  ],
+  "stopRule": "本轮主动检查结束。冻结已收口内容、镜头、音频及模型；不启动新扩展/审美打磨。独立验收只回报具体关键误解、声音缺陷或操作阻断。"
+}

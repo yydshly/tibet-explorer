@@ -1,0 +1,727 @@
+[
+  {
+    "name": "01-overview-start",
+    "at": "2026-10-19T21:29:46.078Z"
+  },
+  {
+    "name": "02-earth-location",
+    "at": "2026-10-19T21:30:30.702Z"
+  },
+  {
+    "name": "03-rotation-flow",
+    "at": "2026-10-19T21:31:34.743Z"
+  },
+  {
+    "name": "04-uplift-relief",
+    "at": "2026-10-19T21:32:41.289Z"
+  },
+  {
+    "name": "05-cloud-rain",
+    "at": "2026-10-19T21:33:01.981Z",
+    "end": "2026-10-19T21:33:02.341Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction": "air",
+        "data-interaction-city": "nyingchi",
+        "data-interaction-manual": "false",
+        "data-interaction-moisture": "higher",
+        "data-interaction-zoom": "false",
+        "data-overview-beat": "LAB-air-higher",
+        "data-overview-scene": "atlas-overview",
+        "data-overview-shot": "LAB-air-higher:0",
+        "data-scene-progress": "0.1969",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "气团位置",
+        "value": "0.2"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.317"
+      }
+    ]
+  },
+  {
+    "name": "06-regional-climate",
+    "at": "2026-10-19T21:33:58.771Z",
+    "end": "2026-10-19T21:33:59.340Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction": "evidence",
+        "data-interaction-city": "nyingchi",
+        "data-interaction-manual": "false",
+        "data-interaction-moisture": "higher",
+        "data-interaction-zoom": "false",
+        "data-overview-beat": "OBS-CLIMATE-1",
+        "data-overview-scene": "atlas-overview",
+        "data-overview-shot": "OBS-CLIMATE-1:0",
+        "data-scene-progress": "0.0000",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "当前讲述进度",
+        "value": "0.018"
+      }
+    ]
+  },
+  {
+    "name": "07-regions-to-life",
+    "at": "2026-10-19T21:35:11.526Z",
+    "end": "2026-10-19T21:35:11.900Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction": "life",
+        "data-interaction-city": "nyingchi",
+        "data-interaction-manual": "false",
+        "data-interaction-moisture": "higher",
+        "data-interaction-zoom": "true",
+        "data-overview-beat": "LAB-life-nyingchi",
+        "data-overview-scene": "atlas-overview",
+        "data-overview-shot": "LAB-life-nyingchi:0",
+        "data-scene-progress": "1.0000",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "高程探针位置",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.687"
+      }
+    ]
+  },
+  {
+    "name": "08-irrigation",
+    "at": "2026-10-19T21:35:50.982Z",
+    "end": "2026-10-19T21:35:51.224Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction": "life",
+        "data-interaction-city": "lhasa",
+        "data-interaction-manual": "false",
+        "data-interaction-moisture": "higher",
+        "data-interaction-zoom": "true",
+        "data-overview-beat": "LAB-life-lhasa",
+        "data-overview-scene": "atlas-overview",
+        "data-overview-shot": "OVERVIEW-life-lhasa:0",
+        "data-scene-progress": "1.0000",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "高程探针位置",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.697"
+      }
+    ]
+  },
+  {
+    "name": "09-water-management",
+    "at": "2026-10-19T21:36:17.727Z",
+    "end": "2026-10-19T21:36:17.957Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-shiquanhe-irrigation",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-shiquanhe-irrigation:0",
+        "data-scene-progress": "0.0000",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "当前讲述进度",
+        "value": "0.338"
+      }
+    ]
+  },
+  {
+    "name": "10-water-result-desktop",
+    "at": "2026-10-19T21:36:34.494Z",
+    "end": "2026-10-19T21:36:34.779Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-shiquanhe-irrigation",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-shiquanhe-irrigation:3",
+        "data-scene-progress": "0.0000",
+        "data-shot-phase": "evidence"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "当前讲述进度",
+        "value": "0.792"
+      }
+    ]
+  },
+  {
+    "name": "11-history-exchange",
+    "at": "2026-10-19T21:37:50.931Z",
+    "end": "2026-10-19T21:37:51.141Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-jokhang-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-jokhang-protection:0",
+        "data-scene-progress": "0.4556",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "供灯空间对照",
+        "value": "0"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.233"
+      }
+    ]
+  },
+  {
+    "name": "12-lamps-continuity",
+    "at": "2026-10-19T21:38:15.885Z",
+    "end": "2026-10-19T21:38:16.187Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-jokhang-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-jokhang-protection:2",
+        "data-scene-progress": "0.4556",
+        "data-shot-phase": "evidence"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "供灯空间对照",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.882"
+      }
+    ]
+  },
+  {
+    "name": "13-modern-connections",
+    "at": "2026-10-19T21:39:42.555Z",
+    "end": "2026-10-19T21:39:44.554Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "true",
+        "data-ground-height": "2000",
+        "data-ground-manual": "false",
+        "data-ground-progress": "0",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-valley-journey",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-valley-journey:0",
+        "data-scene-progress": "0.0000",
+        "data-shot-phase": "whole"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "铁路沿线观察位置",
+        "value": "0"
+      },
+      {
+        "label": "沿线观察朝向",
+        "value": "0"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "14-rail-valley",
+    "at": "2026-10-19T21:41:00.439Z",
+    "end": "2026-10-19T21:41:01.183Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:1",
+        "data-scene-progress": "0.0063",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "干流上下游观察进度",
+        "value": "0.01"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.125"
+      }
+    ]
+  },
+  {
+    "name": "15-runoff-playback",
+    "at": "2026-10-19T21:41:09.232Z",
+    "end": "2026-10-19T21:41:09.456Z",
+    "dom": [
+      {
+        "data-focused-enabled": "false",
+        "data-focused-manual": "false",
+        "data-focused-process": "runoff",
+        "data-focused-progress": "0.9636522993827167",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:2",
+        "data-scene-progress": "0.4683",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "0.96"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.27"
+      }
+    ]
+  },
+  {
+    "name": "16-stewardship-playback",
+    "at": "2026-10-19T21:41:42.381Z",
+    "end": "2026-10-19T21:41:42.632Z",
+    "dom": [
+      {
+        "data-focused-enabled": "true",
+        "data-focused-manual": "false",
+        "data-focused-process": "stewardship",
+        "data-focused-progress": "1",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:3",
+        "data-scene-progress": "0.9174",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.834"
+      }
+    ]
+  },
+  {
+    "name": "17-overview-ending",
+    "at": "2026-10-19T21:42:50.864Z",
+    "end": "2026-10-19T21:42:51.085Z",
+    "dom": [
+      {
+        "data-focused-manual": "false",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-conclusion",
+        "data-overview-scene": "atlas-overview",
+        "data-overview-shot": "OVERVIEW-observation-close:5",
+        "data-scene-progress": "1.0000",
+        "data-shot-phase": "return"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "当前讲述进度",
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "18-corridor-start",
+    "at": "2026-10-19T21:44:05.386Z",
+    "end": "2026-10-19T21:44:05.547Z",
+    "dom": [
+      {
+        "data-beat": "0",
+        "data-manual": "false",
+        "data-raw": "0",
+        "data-shot": "R00",
+        "data-timing-level": "word",
+        "data-view": "{\"kind\":\"overview\",\"focus\":-1,\"read\":0,\"overhead\":false}",
+        "data-word-progress": "0"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "整线原句进度",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "19-corridor-mountain",
+    "at": "2026-10-19T21:46:21.536Z",
+    "end": "2026-10-19T21:46:21.738Z",
+    "dom": [
+      {
+        "data-beat": "4",
+        "data-manual": "false",
+        "data-raw": "0.13557657852911428",
+        "data-shot": "R05",
+        "data-timing-level": "word",
+        "data-view": "{\"kind\":\"tongmai\",\"value\":{\"phase\":\"travel\",\"progress\":0.0115778350249066,\"overhead\":false,\"read\":0.011814117372353673,\"focus\":\"both\"},\"object\":0}",
+        "data-word-progress": "0.16315246692673"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "完整主线沿线位置",
+        "value": "0.012"
+      },
+      {
+        "label": "整线原句进度",
+        "value": "0.136"
+      }
+    ]
+  },
+  {
+    "name": "20-tongmai-transition",
+    "at": "2026-10-19T21:47:12.953Z",
+    "end": "2026-10-19T21:47:13.175Z",
+    "dom": [
+      {
+        "data-beat": "5",
+        "data-manual": "false",
+        "data-raw": "0.5209567032715626",
+        "data-shot": "R06",
+        "data-timing-level": "word",
+        "data-view": "{\"kind\":\"tongmai\",\"value\":{\"progress\":0.98,\"overhead\":false,\"read\":1,\"phase\":\"bridge\",\"focus\":\"bridge\"},\"object\":2}",
+        "data-word-progress": "0.5394482294030142"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "完整主线沿线位置",
+        "value": "0.98"
+      },
+      {
+        "label": "整线原句进度",
+        "value": "0.521"
+      }
+    ]
+  },
+  {
+    "name": "21-corridor-late",
+    "at": "2026-10-19T21:50:05.066Z",
+    "end": "2026-10-19T21:50:05.311Z",
+    "dom": [
+      {
+        "data-beat": "8",
+        "data-manual": "false",
+        "data-raw": "1",
+        "data-shot": "R08",
+        "data-timing-level": "word",
+        "data-view": "{\"kind\":\"overview\",\"focus\":-1,\"read\":1,\"overhead\":false}",
+        "data-word-progress": "1"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "整线原句进度",
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "22-plan-persisted",
+    "at": "2026-10-19T21:51:20.132Z",
+    "end": "2026-10-19T21:51:20.296Z",
+    "dom": [],
+    "ranges": []
+  },
+  {
+    "name": "23-plan-return-ending",
+    "at": "2026-10-19T21:51:26.265Z",
+    "end": "2026-10-19T21:51:26.449Z",
+    "dom": [
+      {
+        "data-beat": "8",
+        "data-manual": "true",
+        "data-raw": "1",
+        "data-shot": "R08",
+        "data-timing-level": "word",
+        "data-view": "{\"kind\":\"overview\",\"focus\":-1,\"read\":1,\"overhead\":false}",
+        "data-word-progress": "1"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "整线原句进度",
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "24-runoff-less",
+    "at": "2026-10-19T21:53:06.878Z",
+    "end": "2026-10-19T21:53:07.202Z",
+    "dom": [
+      {
+        "data-focused-enabled": "false",
+        "data-focused-manual": "false",
+        "data-focused-process": "runoff",
+        "data-focused-progress": "0.6974673202614378",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:2",
+        "data-scene-progress": "0.3918",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "0.7"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.25"
+      }
+    ]
+  },
+  {
+    "name": "25-runoff-more",
+    "at": "2026-10-19T21:53:20.045Z",
+    "end": "2026-10-19T21:53:20.270Z",
+    "dom": [
+      {
+        "data-focused-enabled": "true",
+        "data-focused-manual": "true",
+        "data-focused-process": "runoff",
+        "data-focused-progress": "0.7",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:2",
+        "data-scene-progress": "0.3918",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "0.7"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.25"
+      }
+    ]
+  },
+  {
+    "name": "26-runoff-more-stable",
+    "at": "2026-10-19T21:53:32.327Z",
+    "end": "2026-10-19T21:53:32.544Z",
+    "dom": [
+      {
+        "data-focused-enabled": "true",
+        "data-focused-manual": "true",
+        "data-focused-process": "runoff",
+        "data-focused-progress": "0.7",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:2",
+        "data-scene-progress": "0.3918",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "0.7"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.25"
+      }
+    ]
+  },
+  {
+    "name": "27-runoff-restored",
+    "at": "2026-10-19T21:54:02.306Z",
+    "end": "2026-10-19T21:54:02.489Z",
+    "dom": [
+      {
+        "data-focused-enabled": "true",
+        "data-focused-manual": "false",
+        "data-focused-process": "runoff",
+        "data-focused-progress": "1",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:2",
+        "data-scene-progress": "0.8390",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.397"
+      }
+    ]
+  },
+  {
+    "name": "28-barrier-kept",
+    "at": "2026-10-19T21:54:23.658Z",
+    "end": "2026-10-19T21:54:23.908Z",
+    "dom": [
+      {
+        "data-focused-enabled": "false",
+        "data-focused-manual": "true",
+        "data-focused-process": "stewardship",
+        "data-focused-progress": "1",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:3",
+        "data-scene-progress": "0.7776",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.76"
+      }
+    ]
+  },
+  {
+    "name": "29-barrier-removed",
+    "at": "2026-10-19T21:54:30.621Z",
+    "end": "2026-10-19T21:54:30.861Z",
+    "dom": [
+      {
+        "data-focused-enabled": "true",
+        "data-focused-manual": "true",
+        "data-focused-process": "stewardship",
+        "data-focused-progress": "1",
+        "data-ground-active": "false",
+        "data-ground-manual": "false",
+        "data-interaction-manual": "false",
+        "data-overview-beat": "OVERVIEW-protection",
+        "data-overview-scene": "atlas-local-context",
+        "data-overview-shot": "OVERVIEW-protection:3",
+        "data-scene-progress": "0.7776",
+        "data-shot-phase": "context"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "过程演示进度",
+        "value": "1"
+      },
+      {
+        "label": "当前讲述进度",
+        "value": "0.76"
+      }
+    ]
+  },
+  {
+    "name": "30-closing-output-tail",
+    "at": "2026-10-19T21:58:26.469Z",
+    "end": "2026-10-19T21:58:26.709Z",
+    "dom": [
+      {
+        "data-beat": "8",
+        "data-manual": "false",
+        "data-raw": "1",
+        "data-shot": "R08",
+        "data-timing-level": "word",
+        "data-view": "{\"kind\":\"overview\",\"focus\":-1,\"read\":1,\"overhead\":false}",
+        "data-word-progress": "1"
+      }
+    ],
+    "ranges": [
+      {
+        "label": "整线原句进度",
+        "value": "1"
+      }
+    ]
+  }
+]

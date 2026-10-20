@@ -14,11 +14,13 @@ import type {LulangLens} from '../data/lulangPlace';
 import {createPilotElevationGuide,pilotElevationMaterial,pilotElevationDatum} from './pilotElevationGuide';
 import {pilotTravelFrame,pilotSightlineHeight,pilotCorridorFrame} from './pilotTravelFrame';
 import {pilotSpatialStory,pilotReturnTravel} from '../data/pilotSpatialStory';
+import {roadRideFrame,type RoadRideLook} from './roadRideFrame';
+import {createRoadRideSurface,createRideTerrainMaterial} from './roadRideSurface';
 
 type Coord=readonly number[];
 type Meta={bbox:number[];columns:number;rows:number;imagery:{url:string};elevation:{url:string};geometry:{route:string;place:string}};
 export type PilotReading={distance:number;total:number;elevation:number;longitude:number;latitude:number;highProgress:number;highCoordinate:number[]};
-type Props={view:PilotView;cameraKey:number;playing?:boolean;fieldReveal?:number;returnFlightKey?:number;onTransit?:(active:boolean)=>void;onReady:()=>void;onError:(s:string)=>void;onInteract:()=>void;onReading:(s:PilotReading)=>void;onContext:(s:PilotTerrainContext)=>void};
+type Props={view:PilotView;cameraKey:number;playing?:boolean;rideLook?:RoadRideLook;rideEnd?:number;fieldReveal?:number;returnFlightKey?:number;onTransit?:(active:boolean)=>void;onReady:()=>void;onError:(s:string)=>void;onInteract:()=>void;onReading:(s:PilotReading)=>void;onContext:(s:PilotTerrainContext)=>void};
 const base='/assets/routes/g318/';
 /** A separate instance preserves the frozen overview renderer and its state.
  * All route bends, footprint vertices and image pixels come from source data. */
@@ -27,7 +29,7 @@ export default function PilotRouteTerrain(props:Props){
  useEffect(()=>{
   const el=host.current!;let alive=true,frame=0,resize:ResizeObserver|undefined;
   let renderer:THREE.WebGLRenderer|undefined,controls:OrbitControls|undefined,scene:THREE.Scene|undefined;
-  const abort=new AbortController();
+  const abort=new AbortController();const extraMaterials:THREE.Material[]=[];
   const read=async(url:string)=>{const r=await fetch(url,{signal:abort.signal});if(!r.ok)throw Error(`资料未能加载：${url}`);return r;};
   void (async()=>{
    const meta=await (await read(base+'manifest.json')).json() as Meta;
@@ -62,6 +64,8 @@ export default function PilotRouteTerrain(props:Props){
    for(let i=0;i<grid.length;i++)positions.setY(i,grid[i]/1000);positions.needsUpdate=true;geometry.computeVertexNormals();
    const elevationMaterial=pilotElevationMaterial(texture);
    const terrain=new THREE.Mesh(geometry,elevationMaterial.material);scene.add(terrain);
+   let rideSurface:THREE.Mesh|undefined;
+   const rideTerrainMaterial=createRideTerrainMaterial(texture);extraMaterials.push(rideTerrainMaterial,elevationMaterial.material);
    const routeElevation=createPilotElevationGuide([coords],at),sectionElevation=createPilotElevationGuide([local.section.map(p=>p.coordinate)],at);scene.add(routeElevation,sectionElevation);
    const lineMaterials:LineMaterial[]=[];
    const stroke=(owner:THREE.Object3D,paths:Coord[][],color:number,width:number,offset=12)=>{
@@ -178,14 +182,31 @@ export default function PilotRouteTerrain(props:Props){
       desiredPosition.lerp(new THREE.Vector3(overview.position.x,overview.position.y,overview.position.z),routeContext);
      }
     }
+    const rideLook=latest.current.rideLook;
+    el.dataset.rideLook=rideLook??'';
+    controls!.minDistance=rideLook ? .002 : 1;controls!.maxPolarAngle=rideLook?Math.PI*.65:Math.PI*.47;
+    if(camera.fov!==(rideLook?68:46)){camera.fov=rideLook?68:46;camera.near=rideLook ? .001 : .03;camera.updateProjectionMatrix();}
+    if(rideLook){
+     if(!rideSurface){const end=latest.current.rideEnd??travelProgress*total;rideSurface=createRoadRideSurface(context.profile,Math.max(0,end-1830),Math.min(total,end+35),at);scene!.add(rideSurface);}
+     const ride=roadRideFrame(context.profile,travelProgress,rideLook);
+     desiredPosition.copy(at(ride.eyeCoordinate,ride.eyeHeight));desiredTarget.copy(at(ride.targetCoordinate,ride.targetHeight));
+     // Close views retain terrain occlusion. A reading line must not show
+     // through a mountain and imply a fictitious tunnel or road surface.
+    }
+    for(const line of [trunkLine,trunkOutline])if(line)line.visible=!rideLook;
+    if(rideSurface)rideSurface.visible=!!rideLook;
+    terrain.material=rideLook?rideTerrainMaterial:elevationMaterial.material;
+    if(rideLook)approach.visible=false;
+    if(rideLook){if(travelled)travelled.visible=false;cursor.visible=rideLook==='overview';}
     if(!initialized){camera.position.copy(desiredPosition);controls!.target.copy(desiredTarget);initialized=true;}
+    else if(!held&&rideLook){camera.position.lerp(desiredPosition,alpha);controls!.target.lerp(desiredTarget,alpha);}
     else if(!held){
      const current=new THREE.Spherical().setFromVector3(camera.position.clone().sub(controls!.target)),next=new THREE.Spherical().setFromVector3(desiredPosition.clone().sub(desiredTarget));
      current.radius=THREE.MathUtils.lerp(current.radius,next.radius,alpha);current.phi=THREE.MathUtils.lerp(current.phi,next.phi,alpha);const turn=Math.atan2(Math.sin(next.theta-current.theta),Math.cos(next.theta-current.theta))*alpha;current.theta+=latest.current.playing?THREE.MathUtils.clamp(turn,-dt*Math.PI/3,dt*Math.PI/3):turn;
      controls!.target.lerp(desiredTarget,alpha);camera.position.copy(controls!.target).add(new THREE.Vector3().setFromSpherical(current));
     }
     const eyeLon=camera.position.x*1000/mx+lon0,eyeLat=lat0-camera.position.z*1000/mz;
-    if(eyeLon>=west&&eyeLon<=east&&eyeLat>=south&&eyeLat<=north)camera.position.y=Math.max(camera.position.y,sample(eyeLon,eyeLat)/1000+.2);
+    if(eyeLon>=west&&eyeLon<=east&&eyeLat>=south&&eyeLat<=north)camera.position.y=Math.max(camera.position.y,sample(eyeLon,eyeLat)/1000+(rideLook ? .012 : .2));
     controls!.update();
     // The same canvas becomes the locator while the real photograph leads.
     // No unrelated camera position or image/map registration is implied.
@@ -223,7 +244,7 @@ export default function PilotRouteTerrain(props:Props){
    };
    latest.current.onContext(context);latest.current.onReady();render();
   })().catch(e=>{if(alive&&e.name!=='AbortError')latest.current.onError(e.message||'线路场景未能加载');});
-  return()=>{alive=false;abort.abort();cancelAnimationFrame(frame);resize?.disconnect();controls?.dispose();scene?.traverse(o=>{const mesh=o as THREE.Mesh;if(mesh.geometry)mesh.geometry.dispose();const materials=Array.isArray(mesh.material)?mesh.material:[mesh.material];for(const m of materials)if(m){(m as THREE.MeshStandardMaterial).map?.dispose();m.dispose();}});renderer?.dispose();el.replaceChildren();};
+  return()=>{alive=false;abort.abort();cancelAnimationFrame(frame);resize?.disconnect();controls?.dispose();scene?.traverse(o=>{const mesh=o as THREE.Mesh;if(mesh.geometry)mesh.geometry.dispose();const materials=Array.isArray(mesh.material)?mesh.material:[mesh.material];for(const m of materials)if(m){(m as THREE.MeshStandardMaterial).map?.dispose();m.dispose();}});extraMaterials.forEach(m=>m.dispose());renderer?.dispose();el.replaceChildren();};
  },[]);
  return <div ref={host} className="pilot-terrain" role="img" aria-label="真实卫星影像与高程上的G318林芝至鲁朗道路，可旋转缩放"/>;
 }

@@ -1,0 +1,19 @@
+{
+  "id": "ef33174df990fea54ec8bc93f1f7fe98b51907e7fa9da67ca94233e1ef34184a",
+  "url": "/assets/audio/narration/ef33174df990fea54ec8bc93f1f7fe98b51907e7fa9da67ca94233e1ef34184a.mp3",
+  "text": "看二零二四年的河谷实拍。河流穿过谷地，道路联系两侧空间，房屋分布其间。现代旅游小镇与传统村落要分别认识。再看二零零八年的街边日常：临街门面、桌球活动和共同停留，让我们看到地方怎样被使用。可以把村镇漫步或地方风味作为停留兴趣；具体开放与参与条件仍要核实。观察结束，回到原来的线路和语句。",
+  "duration": 28.332,
+  "bytes": 455028,
+  "sha256": "7bd0b557ffa3c81fe63c79d9be5fd566881eb0724282c21818dd51e8fae86923",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T18:21:25.350Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ef33174df990fea54ec8bc93f1f7fe98b51907e7fa9da67ca94233e1ef34184a.subtitles.json",
+  "subtitleSha256": "8351c604ba9dd907038b0cd23590dcbb703ed7f045bbe6fe83a06798436d4de9",
+  "timingLevel": "word"
+}

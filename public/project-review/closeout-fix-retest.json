@@ -1,0 +1,72 @@
+{
+  "id": "PRODUCT-FIX-RETEST-20261020-1",
+  "baselineId": "PRODUCT-CLOSEOUT-20261020-2",
+  "previousAudit": "/project-review/closeout-audit.json",
+  "verdict": "three_targeted_defects_closed_acceptance_evidence_pending",
+  "runtimeSha256": "8ccbf3d2b51612b47182b9bc992d58ebcb05bb07be04d94c5691b1e2dccb92b9",
+  "hashAlgorithm": "SHA256 of UTF-8 JSON path→SHA256 map, sorted keys, compact separators",
+  "hashedFileCount": 2564,
+  "runtimeFilesChanged": [
+    "src/components/CorridorExperience.tsx",
+    "src/components/RouteGateway.tsx",
+    "src/data/routeGatewayNarration.ts",
+    "src/scene/placeActionReading.ts"
+  ],
+  "method": "桌面浏览器定点实际操作、可见画面对照、短段播放及计划刷新返回；不是全程实际听验或首次观看者验收。",
+  "fixes": [
+    {
+      "id": "D01",
+      "title": "线路入口",
+      "status": "定点收口",
+      "fix": "主入口进入林芝—波密完整线路；旧林芝—鲁朗保留为单段选看。沿用现有入口录音，在“也联系不同地方”句末停止，避开其后已过时的只开放72公里说明。",
+      "evidence": "实际点击主入口进入 /whole；入口录音运行到23.606564秒截止；最终页面显示重听与完整线路范围。旧录音与逐词文件未重写。",
+      "images": [
+        "01-route-gateway.png",
+        "07-gateway-ended.png"
+      ]
+    },
+    {
+      "id": "D02",
+      "title": "供灯空间对照",
+      "status": "定点收口",
+      "fix": "只调整既有供灯符号的大小、颜色、间距和区域对比，不增加模型、来源主张或时长。",
+      "evidence": "1366×900同一35%进度切换原条件／活动区分开，建筑内和寺前符号位置及数量明显不同；反向切回恢复。继续到72%时画面与对应字幕、标注一致。符号仍属原理示意，不是历史灯数或精确位置复原。",
+      "images": [
+        "04-lamps-before.png",
+        "05-lamps-after.png",
+        "06-lamps-narrated.png"
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "观察计划返回章节",
+      "status": "定点收口",
+      "fix": "同录音同进度返回不再重选录音清空逐词时钟；R03／R04标题按既定录音分界判断，避免继续播放加载逐词信息时短暂回退。",
+      "evidence": "R04在55.5%保存返回、刷新计划后返回，原照片、观察对象、进度与R04标题一致；继续播放仍为R04。相邻R03在30%返回保持谷地空间。现有笔记保留。",
+      "images": [
+        "02-r04-return-no-refresh.png",
+        "03-r04-return-refreshed.png",
+        "08-r04-resume-final.png",
+        "09-r03-return.png"
+      ]
+    }
+  ],
+  "limits": [
+    "没有实际声音听验：检查了媒体运行、字幕、标注和画面，不能据此宣布无音频重叠或全程听感同步。",
+    "没有新增首次观看者理解记录；用户此前的使用反馈不计首次验收。",
+    "原整体验收未覆盖的子流程与全量资料复核仍受限；本轮只复测三项及相邻返回，不把抽查扩大为整版通过。",
+    "工作树包含既有未提交改动。文件清单可定位本次快照，但尚不是干净的发布提交。"
+  ],
+  "checks": {
+    "typecheck": "passed",
+    "vitest": "17 tests / 4 files passed",
+    "productionBuild": "passed; existing shared Line2 chunk size warning remains"
+  },
+  "frozen": {
+    "overviewSeconds": 750.024,
+    "corridorSeconds": 276.96923076923076,
+    "audioAndAssetFiles": "unchanged against original 2564-file manifest",
+    "scope": "Only four authorized runtime files changed; no new scenes/models/materials/duration."
+  },
+  "stop": "本轮三项定点修复结束，冻结继续。剩余为验收证据与发布归档，不自动进入新一轮局部优化。"
+}

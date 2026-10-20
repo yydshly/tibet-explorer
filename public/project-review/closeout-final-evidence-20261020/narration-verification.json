@@ -1,0 +1,3208 @@
+{
+  "checkedAt": "2026-10-19T21:31:13.621Z",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "expected": 354,
+  "checked": 354,
+  "passed": 354,
+  "nativeWordClips": 354,
+  "nativeWordComplete": true,
+  "requireWord": false,
+  "nativeSentenceClips": 0,
+  "legacyEstimatedClips": 0,
+  "subtitleUpgradeFailures": [],
+  "manifestErrors": [],
+  "timedWords": 35990,
+  "durationSeconds": 7394.723999999997,
+  "bytes": 118923048,
+  "pass": true,
+  "checks": [
+    {
+      "cueId": "G1-opening",
+      "pass": true,
+      "duration": 22.752,
+      "bytes": 365748,
+      "timingLevel": "word",
+      "timedWords": 108,
+      "errors": []
+    },
+    {
+      "cueId": "G1-explain",
+      "pass": true,
+      "duration": 22.14,
+      "bytes": 355956,
+      "timingLevel": "word",
+      "timedWords": 106,
+      "errors": []
+    },
+    {
+      "cueId": "G1-observe",
+      "pass": true,
+      "duration": 24.156,
+      "bytes": 388212,
+      "timingLevel": "word",
+      "timedWords": 109,
+      "errors": []
+    },
+    {
+      "cueId": "G1-bridge",
+      "pass": true,
+      "duration": 26.208,
+      "bytes": 421044,
+      "timingLevel": "word",
+      "timedWords": 124,
+      "errors": []
+    },
+    {
+      "cueId": "G2-opening",
+      "pass": true,
+      "duration": 20.268,
+      "bytes": 326004,
+      "timingLevel": "word",
+      "timedWords": 103,
+      "errors": []
+    },
+    {
+      "cueId": "G2-explain",
+      "pass": true,
+      "duration": 22.896,
+      "bytes": 368052,
+      "timingLevel": "word",
+      "timedWords": 102,
+      "errors": []
+    },
+    {
+      "cueId": "G2-observe",
+      "pass": true,
+      "duration": 19.872,
+      "bytes": 319668,
+      "timingLevel": "word",
+      "timedWords": 102,
+      "errors": []
+    },
+    {
+      "cueId": "G2-bridge",
+      "pass": true,
+      "duration": 20.412,
+      "bytes": 328308,
+      "timingLevel": "word",
+      "timedWords": 113,
+      "errors": []
+    },
+    {
+      "cueId": "G3-opening",
+      "pass": true,
+      "duration": 16.704,
+      "bytes": 268980,
+      "timingLevel": "word",
+      "timedWords": 81,
+      "errors": []
+    },
+    {
+      "cueId": "G3-explain",
+      "pass": true,
+      "duration": 18.612,
+      "bytes": 299508,
+      "timingLevel": "word",
+      "timedWords": 83,
+      "errors": []
+    },
+    {
+      "cueId": "G3-observe",
+      "pass": true,
+      "duration": 15.192,
+      "bytes": 244788,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "G3-bridge",
+      "pass": true,
+      "duration": 16.596,
+      "bytes": 267252,
+      "timingLevel": "word",
+      "timedWords": 78,
+      "errors": []
+    },
+    {
+      "cueId": "G4-opening",
+      "pass": true,
+      "duration": 22.032,
+      "bytes": 354228,
+      "timingLevel": "word",
+      "timedWords": 105,
+      "errors": []
+    },
+    {
+      "cueId": "G4-explain",
+      "pass": true,
+      "duration": 25.92,
+      "bytes": 416436,
+      "timingLevel": "word",
+      "timedWords": 117,
+      "errors": []
+    },
+    {
+      "cueId": "G4-observe",
+      "pass": true,
+      "duration": 17.964,
+      "bytes": 289140,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "G4-bridge",
+      "pass": true,
+      "duration": 22.248,
+      "bytes": 357684,
+      "timingLevel": "word",
+      "timedWords": 98,
+      "errors": []
+    },
+    {
+      "cueId": "C1-opening",
+      "pass": true,
+      "duration": 18.18,
+      "bytes": 292596,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "C1-explain",
+      "pass": true,
+      "duration": 18.648,
+      "bytes": 300084,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "C1-observe",
+      "pass": true,
+      "duration": 15.588,
+      "bytes": 251124,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "C1-bridge",
+      "pass": true,
+      "duration": 14.112,
+      "bytes": 227508,
+      "timingLevel": "word",
+      "timedWords": 78,
+      "errors": []
+    },
+    {
+      "cueId": "C2-opening",
+      "pass": true,
+      "duration": 19.62,
+      "bytes": 315636,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "C2-explain",
+      "pass": true,
+      "duration": 17.352,
+      "bytes": 279348,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "C2-observe",
+      "pass": true,
+      "duration": 19.044,
+      "bytes": 306420,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "C2-bridge",
+      "pass": true,
+      "duration": 15.48,
+      "bytes": 249396,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "C3-opening",
+      "pass": true,
+      "duration": 18.36,
+      "bytes": 295476,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "C3-explain",
+      "pass": true,
+      "duration": 18.144,
+      "bytes": 292020,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "C3-observe",
+      "pass": true,
+      "duration": 15.552,
+      "bytes": 250548,
+      "timingLevel": "word",
+      "timedWords": 82,
+      "errors": []
+    },
+    {
+      "cueId": "C3-bridge",
+      "pass": true,
+      "duration": 14.22,
+      "bytes": 229236,
+      "timingLevel": "word",
+      "timedWords": 78,
+      "errors": []
+    },
+    {
+      "cueId": "C4-arrival",
+      "pass": true,
+      "duration": 19.728,
+      "bytes": 317364,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "C4-uplift",
+      "pass": true,
+      "duration": 22.896,
+      "bytes": 368052,
+      "timingLevel": "word",
+      "timedWords": 110,
+      "errors": []
+    },
+    {
+      "cueId": "C4-cloud",
+      "pass": true,
+      "duration": 24.3,
+      "bytes": 390516,
+      "timingLevel": "word",
+      "timedWords": 111,
+      "errors": []
+    },
+    {
+      "cueId": "C4-regions",
+      "pass": true,
+      "duration": 21.924,
+      "bytes": 352500,
+      "timingLevel": "word",
+      "timedWords": 116,
+      "errors": []
+    },
+    {
+      "cueId": "C4-life",
+      "pass": true,
+      "duration": 21.996,
+      "bytes": 353652,
+      "timingLevel": "word",
+      "timedWords": 108,
+      "errors": []
+    },
+    {
+      "cueId": "C5-opening",
+      "pass": true,
+      "duration": 15.3,
+      "bytes": 246516,
+      "timingLevel": "word",
+      "timedWords": 79,
+      "errors": []
+    },
+    {
+      "cueId": "C5-explain",
+      "pass": true,
+      "duration": 26.244,
+      "bytes": 421620,
+      "timingLevel": "word",
+      "timedWords": 121,
+      "errors": []
+    },
+    {
+      "cueId": "C5-observe",
+      "pass": true,
+      "duration": 19.476,
+      "bytes": 313332,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "C5-bridge",
+      "pass": true,
+      "duration": 15.408,
+      "bytes": 248244,
+      "timingLevel": "word",
+      "timedWords": 83,
+      "errors": []
+    },
+    {
+      "cueId": "C6-opening",
+      "pass": true,
+      "duration": 16.632,
+      "bytes": 267828,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "C6-explain",
+      "pass": true,
+      "duration": 26.28,
+      "bytes": 422196,
+      "timingLevel": "word",
+      "timedWords": 107,
+      "errors": []
+    },
+    {
+      "cueId": "C6-observe",
+      "pass": true,
+      "duration": 19.044,
+      "bytes": 306420,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "C6-bridge",
+      "pass": true,
+      "duration": 16.092,
+      "bytes": 259188,
+      "timingLevel": "word",
+      "timedWords": 82,
+      "errors": []
+    },
+    {
+      "cueId": "C7-opening",
+      "pass": true,
+      "duration": 17.748,
+      "bytes": 285684,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "C7-explain",
+      "pass": true,
+      "duration": 16.056,
+      "bytes": 258612,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "C7-observe",
+      "pass": true,
+      "duration": 15.696,
+      "bytes": 252852,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "C7-bridge",
+      "pass": true,
+      "duration": 16.848,
+      "bytes": 271284,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "C8-opening",
+      "pass": true,
+      "duration": 18.72,
+      "bytes": 301236,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "C8-explain",
+      "pass": true,
+      "duration": 17.676,
+      "bytes": 284532,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "C8-observe",
+      "pass": true,
+      "duration": 15.624,
+      "bytes": 251700,
+      "timingLevel": "word",
+      "timedWords": 81,
+      "errors": []
+    },
+    {
+      "cueId": "C8-bridge",
+      "pass": true,
+      "duration": 18.828,
+      "bytes": 302964,
+      "timingLevel": "word",
+      "timedWords": 87,
+      "errors": []
+    },
+    {
+      "cueId": "C9-opening",
+      "pass": true,
+      "duration": 17.424,
+      "bytes": 280500,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "C9-explain",
+      "pass": true,
+      "duration": 18.072,
+      "bytes": 290868,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "C9-observe",
+      "pass": true,
+      "duration": 19.152,
+      "bytes": 308148,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "C9-bridge",
+      "pass": true,
+      "duration": 19.152,
+      "bytes": 308148,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "E1-opening",
+      "pass": true,
+      "duration": 14.976,
+      "bytes": 241332,
+      "timingLevel": "word",
+      "timedWords": 83,
+      "errors": []
+    },
+    {
+      "cueId": "E1-explain",
+      "pass": true,
+      "duration": 19.62,
+      "bytes": 315636,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "E1-observe",
+      "pass": true,
+      "duration": 16.956,
+      "bytes": 273012,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "E1-bridge",
+      "pass": true,
+      "duration": 15.588,
+      "bytes": 251124,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "E2-opening",
+      "pass": true,
+      "duration": 18,
+      "bytes": 289716,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "E2-explain",
+      "pass": true,
+      "duration": 18.18,
+      "bytes": 292596,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "E2-observe",
+      "pass": true,
+      "duration": 17.136,
+      "bytes": 275892,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "E2-bridge",
+      "pass": true,
+      "duration": 18,
+      "bytes": 289716,
+      "timingLevel": "word",
+      "timedWords": 87,
+      "errors": []
+    },
+    {
+      "cueId": "E3-opening",
+      "pass": true,
+      "duration": 18.72,
+      "bytes": 301236,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "E3-explain",
+      "pass": true,
+      "duration": 26.496,
+      "bytes": 425652,
+      "timingLevel": "word",
+      "timedWords": 124,
+      "errors": []
+    },
+    {
+      "cueId": "E3-observe",
+      "pass": true,
+      "duration": 21.06,
+      "bytes": 338676,
+      "timingLevel": "word",
+      "timedWords": 104,
+      "errors": []
+    },
+    {
+      "cueId": "E3-bridge",
+      "pass": true,
+      "duration": 16.992,
+      "bytes": 273588,
+      "timingLevel": "word",
+      "timedWords": 78,
+      "errors": []
+    },
+    {
+      "cueId": "P1-opening",
+      "pass": true,
+      "duration": 19.548,
+      "bytes": 314484,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "P1-explain",
+      "pass": true,
+      "duration": 25.344,
+      "bytes": 407220,
+      "timingLevel": "word",
+      "timedWords": 111,
+      "errors": []
+    },
+    {
+      "cueId": "P1-observe",
+      "pass": true,
+      "duration": 19.404,
+      "bytes": 312180,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "P1-bridge",
+      "pass": true,
+      "duration": 20.16,
+      "bytes": 324276,
+      "timingLevel": "word",
+      "timedWords": 98,
+      "errors": []
+    },
+    {
+      "cueId": "P2-opening",
+      "pass": true,
+      "duration": 15.588,
+      "bytes": 251124,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "P2-explain",
+      "pass": true,
+      "duration": 21.816,
+      "bytes": 350772,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "P2-observe",
+      "pass": true,
+      "duration": 19.296,
+      "bytes": 310452,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "P2-bridge",
+      "pass": true,
+      "duration": 16.344,
+      "bytes": 263220,
+      "timingLevel": "word",
+      "timedWords": 74,
+      "errors": []
+    },
+    {
+      "cueId": "P3-opening",
+      "pass": true,
+      "duration": 17.568,
+      "bytes": 282804,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "P3-explain",
+      "pass": true,
+      "duration": 24.696,
+      "bytes": 396852,
+      "timingLevel": "word",
+      "timedWords": 113,
+      "errors": []
+    },
+    {
+      "cueId": "P3-observe",
+      "pass": true,
+      "duration": 16.416,
+      "bytes": 264372,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "P3-bridge",
+      "pass": true,
+      "duration": 18,
+      "bytes": 289716,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "H1-opening",
+      "pass": true,
+      "duration": 19.728,
+      "bytes": 317364,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "H1-explain",
+      "pass": true,
+      "duration": 19.476,
+      "bytes": 313332,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "H1-observe",
+      "pass": true,
+      "duration": 16.596,
+      "bytes": 267252,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "H1-bridge",
+      "pass": true,
+      "duration": 14.328,
+      "bytes": 230964,
+      "timingLevel": "word",
+      "timedWords": 70,
+      "errors": []
+    },
+    {
+      "cueId": "H2-opening",
+      "pass": true,
+      "duration": 14.076,
+      "bytes": 226932,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "H2-explain",
+      "pass": true,
+      "duration": 17.712,
+      "bytes": 285108,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "H2-observe",
+      "pass": true,
+      "duration": 17.388,
+      "bytes": 279924,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "H2-bridge",
+      "pass": true,
+      "duration": 13.248,
+      "bytes": 213684,
+      "timingLevel": "word",
+      "timedWords": 59,
+      "errors": []
+    },
+    {
+      "cueId": "H3-opening",
+      "pass": true,
+      "duration": 19.44,
+      "bytes": 312756,
+      "timingLevel": "word",
+      "timedWords": 82,
+      "errors": []
+    },
+    {
+      "cueId": "H3-explain",
+      "pass": true,
+      "duration": 16.02,
+      "bytes": 258036,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "H3-observe",
+      "pass": true,
+      "duration": 17.82,
+      "bytes": 286836,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "H3-bridge",
+      "pass": true,
+      "duration": 13.824,
+      "bytes": 222900,
+      "timingLevel": "word",
+      "timedWords": 68,
+      "errors": []
+    },
+    {
+      "cueId": "H4-opening",
+      "pass": true,
+      "duration": 17.748,
+      "bytes": 285684,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "H4-explain",
+      "pass": true,
+      "duration": 19.584,
+      "bytes": 315060,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "H4-observe",
+      "pass": true,
+      "duration": 18.216,
+      "bytes": 293172,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "H4-bridge",
+      "pass": true,
+      "duration": 18.324,
+      "bytes": 294900,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "K1-opening",
+      "pass": true,
+      "duration": 21.96,
+      "bytes": 353076,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "K1-explain",
+      "pass": true,
+      "duration": 29.088,
+      "bytes": 467124,
+      "timingLevel": "word",
+      "timedWords": 141,
+      "errors": []
+    },
+    {
+      "cueId": "K1-observe",
+      "pass": true,
+      "duration": 21.204,
+      "bytes": 340980,
+      "timingLevel": "word",
+      "timedWords": 105,
+      "errors": []
+    },
+    {
+      "cueId": "K1-bridge",
+      "pass": true,
+      "duration": 18.936,
+      "bytes": 304692,
+      "timingLevel": "word",
+      "timedWords": 97,
+      "errors": []
+    },
+    {
+      "cueId": "K2-opening",
+      "pass": true,
+      "duration": 15.768,
+      "bytes": 254004,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "K2-explain",
+      "pass": true,
+      "duration": 20.772,
+      "bytes": 334068,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "K2-observe",
+      "pass": true,
+      "duration": 15.84,
+      "bytes": 255156,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "K2-bridge",
+      "pass": true,
+      "duration": 19.152,
+      "bytes": 308148,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "K3-opening",
+      "pass": true,
+      "duration": 22.212,
+      "bytes": 357108,
+      "timingLevel": "word",
+      "timedWords": 115,
+      "errors": []
+    },
+    {
+      "cueId": "K3-explain",
+      "pass": true,
+      "duration": 24.228,
+      "bytes": 389364,
+      "timingLevel": "word",
+      "timedWords": 114,
+      "errors": []
+    },
+    {
+      "cueId": "K3-observe",
+      "pass": true,
+      "duration": 22.788,
+      "bytes": 366324,
+      "timingLevel": "word",
+      "timedWords": 108,
+      "errors": []
+    },
+    {
+      "cueId": "K3-bridge",
+      "pass": true,
+      "duration": 21.024,
+      "bytes": 338100,
+      "timingLevel": "word",
+      "timedWords": 103,
+      "errors": []
+    },
+    {
+      "cueId": "K4-opening",
+      "pass": true,
+      "duration": 24.012,
+      "bytes": 385908,
+      "timingLevel": "word",
+      "timedWords": 122,
+      "errors": []
+    },
+    {
+      "cueId": "K4-explain",
+      "pass": true,
+      "duration": 28.512,
+      "bytes": 457908,
+      "timingLevel": "word",
+      "timedWords": 141,
+      "errors": []
+    },
+    {
+      "cueId": "K4-observe",
+      "pass": true,
+      "duration": 19.548,
+      "bytes": 314484,
+      "timingLevel": "word",
+      "timedWords": 106,
+      "errors": []
+    },
+    {
+      "cueId": "K4-bridge",
+      "pass": true,
+      "duration": 22.32,
+      "bytes": 358836,
+      "timingLevel": "word",
+      "timedWords": 120,
+      "errors": []
+    },
+    {
+      "cueId": "R1-opening",
+      "pass": true,
+      "duration": 20.52,
+      "bytes": 330036,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "R1-explain",
+      "pass": true,
+      "duration": 22.104,
+      "bytes": 355380,
+      "timingLevel": "word",
+      "timedWords": 103,
+      "errors": []
+    },
+    {
+      "cueId": "R1-observe",
+      "pass": true,
+      "duration": 18.9,
+      "bytes": 304116,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "R1-bridge",
+      "pass": true,
+      "duration": 18.36,
+      "bytes": 295476,
+      "timingLevel": "word",
+      "timedWords": 83,
+      "errors": []
+    },
+    {
+      "cueId": "R2-opening",
+      "pass": true,
+      "duration": 18.504,
+      "bytes": 297780,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "R2-explain",
+      "pass": true,
+      "duration": 21.384,
+      "bytes": 343860,
+      "timingLevel": "word",
+      "timedWords": 101,
+      "errors": []
+    },
+    {
+      "cueId": "R2-observe",
+      "pass": true,
+      "duration": 18.36,
+      "bytes": 295476,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "R2-bridge",
+      "pass": true,
+      "duration": 18.936,
+      "bytes": 304692,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "R3-opening",
+      "pass": true,
+      "duration": 17.244,
+      "bytes": 277620,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "R3-explain",
+      "pass": true,
+      "duration": 21.24,
+      "bytes": 341556,
+      "timingLevel": "word",
+      "timedWords": 100,
+      "errors": []
+    },
+    {
+      "cueId": "R3-observe",
+      "pass": true,
+      "duration": 20.052,
+      "bytes": 322548,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "R3-bridge",
+      "pass": true,
+      "duration": 18.144,
+      "bytes": 292020,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "M1-opening",
+      "pass": true,
+      "duration": 19.764,
+      "bytes": 317940,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "M1-explain",
+      "pass": true,
+      "duration": 20.88,
+      "bytes": 335796,
+      "timingLevel": "word",
+      "timedWords": 107,
+      "errors": []
+    },
+    {
+      "cueId": "M1-observe",
+      "pass": true,
+      "duration": 22.392,
+      "bytes": 359988,
+      "timingLevel": "word",
+      "timedWords": 101,
+      "errors": []
+    },
+    {
+      "cueId": "M1-bridge",
+      "pass": true,
+      "duration": 18.288,
+      "bytes": 294324,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "M2-opening",
+      "pass": true,
+      "duration": 21.6,
+      "bytes": 347316,
+      "timingLevel": "word",
+      "timedWords": 101,
+      "errors": []
+    },
+    {
+      "cueId": "M2-explain",
+      "pass": true,
+      "duration": 21.96,
+      "bytes": 353076,
+      "timingLevel": "word",
+      "timedWords": 103,
+      "errors": []
+    },
+    {
+      "cueId": "M2-observe",
+      "pass": true,
+      "duration": 18.828,
+      "bytes": 302964,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "M2-bridge",
+      "pass": true,
+      "duration": 18.828,
+      "bytes": 302964,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "M3-opening",
+      "pass": true,
+      "duration": 19.764,
+      "bytes": 317940,
+      "timingLevel": "word",
+      "timedWords": 97,
+      "errors": []
+    },
+    {
+      "cueId": "M3-explain",
+      "pass": true,
+      "duration": 24.408,
+      "bytes": 392244,
+      "timingLevel": "word",
+      "timedWords": 103,
+      "errors": []
+    },
+    {
+      "cueId": "M3-observe",
+      "pass": true,
+      "duration": 19.8,
+      "bytes": 318516,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "M3-bridge",
+      "pass": true,
+      "duration": 21.996,
+      "bytes": 353652,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "T1-opening",
+      "pass": true,
+      "duration": 21.096,
+      "bytes": 339252,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "T1-explain",
+      "pass": true,
+      "duration": 18.972,
+      "bytes": 305268,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "T1-observe",
+      "pass": true,
+      "duration": 20.412,
+      "bytes": 328308,
+      "timingLevel": "word",
+      "timedWords": 98,
+      "errors": []
+    },
+    {
+      "cueId": "T1-bridge",
+      "pass": true,
+      "duration": 17.532,
+      "bytes": 282228,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "T2-opening",
+      "pass": true,
+      "duration": 18.864,
+      "bytes": 303540,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "T2-explain",
+      "pass": true,
+      "duration": 18.756,
+      "bytes": 301812,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "T2-observe",
+      "pass": true,
+      "duration": 19.512,
+      "bytes": 313908,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "T2-bridge",
+      "pass": true,
+      "duration": 17.136,
+      "bytes": 275892,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "T3-opening",
+      "pass": true,
+      "duration": 17.82,
+      "bytes": 286836,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "T3-explain",
+      "pass": true,
+      "duration": 16.452,
+      "bytes": 264948,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "T3-observe",
+      "pass": true,
+      "duration": 17.496,
+      "bytes": 281652,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "T3-bridge",
+      "pass": true,
+      "duration": 19.836,
+      "bytes": 319092,
+      "timingLevel": "word",
+      "timedWords": 102,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-environment-1",
+      "pass": true,
+      "duration": 8.712,
+      "bytes": 141108,
+      "timingLevel": "word",
+      "timedWords": 42,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-environment-2",
+      "pass": true,
+      "duration": 5.76,
+      "bytes": 93876,
+      "timingLevel": "word",
+      "timedWords": 27,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-environment-3",
+      "pass": true,
+      "duration": 7.596,
+      "bytes": 123252,
+      "timingLevel": "word",
+      "timedWords": 41,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-life-1",
+      "pass": true,
+      "duration": 9.72,
+      "bytes": 157236,
+      "timingLevel": "word",
+      "timedWords": 45,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-life-2",
+      "pass": true,
+      "duration": 8.28,
+      "bytes": 134196,
+      "timingLevel": "word",
+      "timedWords": 43,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-life-3",
+      "pass": true,
+      "duration": 9.108,
+      "bytes": 147444,
+      "timingLevel": "word",
+      "timedWords": 48,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-history-1",
+      "pass": true,
+      "duration": 9.612,
+      "bytes": 155508,
+      "timingLevel": "word",
+      "timedWords": 47,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-history-2",
+      "pass": true,
+      "duration": 4.428,
+      "bytes": 72564,
+      "timingLevel": "word",
+      "timedWords": 27,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-nyingchi-history-3",
+      "pass": true,
+      "duration": 8.064,
+      "bytes": 130740,
+      "timingLevel": "word",
+      "timedWords": 44,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-environment-1",
+      "pass": true,
+      "duration": 3.708,
+      "bytes": 61044,
+      "timingLevel": "word",
+      "timedWords": 21,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-environment-2",
+      "pass": true,
+      "duration": 13.392,
+      "bytes": 215988,
+      "timingLevel": "word",
+      "timedWords": 60,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-environment-3",
+      "pass": true,
+      "duration": 6.444,
+      "bytes": 104820,
+      "timingLevel": "word",
+      "timedWords": 34,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-life-1",
+      "pass": true,
+      "duration": 10.26,
+      "bytes": 165876,
+      "timingLevel": "word",
+      "timedWords": 44,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-life-2",
+      "pass": true,
+      "duration": 9.9,
+      "bytes": 160116,
+      "timingLevel": "word",
+      "timedWords": 48,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-life-3",
+      "pass": true,
+      "duration": 10.44,
+      "bytes": 168756,
+      "timingLevel": "word",
+      "timedWords": 48,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-history-1",
+      "pass": true,
+      "duration": 7.632,
+      "bytes": 123828,
+      "timingLevel": "word",
+      "timedWords": 37,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-history-2",
+      "pass": true,
+      "duration": 3.78,
+      "bytes": 62196,
+      "timingLevel": "word",
+      "timedWords": 20,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-lhasa-history-3",
+      "pass": true,
+      "duration": 11.52,
+      "bytes": 186036,
+      "timingLevel": "word",
+      "timedWords": 60,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-environment-1",
+      "pass": true,
+      "duration": 10.008,
+      "bytes": 161844,
+      "timingLevel": "word",
+      "timedWords": 47,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-environment-2",
+      "pass": true,
+      "duration": 4.716,
+      "bytes": 77172,
+      "timingLevel": "word",
+      "timedWords": 21,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-environment-3",
+      "pass": true,
+      "duration": 9.432,
+      "bytes": 152628,
+      "timingLevel": "word",
+      "timedWords": 50,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-life-1",
+      "pass": true,
+      "duration": 10.044,
+      "bytes": 162420,
+      "timingLevel": "word",
+      "timedWords": 45,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-life-2",
+      "pass": true,
+      "duration": 10.728,
+      "bytes": 173364,
+      "timingLevel": "word",
+      "timedWords": 48,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-life-3",
+      "pass": true,
+      "duration": 9.936,
+      "bytes": 160692,
+      "timingLevel": "word",
+      "timedWords": 45,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-history-1",
+      "pass": true,
+      "duration": 10.512,
+      "bytes": 169908,
+      "timingLevel": "word",
+      "timedWords": 46,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-history-2",
+      "pass": true,
+      "duration": 5.04,
+      "bytes": 82356,
+      "timingLevel": "word",
+      "timedWords": 26,
+      "errors": []
+    },
+    {
+      "cueId": "CITY-ngari-history-3",
+      "pass": true,
+      "duration": 10.296,
+      "bytes": 166452,
+      "timingLevel": "word",
+      "timedWords": 49,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-climate-1",
+      "pass": true,
+      "duration": 9.936,
+      "bytes": 160692,
+      "timingLevel": "word",
+      "timedWords": 42,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-climate-2",
+      "pass": true,
+      "duration": 8.064,
+      "bytes": 130740,
+      "timingLevel": "word",
+      "timedWords": 39,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-climate-3",
+      "pass": true,
+      "duration": 9.828,
+      "bytes": 158964,
+      "timingLevel": "word",
+      "timedWords": 47,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-terrain-1",
+      "pass": true,
+      "duration": 9.324,
+      "bytes": 150900,
+      "timingLevel": "word",
+      "timedWords": 48,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-terrain-2",
+      "pass": true,
+      "duration": 9.072,
+      "bytes": 146868,
+      "timingLevel": "word",
+      "timedWords": 45,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-terrain-3",
+      "pass": true,
+      "duration": 10.008,
+      "bytes": 161844,
+      "timingLevel": "word",
+      "timedWords": 46,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-mobility-1",
+      "pass": true,
+      "duration": 16.128,
+      "bytes": 259764,
+      "timingLevel": "word",
+      "timedWords": 78,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-mobility-2",
+      "pass": true,
+      "duration": 14.832,
+      "bytes": 239028,
+      "timingLevel": "word",
+      "timedWords": 71,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-mobility-3",
+      "pass": true,
+      "duration": 13.428,
+      "bytes": 216564,
+      "timingLevel": "word",
+      "timedWords": 68,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-water-1",
+      "pass": true,
+      "duration": 14.904,
+      "bytes": 240180,
+      "timingLevel": "word",
+      "timedWords": 75,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-water-2",
+      "pass": true,
+      "duration": 15.48,
+      "bytes": 249396,
+      "timingLevel": "word",
+      "timedWords": 77,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-water-3",
+      "pass": true,
+      "duration": 17.028,
+      "bytes": 274164,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-settlement-1",
+      "pass": true,
+      "duration": 15.804,
+      "bytes": 254580,
+      "timingLevel": "word",
+      "timedWords": 79,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-settlement-2",
+      "pass": true,
+      "duration": 17.172,
+      "bytes": 276468,
+      "timingLevel": "word",
+      "timedWords": 73,
+      "errors": []
+    },
+    {
+      "cueId": "COMPARE-settlement-3",
+      "pass": true,
+      "duration": 16.956,
+      "bytes": 273012,
+      "timingLevel": "word",
+      "timedWords": 76,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-nyingchi-1",
+      "pass": true,
+      "duration": 14.76,
+      "bytes": 237876,
+      "timingLevel": "word",
+      "timedWords": 71,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-nyingchi-2",
+      "pass": true,
+      "duration": 13.968,
+      "bytes": 225204,
+      "timingLevel": "word",
+      "timedWords": 73,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-nyingchi-3",
+      "pass": true,
+      "duration": 17.676,
+      "bytes": 284532,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-lhasa-1",
+      "pass": true,
+      "duration": 14.292,
+      "bytes": 230388,
+      "timingLevel": "word",
+      "timedWords": 72,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-lhasa-2",
+      "pass": true,
+      "duration": 14.616,
+      "bytes": 235572,
+      "timingLevel": "word",
+      "timedWords": 72,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-lhasa-3",
+      "pass": true,
+      "duration": 15.192,
+      "bytes": 244788,
+      "timingLevel": "word",
+      "timedWords": 72,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-ngari-1",
+      "pass": true,
+      "duration": 13.86,
+      "bytes": 223476,
+      "timingLevel": "word",
+      "timedWords": 71,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-ngari-2",
+      "pass": true,
+      "duration": 15.3,
+      "bytes": 246516,
+      "timingLevel": "word",
+      "timedWords": 77,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-history-ngari-3",
+      "pass": true,
+      "duration": 16.38,
+      "bytes": 263796,
+      "timingLevel": "word",
+      "timedWords": 82,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-nyingchi-before",
+      "pass": true,
+      "duration": 12.096,
+      "bytes": 195252,
+      "timingLevel": "word",
+      "timedWords": 59,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-nyingchi-access",
+      "pass": true,
+      "duration": 14.4,
+      "bytes": 232116,
+      "timingLevel": "word",
+      "timedWords": 67,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-nyingchi-transfer",
+      "pass": true,
+      "duration": 15.48,
+      "bytes": 249396,
+      "timingLevel": "word",
+      "timedWords": 65,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-nyingchi-life",
+      "pass": true,
+      "duration": 13.788,
+      "bytes": 222324,
+      "timingLevel": "word",
+      "timedWords": 67,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-lhasa-before",
+      "pass": true,
+      "duration": 13.644,
+      "bytes": 220020,
+      "timingLevel": "word",
+      "timedWords": 67,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-lhasa-access",
+      "pass": true,
+      "duration": 13.14,
+      "bytes": 211956,
+      "timingLevel": "word",
+      "timedWords": 63,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-lhasa-transfer",
+      "pass": true,
+      "duration": 23.328,
+      "bytes": 374964,
+      "timingLevel": "word",
+      "timedWords": 112,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-lhasa-life",
+      "pass": true,
+      "duration": 15.876,
+      "bytes": 255732,
+      "timingLevel": "word",
+      "timedWords": 81,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-ngari-before",
+      "pass": true,
+      "duration": 16.344,
+      "bytes": 263220,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-ngari-access",
+      "pass": true,
+      "duration": 12.492,
+      "bytes": 201588,
+      "timingLevel": "word",
+      "timedWords": 63,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-ngari-transfer",
+      "pass": true,
+      "duration": 18.756,
+      "bytes": 301812,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "ACCESS-ngari-life",
+      "pass": true,
+      "duration": 20.88,
+      "bytes": 335796,
+      "timingLevel": "word",
+      "timedWords": 97,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-nyingchi-1",
+      "pass": true,
+      "duration": 12.528,
+      "bytes": 202164,
+      "timingLevel": "word",
+      "timedWords": 64,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-nyingchi-2",
+      "pass": true,
+      "duration": 14.94,
+      "bytes": 240756,
+      "timingLevel": "word",
+      "timedWords": 70,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-nyingchi-3",
+      "pass": true,
+      "duration": 18.792,
+      "bytes": 302388,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-lhasa-1",
+      "pass": true,
+      "duration": 13.86,
+      "bytes": 223476,
+      "timingLevel": "word",
+      "timedWords": 68,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-lhasa-2",
+      "pass": true,
+      "duration": 16.02,
+      "bytes": 258036,
+      "timingLevel": "word",
+      "timedWords": 75,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-lhasa-3",
+      "pass": true,
+      "duration": 14.364,
+      "bytes": 231540,
+      "timingLevel": "word",
+      "timedWords": 75,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-ngari-1",
+      "pass": true,
+      "duration": 12.924,
+      "bytes": 208500,
+      "timingLevel": "word",
+      "timedWords": 64,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-ngari-2",
+      "pass": true,
+      "duration": 18.432,
+      "bytes": 296628,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-connections-ngari-3",
+      "pass": true,
+      "duration": 18.756,
+      "bytes": 301812,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-nyingchi-1",
+      "pass": true,
+      "duration": 16.308,
+      "bytes": 262644,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-nyingchi-2",
+      "pass": true,
+      "duration": 17.604,
+      "bytes": 283380,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-nyingchi-3",
+      "pass": true,
+      "duration": 15.552,
+      "bytes": 250548,
+      "timingLevel": "word",
+      "timedWords": 72,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-lhasa-1",
+      "pass": true,
+      "duration": 17.712,
+      "bytes": 285108,
+      "timingLevel": "word",
+      "timedWords": 83,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-lhasa-2",
+      "pass": true,
+      "duration": 15.84,
+      "bytes": 255156,
+      "timingLevel": "word",
+      "timedWords": 77,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-lhasa-3",
+      "pass": true,
+      "duration": 15.66,
+      "bytes": 252276,
+      "timingLevel": "word",
+      "timedWords": 77,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-ngari-1",
+      "pass": true,
+      "duration": 17.244,
+      "bytes": 277620,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-ngari-2",
+      "pass": true,
+      "duration": 18.756,
+      "bytes": 301812,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "CONT-travel-ngari-3",
+      "pass": true,
+      "duration": 17.064,
+      "bytes": 274740,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "OBS-CLIMATE-1",
+      "pass": true,
+      "duration": 26.748,
+      "bytes": 429684,
+      "timingLevel": "word",
+      "timedWords": 130,
+      "errors": []
+    },
+    {
+      "cueId": "OBS-CLIMATE-7",
+      "pass": true,
+      "duration": 28.188,
+      "bytes": 452724,
+      "timingLevel": "word",
+      "timedWords": 143,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-environment-1",
+      "pass": true,
+      "duration": 17.28,
+      "bytes": 278196,
+      "timingLevel": "word",
+      "timedWords": 78,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-environment-2",
+      "pass": true,
+      "duration": 16.92,
+      "bytes": 272436,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-environment-3",
+      "pass": true,
+      "duration": 19.62,
+      "bytes": 315636,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-life-1",
+      "pass": true,
+      "duration": 19.116,
+      "bytes": 307572,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-life-2",
+      "pass": true,
+      "duration": 19.08,
+      "bytes": 306996,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-life-3",
+      "pass": true,
+      "duration": 19.836,
+      "bytes": 319092,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-history-1",
+      "pass": true,
+      "duration": 19.62,
+      "bytes": 315636,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-history-2",
+      "pass": true,
+      "duration": 18.72,
+      "bytes": 301236,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-history-3",
+      "pass": true,
+      "duration": 20.808,
+      "bytes": 334644,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-shigatse-history",
+      "pass": true,
+      "duration": 22.968,
+      "bytes": 369204,
+      "timingLevel": "word",
+      "timedWords": 105,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-connections-1",
+      "pass": true,
+      "duration": 18.9,
+      "bytes": 304116,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-connections-2",
+      "pass": true,
+      "duration": 19.188,
+      "bytes": 308724,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-shigatse-access",
+      "pass": true,
+      "duration": 23.076,
+      "bytes": 370932,
+      "timingLevel": "word",
+      "timedWords": 105,
+      "errors": []
+    },
+    {
+      "cueId": "shigatse-connections-3",
+      "pass": true,
+      "duration": 19.656,
+      "bytes": 316212,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-environment-1",
+      "pass": true,
+      "duration": 17.172,
+      "bytes": 276468,
+      "timingLevel": "word",
+      "timedWords": 80,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-environment-2",
+      "pass": true,
+      "duration": 17.028,
+      "bytes": 274164,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-environment-3",
+      "pass": true,
+      "duration": 17.784,
+      "bytes": 286260,
+      "timingLevel": "word",
+      "timedWords": 85,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-life-1",
+      "pass": true,
+      "duration": 18.504,
+      "bytes": 297780,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-life-2",
+      "pass": true,
+      "duration": 19.728,
+      "bytes": 317364,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-life-3",
+      "pass": true,
+      "duration": 20.448,
+      "bytes": 328884,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-history-1",
+      "pass": true,
+      "duration": 19.188,
+      "bytes": 308724,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-history-2",
+      "pass": true,
+      "duration": 18.612,
+      "bytes": 299508,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-history-3",
+      "pass": true,
+      "duration": 22.068,
+      "bytes": 354804,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-shannan-history",
+      "pass": true,
+      "duration": 22.824,
+      "bytes": 366900,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-connections-1",
+      "pass": true,
+      "duration": 19.224,
+      "bytes": 309300,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-connections-2",
+      "pass": true,
+      "duration": 18.576,
+      "bytes": 298932,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-shannan-access",
+      "pass": true,
+      "duration": 19.944,
+      "bytes": 320820,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "shannan-connections-3",
+      "pass": true,
+      "duration": 18.396,
+      "bytes": 296052,
+      "timingLevel": "word",
+      "timedWords": 97,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-environment-1",
+      "pass": true,
+      "duration": 16.956,
+      "bytes": 273012,
+      "timingLevel": "word",
+      "timedWords": 83,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-environment-2",
+      "pass": true,
+      "duration": 19.548,
+      "bytes": 314484,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-environment-3",
+      "pass": true,
+      "duration": 17.604,
+      "bytes": 283380,
+      "timingLevel": "word",
+      "timedWords": 86,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-life-1",
+      "pass": true,
+      "duration": 17.784,
+      "bytes": 286260,
+      "timingLevel": "word",
+      "timedWords": 87,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-life-2",
+      "pass": true,
+      "duration": 17.28,
+      "bytes": 278196,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-life-3",
+      "pass": true,
+      "duration": 17.748,
+      "bytes": 285684,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-history-1",
+      "pass": true,
+      "duration": 19.476,
+      "bytes": 313332,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-history-2",
+      "pass": true,
+      "duration": 19.044,
+      "bytes": 306420,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-history-3",
+      "pass": true,
+      "duration": 20.34,
+      "bytes": 327156,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-chamdo-history",
+      "pass": true,
+      "duration": 21.96,
+      "bytes": 353076,
+      "timingLevel": "word",
+      "timedWords": 100,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-connections-1",
+      "pass": true,
+      "duration": 19.332,
+      "bytes": 311028,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-connections-2",
+      "pass": true,
+      "duration": 18.9,
+      "bytes": 304116,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-chamdo-access",
+      "pass": true,
+      "duration": 23.58,
+      "bytes": 378996,
+      "timingLevel": "word",
+      "timedWords": 109,
+      "errors": []
+    },
+    {
+      "cueId": "chamdo-connections-3",
+      "pass": true,
+      "duration": 19.296,
+      "bytes": 310452,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-environment-1",
+      "pass": true,
+      "duration": 17.856,
+      "bytes": 287412,
+      "timingLevel": "word",
+      "timedWords": 88,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-environment-2",
+      "pass": true,
+      "duration": 17.928,
+      "bytes": 288564,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-environment-3",
+      "pass": true,
+      "duration": 19.188,
+      "bytes": 308724,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-life-1",
+      "pass": true,
+      "duration": 18.648,
+      "bytes": 300084,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-life-2",
+      "pass": true,
+      "duration": 20.088,
+      "bytes": 323124,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-life-3",
+      "pass": true,
+      "duration": 20.844,
+      "bytes": 335220,
+      "timingLevel": "word",
+      "timedWords": 96,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-history-1",
+      "pass": true,
+      "duration": 16.92,
+      "bytes": 272436,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-history-2",
+      "pass": true,
+      "duration": 19.008,
+      "bytes": 305844,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-history-3",
+      "pass": true,
+      "duration": 19.44,
+      "bytes": 312756,
+      "timingLevel": "word",
+      "timedWords": 91,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-nagqu-history",
+      "pass": true,
+      "duration": 22.14,
+      "bytes": 355956,
+      "timingLevel": "word",
+      "timedWords": 93,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-connections-1",
+      "pass": true,
+      "duration": 18.972,
+      "bytes": 305268,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-connections-2",
+      "pass": true,
+      "duration": 18.324,
+      "bytes": 294900,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "REG-SPATIAL-nagqu-access",
+      "pass": true,
+      "duration": 22.464,
+      "bytes": 361140,
+      "timingLevel": "word",
+      "timedWords": 98,
+      "errors": []
+    },
+    {
+      "cueId": "nagqu-connections-3",
+      "pass": true,
+      "duration": 21.384,
+      "bytes": 343860,
+      "timingLevel": "word",
+      "timedWords": 97,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-rotation-air",
+      "pass": true,
+      "duration": 48.708,
+      "bytes": 781044,
+      "timingLevel": "word",
+      "timedWords": 234,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-shiquanhe-irrigation",
+      "pass": true,
+      "duration": 36.828,
+      "bytes": 590964,
+      "timingLevel": "word",
+      "timedWords": 157,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-frame",
+      "pass": true,
+      "duration": 53.1,
+      "bytes": 851316,
+      "timingLevel": "word",
+      "timedWords": 266,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-city-change",
+      "pass": true,
+      "duration": 97.2,
+      "bytes": 1556916,
+      "timingLevel": "word",
+      "timedWords": 475,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-place-actions",
+      "pass": true,
+      "duration": 89.604,
+      "bytes": 1435380,
+      "timingLevel": "word",
+      "timedWords": 440,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-jokhang-protection",
+      "pass": true,
+      "duration": 38.52,
+      "bytes": 618036,
+      "timingLevel": "word",
+      "timedWords": 185,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-origins",
+      "pass": true,
+      "duration": 58.86,
+      "bytes": 943476,
+      "timingLevel": "word",
+      "timedWords": 294,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-city-change-core",
+      "pass": true,
+      "duration": 50.184,
+      "bytes": 804660,
+      "timingLevel": "word",
+      "timedWords": 244,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-regional-connections-core",
+      "pass": true,
+      "duration": 30.924,
+      "bytes": 496500,
+      "timingLevel": "word",
+      "timedWords": 155,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-observation-close",
+      "pass": true,
+      "duration": 39.672,
+      "bytes": 636468,
+      "timingLevel": "word",
+      "timedWords": 211,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-culture-continuity",
+      "pass": true,
+      "duration": 40.824,
+      "bytes": 654900,
+      "timingLevel": "word",
+      "timedWords": 199,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-water-service",
+      "pass": true,
+      "duration": 54.072,
+      "bytes": 866868,
+      "timingLevel": "word",
+      "timedWords": 274,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-culture-actions",
+      "pass": true,
+      "duration": 65.268,
+      "bytes": 1046004,
+      "timingLevel": "word",
+      "timedWords": 331,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-space",
+      "pass": true,
+      "duration": 70.092,
+      "bytes": 1123188,
+      "timingLevel": "word",
+      "timedWords": 345,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-valley-journey",
+      "pass": true,
+      "duration": 68.22,
+      "bytes": 1093236,
+      "timingLevel": "word",
+      "timedWords": 339,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-ground-rail",
+      "pass": true,
+      "duration": 49.968,
+      "bytes": 801204,
+      "timingLevel": "word",
+      "timedWords": 251,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-life-lhasa",
+      "pass": true,
+      "duration": 40.716,
+      "bytes": 653172,
+      "timingLevel": "word",
+      "timedWords": 195,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-living-comparison",
+      "pass": true,
+      "duration": 33.984,
+      "bytes": 545460,
+      "timingLevel": "word",
+      "timedWords": 156,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-regional-connections",
+      "pass": true,
+      "duration": 46.584,
+      "bytes": 747060,
+      "timingLevel": "word",
+      "timedWords": 230,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-regional-observation",
+      "pass": true,
+      "duration": 41.364,
+      "bytes": 663540,
+      "timingLevel": "word",
+      "timedWords": 189,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-lived-city",
+      "pass": true,
+      "duration": 76.14,
+      "bytes": 1219956,
+      "timingLevel": "word",
+      "timedWords": 359,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-lhasa-urban-change",
+      "pass": true,
+      "duration": 65.736,
+      "bytes": 1053492,
+      "timingLevel": "word",
+      "timedWords": 337,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-barkhor-life",
+      "pass": true,
+      "duration": 46.584,
+      "bytes": 747060,
+      "timingLevel": "word",
+      "timedWords": 214,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-evidence-reading",
+      "pass": true,
+      "duration": 27.144,
+      "bytes": 436020,
+      "timingLevel": "word",
+      "timedWords": 131,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-position",
+      "pass": true,
+      "duration": 21.276,
+      "bytes": 342132,
+      "timingLevel": "word",
+      "timedWords": 109,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-formation-entry",
+      "pass": true,
+      "duration": 18.396,
+      "bytes": 296052,
+      "timingLevel": "word",
+      "timedWords": 97,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-entry",
+      "pass": true,
+      "duration": 19.116,
+      "bytes": 307572,
+      "timingLevel": "word",
+      "timedWords": 99,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-heritage-entry",
+      "pass": true,
+      "duration": 21.888,
+      "bytes": 351924,
+      "timingLevel": "word",
+      "timedWords": 109,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-heritage-return",
+      "pass": true,
+      "duration": 19.404,
+      "bytes": 312180,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-regional-system",
+      "pass": true,
+      "duration": 21.816,
+      "bytes": 350772,
+      "timingLevel": "word",
+      "timedWords": 103,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-life-conditions",
+      "pass": true,
+      "duration": 22.824,
+      "bytes": 366900,
+      "timingLevel": "word",
+      "timedWords": 106,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-early",
+      "pass": true,
+      "duration": 24.156,
+      "bytes": 388212,
+      "timingLevel": "word",
+      "timedWords": 108,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-middle",
+      "pass": true,
+      "duration": 22.68,
+      "bytes": 364596,
+      "timingLevel": "word",
+      "timedWords": 112,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-history-modern",
+      "pass": true,
+      "duration": 22.716,
+      "bytes": 365172,
+      "timingLevel": "word",
+      "timedWords": 106,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-culture",
+      "pass": true,
+      "duration": 23.112,
+      "bytes": 371508,
+      "timingLevel": "word",
+      "timedWords": 110,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-connections",
+      "pass": true,
+      "duration": 22.428,
+      "bytes": 360564,
+      "timingLevel": "word",
+      "timedWords": 106,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-protection",
+      "pass": true,
+      "duration": 58.896,
+      "bytes": 944052,
+      "timingLevel": "word",
+      "timedWords": 286,
+      "errors": []
+    },
+    {
+      "cueId": "OVERVIEW-conclusion",
+      "pass": true,
+      "duration": 21.672,
+      "bytes": 348468,
+      "timingLevel": "word",
+      "timedWords": 113,
+      "errors": []
+    },
+    {
+      "cueId": "LAB-air-higher",
+      "pass": true,
+      "duration": 37.548,
+      "bytes": 602484,
+      "timingLevel": "word",
+      "timedWords": 184,
+      "errors": []
+    },
+    {
+      "cueId": "LAB-air-lower",
+      "pass": true,
+      "duration": 36.036,
+      "bytes": 578292,
+      "timingLevel": "word",
+      "timedWords": 174,
+      "errors": []
+    },
+    {
+      "cueId": "LAB-life-nyingchi",
+      "pass": true,
+      "duration": 35.1,
+      "bytes": 563316,
+      "timingLevel": "word",
+      "timedWords": 169,
+      "errors": []
+    },
+    {
+      "cueId": "LAB-life-lhasa",
+      "pass": true,
+      "duration": 35.568,
+      "bytes": 570804,
+      "timingLevel": "word",
+      "timedWords": 181,
+      "errors": []
+    },
+    {
+      "cueId": "LAB-life-ngari",
+      "pass": true,
+      "duration": 37.188,
+      "bytes": 596724,
+      "timingLevel": "word",
+      "timedWords": 192,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-orientation",
+      "pass": true,
+      "duration": 32.724,
+      "bytes": 525300,
+      "timingLevel": "word",
+      "timedWords": 167,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-mountains",
+      "pass": true,
+      "duration": 41.976,
+      "bytes": 673332,
+      "timingLevel": "word",
+      "timedWords": 205,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-lulang",
+      "pass": true,
+      "duration": 37.476,
+      "bytes": 601332,
+      "timingLevel": "word",
+      "timedWords": 187,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-return",
+      "pass": true,
+      "duration": 30.384,
+      "bytes": 487860,
+      "timingLevel": "word",
+      "timedWords": 161,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-forest",
+      "pass": true,
+      "duration": 17.892,
+      "bytes": 287988,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-meadow",
+      "pass": true,
+      "duration": 18.072,
+      "bytes": 290868,
+      "timingLevel": "word",
+      "timedWords": 84,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-grazing",
+      "pass": true,
+      "duration": 16.416,
+      "bytes": 264372,
+      "timingLevel": "word",
+      "timedWords": 90,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-town",
+      "pass": true,
+      "duration": 18.612,
+      "bytes": 299508,
+      "timingLevel": "word",
+      "timedWords": 94,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-daily",
+      "pass": true,
+      "duration": 19.476,
+      "bytes": 313332,
+      "timingLevel": "word",
+      "timedWords": 92,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-customs",
+      "pass": true,
+      "duration": 19.44,
+      "bytes": 312756,
+      "timingLevel": "word",
+      "timedWords": 104,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-PHOTO-target",
+      "pass": true,
+      "duration": 16.38,
+      "bytes": 263796,
+      "timingLevel": "word",
+      "timedWords": 87,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-GATEWAY-introduction",
+      "pass": true,
+      "duration": 39.78,
+      "bytes": 638196,
+      "timingLevel": "word",
+      "timedWords": 188,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-tongmai-approach",
+      "pass": true,
+      "duration": 27.684,
+      "bytes": 444660,
+      "timingLevel": "word",
+      "timedWords": 134,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-tongmai-crossing",
+      "pass": true,
+      "duration": 52.452,
+      "bytes": 840948,
+      "timingLevel": "word",
+      "timedWords": 256,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-bomi-approach",
+      "pass": true,
+      "duration": 19.8,
+      "bytes": 318516,
+      "timingLevel": "word",
+      "timedWords": 89,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-bomi-place",
+      "pass": true,
+      "duration": 22.284,
+      "bytes": 358260,
+      "timingLevel": "word",
+      "timedWords": 111,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-bomi-return",
+      "pass": true,
+      "duration": 6.66,
+      "bytes": 108276,
+      "timingLevel": "word",
+      "timedWords": 34,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-corridor-opening",
+      "pass": true,
+      "duration": 16.848,
+      "bytes": 271284,
+      "timingLevel": "word",
+      "timedWords": 77,
+      "errors": []
+    },
+    {
+      "cueId": "ROUTE-G318-corridor-closing",
+      "pass": true,
+      "duration": 29.844,
+      "bytes": 479220,
+      "timingLevel": "word",
+      "timedWords": 139,
+      "errors": []
+    },
+    {
+      "cueId": "TRAVEL-G318-sejila-road",
+      "pass": true,
+      "duration": 18.108,
+      "bytes": 291444,
+      "timingLevel": "word",
+      "timedWords": 100,
+      "errors": []
+    },
+    {
+      "cueId": "TRAVEL-G318-sejila-outlook",
+      "pass": true,
+      "duration": 19.62,
+      "bytes": 315636,
+      "timingLevel": "word",
+      "timedWords": 95,
+      "errors": []
+    },
+    {
+      "cueId": "TRAVEL-G318-lulang-landscape",
+      "pass": true,
+      "duration": 22.212,
+      "bytes": 357108,
+      "timingLevel": "word",
+      "timedWords": 100,
+      "errors": []
+    },
+    {
+      "cueId": "TRAVEL-G318-lulang-life",
+      "pass": true,
+      "duration": 28.332,
+      "bytes": 455028,
+      "timingLevel": "word",
+      "timedWords": 142,
+      "errors": []
+    },
+    {
+      "cueId": "RIDE-G318-surface",
+      "pass": true,
+      "duration": 10.908,
+      "bytes": 176244,
+      "timingLevel": "word",
+      "timedWords": 55,
+      "errors": []
+    },
+    {
+      "cueId": "RIDE-G318-rise",
+      "pass": true,
+      "duration": 12.276,
+      "bytes": 198132,
+      "timingLevel": "word",
+      "timedWords": 56,
+      "errors": []
+    },
+    {
+      "cueId": "RIDE-G318-turn",
+      "pass": true,
+      "duration": 10.44,
+      "bytes": 168756,
+      "timingLevel": "word",
+      "timedWords": 55,
+      "errors": []
+    },
+    {
+      "cueId": "RIDE-G318-arrive",
+      "pass": true,
+      "duration": 12.06,
+      "bytes": 194676,
+      "timingLevel": "word",
+      "timedWords": 61,
+      "errors": []
+    }
+  ]
+}

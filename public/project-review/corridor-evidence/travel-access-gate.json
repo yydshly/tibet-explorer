@@ -1,0 +1,832 @@
+{
+  "id": "G318-travel-access-gate-20261020",
+  "date": "2026-10-20",
+  "status": "bounded_source_gate_complete_conditional_storyboard",
+  "baseline": "c7ab41e",
+  "scope": "四处入口/道路/免费清洁素材核查与旅行者分镜；不改冻结产品。",
+  "decision": "色季拉与鲁朗可在资料边界内细化；通麦保留途中观察；巴卡森林仅保留有条件候选，真实入林暂缓。",
+  "places": [
+    {
+      "id": "A1",
+      "name": "色季拉远眺候选",
+      "status": "部分可用：道路与POI有据，观景承诺缩减",
+      "entry": "OSM记录南迦巴瓦观景POI8795758950与停车POI8795758949，旁侧服务路1564915508与归档主路共享节点。",
+      "connection": "原始服务路可追到POI附近；最近道路顶点距观景POI约8米、距停车POI约12米，空缺不补线。两处saddle记录与公开海拔口径不一致，不采用该ele标注。",
+      "watch": "连续上山、回望谷地、天气与可见范围；远峰保持有条件的观看目标。",
+      "experience": "观景停留作为候选；当前收费、开放、停车出入口和步行仍待核。",
+      "media": "两张2015原图可作天气与地方环境分镜参考；没有本轮核准的清晰远峰或金山原片。",
+      "decision": "可写翻山与天气分镜；缩减清晰远峰、日照金山和停车步行的实景承诺。",
+      "approaches": [
+        "sejila-8795758949",
+        "sejila-8795758950"
+      ],
+      "sources": [
+        "AG06",
+        "AG07"
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "鲁朗小镇与扎西岗村",
+      "status": "可用：地方接近与已有实拍；村内路线缩减",
+      "entry": "传统村落另用主路节点624468845，经来源道路1120342679、桥1120342680及村道接近扎西岗村参照5224686709。",
+      "connection": "地图中约946米的连续道路到最近村道顶点，距村参照约60米；此为数据链长度，不是实际入口里程。原有小镇接入节点7365874802保留，两者不替换。",
+      "watch": "林海、草甸、水与村镇，公共生活和现代旅游小镇的区别。",
+      "experience": "村镇公共空间观察与地方风味为主要停留选择；不默认入户、骑马、表演或节庆。",
+      "media": "复用既有五份清洁实拍及各自日期/许可；2024小镇照片不能代表整个扎西岗传统村落。",
+      "decision": "可进入地方观察分镜；村口、停车、公共步行闭环及实时服务没有全部核准。",
+      "approaches": [
+        "lulang-5224686709"
+      ],
+      "sources": [
+        "AG04",
+        "AG05",
+        "AG06"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "通麦江流与桥的观察",
+      "status": "缩减：保留途中观察，暂停步行观景",
+      "entry": "官方介绍确认桥旁观景台的存在；本轮未核到与该设施一一对应的入口坐标。",
+      "connection": "OSM未具名attraction6304966287不能认作观景台。接近它的候选算法路径经过旧桥26406907，与历史材料中的旧桥不可通行边界冲突，已拒用。",
+      "watch": "原主路上的峡谷、易贡藏布与帕隆藏布关系、桥隧和交通历史。",
+      "experience": "以途中与地图视角观察为主；暂不引导下车、上旧桥或沿未核道路走到平台。",
+      "media": "2014旧桥清洁实拍可复用但明确年代；限定检索仅返回同一旧照，未取得新桥近景或连续实拍。",
+      "decision": "保留主路与有日期历史对照，删去本轮未经核准的观景步行分镜。",
+      "approaches": [],
+      "sources": [
+        "AG03",
+        "AG06"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "波密森林·巴卡村方向",
+      "status": "有条件：步行选题成立，真实入林镜头暂缓",
+      "entry": "官方材料给出巴卡村往返与两端穿越两种走法；本版只保留巴卡村往返候选，另一端名称按各来源保留。",
+      "connection": "归档主路节点4037129072经道路912953948、桥912953949和401281172到巴卡方向接近道路。该段终点距村名参照点约612米，不认作村口。401281165虽标residential，却注明1米宽、碎石与徒步属性，已从普通行车段排除；村内与森林步道缺失。",
+      "watch": "森林、草湖和村落共同构成的地方体验；与鲁朗的开敞谷地对照。",
+      "experience": "拟从巴卡村入林、原路返回主路；步道几何、入口开放和可再利用的实拍都齐备后才制作，不默认两端接送。",
+      "media": "一次限定Commons查询返回3项同名异地素材，全部排除；官方森林图文保留版权，没有取得免费影像再利用准入。",
+      "decision": "在到县城之前展示可选支线关系与待核事项；真实入林、草湖漫游和现场文化活动分镜暂缓。",
+      "approaches": [
+        "baka-13132782034"
+      ],
+      "sources": [
+        "AG01",
+        "AG02",
+        "AG06"
+      ]
+    }
+  ],
+  "maps": {
+    "sejila": {
+      "bbox": [
+        94.64,
+        29.6,
+        94.665,
+        29.622
+      ],
+      "source": "https://api.openstreetmap.org/api/0.6/map?bbox=94.64,29.6,94.665,29.622",
+      "date": "2026-10-20",
+      "sha256": "0709e498ff1f2752cbabee4efb80aa393a809e6e91531823a4059d83375684c4",
+      "count": 756
+    },
+    "lulang": {
+      "bbox": [
+        94.718,
+        29.718,
+        94.75,
+        29.765
+      ],
+      "source": "https://api.openstreetmap.org/api/0.6/map?bbox=94.718,29.718,94.75,29.765",
+      "date": "2026-10-20",
+      "sha256": "501e26b8dff37805a64481c906cb04f0d067d29121a8607a84fba98b3fd4e752",
+      "count": 9634
+    },
+    "tongmai": {
+      "bbox": [
+        95.052,
+        30.087,
+        95.08,
+        30.11
+      ],
+      "source": "https://api.openstreetmap.org/api/0.6/map?bbox=95.052,30.087,95.08,30.11",
+      "date": "2026-10-20",
+      "sha256": "49e936d163aea2d5c6e2616a080dc16f07d3aa7e709a7da68ff932201fbff8ad",
+      "count": 2123
+    },
+    "baka": {
+      "bbox": [
+        95.495,
+        29.862,
+        95.548,
+        29.914
+      ],
+      "source": "https://api.openstreetmap.org/api/0.6/map?bbox=95.495,29.862,95.548,29.914",
+      "date": "2026-10-20",
+      "sha256": "6489c33f595a2720f39b91821b228ac4216388bf30f6f2bcca48bed5535c5d6a",
+      "count": 2437
+    }
+  },
+  "approaches": [
+    {
+      "id": "sejila-8795758949",
+      "label": "停车POI",
+      "poiNode": 8795758949,
+      "poiCoordinate": [
+        94.6515298,
+        29.6105671
+      ],
+      "nearestRoadNode": 14248686467,
+      "poiToRoadVertexMetres": 12.4,
+      "sharedMainlineNodes": 392,
+      "mappedApproach": true,
+      "approachLengthMetres": 41.0,
+      "mainlineJoinNode": 624467757,
+      "sourceWays": [
+        1564915508
+      ],
+      "sourceNodeIds": [
+        624467757,
+        14248685889,
+        14248686467
+      ],
+      "coordinates": [
+        [
+          94.6513962,
+          29.6108455
+        ],
+        [
+          94.6513938,
+          29.6106367
+        ],
+        [
+          94.6514445,
+          29.6104834
+        ]
+      ],
+      "limits": "Only mapped drivable approach to a source road vertex near a POI; no snapped POI connector, verified entry/parking/walking path/current access or route recommendation.",
+      "status": "mapped_approach_only_poi_gap_unclosed",
+      "acceptForStoryboardApproach": true,
+      "mainlineIndex": 827
+    },
+    {
+      "id": "sejila-8795758950",
+      "label": "远峰观景POI",
+      "poiNode": 8795758950,
+      "poiCoordinate": [
+        94.6519455,
+        29.6105858
+      ],
+      "nearestRoadNode": 14248684607,
+      "poiToRoadVertexMetres": 8.2,
+      "sharedMainlineNodes": 392,
+      "mappedApproach": true,
+      "approachLengthMetres": 32.8,
+      "mainlineJoinNode": 14248686564,
+      "sourceWays": [
+        1564915508
+      ],
+      "sourceNodeIds": [
+        14248686564,
+        14248684607
+      ],
+      "coordinates": [
+        [
+          94.6520445,
+          29.6108141
+        ],
+        [
+          94.6519897,
+          29.6105229
+        ]
+      ],
+      "limits": "Only mapped drivable approach to a source road vertex near a POI; no snapped POI connector, verified entry/parking/walking path/current access or route recommendation.",
+      "status": "mapped_approach_only_poi_gap_unclosed",
+      "acceptForStoryboardApproach": true,
+      "mainlineIndex": 831
+    },
+    {
+      "id": "lulang-5224686709",
+      "label": "扎西岗村参照",
+      "poiNode": 5224686709,
+      "poiCoordinate": [
+        94.7371793,
+        29.7519508
+      ],
+      "nearestRoadNode": 3132961638,
+      "poiToRoadVertexMetres": 59.9,
+      "sharedMainlineNodes": 463,
+      "mappedApproach": true,
+      "approachLengthMetres": 945.8,
+      "mainlineJoinNode": 624468845,
+      "sourceWays": [
+        1120342679,
+        1120342680,
+        308009542,
+        308009505
+      ],
+      "sourceNodeIds": [
+        624468845,
+        10246787937,
+        10246787938,
+        3132961637,
+        12234741023,
+        3132961641,
+        3132961639,
+        3132961640,
+        12234741025,
+        12234741026,
+        12234741024,
+        3132961646,
+        12234741029,
+        3132961651,
+        3320242807,
+        3132961650,
+        12234741030,
+        3132961636,
+        4043644064,
+        4043644066,
+        3132961638
+      ],
+      "coordinates": [
+        [
+          94.7298861,
+          29.7525152
+        ],
+        [
+          94.7301179,
+          29.7523313
+        ],
+        [
+          94.7304578,
+          29.7521173
+        ],
+        [
+          94.7306434,
+          29.7520765
+        ],
+        [
+          94.7309607,
+          29.7521597
+        ],
+        [
+          94.7312644,
+          29.7522309
+        ],
+        [
+          94.7315813,
+          29.7521867
+        ],
+        [
+          94.7317496,
+          29.7521862
+        ],
+        [
+          94.7320873,
+          29.7523041
+        ],
+        [
+          94.7324306,
+          29.7523717
+        ],
+        [
+          94.7328007,
+          29.7524951
+        ],
+        [
+          94.733094,
+          29.7526258
+        ],
+        [
+          94.733364,
+          29.752863
+        ],
+        [
+          94.733859,
+          29.7529884
+        ],
+        [
+          94.7349572,
+          29.7530862
+        ],
+        [
+          94.7352099,
+          29.7531134
+        ],
+        [
+          94.7353917,
+          29.7530353
+        ],
+        [
+          94.7377746,
+          29.7514552
+        ],
+        [
+          94.7379811,
+          29.7518359
+        ],
+        [
+          94.7379583,
+          29.751957
+        ],
+        [
+          94.7377866,
+          29.7520595
+        ]
+      ],
+      "limits": "Only mapped drivable approach to a source road vertex near a POI; no snapped POI connector, verified entry/parking/walking path/current access or route recommendation.",
+      "status": "mapped_approach_only_poi_gap_unclosed",
+      "acceptForStoryboardApproach": true,
+      "mainlineIndex": 1186
+    },
+    {
+      "id": "lulang-3316890528",
+      "label": "同名自然村参照",
+      "poiNode": 3316890528,
+      "poiCoordinate": [
+        94.7429263,
+        29.7489164
+      ],
+      "nearestRoadNode": 12234741526,
+      "poiToRoadVertexMetres": 31.9,
+      "sharedMainlineNodes": 463,
+      "mappedApproach": true,
+      "approachLengthMetres": 1445.2,
+      "mainlineJoinNode": 624468845,
+      "sourceWays": [
+        1120342679,
+        1120342680,
+        308009542,
+        325017076
+      ],
+      "sourceNodeIds": [
+        624468845,
+        10246787937,
+        10246787938,
+        3132961637,
+        12234741023,
+        3132961641,
+        3132961639,
+        3132961640,
+        12234741025,
+        12234741026,
+        12234741024,
+        3132961646,
+        12234741029,
+        3132961651,
+        3320242807,
+        3132961650,
+        12234741030,
+        3132961636,
+        3132961635,
+        3316895174,
+        3316895172,
+        3316895170,
+        3316895169,
+        3316895171,
+        3316895173,
+        12234741527,
+        12234741526
+      ],
+      "coordinates": [
+        [
+          94.7298861,
+          29.7525152
+        ],
+        [
+          94.7301179,
+          29.7523313
+        ],
+        [
+          94.7304578,
+          29.7521173
+        ],
+        [
+          94.7306434,
+          29.7520765
+        ],
+        [
+          94.7309607,
+          29.7521597
+        ],
+        [
+          94.7312644,
+          29.7522309
+        ],
+        [
+          94.7315813,
+          29.7521867
+        ],
+        [
+          94.7317496,
+          29.7521862
+        ],
+        [
+          94.7320873,
+          29.7523041
+        ],
+        [
+          94.7324306,
+          29.7523717
+        ],
+        [
+          94.7328007,
+          29.7524951
+        ],
+        [
+          94.733094,
+          29.7526258
+        ],
+        [
+          94.733364,
+          29.752863
+        ],
+        [
+          94.733859,
+          29.7529884
+        ],
+        [
+          94.7349572,
+          29.7530862
+        ],
+        [
+          94.7352099,
+          29.7531134
+        ],
+        [
+          94.7353917,
+          29.7530353
+        ],
+        [
+          94.7377746,
+          29.7514552
+        ],
+        [
+          94.7408071,
+          29.7493911
+        ],
+        [
+          94.7411892,
+          29.749112
+        ],
+        [
+          94.7415061,
+          29.7488535
+        ],
+        [
+          94.7418125,
+          29.7487134
+        ],
+        [
+          94.7420605,
+          29.7486789
+        ],
+        [
+          94.7422435,
+          29.7487637
+        ],
+        [
+          94.7423948,
+          29.7488377
+        ],
+        [
+          94.7424272,
+          29.7488786
+        ],
+        [
+          94.7426069,
+          29.7488437
+        ]
+      ],
+      "limits": "Only mapped drivable approach to a source road vertex near a POI; no snapped POI connector, verified entry/parking/walking path/current access or route recommendation.",
+      "status": "mapped_approach_only_poi_gap_unclosed",
+      "acceptForStoryboardApproach": true,
+      "mainlineIndex": 1186
+    },
+    {
+      "id": "tongmai-6304966287",
+      "label": "未具名attraction",
+      "poiNode": 6304966287,
+      "poiCoordinate": [
+        95.065328,
+        30.0978253
+      ],
+      "nearestRoadNode": 289310098,
+      "poiToRoadVertexMetres": 98.4,
+      "sharedMainlineNodes": 171,
+      "mappedApproach": true,
+      "approachLengthMetres": 432.8,
+      "mainlineJoinNode": 7024976489,
+      "sourceWays": [
+        1428461402,
+        539990320,
+        975675113,
+        26406907
+      ],
+      "sourceNodeIds": [
+        7024976489,
+        13132533146,
+        13132533151,
+        13132533152,
+        13132533148,
+        13132533145,
+        13132533150,
+        13132533147,
+        841483542,
+        9868132315,
+        288427515,
+        5224643800,
+        289310098
+      ],
+      "coordinates": [
+        [
+          95.0627593,
+          30.0970109
+        ],
+        [
+          95.0628654,
+          30.0970633
+        ],
+        [
+          95.0629765,
+          30.0970849
+        ],
+        [
+          95.0630639,
+          30.097101
+        ],
+        [
+          95.0631083,
+          30.0971297
+        ],
+        [
+          95.0631285,
+          30.0971819
+        ],
+        [
+          95.0631534,
+          30.0974543
+        ],
+        [
+          95.063183,
+          30.0975428
+        ],
+        [
+          95.0633286,
+          30.0977653
+        ],
+        [
+          95.0634185,
+          30.0978853
+        ],
+        [
+          95.063643,
+          30.0981849
+        ],
+        [
+          95.0637588,
+          30.0981596
+        ],
+        [
+          95.0663226,
+          30.0976181
+        ]
+      ],
+      "limits": "Only mapped drivable approach to a source road vertex near a POI; no snapped POI connector, verified entry/parking/walking path/current access or route recommendation.",
+      "status": "rejected_crosses_old_bridge_no_visitor_access_proof",
+      "acceptForStoryboardApproach": false,
+      "mainlineIndex": 2074
+    },
+    {
+      "id": "baka-13132782034",
+      "label": "巴卡村参照",
+      "poiNode": 13132782034,
+      "poiCoordinate": [
+        95.5203348,
+        29.8898808
+      ],
+      "nearestRoadNode": 3632469729,
+      "poiToRoadVertexMetres": 612.0,
+      "sharedMainlineNodes": 264,
+      "mappedApproach": true,
+      "approachLengthMetres": 369.0,
+      "mainlineJoinNode": 4037129072,
+      "sourceWays": [
+        912953948,
+        912953949,
+        401281172
+      ],
+      "sourceNodeIds": [
+        4037129072,
+        4037129071,
+        4037129070,
+        4037129069,
+        4037129068,
+        4037129067,
+        4037129062,
+        4037129060,
+        3632457237,
+        3632469729
+      ],
+      "coordinates": [
+        [
+          95.5217155,
+          29.8978173
+        ],
+        [
+          95.5216422,
+          29.897577
+        ],
+        [
+          95.5214968,
+          29.8966547
+        ],
+        [
+          95.5215457,
+          29.8965941
+        ],
+        [
+          95.5218043,
+          29.8964547
+        ],
+        [
+          95.5221678,
+          29.896342
+        ],
+        [
+          95.5225467,
+          29.8959045
+        ],
+        [
+          95.5225229,
+          29.895856
+        ],
+        [
+          95.5220168,
+          29.8954289
+        ],
+        [
+          95.5218352,
+          29.895229
+        ]
+      ],
+      "limits": "Only mapped drivable approach to a source road vertex near a POI; no snapped POI connector, verified entry/parking/walking path/current access or route recommendation.",
+      "status": "road_bridge_approach_only_forest_gate_and_trail_missing",
+      "excludedNarrowWay": 401281165,
+      "excludedNarrowWayReason": "OSM tagged residential but width=1m/gravel/hiking; not accepted as a normal car route.",
+      "acceptedApproachEndToVillageReferenceMetres": 612.0,
+      "acceptForStoryboardApproach": true,
+      "mainlineIndex": 2789,
+      "rejectedCandidate": {
+        "nearestRoadNode": 3632469741,
+        "poiToRoadVertexMetres": 48.2,
+        "lengthMetres": 1044.0,
+        "excludedWay": 401281165,
+        "reason": "OSM tagged residential but width=1m/gravel/hiking; not accepted as a normal car route."
+      }
+    }
+  ],
+  "media": [
+    {
+      "id": "SM25",
+      "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (25).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(25).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%2825%29.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2015-04-10（来源拍摄日期）",
+      "size": [
+        3264,
+        2448
+      ],
+      "sourceCamera": [
+        94.651603,
+        29.610281
+      ],
+      "visible": "积雪、经幡与阴云下的山地环境",
+      "status": "browser_original_visually_reviewed_dated_storyboard_reference",
+      "visualReview": "浏览器直接加载原图并查看完整适屏画面，未发现烧录水印；未裁剪、去水印或生成内容。这不是逐像素鉴定。",
+      "use": "仅支持有日期的色季拉沿线天气与地方环境，不展示清晰南迦巴瓦、日照金山或当前季节。",
+      "limits": "原始图像未下载归档、未接入产品；截图只作核看证据。生产复用前保存原图哈希、信用与许可，不以浏览器截图替代原图。",
+      "evidence": "../review/g318-experience-gate-20261020/sejila-photo25-browser.png",
+      "evidenceSha256": "ffe4467526f877c29d5959d6ce308b42596ac18ca43da16b5eaf0726a765b097"
+    },
+    {
+      "id": "SM27",
+      "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (27).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(27).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%2827%29.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2015-04-10（来源拍摄日期）",
+      "size": [
+        3264,
+        2448
+      ],
+      "sourceCamera": [
+        94.651908,
+        29.610383
+      ],
+      "visible": "积雪山坡、经幡与云雾",
+      "status": "browser_original_visually_reviewed_dated_storyboard_reference",
+      "visualReview": "浏览器直接加载原图并查看完整适屏画面，未发现烧录水印；未裁剪、去水印或生成内容。这不是逐像素鉴定。",
+      "use": "仅支持有日期的色季拉沿线天气与地方环境，不展示清晰南迦巴瓦、日照金山或当前季节。",
+      "limits": "原始图像未下载归档、未接入产品；截图只作核看证据。生产复用前保存原图哈希、信用与许可，不以浏览器截图替代原图。",
+      "evidence": "../review/g318-experience-gate-20261020/sejila-photo27-browser.png",
+      "evidenceSha256": "ffdbfbaaad97df3c813ccd67854cb6faff2f57c5ae81870dcfe6c5d5204d98a1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "AG01",
+      "title": "林芝文旅：森林两种步行接入",
+      "date": "2023-12-14（正文日期）",
+      "url": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202401/8db92a336bce4686b7d04f42eac4d437.shtml",
+      "finding": "明确列出巴卡村往返，以及岗村入、巴卡村出的走法。",
+      "limit": "不采用历史步行时间、供氧/难度宣传和表演承诺；文末保留原作者版权，未授权本项目复用图像。"
+    },
+    {
+      "id": "AG02",
+      "title": "林芝文旅：岗美村与巴卡村入口",
+      "date": "2023-08-09（正文日期）",
+      "url": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202401/93e94d0c79de4bc2bd029efa052cbc88.shtml",
+      "finding": "区分岗美村附近入口与巴卡村附近入口。",
+      "limit": "与AG01的岗村叫法并列保留，不能直接合并行政身份；旧票价、荡舟、演出和开放条件均不转为当前服务。"
+    },
+    {
+      "id": "AG03",
+      "title": "林芝文旅：通麦大桥旁的观景台",
+      "date": "2023-05-26（正文日期）",
+      "url": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202401/121fa91b97224d0bb4240c83fb663234.shtml",
+      "finding": "有旁侧观景台和多座桥同框的文字依据。",
+      "limit": "缺入口坐标、停车和步道接续；不能把OSM未具名attraction自动认作该观景台。"
+    },
+    {
+      "id": "AG04",
+      "title": "人民日报／西藏头条：扎西岗村地方生活",
+      "date": "2024-06-15",
+      "url": "https://toutiao.xzdw.gov.cn/ly/202406/t20240615_479087.html",
+      "finding": "支持从翻山入谷到村落公共生活的选题，且说明行政村下含自然村。",
+      "limit": "区域介绍不是村口坐标或可入户授权；不把现代旅游小镇与整个传统村落混作同一空间。"
+    },
+    {
+      "id": "AG05",
+      "title": "林芝文旅：鲁朗夏季村镇与地方风味",
+      "date": "2024-06-19",
+      "url": "https://wlj.linzhi.gov.cn/lzslyfzwyh/c103820/202406/53e79e795c02472b9f5a36ca2eee1cbf.shtml",
+      "finding": "支持村镇漫步、田园与地方饮食的宏观体验。",
+      "limit": "夏季画面不作全年当日实况；新闻图片未作为免费可再利用素材。"
+    },
+    {
+      "id": "AG06",
+      "title": "OSM四个局部原始地图窗口",
+      "date": "2026-10-20读取",
+      "url": "https://www.openstreetmap.org/copyright",
+      "finding": "节点、道路、桥与POI提供接近路径的拓扑依据，原始窗口URL与SHA256见核查JSON。",
+      "limit": "ODbL，© OpenStreetMap contributors。只证明数据库记录；POI与道路间仍有未闭合距离，不能代替实测入口或今日通行。"
+    },
+    {
+      "id": "AG07",
+      "title": "Commons色季拉类别与文件许可元数据",
+      "date": "2026-10-20读取",
+      "url": "https://commons.wikimedia.org/wiki/Category:Sejila_Pass",
+      "finding": "本轮从8项候选中查看两张2015年有机位的原图。",
+      "limit": "类别名和相机GPS不独立证明精确观景设施或照片朝向；只有许可与实际内容都匹配才进入相应分镜。"
+    }
+  ],
+  "mediaSearch": {
+    "queries": 4,
+    "limitsPerQuery": 8,
+    "returned": {
+      "sejila": 8,
+      "lulang": 8,
+      "tongmai": 1,
+      "forest": 3
+    },
+    "newVisuallyReviewedReferences": 2,
+    "newProductionAssets": 0,
+    "forestResult": "3项均为宁波公交或无锡桥等异地同名，全部排除；不声称全网没有森林素材。",
+    "reused": "既有鲁朗5份、通麦2014旧桥、波密2008街景及许可保持。",
+    "unresolved": "清晰远峰/日照金山、通麦新桥、森林步行/草湖与连续现代生活均没有新增合格原片；旧429候选未绕过限制。"
+  },
+  "network": "Overpass主端502、一次备用端超时；随后改用四个有具体位置的官方OSM局部map窗口成功，未继续泛搜或循环重试。",
+  "limits": [
+    "原始道路共享节点只证明地图接近，不证明今日通车、停车或公共步行许可；所有POI缺口保持未闭合。",
+    "POI海拔、地图鞍部与公开山口海拔口径不一，不取其一冒作实测结论。",
+    "通麦旧桥候选路径明确拒用；巴卡1米窄道从普通行车接近段排除。",
+    "本轮没有下载或接入新生产媒体；两张原图只通过浏览器完整适屏核看，无水印判断不是逐像素鉴定。",
+    "官方森林媒体文末明确原作者版权，不当作免费素材；不展示未获准原片。",
+    "当前演示、录音、模型与时长未修改；此分镜不是已经可播放的旅行产品。"
+  ],
+  "evidenceDirectory": "../review/g318-experience-gate-20261020/",
+  "licenses": {
+    "geometry": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "url": "https://www.openstreetmap.org/copyright"
+  }
+}

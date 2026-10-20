@@ -1,0 +1,369 @@
+{
+  "recording": "corridor-output",
+  "method": "2-second source windows every5s; normalized waveform cross-correlation at4kHz. This is actual-output signal evidence, not human listening or comprehension.",
+  "seconds": 319.984,
+  "rms": 0.07005769863216264,
+  "peak": 0.8422651290893555,
+  "cues": [
+    {
+      "cueId": "ROUTE-G318-corridor-opening",
+      "duration": 16.848,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 50.39825,
+          "correlation": 0.97416,
+          "gain": 1.0794
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 55.39825,
+          "correlation": 0.95929,
+          "gain": 1.0168
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 60.39825,
+          "correlation": 0.9812,
+          "gain": 1.0685
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-orientation",
+      "duration": 32.724,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 68.55825,
+          "correlation": 0.97859,
+          "gain": 1.1606
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 73.55825,
+          "correlation": 0.97492,
+          "gain": 1.0907
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 78.55825,
+          "correlation": 0.96794,
+          "gain": 1.2535
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 83.55825,
+          "correlation": 0.96887,
+          "gain": 0.9144
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 88.55825,
+          "correlation": 0.96223,
+          "gain": 1.199
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 93.55825,
+          "correlation": 0.98003,
+          "gain": 1.0815
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-mountains",
+      "duration": 41.976,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 101.35825,
+          "correlation": 0.98358,
+          "gain": 1.2356
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 106.35825,
+          "correlation": 0.96813,
+          "gain": 0.9897
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 111.35825,
+          "correlation": 0.97588,
+          "gain": 0.9597
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 116.35825,
+          "correlation": 0.96678,
+          "gain": 1.0149
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 121.35825,
+          "correlation": 0.95906,
+          "gain": 1.093
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 126.35825,
+          "correlation": 0.97818,
+          "gain": 1.0805
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 131.35825,
+          "correlation": 0.98231,
+          "gain": 1.0327
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 136.35825,
+          "correlation": 0.96672,
+          "gain": 1.0987
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-lulang",
+      "duration": 37.476,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 143.39825,
+          "correlation": 0.97773,
+          "gain": 1.0744
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 148.39825,
+          "correlation": 0.9795,
+          "gain": 1.0935
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 153.39825,
+          "correlation": 0.96938,
+          "gain": 1.146
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 158.39825,
+          "correlation": 0.96886,
+          "gain": 1.1475
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 163.39825,
+          "correlation": 0.96533,
+          "gain": 0.9777
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 168.39825,
+          "correlation": 0.95935,
+          "gain": 0.9
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 173.39825,
+          "correlation": 0.96713,
+          "gain": 0.9893
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-tongmai-approach",
+      "duration": 27.684,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 181.89825,
+          "correlation": 0.97668,
+          "gain": 1.1965
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 186.89825,
+          "correlation": 0.96698,
+          "gain": 1.045
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 191.89825,
+          "correlation": 0.96499,
+          "gain": 0.9795
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 196.89825,
+          "correlation": 0.97547,
+          "gain": 1.1527
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 201.89825,
+          "correlation": 0.96652,
+          "gain": 1.1478
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-tongmai-crossing",
+      "duration": 52.452,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 209.66825,
+          "correlation": 0.97276,
+          "gain": 1.1269
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 214.66825,
+          "correlation": 0.98059,
+          "gain": 1.156
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 219.66825,
+          "correlation": 0.96757,
+          "gain": 1.2185
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 224.66825,
+          "correlation": 0.97326,
+          "gain": 1.1068
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 229.66825,
+          "correlation": 0.96612,
+          "gain": 1.1999
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 234.66825,
+          "correlation": 0.97726,
+          "gain": 1.0727
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 239.66825,
+          "correlation": 0.96696,
+          "gain": 1.0808
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 244.66825,
+          "correlation": 0.9684,
+          "gain": 1.059
+        },
+        {
+          "sourceSeconds": 41.0,
+          "recordedSeconds": 249.66825,
+          "correlation": 0.97946,
+          "gain": 1.0488
+        },
+        {
+          "sourceSeconds": 46.0,
+          "recordedSeconds": 254.66825,
+          "correlation": 0.97638,
+          "gain": 1.0505
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-bomi-approach",
+      "duration": 19.8,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 259.11825,
+          "correlation": 0.97742,
+          "gain": 1.099
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 264.11825,
+          "correlation": 0.97217,
+          "gain": 1.042
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 269.11825,
+          "correlation": 0.94931,
+          "gain": 1.378
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 274.11825,
+          "correlation": 0.96821,
+          "gain": 1.189
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-bomi-place",
+      "duration": 22.284,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 278.96825,
+          "correlation": 0.97969,
+          "gain": 1.2031
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 283.96825,
+          "correlation": 0.97908,
+          "gain": 1.0596
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 288.96825,
+          "correlation": 0.96214,
+          "gain": 1.0785
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 293.96825,
+          "correlation": 0.96556,
+          "gain": 1.2022
+        }
+      ]
+    },
+    {
+      "cueId": "ROUTE-G318-corridor-closing",
+      "duration": 29.844,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 302.69825,
+          "correlation": 0.97825,
+          "gain": 1.0959
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 307.69825,
+          "correlation": 0.96629,
+          "gain": 0.9061
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 312.69825,
+          "correlation": 0.97011,
+          "gain": 0.9867
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 317.69825,
+          "correlation": 0.97389,
+          "gain": 1.1629
+        }
+      ]
+    }
+  ]
+}

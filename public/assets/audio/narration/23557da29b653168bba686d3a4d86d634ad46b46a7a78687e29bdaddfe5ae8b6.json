@@ -1,0 +1,19 @@
+{
+  "id": "23557da29b653168bba686d3a4d86d634ad46b46a7a78687e29bdaddfe5ae8b6",
+  "url": "/assets/audio/narration/23557da29b653168bba686d3a4d86d634ad46b46a7a78687e29bdaddfe5ae8b6.mp3",
+  "text": "前面到达沿路照片的拍摄位置附近。三维场景帮助认识道路和山坡，接下来用有日期的实拍辨认路边风景，两者不是同一机位的连续录像。",
+  "duration": 12.06,
+  "bytes": 194676,
+  "sha256": "eaa4675c96e6b6ed1f357b14f25a029186915990c5f562a08e57d9ce5ffc8153",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T19:26:33.235Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/23557da29b653168bba686d3a4d86d634ad46b46a7a78687e29bdaddfe5ae8b6.subtitles.json",
+  "subtitleSha256": "0251818591dd84af2eade26e3ec8c6927f99e5feb0dd2d2447ef745998e88e07",
+  "timingLevel": "word"
+}

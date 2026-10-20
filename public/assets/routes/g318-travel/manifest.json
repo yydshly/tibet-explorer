@@ -1,0 +1,133 @@
+{
+  "id": "g318-sejila-lulang-travel-v1",
+  "date": "2026-10-20",
+  "scope": "Optional traveler observations; frozen six chapters and existing route scenes/recordings unchanged.",
+  "photos": [
+    {
+      "id": "SM25",
+      "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (25).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(25).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%2825%29.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2015-04-10（来源拍摄日期）",
+      "size": [
+        3264,
+        2448
+      ],
+      "sourceCamera": [
+        94.651603,
+        29.610281
+      ],
+      "visible": "积雪、经幡与阴云下的山地环境",
+      "status": "production_original_archived_no_content_edits",
+      "visualReview": "浏览器直接加载原图并查看完整适屏画面，未发现烧录水印；未裁剪、去水印或生成内容。这不是逐像素鉴定。",
+      "use": "仅支持有日期的色季拉沿线天气与地方环境，不展示清晰南迦巴瓦、日照金山或当前季节。",
+      "limits": "来源相机元数据只支持机位附近定位，非实测观景入口或照片/地形配准；2015年记录不能代表今日。",
+      "evidence": "../review/g318-experience-gate-20261020/sejila-photo25-browser.png",
+      "evidenceSha256": "ffe4467526f877c29d5959d6ce308b42596ac18ca43da16b5eaf0726a765b097",
+      "src": "/assets/routes/g318-travel/sejila-20150410-25.jpg",
+      "sha256": "0a4b4ad4cd1bcaf4f13e9b2f174d527d07aacef45f8df4ad1ec179e9e2bab974",
+      "bytes": 1853004,
+      "archivedOn": "2026-10-20",
+      "displayChanges": "Original pixels retained; responsive contain display and separate SVG marks only."
+    },
+    {
+      "id": "SM27",
+      "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (27).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(27).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%2827%29.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2015-04-10（来源拍摄日期）",
+      "size": [
+        3264,
+        2448
+      ],
+      "sourceCamera": [
+        94.651908,
+        29.610383
+      ],
+      "visible": "积雪山坡、经幡与云雾",
+      "status": "production_original_archived_no_content_edits",
+      "visualReview": "浏览器直接加载原图并查看完整适屏画面，未发现烧录水印；未裁剪、去水印或生成内容。这不是逐像素鉴定。",
+      "use": "仅支持有日期的色季拉沿线天气与地方环境，不展示清晰南迦巴瓦、日照金山或当前季节。",
+      "limits": "来源相机元数据只支持机位附近定位，非实测观景入口或照片/地形配准；2015年记录不能代表今日。",
+      "evidence": "../review/g318-experience-gate-20261020/sejila-photo27-browser.png",
+      "evidenceSha256": "ffdbfbaaad97df3c813ccd67854cb6faff2f57c5ae81870dcfe6c5d5204d98a1",
+      "src": "/assets/routes/g318-travel/sejila-20150410-27.jpg",
+      "sha256": "e38693d3dccd2908079607636d8063ff592cfe4cb6b8206f4818eb6dd23203b7",
+      "bytes": 1655137,
+      "archivedOn": "2026-10-20",
+      "displayChanges": "Original pixels retained; responsive contain display and separate SVG marks only."
+    },
+    {
+      "id": "SM17",
+      "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (17).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(17).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%2817%29.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2015-04-10",
+      "size": [
+        3264,
+        2448
+      ],
+      "sourceCamera": [
+        94.634339,
+        29.628414
+      ],
+      "nearestArchivedRoadNodeIndex": 781,
+      "nearestNodeMetres": 15.5,
+      "visible": "道路弯线、积雪开敞地和两侧林地山坡",
+      "status": "production_original_archived_no_content_edits",
+      "visualReview": "Original inspected in browser; no visible burned-in watermark; full image retained.",
+      "limits": "Source GPS is approximate; no surveyed camera/road registration, driving direction or current road condition claim.",
+      "src": "/assets/routes/g318-travel/sejila-20150410-17.jpg",
+      "sha256": "4e94c4f6f58065f0c6f31dc3e42f84fb2607173bbcddeb9b7072c830d20b4a52",
+      "bytes": 2571529,
+      "archivedOn": "2026-10-20"
+    },
+    {
+      "id": "SM10",
+      "title": "File:Bayi, Nyingchi, Tibet, China - panoramio (10).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(10).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Bayi%2C_Nyingchi%2C_Tibet%2C_China_-_panoramio_%2810%29.jpg",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2015-04-10",
+      "size": [
+        3264,
+        2448
+      ],
+      "sourceCamera": [
+        94.553122,
+        29.561769
+      ],
+      "nearestArchivedRoadNodeIndex": 532,
+      "nearestNodeMetres": 11.5,
+      "visible": "上山机位回望的谷地、近处林木与云层；无路面近景",
+      "status": "production_original_archived_no_content_edits",
+      "visualReview": "Original inspected in browser; no visible burned-in watermark; full image retained.",
+      "limits": "Source GPS is approximate; no surveyed camera/road registration, driving direction or current road condition claim.",
+      "src": "/assets/routes/g318-travel/sejila-20150410-10.jpg",
+      "sha256": "aaa558602e8355efcff18ed3f5d345deb73a9ed64affa63552358b65b8705c68",
+      "bytes": 2114168,
+      "archivedOn": "2026-10-20"
+    }
+  ],
+  "reuse": [
+    "/data/lulang-life-media.json",
+    "/assets/routes/g318/manifest.json"
+  ],
+  "limits": [
+    "Four unmodified 2015-04-10 originals; road and roadside evidence, not continuous driving video or current conditions.",
+    "Source camera metadata locates an approximate viewing position, not a surveyed parking/gate or pixel registration.",
+    "Frozen six chapters, route shots and existing recordings remain unchanged. Optional observations use independent recordings and return state.",
+    "Tongmai disembarking and Baka forest entry remain deferred."
+  ]
+}

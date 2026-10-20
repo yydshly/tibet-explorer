@@ -1,0 +1,137 @@
+Browser tab: 3, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/overview".
+0 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/overview
+	1 container
+		2 button 西藏探索
+			3 image
+			4 text 西藏探索
+		5 text 完整认识西藏 六个核心问题 · 从整体到地方
+		6 container 总览与深入
+			7 button 线路体验
+			8 button 观察计划
+			9 button 项目说明, Help: 最初思路、阶段验收与后续处理方案
+			10 button 完整演示
+			11 button 地图图鉴
+			12 button 全部专题
+			13 button 探索目录
+		14 container 完整认识西藏的连续三维演示
+			15 image 可旋转缩放的西藏三维认识场景
+			16 container
+				17 text 当前尺度 拉萨 · 大昭寺与寺前空间 2005年监测记录
+			18 container 当前历史位置与前后参照
+				19 text 历史位置
+				20 text 只强调当前讲述；完整顺序可展开
+				21 text 回到人的行动：使用空间 · 学习交流 · 持续传承
+			22 container
+				23 button 恢复本段观察角度
+					24 image
+				25 text 拖动旋转 · 滚动缩放 · 操作会暂停
+			26 container
+				27 text 05  /  6  ·  人怎样塑造地方  ·  先看整体 手动观察，讲解已暂停
+				28 container 本章因果顺序
+					29 text 怎样形成
+					30 container
+						31 text →  怎样延续
+					32 text 用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。
+				134 text 多数供灯转至寺前，供灯继续；火源与木构分开。寺前仅示方向。
+		34 container 当前问题与讲述逻辑
+			35 container
+				36 text 05  /  6  ·  人怎样塑造地方
+			37 heading 人的行动怎样形成地方历史与文化？, Value: 1
+				38 text 人的行动怎样形成地方历史与文化？
+			39 container 从主线生成观察任务
+				40 text 带着这个问题继续观察
+				41 text 拉萨老城与历史材料
+				42 text 大昭寺供灯空间调整改变了什么，又保留了什么活动？区分2005年报告、现状地物与原理示意，不把当年安排直接当作今日布置。
+				43 button 带入观察计划 · 编辑与保存
+				44 text 携带本段位置与对应资料；保留已有笔记，返回时继续原讲述。
+			45 container 统一观察步骤
+				46 content list
+					47 text 看问题
+					48 text 操作比较
+					49 text 解释原因
+				50 text 保护改变了什么，又保留了什么？
+				51 text 拖动对照条，或切换原有关系与供灯空间分开。
+				52 container
+					53 text 看变化： 建筑上多数灯光退去，寺前亮起；同一地物与供灯活动仍保留。
+				54 button (collapsed) 比较后，核对原因, Secondary Actions: Expand
+					55 text 比较后，核对原因
+				135 button 恢复原条件，从暂停处继续
+			57 text 2005年监测记录 · 大昭寺供灯空间调整
+			58 text 现状地物定位；金色灯光为供灯关系示意
+			59 container 对照保护与公共使用
+				60 checkbox 供灯原有关系, Value: 0
+				61 checkbox 供灯空间分开, Value: 1
+			62 container
+				63 text 对照活动空间：原有关系 ↔ 报告记录的调整
+				64 slider (settable, integer) Description: 供灯空间对照, Value: 1
+				65 text 拖动比较使用关系；不是施工进度或历史年份。
+			66 text 2005年是报告年份；现状地物定位，灯光非实际灯数，寺前符号非供灯室测绘。
+			67 text 现在看什么
+			68 heading 对照活动怎样使用空间, Value: 2
+				69 text 对照活动怎样使用空间
+			70 text 多数供灯转至寺前，供灯继续；火源与木构分开。寺前仅示方向。
+			71 text 先看整体  · 镜头为什么这样接 从全域进入同一拉萨地图。
+			72 container 本章相邻讲述顺序
+				73 button 1 形成：营建与交流怎样赋予地方用途
+					74 text 1
+					75 text 形成：营建与交流怎样赋予地方用途
+				76 button 2 延续：供灯继续，活动空间怎样改变
+					77 text 2
+					78 text 延续：供灯继续，活动空间怎样改变
+			79 button (collapsed) 这一章要建立的认识, Secondary Actions: Expand
+				80 text 这一章要建立的认识
+			81 button (collapsed) 理解检查：我能解释变化和原因吗？, Secondary Actions: Expand
+				82 text 理解检查：我能解释变化和原因吗？
+			83 text 接下来追问
+			84 text 活动延续但空间安排改变；新交通又怎样接入已有城市与生活？
+			85 button (collapsed) 本段资料与讲解全文, Secondary Actions: Expand
+				86 image
+				87 text 本段资料与讲解全文
+			88 button (collapsed) 查看完整历史顺序, Secondary Actions: Expand
+				89 text 查看完整历史顺序
+			90 button (collapsed) 主线之外，选择延伸阅读, Secondary Actions: Expand
+				91 text 主线之外，选择延伸阅读
+			92 button (collapsed) 主线内容如何取舍, Secondary Actions: Expand
+				93 text 主线内容如何取舍
+			94 button 暂停后深入这个问题
+				95 text 暂停后深入这个问题
+				96 image
+		97 button 播放完整演示
+			98 image
+			99 text 继续完整演示
+		100 button 重听当前段
+			101 image
+		102 checkbox Description: 关闭讲解声音, Value: 1
+			103 image
+		104 text 7:43 / 12:30 自动衔接下一段
+		105 button 上一段
+			106 image
+		107 button 下一段
+			108 image
+		109 container
+			110 text 下一段为什么接在这里 活动延续但空间安排改变；新交通又怎样接入已有城市与生活？
+		111 container
+			112 text 本段  2  /  2
+			113 slider (settable, integer) Description: 当前讲述进度, Value: 0
+			114 text 0 %
+		115 container 完整演示的六个核心问题
+			116 button 01 地球上的西藏
+				117 text 01
+				118 text 地球上的西藏
+			119 button 02 空气遇到高原
+				120 text 02
+				121 text 空气遇到高原
+			122 button 03 同在西藏，为何不同
+				123 text 03
+				124 text 同在西藏，为何不同
+			125 button 04 环境怎样进入生活
+				126 text 04
+				127 text 环境怎样进入生活
+			128 button 05 人怎样塑造地方
+				129 text 05
+				130 text 人怎样塑造地方
+			131 button 06 今天怎样联系与观察
+				132 text 06
+				133 text 今天怎样联系与观察
+
+The focused UI element is 61 checkbox 供灯空间分开, Value: 1

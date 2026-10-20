@@ -12,3 +12,8 @@ public/assets/audio/narration/a914977020a2ae6094577e10ecab219d95e0bbf52477c4da26
 public/assets/audio/narration/*.subtitles.json -text
 public/assets/routes/g318-tongmai/* -text
 public/assets/routes/g318-bomi/* -text
+
+# Preserve archived source/media bytes across platforms. CSV and GeoJSON
+# provenance hashes must survive a clean checkout, not only local playback.
+public/assets/** -text
+public/data/** -text

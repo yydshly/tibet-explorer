@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-20",
+  "status": "candidate_deferred_after_negative_browse_screen",
+  "scope": "仅既有色季拉 SM17 机位前 1.8 公里；本轮不修改运行画面、语音、行进或其他章节。",
+  "queryBboxLonLat": [
+    94.6228259,
+    29.626502,
+    94.636387,
+    29.6348246
+  ],
+  "sourceChainMetres": [
+    43483.032696391674,
+    45283.032696391674
+  ],
+  "decision": "HMA tile-618 暂不采用：正常GET已取得官方5%地形预览，原始DEM转Earthdata登录。按官方投影与瓦片角点定位，道路37个节点及外扩预览窗口均为黑色，距最近非黑像素约29.41像素；结合AT/CT零命中，不支持继续投入接入。此为预览尺度筛查，非原始DEM有效像元统计。",
+  "findings": [
+    {
+      "source": "现有 Copernicus GLO-30 / Sentinel-2",
+      "status": "available_existing",
+      "resolution": "源高程约30m，现渲染网格44.91×46.38m；光学影像10m。",
+      "potential": "局部按源高程密度重裁可减少降采样损失，但无法恢复道路横断面、树木和护栏。",
+      "limit": "DSM 包含地表物，非道路工程测量；图像插值或锐化不产生新的真实细节。",
+      "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N29_00_E094_00_DEM/Copernicus_DSM_COG_10_N29_00_E094_00_DEM.tif"
+    },
+    {
+      "source": "NASA NSIDC HMA 8m",
+      "status": "defer_negative_preview_coverage",
+      "spatialQuery": {
+        "mosaicHits": 1,
+        "alongTrackHits": 0,
+        "crossTrackHits": 0,
+        "tile": "HMA_DEM8m_MOS_20170716_tile-618.tif"
+      },
+      "potential": "如实际有效像元覆盖完整，可更清楚表现沟槽、坡面和弯道周围地势；8m 是网格间距，不是测量精度保证。",
+      "limit": "此前HEAD403不代表预览不可用：本次GET已取得官方619×619灰度预览；原DEM返回登录HTML而非GeoTIFF。预览中本段及周边均黑色，尚未取得原DEM，不能报告8m像元有效率或精度。输出网格不等于测量精度；图像不是光学贴图。",
+      "rights": "集合元数据说明免费访问需 Earthdata 登录；使用须引用并遵守所列 DigitalGlobe / NGA NextView 图像署名与共享指引。尚未将本产品及其衍生网格的再分发认定为已清权，源商业光学影像不随DEM取得。",
+      "sourceUrl": "https://nsidc.org/data/hma_dem8m_mos/versions/1",
+      "metadataUrl": "https://cmr.earthdata.nasa.gov/search/concepts/C3249536691-NSIDC_CPRD.umm_json",
+      "coverageScreen": {
+        "projection": "+proj=aea +lat_1=25 +lat_2=47 +lat_0=36 +lon_0=85 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
+        "projectedMetadataCorners": [
+          [
+            946366.9591048615,
+            -656212.3278258299
+          ],
+          [
+            946366.7156719106,
+            -756211.4495680413
+          ],
+          [
+            846367.1340247635,
+            -756211.3153262734
+          ],
+          [
+            846366.6265883351,
+            -656211.8985292036
+          ]
+        ],
+        "inferredTileBounds": [
+          846366.8803065494,
+          -756211.3824471573,
+          946366.837388386,
+          -656212.1131775167
+        ],
+        "imageSize": [
+          619,
+          619
+        ],
+        "routeSourceNodeIndices": [
+          745,
+          781
+        ],
+        "routeSampleCount": 37,
+        "routePixelBounds": [
+          456.58935762542694,
+          101.78083611426322,
+          462.3575672938252,
+          104.95725719440718
+        ],
+        "routeSampleUniqueValues": [
+          0
+        ],
+        "routeBoundingPatchWithTwoPixelMargin": {
+          "shape": [
+            8,
+            11
+          ],
+          "uniqueValues": [
+            0
+          ]
+        },
+        "minimumDistanceFromRoutePixelBoundsToNonBlackPixel": 29.411444899956468,
+        "interpretation": "Browse-only negative coverage evidence. PNG is reduced and not georeferenced; placement uses metadata corners. Not a full-resolution valid-pixel count, height comparison or definitive absence claim."
+      }
+    },
+    {
+      "source": "OpenAerialMap",
+      "status": "no_catalog_hit_in_query",
+      "resultCount": 0,
+      "rights": "库中影像通常CC BY 4.0；本次精确bbox查询0条，不代表全网没有素材。",
+      "sourceUrl": "https://api.openaerialmap.org/meta?bbox=94.6228259,29.626502,94.636387,29.6348246"
+    },
+    {
+      "source": "JAXA AW3D30",
+      "status": "not_a_resolution_upgrade",
+      "resolution": "免费版本为约30m DSM，不是5m产品。",
+      "potential": "可作为交叉比对来源；不会解决米级路边细节，本轮不下载替换。",
+      "sourceUrl": "https://www.eorc.jaxa.jp/ALOS/en/dataset/aw3d30/aw3d30_e.htm"
+    },
+    {
+      "source": "Planet Tropical Forest Observatory",
+      "status": "excluded_from_free_material_scope",
+      "limit": "官方现行介绍为付费月/年计划，限定非商业、非政府森林保护用途；不能将旧NICFI免费说法当成本项目许可。未检验本走廊像元。",
+      "sourceUrl": "https://www.planet.com/pulse/tropical-forest-observatory-for-reducing-and-reversing-tropical-deforestation/"
+    },
+    {
+      "source": "OpenStreetMap原道路三条way",
+      "status": "available_centerline_only",
+      "wayIds": [
+        1554058950,
+        1554058951,
+        49209937
+      ],
+      "tags": "三条均G318/trunk/source=GPS；1554058951另有bridge=yes/layer=1。",
+      "limit": "三条way均无width/lanes/surface标签；桥梁标记不提供桥面高程、桥型或护栏。尚无可直接使用的道路横断面及沿线设施测量。缺标签不等于现场没有设施。",
+      "sourceUrl": "https://www.openstreetmap.org/way/1554058951"
+    },
+    {
+      "source": "现有SM17原始实拍",
+      "status": "available_static_archival_photo",
+      "date": "2015-04-10",
+      "pixels": [
+        3264,
+        2448
+      ],
+      "rights": "ping lin / CC BY-SA 3.0；此前原图检查未见烧录水印。",
+      "potential": "可继续说明附近道路与坡面，但不是连续行车影像或可直接贴在地形上的正射影像。",
+      "limit": "方向未配准；现有其他机位不在本1.8km内，不能挪用冒充沿途记录。未核实到同时满足此段连续覆盖、再利用许可、无水印的行车片源。",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bayi,_Nyingchi,_Tibet,_China_-_panoramio_(17).jpg"
+    }
+  ],
+  "nextGate": [
+    "结束对tile-618的接入尝试；除非取得原DEM有效覆盖的新证据，不再重复尝试或索取账号。",
+    "现有30m源高程重裁最多减少约45m渲染网格的降采样损失，不能解决真实路边空缺，本轮不以此冒充体验升级。",
+    "下一次视觉升级须先有本1.8km可复用的连续实拍/全景，或精细正射与道路地物测量；明确地点、方向、时段、许可和无水印后再实施。资料不足时保留当前示意，不生成虚构树林或护栏。"
+  ],
+  "freeze": "六章、整线、现有镜头和45.684秒词时钟行进均不变；本轮仅资料记录，不重新宣称实播验收。"
+}

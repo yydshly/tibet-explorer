@@ -1,0 +1,19 @@
+{
+  "id": "8614a0a126a98fa440702f3f565c0ef2ba15b3670e6d38cc1b1602c011c12ca4",
+  "url": "/assets/audio/narration/8614a0a126a98fa440702f3f565c0ef2ba15b3670e6d38cc1b1602c011c12ca4.mp3",
+  "text": "沿原来的道路，从林芝河谷走向色季拉山地。回望刚才的来路，山体和转弯改变了视野。看这张二零一五年的实拍：近处是经幡，下面是积雪坡面。云层占据远处天空。这是当时的山地环境，不能当作今天的天气。",
+  "duration": 19.26,
+  "bytes": 309876,
+  "sha256": "5b68a549073cf12429e5e243ec6aeab94945c4a91f30ab7b25801adab989b029",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T18:21:07.844Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/8614a0a126a98fa440702f3f565c0ef2ba15b3670e6d38cc1b1602c011c12ca4.subtitles.json",
+  "subtitleSha256": "ea4b9e8f704cf3a3044a30bcc35203550064d9776ff4a7cf5710eff6d8caa46b",
+  "timingLevel": "word"
+}

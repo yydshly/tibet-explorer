@@ -1,0 +1,19 @@
+{
+  "id": "d0f0c63c857be4fc3b055cde11197bbe12d24aa137f63a9762bfcf0741a61924",
+  "url": "/assets/audio/narration/d0f0c63c857be4fc3b055cde11197bbe12d24aa137f63a9762bfcf0741a61924.mp3",
+  "text": "换一张同日更宽的记录，看积雪坡面与云雾。这里值得留意的是高处的视野和天气变化。资料支持从色季拉远眺南迦巴瓦，但这两张照片没有清晰呈现远峰，也不能保证遇到日照金山。回到道路，向鲁朗谷地继续前进。",
+  "duration": 19.62,
+  "bytes": 315636,
+  "sha256": "a6a9cc462bdd51ad7808e77c11b710d35928cb32cf0ed393375aca8638dede68",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T18:21:13.114Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/d0f0c63c857be4fc3b055cde11197bbe12d24aa137f63a9762bfcf0741a61924.subtitles.json",
+  "subtitleSha256": "46d7911f8fee8a43ceb7f005d791e44d01ded5f9114c710f93022a331ffa81f0",
+  "timingLevel": "word"
+}

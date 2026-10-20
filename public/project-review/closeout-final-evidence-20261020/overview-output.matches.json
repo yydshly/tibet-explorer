@@ -1,0 +1,981 @@
+{
+  "recording": "overview-output",
+  "method": "2-second source windows every5s; normalized waveform cross-correlation at4kHz. This is actual-output signal evidence, not human listening or comprehension.",
+  "seconds": 799.985,
+  "rms": 0.07350048632077431,
+  "peak": 0.9438868761062622,
+  "cues": [
+    {
+      "cueId": "G1-opening",
+      "duration": 22.752,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 28.09825,
+          "correlation": 0.97206,
+          "gain": 1.2262
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 33.09825,
+          "correlation": 0.97347,
+          "gain": 0.9891
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 38.09825,
+          "correlation": 0.97292,
+          "gain": 0.9934
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 43.09825,
+          "correlation": 0.97382,
+          "gain": 1.0556
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-position",
+      "duration": 21.276,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 52.00825,
+          "correlation": 0.9637,
+          "gain": 1.0606
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 57.00825,
+          "correlation": 0.96829,
+          "gain": 1.0466
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 62.00825,
+          "correlation": 0.97285,
+          "gain": 1.0474
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 67.00825,
+          "correlation": 0.97575,
+          "gain": 1.0029
+        }
+      ]
+    },
+    {
+      "cueId": "G1-explain",
+      "duration": 22.14,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 73.43825,
+          "correlation": 0.9796,
+          "gain": 1.1004
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 78.43825,
+          "correlation": 0.97346,
+          "gain": 1.174
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 83.43825,
+          "correlation": 0.96756,
+          "gain": 0.9282
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 88.43825,
+          "correlation": 0.96884,
+          "gain": 1.0162
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-rotation-air",
+      "duration": 48.708,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 95.68825,
+          "correlation": 0.97886,
+          "gain": 1.1126
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 100.68825,
+          "correlation": 0.96891,
+          "gain": 0.9809
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 105.68825,
+          "correlation": 0.92246,
+          "gain": 1.0196
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 110.68825,
+          "correlation": 0.96269,
+          "gain": 0.9423
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 115.68825,
+          "correlation": 0.96292,
+          "gain": 1.1075
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 120.68825,
+          "correlation": 0.97239,
+          "gain": 1.1245
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 125.68825,
+          "correlation": 0.96801,
+          "gain": 1.0199
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 130.68825,
+          "correlation": 0.97478,
+          "gain": 1.064
+        },
+        {
+          "sourceSeconds": 41.0,
+          "recordedSeconds": 135.68825,
+          "correlation": 0.96442,
+          "gain": 1.1588
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-formation-entry",
+      "duration": 18.396,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 144.50825,
+          "correlation": 0.9732,
+          "gain": 1.0284
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 149.50825,
+          "correlation": 0.97337,
+          "gain": 1.1479
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 154.50825,
+          "correlation": 0.9797,
+          "gain": 1.073
+        }
+      ]
+    },
+    {
+      "cueId": "G3-explain",
+      "duration": 18.612,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 164.25825,
+          "correlation": 0.98098,
+          "gain": 1.1788
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 169.25825,
+          "correlation": 0.95727,
+          "gain": 0.8733
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 174.25825,
+          "correlation": 0.98445,
+          "gain": 1.4279
+        }
+      ]
+    },
+    {
+      "cueId": "G4-explain",
+      "duration": 25.92,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 184.14825,
+          "correlation": 0.97602,
+          "gain": 1.123
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 189.14825,
+          "correlation": 0.97753,
+          "gain": 1.1294
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 194.14825,
+          "correlation": 0.96328,
+          "gain": 1.0235
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 199.14825,
+          "correlation": 0.97939,
+          "gain": 1.0869
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 204.14825,
+          "correlation": 0.9799,
+          "gain": 0.9967
+        }
+      ]
+    },
+    {
+      "cueId": "LAB-air-higher",
+      "duration": 37.548,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 211.37825,
+          "correlation": 0.96802,
+          "gain": 1.1798
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 216.37825,
+          "correlation": 0.97718,
+          "gain": 1.1784
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 221.37825,
+          "correlation": 0.97231,
+          "gain": 0.941
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 226.37825,
+          "correlation": 0.97175,
+          "gain": 0.9937
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 231.37825,
+          "correlation": 0.97471,
+          "gain": 1.0408
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 236.37825,
+          "correlation": 0.97285,
+          "gain": 1.0891
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 241.37825,
+          "correlation": 0.97802,
+          "gain": 1.11
+        }
+      ]
+    },
+    {
+      "cueId": "OBS-CLIMATE-7",
+      "duration": 28.188,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 251.48825,
+          "correlation": 0.97103,
+          "gain": 0.9922
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 256.48825,
+          "correlation": 0.97325,
+          "gain": 0.9665
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 261.48825,
+          "correlation": 0.97658,
+          "gain": 1.0248
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 266.48825,
+          "correlation": 0.96903,
+          "gain": 0.9675
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 271.48825,
+          "correlation": 0.96311,
+          "gain": 1.0396
+        }
+      ]
+    },
+    {
+      "cueId": "OBS-CLIMATE-1",
+      "duration": 26.748,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 279.74825,
+          "correlation": 0.98205,
+          "gain": 1.0834
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 284.74825,
+          "correlation": 0.96805,
+          "gain": 0.9732
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 289.74825,
+          "correlation": 0.95907,
+          "gain": 1.0538
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 294.74825,
+          "correlation": 0.97457,
+          "gain": 1.0603
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 299.74825,
+          "correlation": 0.97739,
+          "gain": 1.0564
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-regional-system",
+      "duration": 21.816,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 306.60825,
+          "correlation": 0.98245,
+          "gain": 1.1482
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 311.60825,
+          "correlation": 0.9736,
+          "gain": 0.9484
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 316.60825,
+          "correlation": 0.97719,
+          "gain": 1.04
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 321.60825,
+          "correlation": 0.97345,
+          "gain": 0.9681
+        }
+      ]
+    },
+    {
+      "cueId": "LAB-life-nyingchi",
+      "duration": 35.1,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 328.51825,
+          "correlation": 0.98101,
+          "gain": 1.0612
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 333.51825,
+          "correlation": 0.9689,
+          "gain": 1.0502
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 338.51825,
+          "correlation": 0.97505,
+          "gain": 1.0432
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 343.51825,
+          "correlation": 0.97762,
+          "gain": 1.0512
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 348.51825,
+          "correlation": 0.97012,
+          "gain": 1.0615
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 353.51825,
+          "correlation": 0.97139,
+          "gain": 1.1396
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 358.51825,
+          "correlation": 0.97456,
+          "gain": 1.0085
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-life-lhasa",
+      "duration": 40.716,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 363.69825,
+          "correlation": 0.98004,
+          "gain": 1.1214
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 368.69825,
+          "correlation": 0.96959,
+          "gain": 1.1328
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 373.69825,
+          "correlation": 0.96817,
+          "gain": 1.0399
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 378.69825,
+          "correlation": 0.97968,
+          "gain": 1.1911
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 383.69825,
+          "correlation": 0.9508,
+          "gain": 1.123
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 388.69825,
+          "correlation": 0.94379,
+          "gain": 1.023
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 393.69825,
+          "correlation": 0.96256,
+          "gain": 0.9691
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 398.69825,
+          "correlation": 0.96835,
+          "gain": 1.0488
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-shiquanhe-irrigation",
+      "duration": 36.828,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 406.42825,
+          "correlation": 0.96633,
+          "gain": 1.0261
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 411.42825,
+          "correlation": 0.95707,
+          "gain": 1.0712
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 416.42825,
+          "correlation": 0.96892,
+          "gain": 1.0354
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 421.42825,
+          "correlation": 0.96783,
+          "gain": 1.0989
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 426.42825,
+          "correlation": 0.97211,
+          "gain": 1.0104
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 431.42825,
+          "correlation": 0.97129,
+          "gain": 0.9857
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 436.42825,
+          "correlation": 0.97498,
+          "gain": 1.06
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-history-origins",
+      "duration": 58.86,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 444.12825,
+          "correlation": 0.97295,
+          "gain": 1.0064
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 449.12825,
+          "correlation": 0.9781,
+          "gain": 1.1261
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 454.12825,
+          "correlation": 0.96011,
+          "gain": 1.001
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 459.12825,
+          "correlation": 0.98002,
+          "gain": 1.1289
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 464.12825,
+          "correlation": 0.9793,
+          "gain": 1.2239
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 469.12825,
+          "correlation": 0.96084,
+          "gain": 1.1141
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 474.12825,
+          "correlation": 0.95932,
+          "gain": 0.9954
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 479.12825,
+          "correlation": 0.96661,
+          "gain": 1.0035
+        },
+        {
+          "sourceSeconds": 41.0,
+          "recordedSeconds": 484.12825,
+          "correlation": 0.96705,
+          "gain": 0.9492
+        },
+        {
+          "sourceSeconds": 46.0,
+          "recordedSeconds": 489.12825,
+          "correlation": 0.97166,
+          "gain": 1.1022
+        },
+        {
+          "sourceSeconds": 51.0,
+          "recordedSeconds": 494.12825,
+          "correlation": 0.96914,
+          "gain": 1.1429
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-jokhang-protection",
+      "duration": 38.52,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 503.04825,
+          "correlation": 0.96514,
+          "gain": 1.0548
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 508.04825,
+          "correlation": 0.95829,
+          "gain": 0.9278
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 513.04825,
+          "correlation": 0.9833,
+          "gain": 1.1042
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 518.04825,
+          "correlation": 0.97144,
+          "gain": 1.0979
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 523.04825,
+          "correlation": 0.96024,
+          "gain": 0.97
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 528.04825,
+          "correlation": 0.97481,
+          "gain": 1.0248
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 533.04825,
+          "correlation": 0.96479,
+          "gain": 1.0527
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-city-change-core",
+      "duration": 50.184,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 541.65825,
+          "correlation": 0.97775,
+          "gain": 0.9879
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 546.65825,
+          "correlation": 0.97561,
+          "gain": 1.0288
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 551.65825,
+          "correlation": 0.94637,
+          "gain": 1.3219
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 556.65825,
+          "correlation": 0.97469,
+          "gain": 1.2716
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 561.65825,
+          "correlation": 0.97725,
+          "gain": 1.0663
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 566.65825,
+          "correlation": 0.97601,
+          "gain": 1.0735
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 571.65825,
+          "correlation": 0.97969,
+          "gain": 1.1021
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 576.65825,
+          "correlation": 0.95693,
+          "gain": 0.9934
+        },
+        {
+          "sourceSeconds": 41.0,
+          "recordedSeconds": 581.65825,
+          "correlation": 0.96784,
+          "gain": 0.9863
+        },
+        {
+          "sourceSeconds": 46.0,
+          "recordedSeconds": 586.65825,
+          "correlation": 0.97591,
+          "gain": 1.0254
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-regional-connections-core",
+      "duration": 30.924,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 592.78825,
+          "correlation": 0.98194,
+          "gain": 1.0675
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 597.78825,
+          "correlation": 0.97164,
+          "gain": 1.0547
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 602.78825,
+          "correlation": 0.97184,
+          "gain": 1.0718
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 607.78825,
+          "correlation": 0.9696,
+          "gain": 1.2521
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 612.78825,
+          "correlation": 0.97543,
+          "gain": 1.0034
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 617.78825,
+          "correlation": 0.96178,
+          "gain": 0.9438
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-valley-journey",
+      "duration": 68.22,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 625.63825,
+          "correlation": 0.97908,
+          "gain": 1.1869
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 630.63825,
+          "correlation": 0.98374,
+          "gain": 1.0326
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 635.63825,
+          "correlation": 0.97897,
+          "gain": 1.1515
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 640.63825,
+          "correlation": 0.9719,
+          "gain": 1.0333
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 645.63825,
+          "correlation": 0.98431,
+          "gain": 1.161
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 650.63825,
+          "correlation": 0.9724,
+          "gain": 1.1097
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 655.63825,
+          "correlation": 0.98052,
+          "gain": 1.214
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 660.63825,
+          "correlation": 0.97204,
+          "gain": 1.1013
+        },
+        {
+          "sourceSeconds": 41.0,
+          "recordedSeconds": 665.63825,
+          "correlation": 0.96411,
+          "gain": 1.1634
+        },
+        {
+          "sourceSeconds": 46.0,
+          "recordedSeconds": 670.63825,
+          "correlation": 0.98064,
+          "gain": 1.0691
+        },
+        {
+          "sourceSeconds": 51.0,
+          "recordedSeconds": 675.63825,
+          "correlation": 0.98268,
+          "gain": 1.1089
+        },
+        {
+          "sourceSeconds": 56.0,
+          "recordedSeconds": 680.63825,
+          "correlation": 0.96513,
+          "gain": 0.9918
+        },
+        {
+          "sourceSeconds": 61.0,
+          "recordedSeconds": 685.63825,
+          "correlation": 0.9709,
+          "gain": 1.0242
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-protection",
+      "duration": 58.896,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 694.44825,
+          "correlation": 0.97183,
+          "gain": 1.0997
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 699.44825,
+          "correlation": 0.98338,
+          "gain": 1.0277
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 704.44825,
+          "correlation": 0.96666,
+          "gain": 0.8996
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 709.44825,
+          "correlation": 0.96366,
+          "gain": 1.0295
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 714.44825,
+          "correlation": 0.9655,
+          "gain": 1.1551
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 719.44825,
+          "correlation": 0.9781,
+          "gain": 1.0594
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 724.44825,
+          "correlation": 0.96834,
+          "gain": 1.0879
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 729.44825,
+          "correlation": 0.97866,
+          "gain": 1.1592
+        },
+        {
+          "sourceSeconds": 41.0,
+          "recordedSeconds": 734.44825,
+          "correlation": 0.96914,
+          "gain": 1.0877
+        },
+        {
+          "sourceSeconds": 46.0,
+          "recordedSeconds": 739.44825,
+          "correlation": 0.96532,
+          "gain": 1.0083
+        },
+        {
+          "sourceSeconds": 51.0,
+          "recordedSeconds": 744.44825,
+          "correlation": 0.95449,
+          "gain": 1.1415
+        }
+      ]
+    },
+    {
+      "cueId": "OVERVIEW-observation-close",
+      "duration": 39.672,
+      "matches": [
+        {
+          "sourceSeconds": 1.0,
+          "recordedSeconds": 754.12825,
+          "correlation": 0.97062,
+          "gain": 1.1749
+        },
+        {
+          "sourceSeconds": 6.0,
+          "recordedSeconds": 759.12825,
+          "correlation": 0.9761,
+          "gain": 0.9809
+        },
+        {
+          "sourceSeconds": 11.0,
+          "recordedSeconds": 764.12825,
+          "correlation": 0.96743,
+          "gain": 0.9434
+        },
+        {
+          "sourceSeconds": 16.0,
+          "recordedSeconds": 769.12825,
+          "correlation": 0.98372,
+          "gain": 1.1195
+        },
+        {
+          "sourceSeconds": 21.0,
+          "recordedSeconds": 774.12825,
+          "correlation": 0.96228,
+          "gain": 1.0787
+        },
+        {
+          "sourceSeconds": 26.0,
+          "recordedSeconds": 779.12825,
+          "correlation": 0.97422,
+          "gain": 1.0016
+        },
+        {
+          "sourceSeconds": 31.0,
+          "recordedSeconds": 784.12825,
+          "correlation": 0.975,
+          "gain": 1.0901
+        },
+        {
+          "sourceSeconds": 36.0,
+          "recordedSeconds": 789.12825,
+          "correlation": 0.97607,
+          "gain": 1.1255
+        }
+      ]
+    }
+  ]
+}

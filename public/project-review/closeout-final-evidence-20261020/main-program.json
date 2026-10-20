@@ -1,0 +1,1997 @@
+{
+  "id": "main",
+  "title": "六个问题，完整认识西藏",
+  "chapters": [
+    {
+      "id": "location",
+      "title": "地球上的西藏",
+      "question": "西藏在地球的哪里，周围有什么？",
+      "premise": "先认识海洋、陆地和大气，再沿亚洲、中国、西藏逐层定位。",
+      "conclusion": "行政归属告诉我们在哪里；高原与周围海陆的位置提供解释环境的起点。",
+      "nextQuestion": "知道位置以后，全球空气和水来到这片高地，会发生什么？",
+      "scale": "地球 → 亚洲 → 中国 → 西藏",
+      "stages": [
+        {
+          "title": "认识地球",
+          "reason": "先有海陆与大气的整体背景。",
+          "beatIds": [
+            "G1-opening"
+          ]
+        },
+        {
+          "title": "逐层定位",
+          "reason": "分开洲、国家、自治区与自然高原。",
+          "beatIds": [
+            "OVERVIEW-position"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "id": "G1-opening",
+          "chapterId": "earth",
+          "title": "先认清地球上有什么",
+          "recordingId": "G1-opening",
+          "text": "先看整个地球。蓝色海洋储存水和热量，陆地上有高山、平原和河流。空气包围地表；寒冷处能留下冰雪，适合的水热条件支持植物生长。它们彼此相连：水会蒸发进入空气，空气又把热和水带到别处。先认清这些对象，再看这个整体怎样运行。",
+          "kind": "journey",
+          "stepId": "G1",
+          "cueIndex": 0,
+          "sources": [
+            {
+              "title": "NOAA · 全球大气环流",
+              "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+              "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+            },
+            {
+              "title": "NASA · 气候与地球能量收支",
+              "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+              "note": "太阳短波、反射、长波、地表—空气交换与热量储存的原理依据；本场景按解释阶段展开，没有套用全球平均通量来预测西藏地方温度。"
+            },
+            {
+              "title": "NOAA · 水循环",
+              "url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+              "note": "水的储存、相变与输送；不含本产品的地区实测流量。"
+            },
+            {
+              "title": "NOAA GFDL · 云滴增长与降水",
+              "url": "https://www.gfdl.noaa.gov/clouds-and-convection/",
+              "note": "成云与降水不同：云滴和冰晶需继续增长。山地抬升原理参见NWS Cloud Development；两档初始水汽是作者设定的定性对比情景，非实测湿度或天气预测。"
+            },
+            {
+              "title": "NOAA · 天气与气候有什么不同",
+              "url": "https://www.noaa.gov/explainers/what-s-difference-between-climate-and-weather",
+              "note": "用于区分一次天气、季节统计与长期变化。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "Natural Earth · 地球定位的范围参考数据",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+            },
+            {
+              "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+              "url": "/data/narrated-geography.json",
+              "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+            },
+            {
+              "title": "Natural Earth · 自然地理范围（概略参照）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+            }
+          ],
+          "detailStepId": "G1",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "OVERVIEW-position",
+          "chapterId": "position",
+          "title": "从完整地球逐层找到西藏",
+          "recordingId": "OVERVIEW-position",
+          "text": "先从完整地球找到西藏。镜头靠近亚洲，再辨认中国和中国西南的西藏自治区。洲、国家和自治区是不同的空间层级；青藏高原则是跨越行政范围的自然高地，不能把两条边线当成同一个对象。位置确定以后，再问这里怎样受到周围海陆和大气的影响。",
+          "kind": "orientation",
+          "stepId": "G2",
+          "sources": [
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "NOAA · 全球大气环流",
+              "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+              "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+            },
+            {
+              "title": "中科院地球环境所 · 印度洋水汽进入藏东南的路径研究",
+              "url": "https://ieexa.cas.cn/news/kydt/202506/t20250606_7798567.html",
+              "note": "2025年研究结合示踪观测与1940—2020年夏季再分析，支持印度洋、孟加拉湾与藏东南的水汽来路认识；并非全西藏全年统一路径。"
+            },
+            {
+              "title": "青藏高原研究所 · 西风水汽跨喜马拉雅观测",
+              "url": "https://itpcas.cas.cn/new_kycg/new_kyjz/202606/t20260612_8228168.html",
+              "note": "2026年珠峰高空观测研究，不能将西风一概理解为干风。"
+            },
+            {
+              "title": "Natural Earth · 地球定位的范围参考数据",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+            }
+          ],
+          "detailStepId": "G2",
+          "overviewScope": "whole"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "空气遇到高原",
+      "question": "地形怎样改变来到这里的空气与水？",
+      "premise": "先解释全球来流，再读高地的形成与今天的高差，最后跟踪抬升、冷却和云雨。",
+      "conclusion": "气候不能只凭纬度或高度判断；来流、水汽、季节与地形共同作用。",
+      "nextQuestion": "共同机制遇到不同地形和来路，为什么各地区呈现不同条件？",
+      "scale": "全球过程 → 高原形成 → 真实地形 → 来流变化",
+      "stages": [
+        {
+          "title": "来流",
+          "reason": "先解释空气为什么搬运热与水。",
+          "beatIds": [
+            "G1-explain",
+            "G1-observe"
+          ]
+        },
+        {
+          "title": "高地",
+          "reason": "再认识来流要遇到的高地及真实高差。",
+          "beatIds": [
+            "OVERVIEW-formation-entry",
+            "G3-explain",
+            "G4-explain"
+          ]
+        },
+        {
+          "title": "云雨",
+          "reason": "亲手移动气团，保持地形不变，对照水汽条件。",
+          "beatIds": [
+            "LAB-air-higher"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "id": "G1-explain",
+          "chapterId": "engine",
+          "title": "同一束阳光，为什么有冷暖差别",
+          "recordingId": "G1-explain",
+          "text": "看两束同样宽的阳光落在球面上。照得较直时，能量落在较小面积；照得斜时，同一束能量分散得更开。全年平均看，低纬得到的太阳能较多，高纬较少。这建立了冷暖背景，但当地多热，还要看海陆怎样存热，以及空气和水怎样把热搬走。",
+          "kind": "journey",
+          "stepId": "G1",
+          "cueIndex": 1,
+          "sources": [
+            {
+              "title": "NOAA · 全球大气环流",
+              "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+              "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+            },
+            {
+              "title": "NASA · 气候与地球能量收支",
+              "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+              "note": "太阳短波、反射、长波、地表—空气交换与热量储存的原理依据；本场景按解释阶段展开，没有套用全球平均通量来预测西藏地方温度。"
+            },
+            {
+              "title": "NOAA · 水循环",
+              "url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+              "note": "水的储存、相变与输送；不含本产品的地区实测流量。"
+            },
+            {
+              "title": "NOAA GFDL · 云滴增长与降水",
+              "url": "https://www.gfdl.noaa.gov/clouds-and-convection/",
+              "note": "成云与降水不同：云滴和冰晶需继续增长。山地抬升原理参见NWS Cloud Development；两档初始水汽是作者设定的定性对比情景，非实测湿度或天气预测。"
+            },
+            {
+              "title": "NOAA · 天气与气候有什么不同",
+              "url": "https://www.noaa.gov/explainers/what-s-difference-between-climate-and-weather",
+              "note": "用于区分一次天气、季节统计与长期变化。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "Natural Earth · 地球定位的范围参考数据",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+            }
+          ],
+          "detailStepId": "G1",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "G1-observe",
+          "chapterId": "engine",
+          "title": "自转怎样改变气流方向",
+          "recordingId": "OVERVIEW-rotation-air",
+          "text": "受热差异参与形成气压差，推动空气。先看同一地球：各纬度转一圈的时间相同，低纬绕行的圈更大，地面向东速度更快。让空气向北移动，先去掉自转项，路径沿经线。加入自转，空气保留绕地轴的角动量；来到更高纬度，相对当地地面向东超前，路径向右偏。右是相对前进方向，向南时会向西偏。这里固定南北运动，忽略摩擦，不是实测风场。回到亚洲，西侧与南侧的来流受季节等条件影响，并不是这条试验轨迹。空气携带水汽遇到高原，还会绕行或抬升。接下来先看高原怎样形成，再沿真实高程观察抬升、冷却与云雨。",
+          "kind": "journey",
+          "stepId": "G1",
+          "cueIndex": 2,
+          "sources": [
+            {
+              "title": "NOAA · 风的动力与自转偏转",
+              "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+              "note": "气压梯度推动空气；科里奥利效应改变方向，北半球右偏、南半球左偏。"
+            },
+            {
+              "title": "NOAA · 纬度、自转与向极运动",
+              "url": "https://www.noaa.gov/jetstream/global/jet-stream",
+              "note": "各纬度角速度相同，地面向东线速度不同；向极运动的空气相对地面向东超前。"
+            },
+            {
+              "title": "MIT · 大气角动量守恒",
+              "url": "https://pog.mit.edu/src/GeneralCirculationNotes_withFigs.pdf",
+              "note": "第9节：M=(Ωa cosφ+u)a cosφ。本例指定南北运动，忽略东西向力矩，不求解全球天气。"
+            },
+            {
+              "title": "本例参数与证据边界",
+              "url": "/data/rotation-flow-evidence.json",
+              "note": "纬度、经度、历时均为教学选择；不是西藏来流观测或预测。"
+            }
+          ],
+          "detailStepId": "G1",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "OVERVIEW-formation-entry",
+          "chapterId": "formation",
+          "title": "先回到亚洲高地，再进入剖面",
+          "recordingId": "OVERVIEW-formation-entry",
+          "text": "位置与全球来流已经明确。现在回到亚洲，先把高原放在周围低地和海洋之间，再问这片高地怎样形成。接下来的剖面只解释相向运动、变形与增厚；它不是古代地表的复原。看懂原理以后，我们会回到今天的真实高程。",
+          "kind": "orientation",
+          "stepId": "G2",
+          "sources": [
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "NOAA · 全球大气环流",
+              "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+              "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+            },
+            {
+              "title": "中科院地球环境所 · 印度洋水汽进入藏东南的路径研究",
+              "url": "https://ieexa.cas.cn/news/kydt/202506/t20250606_7798567.html",
+              "note": "2025年研究结合示踪观测与1940—2020年夏季再分析，支持印度洋、孟加拉湾与藏东南的水汽来路认识；并非全西藏全年统一路径。"
+            },
+            {
+              "title": "青藏高原研究所 · 西风水汽跨喜马拉雅观测",
+              "url": "https://itpcas.cas.cn/new_kycg/new_kyjz/202606/t20260612_8228168.html",
+              "note": "2026年珠峰高空观测研究，不能将西风一概理解为干风。"
+            },
+            {
+              "title": "Natural Earth · 地球定位的范围参考数据",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+            }
+          ],
+          "detailStepId": "G3",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "G3-explain",
+          "chapterId": "formation",
+          "title": "变形、增厚与抬升",
+          "recordingId": "G3-explain",
+          "text": "相向运动使一些地壳缩短、变形并增厚，地表也会改变。高原各部分经历不同的形成阶段，山地抬升时侵蚀仍在进行。请沿剖面看层次怎样弯曲，把这个过程与一次简单的整体升高区别开。",
+          "kind": "journey",
+          "stepId": "G3",
+          "cueIndex": 1,
+          "sources": [
+            {
+              "title": "USGS · 西部喜马拉雅—喀喇昆仑—西藏多阶段造山研究",
+              "url": "https://www.usgs.gov/publications/multi-stage-crustal-thickening-surface-uplift-and-collision-western-himalaya-karakoram",
+              "note": "2025年研究，样本针对西北部造山带，不能推广成全高原同步抬升。"
+            }
+          ],
+          "detailStepId": "G3",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "G4-explain",
+          "chapterId": "terrain",
+          "title": "走过山系以后，地面为什么仍然这么高",
+          "recordingId": "G4-explain",
+          "text": "从南侧低地开始，这个样点只有约五十米。沿同一条线向北，穿过喜马拉雅，较高样点约五千三百米。继续走进高原内部，所选样点仍接近五千米。你看到的不是一座山峰独自高起，而是内部也维持很高的地面。读数来自同一份高程网格，立体显示把高差作了夸张。",
+          "kind": "journey",
+          "stepId": "G4",
+          "cueIndex": 1,
+          "sources": [
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "Mapzen / Tilezen · 公开高程数据与处理口径",
+              "url": "https://registry.opendata.aws/terrain-tiles/",
+              "note": "本地地形取76—101°E、25—38°N，449×257米制高程网格，约5—6公里显示抽样，垂直夸张40倍。原始瓦片、解码、许可署名与文件校验记录见tibet-regional-dem.source.json；剖切为海平面参照以上地形，不是地下地质剖面。"
+            },
+            {
+              "title": "USGS · 西部喜马拉雅—喀喇昆仑—西藏多阶段造山研究",
+              "url": "https://www.usgs.gov/publications/multi-stage-crustal-thickening-surface-uplift-and-collision-western-himalaya-karakoram",
+              "note": "2025年研究，样本针对西北部造山带，不能推广成全高原同步抬升。"
+            },
+            {
+              "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+              "url": "/data/narrated-geography.json",
+              "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+            },
+            {
+              "title": "Natural Earth · 自然地理范围（概略参照）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+            }
+          ],
+          "detailStepId": "G4",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "LAB-air-higher",
+          "recordingId": "LAB-air-higher",
+          "text": "先保留西藏与周边的整体地图。金色地形剖线取自真实高程，青色气团和云雨是原理示意，不是实测风场。沿剖面向北移动，空气遇到高地后被迫抬升。抬升时空气膨胀冷却，足够湿润时水汽凝结，云逐渐增多。继续越过山地，部分水分可能以降水离开气团。背风侧下沉时空气增温，相对湿度可能降低。实际结果还受来流、季节和其他天气过程影响。现在保持同一地形，试着减少水汽，再用气象站资料检查地区差异。",
+          "title": "较多水汽：从抬升到云雨",
+          "chapterId": "regions",
+          "kind": "atlas",
+          "topic": "regions",
+          "overviewScope": "whole",
+          "detailStepId": "C4",
+          "sources": [
+            {
+              "title": "真实高程：来源、采样与显示尺度",
+              "url": "/assets/terrain/tibet-regional-dem.source.json",
+              "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+            },
+            {
+              "title": "美国国家气象局：地形抬升",
+              "url": "https://forecast.weather.gov/glossary.php?word=OROGRAPHIC",
+              "note": "气团、凝结阈值和云雨为定性原理示意，不是实测风场或预测雨量。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "differences",
+      "title": "同在西藏，为何不同",
+      "question": "各地区的环境有哪些共同点和差别？",
+      "premise": "保留同一高原，先对照林芝、拉萨与阿里，再把七市地放回共同的区域背景。",
+      "conclusion": "用东部与东南部、中南部、北部与西部作比较入口；自然差异跨越行政线。",
+      "nextQuestion": "这些差异具体怎样进入用水、土地利用和通行？",
+      "scale": "同一全域地图 · 七市地对照",
+      "stages": [
+        {
+          "title": "夏季对照",
+          "reason": "先用同一尺度的真实站点资料比较。",
+          "beatIds": [
+            "OBS-CLIMATE-7"
+          ]
+        },
+        {
+          "title": "冬季核对",
+          "reason": "季节变化防止把一次比较当成全年。",
+          "beatIds": [
+            "OBS-CLIMATE-1"
+          ]
+        },
+        {
+          "title": "回到七市地",
+          "reason": "站点是入口，自然差异跨越行政线。",
+          "beatIds": [
+            "OVERVIEW-regional-system"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "id": "OBS-CLIMATE-7",
+          "recordingId": "OBS-CLIMATE-7",
+          "text": "以下是一九九一至二零二零年七月气候标准值，不是当天预报。林芝站月平均气温十六点五摄氏度，月降水量均值一百三十七点四毫米。拉萨站也是十六点五摄氏度，降水一百四十点五毫米。狮泉河站十五摄氏度，降水二十二点九毫米。这个月拉萨略多于林芝，东西之间不是每月固定递减。统计只代表站点，不能概括全域。",
+          "title": "七月：用真实数据检验东西差异",
+          "chapterId": "regions",
+          "kind": "atlas",
+          "topic": "regions",
+          "overviewScope": "whole",
+          "detailStepId": "C4",
+          "sources": [
+            {
+              "title": "真实高程：来源、采样与显示尺度",
+              "url": "/assets/terrain/tibet-regional-dem.source.json",
+              "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+            },
+            {
+              "title": "NOAA NCEI：WMO 1991—2020气候标准值",
+              "url": "https://www.ncei.noaa.gov/products/wmo-climate-normals",
+              "note": "归档三站月平均资料，不代表市域或实时天气。"
+            },
+            {
+              "title": "本地归档：三站原始数据与来源",
+              "url": "/data/climate-normals-1991-2020/stations.json"
+            }
+          ]
+        },
+        {
+          "id": "OBS-CLIMATE-1",
+          "recordingId": "OBS-CLIMATE-1",
+          "text": "以下是一九九一至二零二零年一月气候标准值，不是今天的天气。林芝站月平均气温一点一摄氏度，月降水量均值二毫米。拉萨站负零点三摄氏度、零点九毫米。狮泉河站负十一点七摄氏度、一点六毫米。三站都在高原，但冬季温度和降水并不相同。统计只代表站点，不能概括市域或整个阿里。",
+          "title": "一月：同在高原，冬季条件仍不同",
+          "chapterId": "regions",
+          "kind": "atlas",
+          "topic": "regions",
+          "overviewScope": "whole",
+          "detailStepId": "C4",
+          "sources": [
+            {
+              "title": "真实高程：来源、采样与显示尺度",
+              "url": "/assets/terrain/tibet-regional-dem.source.json",
+              "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+            },
+            {
+              "title": "NOAA NCEI：WMO 1991—2020气候标准值",
+              "url": "https://www.ncei.noaa.gov/products/wmo-climate-normals",
+              "note": "归档三站月平均资料，不代表市域或实时天气。"
+            },
+            {
+              "title": "本地归档：三站原始数据与来源",
+              "url": "/data/climate-normals-1991-2020/stations.json"
+            }
+          ]
+        },
+        {
+          "id": "OVERVIEW-regional-system",
+          "chapterId": "regions",
+          "title": "一张地图读懂七市地",
+          "recordingId": "OVERVIEW-regional-system",
+          "text": "先把西藏全域留在眼前。中南部的拉萨、日喀则和山南，沿河谷认识城市与生产；东部昌都和东南部林芝，高山峡谷组织不同来路；北部那曲与西部阿里，又有高原、草地、湖盆和宽谷。七市地帮助找到入口，自然环境并不沿行政线整齐分开。",
+          "kind": "atlas",
+          "topic": "regions",
+          "moments": [
+            {
+              "token": "拉萨、日喀则和山南",
+              "title": "中南部：河谷与生产",
+              "explanation": "保留拉萨河、年楚河、雅砻河与雅鲁藏布江的全域背景。",
+              "focus": "shannan"
+            },
+            {
+              "token": "东部昌都和东南部林芝",
+              "title": "东部与东南部：高山峡谷",
+              "explanation": "同是东部，流域、谷地来路与水热条件仍有区别。",
+              "focus": "chamdo"
+            },
+            {
+              "token": "北部那曲与西部阿里",
+              "title": "北部与西部：高原、湖盆和宽谷",
+              "explanation": "七市地是行政入口，自然环境跨越行政范围。",
+              "focus": "nagqu"
+            }
+          ],
+          "sources": [
+            {
+              "title": "西藏自治区民政厅 · 2026年上半年行政区划代码",
+              "url": "https://mzt.xizang.gov.cn/zxzx/tzgg/202607/t20260729_551733.html",
+              "note": "2026年7月29日发布，行政区划口径截至2026年6月30日；六个地级市和阿里地区。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+              "url": "/data/narrated-geography.json",
+              "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+            },
+            {
+              "title": "Natural Earth · 自然地理范围（概略参照）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+            }
+          ],
+          "detailStepId": "E1",
+          "overviewScope": "whole"
+        }
+      ]
+    },
+    {
+      "id": "living",
+      "title": "环境怎样进入生活",
+      "question": "自然条件怎样变成城市与日常生活？",
+      "premise": "带着各地差异，用土地、水和通行三个共同问题理解聚居与生活。",
+      "conclusion": "有较缓的地面、有水、有通道，都不等于已经获得服务；还需要设施、劳动与组织。",
+      "nextQuestion": "环境解释了条件，城市中心、信仰与文化又是怎样在历史中形成的？",
+      "scale": "区域差异 → 共同生活问题 → 全域",
+      "stages": [
+        {
+          "title": "比较地形",
+          "reason": "同图进入三地，对照起伏、连续地面与用水条件。",
+          "beatIds": [
+            "LAB-life-nyingchi",
+            "LAB-life-lhasa"
+          ]
+        },
+        {
+          "title": "设施与管护",
+          "reason": "狮泉河案例：真实渠线之上比较供水条件，区分有水、有渠与持续使用。",
+          "beatIds": [
+            "OVERVIEW-shiquanhe-irrigation"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "id": "LAB-life-nyingchi",
+          "recordingId": "LAB-life-nyingchi",
+          "text": "从全域定位林芝，再沿同一张地图拉近。先看地面起伏，金色剖线和读数来自高程网格，不是道路。移动探针，比较沿线高低变化；切换剖面方向，看到不同方向需要面对的高差。青色地面标出观察窗内相对较低、较缓的样本，不是城市边界或建设用地。山地河谷为生活提供不同条件，实际通行还需要道路、桥梁与维护。回到全域，与拉萨和狮泉河比较，然后再追问人的历史行动。",
+          "title": "林芝：从地形读生活条件",
+          "chapterId": "regions",
+          "kind": "atlas",
+          "topic": "life",
+          "overviewScope": "whole",
+          "detailStepId": "E3",
+          "sources": [
+            {
+              "title": "真实高程：来源、采样与显示尺度",
+              "url": "/assets/terrain/tibet-regional-dem.source.json",
+              "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+              "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+              "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 山南河谷与地方文化",
+              "url": "https://www.xizang.gov.cn/xwzx_406/dsdt/202605/t20260510_539364.html",
+              "note": "2026年地方报道中的雅砻河谷、扎西曲登社区等案例；不提供实时演出或访问信息。"
+            },
+            {
+              "title": "凯斯西储大学 · 西藏社会与牧民生活研究",
+              "url": "https://case.edu/artsci/artsci-fall-2009/tibet.html",
+              "note": "有地点与调查时期的研究介绍，不能代表所有社区。"
+            }
+          ]
+        },
+        {
+          "id": "LAB-life-lhasa",
+          "recordingId": "OVERVIEW-life-lhasa",
+          "text": "从全域定位拉萨，再沿同一张地图拉近。先看地面起伏，河谷嵌在周围山地之间。移动探针，比较沿线高低变化；切换剖面方向，看较缓地面能否连续。青色地面标出观察窗内相对较低、较缓的样本，不能据此认定街区或可建设地块。河谷提供可能，城市仍需要用水设施、交通和组织。二零二二年拉萨水利规划提供了理解这些需求的材料，规划不等于全部建成。回到全域，接着看狮泉河：在不同环境中，水又怎样通过设施和劳动进入使用？",
+          "title": "拉萨：从地形读生活条件",
+          "chapterId": "regions",
+          "kind": "atlas",
+          "topic": "life",
+          "overviewScope": "whole",
+          "detailStepId": "E3",
+          "sources": [
+            {
+              "title": "真实高程：来源、采样与显示尺度",
+              "url": "/assets/terrain/tibet-regional-dem.source.json",
+              "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+              "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+              "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 山南河谷与地方文化",
+              "url": "https://www.xizang.gov.cn/xwzx_406/dsdt/202605/t20260510_539364.html",
+              "note": "2026年地方报道中的雅砻河谷、扎西曲登社区等案例；不提供实时演出或访问信息。"
+            },
+            {
+              "title": "凯斯西储大学 · 西藏社会与牧民生活研究",
+              "url": "https://case.edu/artsci/artsci-fall-2009/tibet.html",
+              "note": "有地点与调查时期的研究介绍，不能代表所有社区。"
+            },
+            {
+              "id": "lhasa-water-plan",
+              "title": "拉萨市人民政府 · 十四五水安全保障规划",
+              "url": "https://www.lasa.gov.cn/lasa/wjzl/202204/0195f5cb1a964d6c9121791d618ed7e2.shtml",
+              "note": "2022年规划介绍拉萨河与不同地貌；规划目标和实际成效分别阅读。"
+            }
+          ]
+        },
+        {
+          "id": "OVERVIEW-shiquanhe-irrigation",
+          "recordingId": "OVERVIEW-shiquanhe-irrigation",
+          "text": "狮泉河怎样用水？拉近看河流、灌渠与城镇。二〇二三年报道说，秋季少雨、蒸发大，护林员伦珠挡水开闸，次仁桑卓清渠巡护。先保留灌渠，停止供水。开闸并完成清渠，蓝色通水带推进，林地获得补水。关闭后停止补水，已送入的水保留。设施仍需管护，才能服务城镇周边绿化。渠线取自地图，水量与灌区仅为示意。回到全域，再问历史怎样塑造地方。",
+          "title": "狮泉河：有灌渠，为什么还需要管护",
+          "chapterId": "regions",
+          "kind": "atlas",
+          "topic": "life",
+          "overviewScope": "whole",
+          "detailStepId": "E3",
+          "sources": [
+            {
+              "title": "阿里地区行政公署转载西藏日报 · 2023-11-20",
+              "url": "https://www.al.gov.cn/info/1035/48267.htm",
+              "note": "伦珠挡水开闸、次仁桑卓清渠巡护；林地冬灌与城镇周边绿化。不是家庭供水调查。"
+            },
+            {
+              "title": "OSM现状狮泉河：归档灌渠、林地与城镇",
+              "url": "/data/local-places/shiquanhe.geojson",
+              "note": "way/307861096为有名治沙工程灌渠；way/1070107996为地图林地参照，不认定为报道中的作业地块。"
+            },
+            {
+              "title": "本段事实、解释与示意边界",
+              "url": "/data/shiquanhe-irrigation-evidence.json"
+            },
+            {
+              "title": "© OpenStreetMap contributors · ODbL",
+              "url": "https://www.openstreetmap.org/copyright"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "human-history",
+      "title": "人怎样塑造地方",
+      "question": "人的行动怎样形成地方历史与文化？",
+      "premise": "刚才比较了三地的自然条件和人的建设。现在回到全域，把生活放进时间，认识城市用途、知识交流和文化实践。",
+      "conclusion": "营建与交流帮助解释地方怎样形成；保护调整活动空间，供灯仍可延续。拉萨与托林提供具体线索，完整年代与更多地区保留在专题。",
+      "nextQuestion": "已有的地方与生活，怎样接入今天的新通道与更广泛联系？",
+      "scale": "全域背景 → 营建与交流 → 保护与持续使用 → 现代变化",
+      "stages": [
+        {
+          "title": "怎样形成",
+          "reason": "从营建、用途和跨地区交流认识地方，避免把地形当作文化成因。",
+          "beatIds": [
+            "OVERVIEW-history-origins"
+          ]
+        },
+        {
+          "title": "怎样延续",
+          "reason": "用大昭寺有据的供灯调整，看活动如何在保护中继续；再接向现代交通。",
+          "beatIds": [
+            "OVERVIEW-jokhang-protection"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "id": "OVERVIEW-history-origins",
+          "recordingId": "OVERVIEW-history-origins",
+          "title": "形成：营建与交流怎样赋予地方用途",
+          "text": "从三地生活回到全域。地形提供条件，地方的用途还要由人的历史行动解释。先看拉萨：七世纪创建的大昭寺，是宗教活动的场所；布达拉宫的礼仪、接见与居住用途，则说明政治与宗教活动怎样组织空间。再看西部托林：阿底峡一〇四二年来到这里。研究据传记记载，降曲沃提出问题，阿底峡撰写《菩提道灯论》，再与译师格韦洛追共同翻译。画面把问题汇集、成文和合译分开：合译让文本跨过语言障碍，不是仅有人抵达。书页与活动位置为功能示意，不复原手稿或古道。这些是营建、使用和交流的具体线索，不能由气候直接推出，也不代表全部西藏的历史。更完整的年代放在专题。现在回到共同问题：场所和文化已经形成，为什么还能持续到后来的生活中？",
+          "kind": "atlas",
+          "chapterId": "history",
+          "topic": "history",
+          "overviewScope": "whole",
+          "detailStepId": "H2",
+          "sources": [
+            {
+              "title": "周拉、拉毛肖：11—12世纪“道次第”文本研究",
+              "url": "https://www.tibetology.ac.cn/2024-08/17/content_42896506.htm"
+            },
+            {
+              "title": "The Met：Tibet and India",
+              "url": "https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india"
+            },
+            {
+              "title": "UNESCO · 大昭寺的创建与布达拉宫用途",
+              "url": "https://whc.unesco.org/en/list/707/",
+              "note": "只采用有据的创建和用途，不把现状几何当作古代测绘。"
+            },
+            {
+              "title": "The Met · Tibet and India 展览：阿底峡与托林",
+              "url": "https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india",
+              "note": "Map of the Region说明1042年行旅经加德满都到西部托林；不据此重建古道，也不把画像年代当事件年代。"
+            },
+            {
+              "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+              "url": "/data/narrated-geography.json",
+              "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+            },
+            {
+              "title": "Natural Earth · 自然地理范围（概略参照）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+            }
+          ],
+          "moments": [
+            {
+              "token": "先看拉萨",
+              "title": "营建与用途：宗教、礼仪、接见和居住",
+              "explanation": "地方用途由历史行动与制度解释，地形只提供空间条件。",
+              "focus": "lhasa"
+            },
+            {
+              "token": "再看西部托林",
+              "title": "1042：人物与知识交流进入地方",
+              "explanation": "托林在西部札达；不是现代生活案例中的狮泉河。地图定位，不补画行旅路线。",
+              "focus": "tholing-exchange",
+              "year": "1042年"
+            },
+            {
+              "token": "这些是营建",
+              "title": "回到全域：形成与延续是两个问题",
+              "explanation": "案例说明营建、使用和交流；文化延续还涉及后来的保护与持续使用。"
+            }
+          ]
+        },
+        {
+          "id": "OVERVIEW-jokhang-protection",
+          "recordingId": "OVERVIEW-jokhang-protection",
+          "title": "延续：供灯继续，活动空间怎样改变",
+          "text": "回到拉萨，靠近大昭寺。场所怎样在保护中继续使用？二〇〇五年监测报告记录，多数供灯已从木构建筑移到寺前半地下供灯室。先看原有关系：供灯与木构在一起。现在分开供灯与木构，寺前供灯亮起。供灯继续，活动空间改变，让火源与木构分开。你可以来回对照：保留了什么，改变了什么？灯光是关系示意，寺前符号不是供灯室测绘，二〇〇五年也不是竣工日期。最后退回全域，再看新交通怎样接入已有生活。",
+          "kind": "atlas",
+          "chapterId": "history",
+          "topic": "culture",
+          "sources": [
+            {
+              "title": "UNESCO / ICOMOS · 2005年监测报告，第3页（vii–viii）",
+              "url": "https://whc.unesco.org/document/5816",
+              "note": "2005年监测所见和报告状态，不将报告日期当作各工程开工或竣工日期。多数供灯迁移、消防通道、广场公共使用与搬迁分别有记录。"
+            },
+            {
+              "title": "现状地物几何 · 拉萨归档",
+              "url": "/data/local-places/lhasa.geojson",
+              "note": "大昭寺、寺前广场、布达拉宫与现状广场；非2005年测绘。灯光和活动标记为关系示意，非原供灯位置、真实客流或搬迁路线。"
+            },
+            {
+              "title": "本段证据边界：原文核对与示意范围",
+              "url": "/data/jokhang-protection-evidence.json",
+              "note": "报告所见、解释与未知信息分列；不将2005年情况直接当作今天现状。"
+            }
+          ],
+          "detailStepId": "K1",
+          "overviewScope": "whole"
+        }
+      ]
+    },
+    {
+      "id": "today",
+      "title": "今天怎样联系与观察",
+      "question": "现代联系改变了什么，我们该怎样观察？",
+      "premise": "已有场所与文化继续被使用。先看新桥怎样接入城市，再回全域比较不同地区的交通，最后带着问题观察地方。",
+      "conclusion": "交通增加选择，接续和组织决定怎样使用；观察要把地形、历史与今天生活一起核对。",
+      "nextQuestion": "先用这六个问题解释一个地方，再选择需要深入的专题。",
+      "scale": "全域联系 → 地方使用 → 观察后回到整体",
+      "stages": [
+        {
+          "title": "怎样改变",
+          "reason": "新连接进入已有城市；设施、服务与人的组织要分开理解。",
+          "beatIds": [
+            "OVERVIEW-city-change"
+          ]
+        },
+        {
+          "title": "地区联系",
+          "reason": "先比较不同地区获得的抵达方式。",
+          "beatIds": [
+            "OVERVIEW-regional-connections"
+          ]
+        },
+        {
+          "title": "实际地形",
+          "reason": "沿真实线路读穿山、跨河与站区。",
+          "beatIds": [
+            "OVERVIEW-valley-journey"
+          ]
+        },
+        {
+          "title": "维护与使用",
+          "reason": "上下游与地方用途使抵达接向持续生活。",
+          "beatIds": [
+            "OVERVIEW-protection"
+          ]
+        },
+        {
+          "title": "带回整体",
+          "reason": "把同一组问题用于其他地区，再回顾整条认识。",
+          "beatIds": [
+            "OVERVIEW-conclusion"
+          ]
+        }
+      ],
+      "beats": [
+        {
+          "id": "OVERVIEW-city-change",
+          "recordingId": "OVERVIEW-city-change-core",
+          "title": "新连接怎样进入已有生活",
+          "text": "已有的场所与文化继续被使用，新的交通怎样接入它们？从全域进入拉萨河谷，同时看南岸站区、拉萨河和北岸城区。二〇〇六年，青藏铁路通车。先拿掉柳梧大桥这条连接，看车辆停在南岸的接桥位置。这是连接作用的对照，不是当年路网复原。二〇〇七年四月三十日，柳梧大桥通车。现在接回同一位置的桥面，车辆跨过拉萨河。改变的是站区与城区的接续。设施怎样变成生活里的机会？二〇一九年，洛桑赤列的采访记录了村民购车、组织运输队和车辆调度。车辆、劳动与组织把通道变成服务。最后回到全域，比较其他地区怎样抵达、怎样接续。",
+          "kind": "atlas",
+          "chapterId": "history",
+          "topic": "connections",
+          "sources": [
+            {
+              "title": "2007年5月1日通车报道：柳梧大桥于4月30日通车",
+              "url": "https://www.xizang.gov.cn/zwgk/ldzc/ldhd/201901/t20190117_54666.html",
+              "note": "正文日期与归档URL年份不同；报道支持新桥连接中心城区与柳梧，不证明全部城市增长的因果。"
+            },
+            {
+              "title": "2019年柳梧采访：洛桑赤列与运输组织",
+              "url": "https://lwxq.lasa.gov.cn/lwxqgwh/lwyw/201910/56d71493c7f54244bb05018ceee8db2b.shtml",
+              "note": "铁路2006年开通、站区位于南岸；具名采访记录购车、运输队与调度。未推广为所有居民的收益。"
+            },
+            {
+              "title": "现状相连道路、桥梁与源节点归档",
+              "url": "/data/local-places/transport-corridors.manifest.json",
+              "note": "连接对照只移除柳梧大桥跨河段；没有复原2006年路网、旧渡口或历史城市轮廓。车辆为教学标志。"
+            },
+            {
+              "title": "UNESCO：历史建筑群及地方用途",
+              "url": "https://whc.unesco.org/en/list/707/"
+            }
+          ],
+          "detailStepId": "M1"
+        },
+        {
+          "id": "OVERVIEW-regional-connections",
+          "recordingId": "OVERVIEW-regional-connections-core",
+          "text": "从一座桥回到全域。先看东南部：二〇二一年六月二十五日，拉林铁路开通，联系拉萨、山南与林芝。再看西部：二〇一〇年七月一日，阿里昆莎机场通航，增加了航空抵达的选择。方式不同，到站、落地以后都还需要地方道路和服务。现在回到拉萨河谷，沿真实铁路看山体、河流和站区怎样影响通行；不要把全图上的联系理解成几条城市间的直线。",
+          "title": "不同地区的抵达与接续",
+          "chapterId": "connections",
+          "kind": "atlas",
+          "topic": "connections",
+          "moments": [
+            {
+              "token": "先看东南部",
+              "title": "东南部 · 拉萨—山南—林芝",
+              "explanation": "2021年6月25日开通事件；地区联系不等于精确铁轨或当前班次。",
+              "focus": "nyingchi",
+              "year": "2021年"
+            },
+            {
+              "token": "再看西部",
+              "title": "西部 · 阿里新增航空抵达",
+              "explanation": "2010年7月1日昆莎机场通航；地区参照点不是机场位置。",
+              "focus": "ngari",
+              "year": "2010年"
+            },
+            {
+              "token": "方式不同",
+              "title": "共同问题 · 抵达之后怎样使用",
+              "explanation": "到达节点、地方接续和实际服务分别理解；开通不等于人人同等受益。"
+            },
+            {
+              "token": "现在回到拉萨河谷",
+              "title": "带着通行问题进入真实河谷",
+              "explanation": "下一段沿实际铁路看山体、河流与站区；不是城市间的直线。",
+              "focus": "lhasa"
+            }
+          ],
+          "sources": [
+            {
+              "title": "西藏交通运输厅 · 青藏铁路简介",
+              "url": "https://jtt.xizang.gov.cn/xxgk/fdzdgknr/jggk/jtgk/201611/t20161130_233601.html",
+              "note": "历史建设与开通资料，不是实时班次、票务或旅行时长。"
+            },
+            {
+              "title": "波密县政府 · 拉林铁路开通事件（2021）",
+              "url": "https://www.bomi.gov.cn/bmx/xwzx/202106/a320365e780047a6a07eba587fb4215a.shtml",
+              "note": "2021-06-29报道记述6月25日开通，明确拉萨经山南到林芝。只采用历史事件和地区顺序，不采用开通初期车次、票务或旅行时间作为当前服务。"
+            },
+            {
+              "title": "民航局 · 阿里昆莎机场通航（2010）",
+              "url": "https://www.caac.gov.cn/XWZX/MHYW/201007/t20100702_12709.html",
+              "note": "2010-07-02原始通航报道记载7月1日正式通航及当时经拉萨的航空联系。只取事件、方式与地点关系，不把旧航班、空中时间、距离或收益预期当作当前条件；不定位机场几何或将机场独立归因为札布让经营变化。"
+            },
+            {
+              "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+              "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+              "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+            },
+            {
+              "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+              "url": "/data/narrated-geography.json",
+              "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+            },
+            {
+              "title": "Natural Earth · 自然地理范围（概略参照）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+            },
+            {
+              "title": "西藏自治区文旅厅 · 2021年拉林铁路开通与沿线地区",
+              "url": "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248183.html",
+              "note": "开通事件与沿线地区依据；不以当年列车时间代表当前班次。"
+            },
+            {
+              "title": "© OpenStreetMap contributors · ODbL",
+              "url": "https://www.openstreetmap.org/copyright"
+            }
+          ],
+          "detailStepId": "M1",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "OVERVIEW-valley-journey",
+          "recordingId": "OVERVIEW-valley-journey",
+          "text": "前面认识了高原环境、生活与历史，现在沿一段真实铁路，看这些条件怎样联系起来。从西藏全图拉近拉萨。这里观察青藏线进入拉萨站前的一段，不是拉林铁路全线；底图是有日期的卫星影像。沿线向前看，山体、河流与城市逐渐进入同一视野。停在跨河段，铁路跨过河流，桥梁接起两岸，但地表高程不等于桥面高度。继续往站区方向，山体开始遮挡视线。停在虚线段，这是地图记录的隧道水平走向，不能据此判断地下深度。再沿线到拉萨站，俯看站场和周围街区。铁路完成区域抵达，还需要道路把人和物接入生活目的地。转向柳梧大桥，看站区怎样通过跨河道路联系对岸城市。你可以点选线路，前后比较视野；继续播放时会回到原来的讲解。最后回到西藏全图：地形影响通行条件，交通工程增加联系，地方接续把抵达带进生活。接下来再看这些联系的共同维护。",
+          "title": "沿河谷理解：铁路怎样接入城市生活",
+          "chapterId": "connections",
+          "kind": "atlas",
+          "topic": "connections",
+          "moments": [],
+          "sources": [
+            {
+              "title": "OSM相连铁路与城市地物（归档）",
+              "url": "/assets/terrain/lhasa-ground/lhasa.geojson",
+              "note": "青藏线拉萨站前片段；原始相连节点与桥隧标签，非历史路线。"
+            },
+            {
+              "title": "Sentinel-2影像与Copernicus GLO-30高程",
+              "url": "/assets/terrain/lhasa-ground/manifest.json",
+              "note": "2025-11-26真彩影像，10米源像元；约30米地表高程，非街景或轨面测量。"
+            },
+            {
+              "title": "© OpenStreetMap contributors · ODbL",
+              "url": "https://www.openstreetmap.org/copyright"
+            }
+          ],
+          "detailStepId": "M1",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "OVERVIEW-protection",
+          "chapterId": "connections",
+          "title": "联系越广，越要理解共同维护",
+          "recordingId": "OVERVIEW-protection",
+          "text": "把镜头重新拉回全域。通道之外，流域、草地与历史城市同样联系不同地方。雅鲁藏布江让上游过程关系到下游使用。雨落在坡面，未下渗的部分沿低处汇集，再进入谷地和干流；下渗较多，同一场雨直接汇出的部分就减少。画面沿真实高程计算坡向，但不是正式流域边界，也不预测流量。羌塘的生态管护跨越那曲与阿里。二〇二三年报道记载，阿里林草工作者黄晨在巡护中监测迁徙，并拆除阻隔藏羚羊的网围栏。先识别阻隔，再移除妨碍通行的部分，让两侧活动空间重新连通。围栏与动物走向仅解释机制，不是实测位置；通行恢复也不等于草地已经恢复。拉萨遗产保护还要照顾地方日常。理解周边和战略价值，要说清共同依赖、使用条件与维护责任。",
+          "kind": "atlas",
+          "topic": "connections",
+          "moments": [
+            {
+              "token": "雅鲁藏布江",
+              "title": "沿河道认识上游与下游",
+              "explanation": "沿青色干流从西向东看，再看东部转向下游的联系。金色跟随讲解推进；水量和变化需要水文观测，不能从线条推算。"
+            },
+            {
+              "token": "羌塘的生态管护",
+              "title": "生态：跨那曲与阿里的共同空间",
+              "explanation": "草地、湿地与野生动物的保护涉及真实管护行动。",
+              "focus": "changtang-stewardship"
+            },
+            {
+              "token": "拉萨遗产保护",
+              "title": "城市：维护遗产与地方日常",
+              "explanation": "访问、朝圣、居民使用与遗产保护需要共同考虑。",
+              "focus": "lhasa-buildings"
+            }
+          ],
+          "sources": [
+            {
+              "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+              "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+              "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+            },
+            {
+              "title": "西藏自治区人民政府 · 羌塘保护与管护工作",
+              "url": "https://www.xizang.gov.cn/xwzx_406/ztzl_416/gdzt/jsstwmxgd/mtjj_4437/202204/t20220419_294361.html",
+              "note": "2022年保护工作报道；用于理解草地、湿地和野生动物的管护，不代表开放或进入许可。"
+            },
+            {
+              "title": "UNESCO · 拉萨历史建筑群决定47 COM 7B.66（2025）",
+              "url": "https://whc.unesco.org/en/decisions/8790",
+              "note": "世界遗产委员会正式决定，区分已报告进展与仍待审查的保护工作；第7段谈访问管理、监测及尊重朝圣活动。决定不是今天开放预约规则，也不代表全部保护要求已经完成。"
+            },
+            {
+              "title": "UNESCO / ICOMOS · 2005年监测报告，第3页",
+              "url": "https://whc.unesco.org/document/5816",
+              "note": "回看前例：多数供灯迁出传统木构，寺前供灯继续；报告所见不是竣工日期，灯光为关系示意。"
+            },
+            {
+              "title": "大昭寺及寺前现状地物",
+              "url": "/data/local-places/lhasa.geojson",
+              "note": "仅用真实现状轮廓定位，不复原供灯室或历史灯位。"
+            },
+            {
+              "title": "Natural Earth · 河流中心线（1:1000万）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+              "note": "公共领域概览数据；10m 表示 1:1000万比例尺，不是10米精度。河道宽度和金色讲解进度是阅读符号，不表示实测河宽、流速或流量。"
+            },
+            {
+              "title": "当前画面的河道数据与处理记录",
+              "url": "/data/hydrography/yarlung-river.geojson",
+              "note": "保留 Maquan、Yarlung、Dihang、Brahmaputra 原始几何。仅沿端点相接的主部件展示，不连接分支；名称与上下游关系参照中科院地理所资料。"
+            },
+            {
+              "title": "中科院青藏高原所 · 雅鲁藏布江多圈层水文观测",
+              "url": "https://www.itpcas.ac.cn/new_kycg/new_kyjz/202204/t20220426_6439458.html",
+              "note": "上下游水文过程需要观测资料支持，画面中的概览河道不能用于推算水量。"
+            },
+            {
+              "title": "USGS：地表径流与下渗",
+              "url": "https://www.usgs.gov/water-science-school/science/runoff-surface-and-overland-water-runoff"
+            },
+            {
+              "title": "USGS：流域与分水岭",
+              "url": "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins"
+            },
+            {
+              "title": "本地高程来源与分辨率",
+              "url": "/assets/terrain/tibet-regional-dem.source.json"
+            },
+            {
+              "title": "西藏日报：全心全意守护“高原精灵”——记黄晨（2023-07-06）",
+              "url": "https://www.xzxw.com/al/2023-07/06/content_881465.html"
+            }
+          ],
+          "detailStepId": "R3",
+          "overviewScope": "whole"
+        },
+        {
+          "id": "OVERVIEW-conclusion",
+          "recordingId": "OVERVIEW-observation-close",
+          "text": "把整条认识变成观察方法。先在全图选地方，再带着问题走近。去林芝，问山谷与水热怎样影响生活；到山南、拉萨或日喀则，对照河谷空间、历史用途和今天生活；看昌都，问峡谷怎样影响通行；看那曲与阿里，问高地、用水和地方接续。每次都问：自然提供什么条件，人的行动又改变了什么？比较以后再回到全域，用一个具体地方解释形成、延续和现代变化。观察顺序不是连续旅游行程，实际交通与访问条件需要按日期核实。接下来选择需要深入的问题，或保存你的观察路线。",
+          "title": "带着变化和原因，回到地方观察",
+          "chapterId": "observation",
+          "kind": "atlas",
+          "topic": "observation",
+          "moments": [
+            {
+              "token": "先在全图选地方",
+              "title": "先有问题，再选地方",
+              "explanation": "每次局部观察都从全域位置与来路开始。"
+            },
+            {
+              "token": "去林芝",
+              "title": "比较环境与地方使用",
+              "explanation": "林芝、河谷城市、昌都、那曲与阿里回应同一组问题；这不是连续旅行路线。"
+            },
+            {
+              "token": "每次都问",
+              "title": "分清自然条件与人的改变",
+              "explanation": "对照地形、水热、历史用途与今天生活。"
+            },
+            {
+              "token": "比较以后再回到全域",
+              "title": "回到整体解释异同",
+              "explanation": "观察顺序不是可订行程；交通与访问条件按日期核实。"
+            }
+          ],
+          "sources": [
+            {
+              "title": "西藏自治区人民政府 · 自然地理",
+              "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+              "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+            },
+            {
+              "title": "UNESCO · 拉萨布达拉宫历史建筑群",
+              "url": "https://whc.unesco.org/en/list/707/",
+              "note": "布达拉宫、大昭寺、罗布林卡的遗产资料；现存形制须与始建年代区分。"
+            },
+            {
+              "title": "西藏自治区 · 文化旅游产业发展规划（2025—2035年）解读",
+              "url": "https://www.xizang.gov.cn/zwgk/xxfb/zcjd_435/202505/t20250512_477605.html",
+              "note": "规划表达未来目标与方向，不能作为景点当前开放或道路可通行的证明。"
+            },
+            {
+              "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+              "url": "/data/narrated-geography.json",
+              "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+            },
+            {
+              "title": "Natural Earth · 自然地理范围（概略参照）",
+              "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+              "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+            }
+          ],
+          "detailStepId": "T1",
+          "overviewScope": "whole"
+        }
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "G1-opening",
+      "chapterId": "earth",
+      "title": "先认清地球上有什么",
+      "recordingId": "G1-opening",
+      "text": "先看整个地球。蓝色海洋储存水和热量，陆地上有高山、平原和河流。空气包围地表；寒冷处能留下冰雪，适合的水热条件支持植物生长。它们彼此相连：水会蒸发进入空气，空气又把热和水带到别处。先认清这些对象，再看这个整体怎样运行。",
+      "kind": "journey",
+      "stepId": "G1",
+      "cueIndex": 0,
+      "sources": [
+        {
+          "title": "NOAA · 全球大气环流",
+          "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+          "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+        },
+        {
+          "title": "NASA · 气候与地球能量收支",
+          "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+          "note": "太阳短波、反射、长波、地表—空气交换与热量储存的原理依据；本场景按解释阶段展开，没有套用全球平均通量来预测西藏地方温度。"
+        },
+        {
+          "title": "NOAA · 水循环",
+          "url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+          "note": "水的储存、相变与输送；不含本产品的地区实测流量。"
+        },
+        {
+          "title": "NOAA GFDL · 云滴增长与降水",
+          "url": "https://www.gfdl.noaa.gov/clouds-and-convection/",
+          "note": "成云与降水不同：云滴和冰晶需继续增长。山地抬升原理参见NWS Cloud Development；两档初始水汽是作者设定的定性对比情景，非实测湿度或天气预测。"
+        },
+        {
+          "title": "NOAA · 天气与气候有什么不同",
+          "url": "https://www.noaa.gov/explainers/what-s-difference-between-climate-and-weather",
+          "note": "用于区分一次天气、季节统计与长期变化。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "Natural Earth · 地球定位的范围参考数据",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+        },
+        {
+          "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+          "url": "/data/narrated-geography.json",
+          "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+        },
+        {
+          "title": "Natural Earth · 自然地理范围（概略参照）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+        }
+      ],
+      "detailStepId": "G1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "OVERVIEW-position",
+      "chapterId": "position",
+      "title": "从完整地球逐层找到西藏",
+      "recordingId": "OVERVIEW-position",
+      "text": "先从完整地球找到西藏。镜头靠近亚洲，再辨认中国和中国西南的西藏自治区。洲、国家和自治区是不同的空间层级；青藏高原则是跨越行政范围的自然高地，不能把两条边线当成同一个对象。位置确定以后，再问这里怎样受到周围海陆和大气的影响。",
+      "kind": "orientation",
+      "stepId": "G2",
+      "sources": [
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "NOAA · 全球大气环流",
+          "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+          "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+        },
+        {
+          "title": "中科院地球环境所 · 印度洋水汽进入藏东南的路径研究",
+          "url": "https://ieexa.cas.cn/news/kydt/202506/t20250606_7798567.html",
+          "note": "2025年研究结合示踪观测与1940—2020年夏季再分析，支持印度洋、孟加拉湾与藏东南的水汽来路认识；并非全西藏全年统一路径。"
+        },
+        {
+          "title": "青藏高原研究所 · 西风水汽跨喜马拉雅观测",
+          "url": "https://itpcas.cas.cn/new_kycg/new_kyjz/202606/t20260612_8228168.html",
+          "note": "2026年珠峰高空观测研究，不能将西风一概理解为干风。"
+        },
+        {
+          "title": "Natural Earth · 地球定位的范围参考数据",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+        }
+      ],
+      "detailStepId": "G2",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "G1-explain",
+      "chapterId": "engine",
+      "title": "同一束阳光，为什么有冷暖差别",
+      "recordingId": "G1-explain",
+      "text": "看两束同样宽的阳光落在球面上。照得较直时，能量落在较小面积；照得斜时，同一束能量分散得更开。全年平均看，低纬得到的太阳能较多，高纬较少。这建立了冷暖背景，但当地多热，还要看海陆怎样存热，以及空气和水怎样把热搬走。",
+      "kind": "journey",
+      "stepId": "G1",
+      "cueIndex": 1,
+      "sources": [
+        {
+          "title": "NOAA · 全球大气环流",
+          "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+          "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+        },
+        {
+          "title": "NASA · 气候与地球能量收支",
+          "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+          "note": "太阳短波、反射、长波、地表—空气交换与热量储存的原理依据；本场景按解释阶段展开，没有套用全球平均通量来预测西藏地方温度。"
+        },
+        {
+          "title": "NOAA · 水循环",
+          "url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+          "note": "水的储存、相变与输送；不含本产品的地区实测流量。"
+        },
+        {
+          "title": "NOAA GFDL · 云滴增长与降水",
+          "url": "https://www.gfdl.noaa.gov/clouds-and-convection/",
+          "note": "成云与降水不同：云滴和冰晶需继续增长。山地抬升原理参见NWS Cloud Development；两档初始水汽是作者设定的定性对比情景，非实测湿度或天气预测。"
+        },
+        {
+          "title": "NOAA · 天气与气候有什么不同",
+          "url": "https://www.noaa.gov/explainers/what-s-difference-between-climate-and-weather",
+          "note": "用于区分一次天气、季节统计与长期变化。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "Natural Earth · 地球定位的范围参考数据",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+        }
+      ],
+      "detailStepId": "G1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "G1-observe",
+      "chapterId": "engine",
+      "title": "自转怎样改变气流方向",
+      "recordingId": "OVERVIEW-rotation-air",
+      "text": "受热差异参与形成气压差，推动空气。先看同一地球：各纬度转一圈的时间相同，低纬绕行的圈更大，地面向东速度更快。让空气向北移动，先去掉自转项，路径沿经线。加入自转，空气保留绕地轴的角动量；来到更高纬度，相对当地地面向东超前，路径向右偏。右是相对前进方向，向南时会向西偏。这里固定南北运动，忽略摩擦，不是实测风场。回到亚洲，西侧与南侧的来流受季节等条件影响，并不是这条试验轨迹。空气携带水汽遇到高原，还会绕行或抬升。接下来先看高原怎样形成，再沿真实高程观察抬升、冷却与云雨。",
+      "kind": "journey",
+      "stepId": "G1",
+      "cueIndex": 2,
+      "sources": [
+        {
+          "title": "NOAA · 风的动力与自转偏转",
+          "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+          "note": "气压梯度推动空气；科里奥利效应改变方向，北半球右偏、南半球左偏。"
+        },
+        {
+          "title": "NOAA · 纬度、自转与向极运动",
+          "url": "https://www.noaa.gov/jetstream/global/jet-stream",
+          "note": "各纬度角速度相同，地面向东线速度不同；向极运动的空气相对地面向东超前。"
+        },
+        {
+          "title": "MIT · 大气角动量守恒",
+          "url": "https://pog.mit.edu/src/GeneralCirculationNotes_withFigs.pdf",
+          "note": "第9节：M=(Ωa cosφ+u)a cosφ。本例指定南北运动，忽略东西向力矩，不求解全球天气。"
+        },
+        {
+          "title": "本例参数与证据边界",
+          "url": "/data/rotation-flow-evidence.json",
+          "note": "纬度、经度、历时均为教学选择；不是西藏来流观测或预测。"
+        }
+      ],
+      "detailStepId": "G1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "OVERVIEW-formation-entry",
+      "chapterId": "formation",
+      "title": "先回到亚洲高地，再进入剖面",
+      "recordingId": "OVERVIEW-formation-entry",
+      "text": "位置与全球来流已经明确。现在回到亚洲，先把高原放在周围低地和海洋之间，再问这片高地怎样形成。接下来的剖面只解释相向运动、变形与增厚；它不是古代地表的复原。看懂原理以后，我们会回到今天的真实高程。",
+      "kind": "orientation",
+      "stepId": "G2",
+      "sources": [
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "NOAA · 全球大气环流",
+          "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+          "note": "受热差异、地球自转及海陆分布共同作用的基础说明。"
+        },
+        {
+          "title": "中科院地球环境所 · 印度洋水汽进入藏东南的路径研究",
+          "url": "https://ieexa.cas.cn/news/kydt/202506/t20250606_7798567.html",
+          "note": "2025年研究结合示踪观测与1940—2020年夏季再分析，支持印度洋、孟加拉湾与藏东南的水汽来路认识；并非全西藏全年统一路径。"
+        },
+        {
+          "title": "青藏高原研究所 · 西风水汽跨喜马拉雅观测",
+          "url": "https://itpcas.cas.cn/new_kycg/new_kyjz/202606/t20260612_8228168.html",
+          "note": "2026年珠峰高空观测研究，不能将西风一概理解为干风。"
+        },
+        {
+          "title": "Natural Earth · 地球定位的范围参考数据",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "地球底图为NASA影像；中国和西藏使用Natural Earth小比例尺行政参考，青藏高原使用其概化地理标签范围。不是测绘边界或唯一科研划界，数据与处理记录见本地earth-context.source.json。"
+        }
+      ],
+      "detailStepId": "G3",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "G3-explain",
+      "chapterId": "formation",
+      "title": "变形、增厚与抬升",
+      "recordingId": "G3-explain",
+      "text": "相向运动使一些地壳缩短、变形并增厚，地表也会改变。高原各部分经历不同的形成阶段，山地抬升时侵蚀仍在进行。请沿剖面看层次怎样弯曲，把这个过程与一次简单的整体升高区别开。",
+      "kind": "journey",
+      "stepId": "G3",
+      "cueIndex": 1,
+      "sources": [
+        {
+          "title": "USGS · 西部喜马拉雅—喀喇昆仑—西藏多阶段造山研究",
+          "url": "https://www.usgs.gov/publications/multi-stage-crustal-thickening-surface-uplift-and-collision-western-himalaya-karakoram",
+          "note": "2025年研究，样本针对西北部造山带，不能推广成全高原同步抬升。"
+        }
+      ],
+      "detailStepId": "G3",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "G4-explain",
+      "chapterId": "terrain",
+      "title": "走过山系以后，地面为什么仍然这么高",
+      "recordingId": "G4-explain",
+      "text": "从南侧低地开始，这个样点只有约五十米。沿同一条线向北，穿过喜马拉雅，较高样点约五千三百米。继续走进高原内部，所选样点仍接近五千米。你看到的不是一座山峰独自高起，而是内部也维持很高的地面。读数来自同一份高程网格，立体显示把高差作了夸张。",
+      "kind": "journey",
+      "stepId": "G4",
+      "cueIndex": 1,
+      "sources": [
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "Mapzen / Tilezen · 公开高程数据与处理口径",
+          "url": "https://registry.opendata.aws/terrain-tiles/",
+          "note": "本地地形取76—101°E、25—38°N，449×257米制高程网格，约5—6公里显示抽样，垂直夸张40倍。原始瓦片、解码、许可署名与文件校验记录见tibet-regional-dem.source.json；剖切为海平面参照以上地形，不是地下地质剖面。"
+        },
+        {
+          "title": "USGS · 西部喜马拉雅—喀喇昆仑—西藏多阶段造山研究",
+          "url": "https://www.usgs.gov/publications/multi-stage-crustal-thickening-surface-uplift-and-collision-western-himalaya-karakoram",
+          "note": "2025年研究，样本针对西北部造山带，不能推广成全高原同步抬升。"
+        },
+        {
+          "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+          "url": "/data/narrated-geography.json",
+          "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+        },
+        {
+          "title": "Natural Earth · 自然地理范围（概略参照）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+        }
+      ],
+      "detailStepId": "G4",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "LAB-air-higher",
+      "recordingId": "LAB-air-higher",
+      "text": "先保留西藏与周边的整体地图。金色地形剖线取自真实高程，青色气团和云雨是原理示意，不是实测风场。沿剖面向北移动，空气遇到高地后被迫抬升。抬升时空气膨胀冷却，足够湿润时水汽凝结，云逐渐增多。继续越过山地，部分水分可能以降水离开气团。背风侧下沉时空气增温，相对湿度可能降低。实际结果还受来流、季节和其他天气过程影响。现在保持同一地形，试着减少水汽，再用气象站资料检查地区差异。",
+      "title": "较多水汽：从抬升到云雨",
+      "chapterId": "regions",
+      "kind": "atlas",
+      "topic": "regions",
+      "overviewScope": "whole",
+      "detailStepId": "C4",
+      "sources": [
+        {
+          "title": "真实高程：来源、采样与显示尺度",
+          "url": "/assets/terrain/tibet-regional-dem.source.json",
+          "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+        },
+        {
+          "title": "美国国家气象局：地形抬升",
+          "url": "https://forecast.weather.gov/glossary.php?word=OROGRAPHIC",
+          "note": "气团、凝结阈值和云雨为定性原理示意，不是实测风场或预测雨量。"
+        }
+      ]
+    },
+    {
+      "id": "OBS-CLIMATE-7",
+      "recordingId": "OBS-CLIMATE-7",
+      "text": "以下是一九九一至二零二零年七月气候标准值，不是当天预报。林芝站月平均气温十六点五摄氏度，月降水量均值一百三十七点四毫米。拉萨站也是十六点五摄氏度，降水一百四十点五毫米。狮泉河站十五摄氏度，降水二十二点九毫米。这个月拉萨略多于林芝，东西之间不是每月固定递减。统计只代表站点，不能概括全域。",
+      "title": "七月：用真实数据检验东西差异",
+      "chapterId": "regions",
+      "kind": "atlas",
+      "topic": "regions",
+      "overviewScope": "whole",
+      "detailStepId": "C4",
+      "sources": [
+        {
+          "title": "真实高程：来源、采样与显示尺度",
+          "url": "/assets/terrain/tibet-regional-dem.source.json",
+          "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+        },
+        {
+          "title": "NOAA NCEI：WMO 1991—2020气候标准值",
+          "url": "https://www.ncei.noaa.gov/products/wmo-climate-normals",
+          "note": "归档三站月平均资料，不代表市域或实时天气。"
+        },
+        {
+          "title": "本地归档：三站原始数据与来源",
+          "url": "/data/climate-normals-1991-2020/stations.json"
+        }
+      ]
+    },
+    {
+      "id": "OBS-CLIMATE-1",
+      "recordingId": "OBS-CLIMATE-1",
+      "text": "以下是一九九一至二零二零年一月气候标准值，不是今天的天气。林芝站月平均气温一点一摄氏度，月降水量均值二毫米。拉萨站负零点三摄氏度、零点九毫米。狮泉河站负十一点七摄氏度、一点六毫米。三站都在高原，但冬季温度和降水并不相同。统计只代表站点，不能概括市域或整个阿里。",
+      "title": "一月：同在高原，冬季条件仍不同",
+      "chapterId": "regions",
+      "kind": "atlas",
+      "topic": "regions",
+      "overviewScope": "whole",
+      "detailStepId": "C4",
+      "sources": [
+        {
+          "title": "真实高程：来源、采样与显示尺度",
+          "url": "/assets/terrain/tibet-regional-dem.source.json",
+          "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+        },
+        {
+          "title": "NOAA NCEI：WMO 1991—2020气候标准值",
+          "url": "https://www.ncei.noaa.gov/products/wmo-climate-normals",
+          "note": "归档三站月平均资料，不代表市域或实时天气。"
+        },
+        {
+          "title": "本地归档：三站原始数据与来源",
+          "url": "/data/climate-normals-1991-2020/stations.json"
+        }
+      ]
+    },
+    {
+      "id": "OVERVIEW-regional-system",
+      "chapterId": "regions",
+      "title": "一张地图读懂七市地",
+      "recordingId": "OVERVIEW-regional-system",
+      "text": "先把西藏全域留在眼前。中南部的拉萨、日喀则和山南，沿河谷认识城市与生产；东部昌都和东南部林芝，高山峡谷组织不同来路；北部那曲与西部阿里，又有高原、草地、湖盆和宽谷。七市地帮助找到入口，自然环境并不沿行政线整齐分开。",
+      "kind": "atlas",
+      "topic": "regions",
+      "moments": [
+        {
+          "token": "拉萨、日喀则和山南",
+          "title": "中南部：河谷与生产",
+          "explanation": "保留拉萨河、年楚河、雅砻河与雅鲁藏布江的全域背景。",
+          "focus": "shannan"
+        },
+        {
+          "token": "东部昌都和东南部林芝",
+          "title": "东部与东南部：高山峡谷",
+          "explanation": "同是东部，流域、谷地来路与水热条件仍有区别。",
+          "focus": "chamdo"
+        },
+        {
+          "token": "北部那曲与西部阿里",
+          "title": "北部与西部：高原、湖盆和宽谷",
+          "explanation": "七市地是行政入口，自然环境跨越行政范围。",
+          "focus": "nagqu"
+        }
+      ],
+      "sources": [
+        {
+          "title": "西藏自治区民政厅 · 2026年上半年行政区划代码",
+          "url": "https://mzt.xizang.gov.cn/zxzx/tzgg/202607/t20260729_551733.html",
+          "note": "2026年7月29日发布，行政区划口径截至2026年6月30日；六个地级市和阿里地区。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+          "url": "/data/narrated-geography.json",
+          "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+        },
+        {
+          "title": "Natural Earth · 自然地理范围（概略参照）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+        }
+      ],
+      "detailStepId": "E1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "LAB-life-nyingchi",
+      "recordingId": "LAB-life-nyingchi",
+      "text": "从全域定位林芝，再沿同一张地图拉近。先看地面起伏，金色剖线和读数来自高程网格，不是道路。移动探针，比较沿线高低变化；切换剖面方向，看到不同方向需要面对的高差。青色地面标出观察窗内相对较低、较缓的样本，不是城市边界或建设用地。山地河谷为生活提供不同条件，实际通行还需要道路、桥梁与维护。回到全域，与拉萨和狮泉河比较，然后再追问人的历史行动。",
+      "title": "林芝：从地形读生活条件",
+      "chapterId": "regions",
+      "kind": "atlas",
+      "topic": "life",
+      "overviewScope": "whole",
+      "detailStepId": "E3",
+      "sources": [
+        {
+          "title": "真实高程：来源、采样与显示尺度",
+          "url": "/assets/terrain/tibet-regional-dem.source.json",
+          "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+          "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+          "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 山南河谷与地方文化",
+          "url": "https://www.xizang.gov.cn/xwzx_406/dsdt/202605/t20260510_539364.html",
+          "note": "2026年地方报道中的雅砻河谷、扎西曲登社区等案例；不提供实时演出或访问信息。"
+        },
+        {
+          "title": "凯斯西储大学 · 西藏社会与牧民生活研究",
+          "url": "https://case.edu/artsci/artsci-fall-2009/tibet.html",
+          "note": "有地点与调查时期的研究介绍，不能代表所有社区。"
+        }
+      ]
+    },
+    {
+      "id": "LAB-life-lhasa",
+      "recordingId": "OVERVIEW-life-lhasa",
+      "text": "从全域定位拉萨，再沿同一张地图拉近。先看地面起伏，河谷嵌在周围山地之间。移动探针，比较沿线高低变化；切换剖面方向，看较缓地面能否连续。青色地面标出观察窗内相对较低、较缓的样本，不能据此认定街区或可建设地块。河谷提供可能，城市仍需要用水设施、交通和组织。二零二二年拉萨水利规划提供了理解这些需求的材料，规划不等于全部建成。回到全域，接着看狮泉河：在不同环境中，水又怎样通过设施和劳动进入使用？",
+      "title": "拉萨：从地形读生活条件",
+      "chapterId": "regions",
+      "kind": "atlas",
+      "topic": "life",
+      "overviewScope": "whole",
+      "detailStepId": "E3",
+      "sources": [
+        {
+          "title": "真实高程：来源、采样与显示尺度",
+          "url": "/assets/terrain/tibet-regional-dem.source.json",
+          "note": "约5—6公里区域采样；显示高差放大16倍，不能判读街道和管网。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+          "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+          "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 山南河谷与地方文化",
+          "url": "https://www.xizang.gov.cn/xwzx_406/dsdt/202605/t20260510_539364.html",
+          "note": "2026年地方报道中的雅砻河谷、扎西曲登社区等案例；不提供实时演出或访问信息。"
+        },
+        {
+          "title": "凯斯西储大学 · 西藏社会与牧民生活研究",
+          "url": "https://case.edu/artsci/artsci-fall-2009/tibet.html",
+          "note": "有地点与调查时期的研究介绍，不能代表所有社区。"
+        },
+        {
+          "id": "lhasa-water-plan",
+          "title": "拉萨市人民政府 · 十四五水安全保障规划",
+          "url": "https://www.lasa.gov.cn/lasa/wjzl/202204/0195f5cb1a964d6c9121791d618ed7e2.shtml",
+          "note": "2022年规划介绍拉萨河与不同地貌；规划目标和实际成效分别阅读。"
+        }
+      ]
+    },
+    {
+      "id": "OVERVIEW-shiquanhe-irrigation",
+      "recordingId": "OVERVIEW-shiquanhe-irrigation",
+      "text": "狮泉河怎样用水？拉近看河流、灌渠与城镇。二〇二三年报道说，秋季少雨、蒸发大，护林员伦珠挡水开闸，次仁桑卓清渠巡护。先保留灌渠，停止供水。开闸并完成清渠，蓝色通水带推进，林地获得补水。关闭后停止补水，已送入的水保留。设施仍需管护，才能服务城镇周边绿化。渠线取自地图，水量与灌区仅为示意。回到全域，再问历史怎样塑造地方。",
+      "title": "狮泉河：有灌渠，为什么还需要管护",
+      "chapterId": "regions",
+      "kind": "atlas",
+      "topic": "life",
+      "overviewScope": "whole",
+      "detailStepId": "E3",
+      "sources": [
+        {
+          "title": "阿里地区行政公署转载西藏日报 · 2023-11-20",
+          "url": "https://www.al.gov.cn/info/1035/48267.htm",
+          "note": "伦珠挡水开闸、次仁桑卓清渠巡护；林地冬灌与城镇周边绿化。不是家庭供水调查。"
+        },
+        {
+          "title": "OSM现状狮泉河：归档灌渠、林地与城镇",
+          "url": "/data/local-places/shiquanhe.geojson",
+          "note": "way/307861096为有名治沙工程灌渠；way/1070107996为地图林地参照，不认定为报道中的作业地块。"
+        },
+        {
+          "title": "本段事实、解释与示意边界",
+          "url": "/data/shiquanhe-irrigation-evidence.json"
+        },
+        {
+          "title": "© OpenStreetMap contributors · ODbL",
+          "url": "https://www.openstreetmap.org/copyright"
+        }
+      ]
+    },
+    {
+      "id": "OVERVIEW-history-origins",
+      "recordingId": "OVERVIEW-history-origins",
+      "title": "形成：营建与交流怎样赋予地方用途",
+      "text": "从三地生活回到全域。地形提供条件，地方的用途还要由人的历史行动解释。先看拉萨：七世纪创建的大昭寺，是宗教活动的场所；布达拉宫的礼仪、接见与居住用途，则说明政治与宗教活动怎样组织空间。再看西部托林：阿底峡一〇四二年来到这里。研究据传记记载，降曲沃提出问题，阿底峡撰写《菩提道灯论》，再与译师格韦洛追共同翻译。画面把问题汇集、成文和合译分开：合译让文本跨过语言障碍，不是仅有人抵达。书页与活动位置为功能示意，不复原手稿或古道。这些是营建、使用和交流的具体线索，不能由气候直接推出，也不代表全部西藏的历史。更完整的年代放在专题。现在回到共同问题：场所和文化已经形成，为什么还能持续到后来的生活中？",
+      "kind": "atlas",
+      "chapterId": "history",
+      "topic": "history",
+      "overviewScope": "whole",
+      "detailStepId": "H2",
+      "sources": [
+        {
+          "title": "周拉、拉毛肖：11—12世纪“道次第”文本研究",
+          "url": "https://www.tibetology.ac.cn/2024-08/17/content_42896506.htm"
+        },
+        {
+          "title": "The Met：Tibet and India",
+          "url": "https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india"
+        },
+        {
+          "title": "UNESCO · 大昭寺的创建与布达拉宫用途",
+          "url": "https://whc.unesco.org/en/list/707/",
+          "note": "只采用有据的创建和用途，不把现状几何当作古代测绘。"
+        },
+        {
+          "title": "The Met · Tibet and India 展览：阿底峡与托林",
+          "url": "https://www.metmuseum.org/exhibitions/listings/2014/tibet-and-india",
+          "note": "Map of the Region说明1042年行旅经加德满都到西部托林；不据此重建古道，也不把画像年代当事件年代。"
+        },
+        {
+          "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+          "url": "/data/narrated-geography.json",
+          "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+        },
+        {
+          "title": "Natural Earth · 自然地理范围（概略参照）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+        }
+      ],
+      "moments": [
+        {
+          "token": "先看拉萨",
+          "title": "营建与用途：宗教、礼仪、接见和居住",
+          "explanation": "地方用途由历史行动与制度解释，地形只提供空间条件。",
+          "focus": "lhasa"
+        },
+        {
+          "token": "再看西部托林",
+          "title": "1042：人物与知识交流进入地方",
+          "explanation": "托林在西部札达；不是现代生活案例中的狮泉河。地图定位，不补画行旅路线。",
+          "focus": "tholing-exchange",
+          "year": "1042年"
+        },
+        {
+          "token": "这些是营建",
+          "title": "回到全域：形成与延续是两个问题",
+          "explanation": "案例说明营建、使用和交流；文化延续还涉及后来的保护与持续使用。"
+        }
+      ]
+    },
+    {
+      "id": "OVERVIEW-jokhang-protection",
+      "recordingId": "OVERVIEW-jokhang-protection",
+      "title": "延续：供灯继续，活动空间怎样改变",
+      "text": "回到拉萨，靠近大昭寺。场所怎样在保护中继续使用？二〇〇五年监测报告记录，多数供灯已从木构建筑移到寺前半地下供灯室。先看原有关系：供灯与木构在一起。现在分开供灯与木构，寺前供灯亮起。供灯继续，活动空间改变，让火源与木构分开。你可以来回对照：保留了什么，改变了什么？灯光是关系示意，寺前符号不是供灯室测绘，二〇〇五年也不是竣工日期。最后退回全域，再看新交通怎样接入已有生活。",
+      "kind": "atlas",
+      "chapterId": "history",
+      "topic": "culture",
+      "sources": [
+        {
+          "title": "UNESCO / ICOMOS · 2005年监测报告，第3页（vii–viii）",
+          "url": "https://whc.unesco.org/document/5816",
+          "note": "2005年监测所见和报告状态，不将报告日期当作各工程开工或竣工日期。多数供灯迁移、消防通道、广场公共使用与搬迁分别有记录。"
+        },
+        {
+          "title": "现状地物几何 · 拉萨归档",
+          "url": "/data/local-places/lhasa.geojson",
+          "note": "大昭寺、寺前广场、布达拉宫与现状广场；非2005年测绘。灯光和活动标记为关系示意，非原供灯位置、真实客流或搬迁路线。"
+        },
+        {
+          "title": "本段证据边界：原文核对与示意范围",
+          "url": "/data/jokhang-protection-evidence.json",
+          "note": "报告所见、解释与未知信息分列；不将2005年情况直接当作今天现状。"
+        }
+      ],
+      "detailStepId": "K1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "OVERVIEW-city-change",
+      "recordingId": "OVERVIEW-city-change-core",
+      "title": "新连接怎样进入已有生活",
+      "text": "已有的场所与文化继续被使用，新的交通怎样接入它们？从全域进入拉萨河谷，同时看南岸站区、拉萨河和北岸城区。二〇〇六年，青藏铁路通车。先拿掉柳梧大桥这条连接，看车辆停在南岸的接桥位置。这是连接作用的对照，不是当年路网复原。二〇〇七年四月三十日，柳梧大桥通车。现在接回同一位置的桥面，车辆跨过拉萨河。改变的是站区与城区的接续。设施怎样变成生活里的机会？二〇一九年，洛桑赤列的采访记录了村民购车、组织运输队和车辆调度。车辆、劳动与组织把通道变成服务。最后回到全域，比较其他地区怎样抵达、怎样接续。",
+      "kind": "atlas",
+      "chapterId": "history",
+      "topic": "connections",
+      "sources": [
+        {
+          "title": "2007年5月1日通车报道：柳梧大桥于4月30日通车",
+          "url": "https://www.xizang.gov.cn/zwgk/ldzc/ldhd/201901/t20190117_54666.html",
+          "note": "正文日期与归档URL年份不同；报道支持新桥连接中心城区与柳梧，不证明全部城市增长的因果。"
+        },
+        {
+          "title": "2019年柳梧采访：洛桑赤列与运输组织",
+          "url": "https://lwxq.lasa.gov.cn/lwxqgwh/lwyw/201910/56d71493c7f54244bb05018ceee8db2b.shtml",
+          "note": "铁路2006年开通、站区位于南岸；具名采访记录购车、运输队与调度。未推广为所有居民的收益。"
+        },
+        {
+          "title": "现状相连道路、桥梁与源节点归档",
+          "url": "/data/local-places/transport-corridors.manifest.json",
+          "note": "连接对照只移除柳梧大桥跨河段；没有复原2006年路网、旧渡口或历史城市轮廓。车辆为教学标志。"
+        },
+        {
+          "title": "UNESCO：历史建筑群及地方用途",
+          "url": "https://whc.unesco.org/en/list/707/"
+        }
+      ],
+      "detailStepId": "M1"
+    },
+    {
+      "id": "OVERVIEW-regional-connections",
+      "recordingId": "OVERVIEW-regional-connections-core",
+      "text": "从一座桥回到全域。先看东南部：二〇二一年六月二十五日，拉林铁路开通，联系拉萨、山南与林芝。再看西部：二〇一〇年七月一日，阿里昆莎机场通航，增加了航空抵达的选择。方式不同，到站、落地以后都还需要地方道路和服务。现在回到拉萨河谷，沿真实铁路看山体、河流和站区怎样影响通行；不要把全图上的联系理解成几条城市间的直线。",
+      "title": "不同地区的抵达与接续",
+      "chapterId": "connections",
+      "kind": "atlas",
+      "topic": "connections",
+      "moments": [
+        {
+          "token": "先看东南部",
+          "title": "东南部 · 拉萨—山南—林芝",
+          "explanation": "2021年6月25日开通事件；地区联系不等于精确铁轨或当前班次。",
+          "focus": "nyingchi",
+          "year": "2021年"
+        },
+        {
+          "token": "再看西部",
+          "title": "西部 · 阿里新增航空抵达",
+          "explanation": "2010年7月1日昆莎机场通航；地区参照点不是机场位置。",
+          "focus": "ngari",
+          "year": "2010年"
+        },
+        {
+          "token": "方式不同",
+          "title": "共同问题 · 抵达之后怎样使用",
+          "explanation": "到达节点、地方接续和实际服务分别理解；开通不等于人人同等受益。"
+        },
+        {
+          "token": "现在回到拉萨河谷",
+          "title": "带着通行问题进入真实河谷",
+          "explanation": "下一段沿实际铁路看山体、河流与站区；不是城市间的直线。",
+          "focus": "lhasa"
+        }
+      ],
+      "sources": [
+        {
+          "title": "西藏交通运输厅 · 青藏铁路简介",
+          "url": "https://jtt.xizang.gov.cn/xxgk/fdzdgknr/jggk/jtgk/201611/t20161130_233601.html",
+          "note": "历史建设与开通资料，不是实时班次、票务或旅行时长。"
+        },
+        {
+          "title": "波密县政府 · 拉林铁路开通事件（2021）",
+          "url": "https://www.bomi.gov.cn/bmx/xwzx/202106/a320365e780047a6a07eba587fb4215a.shtml",
+          "note": "2021-06-29报道记述6月25日开通，明确拉萨经山南到林芝。只采用历史事件和地区顺序，不采用开通初期车次、票务或旅行时间作为当前服务。"
+        },
+        {
+          "title": "民航局 · 阿里昆莎机场通航（2010）",
+          "url": "https://www.caac.gov.cn/XWZX/MHYW/201007/t20100702_12709.html",
+          "note": "2010-07-02原始通航报道记载7月1日正式通航及当时经拉萨的航空联系。只取事件、方式与地点关系，不把旧航班、空中时间、距离或收益预期当作当前条件；不定位机场几何或将机场独立归因为札布让经营变化。"
+        },
+        {
+          "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+          "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+          "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+        },
+        {
+          "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+          "url": "/data/narrated-geography.json",
+          "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+        },
+        {
+          "title": "Natural Earth · 自然地理范围（概略参照）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+        },
+        {
+          "title": "西藏自治区文旅厅 · 2021年拉林铁路开通与沿线地区",
+          "url": "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248183.html",
+          "note": "开通事件与沿线地区依据；不以当年列车时间代表当前班次。"
+        },
+        {
+          "title": "© OpenStreetMap contributors · ODbL",
+          "url": "https://www.openstreetmap.org/copyright"
+        }
+      ],
+      "detailStepId": "M1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "OVERVIEW-valley-journey",
+      "recordingId": "OVERVIEW-valley-journey",
+      "text": "前面认识了高原环境、生活与历史，现在沿一段真实铁路，看这些条件怎样联系起来。从西藏全图拉近拉萨。这里观察青藏线进入拉萨站前的一段，不是拉林铁路全线；底图是有日期的卫星影像。沿线向前看，山体、河流与城市逐渐进入同一视野。停在跨河段，铁路跨过河流，桥梁接起两岸，但地表高程不等于桥面高度。继续往站区方向，山体开始遮挡视线。停在虚线段，这是地图记录的隧道水平走向，不能据此判断地下深度。再沿线到拉萨站，俯看站场和周围街区。铁路完成区域抵达，还需要道路把人和物接入生活目的地。转向柳梧大桥，看站区怎样通过跨河道路联系对岸城市。你可以点选线路，前后比较视野；继续播放时会回到原来的讲解。最后回到西藏全图：地形影响通行条件，交通工程增加联系，地方接续把抵达带进生活。接下来再看这些联系的共同维护。",
+      "title": "沿河谷理解：铁路怎样接入城市生活",
+      "chapterId": "connections",
+      "kind": "atlas",
+      "topic": "connections",
+      "moments": [],
+      "sources": [
+        {
+          "title": "OSM相连铁路与城市地物（归档）",
+          "url": "/assets/terrain/lhasa-ground/lhasa.geojson",
+          "note": "青藏线拉萨站前片段；原始相连节点与桥隧标签，非历史路线。"
+        },
+        {
+          "title": "Sentinel-2影像与Copernicus GLO-30高程",
+          "url": "/assets/terrain/lhasa-ground/manifest.json",
+          "note": "2025-11-26真彩影像，10米源像元；约30米地表高程，非街景或轨面测量。"
+        },
+        {
+          "title": "© OpenStreetMap contributors · ODbL",
+          "url": "https://www.openstreetmap.org/copyright"
+        }
+      ],
+      "detailStepId": "M1",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "OVERVIEW-protection",
+      "chapterId": "connections",
+      "title": "联系越广，越要理解共同维护",
+      "recordingId": "OVERVIEW-protection",
+      "text": "把镜头重新拉回全域。通道之外，流域、草地与历史城市同样联系不同地方。雅鲁藏布江让上游过程关系到下游使用。雨落在坡面，未下渗的部分沿低处汇集，再进入谷地和干流；下渗较多，同一场雨直接汇出的部分就减少。画面沿真实高程计算坡向，但不是正式流域边界，也不预测流量。羌塘的生态管护跨越那曲与阿里。二〇二三年报道记载，阿里林草工作者黄晨在巡护中监测迁徙，并拆除阻隔藏羚羊的网围栏。先识别阻隔，再移除妨碍通行的部分，让两侧活动空间重新连通。围栏与动物走向仅解释机制，不是实测位置；通行恢复也不等于草地已经恢复。拉萨遗产保护还要照顾地方日常。理解周边和战略价值，要说清共同依赖、使用条件与维护责任。",
+      "kind": "atlas",
+      "topic": "connections",
+      "moments": [
+        {
+          "token": "雅鲁藏布江",
+          "title": "沿河道认识上游与下游",
+          "explanation": "沿青色干流从西向东看，再看东部转向下游的联系。金色跟随讲解推进；水量和变化需要水文观测，不能从线条推算。"
+        },
+        {
+          "token": "羌塘的生态管护",
+          "title": "生态：跨那曲与阿里的共同空间",
+          "explanation": "草地、湿地与野生动物的保护涉及真实管护行动。",
+          "focus": "changtang-stewardship"
+        },
+        {
+          "token": "拉萨遗产保护",
+          "title": "城市：维护遗产与地方日常",
+          "explanation": "访问、朝圣、居民使用与遗产保护需要共同考虑。",
+          "focus": "lhasa-buildings"
+        }
+      ],
+      "sources": [
+        {
+          "title": "西藏自治区外事办公室 · 雅鲁藏布江",
+          "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100958.html",
+          "note": "河流、支流与河谷地理介绍；本文不把历史统计数值作为实时水量。"
+        },
+        {
+          "title": "西藏自治区人民政府 · 羌塘保护与管护工作",
+          "url": "https://www.xizang.gov.cn/xwzx_406/ztzl_416/gdzt/jsstwmxgd/mtjj_4437/202204/t20220419_294361.html",
+          "note": "2022年保护工作报道；用于理解草地、湿地和野生动物的管护，不代表开放或进入许可。"
+        },
+        {
+          "title": "UNESCO · 拉萨历史建筑群决定47 COM 7B.66（2025）",
+          "url": "https://whc.unesco.org/en/decisions/8790",
+          "note": "世界遗产委员会正式决定，区分已报告进展与仍待审查的保护工作；第7段谈访问管理、监测及尊重朝圣活动。决定不是今天开放预约规则，也不代表全部保护要求已经完成。"
+        },
+        {
+          "title": "UNESCO / ICOMOS · 2005年监测报告，第3页",
+          "url": "https://whc.unesco.org/document/5816",
+          "note": "回看前例：多数供灯迁出传统木构，寺前供灯继续；报告所见不是竣工日期，灯光为关系示意。"
+        },
+        {
+          "title": "大昭寺及寺前现状地物",
+          "url": "/data/local-places/lhasa.geojson",
+          "note": "仅用真实现状轮廓定位，不复原供灯室或历史灯位。"
+        },
+        {
+          "title": "Natural Earth · 河流中心线（1:1000万）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+          "note": "公共领域概览数据；10m 表示 1:1000万比例尺，不是10米精度。河道宽度和金色讲解进度是阅读符号，不表示实测河宽、流速或流量。"
+        },
+        {
+          "title": "当前画面的河道数据与处理记录",
+          "url": "/data/hydrography/yarlung-river.geojson",
+          "note": "保留 Maquan、Yarlung、Dihang、Brahmaputra 原始几何。仅沿端点相接的主部件展示，不连接分支；名称与上下游关系参照中科院地理所资料。"
+        },
+        {
+          "title": "中科院青藏高原所 · 雅鲁藏布江多圈层水文观测",
+          "url": "https://www.itpcas.ac.cn/new_kycg/new_kyjz/202204/t20220426_6439458.html",
+          "note": "上下游水文过程需要观测资料支持，画面中的概览河道不能用于推算水量。"
+        },
+        {
+          "title": "USGS：地表径流与下渗",
+          "url": "https://www.usgs.gov/water-science-school/science/runoff-surface-and-overland-water-runoff"
+        },
+        {
+          "title": "USGS：流域与分水岭",
+          "url": "https://www.usgs.gov/water-science-school/science/watersheds-and-drainage-basins"
+        },
+        {
+          "title": "本地高程来源与分辨率",
+          "url": "/assets/terrain/tibet-regional-dem.source.json"
+        },
+        {
+          "title": "西藏日报：全心全意守护“高原精灵”——记黄晨（2023-07-06）",
+          "url": "https://www.xzxw.com/al/2023-07/06/content_881465.html"
+        }
+      ],
+      "detailStepId": "R3",
+      "overviewScope": "whole"
+    },
+    {
+      "id": "OVERVIEW-conclusion",
+      "recordingId": "OVERVIEW-observation-close",
+      "text": "把整条认识变成观察方法。先在全图选地方，再带着问题走近。去林芝，问山谷与水热怎样影响生活；到山南、拉萨或日喀则，对照河谷空间、历史用途和今天生活；看昌都，问峡谷怎样影响通行；看那曲与阿里，问高地、用水和地方接续。每次都问：自然提供什么条件，人的行动又改变了什么？比较以后再回到全域，用一个具体地方解释形成、延续和现代变化。观察顺序不是连续旅游行程，实际交通与访问条件需要按日期核实。接下来选择需要深入的问题，或保存你的观察路线。",
+      "title": "带着变化和原因，回到地方观察",
+      "chapterId": "observation",
+      "kind": "atlas",
+      "topic": "observation",
+      "moments": [
+        {
+          "token": "先在全图选地方",
+          "title": "先有问题，再选地方",
+          "explanation": "每次局部观察都从全域位置与来路开始。"
+        },
+        {
+          "token": "去林芝",
+          "title": "比较环境与地方使用",
+          "explanation": "林芝、河谷城市、昌都、那曲与阿里回应同一组问题；这不是连续旅行路线。"
+        },
+        {
+          "token": "每次都问",
+          "title": "分清自然条件与人的改变",
+          "explanation": "对照地形、水热、历史用途与今天生活。"
+        },
+        {
+          "token": "比较以后再回到全域",
+          "title": "回到整体解释异同",
+          "explanation": "观察顺序不是可订行程；交通与访问条件按日期核实。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "西藏自治区人民政府 · 自然地理",
+          "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+          "note": "地区自然地理概览；行政范围与自然分区分别使用。"
+        },
+        {
+          "title": "UNESCO · 拉萨布达拉宫历史建筑群",
+          "url": "https://whc.unesco.org/en/list/707/",
+          "note": "布达拉宫、大昭寺、罗布林卡的遗产资料；现存形制须与始建年代区分。"
+        },
+        {
+          "title": "西藏自治区 · 文化旅游产业发展规划（2025—2035年）解读",
+          "url": "https://www.xizang.gov.cn/zwgk/xxfb/zcjd_435/202505/t20250512_477605.html",
+          "note": "规划表达未来目标与方向，不能作为景点当前开放或道路可通行的证明。"
+        },
+        {
+          "title": "画面中的山系、河流、现状轨道与跑道：来源及几何",
+          "url": "/data/narrated-geography.json",
+          "note": "OSM现状相连节点与跑道；Natural Earth概览河道与山系参照。高程窗不是城市边界，金色推进不代表实际速度。"
+        },
+        {
+          "title": "Natural Earth · 自然地理范围（概略参照）",
+          "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/",
+          "note": "山系多边形用于定位，并非精密地质边界；1:1000万比例尺，不是10米精度。"
+        }
+      ],
+      "detailStepId": "T1",
+      "overviewScope": "whole"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+Browser tab: 3, Title: "西藏探索 · 从地球到这片土地", URL: "http://127.0.0.1:5176/#/routes/g318-east/whole".
+1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/routes/g318-east/whole
+	2 container
+		3 link Description: ← 线路入口, Value: 127.0.0.1:5176/#/routes
+		4 text G318 · 林芝—波密
+		5 text 林芝 → 色季拉山地 → 鲁朗 → 通麦 → 波密
+		6 button 我的观察计划
+		7 container G318完整认识主线
+			8 container
+				9 image 真实卫星影像与高程上的G318林芝至鲁朗道路，可旋转缩放
+				10 image 2008-09-18 · 街边的日常一刻
+				11 container
+					12 text 2008-09-18  ·  reurinkjan  · 
+					13 link Description: CC BY 2.0, Value: creativecommons.org/licenses/by/2.0/
+					14 text  · 
+					15 link Description: 原图出处 ↗, Value: commons.wikimedia.org/wiki/File:Pocket_billiards,_%E0%BD%A6%E0%BE%92%E0%BE%B2%E0%BD%BC%E0%BD%98%E0%BC%8B%E0%BD%A6%E0%BE%9F%E0%BD%BA%E0%BD%82%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%A4%E0%BD%BC%E0%BC%8B%E0%BD%A3%E0%BD%BC%E0%BC%8D.jpg
+			16 container
+				17 text 2008-09-18 · 有日期的实拍
+				18 heading 街边的日常一刻, Value: 1
+					19 text 街边的日常一刻
+			20 container
+				21 text 自由观察 · 原句已暂停 桌球活动发生在门前空间，呈现当时日常活动的一刻。
+		22 text 完整认识主线 · 九镜约4分37秒
+		23 heading 鲁朗 · 谷地空间, Value: 2
+			24 text 鲁朗 · 谷地空间
+		25 container 整线九镜
+			26 button R00 · 先认整条来路
+				27 text R00
+				28 text 整线定位
+			29 button R01 · 林芝 · 城市河谷
+				30 text R01
+				31 text 城市河谷
+			32 button R02 · 色季拉山地 · 高差
+				33 text R02
+				34 text 翻山高差
+			35 button R03 · 鲁朗 · 谷地空间
+				36 text R03
+				37 text 鲁朗空间
+			38 button R04 · 鲁朗 · 日常与人文
+				39 text R04
+				40 text 鲁朗人文
+			41 button R05 · 沿主路进入峡谷
+				42 text R05
+				43 text 峡谷接续
+			44 button R06 · 通麦 · 跨河穿山
+				45 text R06
+				46 text 通麦桥隧
+			47 button R07 · 波密 · 街道生活
+				48 text R07
+				49 text 波密街道
+			50 button R08 · 回看整线 · 带走问题
+				51 text R08
+				52 text 整线回看
+		53 text 谷地空间也被人使用，继续看日常与文化资料。
+		54 container
+			55 heading 到鲁朗，看风景与生活, Value: 3
+				56 text 到鲁朗，看风景与生活
+			57 text 沿原路进入真实记录，了解看什么、为何值得停；观察后回到进入前的原句。
+			58 button 色季拉 · 沿路观察
+			59 button 鲁朗 · 地方体验
+		60 container
+			61 heading 暂停，看清一个关系, Value: 3
+				62 text 暂停，看清一个关系
+			63 text 同一路段的位置
+			64 slider (settable, integer) Description: 完整主线沿线位置, Value: 1
+			65 button 俯视与高差
+			66 button 斜看／回望
+			67 checkbox 临街门面, Value: 0
+			68 checkbox 门前活动, Value: 1
+			69 checkbox 相邻空间, Value: 0
+			70 button 返回进入前的原线原句
+			71 text 桌球活动发生在门前空间，呈现当时日常活动的一刻。
+			72 button 继续原句
+		73 button 带当前对象进入观察计划
+		74 text 已保存到当前浏览器。
+		75 button (collapsed) 资料范围与本版收口, Secondary Actions: Expand
+			76 text 资料范围与本版收口
+		77 button 继续原句
+		78 button 静音
+		79 text 1 : 52  / 4:37 ·  已暂停
+		80 button 打开已保存计划
+		81 container
+			82 text 当前原句进度
+			83 slider (settable, float) Description: 整线原句进度, Value: 0.5550000071525574, Details: 0.555
+		84 text 含修改的Copernicus Sentinel数据（2025） · Copernicus GLO-30 · © OpenStreetMap contributors。金线为阅读强调，非实时车辆／导航。
+
+The focused UI element is 1 AXWebArea 西藏探索 · 从地球到这片土地, URL: 127.0.0.1:5176/#/routes/g318-east/whole

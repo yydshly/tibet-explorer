@@ -1,12 +1,19 @@
 import {describe,it,expect,vi} from 'vitest';
 // @ts-expect-error Node belongs to the runner.
 import {readFileSync} from 'node:fs';
-import {gatewayNarrationCue,gatewayNarratedRoute} from '../src/data/routeGatewayNarration';
+import {gatewayNarrationCue,gatewayNarratedRoute,gatewayGuideEndSeconds,gatewayGuideDuration} from '../src/data/routeGatewayNarration';
 import {narrationTimingAt} from '../src/lib/narrationTiming';
 import {readPilotEntry} from '../src/lib/routePilotEntry';
 import {routePilotCues} from '../src/data/routePilot';
 import {PILOT_POSITION_KEY,PILOT_NOTE_KEY} from '../src/lib/routePilotStore';
 describe('route orientation and deliberate entry',()=>{
+ it('ends the public guide at a native sentence boundary before the obsolete pilot-only claim',()=>{
+  const manifest=JSON.parse(readFileSync('public/assets/audio/narration/cue-manifest.json','utf8')),clip=manifest.clips.find((c:any)=>c.cueId===gatewayNarrationCue.id);
+  const timeline=JSON.parse(readFileSync('public'+clip.subtitleUrl,'utf8')),cut=clip.text.indexOf('这一版先研究');
+  const previous=timeline.words.filter((w:any)=>w.textStart<cut).at(-1),next=timeline.words.find((w:any)=>w.textStart>=cut);
+  expect(gatewayGuideDuration).toBe(clip.duration);expect(gatewayGuideEndSeconds).toBe(previous.end);
+  expect(gatewayGuideEndSeconds).toBeLessThan(next.start);
+ });
  it('selects the narrated corridor from the native word timeline, then comes back to the implemented pilot',()=>{
   const manifest=JSON.parse(readFileSync('public/assets/audio/narration/cue-manifest.json','utf8')),clip=manifest.clips.find((c:any)=>c.cueId===gatewayNarrationCue.id);
   expect(clip.text).toBe(gatewayNarrationCue.narration);expect(clip.timingLevel).toBe('word');const timeline=JSON.parse(readFileSync('public'+clip.subtitleUrl,'utf8'));

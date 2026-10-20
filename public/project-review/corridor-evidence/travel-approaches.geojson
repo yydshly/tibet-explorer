@@ -1,0 +1,289 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "id": "G318-travel-access-gate-20261020",
+    "date": "2026-10-20",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "licenseUrl": "https://www.openstreetmap.org/copyright",
+    "scope": "research source geometry only; not runtime/navigation/verified access"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sejila-8795758949",
+        "role": "research_only_mapped_approach_not_visitor_route",
+        "sourceNodeIds": [
+          624467757,
+          14248685889,
+          14248686467
+        ],
+        "mainlineJoinNode": 624467757,
+        "mainlineIndex": 827,
+        "status": "mapped_approach_only_poi_gap_unclosed",
+        "poiNode": 8795758949,
+        "poiCoordinate": [
+          94.6515298,
+          29.6105671
+        ],
+        "unclosedGap": true,
+        "note": "Line ends at an original source road vertex; no line snaps to a POI/forest gate."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            94.6513962,
+            29.6108455
+          ],
+          [
+            94.6513938,
+            29.6106367
+          ],
+          [
+            94.6514445,
+            29.6104834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sejila-8795758950",
+        "role": "research_only_mapped_approach_not_visitor_route",
+        "sourceNodeIds": [
+          14248686564,
+          14248684607
+        ],
+        "mainlineJoinNode": 14248686564,
+        "mainlineIndex": 831,
+        "status": "mapped_approach_only_poi_gap_unclosed",
+        "poiNode": 8795758950,
+        "poiCoordinate": [
+          94.6519455,
+          29.6105858
+        ],
+        "unclosedGap": true,
+        "note": "Line ends at an original source road vertex; no line snaps to a POI/forest gate."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            94.6520445,
+            29.6108141
+          ],
+          [
+            94.6519897,
+            29.6105229
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lulang-5224686709",
+        "role": "research_only_mapped_approach_not_visitor_route",
+        "sourceNodeIds": [
+          624468845,
+          10246787937,
+          10246787938,
+          3132961637,
+          12234741023,
+          3132961641,
+          3132961639,
+          3132961640,
+          12234741025,
+          12234741026,
+          12234741024,
+          3132961646,
+          12234741029,
+          3132961651,
+          3320242807,
+          3132961650,
+          12234741030,
+          3132961636,
+          4043644064,
+          4043644066,
+          3132961638
+        ],
+        "mainlineJoinNode": 624468845,
+        "mainlineIndex": 1186,
+        "status": "mapped_approach_only_poi_gap_unclosed",
+        "poiNode": 5224686709,
+        "poiCoordinate": [
+          94.7371793,
+          29.7519508
+        ],
+        "unclosedGap": true,
+        "note": "Line ends at an original source road vertex; no line snaps to a POI/forest gate."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            94.7298861,
+            29.7525152
+          ],
+          [
+            94.7301179,
+            29.7523313
+          ],
+          [
+            94.7304578,
+            29.7521173
+          ],
+          [
+            94.7306434,
+            29.7520765
+          ],
+          [
+            94.7309607,
+            29.7521597
+          ],
+          [
+            94.7312644,
+            29.7522309
+          ],
+          [
+            94.7315813,
+            29.7521867
+          ],
+          [
+            94.7317496,
+            29.7521862
+          ],
+          [
+            94.7320873,
+            29.7523041
+          ],
+          [
+            94.7324306,
+            29.7523717
+          ],
+          [
+            94.7328007,
+            29.7524951
+          ],
+          [
+            94.733094,
+            29.7526258
+          ],
+          [
+            94.733364,
+            29.752863
+          ],
+          [
+            94.733859,
+            29.7529884
+          ],
+          [
+            94.7349572,
+            29.7530862
+          ],
+          [
+            94.7352099,
+            29.7531134
+          ],
+          [
+            94.7353917,
+            29.7530353
+          ],
+          [
+            94.7377746,
+            29.7514552
+          ],
+          [
+            94.7379811,
+            29.7518359
+          ],
+          [
+            94.7379583,
+            29.751957
+          ],
+          [
+            94.7377866,
+            29.7520595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "baka-13132782034",
+        "role": "research_only_mapped_approach_not_visitor_route",
+        "sourceNodeIds": [
+          4037129072,
+          4037129071,
+          4037129070,
+          4037129069,
+          4037129068,
+          4037129067,
+          4037129062,
+          4037129060,
+          3632457237,
+          3632469729
+        ],
+        "mainlineJoinNode": 4037129072,
+        "mainlineIndex": 2789,
+        "status": "road_bridge_approach_only_forest_gate_and_trail_missing",
+        "poiNode": 13132782034,
+        "poiCoordinate": [
+          95.5203348,
+          29.8898808
+        ],
+        "unclosedGap": true,
+        "note": "Line ends at an original source road vertex; no line snaps to a POI/forest gate."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            95.5217155,
+            29.8978173
+          ],
+          [
+            95.5216422,
+            29.897577
+          ],
+          [
+            95.5214968,
+            29.8966547
+          ],
+          [
+            95.5215457,
+            29.8965941
+          ],
+          [
+            95.5218043,
+            29.8964547
+          ],
+          [
+            95.5221678,
+            29.896342
+          ],
+          [
+            95.5225467,
+            29.8959045
+          ],
+          [
+            95.5225229,
+            29.895856
+          ],
+          [
+            95.5220168,
+            29.8954289
+          ],
+          [
+            95.5218352,
+            29.895229
+          ]
+        ]
+      }
+    }
+  ]
+}

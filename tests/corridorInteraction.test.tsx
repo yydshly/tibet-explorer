@@ -23,19 +23,58 @@ import CorridorExperience from '../src/components/CorridorExperience';
 import {readCorridorNote} from '../src/lib/corridorStore';
 import {corridorBeats,corridorPath} from '../src/data/corridorJourney';
 import {corridorPlanMarkdown} from '../src/data/corridorObservation';
+import {readTravelSession} from '../src/lib/travelObservationStore';
 let values:Map<string,string>;
 const find=(node:any,match:(n:any)=>boolean):any=>{if(!node||typeof node!=='object')return;if(match(node))return node;for(const c of [node.props?.children].flat(Infinity)){const found=find(c,match);if(found)return found;}};
 const render=()=>harness.render(CorridorExperience),button=(name:string)=>find(render(),n=>n.type==='button'&&n.props.children===name).props;
 const stage=()=>find(render(),n=>n.props?.className==='corridor-stage').props;
 beforeEach(()=>{
  harness.reset();values=new Map([['tibet-explorer.overview-position.v1','freeze-six'],['tibet-explorer.route-pilot-position.v1','freeze-pilot']]);
- vi.stubGlobal('localStorage',{getItem:(k:string)=>values.get(k)??null,setItem:(k:string,v:string)=>values.set(k,v)});vi.stubGlobal('location',{hash:'#'+corridorPath});
+ vi.stubGlobal('localStorage',{getItem:(k:string)=>values.get(k)??null,setItem:(k:string,v:string)=>values.set(k,v),removeItem:(k:string)=>values.delete(k)});vi.stubGlobal('location',{hash:'#'+corridorPath});
  vi.stubGlobal('Image',class{onload:()=>void=()=>{};set src(_:string){queueMicrotask(()=>this.onload());}decode(){return Promise.resolve();}});
  vi.stubGlobal('fetch',async()=>({ok:true,json:async()=>JSON.parse(readFileSync('public/assets/routes/g318-corridor/edit.json','utf8'))}));
  media.current={beatIndex:3,raw:.32,voice:true,playing:false,wantsPlayback:false,ready:true,timing:{textProgress:(corridorBeats[3].text.indexOf('看道路')+1)/corridorBeats[3].text.length},pause:vi.fn(()=>{media.current.wantsPlayback=false;}),select:vi.fn((i:number)=>{media.current.beatIndex=i;media.current.raw=0;media.current.timing={textProgress:0};media.current.wantsPlayback=false;}),seek:vi.fn((raw:number)=>media.current.raw=raw),setVoice:vi.fn(),playPause:vi.fn(()=>{media.current.wantsPlayback=!media.current.wantsPlayback;}),onSceneReady:vi.fn(),retryScene:vi.fn()};
 });
 afterEach(()=>{harness.reset();vi.useRealTimers();vi.unstubAllGlobals();});
 describe('actual whole-corridor observation callbacks',()=>{
+ it('keeps the R04 heading while native word timing rehydrates on resume',async()=>{
+  media.current.raw=.555;media.current.timing={textProgress:.72};
+  await vi.waitFor(()=>expect(find(render(),n=>n.props?.edit)).toBeDefined());
+  expect(stage()['data-shot']).toBe('R04');
+  media.current.timing=undefined;media.current.wantsPlayback=true;
+  expect(stage()['data-shot']).toBe('R04');
+  media.current.raw=.3;expect(stage()['data-shot']).toBe('R03');
+ });
+ it.each([false,true])('keeps the R04 word boundary after plan return (refresh=%s)',refresh=>{
+  media.current.raw=.555;media.current.timing={textProgress:.72};
+  expect(stage()['data-shot']).toBe('R04');
+  const before=JSON.parse(stage()['data-view']);
+  button('带当前对象进入观察计划').onClick();button('保存计划').onClick();
+  if(refresh)harness.reset();
+  button('保存并返回原画面原句').onClick();
+  expect(media.current.select).not.toHaveBeenCalled();expect(media.current.seek).not.toHaveBeenCalled();
+  expect(stage()['data-shot']).toBe('R04');expect(stage()['data-raw']).toBe(.555);
+  expect(JSON.parse(stage()['data-view'])).toEqual(before);
+ });
+ it('pauses before a traveler visit, retains its origin across refresh, then returns without replay',()=>{
+  media.current.beatIndex=2;media.current.raw=.37123;media.current.timing={textProgress:.4};
+  const before=JSON.parse(stage()['data-view']);button('色季拉 · 沿路观察').onClick();
+  expect(media.current.pause).toHaveBeenCalled();expect(readTravelSession()?.returnTo).toEqual({beatIndex:2,raw:.37123,view:before});
+  harness.reset();const visit=find(render(),n=>n.props?.session?.place==='sejila');expect(visit).toBeDefined();
+  visit.props.onReturn(false);
+  expect(media.current.select).not.toHaveBeenCalled();expect(media.current.seek).not.toHaveBeenCalled();
+  expect(stage()['data-raw']).toBe(.37123);expect(JSON.parse(stage()['data-view'])).toEqual(before);
+  expect(readTravelSession()).toBeUndefined();expect(media.current.playPause).not.toHaveBeenCalled();
+  expect(values.get('tibet-explorer.overview-position.v1')).toBe('freeze-six');
+ });
+ it('resumes the exact old sentence only after the old scene is ready again',async()=>{
+  media.current.raw=.274;const before=JSON.parse(stage()['data-view']);button('鲁朗 · 地方体验').onClick();
+  find(render(),n=>n.props?.session?.place==='lulang').props.onReturn(true);
+  expect(media.current.raw).toBe(.274);expect(media.current.playPause).not.toHaveBeenCalled();
+  await vi.waitFor(()=>expect(find(render(),n=>n.props?.edit)).toBeDefined());
+  find(render(),n=>n.props?.edit).props.onReady(before.kind);render();
+  expect(media.current.playPause).toHaveBeenCalledTimes(1);expect(readTravelSession()).toBeUndefined();
+ });
  it('captures the actual river, saves, refreshes and restores the same raw/view; later notebook opening preserves evidence',async()=>{
   button('河流').onClick();const before=JSON.parse(stage()['data-view']);expect(before.value.photoFocus).toBe(1);
   button('带当前对象进入观察计划').onClick();expect(location.hash).toContain('plan=1');find(render(),n=>n.type==='textarea').props.onChange({target:{value:'保存河流、道路与房屋的关系。'}});button('保存计划').onClick();

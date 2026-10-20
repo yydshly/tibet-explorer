@@ -1,0 +1,236 @@
+{
+  "id": "PRODUCT-CLOSEOUT-20261020-2",
+  "date": "2026-10-20",
+  "status": "frozen_trial_delivery_formal_acceptance_pending",
+  "authorization": "用户在目标与结项基线建议后要求继续；据此固定执行范围，不代表交付或理解验收已获通过。",
+  "goal": "让不了解西藏的人，通过连贯地图、3D、真实影像和交互，建立地理环境、地区差异、生活、历史文化及现代联系的整体认识，并能对应到具体地方。",
+  "productEnding": "六章形成整体认识；一条示范线路把认识落到地方；结束时可回看、保存观察计划或离开。深入专题可选，不靠追加内容才算讲完。",
+  "scope": [
+    "六章整体认识",
+    "林芝—色季拉—鲁朗—通麦—波密示范线路",
+    "已有地方观察及观察计划编辑/保存/导出/精确返回",
+    "核心事实与素材来源及示意边界"
+  ],
+  "platform": "本版按现有桌面浏览器体验验收；手机专项按用户此前要求暂缓。",
+  "chapters": [
+    {
+      "id": "location",
+      "title": "地球上的西藏",
+      "outcome": "指出西藏与亚洲、中国的关系，区别自治区与青藏高原。",
+      "status": "部分核实",
+      "existingEvidence": "已有实现及历次检查，不自动视为本版理解通过",
+      "currentEvidence": "从根入口进入六章演示，定位镜头与亚洲周边标注可见；本轮未完整复核自治区／青藏高原边界对照，不宣布整章理解通过。 本轮完整自然播放：地球、亚洲、中国与西藏定位取证；连续输出核验，不扩大为用户理解通过。"
+    },
+    {
+      "id": "environment",
+      "title": "空气遇到高原",
+      "outcome": "用一个操作前后对照，说明气流受自转、来流条件与地形影响；区分原理示意与实测。",
+      "status": "已达标（所查对照）",
+      "existingEvidence": "已有实现及历次检查，不自动视为本版理解通过",
+      "currentEvidence": "同进度比较自转有／无，轨迹发生偏转；同抬升位置比较较多／较少水汽，云团与雨线有明确差异；恢复按钮回到本段原进度。原理示意及放大比例有说明。"
+    },
+    {
+      "id": "differences",
+      "title": "同在西藏，为何不同",
+      "outcome": "在同一参照下比较至少两个地区，指出高差或水热差异及其依据；不作无依据的优势排名。",
+      "status": "已达标（所查对照）",
+      "existingEvidence": "已有实现及历次检查，不自动视为本版理解通过",
+      "currentEvidence": "林芝、拉萨、狮泉河同地图切换一月／七月，温度、降水值与柱体共同改变，可直接比较。未对七地区全部细节逐一重验。"
+    },
+    {
+      "id": "living",
+      "title": "环境怎样进入生活",
+      "outcome": "用已有用水或通行案例说明自然条件、设施与人的组织分别起什么作用。",
+      "status": "已达标（用水任务）",
+      "existingEvidence": "已有实现及历次检查，不自动视为本版理解通过",
+      "currentEvidence": "只开闸时渠道条件不足；清渠后推进可见通水与灌溉状态变化。恢复后回到6:21、原句36%的暂停位置。自然条件、设施和维护操作有对应，不只是文字答案。"
+    },
+    {
+      "id": "human-history",
+      "title": "人怎样塑造地方",
+      "outcome": "用一个有来源的事件说明人的行动怎样改变地方用途或生活，并区别历史材料和现状示意。",
+      "status": "已达标（所查对照）；D02定点收口",
+      "existingEvidence": "已有实现及历次检查，不自动视为本版理解通过",
+      "currentEvidence": "托林交流的有／无共同翻译可改变一份／两种文字的示意。供灯对照稳定后确实可见建筑灯光减少、寺前灯光增加；但符号小、颜色与建筑相近，关键变化容易被标签淹没。只要求修清楚已有变化，不加历史内容。 本次复测：原进度操作前后及恢复均可辨认供灯空间变化，证据见currentRetest。"
+    },
+    {
+      "id": "today",
+      "title": "今天怎样联系与观察",
+      "outcome": "解释通道到地方使用还需要什么接续；回到整体认识，并选择结束或带走观察问题。",
+      "status": "已达标（所查关键流程）",
+      "existingEvidence": "已有实现及历次检查，不自动视为本版理解通过",
+      "currentEvidence": "桥梁开／关可见跨河连接差异；沿铁路至站区时道路、河谷与站区同框，位置操作可恢复；六章末段自然结束在12:30，可选择结束或观察计划。机场、汇水和管护的全部子过程未在本轮逐一实播。 本轮已补汇水/管护连续播放及条件操作恢复，六章自然结束12:30，整线自然结束4:37，末尾观察计划保存刷新导出返回已实查；机场未单独重开子流程。"
+    }
+  ],
+  "gates": [
+    {
+      "id": "C1",
+      "name": "内容闭环",
+      "criterion": "六章逐一回答上表问题；整线说明五段特点与接续；结束可回看或退出，观察计划可选。",
+      "evidence": "一次当前版本主线走查，逐章结论与转场位置记录；理解证据另记。"
+    },
+    {
+      "id": "C2",
+      "name": "关键表达有效",
+      "criterion": "关键对象能在画面中指认；关键因果有可见过程或可解释对照；语音、文字与标注不互相错指。单纯加标签不算过程展示。",
+      "evidence": "按六章及线路关键段记录画面、语句、操作前后；必须包含历史文化和交通生活段。"
+    },
+    {
+      "id": "C3",
+      "name": "操作完整",
+      "criterion": "暂停继续、一次因果对照后恢复、沿线入地方再返回原句、计划编辑保存刷新导出返回均完成，无错段、丢记录或双重播放。",
+      "evidence": "助手实际操作并记录预期/实际返回位置；自动测试仅辅助。"
+    },
+    {
+      "id": "C4",
+      "name": "依据与边界可信",
+      "criterion": "核心事实有直接来源；素材许可与年代明确；事实、示意、推断分清。无依据的行程、路况、历史复原不能作为事实。",
+      "evidence": "复核现有引用和素材台账，错误或缺依据的核心主张列入必修。"
+    },
+    {
+      "id": "C5",
+      "name": "真实观看者理解",
+      "criterion": "沿用既有3人小样本安排：同一基线完成；每项六章结果及线路因果至少2人能独立说明并指认依据；3人完成选定操作与返回闭环。无未澄清的关键误解。",
+      "evidence": "真实原话和操作记录；开发者和熟悉项目的用户反馈不计首次观看者。未招募、未发生均记待完成。"
+    }
+  ],
+  "work": [
+    {
+      "id": "A1",
+      "category": "本版必须完成",
+      "task": "按当前基线完成一次六章＋整线关键流程实查，生成唯一缺陷单。",
+      "status": "已完成一次关键流程实查；覆盖边界见currentAudit",
+      "owner": "助手",
+      "done": "每个发现有位置、复现、影响和通过条件；不把待检查自动写为缺陷。"
+    },
+    {
+      "id": "A2",
+      "category": "本版必须完成",
+      "task": "补当前基线实际声音与画面对应检查；注明能听到或不能采集的边界。",
+      "status": "已补实际系统输出与波形/页面时钟对应；真人主观听验仍待完成（E01）",
+      "owner": "助手",
+      "done": "有实际听验记录；原生词时钟或静音截图不能替代声音证据。"
+    },
+    {
+      "id": "A3",
+      "category": "本版必须完成",
+      "task": "执行当前基线真实观看者理解验收。",
+      "status": "待真实参与者",
+      "owner": "真实参与者＋主持人",
+      "done": "按C5留证；没有参与者则只可技术交付，不宣称理解通过。"
+    },
+    {
+      "id": "A4",
+      "category": "本版必须完成",
+      "task": "修复确认的阻断项后生成可复现发布版本、交付说明与遗留清单。",
+      "status": "D01—D03收口；交付说明与本地源码/构建快照归档；正式发布接受和真人验收未完成",
+      "owner": "助手；负责人接受最终状态",
+      "done": "标注最终提交/资源清单及验收基线。有限复测后给出结项、技术交付待理解验收或未达标结论。"
+    },
+    {
+      "id": "D1",
+      "category": "后续再做",
+      "task": "写实驾驶、米级路边复原、连续车窗视频及未核实的新素材",
+      "status": "本版不推进",
+      "done": "不以虚构树林/护栏填充；1.8km只作可选地形示意。"
+    },
+    {
+      "id": "D2",
+      "category": "后续再做",
+      "task": "新增线路/景点、手机专项、订票导航与实时行程服务",
+      "status": "本版不推进",
+      "done": "另立目标、范围与预算，不占用本版验收。"
+    },
+    {
+      "id": "N1",
+      "category": "无需处理",
+      "task": "不影响理解与操作的个人审美偏好、无新证据的已通过项重复打磨",
+      "status": "不进入本版缺陷单",
+      "done": "不以模型数量、时长、素材数量作为完成标准。"
+    }
+  ],
+  "releaseCandidate": {
+    "headCommit": "c7ab41e6944420d4d90fc455135c1712871c15bb",
+    "workingTreeIsRelease": false,
+    "runtimeSha256": "8ccbf3d2b51612b47182b9bc992d58ebcb05bb07be04d94c5691b1e2dccb92b9",
+    "hashedFileCount": 2564,
+    "note": "HEAD与未提交工作树均保留；本地归档包含源码、构建配置、公开素材、当前构建产物及摘要，供本版交付复现。不是已接受的正式发布。",
+    "overviewReference": {
+      "path": "/project-review/release-baseline.json",
+      "seconds": 750.024,
+      "beats": 21
+    },
+    "corridorReference": {
+      "path": "/assets/routes/g318-corridor/edit.json",
+      "seconds": 276.96923076923076,
+      "shots": 9
+    },
+    "hashAlgorithm": "SHA256 of UTF-8 JSON path→SHA256 map, sorted keys, compact separators",
+    "manifest": "/project-review/closeout-runtime-files.json",
+    "archive": {
+      "path": "../review/product-closeout-20261020/delivery/PRODUCT-CLOSEOUT-20261020-2.zip",
+      "type": "local_frozen_candidate_not_formally_accepted",
+      "manifest": "../review/product-closeout-20261020/delivery/archive-manifest.json"
+    }
+  },
+  "historicalEvidence": "旧六章676.872秒协议、林芝—鲁朗单段协议和历次测试均保留为历史记录，不直接作为当前整版通过结论。真实首次会话现有记录仍为0。",
+  "sequence": [
+    "一次当前基线实查与依据复核",
+    "只修确认的必修问题",
+    "只复测失败任务及相邻接续",
+    "给出最终结论、发布归档，停止本版开发"
+  ],
+  "stopRule": "不得为美观、逼真度或新增看点自动扩展。有限复测仍失败则明确未达标并结束本轮，不无限重播；任何缩减承诺须显式记录并由负责人决定，不能暗中删掉失败项换取通过。",
+  "verdicts": {
+    "closed": "C1—C5有证据通过、无必修缺陷、交付可复现且最终结果被接受。",
+    "technical_delivery_only": "技术与资料检查完成，但真实理解验收缺失；可以交付试用，不称完整产品验收通过。",
+    "not_passed": "核心理解、资料真实性或操作阻断仍存在；公开剩余项，不继续无边界优化。"
+  },
+  "thisRound": "只补当前基线声音输出、主线连续播放、末尾计划及汇水/管护恢复证据；运行文件零改动。可交付冻结候选版，E01真实听验与E02首次理解验收仍阻止正式结项。",
+  "knownUserFeedback": [
+    {
+      "issue": "部分段落仍依赖语音，画面不足以解释过程与原因",
+      "status": "有关键过程/对照及实际输出证据；未发现新增明确运行阻断，首次观看者理解仍待C5，不能据此清除原反馈。"
+    },
+    {
+      "issue": "用户大概看懂先上山再入谷，主要依赖高程曲线与镜头；有些仍需听语音",
+      "status": "既有用户反馈，不计首次观看者验收"
+    },
+    {
+      "issue": "1.8km路边空、道路示意感强",
+      "status": "写实驾驶不属本版；示意身份与实际承诺仍须明确，不能冒充真实近景"
+    }
+  ],
+  "defectRule": "冻结禁止无边界扩展，不禁止修复证据明确的关键表达、事实或操作问题。新增缺陷须给出章节/语句/操作位置、实际现象、用户影响、复现与通过条件；未核实项保持待查。",
+  "currentAudit": {
+    "id": "PRODUCT-AUDIT-20261020-1",
+    "path": "/project-review/closeout-audit.json",
+    "verdict": "not_passed",
+    "defects": [
+      "D01",
+      "D02",
+      "D03"
+    ],
+    "historical": true
+  },
+  "previousBaseline": {
+    "id": "PRODUCT-CLOSEOUT-20261020-1",
+    "runtimeSha256": "259f6f2c5dd161a161668a3708e6fbed46605fed4df53e76ea8460812ea0cd1b",
+    "audit": "/project-review/closeout-audit.json"
+  },
+  "currentRetest": {
+    "id": "PRODUCT-FIX-RETEST-20261020-1",
+    "path": "/project-review/closeout-fix-retest.json",
+    "verdict": "three_targeted_defects_closed_acceptance_evidence_pending",
+    "closedDefects": [
+      "D01",
+      "D02",
+      "D03"
+    ]
+  },
+  "currentEvidence": {
+    "id": "PRODUCT-FINAL-EVIDENCE-20261020-1",
+    "path": "/project-review/closeout-final-evidence.json",
+    "verdict": "frozen_trial_delivery_formal_acceptance_pending"
+  }
+}

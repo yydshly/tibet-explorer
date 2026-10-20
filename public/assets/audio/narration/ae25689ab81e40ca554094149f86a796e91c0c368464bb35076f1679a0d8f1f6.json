@@ -1,0 +1,19 @@
+{
+  "id": "ae25689ab81e40ca554094149f86a796e91c0c368464bb35076f1679a0d8f1f6",
+  "url": "/assets/audio/narration/ae25689ab81e40ca554094149f86a796e91c0c368464bb35076f1679a0d8f1f6.mp3",
+  "text": "继续前进，注意路面沿着山坡延伸。地表高度在变化，山坡也会遮挡前方。这里展示的是地表采样，不是道路工程的纵坡测量。",
+  "duration": 12.276,
+  "bytes": 198132,
+  "sha256": "263aae88b3ba8a37d8f46369bdc61e82266455e6ae69a0105728e19f582e8af6",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T19:26:20.561Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/ae25689ab81e40ca554094149f86a796e91c0c368464bb35076f1679a0d8f1f6.subtitles.json",
+  "subtitleSha256": "6543251297501da86c10285a7593514ef7e53142542e0159393e37d4f8507947",
+  "timingLevel": "word"
+}

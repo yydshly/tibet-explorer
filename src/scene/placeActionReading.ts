@@ -10,7 +10,7 @@ export function createPlaceActionReading(data:LocalCollection,toWorld:(p:LocalCo
  const temple=find('relation/2358701'),front=find('way/177796787'),square=find('way/61818449');
  const templeAnchor=toWorld(localFeatureAnchor(temple),22),frontAnchor=toWorld(localFeatureAnchor(front),15);
  const lampGroup=new THREE.Group(),publicGroup=new THREE.Group();group.add(lampGroup,publicGroup);
- const lampMaterial=new THREE.MeshBasicMaterial({color:0xffc15e,depthTest:false});
+ const lampMaterial=new THREE.MeshBasicMaterial({color:0xff8300,depthTest:false,depthWrite:false});
  const lamps=Array.from({length:7},()=>{const m=new THREE.Mesh(new THREE.ConeGeometry(.7,2,8),lampMaterial);lampGroup.add(m);m.renderOrder=70;return m;});
  const outside=Array.from({length:6},()=>{const m=new THREE.Mesh(new THREE.ConeGeometry(.7,2,8),lampMaterial);lampGroup.add(m);m.renderOrder=70;return m;});
 
@@ -31,10 +31,14 @@ export function createPlaceActionReading(data:LocalCollection,toWorld:(p:LocalCo
  group.visible=Boolean(state);if(!state)return;
  lampGroup.visible=['lamps','separate'].includes(state.phase);publicGroup.visible=['square','public'].includes(state.phase);
  const separation=state.separation;
- relationAreas[0].material.opacity=.06+.16*(1-separation);
- relationAreas[1].material.opacity=.22*separation;
- lamps.forEach((m,i)=>{m.position.copy(templeAnchor);m.position.x+=(i-3)*scale*2.6;m.scale.setScalar(scale*(i===0?1:1-separation));});
- outside.forEach((m,i)=>{m.position.copy(frontAnchor);m.position.x+=(i-2.5)*scale*2.6;m.scale.setScalar(scale*separation);});
+ relationAreas[0].material.color.setHex(0x743c10);
+ relationAreas[1].material.color.setHex(0x743c10);
+ relationAreas[0].material.opacity=.08+.38*(1-separation);
+ relationAreas[1].material.opacity=.46*separation;
+ // Larger screen-relative symbols, arranged in two rows on the same existing
+ // anchors. Counts and spacing remain illustrative, never historical lamp sites.
+ lamps.forEach((m,i)=>{m.position.copy(templeAnchor);m.position.x+=((i%4)-1.5)*scale*4.6;m.position.z+=Math.floor(i/4)*scale*4;m.scale.setScalar(scale*2.2*(i===0?1:1-separation));});
+ outside.forEach((m,i)=>{m.position.copy(frontAnchor);m.position.x+=((i%3)-1)*scale*4.6;m.position.z+=Math.floor(i/3)*scale*4;m.scale.setScalar(scale*2.2*separation);});
 
  people.forEach((p,i)=>{const tri=triangles[(i*7)%triangles.length];if(!tri)return;const move=i%2===0?.2+.55*state.progress:.45;const q=tri[0].clone().lerp(tri[1],move).lerp(tri[2],.3);p.position.copy(q);p.position.y+=scale;p.scale.setScalar(scale*state.activity);});
 

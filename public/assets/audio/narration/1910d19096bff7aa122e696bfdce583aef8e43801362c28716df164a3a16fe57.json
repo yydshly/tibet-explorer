@@ -1,0 +1,19 @@
+{
+  "id": "1910d19096bff7aa122e696bfdce583aef8e43801362c28716df164a3a16fe57",
+  "url": "/assets/audio/narration/1910d19096bff7aa122e696bfdce583aef8e43801362c28716df164a3a16fe57.mp3",
+  "text": "沿同一条来路进入鲁朗谷地。先看林海实拍，林地坡面和开敞地相邻。再看草地与放牧，牲畜出现在山林之间；围栏和通道也在画面里。风景同时是人使用的空间。这里值得慢下来，看林海、草地与村镇怎样共同构成一个地方。",
+  "duration": 22.212,
+  "bytes": 357108,
+  "sha256": "c633e84ffb85b3fcbee59bcd278d6efcdc6b8c260ad2eb4a0515353eac3bc856",
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentleman",
+  "sampleRate": 32000,
+  "channel": 1,
+  "generatedAt": "2026-10-19T18:21:18.849Z",
+  "policy": "原创普通话合成讲述，使用系统音色。不是现场录音或历史人物声音。",
+  "subtitleStatus": "provider",
+  "subtitleUrl": "/assets/audio/narration/1910d19096bff7aa122e696bfdce583aef8e43801362c28716df164a3a16fe57.subtitles.json",
+  "subtitleSha256": "f57789f15665077baaab2dbc92a9666e48147dea6eff90b0c86cac8ff5bb8d6e",
+  "timingLevel": "word"
+}
